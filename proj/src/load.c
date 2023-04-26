@@ -2,8 +2,8 @@
 // Created by diogo on 22/04/2023.
 //
 #include "models/models.h"
-struct Model  loadArena(char pString[15][30]){
-    struct Model model;
+struct ArenaModel  loadArena(char pString[15][30]){
+    struct ArenaModel model;
     model.nWalls=0;
     model.nBombs=0;
     model.nBricks=0;
@@ -41,6 +41,8 @@ struct Model  loadArena(char pString[15][30]){
                 model.players[0].score=0;
                 model.players[0].lives=1;
                 model.players[0].id=0;
+                model.players[0].movementcooldown=0;
+                model.players[0].bombcooldown=0;
             }
             if(pString[i][j]=='b'){
                 model.players[1].position.x=i;
@@ -51,6 +53,8 @@ struct Model  loadArena(char pString[15][30]){
                 model.players[1].score=0;
                 model.players[1].lives=1;
                 model.players[1].id=1;
+                model.players[1].movementcooldown=0;
+                model.players[1].bombcooldown=0;
             }
         }
     }

@@ -2,6 +2,12 @@
 // Created by diogo on 22/04/2023.
 #ifndef BOMBERMAN_MODELS_H
 #define BOMBERMAN_MODELS_H
+enum GameState{
+    MENU,
+    GAME,
+    GAMEOVER,
+    EXIT
+};
 enum Direction {
     UP,
     DOWN,
@@ -28,8 +34,10 @@ struct Player {
     struct Position position;
     int lives;
     int bombs;
+    int bombcooldown;
     int range;
     int speed;
+    int movementcooldown;
     int score;
     int id;
 };
@@ -43,7 +51,7 @@ struct PowerUp {
     struct Position position;
     enum PowerUpType type;
 };
-struct Model {
+struct ArenaModel {
     struct Player players[2];
     struct Bomb bombs[6];
     struct Wall walls[100];
@@ -54,5 +62,13 @@ struct Model {
     int nPowerUps;
     int nBombs;
 
+};
+
+struct MenuModel {
+    int selectedOption;
+    int selectedLevel;
+    int nlevels;
+    char levels[10][20];
+    char options[2][20];
 };
 #endif //BOMBERMAN_MODELS_H

@@ -35,9 +35,6 @@ int main(int argc, char *argv[]) {
 
 int(video_test_init)(uint16_t mode, uint8_t delay) {
     videographics_init(mode);
-    map_vram(mode);
-    uint32_t g = 0x10FF00;
-    vg_draw_rectangle(40,50,20,10,g);
 
     sleep(delay);
     vg_exit();
@@ -46,18 +43,19 @@ int(video_test_init)(uint16_t mode, uint8_t delay) {
 
 extern int scan_code[2];
 int i = 0;
+
 int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,uint16_t width, uint16_t height, uint32_t color) {
     if(videographics_init(mode)!=OK){
       return 1;
     }
-    if(map_vram(mode)){
-      return 1;
-    }
+  if(mappVm(mode)){
+    printf("mapping error\n");
+    return 1;
+  }
     vg_draw_rectangle(x,y,width,height,color);
 
-      uint8_t bit_no;
-  
-  if(kbc_Subscribe(&bit_no)!= 0)
+    uint8_t bit_no;
+  if(kbc_Subscribe(&bit_no)!= OK)
     return 1;
 
   uint32_t irq_set = BIT(bit_no);
@@ -65,7 +63,6 @@ int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,uint16_t width, 
   message msg;
   
   int ipc_status;
-
   int r;
   while( scan_code[0]!=0x81) { /* You may want to use a different condition */
     /* Get a request message. */
@@ -98,8 +95,9 @@ int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,uint16_t width, 
   if(kbc_Unsubscribe() != 0)
     return 1;
     vg_exit();
-  return 1;
+  return 0;
 }
+
 
 int(video_test_pattern)(uint16_t mode, uint8_t no_rectangles, uint32_t first, uint8_t step) {
   /* To be completed */

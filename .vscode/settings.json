@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "lab3.h": "c",
-        "lcf.h": "c"
+        "lcf.h": "c",
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "iterator": "c",
+        "string": "c"
     }
 }
