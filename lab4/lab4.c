@@ -81,11 +81,66 @@ int (mouse_test_packet)(uint32_t cnt) {
 
   return 0;
 }
-
+extern int timer_counter;
 int (mouse_test_async)(uint8_t idle_time) {
-    /* To be completed */
-    printf("%s(%u): under construction\n", __func__, idle_time);
+    uint8_t bit_mouse=1;
+  uint8_t bit_timer=2;
+
+
+  mouse_enable_data_reporting(); 
+  timer_subscribe_int(&bit_timer);
+  if(mouse_subscribe(&bit_mouse)!=0){
+    printf("error subscribing");
     return 1;
+  }
+  uint32_t irq_set_mouse = BIT(bit_mouse);
+  uint32_t irq_set_timer = BIT(bit_timer);
+  message msg;
+  int pic_status;
+ while (timer_counter <= idle_time*60) {
+        int r;
+        
+        if ((r = driver_receive(ANY, &msg, &pic_status)) != 0) {
+        printf("driver_receive failed with: %d", r);
+        }
+        if (is_ipc_notify(pic_status)) {
+        switch (_ENDPOINT_P(msg.m_source)) {
+
+            case HARDWARE: {
+
+            if (msg.m_notify.interrupts & irq_set_mouse) {
+                mouse_ih();
+                if (flag) {
+                  mouse_print_packet(&mouse_packet);
+                  
+                }
+                timer_counter=0;
+                
+              }
+              if(msg.m_notify.interrupts & irq_set_timer){
+
+                timer_int_handler();
+          
+              }
+
+            break;
+            }
+
+            default: break;
+        }
+        }
+
+
+
+  }
+  mouse_unsubscribe();
+  mouse_disable_data_reporting();
+  return 0;
+
+
+
+
+
 }
 
 int (mouse_test_gesture)(uint8_t x_len, uint8_t tolerance) {

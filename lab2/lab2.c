@@ -44,6 +44,7 @@ uint8_t timer_config;  //para guardar a configuraçao do timer
 }
 
 int(timer_test_time_base)(uint8_t timer, uint32_t freq) {
+  if(freq<19) return 1;
   return timer_set_frequency(timer, freq);
 }
 
