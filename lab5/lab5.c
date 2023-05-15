@@ -7,8 +7,11 @@
 #include "videocard.h"
 #include "keyboard.h"
 #include "i8042.h"
-// Any header files included below this line should have been created by you
 
+///
+
+// Any header files included below this line should have been created by you
+extern vbe_mode_info_t info;
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -45,15 +48,17 @@ extern int scan_code[2];
 int i = 0;
 
 int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,uint16_t width, uint16_t height, uint32_t color) {
-    if(videographics_init(mode)!=OK){
-      return 1;
-    }
-  if(mappVm(mode)){
+    if(mappVm(mode)){
     printf("mapping error\n");
     return 1;
   }
-    vg_draw_rectangle(x,y,width,height,color);
+  videographics_init(mode);    
+      
 
+    
+    
+
+    vg_draw_rectangle(x,y,width,height,color);
     uint8_t bit_no;
   if(kbc_Subscribe(&bit_no)!= OK)
     return 1;
@@ -100,10 +105,77 @@ int(video_test_rectangle)(uint16_t mode, uint16_t x, uint16_t y,uint16_t width, 
 
 
 int(video_test_pattern)(uint16_t mode, uint8_t no_rectangles, uint32_t first, uint8_t step) {
-  /* To be completed */
-  printf("%s(0x%03x, %u, 0x%08x, %d): under construction\n", __func__,
-         mode, no_rectangles, first, step);
-  return 1;
+  #define MACRO_DIRECT_COLOR_MODE 0x06
+    if(mappVm(mode)){
+      return 1;
+    }
+    videographics_init(mode);
+    int divx = info.XResolution/no_rectangles;
+    int divy = info.YResolution/no_rectangles;
+      for(int row = 0 ; row<no_rectangles;row++){
+      for(int col = 0 ; col <no_rectangles ; col++){
+        if (info.MemoryModel != MACRO_DIRECT_COLOR_MODE) {
+          //indexed
+          uint32_t color = (first + (row * no_rectangles + col) * step) % (1 << info.BitsPerPixel) ;
+          vg_draw_rectangle(col*divx,row*divy,divx,divy,color);
+        }
+        else{
+          // direct
+          uint32_t red = (R(first) + col * step) % (1 << info.RedMaskSize) ;
+          uint32_t green = (G(first) + row * step) % (1 << info.GreenMaskSize) ;
+          uint32_t blue = (B(first) + (col + row) * step) % (1 << info.BlueMaskSize) ;
+          uint32_t color = (red <<info.RedFieldPosition)| (green << info.GreenFieldPosition)| (blue <<info.BlueFieldPosition);
+          vg_draw_rectangle(col*divx,row*divy,divx,divy,color);
+        }
+      }
+    }
+
+
+
+
+
+  uint8_t bit_no;
+  if(kbc_Subscribe(&bit_no)!= OK)
+    return 1;
+
+  uint32_t irq_set = BIT(bit_no);
+
+  message msg;
+  
+  int ipc_status;
+  int r;
+  while( scan_code[0]!=0x81) { /* You may want to use a different condition */
+    /* Get a request message. */
+    
+    if ( (r = driver_receive(ANY, &msg, &ipc_status)) != OK ) { 
+        printf("driver_receive failed with: %d", r);
+        continue;
+    }
+    if (is_ipc_notify(ipc_status)) { /* received notification */
+        switch (_ENDPOINT_P(msg.m_source)) {
+            case HARDWARE: /* hardware interrupt notification */				
+                if (msg.m_notify.interrupts & irq_set) { /* subscribed interrupt */
+                  kbc_ih();
+                if(scan_code[i] == TWO_BYTES){
+                  i++;
+                  continue;
+                }
+                i=0;
+
+                 }
+                break;
+            default:
+                break; /* no other notifications expected: do nothing */	
+        }
+    } else { /* received a standard message, not a notification */
+       /* no standard messages expected: do nothing */
+    }
+
+ }
+  if(kbc_Unsubscribe() != 0)
+    return 1;
+    vg_exit();
+  return 0;
 }
 
 int(video_test_xpm)(xpm_map_t xpm, uint16_t x, uint16_t y) {

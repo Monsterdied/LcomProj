@@ -6,6 +6,13 @@
         "xstring": "c",
         "xutility": "c",
         "iterator": "c",
-        "string": "c"
+        "string": "c",
+        "chrono": "c",
+        "xlocale": "c",
+        "__locale": "c",
+        "algorithm": "c",
+        "format": "c",
+        "xiosbase": "c",
+        "ios": "c"
     }
 }

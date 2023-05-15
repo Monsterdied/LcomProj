@@ -42,6 +42,8 @@ int main(int argc, char *argv[]) {
 
 int mainloop() {
     enum GameState state=MENU;
+
+    // first argument is y and secon is x 
     char arena[15][30]={
                      "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
                      "H__________________B_________H",

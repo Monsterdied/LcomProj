@@ -53,10 +53,10 @@ void draw( struct ArenaModel model){
     drawBombs(arena, model);
     drawPlayers(arena, model);
 
-    for (int i=0;i<15;i++) {
+    for (int i=0;i<30;i++) {
         printf("\n");
-        for(int j=0;j<30;j++)
-            printf("%c",arena[i][j]);
+        for(int j=0;j<15;j++)
+            printf("%c",arena[j][i]);
 
     }
 }

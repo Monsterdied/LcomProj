@@ -8,31 +8,31 @@ struct ArenaModel  loadArena(char pString[15][30]){
     model.nBombs=0;
     model.nBricks=0;
     model.nPowerUps=0;
-    for (int i=0;i<15;i++) {
-        for (int j=0;j<30;j++) {
-            if(pString[i][j]=='H'){
+    for (int i=0;i<30;i++) {
+        for (int j=0;j<15;j++) {
+            if(pString[j][i]=='H'){
                 model.walls[model.nWalls].position.x=i;
                 model.walls[model.nWalls].position.y=j;
 
                 model.nWalls++;
             }
-            if(pString[i][j]=='h'){
+            if(pString[j][i]=='h'){
                 model.bricks[model.nBricks].position.x=i;
                 model.bricks[model.nBricks].position.y=j;
                 model.nBricks++;
             }
-            if(pString[i][j]=='P'){
+            if(pString[j][i]=='P'){
                 model.powerUps[model.nPowerUps].position.x=i;
                 model.powerUps[model.nPowerUps].position.y=j;
                 model.powerUps[model.nPowerUps].type=BOMB;
                 model.nPowerUps++;
             }
-            if(pString[i][j]=='O'){
+            if(pString[j][i]=='O'){
                 model.bombs[model.nBombs].position.x=i;
                 model.bombs[model.nBombs].position.y=j;
                 model.nBombs++;
             }
-            if(pString[i][j]=='B'){
+            if(pString[j][i]=='B'){
                 model.players[0].position.x=i;
                 model.players[0].position.y=j;
                 model.players[0].range=1;
@@ -44,7 +44,7 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.players[0].movementcooldown=0;
                 model.players[0].bombcooldown=0;
             }
-            if(pString[i][j]=='b'){
+            if(pString[j][i]=='b'){
                 model.players[1].position.x=i;
                 model.players[1].position.y=j;
                 model.players[1].range=1;
