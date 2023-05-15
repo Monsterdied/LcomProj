@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "lab3.h": "c",
+        "lcf.h": "c",
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "iterator": "c",
+        "string": "c",
+        "chrono": "c",
+        "xlocale": "c",
+        "__locale": "c",
+        "algorithm": "c",
+        "format": "c",
+        "xiosbase": "c",
+        "ios": "c"
+    }
+}

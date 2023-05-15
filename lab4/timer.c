@@ -6,40 +6,40 @@
 #include "i8254.h"
 #define READ_FOUR_LSB 0x0F
 static int hook_id = 0;
-int counter = 0;
+int timer_counter = 0;
 
 
 int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
-  uint32_t rbcommand = TIMER_RB_CMD | TIMER_RB_COUNT_ | TIMER_RB_SEL(timer);
-  sys_outb(TIMER_CTRL,rbcommand);
+  uint32_t rb_comm = TIMER_RB_CMD | BIT(5) | BIT(timer + 1);
+  sys_outb(TIMER_CTRL, rb_comm);
 
-  uint8_t config;
-  timer_get_conf(timer,&config);
-  config = config & READ_FOUR_LSB;
-  config = config | TIMER_LSB_MSB;
+  uint8_t conf = 0;
+  timer_get_conf(timer, &conf);
+  conf &= READ_FOUR_LSB;
+  conf |= TIMER_LSB_MSB;
 
-  switch (timer){
-    case 0: config |= TIMER_SEL0; break;
-    case 1: config|= TIMER_SEL1; break;
-    case 2: config |= TIMER_SEL2; break;
+  switch (timer) {
+    case 0: conf |= TIMER_SEL0; break;
+    case 1: conf |= TIMER_SEL1; break;
+    case 2: conf |= TIMER_SEL2; break;
     default: return 1;
   }
 
-  sys_outb(TIMER_CTRL,config);
+  sys_outb(TIMER_CTRL, conf);
 
-  uint16_t FREQ = TIMER_FREQ / freq;
-  uint8_t lsb =0, msb =0;
+  uint16_t new_clk = TIMER_FREQ/freq;
 
-  util_get_LSB(FREQ,&lsb);
-  util_get_MSB(FREQ,&msb);
+  uint8_t lsb = 0, msb = 0;
 
+  util_get_LSB(new_clk, &lsb);
+  util_get_MSB(new_clk, &msb);
 
-  sys_outb(TIMER_0+timer,lsb); 
-  sys_outb(TIMER_0+timer, msb); 
+  sys_outb(TIMER_0 + timer, lsb); //LSB
+  sys_outb(TIMER_0 + timer, msb); //MSB
+
 
   return 0;
 }
-
 
 
 
@@ -62,7 +62,7 @@ int (timer_unsubscribe_int)() {
 }
 
 void (timer_int_handler)() {
-  counter++;
+  timer_counter++;
 }
 
 int (timer_get_conf)(uint8_t timer, uint8_t *st) {
