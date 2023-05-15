@@ -8,5 +8,6 @@ void Game(struct ArenaModel model, enum GameState* state){
         draw( model);
         timeteout--;
     }
+    *state=EXIT;
 
 }

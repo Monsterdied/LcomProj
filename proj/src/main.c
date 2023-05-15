@@ -13,7 +13,6 @@
 #include "load.h"
 #include "draw.h"
 #include "models/models.h"
-#include "rtc.h"
 
 
 int main(int argc, char *argv[]) {
@@ -40,7 +39,7 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-int mainloop() {
+int (proj_main_loop)() {
     enum GameState state=MENU;
 
     // first argument is y and secon is x 
