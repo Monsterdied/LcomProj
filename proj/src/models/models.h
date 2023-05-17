@@ -35,13 +35,16 @@ struct Bomb {
 };
 struct Player {
     enum Direction direction;
+    enum Motion State;
     struct Position position;
     xpm_image_t Left[3] ;
     xpm_image_t Right[3] ;
     xpm_image_t Up[3] ;
     xpm_image_t Down[3];
-    enum Motion State;
+    int numberOfImages;
     int currentXpm;
+    float timeUntilNextXpm;
+    float coldownBetweenXpms;
     int lives;
     int bombs;
     int bombcooldown;
