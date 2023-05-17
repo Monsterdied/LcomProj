@@ -13,6 +13,7 @@
 #include "load.h"
 #include "draw.h"
 #include "models/models.h"
+#include "rtc.h"
 
 
 int main(int argc, char *argv[]) {
@@ -40,49 +41,37 @@ int main(int argc, char *argv[]) {
 }
 
 int (proj_main_loop)() {
-    enum GameState state=MENU;
-
-    // first argument is y and secon is x 
-    char arena[15][30]={
-                     "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
-                     "H__________________B_________H",
-                     "H____________________________H",
-                     "H____________________________H",
-                     "H___HHHH_____________________H",
-                     "H____________________________H",
-                     "H____________________________H",
-                     "H_____________HHHHH__________H",
-                     "H____________________________H",
-                     "H____________________________H",
-                     "H____________________________H",
-                     "H___HHHH____________b________H",
-                     "H____________________________H",
-                     "H____________________________H",
-                     "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
-    };
-    struct ArenaModel model=loadArena(arena);
-
-
-    load_xpms();
-
-    while(state!=EXIT){
-        switch (state){
-            case MENU:
-                model=Menu(&state);
-                break;
-            case GAME:
-                Game(model,&state);
-                break;
-         case GAMEOVER:
-                state=EXIT;
-                //state=gameOver(state);
-                break;    
-            case EXIT:
-                break;
-        }
+    // Initialize graphics mode (replace MODE_XXXX with the desired video mode)
+    if (vg_init_new(0X14C) != 0) {
+        printf("Failed to initialize graphics mode.\n");
+        return 1;
     }
 
+    // Map video RAM
+    if (map_vram(0X14C) != 0) {
+        printf("Failed to map video RAM.\n");
+        return 1;
+    }
 
+    // Draw a rectangle
+    uint16_t x = 0;     
+    uint16_t y = 0;     
+    uint16_t width = 1151; 
+    uint16_t height = 863;
+    uint32_t color = 0xFFFFFF; 
+
+    if (vg_draw_rectangle(x, y, width, height, color) != 0) {
+        printf("Failed to draw rectangle.\n");
+        return 1;
+    }
+
+    // Update the screen to show the changes
+    if (vg_update() != 0) {
+        printf("Failed to update the screen.\n");
+        return 1;
+    }
+
+    sleep(5);
 
     return 0;
 }

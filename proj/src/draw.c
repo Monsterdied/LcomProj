@@ -59,8 +59,8 @@ int (load_xpms)(){
     xpm_load(walkright2black_xpm, XPM_8_8_8, &bomberman_right_wallking_2_black);
 
 
-    
     return 0;
+
 }                
 
 void (drawWalls)(char** arena, struct ArenaModel model){

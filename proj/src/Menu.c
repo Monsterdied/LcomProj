@@ -1,7 +1,10 @@
 #include "Menu.h"
 #include "models/models.h"
 #include "load.h"
+#include "keyboard.h"
 
+int i;
+extern int scan_code[2];
 
 struct ArenaModel Menu(enum GameState* state){
     char arena[15][30]={
