@@ -1,0 +1,6653 @@
+menu
+game
+drawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHHdrawGame
+drawArena
+drawArena1
+model x 0 walls y0 
+model x 0 walls y1 
+model x 0 walls y2 
+model x 0 walls y3 
+model x 0 walls y4 
+model x 0 walls y5 
+model x 0 walls y6 
+model x 0 walls y7 
+model x 0 walls y8 
+model x 0 walls y9 
+model x 0 walls y10 
+model x 0 walls y11 
+model x 0 walls y12 
+model x 0 walls y13 
+model x 0 walls y14 
+model x 1 walls y0 
+model x 1 walls y14 
+model x 2 walls y0 
+model x 2 walls y14 
+model x 3 walls y0 
+model x 3 walls y14 
+model x 4 walls y0 
+model x 4 walls y4 
+model x 4 walls y11 
+model x 4 walls y14 
+model x 5 walls y0 
+model x 5 walls y4 
+model x 5 walls y11 
+model x 5 walls y14 
+model x 6 walls y0 
+model x 6 walls y4 
+model x 6 walls y11 
+model x 6 walls y14 
+model x 7 walls y0 
+model x 7 walls y4 
+model x 7 walls y11 
+model x 7 walls y14 
+model x 8 walls y0 
+model x 8 walls y14 
+model x 9 walls y0 
+model x 9 walls y14 
+model x 10 walls y0 
+model x 10 walls y14 
+model x 11 walls y0 
+model x 11 walls y14 
+model x 12 walls y0 
+model x 12 walls y14 
+model x 13 walls y0 
+model x 13 walls y14 
+model x 14 walls y0 
+model x 14 walls y7 
+model x 14 walls y14 
+model x 15 walls y0 
+model x 15 walls y7 
+model x 15 walls y14 
+model x 16 walls y0 
+model x 16 walls y7 
+model x 16 walls y14 
+model x 17 walls y0 
+model x 17 walls y7 
+model x 17 walls y14 
+model x 18 walls y0 
+model x 18 walls y7 
+model x 18 walls y14 
+model x 19 walls y0 
+model x 19 walls y14 
+model x 20 walls y0 
+model x 20 walls y14 
+model x 21 walls y0 
+model x 21 walls y14 
+model x 22 walls y0 
+model x 22 walls y14 
+model x 23 walls y0 
+model x 23 walls y14 
+model x 24 walls y0 
+model x 24 walls y14 
+model x 25 walls y0 
+model x 25 walls y14 
+model x 26 walls y0 
+model x 26 walls y14 
+model x 27 walls y0 
+model x 27 walls y14 
+model x 28 walls y0 
+model x 28 walls y14 
+model x 29 walls y0 
+model x 29 walls y1 
+model x 29 walls y2 
+model x 29 walls y3 
+model x 29 walls y4 
+model x 29 walls y5 
+model x 29 walls y6 
+model x 29 walls y7 
+model x 29 walls y8 
+model x 29 walls y9 
+model x 29 walls y10 
+model x 29 walls y11 
+model x 29 walls y12 
+model x 29 walls y13 
+model x 29 walls y14 
+drawArena2
+
+HHHHHHHHHHHHHHH
+H_____________H
+H_____________H
+H_____________H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H___H______H__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+H______H______H
+HP____________H
+H__________p__H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+H_____________H
+HHHHHHHHHHHHHHH

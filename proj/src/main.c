@@ -38,6 +38,9 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
+extern int scan_code[2];
+int i = 0;
+
 
 int (proj_main_loop)() {
     enum GameState state=MENU;
@@ -68,9 +71,11 @@ int (proj_main_loop)() {
     while(state!=EXIT){
         switch (state){
             case MENU:
+                    printf("menu\n");
                 model=Menu(&state);
                 break;
             case GAME:
+                                printf("game\n");
                 Game(model,&state);
                 break;
          case GAMEOVER:
