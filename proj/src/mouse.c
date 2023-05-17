@@ -1,130 +1,164 @@
 #include "mouse.h"
+#include "i8042.h"
+#include <lcom/lcf.h>
 
-int hook_id_mouse=12;
+int mouse_id = 3;
+struct packet mouse_packet;
+int mouse_byte_number = 0;
+bool flag_mouse = true;
+bool can_read_mouse = true;
+int (mouse_Subscribe)(uint8_t *bit_no){
+    *bit_no = mouse_id;
+    return sys_irqsetpolicy(12,IRQ_REENABLE | IRQ_EXCLUSIVE ,&mouse_id);//12
+}
+int (mouse_Unsubscribe)(){
+    return sys_irqrmpolicy(&mouse_id);
+}
 
-struct packet data;  
-int mouse_i;
-int mouse_flag = false;
-int(mouse_subscribe_int)(uint8_t *bit_no) {
-  *bit_no = hook_id_mouse;
-  return sys_irqsetpolicy(12, IRQ_REENABLE | IRQ_EXCLUSIVE, &hook_id_mouse);
+int (util_sys_inb_copy)(int port, uint8_t *value) {
+  uint32_t tmp_value = 0x00;
+  int ret = sys_inb(port , &tmp_value);
+  *value = tmp_value;
+  return ret;
 }
-int(mouse_unsubscribe_int)() {
-  return sys_irqrmpolicy(&hook_id_mouse);
+void update_mouse(Mouse *mouse ,vbe_mode_info_t vmi){
+  if(!mouse_packet.y_ov){
+                        //printf("y:%d,",mouse_packet.delta_y);
+    mouse->y = mouse->y - mouse_packet.delta_y;
+    if(mouse->y + mouse->height >= vmi.YResolution){
+      mouse->y = vmi.YResolution - mouse->height;
+    }
+
+    if(mouse->y < 0){
+      mouse->y = 0;
+    }
+  }
+
+  if(!mouse_packet.x_ov){
+    //printf("x:%d\n",mouse_packet.delta_x);
+    mouse->x = mouse->x + mouse_packet.delta_x;
+    if(mouse->x + mouse->width >= vmi.XResolution){
+      mouse->x = vmi.XResolution - mouse->width; 
+    }
+    if(mouse->x < 0){
+      mouse->x = 0;
+    }
+  }
 }
-int(mouse_disable_data_reporting)() {
-  return mouse_write_cmd(DIS_DATA_REP);
+
+void (mouse_ih_new)( Mouse *mouse , const vbe_mode_info_t vmi) {
+    uint8_t st;
+    if(mouse_get_status(&st)!= OK){
+        return;
+    }
+    if (!(st & FULL_OUT_BUFFER) || (st & (PARITY_ERROR | TIMEOUT_ERROR))) { 
+      printf("not good interrupt");
+        return ;
+    }
+    uint8_t output = 0;
+    mouse_read_buffer(KBC_OUT_CMD,&output );
+        mouse_packet.bytes[mouse_byte_number] = output;
+        //printf("%d      %d         %d\n",mouse_byte_number,mouse_packet.bytes[mouse_byte_number] ,output);
+
+    if (flag_mouse &&(output & FIRST_MOUSE_BIT)) {
+        flag_mouse = false;
+        mouse_packet.lb = output & LMOUSE_BUTTON;
+        mouse_packet.rb = output & RMOUSE_BUTTON;
+        mouse_packet.mb = output & MMOUSE_BUTTON;
+        mouse_packet.x_ov = output & X_OVERFLOW;
+        mouse_packet.y_ov = output & Y_OVERFLOW;
+    }
+    if(mouse_byte_number == 1){
+        mouse_packet.delta_x = output;
+        if (mouse_packet.bytes[0] & MOUSE_MSB_X){
+          mouse_packet.delta_x |= 0xFF00;//to be negative
+        } 
+        
+    }
+    if(mouse_byte_number == 2){
+        mouse_packet.delta_y = output;
+        if (mouse_packet.bytes[0] & MOUSE_MSB_Y){
+          mouse_packet.delta_y |= 0xFF00;
+        }
+        mouse_byte_number = -1;
+        flag_mouse = true;
+        update_mouse(mouse,vmi);
+    }
+    mouse_byte_number++;
 }
-int(mouse_get_status)(uint8_t *st){
-  return util_sys_inb(STATUS_REG, st);
+
+int mouse_get_status(uint8_t *st){
+    return util_sys_inb_copy(KBC_STATUS_REG,st);
 }
+
 int(mouse_read_buffer)(uint8_t port, uint8_t *output) {
 
-  int timeout = 0;
-  uint8_t st;
+  int out = 0;
+  uint8_t status;
 
-  while (timeout < 3) {
+  while (out < 3) {
 
-    mouse_get_status(&st);
-
-    if ((st & (OBF | AUX)) && !((st & (PARITY | TIME_OUT)))) {
-      util_sys_inb(port, output);
+    mouse_get_status(&status);
+  
+    if (((status & FULL_OUT_BUFFER) && ( status & AUX  )) && !((status & (PARITY_ERROR | TIMEOUT_ERROR)))) {
+      util_sys_inb_copy(port, output);
       return 0;
     }
-    else return -1;
-
-    tickdelay(micros_to_ticks(DELAY_US2));
-    timeout++;
+    printf("ticking to check\n");
+    tickdelay(micros_to_ticks(10000));
+    out++;
   }
 
   return -1;
 }
+
+
 int(mouse_write_cmd)(uint8_t cmdb) {
 
-  int timeout = 0;
-  uint8_t st;
+  int out = 0;
+  uint8_t status;
 
-  while (timeout < 3) {
+  while (out < 3) {
 
-    if (mouse_get_status(&st) != 0) {
+    if (mouse_get_status(&status) != 0) {
+      printf("error geting status");
+      return 1;
+    }
+
+    if (!(status & FULL_IN_BUFFER)) {
+      sys_outb(MOUSE_CMD_REG, WRITE_BYTE_TO_MOUSE);
+    }
+
+
+    if (mouse_get_status(&status) != 0) {
       fprintf(stderr, "Error getting status while issuing command!\n");
       return -1;
     }
 
-    if (!(st & IBF)) {
-      sys_outb(MOUSE_CMD_REG, WRITE_AUX);
-    }
-
-
-    if (mouse_get_status(&st) != 0) {
-      fprintf(stderr, "Error getting status while issuing command!\n");
-      return -1;
-    }
-
-    if (!(st & IBF)) {
+    if (!(status & FULL_IN_BUFFER)) {
       sys_outb(MOUSE_ARGS, cmdb);
     }
 
-    tickdelay(micros_to_ticks(DELAY_US2));
+    tickdelay(micros_to_ticks(25000));
 
     uint8_t ack_byte;
-    util_sys_inb(OUT_BUF, &ack_byte);
+    util_sys_inb_copy(OUT_BUF, &ack_byte);
 
-    if (ack_byte == MOUSE_OK) return 0;
+    if (ack_byte == MOUSE_OK){
+      return 0;
+    } 
 
-    timeout++;
+    out++;
   }
-
   return -1;
 }
-void(mouse_ih)() {
+int (mouse_disable_data_reporting)(){
+    if(mouse_write_cmd(DISABLE_DATA_REPORTING_CMD)!= OK)
+        return 1;
+    return 0;
 
-  uint8_t output, st;
-  mouse_get_status(&st);
-
-  if (st & OBF && !(st & (PARITY | TIME_OUT))) {
-
-    if (mouse_read_buffer(OUT_BUF, &output) != 0) {
-      fprintf(stderr, "Error reading from buffer in mouse!\n");
-      return;
-    }
-
-    data.bytes[mouse_i] = output;
-    
-    if (mouse_i == 0 && !(output & FIRST_BYTE)) {
-      while (mouse_read_buffer(OUT_BUF, &output) == 0) {
-        continue;
-      }
-      return;
-    }
-
-    switch (mouse_i) {
-      case 0:
-        data.lb = output & BIT(0);
-        data.rb = output & BIT(1);
-        data.mb = output & BIT(2);
-
-        data.x_ov = output & BIT(6);
-        data.y_ov = output & BIT(7);
-        break;
-
-      case 1:
-        data.delta_x = output;
-        if (data.bytes[0] & BIT(4)) data.delta_x |= 0xFF00;
-        break;
-        
-      case 2:
-        data.delta_y = output;
-        if (data.bytes[0] & BIT(5)) data.delta_y |= 0xFF00;
-        break;
-    }
-
-    mouse_i++;
-
-    if (mouse_i == 3) {
-      mouse_flag = true;
-      mouse_i = 0;
-    }
-
-  }
 }
+
+
+
+

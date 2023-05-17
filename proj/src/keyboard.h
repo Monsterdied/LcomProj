@@ -1,24 +1,11 @@
-#ifndef _KBD_H_
-#define _KBD_H_
-
 #include <lcom/lcf.h>
-#include <stdint.h>
-#include <minix/sysutil.h>
-#include "i8042.h"
 
-int (keyboard_subscribe_interrupts)(uint8_t *bit_kbd);
-
-int (keyboard_unsubscribe_interrupts)();
-
-int (check_status)(uint8_t status);
-
-int (keyboard_reenable_interrupts)();
-
+int (kbc_Subscribe)(uint8_t *bit_no);
+int (kbc_Unsubscribe)();
+int (kbc_error_checking)(uint8_t status);
+int (writing_command_kbc)(int port ,uint8_t cmdb);
+int (reading_from_kbc)(uint8_t *data);
+int(kbd_reenable_ints)();
+int(keyboard_read_out_buffer)(uint8_t *output);
+int(keyboard_get_status)(uint8_t *st);
 void (kbc_ih)();
-
-extern int hook_id_kbc;
-extern uint8_t data[2];
-extern int kbc_i;
-extern bool flag;
-
-#endif /*_KBD_H_*/
