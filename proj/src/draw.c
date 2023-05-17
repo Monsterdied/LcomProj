@@ -65,30 +65,31 @@ int (load_xpms)(){
 
 void (drawWalls)(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){
-        arena[model.walls[i].position.x][model.walls[i].position.y]=  'H';
+        printf("model x %d walls y%d \n",model.walls[i].position.x,model.walls[i].position.y );
+        arena[model.walls[i].position.y][model.walls[i].position.x]=  'H';
     }
 }
 void drawBricks(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nBricks;i++){
-        arena[model.bricks[i].position.x][model.bricks[i].position.y]=  'h';
+        arena[model.bricks[i].position.y][model.bricks[i].position.x]=  'h';
     }
 }
 void drawPowerUps(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nPowerUps;i++){
-        arena[model.powerUps[i].position.x][model.powerUps[i].position.y]=  'P';
+        arena[model.powerUps[i].position.y][model.powerUps[i].position.x]=  'P';
     }
 }
 void drawBombs(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nBombs;i++){
-        arena[model.bombs[i].position.x][model.bombs[i].position.y]=  'B';
+        arena[ model.bombs[i].position.y][model.bombs[i].position.x]=  'B';
     }
 }
 void (drawPlayers)(char** arena, struct ArenaModel model){
     for(int i=0;i<2;i++){
 //        printf("\n%d\n",model.players[i].id);
         if(model.players[i].id==0)
-            arena[model.players[i].position.x][model.players[i].position.y]='P';
-        else arena[model.players[i].position.x][model.players[i].position.y]='p';
+            arena[model.players[i].position.y][ model.players[i].position.x]='P';
+        else arena[model.players[i].position.y][model.players[i].position.x]='p';
     }
 }
 char (**getemptyArena()) {
@@ -102,8 +103,11 @@ char (**getemptyArena()) {
     return arena;
 }
 void draw( struct ArenaModel model){
+            printf("drawArena\n");
     char** arena=getemptyArena();
+                printf("drawArena1\n");
     drawWalls(arena, model);
+    printf("drawArena2\n");
     drawBricks(arena, model);
     drawPowerUps(arena, model);
     drawBombs(arena, model);
