@@ -8,6 +8,7 @@
 #include <malloc.h>
 #include "models/models.h"
 #include "video_gr.h"
+#include "mouse.h"
 //bombs and bricks etc
 #include "models/bomb/bomb1.xpm"
 #include "models/bomb/bomb2.xpm"
@@ -69,6 +70,14 @@
 
 #include "models/explosions/explosion1top.xpm"
 #include "models/explosions/explosion2top.xpm"
+//menu
+#include "models/menu/menuIcon.xpm"
+#include "models/menu/not_selected_continue.xpm"
+#include "models/menu/not_selected_exit.xpm"
+#include "models/menu/not_selected_start.xpm"
+#include "models/menu/selected_continue.xpm"
+#include "models/menu/selected_exit.xpm"
+#include "models/menu/selected_start.xpm"
 
 
 
@@ -85,11 +94,12 @@
 
 
 int (load_xpms)();
-void draw( struct ArenaModel model);
-char (**getemptyArena());
+void (draw)( struct ArenaModel model);
+char** (getemptyArena());
 void (drawPlayers)(char** arena, struct ArenaModel model);
-void drawBombs(char** arena, struct ArenaModel model);
-void drawPowerUps(char** arena, struct ArenaModel model);
-void drawBricks(char** arena, struct ArenaModel model);
+void (drawBombs)(char** arena, struct ArenaModel model);
+void (drawPowerUps)(char** arena, struct ArenaModel model);
+void (drawBricks)(char** arena, struct ArenaModel model);
 void (drawWalls)(char** arena, struct ArenaModel model);
+void (draw_menu)(struct MenuModel model, Mouse mouse);
 #endif //UNTITLED10_DRAW_H

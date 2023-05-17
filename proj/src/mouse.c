@@ -7,6 +7,7 @@ struct packet mouse_packet;
 int mouse_byte_number = 0;
 bool flag_mouse = true;
 bool can_read_mouse = true;
+extern vbe_mode_info_t vmi;
 int (mouse_Subscribe)(uint8_t *bit_no){
     *bit_no = mouse_id;
     return sys_irqsetpolicy(12,IRQ_REENABLE | IRQ_EXCLUSIVE ,&mouse_id);//12
@@ -21,7 +22,7 @@ int (util_sys_inb_copy)(int port, uint8_t *value) {
   *value = tmp_value;
   return ret;
 }
-void update_mouse(Mouse *mouse ,vbe_mode_info_t vmi){
+void (update_mouse)(Mouse *mouse){
   if(!mouse_packet.y_ov){
                         //printf("y:%d,",mouse_packet.delta_y);
     mouse->y = mouse->y - mouse_packet.delta_y;
@@ -46,7 +47,7 @@ void update_mouse(Mouse *mouse ,vbe_mode_info_t vmi){
   }
 }
 
-void (mouse_ih_new)( Mouse *mouse , const vbe_mode_info_t vmi) {
+void (mouse_ih_new)( Mouse *mouse ) {
     uint8_t st;
     if(mouse_get_status(&st)!= OK){
         return;
@@ -82,12 +83,12 @@ void (mouse_ih_new)( Mouse *mouse , const vbe_mode_info_t vmi) {
         }
         mouse_byte_number = -1;
         flag_mouse = true;
-        update_mouse(mouse,vmi);
+        update_mouse(mouse);
     }
     mouse_byte_number++;
 }
 
-int mouse_get_status(uint8_t *st){
+int (mouse_get_status)(uint8_t *st){
     return util_sys_inb_copy(KBC_STATUS_REG,st);
 }
 

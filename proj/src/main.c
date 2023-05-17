@@ -43,6 +43,11 @@ int i = 0;
 
 
 int (proj_main_loop)() {
+
+
+    load_xpms();
+
+
     enum GameState state=MENU;
 
     // first argument is y and secon is x 

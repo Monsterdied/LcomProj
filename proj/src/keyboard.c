@@ -1,5 +1,6 @@
 #include "keyboard.h"
-#include "i8042.h"
+
+
 #define DELAY_US    10000
 int scan_code[2];
 

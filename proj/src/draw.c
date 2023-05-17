@@ -22,7 +22,14 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 bomb1,bomb2,bomb3,
                 brick,
                 wall,
-                mouse;
+                mouse_icon,
+                menuIcon,
+                menu_start_button_selected,
+                menu_start_button_not_selected,
+                menu_exit_button_selected,
+                menu_exit_button_not_selected,
+                menu_continue_button_selected,
+                menu_continue_button_not_selected;
 
 int (load_xpms)(){
     //white Bomberman
@@ -59,9 +66,22 @@ int (load_xpms)(){
     xpm_load(walkright2black_xpm, XPM_8_8_8, &bomberman_right_wallking_2_black);
 
 
+    xpm_load(menuIcon_xpm,XPM_8_8_8,&menuIcon);
+    xpm_load(selected_continue_xpm,XPM_8_8_8,&menu_continue_button_selected);
+    xpm_load(not_selected_continue_xpm,XPM_8_8_8,&menu_continue_button_not_selected);
+    xpm_load(selected_exit_xpm,XPM_8_8_8,&menu_exit_button_selected);
+    xpm_load(not_selected_exit_xpm,XPM_8_8_8,&menu_exit_button_not_selected);
+    xpm_load(selected_start_xpm,XPM_8_8_8,&menu_start_button_selected);
+    xpm_load(not_selected_start_xpm,XPM_8_8_8,&menu_start_button_not_selected);
+
+
+    xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
+
+
     
     return 0;
-}                
+}
+                
 
 void (drawWalls)(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){
@@ -101,6 +121,18 @@ char (**getemptyArena()) {
         }
     }
     return arena;
+}
+
+
+void (draw_menu)(struct MenuModel model,Mouse mouse){
+    if(model.selectedOption==0){
+        drawXpm8_8_8(menu_start_button_selected,150,400);
+        drawXpm8_8_8(menu_exit_button_not_selected,150,500);
+        drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+    }else if(model.selectedOption==1){
+        drawXpm8_8_8(menu_start_button_not_selected,150,400);
+        drawXpm8_8_8(menu_exit_button_selected,150,500);
+    }
 }
 void draw( struct ArenaModel model){
             printf("drawArena\n");

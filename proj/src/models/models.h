@@ -68,7 +68,6 @@ struct MenuModel {
     int selectedOption;
     int selectedLevel;
     int nlevels;
-    char levels[10][20];
-    char options[2][20];
+    int noptions;
 };
 #endif //BOMBERMAN_MODELS_H
