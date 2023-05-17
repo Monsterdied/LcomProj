@@ -13,6 +13,8 @@
         "algorithm": "c",
         "format": "c",
         "xiosbase": "c",
-        "ios": "c"
+        "ios": "c",
+        "*.xpm": "c",
+        "malloc.h": "c"
     }
 }
