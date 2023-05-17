@@ -63,7 +63,7 @@ int (proj_main_loop)() {
     struct ArenaModel model=loadArena(arena);
 
 
-
+    load_xpms();
 
     while(state!=EXIT){
         switch (state){

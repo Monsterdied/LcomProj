@@ -24,7 +24,7 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 wall,
                 mouse;
 
-void (load_xpms)(){
+int (load_xpms)(){
     //white Bomberman
     xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
     xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
@@ -60,7 +60,7 @@ void (load_xpms)(){
 
 
     
-
+    return 0;
 }                
 
 void (drawWalls)(char** arena, struct ArenaModel model){
