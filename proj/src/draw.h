@@ -9,7 +9,6 @@
 #include "models/models.h"
 #include "video_gr.h"
 //bombs and bricks etc
- to be added 
 #include "models/bomb/bomb1.xpm"
 #include "models/bomb/bomb2.xpm"
 #include "models/bomb/bomb3.xpm"
@@ -85,7 +84,7 @@
 
 
 
-
+int (load_xpms)();
 void draw( struct ArenaModel model);
 char (**getemptyArena());
 void (drawPlayers)(char** arena, struct ArenaModel model);
