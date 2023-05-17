@@ -1,4 +1,7 @@
 #pragma once
+#include <machine/int86.h>
+#include <stdint.h>
+#include <lcom/lcf.h>
  #define CHROMA_KEY_GREEN_888 0x00b140
 int (map_vram)(uint16_t mode);
 int (drawXpm)(xpm_map_t xpm,int x , int y);

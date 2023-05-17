@@ -7,13 +7,13 @@
 #include <stdio.h>
 #include <malloc.h>
 #include "models/models.h"
-
+#include "video_gr.h"
 //bombs and bricks etc
-/* to be added 
+ to be added 
 #include "models/bomb/bomb1.xpm"
 #include "models/bomb/bomb2.xpm"
 #include "models/bomb/bomb3.xpm"
-*/
+
 #include "models/brick/brick.xpm"
 #include "models/wall/wall.xpm"
 #include "models/mouse/LOL_MOUSE.xpm"
@@ -56,7 +56,6 @@
 #include "models/bomberman/rightview/white/walkright2white.xpm"
 
 //explosion
-/* to be added
 #include "models/explosions/explosion1.xpm"
 #include "models/explosions/explosion2.xpm"
 
@@ -71,7 +70,10 @@
 
 #include "models/explosions/explosion1top.xpm"
 #include "models/explosions/explosion2top.xpm"
-*/
+
+
+
+
 
 
 

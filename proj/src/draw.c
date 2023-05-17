@@ -2,10 +2,66 @@
 // Created by diogo on 22/04/2023.
 //
 
-#include <stdio.h>
-#include <malloc.h>
-#include "models/models.h"
 #include "draw.h"
+
+
+xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bomberman_down_wallking_2_white,
+                bomberman_idle_up_white,bomberman_up_wallking_1_white ,bomberman_up_wallking_2_white,
+                bomberman_idle_right_white,bomberman_right_wallking_1_white,bomberman_right_wallking_2_white ,
+                bomberman_idle_left_white,bomberman_left_wallking_1_white,bomberman_left_wallking_2_white ,
+
+
+                bomberman_idle_down_black,bomberman_down_wallking_1_black ,bomberman_down_wallking_2_black,
+                bomberman_idle_up_black,bomberman_up_wallking_1_black ,bomberman_up_wallking_2_black,
+                bomberman_idle_right_black,bomberman_right_wallking_1_black,bomberman_right_wallking_2_black ,
+                bomberman_idle_left_black,bomberman_left_wallking_1_black,bomberman_left_wallking_2_black ,
+
+                explosion_center_1,explosion_top_1,explosion_left_1,explosion_right_1,
+                explosion_center_2,explosion_top_2,explosion_left_2,explosion_right_2,
+
+                bomb1,bomb2,bomb3,
+                brick,
+                wall,
+                mouse;
+
+void (load_xpms)(){
+    //white Bomberman
+    xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
+    xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
+    xpm_load(downwalk2white_xpm, XPM_8_8_8, &bomberman_down_wallking_2_white);
+
+    xpm_load(upidlewhite_xpm, XPM_8_8_8, &bomberman_idle_up_white);
+    xpm_load(upwalk1white_xpm, XPM_8_8_8, &bomberman_up_wallking_1_white);
+    xpm_load(upwalk2white_xpm, XPM_8_8_8, &bomberman_up_wallking_2_white);
+
+    xpm_load(leftidlewhite_xpm, XPM_8_8_8, &bomberman_idle_left_white);
+    xpm_load(walkleft1white_xpm, XPM_8_8_8, &bomberman_left_wallking_1_white);
+    xpm_load(walkleft2white_xpm, XPM_8_8_8, &bomberman_left_wallking_2_white);
+
+    xpm_load(rightidlewhite_xpm, XPM_8_8_8, &bomberman_idle_right_white);
+    xpm_load(walkright1white_xpm, XPM_8_8_8, &bomberman_right_wallking_1_white);
+    xpm_load(walkright2white_xpm, XPM_8_8_8, &bomberman_right_wallking_2_white);
+
+    xpm_load(downidleblack_xpm, XPM_8_8_8, &bomberman_idle_down_black);
+    xpm_load(downwalk1black_xpm, XPM_8_8_8, &bomberman_down_wallking_1_black);
+    xpm_load(downwalk2black_xpm, XPM_8_8_8, &bomberman_down_wallking_2_black);
+
+    xpm_load(upidleblack_xpm, XPM_8_8_8, &bomberman_idle_up_black);
+    xpm_load(upwalk1black_xpm, XPM_8_8_8, &bomberman_up_wallking_1_black);
+    xpm_load(upwalk2black_xpm, XPM_8_8_8, &bomberman_up_wallking_2_black);
+
+    xpm_load(leftidleblack_xpm, XPM_8_8_8, &bomberman_idle_left_black);
+    xpm_load(walkleft1black_xpm, XPM_8_8_8, &bomberman_left_wallking_1_black);
+    xpm_load(walkleft2black_xpm, XPM_8_8_8, &bomberman_left_wallking_2_black);
+
+    xpm_load(rightidleblack_xpm, XPM_8_8_8, &bomberman_idle_right_black);
+    xpm_load(walkright1black_xpm, XPM_8_8_8, &bomberman_right_wallking_1_black);
+    xpm_load(walkright2black_xpm, XPM_8_8_8, &bomberman_right_wallking_2_black);
+
+
+    
+
+}                
 
 void (drawWalls)(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){

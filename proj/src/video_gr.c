@@ -1,6 +1,4 @@
-#include <lcom/lcf.h>
 
-#include <stdint.h>
 #include "video_gr.h"
 
 static void* membuffer;
