@@ -14,6 +14,10 @@ enum Direction {
     LEFT,
     RIGHT
 };
+enum Motion{
+    STAY,
+    MOVE
+};
 enum PowerUpType {
     BOMB,
     RANGE,
@@ -32,6 +36,12 @@ struct Bomb {
 struct Player {
     enum Direction direction;
     struct Position position;
+    xpm_image_t Left[3] ;
+    xpm_image_t Right[3] ;
+    xpm_image_t Up[3] ;
+    xpm_image_t Down[3];
+    enum Motion State;
+    int currentXpm;
     int lives;
     int bombs;
     int bombcooldown;

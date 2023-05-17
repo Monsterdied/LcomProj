@@ -109,7 +109,7 @@ int(mouse_read_buffer)(uint8_t port, uint8_t *output) {
     out++;
   }
 
-  return -1;
+  return 1;
 }
 
 
