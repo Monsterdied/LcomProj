@@ -33,6 +33,7 @@ void (update_mouse)(Mouse *mouse){
     if(mouse->y < 0){
       mouse->y = 0;
     }
+    mouse->left_click = mouse_packet.lb;
   }
 
   if(!mouse_packet.x_ov){

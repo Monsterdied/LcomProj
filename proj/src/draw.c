@@ -125,21 +125,23 @@ char (**getemptyArena()) {
 
 
 void (draw_menu)(struct MenuModel model,Mouse mouse){
+    drawXpm8_8_8(menuIcon,150,50);
+    
     if(model.selectedOption==0){
         drawXpm8_8_8(menu_start_button_selected,150,400);
         drawXpm8_8_8(menu_exit_button_not_selected,150,500);
-        drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
     }else if(model.selectedOption==1){
         drawXpm8_8_8(menu_start_button_not_selected,150,400);
         drawXpm8_8_8(menu_exit_button_selected,150,500);
+
     }
+    drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }
 void draw( struct ArenaModel model){
-            printf("drawArena\n");
     char** arena=getemptyArena();
-                printf("drawArena1\n");
+
     drawWalls(arena, model);
-    printf("drawArena2\n");
+
     drawBricks(arena, model);
     drawPowerUps(arena, model);
     drawBombs(arena, model);

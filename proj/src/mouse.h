@@ -1,6 +1,7 @@
 #include <lcom/lcf.h>
 #pragma once
 typedef struct {
+  bool left_click;
   int x,y;             /**< current sprite position */
   int width, height;   /**< sprite dimensions */
   int xspeed, yspeed;  /**< current speeds in the x and y direction */      

@@ -29,26 +29,29 @@ uint32_t irq_set_kbc;
 uint8_t bit_no_mouse;
 uint8_t bit_no_kbc;
 uint8_t bit_no_timer;
-int fr_rate = 10;
+int fr_rate = 20;
 extern int scan_code[2];
 int i;
+void (mouse_api_menu)(){
+    if(mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
+        model.selectedOption=0;
+    }else if(mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
+        model.selectedOption=1;
+    }
+}
 void (kbc_api_menu()){
-    printf("api\n");
-  if(scan_code[0] == KBC_MAKE_CODE_A){
+  if(scan_code[0] == KBC_MAKE_CODE_W){
     model.selectedOption --;
     if(model.selectedOption<0){
       model.selectedOption=model.noptions-1;
 
     }
-    printf("A\n");
-    printf(" sel %d\n",model.selectedOption);
-  }else  if(scan_code[0] == KBC_MAKE_CODE_D){
+
+  }else  if(scan_code[0] == KBC_MAKE_CODE_S){
     model.selectedOption ++;
     if(model.selectedOption>model.noptions-1){
       model.selectedOption=0;
     }
-    printf("D\n");
-    printf(" sel %d\n",model.selectedOption);
   }
 }
 struct MenuModel (get_default_Menu)(){
@@ -65,11 +68,10 @@ int get_started_on_menu(){
     mouse.height = 44;
     mouse.width = 44;
 
-    printf("get started\n");
-    if(map_vram(0x14C)){
+    if(map_vram(0x115)){
         return 1;
     }
-    if(vg_init_new(0x14C)!=OK){
+    if(vg_init_new(0x115)!=OK){
         return 1;
     }
     if(kbc_Subscribe(&bit_no_kbc) != OK)
@@ -94,11 +96,9 @@ int get_started_on_menu(){
 struct ArenaModel (Menu)(enum GameState* state){
     model=get_default_Menu();
     if(get_started_on_menu()){
-        printf("error on menu\n");
         struct ArenaModel arenamodel=loadArena(arena);
         return arenamodel;
     }
-    printf("started on menu\n");
     while(*state==MENU){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 0;        
@@ -111,7 +111,7 @@ struct ArenaModel (Menu)(enum GameState* state){
         printf("driver_receive failed with: %d", r);
         continue;
         }
-
+        
         if (is_ipc_notify(ipc_status)) { /* received notification */
             switch (_ENDPOINT_P(msg.m_source)) {
                 case HARDWARE: /* hardware interrupt notification */				
@@ -122,7 +122,7 @@ struct ArenaModel (Menu)(enum GameState* state){
                         continue;
                         }//Prints the input scancode.
                         kbc_api_menu();
-                        printf("real sel %d\n",model.selectedOption);
+        
                         i=0;
                         if(scan_code[0]==BREAK_ESC || (model.selectedOption==1  && scan_code[0]==KBC_MAKE_CODE_ENTER)){
                             *state=EXIT;
@@ -138,7 +138,15 @@ struct ArenaModel (Menu)(enum GameState* state){
                     }
 
                     if (msg.m_notify.interrupts & irq_set_mouse) {
+                    mouse_api_menu();
+
                     mouse_ih_new(&mouse);
+                    if( mouse.left_click==true && mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
+                        *state=EXIT;
+                    }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
+                        *state=GAME;
+                    }            
+
                   }
 
                     break;
