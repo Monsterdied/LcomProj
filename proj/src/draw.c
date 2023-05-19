@@ -20,9 +20,16 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 bomb1,bomb2,bomb3,
                 brick,
                 wall,
-                mouse;
+                mouse_icon,
+                menuIcon,
+                menu_start_button_selected,
+                menu_start_button_not_selected,
+                menu_exit_button_selected,
+                menu_exit_button_not_selected,
+                menu_continue_button_selected,
+                menu_continue_button_not_selected;
 
-int (load_xpms)(struct ArenaModel model){
+int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
     xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
     xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
@@ -57,24 +64,37 @@ int (load_xpms)(struct ArenaModel model){
     xpm_load(walkright2black_xpm, XPM_8_8_8, &bomberman_right_wallking_2_black);
 
                 //xpm
-                model.players[0].Left[0] = bomberman_idle_left_white;
-                model.players[0].Left[1] = bomberman_left_wallking_1_white;
-                model.players[0].Left[2] = bomberman_left_wallking_2_white;
+                model->players[0].Left[0] = bomberman_idle_left_white;
+                model->players[0].Left[1] = bomberman_left_wallking_1_white;
+                model->players[0].Left[2] = bomberman_left_wallking_2_white;
 
-                model.players[0].Right[0] = bomberman_idle_right_white;
-                model.players[0].Right[1] = bomberman_right_wallking_1_white;
-                model.players[0].Right[2] = bomberman_right_wallking_2_white;
+                model->players[0].Right[0] = bomberman_idle_right_white;
+                model->players[0].Right[1] = bomberman_right_wallking_1_white;
+                model->players[0].Right[2] = bomberman_right_wallking_2_white;
 
-                model.players[0].Up[0] = bomberman_idle_up_white;
-                model.players[0].Up[1] = bomberman_up_wallking_1_white;
-                model.players[0].Up[2] = bomberman_up_wallking_2_white;
+                model->players[0].Up[0] = bomberman_idle_up_white;
+                model->players[0].Up[1] = bomberman_up_wallking_1_white;
+                model->players[0].Up[2] = bomberman_up_wallking_2_white;
 
-                model.players[0].Down[0] = bomberman_idle_down_white;
-                model.players[0].Down[1] = bomberman_down_wallking_1_white;
-                model.players[0].Down[2] = bomberman_down_wallking_2_white;
+                model->players[0].Down[0] = bomberman_idle_down_white;
+                model->players[0].Down[1] = bomberman_down_wallking_1_white;
+                model->players[0].Down[2] = bomberman_down_wallking_2_white;
+    xpm_load(menuIcon_xpm,XPM_8_8_8,&menuIcon);
+    xpm_load(selected_continue_xpm,XPM_8_8_8,&menu_continue_button_selected);
+    xpm_load(not_selected_continue_xpm,XPM_8_8_8,&menu_continue_button_not_selected);
+    xpm_load(selected_exit_xpm,XPM_8_8_8,&menu_exit_button_selected);
+    xpm_load(not_selected_exit_xpm,XPM_8_8_8,&menu_exit_button_not_selected);
+    xpm_load(selected_start_xpm,XPM_8_8_8,&menu_start_button_selected);
+    xpm_load(not_selected_start_xpm,XPM_8_8_8,&menu_start_button_not_selected);
+
+
+    xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
+
+
     
     return 0;
-}                
+}
+                
 
 void (drawWalls)(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){
@@ -97,12 +117,17 @@ void drawBombs(char** arena, struct ArenaModel model){
         arena[ model.bombs[i].position.y][model.bombs[i].position.x]=  'B';
     }
 }
-void (drawPlayers)(char** arena, struct ArenaModel model){
-    for(int i=0;i<2;i++){
-//        printf("\n%d\n",model.players[i].id);
-        if(model.players[i].id==0)
-            arena[model.players[i].position.y][ model.players[i].position.x]='P';
-        else arena[model.players[i].position.y][model.players[i].position.x]='p';
+void (drawPlayers)(struct ArenaModel model){
+    int positionx =model.players[0].position.x * 20;
+    int positiony =model.players[0].position.y*20;
+    if(model.players[0].direction==UP){
+        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
+    }else if(model.players[0].direction==LEFT){
+        drawXpm8_8_8(model.players[0].Left[model.players[0].currentXpm],positionx,positiony);
+    }else if(model.players[0].direction==RIGHT){
+        drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx,positiony);
+    }else{
+        drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx,positiony);
     }
 }
 char (**getemptyArena()) {
@@ -115,21 +140,27 @@ char (**getemptyArena()) {
     }
     return arena;
 }
-void draw( struct ArenaModel model){
-            printf("drawArena\n");
-    char** arena=getemptyArena();
-                printf("drawArena1\n");
-    drawWalls(arena, model);
-    printf("drawArena2\n");
-    drawBricks(arena, model);
-    drawPowerUps(arena, model);
-    drawBombs(arena, model);
-    drawPlayers(arena, model);
 
-    for (int i=0;i<30;i++) {
-        printf("\n");
-        for(int j=0;j<15;j++)
-            printf("%c",arena[j][i]);
+
+void (draw_menu)(struct MenuModel model,Mouse mouse){
+    drawXpm8_8_8(menuIcon,150,50);
+    
+    if(model.selectedOption==0){
+        drawXpm8_8_8(menu_start_button_selected,150,400);
+        drawXpm8_8_8(menu_exit_button_not_selected,150,500);
+    }else if(model.selectedOption==1){
+        drawXpm8_8_8(menu_start_button_not_selected,150,400);
+        drawXpm8_8_8(menu_exit_button_selected,150,500);
 
     }
+    drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+}
+void (draw_game)(struct ArenaModel model,Mouse mouse){
+
+    /*drawWalls(arena, model);
+
+    drawBricks(arena, model);
+    drawPowerUps(arena, model);
+    drawBombs(arena, model);*/
+    drawPlayers(model);
 }

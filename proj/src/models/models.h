@@ -41,14 +41,14 @@ struct Player {
     xpm_image_t Down[3];
     int numberOfImages;
     int currentXpm;
-    float timeUntilNextXpm;
-    float coldownBetweenXpms;
+    double timeUntilNextXpm;
+    double coldownBetweenXpms;
     int lives;
     int bombs;
     int bombcooldown;
     int range;
     int speed;
-    int movementcooldown;
+    double movementcooldown;
     int score;
     int id;
 };
@@ -68,7 +68,7 @@ struct ArenaModel {
     struct Wall walls[100];
     struct Brick bricks[100];
     struct PowerUp powerUps[10];
-    float elapsedTime;
+    double elapsedTime;
     int nWalls;
     int nBricks;
     int nPowerUps;
@@ -80,7 +80,6 @@ struct MenuModel {
     int selectedOption;
     int selectedLevel;
     int nlevels;
-    char levels[10][20];
-    char options[2][20];
+    int noptions;
 };
 #endif //BOMBERMAN_MODELS_H
