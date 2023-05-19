@@ -15,6 +15,10 @@
         "xiosbase": "c",
         "ios": "c",
         "*.xpm": "c",
-        "malloc.h": "c"
+        "malloc.h": "c",
+        "__config": "c",
+        "ratio": "c",
+        "type_traits": "c",
+        "draw.h": "c"
     }
 }

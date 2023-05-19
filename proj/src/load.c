@@ -33,6 +33,13 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.nBombs++;
             }
             if(pString[j][i]=='B'){
+
+
+                model.players[0].direction = STAY;
+                model.players[0].coldownBetweenXpms=0.50;
+                model.players[0].timeUntilNextXpm=0.50;
+                model.players[0].currentXpm=0;
+                model.players[0].numberOfImages=3;
                 model.players[0].position.x=i;
                 model.players[0].position.y=j;
                 model.players[0].range=1;

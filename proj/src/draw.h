@@ -3,7 +3,6 @@
 //
 #ifndef UNTITLED10_DRAW_H
 #define UNTITLED10_DRAW_H
-
 #include <stdio.h>
 #include <malloc.h>
 #include "models/models.h"
@@ -84,7 +83,7 @@
 
 
 
-int (load_xpms)();
+int (load_xpms)(struct ArenaModel model);
 void draw( struct ArenaModel model);
 char (**getemptyArena());
 void (drawPlayers)(char** arena, struct ArenaModel model);

@@ -1,9 +1,7 @@
 //
 // Created by diogo on 22/04/2023.
 //
-
 #include "draw.h"
-
 
 xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bomberman_down_wallking_2_white,
                 bomberman_idle_up_white,bomberman_up_wallking_1_white ,bomberman_up_wallking_2_white,
@@ -24,7 +22,7 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 wall,
                 mouse;
 
-int (load_xpms)(){
+int (load_xpms)(struct ArenaModel model){
     //white Bomberman
     xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
     xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
@@ -58,7 +56,22 @@ int (load_xpms)(){
     xpm_load(walkright1black_xpm, XPM_8_8_8, &bomberman_right_wallking_1_black);
     xpm_load(walkright2black_xpm, XPM_8_8_8, &bomberman_right_wallking_2_black);
 
+                //xpm
+                model.players[0].Left[0] = bomberman_idle_left_white;
+                model.players[0].Left[1] = bomberman_left_wallking_1_white;
+                model.players[0].Left[2] = bomberman_left_wallking_2_white;
 
+                model.players[0].Right[0] = bomberman_idle_right_white;
+                model.players[0].Right[1] = bomberman_right_wallking_1_white;
+                model.players[0].Right[2] = bomberman_right_wallking_2_white;
+
+                model.players[0].Up[0] = bomberman_idle_up_white;
+                model.players[0].Up[1] = bomberman_up_wallking_1_white;
+                model.players[0].Up[2] = bomberman_up_wallking_2_white;
+
+                model.players[0].Down[0] = bomberman_idle_down_white;
+                model.players[0].Down[1] = bomberman_down_wallking_1_white;
+                model.players[0].Down[2] = bomberman_down_wallking_2_white;
     
     return 0;
 }                
