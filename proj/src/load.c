@@ -4,7 +4,7 @@
 #include "models/models.h"
 struct ArenaModel  loadArena(char pString[15][30]){
     struct ArenaModel model;
-    model.nWalls=0;
+    model.nWalls=10;
     model.nBombs=0;
     model.nBricks=0;
     model.nPowerUps=0;

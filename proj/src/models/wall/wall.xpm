@@ -1,5 +1,5 @@
 /* XPM */
-static char * wall_xpm[] = {
+static xpm_row_t const  wall_xpm[] = {
 "22 22 86 1",
 " 	c #010101",
 ".	c #000000",

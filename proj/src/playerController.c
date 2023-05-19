@@ -1,29 +1,29 @@
 #include "models/models.h"
 #include "playerController.h"
-#include "keyboard.h"
 extern int scan_code[2];
 
 bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaModel* ArenaModel){
     for(int i = 0; i < ArenaModel->nBricks; i++){
-        if(ArenaModel->bricks[i].position.x == -1 || ArenaModel->bricks[i].position.y == -1){
+        /*if(ArenaModel->bricks[i].position.x == -1 || ArenaModel->bricks[i].position.y == -1){
             continue;
-        }
+        }*/
         if(position.x - 1 == ArenaModel->bricks[i].position.x && position.y == ArenaModel->bricks[i].position.y){
             return false;
         }
     }
     for(int i = 0; i < ArenaModel->nWalls; i++){
-        if(ArenaModel->walls[i].position.x == -1 || ArenaModel->walls[i].position.y == -1){
+
+        /*if(ArenaModel->walls[i].position.x == -1 || ArenaModel->walls[i].position.y == -1){
             continue;
-        }
+        }*/
         if(position.x - 1 == ArenaModel->walls[i].position.x && position.y == ArenaModel->walls[i].position.y){
             return false;
         }
     }
     for(int i = 0; i < ArenaModel->nBombs; i++){
-        if(ArenaModel->bombs[i].position.x == -1 || ArenaModel->bombs[i].position.y == -1){
+        /*if(ArenaModel->bombs[i].position.x == -1 || ArenaModel->bombs[i].position.y == -1){
             continue;
-        }
+        }*/
         if(position.x - 1 == ArenaModel->bombs[i].position.x && position.y == ArenaModel->bombs[i].position.y){
             return false;
         }
@@ -133,3 +133,7 @@ void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
             break;
     }
 }
+void (PlayerControllers)(struct ArenaModel* ArenaModel){
+    PlayerController(0,ArenaModel);
+}
+

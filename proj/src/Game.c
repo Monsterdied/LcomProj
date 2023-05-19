@@ -14,7 +14,7 @@ uint8_t bit_no_mouse;
 uint8_t bit_no_kbc;
 uint8_t bit_no_timer;
 
-int get_started_on_game(){
+int handleInterrupts(){
     mouse.x = 600;
     mouse.y = 300;
     mouse.height = 44;
@@ -49,7 +49,7 @@ void Game(struct ArenaModel model, enum GameState* state){
     int ipc_status;
     int r;
     printf("start interrupts\n");
-    get_started_on_game();
+    handleInterrupts();
     printf("did interrupts\n");
     while(*state==GAME){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
@@ -76,6 +76,7 @@ void Game(struct ArenaModel model, enum GameState* state){
                         if(scan_code[0]==BREAK_ESC ){
                             *state=EXIT;
                         }
+                        PlayerControllers(&model);
                          //volta a ler o primeiro byte
                     }
 

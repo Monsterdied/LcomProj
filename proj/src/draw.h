@@ -99,6 +99,6 @@ void (drawPlayers)(struct ArenaModel model);
 void (drawBombs)(char** arena, struct ArenaModel model);
 void (drawPowerUps)(char** arena, struct ArenaModel model);
 void (drawBricks)(char** arena, struct ArenaModel model);
-void (drawWalls)(char** arena, struct ArenaModel model);
+void (drawWalls)(struct ArenaModel model);
 void (draw_menu)(struct MenuModel model, Mouse mouse);
 #endif //UNTITLED10_DRAW_H
