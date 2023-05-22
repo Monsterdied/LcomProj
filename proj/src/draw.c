@@ -34,13 +34,13 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
 int multiplier = 22; 
 int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
-    xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_up_white);
-    xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_up_wallking_1_white);
-    xpm_load(downwalk2white_xpm, XPM_8_8_8, &bomberman_up_wallking_2_white);
+    xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
+    xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
+    xpm_load(downwalk2white_xpm, XPM_8_8_8, &bomberman_down_wallking_2_white);
 
-    xpm_load(upidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
-    xpm_load(upwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
-    xpm_load(upwalk2white_xpm, XPM_8_8_8, &bomberman_down_wallking_2_white);
+    xpm_load(upidlewhite_xpm, XPM_8_8_8, &bomberman_idle_up_white);
+    xpm_load(upwalk1white_xpm, XPM_8_8_8, &bomberman_up_wallking_1_white);
+    xpm_load(upwalk2white_xpm, XPM_8_8_8, &bomberman_up_wallking_2_white);
 
     xpm_load(leftidlewhite_xpm, XPM_8_8_8, &bomberman_idle_left_white);
     xpm_load(walkleft1white_xpm, XPM_8_8_8, &bomberman_left_wallking_1_white);
