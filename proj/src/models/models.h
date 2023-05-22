@@ -48,6 +48,7 @@ struct Player {
     int bombcooldown;
     int range;
     int speed;
+    double timeuntilnextmovement;
     double movementcooldown;
     int score;
     int id;

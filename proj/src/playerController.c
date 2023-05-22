@@ -88,8 +88,9 @@ void (kbc_Player1)(enum Direction *action){
         *action = STAY;
     }
 }
-void updateXmp(int PlayerNumber,struct ArenaModel* ArenaModel){
-    if(ArenaModel->players[PlayerNumber].timeUntilNextXpm == 0){
+void (updateXmp)(int PlayerNumber,struct ArenaModel* ArenaModel){
+    ArenaModel->players[PlayerNumber].timeUntilNextXpm -= ArenaModel->elapsedTime;
+    if(ArenaModel->players[PlayerNumber].timeUntilNextXpm <= 0){
         ArenaModel->players[PlayerNumber].timeUntilNextXpm = ArenaModel->players[PlayerNumber].coldownBetweenXpms;
         if(ArenaModel->players[PlayerNumber].currentXpm + 1 >= ArenaModel->players[PlayerNumber].numberOfImages){
             ArenaModel->players[PlayerNumber].currentXpm = -1;
@@ -98,6 +99,7 @@ void updateXmp(int PlayerNumber,struct ArenaModel* ArenaModel){
     }
 }
 
+<<<<<<< HEAD
 
 void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
     printf("PlayerController\n");
@@ -109,6 +111,10 @@ void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
         ArenaModel->players[PlayerNumber].timeUntilNextXpm -= ArenaModel->elapsedTime;
     }
 
+=======
+void(movePlayer)(int PlayerNumber,struct ArenaModel* ArenaModel){
+    
+>>>>>>> cbdcd876e04c3f8db33361f956f4fa12ab981604
     switch (ArenaModel->players[PlayerNumber].direction){
         case UP:
             if(PlayerCanWalkUp(PlayerNumber,ArenaModel)){
@@ -134,7 +140,29 @@ void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
             break;
     }
 }
+void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
+    kbc_Player1(&ArenaModel->players[PlayerNumber].direction);
+}
 void (PlayerControllers)(struct ArenaModel* ArenaModel){
     PlayerController(0,ArenaModel);
+}
+void (PlayerSpriteController)(int PlayerNumber, struct ArenaModel* ArenaModel){
+    if(ArenaModel->players[PlayerNumber].direction!= STAY){
+            updateXmp(PlayerNumber,ArenaModel);
+    }else{
+        ArenaModel->players[PlayerNumber].currentXpm = 0;
+    }
+    if(ArenaModel->players[PlayerNumber].timeuntilnextmovement>0){
+        ArenaModel->players[PlayerNumber].timeuntilnextmovement -= ArenaModel->elapsedTime;
+    }
+    if(ArenaModel->players[PlayerNumber].timeuntilnextmovement <= 0 && ArenaModel->players[PlayerNumber].direction != STAY){
+        ArenaModel->players[PlayerNumber].timeuntilnextmovement = ArenaModel->players[PlayerNumber].movementcooldown;
+        movePlayer(PlayerNumber,ArenaModel);
+    }
+}
+
+void (PlayersSpriteControllers)(struct ArenaModel* ArenaModel){
+    PlayerSpriteController(0,ArenaModel);
+    
 }
 
