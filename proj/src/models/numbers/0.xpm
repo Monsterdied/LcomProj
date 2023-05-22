@@ -1,5 +1,5 @@
 /* XPM */
-static xpm_row_t const 0_xpm[] = {
+static xpm_row_t const number_0_xpm[] = {
 "14 21 40 1",
 " 	c None",
 ".	c #ECEDEC",

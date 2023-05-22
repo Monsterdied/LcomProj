@@ -4,7 +4,7 @@
 #include "models/models.h"
 struct ArenaModel  loadArena(char pString[15][30]){
     struct ArenaModel model;
-    model.nWalls=0;
+    model.nWalls=10;
     model.nBombs=0;
     model.nBricks=0;
     model.nPowerUps=0;
@@ -33,6 +33,13 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.nBombs++;
             }
             if(pString[j][i]=='B'){
+
+
+                model.players[0].direction = STAY;
+                model.players[0].coldownBetweenXpms=0.50;
+                model.players[0].timeUntilNextXpm=0.50;
+                model.players[0].currentXpm=0;
+                model.players[0].numberOfImages=3;
                 model.players[0].position.x=i;
                 model.players[0].position.y=j;
                 model.players[0].range=1;

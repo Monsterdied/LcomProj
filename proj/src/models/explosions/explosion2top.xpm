@@ -1,5 +1,5 @@
 /* XPM */
-static char * explosion2top_xpm[] = {
+static xpm_row_t const explosion2top_xpm[] = {
 "22 22 13 1",
 " 	c None",
 ".	c #F83800",

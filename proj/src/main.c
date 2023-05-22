@@ -45,7 +45,6 @@ int i = 0;
 int (proj_main_loop)() {
 
 
-    load_xpms();
 
 
     enum GameState state=MENU;
@@ -71,12 +70,13 @@ int (proj_main_loop)() {
     struct ArenaModel model=loadArena(arena);
 
 
-
-
+    load_xpms(&model);
+    state=GAME;
     while(state!=EXIT){
         switch (state){
             case MENU:
                     printf("menu\n");
+                                                    printf("game\n");
                 model=Menu(&state);
                 break;
             case GAME:

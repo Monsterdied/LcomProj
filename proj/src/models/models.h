@@ -2,6 +2,7 @@
 // Created by diogo on 22/04/2023.
 #ifndef BOMBERMAN_MODELS_H
 #define BOMBERMAN_MODELS_H
+#include "video_gr.h"
 enum GameState{
     MENU,
     GAME,
@@ -12,12 +13,10 @@ enum Direction {
     UP,
     DOWN,
     LEFT,
-    RIGHT
+    RIGHT,
+    STAY
 };
-enum Motion{
-    STAY,
-    MOVE
-};
+
 enum PowerUpType {
     BOMB,
     RANGE,
@@ -40,14 +39,16 @@ struct Player {
     xpm_image_t Right[3] ;
     xpm_image_t Up[3] ;
     xpm_image_t Down[3];
-    enum Motion State;
+    int numberOfImages;
     int currentXpm;
+    double timeUntilNextXpm;
+    double coldownBetweenXpms;
     int lives;
     int bombs;
     int bombcooldown;
     int range;
     int speed;
-    int movementcooldown;
+    double movementcooldown;
     int score;
     int id;
 };
@@ -67,6 +68,7 @@ struct ArenaModel {
     struct Wall walls[100];
     struct Brick bricks[100];
     struct PowerUp powerUps[10];
+    double elapsedTime;
     int nWalls;
     int nBricks;
     int nPowerUps;

@@ -3,7 +3,6 @@
 //
 #ifndef UNTITLED10_DRAW_H
 #define UNTITLED10_DRAW_H
-
 #include <stdio.h>
 #include <malloc.h>
 #include "models/models.h"
@@ -79,6 +78,18 @@
 #include "models/menu/selected_exit.xpm"
 #include "models/menu/selected_start.xpm"
 
+//numbers
+#include "models/numbers/0.xpm"
+#include "models/numbers/1.xpm"
+#include "models/numbers/2.xpm"
+#include "models/numbers/3.xpm"
+#include "models/numbers/4.xpm"
+#include "models/numbers/5.xpm"
+#include "models/numbers/6.xpm"
+#include "models/numbers/7.xpm"
+#include "models/numbers/8.xpm"
+#include "models/numbers/9.xpm"
+#include "models/numbers/double_points.xpm"
 
 
 
@@ -93,13 +104,14 @@
 
 
 
-int (load_xpms)();
-void (draw)( struct ArenaModel model);
+
+int (load_xpms)(struct ArenaModel* model);
+void (draw_game)(struct ArenaModel model,Mouse mouse);
 char** (getemptyArena());
-void (drawPlayers)(char** arena, struct ArenaModel model);
+void (drawPlayers)(struct ArenaModel model);
 void (drawBombs)(char** arena, struct ArenaModel model);
 void (drawPowerUps)(char** arena, struct ArenaModel model);
 void (drawBricks)(char** arena, struct ArenaModel model);
-void (drawWalls)(char** arena, struct ArenaModel model);
+void (drawWalls)(struct ArenaModel model);
 void (draw_menu)(struct MenuModel model, Mouse mouse);
 #endif //UNTITLED10_DRAW_H

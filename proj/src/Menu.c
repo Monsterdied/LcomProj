@@ -166,8 +166,6 @@ struct ArenaModel (Menu)(enum GameState* state){
     kbc_Unsubscribe();
     timer_unsubscribe_int();
     vg_exit();
-
     struct ArenaModel arenamodel=loadArena(arena);
-
     return arenamodel;
 }

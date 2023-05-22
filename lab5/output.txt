@@ -1,2 +1,4 @@
-menu
-get default menu
+game
+start interrupts
+did interrupts
+stop

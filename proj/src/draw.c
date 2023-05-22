@@ -16,8 +16,8 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 bomberman_idle_right_black,bomberman_right_wallking_1_black,bomberman_right_wallking_2_black ,
                 bomberman_idle_left_black,bomberman_left_wallking_1_black,bomberman_left_wallking_2_black ,
 
-                explosion_center_1,explosion_top_1,explosion_left_1,explosion_right_1,
-                explosion_center_2,explosion_top_2,explosion_left_2,explosion_right_2,
+                explosion_center_1,explosion_top_1,explosion_left_1,explosion_right_1,explosion1bot,
+                explosion_center_2,explosion_top_2,explosion_left_2,explosion_right_2,explosion2bot,
 
                 bomb1,bomb2,bomb3,
                 brick,
@@ -29,17 +29,18 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 menu_exit_button_selected,
                 menu_exit_button_not_selected,
                 menu_continue_button_selected,
-                menu_continue_button_not_selected;
-
-int (load_xpms)(){
+                menu_continue_button_not_selected,
+                number_0,number_1,number_2,number_3,number_4,number_5,number_6,number_7,number_8,number_9,double_point;
+int multiplier = 22; 
+int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
-    xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
-    xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
-    xpm_load(downwalk2white_xpm, XPM_8_8_8, &bomberman_down_wallking_2_white);
+    xpm_load(downidlewhite_xpm, XPM_8_8_8, &bomberman_idle_up_white);
+    xpm_load(downwalk1white_xpm, XPM_8_8_8, &bomberman_up_wallking_1_white);
+    xpm_load(downwalk2white_xpm, XPM_8_8_8, &bomberman_up_wallking_2_white);
 
-    xpm_load(upidlewhite_xpm, XPM_8_8_8, &bomberman_idle_up_white);
-    xpm_load(upwalk1white_xpm, XPM_8_8_8, &bomberman_up_wallking_1_white);
-    xpm_load(upwalk2white_xpm, XPM_8_8_8, &bomberman_up_wallking_2_white);
+    xpm_load(upidlewhite_xpm, XPM_8_8_8, &bomberman_idle_down_white);
+    xpm_load(upwalk1white_xpm, XPM_8_8_8, &bomberman_down_wallking_1_white);
+    xpm_load(upwalk2white_xpm, XPM_8_8_8, &bomberman_down_wallking_2_white);
 
     xpm_load(leftidlewhite_xpm, XPM_8_8_8, &bomberman_idle_left_white);
     xpm_load(walkleft1white_xpm, XPM_8_8_8, &bomberman_left_wallking_1_white);
@@ -65,6 +66,38 @@ int (load_xpms)(){
     xpm_load(walkright1black_xpm, XPM_8_8_8, &bomberman_right_wallking_1_black);
     xpm_load(walkright2black_xpm, XPM_8_8_8, &bomberman_right_wallking_2_black);
 
+    //xpm
+    model->players[0].Left[0] = bomberman_idle_left_white;
+    model->players[0].Left[1] = bomberman_left_wallking_1_white;
+    model->players[0].Left[2] = bomberman_left_wallking_2_white;
+
+    model->players[0].Right[0] = bomberman_idle_right_white;
+    model->players[0].Right[1] = bomberman_right_wallking_1_white;
+    model->players[0].Right[2] = bomberman_right_wallking_2_white;
+
+    model->players[0].Up[0] = bomberman_idle_up_white;
+    model->players[0].Up[1] = bomberman_up_wallking_1_white;
+    model->players[0].Up[2] = bomberman_up_wallking_2_white;
+
+    model->players[0].Down[0] = bomberman_idle_down_white;
+    model->players[0].Down[1] = bomberman_down_wallking_1_white;
+    model->players[0].Down[2] = bomberman_down_wallking_2_white;
+    //player 2
+    model->players[1].Left[0] = bomberman_idle_left_black;
+    model->players[1].Left[1] = bomberman_left_wallking_1_black;
+    model->players[1].Left[2] = bomberman_left_wallking_2_black;
+
+    model->players[1].Right[0] = bomberman_idle_right_black;
+    model->players[1].Right[1] = bomberman_right_wallking_1_black;
+    model->players[1].Right[2] = bomberman_right_wallking_2_black;
+
+    model->players[1].Up[0] = bomberman_idle_up_black;
+    model->players[1].Up[1] = bomberman_up_wallking_1_black;
+    model->players[1].Up[2] = bomberman_up_wallking_2_black;
+
+    model->players[1].Down[0] = bomberman_idle_down_black;
+    model->players[1].Down[1] = bomberman_down_wallking_1_black;
+    model->players[1].Down[2] = bomberman_down_wallking_2_black;
 
     xpm_load(menuIcon_xpm,XPM_8_8_8,&menuIcon);
     xpm_load(selected_continue_xpm,XPM_8_8_8,&menu_continue_button_selected);
@@ -77,21 +110,52 @@ int (load_xpms)(){
 
     xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
 
+    xpm_load(bomb1_xpm,XPM_8_8_8,&bomb1);
+    xpm_load(bomb2_xpm,XPM_8_8_8,&bomb2);
+    xpm_load(bomb3_xpm,XPM_8_8_8,&bomb3);
 
+    xpm_load(brick_xpm,XPM_8_8_8,&brick);
+    xpm_load(wall_xpm,XPM_8_8_8,&wall);
+    
+    xpm_load(explosion1_xpm,XPM_8_8_8,&explosion_center_1);
+    xpm_load(explosion2_xpm,XPM_8_8_8,&explosion_center_2);
+
+    xpm_load(explosion1top_xpm,XPM_8_8_8,&explosion_top_1);
+    xpm_load(explosion2top_xpm,XPM_8_8_8,&explosion_top_2);
+
+    xpm_load(explosion1left_xpm,XPM_8_8_8,&explosion_left_1);
+    xpm_load(explosion2left_xpm,XPM_8_8_8,&explosion_left_2);
+
+    xpm_load(explosion1right_xpm,XPM_8_8_8,&explosion_right_1);
+    xpm_load(explosion2right_xpm,XPM_8_8_8,&explosion_right_2);
+
+    xpm_load(explosion1bot_xpm,XPM_8_8_8,&explosion1bot);
+    xpm_load(explosion2bot_xpm,XPM_8_8_8,&explosion2bot);
+
+    xpm_load(number_0_xpm,XPM_8_8_8,&number_0);
+    xpm_load(number_1_xpm,XPM_8_8_8,&number_1);
+    xpm_load(number_2_xpm,XPM_8_8_8,&number_2);
+    xpm_load(number_3_xpm,XPM_8_8_8,&number_3);
+    xpm_load(number_4_xpm,XPM_8_8_8,&number_4);
+    xpm_load(number_5_xpm,XPM_8_8_8,&number_5);
+    xpm_load(number_6_xpm,XPM_8_8_8,&number_6);
+    xpm_load(number_7_xpm,XPM_8_8_8,&number_7);
+    xpm_load(number_8_xpm,XPM_8_8_8,&number_8);
+    xpm_load(number_9_xpm,XPM_8_8_8,&number_9);
+    xpm_load(double_points_xpm,XPM_8_8_8,&double_point);
     
     return 0;
 }
                 
 
-void (drawWalls)(char** arena, struct ArenaModel model){
+void (drawWalls)(struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){
-        printf("model x %d walls y%d \n",model.walls[i].position.x,model.walls[i].position.y );
-        arena[model.walls[i].position.y][model.walls[i].position.x]=  'H';
+        drawXpm8_8_8(wall,model.walls[i].position.x * multiplier+22,model.walls[i].position.y*multiplier);
     }
 }
 void drawBricks(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nBricks;i++){
-        arena[model.bricks[i].position.y][model.bricks[i].position.x]=  'h';
+        drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier,model.bricks[i].position.y*multiplier);
     }
 }
 void drawPowerUps(char** arena, struct ArenaModel model){
@@ -104,12 +168,17 @@ void drawBombs(char** arena, struct ArenaModel model){
         arena[ model.bombs[i].position.y][model.bombs[i].position.x]=  'B';
     }
 }
-void (drawPlayers)(char** arena, struct ArenaModel model){
-    for(int i=0;i<2;i++){
-//        printf("\n%d\n",model.players[i].id);
-        if(model.players[i].id==0)
-            arena[model.players[i].position.y][ model.players[i].position.x]='P';
-        else arena[model.players[i].position.y][model.players[i].position.x]='p';
+void (drawPlayers)(struct ArenaModel model){
+    int positionx =model.players[0].position.x * multiplier;
+    int positiony =model.players[0].position.y*multiplier;
+    if(model.players[0].direction==UP){
+        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
+    }else if(model.players[0].direction==LEFT){
+        drawXpm8_8_8(model.players[0].Left[model.players[0].currentXpm],positionx,positiony);
+    }else if(model.players[0].direction==RIGHT){
+        drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx,positiony);
+    }else{
+        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx,positiony);
     }
 }
 char (**getemptyArena()) {
@@ -137,20 +206,13 @@ void (draw_menu)(struct MenuModel model,Mouse mouse){
     }
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }
-void draw( struct ArenaModel model){
-    char** arena=getemptyArena();
+void (draw_game)(struct ArenaModel model,Mouse mouse){
 
-    drawWalls(arena, model);
-
+    drawWalls(model);
+/*
     drawBricks(arena, model);
     drawPowerUps(arena, model);
-    drawBombs(arena, model);
-    drawPlayers(arena, model);
-
-    for (int i=0;i<30;i++) {
-        printf("\n");
-        for(int j=0;j<15;j++)
-            printf("%c",arena[j][i]);
-
-    }
+    drawBombs(arena, model);*/
+    drawPlayers(model);
+        drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }

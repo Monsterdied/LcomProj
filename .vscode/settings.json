@@ -16,7 +16,14 @@
         "ios": "c",
         "*.xpm": "c",
         "malloc.h": "c",
+<<<<<<< HEAD
+        "__config": "c",
+        "ratio": "c",
+        "type_traits": "c",
+        "draw.h": "c"
+=======
         "keyboard.h": "c",
         "i8042.h": "c"
+>>>>>>> 937b262ae10a3f90459a37605acfc399980f4b85
     }
 }
