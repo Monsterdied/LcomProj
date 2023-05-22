@@ -116,10 +116,12 @@ int (load_xpms)(struct ArenaModel* model){
 
 void (drawWalls)(struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){
+
         drawXpm8_8_8(wall,model.walls[i].position.x * multiplier+22,model.walls[i].position.y*multiplier);
     }
 }
 void drawBricks(char** arena, struct ArenaModel model){
+    printf("nBricks: %d\n",model.nBricks);
     for(int i=0;i<model.nBricks;i++){
         drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier,model.bricks[i].position.y*multiplier);
     }
@@ -138,13 +140,13 @@ void (drawPlayers)(struct ArenaModel model){
     int positionx =model.players[0].position.x * multiplier;
     int positiony =model.players[0].position.y*multiplier;
     if(model.players[0].direction==UP){
-        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx,positiony);
     }else if(model.players[0].direction==LEFT){
         drawXpm8_8_8(model.players[0].Left[model.players[0].currentXpm],positionx,positiony);
     }else if(model.players[0].direction==RIGHT){
         drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx,positiony);
     }else{
-        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
     }
 }
 char (**getemptyArena()) {
