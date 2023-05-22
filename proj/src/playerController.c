@@ -100,6 +100,7 @@ void updateXmp(int PlayerNumber,struct ArenaModel* ArenaModel){
 
 
 void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
+    printf("PlayerController\n");
     kbc_Player1(&ArenaModel->players[PlayerNumber].direction);
     if(ArenaModel->players[PlayerNumber].timeUntilNextXpm - ArenaModel->elapsedTime < 0){
         ArenaModel->players[PlayerNumber].timeUntilNextXpm = 0;
