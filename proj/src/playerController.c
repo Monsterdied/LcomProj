@@ -99,22 +99,8 @@ void (updateXmp)(int PlayerNumber,struct ArenaModel* ArenaModel){
     }
 }
 
-<<<<<<< HEAD
-
-void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
-    printf("PlayerController\n");
-    kbc_Player1(&ArenaModel->players[PlayerNumber].direction);
-    if(ArenaModel->players[PlayerNumber].timeUntilNextXpm - ArenaModel->elapsedTime < 0){
-        ArenaModel->players[PlayerNumber].timeUntilNextXpm = 0;
-        updateXmp(PlayerNumber,ArenaModel);
-    }else{
-        ArenaModel->players[PlayerNumber].timeUntilNextXpm -= ArenaModel->elapsedTime;
-    }
-
-=======
 void(movePlayer)(int PlayerNumber,struct ArenaModel* ArenaModel){
     
->>>>>>> cbdcd876e04c3f8db33361f956f4fa12ab981604
     switch (ArenaModel->players[PlayerNumber].direction){
         case UP:
             if(PlayerCanWalkUp(PlayerNumber,ArenaModel)){

@@ -174,13 +174,13 @@ void (drawPlayers)(struct ArenaModel model){
     int positionx =model.players[0].position.x * multiplier;
     int positiony =model.players[0].position.y*multiplier;
     if(model.players[0].direction==UP){
-        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
     }else if(model.players[0].direction==LEFT){
         drawXpm8_8_8(model.players[0].Left[model.players[0].currentXpm],positionx,positiony);
     }else if(model.players[0].direction==RIGHT){
         drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx,positiony);
     }else{
-        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx,positiony);
     }
 }
 char (**getemptyArena()) {
