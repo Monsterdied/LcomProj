@@ -26,9 +26,17 @@ struct Position {
     int x;
     int y;
 };
+struct Explosion {
+    struct Position position;
+    enum Direction direction;
+    double timeUntilNextXpm;
+    int currentXpm;
+};
 struct Bomb {
     struct Position position;
-    int time;
+    double timeUntilExplosion;
+    double timeUntilNextXpm;
+    int currentXpm;
     int range;
     int owner;
 };

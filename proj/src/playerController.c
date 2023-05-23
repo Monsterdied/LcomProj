@@ -29,12 +29,12 @@ bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaMo
         }
     }
     if(PlayerNumber == 0){
-        if(position.x - 1 == ArenaModel->players[1].position.x && position.y == ArenaModel->players[1].position.y){
+        if(position.x  == ArenaModel->players[1].position.x && position.y == ArenaModel->players[1].position.y){
             return false;
         }
     }
     if(PlayerNumber == 1){
-        if(position.x - 1 == ArenaModel->players[0].position.x && position.y == ArenaModel->players[0].position.y){
+        if(position.x  == ArenaModel->players[0].position.x && position.y == ArenaModel->players[0].position.y){
             return false;
         }
     }
@@ -88,6 +88,26 @@ void (kbc_Player1)(enum Direction *action){
         *action = STAY;
     }
 }
+void (kbc_Player2)(enum Direction *action){
+    if(scan_code[0] == 0x4B){
+        *action = LEFT;
+    }else if(scan_code[0] == 0xCB && *action == LEFT){
+        *action = STAY;
+    }else  if(scan_code[0] == 0x50){
+        *action = DOWN;
+    }else if(scan_code[0] == 0xD0 && *action == DOWN){
+        *action = STAY;
+    }else  if(scan_code[0] == 0x48){
+        *action = UP;
+    }else if(scan_code[0] == 0xC8 && *action == UP){
+        *action = STAY;
+    }else  if(scan_code[0] == 0x4D){
+        *action = RIGHT;
+    }else if(scan_code[0] == 0xCD && *action == RIGHT){
+        *action = STAY;
+    }
+}
+
 void (updateXmp)(int PlayerNumber,struct ArenaModel* ArenaModel){
     ArenaModel->players[PlayerNumber].timeUntilNextXpm -= ArenaModel->elapsedTime;
     if(ArenaModel->players[PlayerNumber].timeUntilNextXpm <= 0){
@@ -126,11 +146,10 @@ void(movePlayer)(int PlayerNumber,struct ArenaModel* ArenaModel){
             break;
     }
 }
-void (PlayerController)(int PlayerNumber,struct ArenaModel* ArenaModel){
-    kbc_Player1(&ArenaModel->players[PlayerNumber].direction);
-}
+
 void (PlayerControllers)(struct ArenaModel* ArenaModel){
-    PlayerController(0,ArenaModel);
+    kbc_Player1(&ArenaModel->players[0].direction);
+    kbc_Player2(&ArenaModel->players[1].direction);
 }
 void (PlayerSpriteController)(int PlayerNumber, struct ArenaModel* ArenaModel){
     if(ArenaModel->players[PlayerNumber].direction!= STAY){
@@ -149,6 +168,7 @@ void (PlayerSpriteController)(int PlayerNumber, struct ArenaModel* ArenaModel){
 
 void (PlayersSpriteControllers)(struct ArenaModel* ArenaModel){
     PlayerSpriteController(0,ArenaModel);
+    PlayerSpriteController(1,ArenaModel);
     
 }
 

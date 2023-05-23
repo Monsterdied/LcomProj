@@ -154,10 +154,10 @@ void (drawWalls)(struct ArenaModel model){
         drawXpm8_8_8(wall,model.walls[i].position.x * multiplier+22,model.walls[i].position.y*multiplier);
     }
 }
-void drawBricks(char** arena, struct ArenaModel model){
-    printf("nBricks: %d\n",model.nBricks);
+void (drawBricks)(struct ArenaModel model){
     for(int i=0;i<model.nBricks;i++){
-        drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier,model.bricks[i].position.y*multiplier);
+
+        drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier+22,model.bricks[i].position.y*multiplier);
     }
 }
 void drawPowerUps(char** arena, struct ArenaModel model){
@@ -165,23 +165,42 @@ void drawPowerUps(char** arena, struct ArenaModel model){
         arena[model.powerUps[i].position.y][model.powerUps[i].position.x]=  'P';
     }
 }
-void drawBombs(char** arena, struct ArenaModel model){
+void drawBombs(struct ArenaModel model){
     for(int i=0;i<model.nBombs;i++){
-        arena[ model.bombs[i].position.y][model.bombs[i].position.x]=  'B';
+        if(model.bombs[i].currentXpm==0)
+            drawXpm8_8_8(bomb1,model.bombs[i].position.x * multiplier+22,model.bombs[i].position.y*multiplier);
+        else if (model.bombs[i].currentXpm==1)
+            drawXpm8_8_8(bomb2,model.bombs[i].position.x * multiplier+22,model.bombs[i].position.y*multiplier);
+        else{
+            drawXpm8_8_8(bomb3,model.bombs[i].position.x * multiplier+22,model.bombs[i].position.y*multiplier);
+        }    
+
+        
     }
 }
 void (drawPlayers)(struct ArenaModel model){
-    int positionx =model.players[0].position.x * multiplier;
-    int positiony =model.players[0].position.y*multiplier;
+    int positionx_white =model.players[0].position.x * multiplier;
+    int positiony_white =model.players[0].position.y*multiplier;
+    int positionx_black =model.players[1].position.x * multiplier;
+    int positiony_black =model.players[1].position.y*multiplier;
     if(model.players[0].direction==UP){
-        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Up[model.players[0].currentXpm],positionx_white,positiony_white);
     }else if(model.players[0].direction==LEFT){
-        drawXpm8_8_8(model.players[0].Left[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Left[model.players[0].currentXpm],positionx_white,positiony_white);
     }else if(model.players[0].direction==RIGHT){
-        drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Right[model.players[0].currentXpm],positionx_white,positiony_white);
     }else{
-        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx,positiony);
+        drawXpm8_8_8(model.players[0].Down[model.players[0].currentXpm],positionx_white,positiony_white);
     }
+    if(model.players[1].direction==UP){
+        drawXpm8_8_8(model.players[1].Up[model.players[1].currentXpm],positionx_black,positiony_black);
+    }else if (model.players[1].direction==LEFT){
+        drawXpm8_8_8(model.players[1].Left[model.players[1].currentXpm],positionx_black,positiony_black);
+    }else if(model.players[1].direction==RIGHT){
+        drawXpm8_8_8(model.players[1].Right[model.players[1].currentXpm],positionx_black,positiony_black);
+    }else{
+        drawXpm8_8_8(model.players[1].Down[model.players[1].currentXpm],positionx_black,positiony_black);
+    }            
 }
 char (**getemptyArena()) {
     char** arena = (char**) malloc(15 * sizeof(char*));
@@ -211,10 +230,12 @@ void (draw_menu)(struct MenuModel model,Mouse mouse){
 void (draw_game)(struct ArenaModel model,Mouse mouse){
 
     drawWalls(model);
-/*
-    drawBricks(arena, model);
+
+    drawBricks(model);
+    drawBombs(model);
+    /*
     drawPowerUps(arena, model);
-    drawBombs(arena, model);*/
+    */
     drawPlayers(model);
         drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }

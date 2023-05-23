@@ -35,6 +35,9 @@ struct ArenaModel  loadArena(char pString[15][30]){
             if(pString[j][i]=='O'){
                 model.bombs[model.nBombs].position.x=i;
                 model.bombs[model.nBombs].position.y=j;
+                model.bombs[model.nBombs].timeUntilExplosion=2;
+                model.bombs[model.nBombs].timeUntilNextXpm=0.3;
+                model.bombs[model.nBombs].range=3;
                 model.nBombs++;
             }
             if(pString[j][i]=='B'){
