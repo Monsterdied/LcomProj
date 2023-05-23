@@ -7,7 +7,7 @@ bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaMo
         /*if(ArenaModel->bricks[i].position.x == -1 || ArenaModel->bricks[i].position.y == -1){
             continue;
         }*/
-        if(position.x - 1 == ArenaModel->bricks[i].position.x && position.y == ArenaModel->bricks[i].position.y){
+        if(position.x  == ArenaModel->bricks[i].position.x && position.y == ArenaModel->bricks[i].position.y){
             return false;
         }
     }
@@ -16,7 +16,7 @@ bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaMo
         /*if(ArenaModel->walls[i].position.x == -1 || ArenaModel->walls[i].position.y == -1){
             continue;
         }*/
-        if(position.x - 1 == ArenaModel->walls[i].position.x && position.y == ArenaModel->walls[i].position.y){
+        if(position.x  == ArenaModel->walls[i].position.x && position.y == ArenaModel->walls[i].position.y){
             return false;
         }
     }
@@ -24,7 +24,7 @@ bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaMo
         /*if(ArenaModel->bombs[i].position.x == -1 || ArenaModel->bombs[i].position.y == -1){
             continue;
         }*/
-        if(position.x - 1 == ArenaModel->bombs[i].position.x && position.y == ArenaModel->bombs[i].position.y){
+        if(position.x  == ArenaModel->bombs[i].position.x && position.y == ArenaModel->bombs[i].position.y){
             return false;
         }
     }

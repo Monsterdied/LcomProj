@@ -151,13 +151,13 @@ int (load_xpms)(struct ArenaModel* model){
 void (drawWalls)(struct ArenaModel model){
     for(int i=0;i<model.nWalls;i++){
 
-        drawXpm8_8_8(wall,model.walls[i].position.x * multiplier+22,model.walls[i].position.y*multiplier);
+        drawXpm8_8_8(wall,model.walls[i].position.x * multiplier,model.walls[i].position.y*multiplier);
     }
 }
 void (drawBricks)(struct ArenaModel model){
     for(int i=0;i<model.nBricks;i++){
 
-        drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier+22,model.bricks[i].position.y*multiplier);
+        drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier,model.bricks[i].position.y*multiplier);
     }
 }
 void drawPowerUps(char** arena, struct ArenaModel model){
@@ -168,11 +168,11 @@ void drawPowerUps(char** arena, struct ArenaModel model){
 void drawBombs(struct ArenaModel model){
     for(int i=0;i<model.nBombs;i++){
         if(model.bombs[i].currentXpm==0)
-            drawXpm8_8_8(bomb1,model.bombs[i].position.x * multiplier+22,model.bombs[i].position.y*multiplier);
+            drawXpm8_8_8(bomb1,model.bombs[i].position.x * multiplier,model.bombs[i].position.y*multiplier);
         else if (model.bombs[i].currentXpm==1)
-            drawXpm8_8_8(bomb2,model.bombs[i].position.x * multiplier+22,model.bombs[i].position.y*multiplier);
+            drawXpm8_8_8(bomb2,model.bombs[i].position.x * multiplier,model.bombs[i].position.y*multiplier);
         else{
-            drawXpm8_8_8(bomb3,model.bombs[i].position.x * multiplier+22,model.bombs[i].position.y*multiplier);
+            drawXpm8_8_8(bomb3,model.bombs[i].position.x * multiplier,model.bombs[i].position.y*multiplier);
         }    
 
         

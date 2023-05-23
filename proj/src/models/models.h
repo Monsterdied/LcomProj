@@ -74,8 +74,8 @@ struct PowerUp {
 struct ArenaModel {
     struct Player players[2];
     struct Bomb bombs[6];
-    struct Wall walls[100];
-    struct Brick bricks[100];
+    struct Wall walls[450];
+    struct Brick bricks[450];
     struct PowerUp powerUps[10];
     double elapsedTime;
     int nWalls;

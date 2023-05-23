@@ -67,6 +67,7 @@ int (proj_main_loop)() {
                      "H___________________h________H",
                      "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
     };
+    
     struct ArenaModel model=loadArena(arena);
 
     load_xpms(&model);

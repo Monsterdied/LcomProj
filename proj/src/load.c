@@ -5,7 +5,9 @@
 extern int fr_rate;
 struct ArenaModel  loadArena(char pString[15][30]){
     struct ArenaModel model;
-    model.nWalls=10;
+
+
+    model.nWalls=0;
     model.nBombs=0;
     model.nBricks=0;
     model.nPowerUps=0;
