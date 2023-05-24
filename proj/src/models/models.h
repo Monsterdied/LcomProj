@@ -30,6 +30,7 @@ struct Explosion {
     struct Position position;
     enum Direction direction;
     double timeUntilNextXpm;
+    double timeUntilFade;
     int currentXpm;
 };
 struct Bomb {
@@ -76,12 +77,14 @@ struct ArenaModel {
     struct Bomb bombs[6];
     struct Wall walls[450];
     struct Brick bricks[450];
+    struct Explosion explosions[450];
     struct PowerUp powerUps[10];
     double elapsedTime;
     int nWalls;
     int nBricks;
     int nPowerUps;
     int nBombs;
+    int nExplosions;
 
 };
 

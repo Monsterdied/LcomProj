@@ -160,12 +160,12 @@ void (drawBricks)(struct ArenaModel model){
         drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier,model.bricks[i].position.y*multiplier);
     }
 }
-void drawPowerUps(char** arena, struct ArenaModel model){
+void (drawPowerUps)(char** arena, struct ArenaModel model){
     for(int i=0;i<model.nPowerUps;i++){
         arena[model.powerUps[i].position.y][model.powerUps[i].position.x]=  'P';
     }
 }
-void drawBombs(struct ArenaModel model){
+void (drawBombs)(struct ArenaModel model){
     for(int i=0;i<model.nBombs;i++){
         if(model.bombs[i].currentXpm==0)
             drawXpm8_8_8(bomb1,model.bombs[i].position.x * multiplier,model.bombs[i].position.y*multiplier);
@@ -175,6 +175,42 @@ void drawBombs(struct ArenaModel model){
             drawXpm8_8_8(bomb3,model.bombs[i].position.x * multiplier,model.bombs[i].position.y*multiplier);
         }    
 
+        
+    }
+}
+void (drawFlames)(struct ArenaModel model){
+    for(int i =0 ;i<model.nExplosions;i++){
+        if(model.explosions[i].direction==STAY){
+            if(model.explosions[i].currentXpm==0){
+                drawXpm8_8_8(explosion_center_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }else{
+                drawXpm8_8_8(explosion_center_2,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }
+        }else if(model.explosions[i].direction==UP){
+            if(model.explosions[i].currentXpm==0){
+                drawXpm8_8_8(explosion_top_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }else{
+                drawXpm8_8_8(explosion_top_2,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }
+        }else if(model.explosions[i].direction==DOWN){
+            if(model.explosions[i].currentXpm==0){
+                drawXpm8_8_8(explosion1bot,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }else{
+                drawXpm8_8_8(explosion2bot,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }
+        }else if(model.explosions[i].direction==LEFT){
+            if(model.explosions[i].currentXpm==0){
+                drawXpm8_8_8(explosion_left_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }else{
+                drawXpm8_8_8(explosion_left_2,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }
+        }else{
+            if(model.explosions[i].currentXpm==0){
+                drawXpm8_8_8(explosion_right_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }else{
+                drawXpm8_8_8(explosion_right_2,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
+            }
+        }
         
     }
 }
@@ -201,6 +237,9 @@ void (drawPlayers)(struct ArenaModel model){
     }else{
         drawXpm8_8_8(model.players[1].Down[model.players[1].currentXpm],positionx_black,positiony_black);
     }            
+}
+void (draw_background)(struct ArenaModel model){
+    vg_draw_rectangle(0,0,30*multiplier,15*multiplier,0x7CFC00);
 }
 char (**getemptyArena()) {
     char** arena = (char**) malloc(15 * sizeof(char*));
@@ -229,13 +268,15 @@ void (draw_menu)(struct MenuModel model,Mouse mouse){
 }
 void (draw_game)(struct ArenaModel model,Mouse mouse){
 
+    //draw_background(model);
     drawWalls(model);
 
     drawBricks(model);
     drawBombs(model);
+    drawFlames(model);
     /*
     drawPowerUps(arena, model);
     */
     drawPlayers(model);
-        drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+    drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }
