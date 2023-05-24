@@ -10,5 +10,6 @@ bool (PlayerCanWalkTop)(int PlayerNumber , struct ArenaModel* ArenaModel);
 bool (PlayerCanWalkDown)(int PlayerNumber , struct ArenaModel* ArenaModel); 
 void (PlayerControllers)(struct ArenaModel* ArenaModel);
 void (PlayersSpriteControllers)(struct ArenaModel* model);
+void (BombsSpriteControllers)(struct ArenaModel* ArenaModel);
 
 #endif //UNTITLED10_CONTROLLER_H

@@ -1,5 +1,5 @@
 #include "models/models.h"
-#include "playerController.h"
+#include "Controller.h"
 extern int scan_code[2];
 
 bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaModel* ArenaModel){
@@ -24,7 +24,7 @@ bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaMo
         /*if(ArenaModel->bombs[i].position.x == -1 || ArenaModel->bombs[i].position.y == -1){
             continue;
         }*/
-        if(position.x  == ArenaModel->bombs[i].position.x && position.y == ArenaModel->bombs[i].position.y){
+        if(position.x == ArenaModel->bombs[i].position.x && position.y == ArenaModel->bombs[i].position.y){
             return false;
         }
     }
@@ -146,10 +146,39 @@ void(movePlayer)(int PlayerNumber,struct ArenaModel* ArenaModel){
             break;
     }
 }
+void (kbc_Bomb)(struct ArenaModel* ArenaModel){
+    if(scan_code[0] == 0x39){
+        if(ArenaModel->players[0].bombs > 0){
+            ArenaModel->players[0].bombs--;
+            ArenaModel->bombs[ArenaModel->nBombs].position.x = ArenaModel->players[0].position.x;
+            ArenaModel->bombs[ArenaModel->nBombs].position.y = ArenaModel->players[0].position.y;
+            ArenaModel->bombs[ArenaModel->nBombs].timeUntilExplosion = 1;
+            ArenaModel->bombs[ArenaModel->nBombs].timeUntilNextXpm = 0.3;
+            ArenaModel->bombs[ArenaModel->nBombs].range = 3+ ArenaModel->players[0].range;
+            ArenaModel->bombs[ArenaModel->nBombs].owner = 0;
+            ArenaModel->nBombs++;
+            ArenaModel->players[0].bombcooldown = 3;
+        }
+    }else if(scan_code[0] == 0x52){
+        if(ArenaModel->players[1].bombs > 0){
+            ArenaModel->players[1].bombs--;
+            ArenaModel->bombs[ArenaModel->nBombs].position.x = ArenaModel->players[1].position.x;
+            ArenaModel->bombs[ArenaModel->nBombs].position.y = ArenaModel->players[1].position.y;
+            ArenaModel->bombs[ArenaModel->nBombs].timeUntilExplosion = 1;
+            ArenaModel->bombs[ArenaModel->nBombs].timeUntilNextXpm = 0.3;
+            ArenaModel->bombs[ArenaModel->nBombs].range = 3+ ArenaModel->players[1].range;
+            ArenaModel->bombs[ArenaModel->nBombs].owner = 1;
+            ArenaModel->nBombs++;
+            ArenaModel->players[1].bombcooldown = 3;
+        }
 
-void (PlayerControllers)(struct ArenaModel* ArenaModel){
-    kbc_Player1(&ArenaModel->players[0].direction);
-    kbc_Player2(&ArenaModel->players[1].direction);
+    }
+}
+
+void (PlayerControllers)(struct ArenaModel* arenaModel){
+    kbc_Player1(&arenaModel->players[0].direction);
+    kbc_Player2(&arenaModel->players[1].direction);
+    kbc_Bomb(arenaModel);
 }
 void (PlayerSpriteController)(int PlayerNumber, struct ArenaModel* ArenaModel){
     if(ArenaModel->players[PlayerNumber].direction!= STAY){
@@ -166,9 +195,99 @@ void (PlayerSpriteController)(int PlayerNumber, struct ArenaModel* ArenaModel){
     }
 }
 
-void (PlayersSpriteControllers)(struct ArenaModel* ArenaModel){
-    PlayerSpriteController(0,ArenaModel);
-    PlayerSpriteController(1,ArenaModel);
+void (PlayersSpriteControllers)(struct ArenaModel* arenaModel){
+    PlayerSpriteController(0,arenaModel);
+    PlayerSpriteController(1,arenaModel);
     
+}
+int (burn)(int x,int y,struct ArenaModel* arenaModel,enum Direction direction){
+    for(int i = 0; i < arenaModel->nBricks; i++){
+        if(arenaModel->bricks[i].position.x == x && arenaModel->bricks[i].position.y == y){
+            arenaModel->bricks[i] = arenaModel->bricks[arenaModel->nBricks-1];
+            arenaModel->nBricks--;
+            arenaModel->explosions[arenaModel->nExplosions].position.x = x;
+            arenaModel->explosions[arenaModel->nExplosions].position.y = y;
+            arenaModel->explosions[arenaModel->nExplosions].direction = direction;
+            arenaModel->explosions[arenaModel->nExplosions].timeUntilNextXpm = 0.3;
+            arenaModel->explosions[arenaModel->nExplosions].currentXpm = 0;
+            arenaModel->explosions[arenaModel->nExplosions].timeUntilFade = 1;
+            arenaModel->nExplosions++;
+            return 0;
+        }
+    }
+    for(int i = 0; i < arenaModel->nWalls; i++){
+        if(arenaModel->walls[i].position.x == x && arenaModel->walls[i].position.y == y){
+            return 1;
+        }
+    }
+    for(int i = 0; i < arenaModel->nBombs; i++){
+        if(arenaModel->bombs[i].position.x == x && arenaModel->bombs[i].position.y == y){
+            arenaModel->bombs[i].timeUntilExplosion = 0;
+            arenaModel->explosions[arenaModel->nExplosions].position.x = x;
+            arenaModel->explosions[arenaModel->nExplosions].position.y = y;
+            arenaModel->explosions[arenaModel->nExplosions].direction = direction;
+            arenaModel->explosions[arenaModel->nExplosions].timeUntilNextXpm = 0.3;
+            arenaModel->explosions[arenaModel->nExplosions].currentXpm = 0;
+            arenaModel->explosions[arenaModel->nExplosions].timeUntilFade = 1;
+            arenaModel->nExplosions++;
+
+            return 0;
+        }
+    }
+    for(int i = 0; i < 2; i++){
+        if(arenaModel->players[i].position.x == x && arenaModel->players[i].position.y == y){
+            arenaModel->players[i].lives--;
+            return 0;
+        }
+    }
+    arenaModel->explosions[arenaModel->nExplosions].position.x = x;
+    arenaModel->explosions[arenaModel->nExplosions].position.y = y;
+    arenaModel->explosions[arenaModel->nExplosions].direction = direction;
+    arenaModel->explosions[arenaModel->nExplosions].timeUntilNextXpm = 0.3;
+    arenaModel->explosions[arenaModel->nExplosions].currentXpm = 0;
+    arenaModel->explosions[arenaModel->nExplosions].timeUntilFade = 1;
+    arenaModel->nExplosions++;
+    return 0;
+
+}
+void (BombExplosion)(int i,struct ArenaModel* arenaModel){
+    int x = arenaModel->bombs[i].position.x;
+    int y = arenaModel->bombs[i].position.y;
+    burn(x,y,arenaModel,STAY);
+    for(int i=1;i>=arenaModel->bombs[i].range;i++)
+        if(x+i<30 && burn(x+i,y,arenaModel,RIGHT)) break;
+            
+    for(int i=1;i>=arenaModel->bombs[i].range;i++)
+        if(x-i>=0 && burn(x-i,y,arenaModel,LEFT)) break;
+
+    for(int i=1;i>=arenaModel->bombs[i].range;i++)     
+        if(y+i<15 && burn(x,y+i,arenaModel,DOWN)) break;
+        
+    for(int i=1;i>=arenaModel->bombs[i].range;i++)        
+        if(y-i>=0 && burn(x,y-i,arenaModel,UP)) break;   
+            
+    
+
+
+
+}
+void (BombsSpriteControllers)(struct ArenaModel* arenaModel){
+    for(int i = 0; i < arenaModel->nBombs; i++){
+        arenaModel->bombs[i].timeUntilExplosion -= arenaModel->elapsedTime;
+        if(arenaModel->bombs[i].timeUntilExplosion <= 0){
+            BombExplosion(i,arenaModel);
+            arenaModel->bombs[i] = arenaModel->bombs[arenaModel->nBombs-1];
+            arenaModel->nBombs--;
+        }else{
+            arenaModel->bombs[i].timeUntilNextXpm -= arenaModel->elapsedTime;
+            if(arenaModel->bombs[i].timeUntilNextXpm <= 0){
+                arenaModel->bombs[i].timeUntilNextXpm = 0.3;
+                if(arenaModel->bombs[i].currentXpm + 1 >= 3){
+                    arenaModel->bombs[i].currentXpm = -1;
+                }
+                arenaModel->bombs[i].currentXpm++;
+            }
+        }
+    }
 }
 

@@ -5,7 +5,7 @@
 #include "load.h"
 #include "keyboard.h"
 #include "mouse.h"
-#include "playerController.h"
+#include "Controller.h"
 
 void Game(struct ArenaModel model, enum GameState* state);
 
