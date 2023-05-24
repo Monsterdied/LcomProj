@@ -54,9 +54,11 @@ void Game(struct ArenaModel model, enum GameState* state){
     while(*state==GAME){
    
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
-            timer_interrupts_counter = 1;  
+            timer_interrupts_counter = 1;
+            PlayersAreAlive(&model,state);  
             PlayersSpriteControllers(&model);
             BombsSpriteControllers(&model);
+            ExplosionsController(&model);
             draw_game(model,mouse);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        

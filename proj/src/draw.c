@@ -174,8 +174,6 @@ void (drawBombs)(struct ArenaModel model){
         else{
             drawXpm8_8_8(bomb3,model.bombs[i].position.x * multiplier,model.bombs[i].position.y*multiplier);
         }    
-
-        
     }
 }
 void (drawFlames)(struct ArenaModel model){

@@ -7,7 +7,9 @@ enum GameState{
     MENU,
     GAME,
     GAMEOVER,
-    EXIT
+    EXIT,
+    PLAYER1WON,
+    PLAYER2WON,
 };
 enum Direction {
     UP,

@@ -290,4 +290,31 @@ void (BombsSpriteControllers)(struct ArenaModel* arenaModel){
         }
     }
 }
+void (ExplosionsController)(struct ArenaModel* arenaModel){
+    for(int i = 0; i < arenaModel->nExplosions; i++){
+        arenaModel->explosions[i].timeUntilNextXpm -= arenaModel->elapsedTime;
+        if(arenaModel->explosions[i].timeUntilNextXpm <= 0){
+            arenaModel->explosions[i].timeUntilNextXpm = 0.3;
+            if(arenaModel->explosions[i].currentXpm + 1 >= 2){
+                arenaModel->explosions[i].currentXpm = -1;
+            }
+            arenaModel->explosions[i].currentXpm++;
+        }
+        arenaModel->explosions[i].timeUntilFade -= arenaModel->elapsedTime;
+        if(arenaModel->explosions[i].timeUntilFade <= 0){
+            arenaModel->explosions[i] = arenaModel->explosions[arenaModel->nExplosions-1];
+            arenaModel->nExplosions--;
+            i--;
+        }
+    }
+
+}
+void (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state){
+    if(arenaModel->players[0].lives <= 0){
+        *state = PLAYER2WON;
+    }
+    if(arenaModel->players[1].lives <= 0){
+        *state = PLAYER1WON;
+    }
+}
 
