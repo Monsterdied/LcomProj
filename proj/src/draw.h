@@ -91,6 +91,8 @@
 #include "models/numbers/9.xpm"
 #include "models/numbers/double_points.xpm"
 
+#include "models/font/font.xpm"
+
 
 
 
@@ -114,4 +116,5 @@ void (drawPowerUps)(char** arena, struct ArenaModel model);
 void (drawBricks)(struct ArenaModel model);
 void (drawWalls)(struct ArenaModel model);
 void (draw_menu)(struct MenuModel model, Mouse mouse);
+void (draw_string)(char* text, int x, int y);
 #endif //UNTITLED10_DRAW_H

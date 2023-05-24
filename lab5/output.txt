@@ -1,3 +1,0 @@
-start interrupts
-did interrupts
-stop

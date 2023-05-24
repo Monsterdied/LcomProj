@@ -188,3 +188,42 @@ int (drawXpm8_8_8)(xpm_image_t img,int x , int y){
       }
       return 0;
 }
+
+int (vg_draw_Character)(char c,xpm_image_t img,int x , int y,uint32_t colorChosen){
+    uint8_t bpp = img.size / (img.height * img.width);
+    int height = 32;
+    int width =32;
+    int char_position = 0;
+    unsigned char* index = img.bytes;
+    if(c == ' '){
+        return 0;
+    }else{
+        char_position = c - '!' + 2;
+    }
+    //printf("%d\n",char_position);
+    int y_offset = char_position / 8;
+    int x_offset = char_position % 8;
+
+    //printf("x:%d y:%d %c\n",x_offset,y_offset,c);
+    index = index +y_offset * bpp * img.width*32;
+    index = index + x_offset * bpp*32;
+      for(int i = y; i < height + y; i++){
+        index = index +bpp*7*32;
+        for (int j = x; j < width + x; j++){
+        
+
+            uint32_t color = 0;
+            color |= *(index + 0) |*(index + 1) << (1 * 8) | *(index + 2) << (2 * 8);
+
+            if (color == CHROMA_KEY_GREEN_888) {
+                index= index + bpp;
+                continue;
+            }
+
+            draw_pixel(j, i,colorChosen);
+
+            index= index + bpp;
+        }
+      }
+      return 0;
+}
