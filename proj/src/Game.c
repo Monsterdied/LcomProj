@@ -62,9 +62,8 @@ void Game(struct ArenaModel model, enum GameState* state){
                 BombsSpriteControllers(&model);
                 ExplosionsController(&model);
                 PlayersAreAlive(&model,state);
-            }else{
-                afterdeathcountdown--;
             }
+            if(*state!=GAME) afterdeathcountdown--;
             draw_game(model,mouse);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
