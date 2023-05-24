@@ -5,7 +5,7 @@
 #include "models/models.h"
 #include "Game.h"
 #include "Menu.h"
-
+#include "rtc.h"
 #include <lcom/lcf.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -13,7 +13,6 @@
 #include "load.h"
 #include "draw.h"
 #include "models/models.h"
-#include "rtc.h"
 
 
 int main(int argc, char *argv[]) {
@@ -93,7 +92,7 @@ int (proj_main_loop)() {
         }
     }
 
-    sleep(5);
+
 
     return 0;
 }
