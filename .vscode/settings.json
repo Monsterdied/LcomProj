@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "*.xpm": "c",
-        "keyboard.h": "c"
+        "malloc.h": "c",
+        "keyboard.h": "c",
+        "i8042.h": "c"
     }
 }

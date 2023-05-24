@@ -166,25 +166,24 @@ int (drawXpm)(xpm_map_t xpm,int x , int y){
 int (drawXpm8_8_8)(xpm_image_t img,int x , int y){
     int height = img.height;
     int width = img.width;
-    int index = 0;
+    unsigned char* index = img.bytes;
+    uint8_t bpp = img.size / (img.height * img.width);
       for(int i = y; i < height + y; i++){
         for (int j = x ; j < width + x; j++){
         
-        uint8_t bpp = img.size / (img.height * img.width);
+        
 
-        uint32_t color = 0;
-            color |= *(img.bytes + (index * bpp) + 0);
-            color |= *(img.bytes + (index * bpp) + 1) << (1 * 8);
-            color |= *(img.bytes + (index * bpp) + 2) << (2 * 8);
+            uint32_t color = 0;
+            color |= *(index + 0) |*(index + 1) << (1 * 8) | *(index + 2) << (2 * 8);
 
             if (color == CHROMA_KEY_GREEN_888) {
-                index++;
+                index= index + bpp;
                 continue;
             }
 
-          draw_pixel(j, i,color);
+            draw_pixel(j, i,color);
 
-            index++;
+            index= index + bpp;
         }
       }
       return 0;

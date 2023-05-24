@@ -39,36 +39,58 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
+extern int scan_code[2];
+int i = 0;
+
 
 int (proj_main_loop)() {
-    // Initialize graphics mode (replace MODE_XXXX with the desired video mode)
-    if (vg_init_new(0X14C) != 0) {
-        printf("Failed to initialize graphics mode.\n");
-        return 1;
-    }
 
-    // Map video RAM
-    if (map_vram(0X14C) != 0) {
-        printf("Failed to map video RAM.\n");
-        return 1;
-    }
 
-    // Draw a rectangle
-    uint16_t x = 0;     
-    uint16_t y = 0;     
-    uint16_t width = 1151; 
-    uint16_t height = 863;
-    uint32_t color = 0xFFFFFF; 
 
-    if (vg_draw_rectangle(x, y, width, height, color) != 0) {
-        printf("Failed to draw rectangle.\n");
-        return 1;
-    }
 
-    // Update the screen to show the changes
-    if (vg_update() != 0) {
-        printf("Failed to update the screen.\n");
-        return 1;
+    enum GameState state=MENU;
+
+    // first argument is y and secon is x 
+    char arena[15][30]={
+                     "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+                     "H______h_hhhhhh____B_________H",
+                     "H_____________h______________H",
+                     "H_____________h______________H",
+                     "H___HHHH______h______h_______H",
+                     "H______h______h______________H",
+                     "H____________________________H",
+                     "H_____h_______HHHHH______h___H",
+                     "H______________h_____________H",
+                     "H_______________h____________H",
+                     "H______O_________h___________H",
+                     "H___HHHH__________h_b________H",
+                     "H__________________h_________H",
+                     "H___________________h________H",
+                     "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+    };
+    
+    struct ArenaModel model=loadArena(arena);
+
+    load_xpms(&model);
+    state=GAME;
+    while(state!=EXIT){
+        switch (state){
+            case MENU:
+                    printf("menu\n");
+                                                    printf("game\n");
+                model=Menu(&state);
+                break;
+            case GAME:
+                                printf("game\n");
+                Game(model,&state);
+                break;
+         case GAMEOVER:
+                state=EXIT;
+                //state=gameOver(state);
+                break;    
+            case EXIT:
+                break;
+        }
     }
 
     sleep(5);

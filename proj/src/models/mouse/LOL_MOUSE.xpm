@@ -1,5 +1,5 @@
 /* XPM */
-static char * LOL_MOUSE_xpm[] = {
+static xpm_row_t const LOL_MOUSE_xpm[] = {
 "44 44 1283 2",
 "  	c None",
 ". 	c #000000",
