@@ -5,7 +5,7 @@
 
 #include "i8254.h"
 int time_global = 0;
-int hook_id = 0 ;
+int timer_hook_id = 0 ;
 int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
   // check if frequency is within spec
   if(freq >TIMER_FREQ || freq <=0){
@@ -38,15 +38,17 @@ int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
 }
 
 int (timer_subscribe_int)(uint8_t *bit_no) {
-  hook_id = 0;
-  *bit_no = hook_id;
-
-  bool tmp = sys_irqsetpolicy(TIMER0_IRQ,IRQ_REENABLE,&hook_id);
+  timer_hook_id=0;
+  *bit_no = timer_hook_id;
+  printf("timer_hook_id = %d\n",timer_hook_id);
+  bool tmp = sys_irqsetpolicy(TIMER0_IRQ,IRQ_REENABLE,&timer_hook_id);
   return tmp;
 }
 
 int (timer_unsubscribe_int)() {
-  bool tmp = sys_irqrmpolicy(&hook_id);
+  printf("timer_hook_id = %d\n",timer_hook_id);
+  bool tmp = sys_irqrmpolicy(&timer_hook_id);
+
   return tmp ;
 }
 

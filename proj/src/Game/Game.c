@@ -67,7 +67,6 @@ void Game(struct ArenaModel model, enum GameState* state){
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }
-            printf("draw\n");
         } 
         if ( (r = driver_receive(ANY, &msg, &ipc_status)) != OK ) {     
         printf("driver_receive failed with: %d", r);

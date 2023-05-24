@@ -167,6 +167,7 @@ struct ArenaModel (Menu)(enum GameState* state){
     }  
     mouse_Unsubscribe();
     kbc_Unsubscribe();
+    printf("timer_hook_id = %d\n",bit_no_timer);
     timer_unsubscribe_int();
     vg_exit();
     struct ArenaModel arenamodel=loadArena(arena);
