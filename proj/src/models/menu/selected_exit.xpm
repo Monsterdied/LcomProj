@@ -97,7 +97,7 @@ static xpm_row_t const selected_exit_xpm[] = {
 "..	c #F5F5F5",
 "+.	c #505050",
 "@.	c #B0B1B0",
-"#.	c #909190",
+"#.	c #B4B4B4",
 "$.	c #898A89",
 "%.	c #717171",
 "&.	c #A4A4A4",

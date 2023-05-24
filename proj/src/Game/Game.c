@@ -32,6 +32,7 @@ int handleInterrupts(){
     if(timer_subscribe_int(&bit_no_timer) != OK){
         return 1;
     }
+    printf(" bit_timer %d\n",bit_no_timer);
     if(mouse_Subscribe(&bit_no_mouse) != OK){
         return 1;
     }
@@ -56,27 +57,28 @@ void Game(struct ArenaModel model, enum GameState* state){
    
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
-            
-            if(PlayersAreAlive(&model,state)) {
+            if(PlayersAreAlive(&model,state) && *state==GAME) {
                 PlayersSpriteControllers(&model);
                 BombsSpriteControllers(&model);
                 ExplosionsController(&model);
-                PlayersAreAlive(&model,state);
             }
             if(*state!=GAME) afterdeathcountdown--;
             draw_game(model,mouse);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }
+            printf("draw\n");
         } 
         if ( (r = driver_receive(ANY, &msg, &ipc_status)) != OK ) {     
         printf("driver_receive failed with: %d", r);
         continue;
         }
-        if (is_ipc_notify(ipc_status)) { /* received notification */
+        if (is_ipc_notify(ipc_status)) {
+             /* received notification */
             switch (_ENDPOINT_P(msg.m_source)) {
                 case HARDWARE: /* hardware interrupt notification */				
-                    if (msg.m_notify.interrupts & irq_set_kbc) { /* subscribed interrupt */
+                    if (msg.m_notify.interrupts & irq_set_kbc) { 
+                        /* subscribed interrupt */
                         kbc_ih();
                         if(scan_code[i]==TWO_BYTES){   //se o scan code for de 2 bytes vai incrementar o i e fazer o continue para ler o proximo byte (o segundo neste caso)
                         i++; 
@@ -114,5 +116,6 @@ void Game(struct ArenaModel model, enum GameState* state){
     kbc_Unsubscribe();
     timer_unsubscribe_int();
     vg_exit();
+    printf("exit\n");
 
 }

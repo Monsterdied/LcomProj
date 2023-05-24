@@ -1,21 +1,23 @@
 #include "Menu.h"
-char arena[15][30]={
-                    "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
-                    "H__________________B_________H",
-                    "H____________________________H",
-                    "H____________________________H",
-                    "H___HHHH_____________________H",
-                    "H____________________________H",
-                    "H____________________________H",
-                    "H_____________HHHHH__________H",
-                    "H____________________________H",
-                    "H____________________________H",
-                    "H____________________________H",
-                    "H___HHHH____________b________H",
-                    "H____________________________H",
-                    "H____________________________H",
-                    "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
-};
+    // first argument is y and secon is x 
+    char arena[15][30]={
+                     "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+                     "H______h_hhhhhh____B_________H",
+                     "H_____________h______________H",
+                     "H_____________h______________H",
+                     "H___HHHH______h______h_______H",
+                     "H______h______h______________H",
+                     "H____________________________H",
+                     "H_____h_______HHHHH______h___H",
+                     "H______________h_____________H",
+                     "H_______________h____________H",
+                     "H______O_________h___________H",
+                     "H___HHHH__________h_b________H",
+                     "H__________________h_________H",
+                     "H___________________h________H",
+                     "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+    };
+    
 Mouse mouse;
 struct MenuModel model;
 message msg;
@@ -142,9 +144,10 @@ struct ArenaModel (Menu)(enum GameState* state){
 
                     mouse_ih_new(&mouse);
                     if( mouse.left_click==true && mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
-                        *state=EXIT;
-                    }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
+                        
                         *state=GAME;
+                    }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
+                        *state=EXIT;
                     }            
 
                   }
@@ -167,5 +170,6 @@ struct ArenaModel (Menu)(enum GameState* state){
     timer_unsubscribe_int();
     vg_exit();
     struct ArenaModel arenamodel=loadArena(arena);
+    load_xpms(&arenamodel);
     return arenamodel;
 }

@@ -69,7 +69,7 @@ int (proj_main_loop)() {
     struct ArenaModel model=loadArena(arena);
 
     load_xpms(&model);
-    state=GAME;
+    state=MENU;
     while(state!=EXIT){
         switch (state){
             case MENU:
