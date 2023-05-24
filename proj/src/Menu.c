@@ -96,7 +96,6 @@ int get_started_on_menu(){
     timer_interrupts_per_frame = 60/fr_rate;
     timer_interrupts_counter = 0;
     timer_rtc_interrupts_counter= 0;
-    printf("Time-> %d:%d:%d\n", getHours(time_info), getMinutes(time_info), getSeconds(time_info));
     return 0;
 }
 
@@ -110,7 +109,6 @@ struct ArenaModel (Menu)(enum GameState* state){
     while(*state==MENU){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 0; 
-        update_time_display(&time_info);       
         draw_menu(model,mouse,time_info);
         if(vg_update()!= OK){
             printf("Screen dind't update");        
@@ -147,7 +145,7 @@ struct ArenaModel (Menu)(enum GameState* state){
                         if(timer_rtc_interrupts_counter%60==0){
                             timer_rtc_interrupts_counter=1;
                             update_time_display(&time_info);
-                            
+                            draw_TimeNumbers(time_info);
                         }
                     
                     }

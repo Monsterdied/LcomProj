@@ -284,6 +284,19 @@ void (numbersDisplay)(int number, int x, int y ){
         drawXpm8_8_8(number_9,x,y);
     }
 }
+void (draw_TimeNumbers)(time_display time_info){
+    uint8_t hours = getHours(time_info);
+    uint8_t minutes = getMinutes(time_info);
+    uint8_t seconds = getSeconds(time_info);
+    numbersDisplay(hours/10,10,10);
+    numbersDisplay(hours%10,30,10);
+    drawXpm8_8_8(double_point,50,10);
+    numbersDisplay(minutes/10,70,10);
+    numbersDisplay(minutes%10,90,10);
+    drawXpm8_8_8(double_point,110,10);
+    numbersDisplay(seconds/10,130,10);
+    numbersDisplay(seconds%10,150,10);
+}
 void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
     drawXpm8_8_8(menuIcon,150,50);
     
@@ -295,15 +308,7 @@ void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
         drawXpm8_8_8(menu_exit_button_selected,150,500);
 
     }
-    uint8_t hours = getHours(time_info);
-    printf("%d\n",hours);
-    uint8_t minutes = getMinutes(time_info);
-    printf("%d\n",minutes);
-    numbersDisplay(hours/10,10,10);
-    numbersDisplay(hours%10,30,10);
-    drawXpm8_8_8(double_point,50,10);
-    numbersDisplay(minutes/10,70,10);
-    numbersDisplay(minutes%10,90,10);
+    draw_TimeNumbers(time_info);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 
     

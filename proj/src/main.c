@@ -42,12 +42,11 @@ extern int scan_code[2];
 int i = 0;
 extern time_display time_info;
 
-int (proj_main_loop)() {
+int (proj_main_loop)(){
 
 
 
-    update_time_display(&time_info);
-    printf("Time-> %d:%d:%d\n", getHours(time_info), getMinutes(time_info), getSeconds(time_info));  
+    update_time_display(&time_info);  
     enum GameState state=MENU;
 
     // first argument is y and secon is x 

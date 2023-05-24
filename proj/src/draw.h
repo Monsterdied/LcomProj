@@ -115,4 +115,5 @@ void (drawPowerUps)(char** arena, struct ArenaModel model);
 void (drawBricks)(struct ArenaModel model);
 void (drawWalls)(struct ArenaModel model);
 void (draw_menu)(struct MenuModel model, Mouse mouse, time_display time_info);
+void (draw_TimeNumbers)(time_display time_info);
 #endif //UNTITLED10_DRAW_H
