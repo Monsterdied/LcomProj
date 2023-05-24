@@ -2,7 +2,9 @@
 // Created by diogo on 22/04/2023.
 #ifndef BOMBERMAN_MODELS_H
 #define BOMBERMAN_MODELS_H
-#include "video_gr.h"
+
+#include "devices/video_gr.h"
+
 enum GameState{
     MENU,
     GAME,

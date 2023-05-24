@@ -1,6 +1,12 @@
 # name of the program (Minix service)
 PROG=proj
 
+.PATH: ${.CURDIR}
+.PATH: ${.CURDIR}/devices
+.PATH: ${.CURDIR}/Game/gameControllers
+.PATH: ${.CURDIR}/draw
+.PATH: ${.CURDIR}/Game
+
 # source code files to be compiled
 SRCS = main.c mouse.c keyboard.c video_gr.c timer.c draw.c Game.c load.c Menu.c Controller.c
 

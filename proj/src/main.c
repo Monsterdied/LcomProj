@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "load.h"
-#include "draw.h"
+#include "Game/load.h"
+
 #include "models/models.h"
-#include "Game.h"
-#include "Menu.h"
+#include "Game/Game.h"
+#include "Game/Menu.h"
 
 #include <lcom/lcf.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <unistd.h>
-#include "load.h"
-#include "draw.h"
 #include "models/models.h"
 
 
