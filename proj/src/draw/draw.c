@@ -178,25 +178,25 @@ void (drawBombs)(struct ArenaModel model){
 }
 void (drawFlames)(struct ArenaModel model){
     for(int i =0 ;i<model.nExplosions;i++){
-        if(model.explosions[i].direction==STAY){
+        if(model.explosions[i].direction==CENTERFLAME){
             if(model.explosions[i].currentXpm==0){
                 drawXpm8_8_8(explosion_center_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }else{
                 drawXpm8_8_8(explosion_center_2,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }
-        }else if(model.explosions[i].direction==UP){
+        }else if(model.explosions[i].direction==UPFLAME){
             if(model.explosions[i].currentXpm==0){
                 drawXpm8_8_8(explosion_top_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }else{
                 drawXpm8_8_8(explosion_top_2,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }
-        }else if(model.explosions[i].direction==DOWN){
+        }else if(model.explosions[i].direction==DOWNFLAME){
             if(model.explosions[i].currentXpm==0){
                 drawXpm8_8_8(explosion1bot,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }else{
                 drawXpm8_8_8(explosion2bot,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }
-        }else if(model.explosions[i].direction==LEFT){
+        }else if(model.explosions[i].direction==LEFTFLAME){
             if(model.explosions[i].currentXpm==0){
                 drawXpm8_8_8(explosion_left_1,model.explosions[i].position.x * multiplier,model.explosions[i].position.y*multiplier);
             }else{

@@ -20,6 +20,14 @@ enum Direction {
     RIGHT,
     STAY
 };
+enum FlameDirection{
+    UPFLAME,
+    DOWNFLAME,
+    LEFTFLAME,
+    RIGHTFLAME,
+    CENTERFLAME
+};
+
 
 enum PowerUpType {
     BOMB,
@@ -32,7 +40,7 @@ struct Position {
 };
 struct Explosion {
     struct Position position;
-    enum Direction direction;
+    enum FlameDirection direction;
     double timeUntilNextXpm;
     double timeUntilFade;
     int currentXpm;

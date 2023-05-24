@@ -200,7 +200,7 @@ void (PlayersSpriteControllers)(struct ArenaModel* arenaModel){
     PlayerSpriteController(1,arenaModel);
     
 }
-int (burn)(int x,int y,struct ArenaModel* arenaModel,enum Direction direction){
+int (burn)(int x,int y,struct ArenaModel* arenaModel,enum FlameDirection direction){
     for(int i = 0; i < arenaModel->nBricks; i++){
         if(arenaModel->bricks[i].position.x == x && arenaModel->bricks[i].position.y == y){
             arenaModel->bricks[i] = arenaModel->bricks[arenaModel->nBricks-1];
@@ -262,18 +262,18 @@ void (BombExplosion)(int i,struct ArenaModel* arenaModel){
     int y = arenaModel->bombs[i].position.y;
     arenaModel->bombs[i] = arenaModel->bombs[arenaModel->nBombs-1];
     arenaModel->nBombs--;
-    burn(x,y,arenaModel,STAY);
+    burn(x,y,arenaModel,CENTERFLAME);
     for(int i=1;i>=arenaModel->bombs[i].range;i++)
-        if(x+i<30 && burn(x+i,y,arenaModel,RIGHT)) break;
+        if(x+i<30 && burn(x+i,y,arenaModel,RIGHTFLAME)) break;
             
     for(int i=1;i>=arenaModel->bombs[i].range;i++)
-        if(x-i>=0 && burn(x-i,y,arenaModel,LEFT)) break;
+        if(x-i>=0 && burn(x-i,y,arenaModel,LEFTFLAME)) break;
 
     for(int i=1;i>=arenaModel->bombs[i].range;i++)     
-        if(y+i<15 && burn(x,y+i,arenaModel,DOWN)) break;
+        if(y+i<15 && burn(x,y+i,arenaModel,DOWNFLAME)) break;
         
     for(int i=1;i>=arenaModel->bombs[i].range;i++)        
-        if(y-i>=0 && burn(x,y-i,arenaModel,UP)) break;   
+        if(y-i>=0 && burn(x,y-i,arenaModel,UPFLAME)) break;   
             
     
 
