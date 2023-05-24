@@ -49,14 +49,14 @@ typedef struct {
 } time_display; 
 
 
-
+time_display time_info;
 int rtc_subscribe_interrupts(uint8_t *bit_rtc);
 int rtc_unsubcribe_interrupts();
 int rtc_output(uint8_t cmd , uint8_t *output);
 int is_updating_rtc();
 void convert_binary(uint8_t *value);
 int update_time_display(time_display *time_info);
-int getHours();
-int getMinutes();
-int getSeconds();
+int getHours(time_display time_info);
+int getMinutes(time_display time_info);
+int getSeconds(time_display time_info);
 #endif

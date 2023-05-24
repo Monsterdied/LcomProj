@@ -3,6 +3,9 @@
         "*.xpm": "c",
         "malloc.h": "c",
         "keyboard.h": "c",
-        "i8042.h": "c"
+        "i8042.h": "c",
+        "game.h": "c",
+        "menu.h": "c",
+        "video_gr.h": "c"
     }
 }

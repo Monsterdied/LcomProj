@@ -252,8 +252,39 @@ char (**getemptyArena()) {
     return arena;
 }
 
-
-void (draw_menu)(struct MenuModel model,Mouse mouse){
+void (numbersDisplay)(int number, int x, int y ){
+    if(number==0){
+        drawXpm8_8_8(number_0,x,y);
+    }
+    if(number==1){
+        drawXpm8_8_8(number_1,x,y);
+    }
+    if(number==2){
+        drawXpm8_8_8(number_2,x,y);
+    }
+    if(number==3){
+        drawXpm8_8_8(number_3,x,y);
+    }
+    if(number==4){
+        drawXpm8_8_8(number_4,x,y);
+    }
+    if(number==5){
+        drawXpm8_8_8(number_5,x,y);
+    }
+    if(number==6){
+        drawXpm8_8_8(number_6,x,y);
+    }
+    if(number==7){
+        drawXpm8_8_8(number_7,x,y);
+    }
+    if(number==8){
+        drawXpm8_8_8(number_8,x,y);
+    }
+    if(number==9){
+        drawXpm8_8_8(number_9,x,y);
+    }
+}
+void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
     drawXpm8_8_8(menuIcon,150,50);
     
     if(model.selectedOption==0){
@@ -264,7 +295,18 @@ void (draw_menu)(struct MenuModel model,Mouse mouse){
         drawXpm8_8_8(menu_exit_button_selected,150,500);
 
     }
+    uint8_t hours = getHours(time_info);
+    printf("%d\n",hours);
+    uint8_t minutes = getMinutes(time_info);
+    printf("%d\n",minutes);
+    numbersDisplay(hours/10,10,10);
+    numbersDisplay(hours%10,30,10);
+    drawXpm8_8_8(double_point,50,10);
+    numbersDisplay(minutes/10,70,10);
+    numbersDisplay(minutes%10,90,10);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+
+    
 }
 void (draw_game)(struct ArenaModel model,Mouse mouse){
 

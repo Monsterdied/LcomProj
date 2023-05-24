@@ -18,10 +18,13 @@ char arena[15][30]={
 };
 Mouse mouse;
 struct MenuModel model;
+extern time_display time_info;
+
 message msg;
 int ipc_status;
 int r;
 int timer_interrupts_per_frame;
+int timer_rtc_interrupts_counter;
 int timer_interrupts_counter;
 uint8_t irq_set_timer;
 uint32_t irq_set_mouse;
@@ -83,12 +86,17 @@ int get_started_on_menu(){
     if(mouse_Subscribe(&bit_no_mouse) != OK){
         return 1;
     }
+
+    
+
     i=0;
     irq_set_timer = BIT(bit_no_timer);
     irq_set_kbc = BIT(bit_no_kbc);
     irq_set_mouse = BIT(bit_no_mouse);
     timer_interrupts_per_frame = 60/fr_rate;
     timer_interrupts_counter = 0;
+    timer_rtc_interrupts_counter= 0;
+    printf("Time-> %d:%d:%d\n", getHours(time_info), getMinutes(time_info), getSeconds(time_info));
     return 0;
 }
 
@@ -101,8 +109,9 @@ struct ArenaModel (Menu)(enum GameState* state){
     }
     while(*state==MENU){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
-            timer_interrupts_counter = 0;        
-        draw_menu(model,mouse);
+            timer_interrupts_counter = 0; 
+        update_time_display(&time_info);       
+        draw_menu(model,mouse,time_info);
         if(vg_update()!= OK){
             printf("Screen dind't update");        
             }
@@ -134,20 +143,26 @@ struct ArenaModel (Menu)(enum GameState* state){
 
                     if(msg.m_notify.interrupts & irq_set_timer){
                         timer_interrupts_counter++;
-
+                        timer_rtc_interrupts_counter++;
+                        if(timer_rtc_interrupts_counter%60==0){
+                            timer_rtc_interrupts_counter=1;
+                            update_time_display(&time_info);
+                            
+                        }
+                    
                     }
 
                     if (msg.m_notify.interrupts & irq_set_mouse) {
-                    mouse_api_menu();
+                        mouse_api_menu();
 
-                    mouse_ih_new(&mouse);
-                    if( mouse.left_click==true && mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
-                        *state=EXIT;
-                    }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
-                        *state=GAME;
-                    }            
-
-                  }
+                        mouse_ih_new(&mouse);
+                        if( mouse.left_click==true && mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
+                            *state=EXIT;
+                        }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
+                            *state=GAME;
+                        }            
+                    }
+                    
 
                     break;
                 default:

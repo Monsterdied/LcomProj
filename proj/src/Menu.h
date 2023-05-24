@@ -7,6 +7,7 @@
 #include "load.h"
 #include "keyboard.h"
 #include "mouse.h"
+#include "rtc.h"
 
 struct ArenaModel (Menu)(enum GameState* state);
 

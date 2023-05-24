@@ -1,6 +1,7 @@
 #include "rtc.h"
 
 
+
 int hook_id_rtc = 5;
 
 int rtc_subscribe_interrupts(uint8_t *bit_rtc){
