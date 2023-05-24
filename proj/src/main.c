@@ -75,19 +75,25 @@ int (proj_main_loop)() {
     while(state!=EXIT){
         switch (state){
             case MENU:
-                    printf("menu\n");
-                                                    printf("game\n");
+                                                    
                 model=Menu(&state);
                 break;
             case GAME:
-                                printf("game\n");
+
                 Game(model,&state);
                 break;
-         case GAMEOVER:
+            case GAMEOVER:
                 state=EXIT;
                 //state=gameOver(state);
                 break;    
             case EXIT:
+                break;
+            case PLAYER1WON:
+                state=EXIT;
+                //state=player1Won(state);
+                break;
+            case PLAYER2WON:
+                state=EXIT;
                 break;
         }
     }

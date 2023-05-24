@@ -1,4 +1,3 @@
-game
 start interrupts
 did interrupts
 stop

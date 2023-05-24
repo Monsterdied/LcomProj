@@ -48,17 +48,23 @@ void Game(struct ArenaModel model, enum GameState* state){
     message msg;
     int ipc_status;
     int r;
+    int afterdeathcountdown=100;
     printf("start interrupts\n");
     handleInterrupts();
     printf("did interrupts\n");
-    while(*state==GAME){
+    while(*state==GAME || afterdeathcountdown>0){
    
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
-            PlayersAreAlive(&model,state);  
-            PlayersSpriteControllers(&model);
-            BombsSpriteControllers(&model);
-            ExplosionsController(&model);
+            
+            if(PlayersAreAlive(&model,state)) {
+                PlayersSpriteControllers(&model);
+                BombsSpriteControllers(&model);
+                ExplosionsController(&model);
+                PlayersAreAlive(&model,state);
+            }else{
+                afterdeathcountdown--;
+            }
             draw_game(model,mouse);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        

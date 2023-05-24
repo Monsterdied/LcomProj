@@ -12,6 +12,6 @@ void (PlayerControllers)(struct ArenaModel* ArenaModel);
 void (PlayersSpriteControllers)(struct ArenaModel* model);
 void (BombsSpriteControllers)(struct ArenaModel* ArenaModel);
 void (ExplosionsController)(struct ArenaModel* arenaModel);
-void (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state);
+int (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state);
 
 #endif //UNTITLED10_CONTROLLER_H
