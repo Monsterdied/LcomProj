@@ -30,7 +30,8 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 menu_exit_button_not_selected,
                 menu_continue_button_selected,
                 menu_continue_button_not_selected,
-                number_0,number_1,number_2,number_3,number_4,number_5,number_6,number_7,number_8,number_9,double_point;
+                number_0,number_1,number_2,number_3,number_4,number_5,number_6,number_7,number_8,number_9,double_point,
+                font;
 int multiplier = 22; 
 int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
@@ -143,6 +144,8 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(number_8_xpm,XPM_8_8_8,&number_8);
     xpm_load(number_9_xpm,XPM_8_8_8,&number_9);
     xpm_load(double_points_xpm,XPM_8_8_8,&double_point);
+
+    xpm_load(font_xmp,XPM_8_8_8,&font);
     
     return 0;
 }
@@ -210,6 +213,13 @@ void (drawFlames)(struct ArenaModel model){
             }
         }
         
+    }
+}
+void (draw_string)(char* text, int x, int y){
+    int length = strlen(text);
+    for(int i = 0 ; i < length;i++){
+        x+=15;
+        vg_draw_Character(text[i],font,x,y,0xFF0000);
     }
 }
 void (drawPlayers)(struct ArenaModel model){

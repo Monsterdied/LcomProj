@@ -12,3 +12,4 @@ int (G)(uint32_t color);
 int (B)(uint32_t color);
 int (vg_update)();
 int (draw_pixel)(uint16_t x , uint16_t y , uint32_t color);
+int (vg_draw_Character)(char c,xpm_image_t img,int x , int y,uint32_t colorChosen);

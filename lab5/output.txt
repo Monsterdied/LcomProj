@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 get default menu
 timer_hook_id = 0
 timer_hook_id = 0
@@ -258,3 +259,5 @@ draw
 stop
 timer_hook_id = 11
 exit
+=======
+>>>>>>> d9807d30ebd28c6bec8b8f8756d378ceb6155249
