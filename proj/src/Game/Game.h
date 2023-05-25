@@ -6,6 +6,7 @@
 #include "devices/keyboard.h"
 #include "devices/mouse.h"
 #include "gameControllers/Controller.h"
+#include "devices/rtc.h"
 
 void Game(struct ArenaModel model, enum GameState* state);
 

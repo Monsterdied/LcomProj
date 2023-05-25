@@ -5,6 +5,7 @@
 #include "models/models.h"
 #include "Game/Game.h"
 #include "Game/Menu.h"
+#include "devices/rtc.h"
 
 #include <lcom/lcf.h>
 #include <stdio.h>
@@ -38,13 +39,13 @@ int main(int argc, char *argv[]) {
 }
 extern int scan_code[2];
 int i = 0;
+extern time_display time_info;
+
+int (proj_main_loop)(){
 
 
-int (proj_main_loop)() {
 
-
-
-
+    update_time_display(&time_info);  
     enum GameState state=MENU;
 
     // first argument is y and secon is x 

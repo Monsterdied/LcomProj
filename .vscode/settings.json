@@ -1,29 +1,14 @@
 {
     "files.associations": {
-        "lab3.h": "c",
-        "lcf.h": "c",
-        "vector": "c",
-        "xstring": "c",
-        "xutility": "c",
-        "iterator": "c",
-        "string": "c",
-        "chrono": "c",
-        "xlocale": "c",
-        "__locale": "c",
-        "algorithm": "c",
-        "format": "c",
-        "xiosbase": "c",
-        "ios": "c",
         "*.xpm": "c",
         "malloc.h": "c",
-<<<<<<< HEAD
-        "__config": "c",
-        "ratio": "c",
-        "type_traits": "c",
-        "draw.h": "c"
-=======
         "keyboard.h": "c",
-        "i8042.h": "c"
->>>>>>> 937b262ae10a3f90459a37605acfc399980f4b85
+        "i8042.h": "c",
+        "game.h": "c",
+        "menu.h": "c",
+        "video_gr.h": "c",
+        "controller.h": "c",
+        "models.h": "c",
+        "mouse.h": "c"
     }
 }

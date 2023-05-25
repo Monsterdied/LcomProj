@@ -8,6 +8,7 @@
 #include "models/models.h"
 #include "devices/video_gr.h"
 #include "devices/mouse.h"
+#include "devices/rtc.h"
 //bombs and bricks etc
 #include "models/bomb/bomb1.xpm"
 #include "models/bomb/bomb2.xpm"
@@ -115,6 +116,7 @@ void (drawBombs)( struct ArenaModel model);
 void (drawPowerUps)(char** arena, struct ArenaModel model);
 void (drawBricks)(struct ArenaModel model);
 void (drawWalls)(struct ArenaModel model);
-void (draw_menu)(struct MenuModel model, Mouse mouse);
+void (draw_menu)(struct MenuModel model, Mouse mouse, time_display time_info);
+void (draw_TimeNumbers)(time_display time_info);
 void (draw_string)(char* text, int x, int y);
 #endif //UNTITLED10_DRAW_H

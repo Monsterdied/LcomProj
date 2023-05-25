@@ -4,6 +4,7 @@ extern Mouse mouse;
 extern int fr_rate;
 extern int scan_code[2];
 extern int i;
+extern time_display time_info;
 
 int timer_interrupts_per_frame;
 int timer_interrupts_counter;
@@ -36,6 +37,7 @@ int handleInterrupts(){
     if(mouse_Subscribe(&bit_no_mouse) != OK){
         return 1;
     }
+    
     i=0;
     irq_set_timer = BIT(bit_no_timer);
     irq_set_kbc = BIT(bit_no_kbc);
