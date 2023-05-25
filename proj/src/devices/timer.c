@@ -40,13 +40,13 @@ int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
 int (timer_subscribe_int)(uint8_t *bit_no) {
   timer_hook_id=0;
   *bit_no = timer_hook_id;
-  printf("timer_hook_id = %d\n",timer_hook_id);
   bool tmp = sys_irqsetpolicy(TIMER0_IRQ,IRQ_REENABLE,&timer_hook_id);
+
   return tmp;
 }
 
 int (timer_unsubscribe_int)() {
-  printf("timer_hook_id = %d\n",timer_hook_id);
+  //printf("timer_hook_id = %d\n",timer_hook_id);
   bool tmp = sys_irqrmpolicy(&timer_hook_id);
 
   return tmp ;
