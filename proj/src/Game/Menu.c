@@ -110,7 +110,7 @@ struct ArenaModel (Menu)(enum GameState* state){
     }
     while(*state==MENU){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
-            timer_interrupts_counter = 0; 
+            timer_interrupts_counter = 1; 
         draw_menu(model,mouse,time_info);
         if(vg_update()!= OK){
             printf("Screen dind't update");        

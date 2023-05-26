@@ -9,6 +9,9 @@
         "video_gr.h": "c",
         "controller.h": "c",
         "models.h": "c",
-        "mouse.h": "c"
+        "mouse.h": "c",
+        "iosfwd": "c",
+        "xlocbuf": "c",
+        "system_error": "c"
     }
 }

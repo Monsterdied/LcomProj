@@ -5,6 +5,7 @@
 #include "models/models.h"
 #include "Game/Game.h"
 #include "Game/Menu.h"
+#include "Game/SelectNames.h"
 #include "devices/rtc.h"
 
 #include <lcom/lcf.h>
@@ -76,6 +77,9 @@ int (proj_main_loop)(){
             case MENU:
                                                     
                 model=Menu(&state);
+                break;
+            case SELECTNAMES:
+                SelectNames(&state,&model);
                 break;
             case GAME:
 

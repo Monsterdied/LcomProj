@@ -6,6 +6,7 @@
 #include "devices/video_gr.h"
 
 enum GameState{
+    SELECTNAMES,
     MENU,
     GAME,
     GAMEOVER,
@@ -54,6 +55,8 @@ struct Bomb {
     int owner;
 };
 struct Player {
+    char name[10];
+    int nameSize;
     enum Direction direction;
     struct Position position;
     xpm_image_t Left[3] ;
