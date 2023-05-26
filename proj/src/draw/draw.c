@@ -108,6 +108,9 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(selected_start_xpm,XPM_8_8_8,&menu_start_button_selected);
     xpm_load(not_selected_start_xpm,XPM_8_8_8,&menu_start_button_not_selected);
 
+    //buttons
+    model->returnButton.button_selected =menu_continue_button_selected;
+    model->returnButton.button_unselected =menu_continue_button_not_selected;
 
     xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
 
@@ -329,8 +332,14 @@ void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
 
     
 }
+void draw_Button(struct Button button){
+    if(button.selected)
+        drawXpm8_8_8(button.button_selected,button.x,button.y);
+    else
+        drawXpm8_8_8(button.button_unselected,button.x,button.y);
+}
 void (draw_game)(struct ArenaModel model,Mouse mouse){
-
+    draw_Button(model.returnButton);
     //draw_background(model);
     drawWalls(model);
 

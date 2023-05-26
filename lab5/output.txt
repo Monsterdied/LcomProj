@@ -6,3 +6,4 @@ start interrupts
 did interrupts
 stop
 exit
+get default menu

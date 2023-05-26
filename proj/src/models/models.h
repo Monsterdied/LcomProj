@@ -54,17 +54,16 @@ struct Bomb {
     int range;
     int owner;
 };
-/*
+/**/
 struct Button{
     int x;
     int y;
-    int weight;
+    int width;
     int height;
-    int id;
     bool selected;
     xpm_image_t button_selected;
     xpm_image_t button_unselected;
-}*/
+};
 struct Player {
     char name[10];
     int nameSize;
@@ -105,6 +104,7 @@ struct ArenaModel {
     struct Brick bricks[450];
     struct Explosion explosions[450];
     struct PowerUp powerUps[10];
+    struct Button returnButton;
     double elapsedTime;
     int nWalls;
     int nBricks;
