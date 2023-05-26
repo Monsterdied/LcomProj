@@ -30,7 +30,7 @@ void (mouse_api_select_names)(){
 }*/
 void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
 
-    if(scan_code[0] == KBC_MAKE_CODE_ENTER){
+    if(scan_code[0] == KBC_MAKE_CODE_ENTER && model->players[number_of_player].nameSize > 0){
         number_of_player +=1;
         if(number_of_player== 2){
             *state=GAME;
@@ -89,7 +89,7 @@ struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
     while(*state==SELECTNAMES){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1; 
-        //draw_menu(model,mouse,time_info);
+        draw_select_names(number_of_player,*model,mouse);
         if(vg_update()!= OK){
             printf("Screen dind't update");        
             }
@@ -123,7 +123,7 @@ struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
                         if(timer_rtc_interrupts_counter%60==0){
                             timer_rtc_interrupts_counter=1;
                             update_time_display(&time_info);
-                            draw_TimeNumbers(time_info);
+                            //draw_TimeNumbers(time_info);
                         }
                     
                     }

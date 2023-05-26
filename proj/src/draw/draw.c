@@ -215,9 +215,8 @@ void (drawFlames)(struct ArenaModel model){
         
     }
 }
-void (draw_string)(char* text, int x, int y){
-    int length = strlen(text);
-    for(int i = 0 ; i < length;i++){
+void (draw_string)(char* text, int x, int y,int size){
+    for(int i = 0 ; i < size;i++){
         x+=15;
         vg_draw_Character(text[i],font,x,y,0xFF0000);
     }
@@ -304,6 +303,14 @@ void (draw_TimeNumbers)(time_display time_info){
     drawXpm8_8_8(double_point,110,10);
     numbersDisplay(seconds/10,130,10);
     numbersDisplay(seconds%10,150,10);
+}
+void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
+    char string[] = "Player Number 0";
+    char string_num = player_number + '1';
+    string[15] = string_num;
+    //draw_string(string,30,30,16);
+    draw_string(model.players[player_number].name,100,30 ,model.players[player_number].nameSize);
+    drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }
 void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
     drawXpm8_8_8(menuIcon,150,50);

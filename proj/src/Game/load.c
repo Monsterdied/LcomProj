@@ -45,7 +45,7 @@ struct ArenaModel  loadArena(char pString[15][30]){
             }
             if(pString[j][i]=='B'){
 
-
+                model.players[0].nameSize = 0;
                 model.players[0].direction = STAY;
                 model.players[0].coldownBetweenXpms=0.3;
                 model.players[0].timeUntilNextXpm=0.3;
@@ -64,6 +64,7 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.players[0].bombcooldown=0;
             }
             if(pString[j][i]=='b'){
+                model.players[1].nameSize = 0;
                 model.players[1].direction = STAY;
                 model.players[1].coldownBetweenXpms=0.2;
                 model.players[1].timeUntilNextXpm=0.2;

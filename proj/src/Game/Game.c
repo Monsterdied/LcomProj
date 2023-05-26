@@ -60,7 +60,7 @@ void Game(struct ArenaModel model, enum GameState* state){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
             if(PlayersAreAlive(&model,state) && *state==GAME) {
-                draw_string("ABCDEFGIJKL", 32, 32);
+                draw_string("ABCDEFGIJKL", 32, 32,12);
                 PlayersSpriteControllers(&model);
                 BombsSpriteControllers(&model);
                 ExplosionsController(&model);

@@ -1,4 +1,6 @@
 #include "kbc_controller.h"
+#include <stdint.h>
+#include <lcom/lcf.h>
 char getChar(int scanCode[2]) {
     if (scanCode[0] == 0x1e) {
         return 'A';

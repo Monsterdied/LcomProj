@@ -136,7 +136,7 @@ struct ArenaModel (Menu)(enum GameState* state){
                         if(scan_code[0]==BREAK_ESC || (model.selectedOption==1  && scan_code[0]==KBC_MAKE_CODE_ENTER)){
                             *state=EXIT;
                         }if((model.selectedOption==0  && scan_code[0]==KBC_MAKE_CODE_ENTER)){
-                            *state=GAME;
+                            *state=SELECTNAMES;
                         }
                          //volta a ler o primeiro byte
                     }
