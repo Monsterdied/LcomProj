@@ -54,6 +54,17 @@ struct Bomb {
     int range;
     int owner;
 };
+/*
+struct Button{
+    int x;
+    int y;
+    int weight;
+    int height;
+    int id;
+    bool selected;
+    xpm_image_t button_selected;
+    xpm_image_t button_unselected;
+}*/
 struct Player {
     char name[10];
     int nameSize;
