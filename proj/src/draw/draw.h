@@ -118,6 +118,6 @@ void (drawBricks)(struct ArenaModel model);
 void (drawWalls)(struct ArenaModel model);
 void (draw_menu)(struct MenuModel model, Mouse mouse, time_display time_info);
 void (draw_TimeNumbers)(time_display time_info);
-void (draw_string)(char* text, int x, int y,int size);
+void (draw_string)(char* text, int x, int y,int size,uint32_t color);
 void (draw_select_names)(int player_number,struct ArenaModel model,Mouse mouse);
 #endif //UNTITLED10_DRAW_H
