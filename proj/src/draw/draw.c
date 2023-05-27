@@ -34,7 +34,7 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 font,
                 coin1,coin2,coin3,coin4,coin5
                 ,sun,moon
-                ,grass,grassnight;
+                ,grass,grassnight,message_background;
 int multiplier = 22; 
 int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
@@ -166,6 +166,7 @@ int (load_xpms)(struct ArenaModel* model){
     //background
     xpm_load(grass_xpm,XPM_8_8_8,&grass);
     xpm_load(grassnight_xpm,XPM_8_8_8,&grassnight);
+    xpm_load(message_background_xpm,XPM_8_8_8,&message_background);
     return 0;
 }
                 
@@ -415,3 +416,26 @@ void (draw_Game_over_report)(struct ArenaModel model,enum GameState state){
         draw_string( "WON" , 30+150+15*model.players[1].nameSize, 450,3,0xFF00FF);
     }
 }
+
+void (draw_message)(struct ArenaModel model, enum GameState state,Mouse mouse,bool is_selected){
+    drawXpm8_8_8(message_background,50,50);
+    if(is_selected){
+        drawXpm8_8_8(menu_continue_button_selected,150,400);
+    }else{
+        drawXpm8_8_8(menu_continue_button_not_selected,150,400);
+    }
+    if(state==TIE){
+        draw_string("TIE", 150, 450,3,0xFFDF00);
+    }else if(state==PLAYER1WON ){
+
+            draw_string( model.players[0].name , 350, 250,model.players[0].nameSize,0xFFDF00);
+            draw_string( "WON" , 30+350+15*model.players[0].nameSize, 250,3,0xFFDF00);
+    }else if(state==PLAYER2WON) {
+            
+            draw_string( model.players[1].name , 350, 250,model.players[1].nameSize,0xFFDF00);
+            draw_string( "WON" , 30+350+15*model.players[1].nameSize, 250,3,0xFFDF00);
+    }
+    drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+
+}    
+

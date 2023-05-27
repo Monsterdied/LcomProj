@@ -30,50 +30,6 @@ dec  3
 after dec  4
 dec  4
 after dec  4
-dec  4
-after dec  5
-dec  5
-after dec  6
-dec  6
-after dec  6
-dec  6
-after dec  6
-dec  6
-after dec  7
-dec  7
-after dec  8
-dec  8
-after dec  8
-dec  8
-after dec  8
-dec  8
-after dec  9
-dec  9
-after dec  9
-dec  9
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
 dec  0
 after dec  0
 dec  0
@@ -86,46 +42,6 @@ dec  1
 after dec  2
 dec  2
 after dec  2
-dec  2
-after dec  3
-dec  3
-after dec  3
-dec  3
-after dec  4
-dec  4
-after dec  4
-dec  4
-after dec  5
-dec  5
-after dec  5
-dec  5
-after dec  6
-dec  6
-after dec  6
-dec  6
-after dec  7
-dec  7
-after dec  7
-dec  7
-after dec  8
-dec  8
-after dec  8
-dec  8
-after dec  9
-dec  9
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
-dec  10
-after dec  10
 number of player 2
 timer_hook_id = 0
 start interrupts
@@ -234,3 +150,11 @@ state report 5
 state report 5
 stop
 exit
+get default menu
+nCoins: 2
+nWalls: 99
+nBombs: 0
+nBricks: 24
+nPowerUps: 0
+nExplosions: 0
+nlives: 1

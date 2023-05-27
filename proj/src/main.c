@@ -5,6 +5,7 @@
 #include "models/models.h"
 #include "Game/Game.h"
 #include "Game/Menu.h"
+#include "Game/message.h"
 #include "Game/SelectNames.h"
 #include "devices/rtc.h"
 
@@ -93,11 +94,9 @@ int (proj_main_loop)(){
             case EXIT:
                 break;
             case PLAYER1WON:
-                state=EXIT;
-                //state=player1Won(state);
-                break;
+
             case PLAYER2WON:
-                state=EXIT;
+                Message(&state,model);
                 break;
             case TIE:
                 state=EXIT;

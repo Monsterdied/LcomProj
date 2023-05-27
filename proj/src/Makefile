@@ -9,7 +9,7 @@ PROG=proj
 .PATH: ${.CURDIR}/Game
 
 # source code files to be compiled
-SRCS = main.c mouse.c keyboard.c video_gr.c timer.c draw.c Game.c load.c Menu.c Controller.c rtc.c kbc_controller.c SelectNames.c
+SRCS = main.c mouse.c keyboard.c video_gr.c timer.c draw.c Game.c load.c Menu.c Controller.c rtc.c kbc_controller.c SelectNames.c message.c
 
 # additional compilation flags
 # "-Wall -Wextra -Werror -I . -std=c11 -Wno-unused-parameter" are already set

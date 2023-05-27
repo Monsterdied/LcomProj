@@ -108,6 +108,7 @@
 
 #include "models/background/grass.xpm"
 #include "models/background/grassnight.xpm"
+#include "models/background/message_background.xpm"
 
 
 
@@ -134,4 +135,5 @@ void (draw_string)(char* text, int x, int y,int size,uint32_t color);
 void (draw_select_names)(int player_number,struct ArenaModel model,Mouse mouse);
 void (draw_players_info)(struct ArenaModel model);
 void (draw_Game_over_report)(struct ArenaModel model,enum GameState state);
+void (draw_message)(struct ArenaModel model, enum GameState state,Mouse mouse,bool is_selected);
 #endif //UNTITLED10_DRAW_H

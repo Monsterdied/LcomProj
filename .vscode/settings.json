@@ -18,6 +18,7 @@
         "charconv": "c",
         "format": "c",
         "xutility": "c",
-        "draw.h": "c"
+        "draw.h": "c",
+        "message.h": "c"
     }
 }
