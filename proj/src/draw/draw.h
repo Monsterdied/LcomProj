@@ -101,6 +101,8 @@
 #include "models/coin/coin3.xpm"
 #include "models/coin/coin4.xpm"
 #include "models/coin/coin5.xpm"
+#include "models/weather/sun.xpm"
+#include "models/weather/moon.xpm"
 
 
 
@@ -117,7 +119,7 @@
 
 
 int (load_xpms)(struct ArenaModel* model);
-void (draw_game)(struct ArenaModel model,Mouse mouse);
+void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info);
 char** (getemptyArena());
 void (drawPlayers)(struct ArenaModel model);
 void (drawBombs)( struct ArenaModel model);
@@ -129,4 +131,5 @@ void (draw_TimeNumbers)(time_display time_info);
 void (draw_string)(char* text, int x, int y,int size,uint32_t color);
 void (draw_select_names)(int player_number,struct ArenaModel model,Mouse mouse);
 void (draw_players_info)(struct ArenaModel model);
+void (draw_Game_over_report)(struct ArenaModel model,enum GameState state);
 #endif //UNTITLED10_DRAW_H

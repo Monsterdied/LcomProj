@@ -2,7 +2,7 @@
 // Created by diogo on 22/04/2023.
 #ifndef BOMBERMAN_MODELS_H
 #define BOMBERMAN_MODELS_H
-
+#include "devices/rtc.h"
 #include "devices/video_gr.h"
 
 enum GameState{
@@ -13,6 +13,7 @@ enum GameState{
     EXIT,
     PLAYER1WON,
     PLAYER2WON,
+    TIE,
 };
 enum Direction {
     UP,
@@ -104,6 +105,11 @@ struct PowerUp {
     struct Position position;
     enum PowerUpType type;
 };
+struct LeaderBoardScore{
+    char name[10];
+    time_display time;
+    int score;
+};
 struct ArenaModel {
     struct Coin coins[450];
     struct Player players[2];
@@ -113,7 +119,9 @@ struct ArenaModel {
     struct Explosion explosions[450];
     struct PowerUp powerUps[10];
     struct Button returnButton;
+    struct LeaderBoardScore scores[3];
     double elapsedTime;
+    int nScores;
     int nWalls;
     int nBricks;
     int nPowerUps;

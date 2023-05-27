@@ -345,6 +345,10 @@ void (ExplosionsController)(struct ArenaModel* arenaModel){
 
 }
 int (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state){
+    if(arenaModel->players[0].lives <= 0 && arenaModel->players[1].lives <= 0){
+        *state = TIE;
+        return 0;
+    }
     if(arenaModel->players[0].lives <= 0){
         *state = PLAYER2WON;
         return 0;

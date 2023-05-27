@@ -5,6 +5,7 @@ extern int fr_rate;
 extern int scan_code[2];
 extern int i;
 extern time_display time_info;
+double aftergamecountdown;
 
 int timer_interrupts_per_frame;
 int timer_interrupts_counter;
@@ -20,6 +21,7 @@ void mouse_api_game(struct ArenaModel* model, enum GameState* state){
         model->returnButton.selected = true;
         if(mouse.left_click){
             *state = MENU;
+            aftergamecountdown=0;
         }
     }else{
         model->returnButton.selected = false;
@@ -61,7 +63,7 @@ void Game(struct ArenaModel model, enum GameState* state){
     message msg;
     int ipc_status;
     int r;
-    double aftergamecountdown=5;
+    aftergamecountdown=5;
     printf("start interrupts\n");
     handleInterrupts();
     printf("did interrupts\n");
@@ -74,21 +76,13 @@ void Game(struct ArenaModel model, enum GameState* state){
                 PlayersSpriteControllers(&model);
                 BombsSpriteControllers(&model);
                 ExplosionsController(&model);
-            }else if(*state==PLAYER1WON){
-                printf("player1 won\n");
-                char string_output[25];
-                strcpy(string_output,model.players[0].name);
-                strcat(string_output," WON");
-                draw_string( string_output , 150, 450,model.players[1].nameSize + 4,0xFF00FF);
-            }else if(*state==PLAYER2WON) {
-                printf("player2 won\n");
-                char string_output[25];
-                strcpy(string_output,model.players[1].name);
-                strcat(string_output," WON");
-                draw_string( string_output , 150, 450,model.players[1].nameSize + 4,0xFF00FF);
+            }else if(*state==PLAYER1WON || *state==PLAYER2WON || *state==TIE){
+                printf("state report %d\n",*state);
+                draw_Game_over_report(model,*state);
+
             }
             if(*state!=GAME) aftergamecountdown-=model.elapsedTime;
-            draw_game(model,mouse);
+            draw_game(model,mouse,time_info);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }

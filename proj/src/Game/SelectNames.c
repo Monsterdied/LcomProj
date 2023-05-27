@@ -2,9 +2,8 @@
     
 
 Mouse mouse;
-struct MenuModel model;
 extern time_display time_info;
-int number_of_player=0;
+int number_of_player;
 message msg;
 int ipc_status;
 int r;

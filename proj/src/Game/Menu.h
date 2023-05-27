@@ -9,7 +9,7 @@
 #include "devices/mouse.h"
 #include "devices/rtc.h"
 
-struct ArenaModel (Menu)(enum GameState* state);
+struct ArenaModel (Menu)(enum GameState* state,struct ArenaModel arena_model);
 
 
 #endif // !MENU_H
