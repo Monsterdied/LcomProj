@@ -85,6 +85,7 @@ int (get_started_select_names)(){
 
 
 struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
+    number_of_player=0;
     if(get_started_select_names()!= OK){
         printf("Error in get_started_select_names");
         
@@ -135,7 +136,7 @@ struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
                         /*
                         mouse_api_menu();*/
 
-                    mouse_ih_new(&mouse);
+                    mouse_ih_new(&mouse);       
 
                   }
 

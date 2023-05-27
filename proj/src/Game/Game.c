@@ -61,30 +61,38 @@ void Game(struct ArenaModel model, enum GameState* state){
     message msg;
     int ipc_status;
     int r;
-    int afterdeathcountdown=100;
+    double aftergamecountdown=5;
     printf("start interrupts\n");
     handleInterrupts();
     printf("did interrupts\n");
-    while(*state==GAME || afterdeathcountdown>0){
+    while(*state==GAME || aftergamecountdown>0){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
             if(PlayersAreAlive(&model,state) && *state==GAME) {
                 CoinController(&model);
-                draw_string("PLAYER1:", 50,450,8,0xFF00FF);
-                draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
-                draw_string("PLAYER2:", 300,450,8,0xFF00FF);
-                draw_string(model.players[1].name, 300, 500,model.players[1].nameSize,0xFF00FF);   
+                draw_players_info(model);
                 PlayersSpriteControllers(&model);
-
                 BombsSpriteControllers(&model);
                 ExplosionsController(&model);
+            }else if(*state==PLAYER1WON){
+                printf("player1 won\n");
+                char string_output[25];
+                strcpy(string_output,model.players[0].name);
+                strcat(string_output," WON");
+                draw_string( string_output , 150, 450,model.players[1].nameSize + 4,0xFF00FF);
+            }else if(*state==PLAYER2WON) {
+                printf("player2 won\n");
+                char string_output[25];
+                strcpy(string_output,model.players[1].name);
+                strcat(string_output," WON");
+                draw_string( string_output , 150, 450,model.players[1].nameSize + 4,0xFF00FF);
             }
-            if(*state!=GAME) afterdeathcountdown--;
+            if(*state!=GAME) aftergamecountdown-=model.elapsedTime;
             draw_game(model,mouse);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }
-        } 
+        }
         if ( (r = driver_receive(ANY, &msg, &ipc_status)) != OK ) {     
         printf("driver_receive failed with: %d", r);
         continue;

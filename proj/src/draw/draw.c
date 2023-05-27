@@ -110,8 +110,8 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(not_selected_start_xpm,XPM_8_8_8,&menu_start_button_not_selected);
 
     //buttons
-    model->returnButton.button_selected =menu_continue_button_selected;
-    model->returnButton.button_unselected =menu_continue_button_not_selected;
+    model->returnButton.button_selected =menu_exit_button_selected;
+    model->returnButton.button_unselected =menu_exit_button_not_selected;
 
     xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
 
@@ -368,4 +368,24 @@ void (draw_game)(struct ArenaModel model,Mouse mouse){
     */
     drawPlayers(model);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+}
+
+void (draw_players_info)(struct ArenaModel model){
+    char Coins_player1[3];
+    char Coins_player2[3];
+    char output_play1[11]= "COINS: ";
+    char output_play2[11]= "COINS: ";
+    sprintf(Coins_player1,"%d",model.players[0].score);
+    sprintf(Coins_player2,"%d",model.players[1].score);
+    strcat(output_play1,Coins_player1);
+    strcat(output_play2,Coins_player2);
+    printf(" ok %s\n",Coins_player1);
+    printf(" ok %s\n",output_play1);
+    printf(" ok %s\n",output_play2);
+    draw_string("PLAYER1:", 50,450,8,0xFF00FF);
+    draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
+    draw_string(output_play1, 50,550,8,0xFF00FF);
+    draw_string("PLAYER2:", 250,450,8,0xFF00FF);
+    draw_string(model.players[1].name, 250, 500,model.players[1].nameSize,0xFF00FF); 
+    draw_string(output_play2, 250,550,8,0xFF00FF);
 }
