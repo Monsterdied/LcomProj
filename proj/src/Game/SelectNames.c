@@ -132,13 +132,7 @@ struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
                         /*
                         mouse_api_menu();*/
 
-                    mouse_ih_new(&mouse);
-                    if( mouse.left_click==true && mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
-                        
-                        *state=GAME;
-                    }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
-                        *state=EXIT;
-                    }            
+                    mouse_ih_new(&mouse);       
 
                   }
 

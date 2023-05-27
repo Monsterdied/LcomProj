@@ -1,9 +1,3 @@
-get default menu
-timer_hook_id = 0
-timer_hook_id = 0
 start interrupts
  bit_timer 0
 did interrupts
-stop
-exit
-get default menu
