@@ -5,7 +5,6 @@ extern int fr_rate;
 extern int scan_code[2];
 extern int i;
 extern time_display time_info;
-double aftergamecountdown;
 
 int timer_interrupts_per_frame;
 int timer_interrupts_counter;
@@ -21,7 +20,6 @@ void mouse_api_game(struct ArenaModel* model, enum GameState* state){
         model->returnButton.selected = true;
         if(mouse.left_click){
             *state = MENU;
-            aftergamecountdown=0;
         }
     }else{
         model->returnButton.selected = false;
@@ -59,34 +57,34 @@ int handleInterrupts(){
     return 0;
 }
 
-void Game(struct ArenaModel model, enum GameState* state){
+time_display Game(struct ArenaModel model, enum GameState* state){
     message msg;
     int ipc_status;
     int r;
-    aftergamecountdown=5;
+    int afterdeathcountdown=100;
     printf("start interrupts\n");
     handleInterrupts();
     printf("did interrupts\n");
-    while(*state==GAME || aftergamecountdown>0){
+    while(*state==GAME || afterdeathcountdown>0){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
             if(PlayersAreAlive(&model,state) && *state==GAME) {
                 CoinController(&model);
-                draw_players_info(model);
+                draw_string("PLAYER1:", 50,450,8,0xFF00FF);
+                draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
+                draw_string("PLAYER2:", 300,450,8,0xFF00FF);
+                draw_string(model.players[1].name, 300, 500,model.players[1].nameSize,0xFF00FF);   
                 PlayersSpriteControllers(&model);
+
                 BombsSpriteControllers(&model);
                 ExplosionsController(&model);
-            }else if(*state==PLAYER1WON || *state==PLAYER2WON || *state==TIE){
-                printf("state report %d\n",*state);
-                draw_Game_over_report(model,*state);
-
             }
-            if(*state!=GAME) aftergamecountdown-=model.elapsedTime;
+            if(*state!=GAME) afterdeathcountdown--;
             draw_game(model,mouse,time_info);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }
-        }
+        } 
         if ( (r = driver_receive(ANY, &msg, &ipc_status)) != OK ) {     
         printf("driver_receive failed with: %d", r);
         continue;
@@ -135,5 +133,5 @@ void Game(struct ArenaModel model, enum GameState* state){
     timer_unsubscribe_int();
     vg_exit();
     printf("exit\n");
-
+    return time_info;
 }

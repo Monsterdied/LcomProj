@@ -201,7 +201,6 @@ void (PlayerSpriteController)(int PlayerNumber, struct ArenaModel* ArenaModel){
 void (PlayersSpriteControllers)(struct ArenaModel* arenaModel){
     PlayerSpriteController(0,arenaModel);
     PlayerSpriteController(1,arenaModel);
-    
 }
 void (CoinController)(struct ArenaModel* ArenaModel){
     for(int i = 0; i < ArenaModel->nCoins; i++){
@@ -223,6 +222,8 @@ void (CoinController)(struct ArenaModel* ArenaModel){
             ArenaModel->nCoins--;
         }
     }
+
+
 }
 
 int (burn)(int x,int y,struct ArenaModel* arenaModel,enum FlameDirection direction){
@@ -293,11 +294,6 @@ void (BombExplosion)(int intbomb,struct ArenaModel* arenaModel){
         
     for(int i=1;i<=range;i++)        
         if(y-i>=0 && burn(x,y-i,arenaModel,UPFLAME)) break;   
-            
-    
-
-
-
 }
 void (BombsSpriteControllers)(struct ArenaModel* arenaModel){
     for(int i = 0; i < arenaModel->nBombs; i++){
@@ -360,3 +356,24 @@ int (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state){
     return 1;
 }
 
+void (addPlayerToLeaderbord)(struct Player player,struct ArenaModel *arenamodel,time_display time){
+    int numberLeaderBord = arenamodel->nScores;
+    struct LeaderBoardScore score;
+    strcpy(score.name, player.name);
+    score.time= time;
+    score.score = player.score;
+    printf("added score: %d\n",score.score);
+    if(numberLeaderBord < 3){
+        arenamodel->scores[numberLeaderBord] = score;
+        arenamodel->nScores++;
+    }
+    for(int i = 0 ; i < numberLeaderBord ; i++){
+        if(score.score > arenamodel->scores[i].score){
+            for(int j = numberLeaderBord-1 ; j > i ; j--){
+                arenamodel->scores[j] = arenamodel->scores[j-1];
+            }
+            arenamodel->scores[i] = score;
+            break;
+        }
+    }
+}

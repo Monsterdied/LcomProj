@@ -1,7 +1,8 @@
 //
 // Created by diogo on 22/04/2023.
 //
-
+#include <stdio.h>
+#include <string.h>
 #include "draw.h"
 
 
@@ -112,8 +113,8 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(not_selected_start_xpm,XPM_8_8_8,&menu_start_button_not_selected);
 
     //buttons
-    model->returnButton.button_selected =menu_exit_button_selected;
-    model->returnButton.button_unselected =menu_exit_button_not_selected;
+    model->returnButton.button_selected =menu_continue_button_selected;
+    model->returnButton.button_unselected =menu_continue_button_not_selected;
 
     xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
 
@@ -330,6 +331,19 @@ void (draw_TimeNumbers)(time_display time_info){
     numbersDisplay(seconds/10,130,10);
     numbersDisplay(seconds%10,150,10);
 }
+void (draw_TimeNumbers_with_x_y)(time_display time_info,int x , int y){
+    uint8_t hours = getHours(time_info);
+    uint8_t minutes = getMinutes(time_info);
+    uint8_t seconds = getSeconds(time_info);
+    numbersDisplay(hours/10,x,y);
+    numbersDisplay(hours%10,x+20,y);
+    drawXpm8_8_8(double_point,x+40,y);
+    numbersDisplay(minutes/10,x + 60,y);
+    numbersDisplay(minutes%10,x +80,y);
+    drawXpm8_8_8(double_point,x + 100,y);
+    numbersDisplay(seconds/10,x + 120,y);
+    numbersDisplay(seconds%10,x + 140,y);
+}
 void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
     char string[] = "PLAYER NUMBER 0";
     char string_num = player_number + '1';
@@ -338,7 +352,6 @@ void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
     draw_string(string,30,30,15,0xFF0F00);
     draw_string(model.players[player_number].name,200,300 ,model.players[player_number].nameSize,0XFF0000);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
-    
 }
 void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
     drawXpm8_8_8(menuIcon,150,50);
@@ -363,6 +376,14 @@ void draw_Button(struct Button button){
         drawXpm8_8_8(button.button_unselected,button.x,button.y);
 }
 void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
+    char* string = "1";
+    for(int i = 0 ; i < model.nScores; i++){
+        printf("scores: %s\n",model.scores[i].name);
+        draw_string(model.scores[i].name, 300, 30 + 60*i, strlen(model.scores[i].name), 0xF0FF00);
+        string[0] = model.scores[i].score + '0';
+        draw_string(string, 300, 60 + 60*i, strlen(model.scores[i].name), 0xF0FF00);
+        
+    }
     //draw_background(model);
     if(time_info.hours<8 && time_info.hours>20){
         drawXpm8_8_8(grass,0,0);
@@ -371,6 +392,7 @@ void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
         drawXpm8_8_8(grassnight,0,0);
         drawXpm8_8_8(moon,20,30);
     }
+
     draw_coins(model);
     draw_Button(model.returnButton);
     
@@ -384,34 +406,4 @@ void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
     */
     drawPlayers(model);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
-}
-
-void (draw_players_info)(struct ArenaModel model){
-    char Coins_player1[3];
-    char Coins_player2[3];
-    char output_play1[11]= "COINS: ";
-    char output_play2[11]= "COINS: ";
-    sprintf(Coins_player1,"%d",model.players[0].score);
-    sprintf(Coins_player2,"%d",model.players[1].score);
-    strcat(output_play1,Coins_player1);
-    strcat(output_play2,Coins_player2);
-    draw_string("PLAYER1:", 50,450,8,0xFF00FF);
-    draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
-    draw_string(output_play1, 50,550,8,0xFF00FF);
-    draw_string("PLAYER2:", 250,450,8,0xFF00FF);
-    draw_string(model.players[1].name, 250, 500,model.players[1].nameSize,0xFF00FF); 
-    draw_string(output_play2, 250,550,8,0xFF00FF);
-}
-void (draw_Game_over_report)(struct ArenaModel model,enum GameState state){
-    if(state==TIE){
-        draw_string("TIE", 150, 450,3,0xFF00FF);
-    }else if(state==PLAYER1WON ){
-
-        draw_string( model.players[0].name , 150, 450,model.players[0].nameSize,0xFF00FF);
-        draw_string( "WON" , 30+150+15*model.players[0].nameSize, 450,3,0xFF00FF);
-    }else if(state==PLAYER2WON) {
-
-        draw_string( model.players[1].name , 150, 450,model.players[1].nameSize,0xFF00FF);
-        draw_string( "WON" , 30+150+15*model.players[1].nameSize, 450,3,0xFF00FF);
-    }
 }
