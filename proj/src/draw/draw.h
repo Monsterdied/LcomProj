@@ -104,8 +104,10 @@
 #include "models/weather/sun.xpm"
 #include "models/weather/moon.xpm"
 
+//background
 
-
+#include "models/background/grass.xpm"
+#include "models/background/grassnight.xpm"
 
 
 
