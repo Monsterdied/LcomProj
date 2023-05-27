@@ -330,6 +330,7 @@ void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
     draw_string(string,30,30,15,0xFF0F00);
     draw_string(model.players[player_number].name,200,300 ,model.players[player_number].nameSize,0XFF0000);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
+    
 }
 void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
     drawXpm8_8_8(menuIcon,150,50);
