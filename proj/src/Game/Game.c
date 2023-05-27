@@ -14,7 +14,17 @@ uint32_t irq_set_kbc;
 uint8_t bit_no_mouse;
 uint8_t bit_no_kbc;
 uint8_t bit_no_timer;
-
+void mouse_api_game(struct ArenaModel* model, enum GameState* state){
+    struct Button button =model->returnButton;
+    if(mouse.x > button.x && mouse.x < button.x+button.width && mouse.y > button.y && mouse.y < button.y+button.height){
+        model->returnButton.selected = true;
+        if(mouse.left_click){
+            *state = MENU;
+        }
+    }else{
+        model->returnButton.selected = false;
+    }
+}
 int handleInterrupts(){
     mouse.x = 600;
     mouse.y = 300;
@@ -59,8 +69,11 @@ void Game(struct ArenaModel model, enum GameState* state){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
             if(PlayersAreAlive(&model,state) && *state==GAME) {
-                draw_string("ABCDEFGIJKL", 32, 32,12);
                 CoinController(&model);
+                draw_string("PLAYER1:", 50,450,8,0xFF00FF);
+                draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
+                draw_string("PLAYER2:", 300,450,8,0xFF00FF);
+                draw_string(model.players[1].name, 300, 500,model.players[1].nameSize,0xFF00FF);   
                 PlayersSpriteControllers(&model);
 
                 BombsSpriteControllers(&model);
@@ -101,9 +114,9 @@ void Game(struct ArenaModel model, enum GameState* state){
                     }
 
                     if (msg.m_notify.interrupts & irq_set_mouse) {
-
-                    mouse_ih_new(&mouse);        
-                  }
+                        mouse_api_game(&model,state);
+                        mouse_ih_new(&mouse);        
+                    }
 
                     break;
                 default:

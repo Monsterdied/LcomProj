@@ -109,6 +109,9 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(selected_start_xpm,XPM_8_8_8,&menu_start_button_selected);
     xpm_load(not_selected_start_xpm,XPM_8_8_8,&menu_start_button_not_selected);
 
+    //buttons
+    model->returnButton.button_selected =menu_continue_button_selected;
+    model->returnButton.button_unselected =menu_continue_button_not_selected;
 
     xpm_load(LOL_MOUSE_xpm,XPM_8_8_8,&mouse_icon);
 
@@ -223,10 +226,10 @@ void (drawFlames)(struct ArenaModel model){
         
     }
 }
-void (draw_string)(char* text, int x, int y,int size){
+void (draw_string)(char* text, int x, int y,int size,uint32_t color){
     for(int i = 0 ; i < size;i++){
         x+=15;
-        vg_draw_Character(text[i],font,x,y,0xFF0000);
+        vg_draw_Character(text[i],font,x,y,color);
     }
 }
 
@@ -320,11 +323,12 @@ void (draw_TimeNumbers)(time_display time_info){
     numbersDisplay(seconds%10,150,10);
 }
 void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
-    char string[] = "Player Number 0";
+    char string[] = "PLAYER NUMBER 0";
     char string_num = player_number + '1';
-    string[15] = string_num;
-    //draw_string(string,30,30,16);
-    draw_string(model.players[player_number].name,100,30 ,model.players[player_number].nameSize);
+    string[14] = string_num;
+
+    draw_string(string,30,30,15,0xFF0F00);
+    draw_string(model.players[player_number].name,200,300 ,model.players[player_number].nameSize,0XFF0000);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }
 void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
@@ -343,8 +347,15 @@ void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
 
     
 }
+void draw_Button(struct Button button){
+    if(button.selected)
+        drawXpm8_8_8(button.button_selected,button.x,button.y);
+    else
+        drawXpm8_8_8(button.button_unselected,button.x,button.y);
+}
 void (draw_game)(struct ArenaModel model,Mouse mouse){
     draw_coins(model);
+    draw_Button(model.returnButton);
     //draw_background(model);
     drawWalls(model);
 

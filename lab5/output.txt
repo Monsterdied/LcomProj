@@ -13,8 +13,35 @@ nBricks: 24
 nPowerUps: 0
 nExplosions: 0
 nlives: 1
+game
+entrou
+timer_hook_id = 0
 start interrupts
  bit_timer 0
 did interrupts
 stop
 exit
+get default menu
+nCoins: 2
+nWalls: 99
+nBombs: 0
+nBricks: 24
+nPowerUps: 0
+nExplosions: 0
+nlives: 1
+game
+entrou
+timer_hook_id = 0
+start interrupts
+ bit_timer 0
+did interrupts
+stop
+exit
+get default menu
+nCoins: 2
+nWalls: 99
+nBombs: 0
+nBricks: 24
+nPowerUps: 0
+nExplosions: 0
+nlives: 1

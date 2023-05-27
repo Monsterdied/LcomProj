@@ -33,6 +33,7 @@ void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
     if(scan_code[0] == KBC_MAKE_CODE_ENTER && model->players[number_of_player].nameSize > 0){
         number_of_player +=1;
         if(number_of_player== 2){
+            printf("number of player %d\n",number_of_player);
             *state=GAME;
             return;
         }
@@ -134,7 +135,7 @@ struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
 
                     mouse_ih_new(&mouse);
                     if( mouse.left_click==true && mouse.x>150 && mouse.x<250 && mouse.y>400 && mouse.y<420){
-                        
+                        printf("entrou\n");
                         *state=GAME;
                     }else if(mouse.left_click==true && mouse.x>150 && mouse.x<224 && mouse.y>500 && mouse.y<518){
                         *state=EXIT;

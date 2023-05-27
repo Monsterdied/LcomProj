@@ -7,6 +7,11 @@ struct ArenaModel  loadArena(char pString[15][30]){
     struct ArenaModel model;
     
     model.nCoins=0;
+
+    model.returnButton.x = 450;
+    model.returnButton.y = 450;
+    model.returnButton.width = 150;
+    model.returnButton.height = 150;
     model.nWalls=0;
     model.nBombs=0;
     model.nBricks=0;
