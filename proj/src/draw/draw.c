@@ -395,9 +395,6 @@ void (draw_players_info)(struct ArenaModel model){
     sprintf(Coins_player2,"%d",model.players[1].score);
     strcat(output_play1,Coins_player1);
     strcat(output_play2,Coins_player2);
-    printf(" ok %s\n",Coins_player1);
-    printf(" ok %s\n",output_play1);
-    printf(" ok %s\n",output_play2);
     draw_string("PLAYER1:", 50,450,8,0xFF00FF);
     draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
     draw_string(output_play1, 50,550,8,0xFF00FF);
@@ -407,19 +404,14 @@ void (draw_players_info)(struct ArenaModel model){
 }
 void (draw_Game_over_report)(struct ArenaModel model,enum GameState state){
     if(state==TIE){
-        printf("tie\n");
         draw_string("TIE", 150, 450,3,0xFF00FF);
     }else if(state==PLAYER1WON ){
-        printf("player1 won\n");
-        char string_out[12];
-        strcpy(string_out,model.players[0].name);
-        strcat(string_out," WON");
-        draw_string( string_out , 150, 450,model.players[1].nameSize + 3,0xFF00FF);
+
+        draw_string( model.players[0].name , 150, 450,model.players[0].nameSize,0xFF00FF);
+        draw_string( "WON" , 30+150+15*model.players[0].nameSize, 450,3,0xFF00FF);
     }else if(state==PLAYER2WON) {
-        printf("player2 won\n");
-        char string_output[11];
-        strcpy(string_output,model.players[1].name);
-        strcat(string_output," WON");
-        draw_string( string_output , 150, 450,model.players[1].nameSize + 4,0xFF00FF);
+
+        draw_string( model.players[1].name , 150, 450,model.players[1].nameSize,0xFF00FF);
+        draw_string( "WON" , 30+150+15*model.players[1].nameSize, 450,3,0xFF00FF);
     }
 }

@@ -42,7 +42,7 @@ void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
         }
     }
     char c = getChar(scan_code);
-
+    printf("dec  %d\n",model->players[number_of_player].nameSize);
     if(c != '='){
         
         if(model->players[number_of_player].nameSize < 10){
@@ -50,6 +50,7 @@ void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
             model->players[number_of_player].nameSize++;
         }
     }
+    printf("after dec  %d\n",model->players[number_of_player].nameSize);
 
 }
 int (get_started_select_names)(){
