@@ -5,6 +5,7 @@ extern int fr_rate;
 extern int scan_code[2];
 extern int i;
 extern time_display time_info;
+double aftergamecountdown;
 
 int timer_interrupts_per_frame;
 int timer_interrupts_counter;
@@ -20,6 +21,7 @@ void mouse_api_game(struct ArenaModel* model, enum GameState* state){
         model->returnButton.selected = true;
         if(mouse.left_click){
             *state = MENU;
+            aftergamecountdown=0;
         }
     }else{
         model->returnButton.selected = false;
@@ -43,7 +45,6 @@ int handleInterrupts(){
     if(timer_subscribe_int(&bit_no_timer) != OK){
         return 1;
     }
-    printf(" bit_timer %d\n",bit_no_timer);
     if(mouse_Subscribe(&bit_no_mouse) != OK){
         return 1;
     }
@@ -57,34 +58,31 @@ int handleInterrupts(){
     return 0;
 }
 
-time_display Game(struct ArenaModel model, enum GameState* state){
+time_display Game(struct ArenaModel* model, enum GameState* state){
     message msg;
     int ipc_status;
     int r;
-    int afterdeathcountdown=100;
-    printf("start interrupts\n");
+    aftergamecountdown=5;
     handleInterrupts();
-    printf("did interrupts\n");
-    while(*state==GAME || afterdeathcountdown>0){
+    while(*state==GAME || aftergamecountdown>0){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
-            if(PlayersAreAlive(&model,state) && *state==GAME) {
-                CoinController(&model);
-                draw_string("PLAYER1:", 50,450,8,0xFF00FF);
-                draw_string(model.players[0].name, 50,500,model.players[0].nameSize,0xFF00FF);
-                draw_string("PLAYER2:", 300,450,8,0xFF00FF);
-                draw_string(model.players[1].name, 300, 500,model.players[1].nameSize,0xFF00FF);   
-                PlayersSpriteControllers(&model);
+            if(PlayersAreAlive(model,state) && *state==GAME) {
+                CoinController(model);
+                draw_players_info(*model);
+                PlayersSpriteControllers(model);
+                BombsSpriteControllers(model);
+                ExplosionsController(model);
+            }else if(*state==PLAYER1WON || *state==PLAYER2WON || *state==TIE){
+                draw_Game_over_report(*model,*state);
 
-                BombsSpriteControllers(&model);
-                ExplosionsController(&model);
             }
-            if(*state!=GAME) afterdeathcountdown--;
-            draw_game(model,mouse,time_info);
+            if(*state!=GAME) aftergamecountdown-=model->elapsedTime;
+            draw_game(*model,mouse,time_info);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }
-        } 
+        }
         if ( (r = driver_receive(ANY, &msg, &ipc_status)) != OK ) {     
         printf("driver_receive failed with: %d", r);
         continue;
@@ -104,7 +102,7 @@ time_display Game(struct ArenaModel model, enum GameState* state){
                         if(scan_code[0]==BREAK_ESC ){
                             *state=EXIT;
                         }
-                        PlayerControllers(&model);
+                        PlayerControllers(model);
                          //volta a ler o primeiro byte
                     }
 
@@ -114,7 +112,7 @@ time_display Game(struct ArenaModel model, enum GameState* state){
                     }
 
                     if (msg.m_notify.interrupts & irq_set_mouse) {
-                        mouse_api_game(&model,state);
+                        mouse_api_game(model,state);
                         mouse_ih_new(&mouse);        
                     }
 
@@ -127,11 +125,9 @@ time_display Game(struct ArenaModel model, enum GameState* state){
             /* no standard messages expected: do nothing */
         }
     }  
-    printf("stop\n");
     mouse_Unsubscribe();
     kbc_Unsubscribe();
     timer_unsubscribe_int();
     vg_exit();
-    printf("exit\n");
     return time_info;
 }

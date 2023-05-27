@@ -25,7 +25,6 @@ bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaMo
         for(int i = 0; i < ArenaModel->nExplosions; i++){
 
         if(position.x == ArenaModel->explosions[i].position.x && position.y == ArenaModel->explosions[i].position.y){
-            printf("Player %d has died\n",PlayerNumber);
             ArenaModel->players[PlayerNumber].lives --;
             return true;
         }
@@ -249,7 +248,6 @@ int (burn)(int x,int y,struct ArenaModel* arenaModel,enum FlameDirection directi
     for(int i = 0; i < arenaModel->nBombs; i++){
         if(arenaModel->bombs[i].position.x == x && arenaModel->bombs[i].position.y == y){
             arenaModel->bombs[i].timeUntilExplosion = 0;
-            printf("BOMB EXPLODED\n");
             return 0;
         }
     }
@@ -362,7 +360,6 @@ void (addPlayerToLeaderbord)(struct Player player,struct ArenaModel *arenamodel,
     strcpy(score.name, player.name);
     score.time= time;
     score.score = player.score;
-    printf("added score: %d\n",score.score);
     if(numberLeaderBord < 3){
         arenamodel->scores[numberLeaderBord] = score;
         arenamodel->nScores++;

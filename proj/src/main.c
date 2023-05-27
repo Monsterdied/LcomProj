@@ -85,7 +85,7 @@ int (proj_main_loop)(){
                 break;
             case GAME:
 
-                time_info = Game( model,&state);
+                time_info = Game( &model,&state);
                 break;
             case GAMEOVER:
                 state=EXIT;

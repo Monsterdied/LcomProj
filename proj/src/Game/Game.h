@@ -8,6 +8,6 @@
 #include "gameControllers/Controller.h"
 #include "devices/rtc.h"
 
-time_display Game(struct ArenaModel model, enum GameState* state);
+time_display Game(struct ArenaModel* model, enum GameState* state);
 
 #endif // !GAME_H

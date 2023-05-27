@@ -19,6 +19,10 @@ struct ArenaModel  loadArena(char pString[15][30]){
     model.nExplosions=0;
     model.elapsedTime = 1/(double)fr_rate;
     model.nScores=0;
+    //remove
+    model.nScores=1;
+    strcpy(model.scores[0].name,"DIOGOAAAA");
+    model.scores[0].score = 3;
     //char buffer[50];  // Adjust the buffer size as per your requirements
     //sprintf(buffer, "%.6f", model.elapsedTime);
     //printf("Double: %s\n", buffer);
@@ -97,14 +101,14 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.players[1].bombcooldown=0;
             }
         }
-    }
+    }/*
     printf("nCoins: %d\n",model.nCoins);
     printf("nWalls: %d\n",model.nWalls);
     printf("nBombs: %d\n",model.nBombs);
     printf("nBricks: %d\n",model.nBricks);
     printf("nPowerUps: %d\n",model.nPowerUps);
     printf("nExplosions: %d\n",model.nExplosions);
-    printf("nlives: %d\n",model.players[1].lives);
+    printf("nlives: %d\n",model.players[1].lives);*/
     return model;
 }
 
