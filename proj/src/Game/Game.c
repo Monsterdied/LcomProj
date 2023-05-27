@@ -45,7 +45,6 @@ int handleInterrupts(){
     if(timer_subscribe_int(&bit_no_timer) != OK){
         return 1;
     }
-    printf(" bit_timer %d\n",bit_no_timer);
     if(mouse_Subscribe(&bit_no_mouse) != OK){
         return 1;
     }
@@ -59,30 +58,27 @@ int handleInterrupts(){
     return 0;
 }
 
-void Game(struct ArenaModel model, enum GameState* state){
+time_display Game(struct ArenaModel* model, enum GameState* state){
     message msg;
     int ipc_status;
     int r;
     aftergamecountdown=5;
-    printf("start interrupts\n");
     handleInterrupts();
-    printf("did interrupts\n");
     while(*state==GAME || aftergamecountdown>0){
         if( timer_interrupts_counter % timer_interrupts_per_frame == 0 ){
             timer_interrupts_counter = 1;
-            if(PlayersAreAlive(&model,state) && *state==GAME) {
-                CoinController(&model);
-                draw_players_info(model);
-                PlayersSpriteControllers(&model);
-                BombsSpriteControllers(&model);
-                ExplosionsController(&model);
+            if(PlayersAreAlive(model,state) && *state==GAME) {
+                CoinController(model);
+                draw_players_info(*model);
+                PlayersSpriteControllers(model);
+                BombsSpriteControllers(model);
+                ExplosionsController(model);
             }else if(*state==PLAYER1WON || *state==PLAYER2WON || *state==TIE){
-                printf("state report %d\n",*state);
-                draw_Game_over_report(model,*state);
+                draw_Game_over_report(*model,*state);
 
             }
-            if(*state!=GAME) aftergamecountdown-=model.elapsedTime;
-            draw_game(model,mouse,time_info);
+            if(*state!=GAME) aftergamecountdown-=model->elapsedTime;
+            draw_game(*model,mouse,time_info);
             if(vg_update()!= OK){
                 printf("Screen dind't update");        
             }
@@ -106,7 +102,7 @@ void Game(struct ArenaModel model, enum GameState* state){
                         if(scan_code[0]==BREAK_ESC ){
                             *state=EXIT;
                         }
-                        PlayerControllers(&model);
+                        PlayerControllers(model);
                          //volta a ler o primeiro byte
                     }
 
@@ -116,7 +112,7 @@ void Game(struct ArenaModel model, enum GameState* state){
                     }
 
                     if (msg.m_notify.interrupts & irq_set_mouse) {
-                        mouse_api_game(&model,state);
+                        mouse_api_game(model,state);
                         mouse_ih_new(&mouse);        
                     }
 
@@ -129,11 +125,9 @@ void Game(struct ArenaModel model, enum GameState* state){
             /* no standard messages expected: do nothing */
         }
     }  
-    printf("stop\n");
     mouse_Unsubscribe();
     kbc_Unsubscribe();
     timer_unsubscribe_int();
     vg_exit();
-    printf("exit\n");
-
+    return time_info;
 }

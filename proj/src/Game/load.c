@@ -97,14 +97,14 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.players[1].bombcooldown=0;
             }
         }
-    }
+    }/*
     printf("nCoins: %d\n",model.nCoins);
     printf("nWalls: %d\n",model.nWalls);
     printf("nBombs: %d\n",model.nBombs);
     printf("nBricks: %d\n",model.nBricks);
     printf("nPowerUps: %d\n",model.nPowerUps);
     printf("nExplosions: %d\n",model.nExplosions);
-    printf("nlives: %d\n",model.players[1].lives);
+    printf("nlives: %d\n",model.players[1].lives);*/
     return model;
 }
 

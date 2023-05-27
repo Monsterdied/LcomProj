@@ -15,6 +15,7 @@
 #include <unistd.h>
 #include "models/models.h"
 
+extern time_display time_info; 
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -73,7 +74,7 @@ int (proj_main_loop)(){
 
     load_xpms(&model);
     state=MENU;
-                    
+
     while(state!=EXIT){
         switch (state){
             case MENU:       
@@ -85,7 +86,7 @@ int (proj_main_loop)(){
                 break;
             case GAME:
 
-                Game(model,&state);
+                time_info = Game( &model,&state);
                 break;
             case GAMEOVER:
                 state=EXIT;
@@ -94,13 +95,18 @@ int (proj_main_loop)(){
             case EXIT:
                 break;
             case PLAYER1WON:
-
-            case PLAYER2WON:
+                addPlayerToLeaderbord(model.players[0],&model,time_info);
                 Message(&state,model);
+                state=MENU;
+                break;
+            case PLAYER2WON:
+                addPlayerToLeaderbord(model.players[1],&model,time_info);
+                Message(&state,model);
+                state=MENU;
                 break;
             case TIE:
                 state=EXIT;
-                break;    
+                break;
         }
     }
     

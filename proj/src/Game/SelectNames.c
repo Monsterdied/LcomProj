@@ -32,7 +32,6 @@ void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
     if(scan_code[0] == KBC_MAKE_CODE_ENTER && model->players[number_of_player].nameSize > 0){
         number_of_player +=1;
         if(number_of_player== 2){
-            printf("number of player %d\n",number_of_player);
             *state=GAME;
             return;
         }
@@ -42,7 +41,6 @@ void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
         }
     }
     char c = getChar(scan_code);
-    printf("dec  %d\n",model->players[number_of_player].nameSize);
     if(c != '='){
         
         if(model->players[number_of_player].nameSize < 10){
@@ -155,7 +153,6 @@ struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
     }  
     mouse_Unsubscribe();
     kbc_Unsubscribe();
-    printf("timer_hook_id = %d\n",bit_no_timer);
     timer_unsubscribe_int();
     vg_exit();
     return *model;

@@ -14,5 +14,5 @@ void (BombsSpriteControllers)(struct ArenaModel* ArenaModel);
 void (ExplosionsController)(struct ArenaModel* arenaModel);
 int (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state);
 void (CoinController)(struct ArenaModel* ArenaModel);
-
+void (addPlayerToLeaderbord)(struct Player player,struct ArenaModel* arenamodel,time_display time);
 #endif //UNTITLED10_CONTROLLER_H

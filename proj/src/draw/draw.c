@@ -1,7 +1,8 @@
 //
 // Created by diogo on 22/04/2023.
 //
-
+#include <stdio.h>
+#include <string.h>
 #include "draw.h"
 
 
@@ -331,6 +332,19 @@ void (draw_TimeNumbers)(time_display time_info){
     numbersDisplay(seconds/10,130,10);
     numbersDisplay(seconds%10,150,10);
 }
+void (draw_TimeNumbers_with_x_y)(time_display time_info,int x , int y){
+    uint8_t hours = getHours(time_info);
+    uint8_t minutes = getMinutes(time_info);
+    uint8_t seconds = getSeconds(time_info);
+    numbersDisplay(hours/10,x,y);
+    numbersDisplay(hours%10,x+20,y);
+    drawXpm8_8_8(double_point,x+40,y);
+    numbersDisplay(minutes/10,x + 60,y);
+    numbersDisplay(minutes%10,x +80,y);
+    drawXpm8_8_8(double_point,x + 100,y);
+    numbersDisplay(seconds/10,x + 120,y);
+    numbersDisplay(seconds%10,x + 140,y);
+}
 void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
     char string[] = "PLAYER NUMBER 0";
     char string_num = player_number + '1';
@@ -357,13 +371,27 @@ void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
 
     
 }
-void draw_Button(struct Button button){
+void (draw_Button)(struct Button button){
     if(button.selected)
         drawXpm8_8_8(button.button_selected,button.x,button.y);
     else
         drawXpm8_8_8(button.button_unselected,button.x,button.y);
 }
+void (draw_leader_board)(struct ArenaModel model){
+    char string[9] = "COINS: 0";
+    char str[1];
+    draw_string("RANKING", 650, 5, 7, 0xF0FF00);
+    for(int i = 0 ; i < model.nScores; i++){
+        sprintf(str,"%d",i + 1);
+        draw_string(str, 650, 30 + 90*i, 1, 0xF0FF00);
+        draw_string(model.scores[i].name, 650, 60 + 90*i, strlen(model.scores[i].name), 0xF0FF00);
+        string[7] = model.scores[i].score + '0';
+        draw_string(string, 650,90 + 90*i, 8, 0xF0FF00);
+        
+    }
+}
 void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
+    draw_leader_board(model);
     //draw_background(model);
     if(time_info.hours<8 && time_info.hours>20){
         drawXpm8_8_8(grass,0,0);
@@ -372,6 +400,7 @@ void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
         drawXpm8_8_8(grassnight,0,0);
         drawXpm8_8_8(moon,20,30);
     }
+
     draw_coins(model);
     draw_Button(model.returnButton);
     
@@ -428,12 +457,12 @@ void (draw_message)(struct ArenaModel model, enum GameState state,Mouse mouse,bo
         draw_string("TIE", 150, 450,3,0xFFDF00);
     }else if(state==PLAYER1WON ){
 
-            draw_string( model.players[0].name , 350, 250,model.players[0].nameSize,0xFFDF00);
-            draw_string( "WON" , 30+350+15*model.players[0].nameSize, 250,3,0xFFDF00);
+            draw_string( model.players[0].name , 250, 250,model.players[0].nameSize,0xFFDF00);
+            draw_string( "WON" , 30+250+15*model.players[0].nameSize, 250,3,0xFFDF00);
     }else if(state==PLAYER2WON) {
             
-            draw_string( model.players[1].name , 350, 250,model.players[1].nameSize,0xFFDF00);
-            draw_string( "WON" , 30+350+15*model.players[1].nameSize, 250,3,0xFFDF00);
+            draw_string( model.players[1].name , 250, 250,model.players[1].nameSize,0xFFDF00);
+            draw_string( "WON" , 30+250+15*model.players[1].nameSize, 250,3,0xFFDF00);
     }
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 

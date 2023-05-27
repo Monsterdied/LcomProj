@@ -6,6 +6,7 @@
 #include "devices/video_gr.h"
 
 enum GameState{
+    TIE,
     SELECTNAMES,
     MENU,
     GAME,
@@ -13,7 +14,6 @@ enum GameState{
     EXIT,
     PLAYER1WON,
     PLAYER2WON,
-    TIE,
 };
 enum Direction {
     UP,
@@ -107,7 +107,6 @@ struct PowerUp {
 };
 struct LeaderBoardScore{
     char name[10];
-    time_display time;
     int score;
 };
 struct ArenaModel {
