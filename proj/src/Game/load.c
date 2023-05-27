@@ -18,6 +18,7 @@ struct ArenaModel  loadArena(char pString[15][30]){
     model.nPowerUps=0;
     model.nExplosions=0;
     model.elapsedTime = 1/(double)fr_rate;
+    model.nScores=0;
     //char buffer[50];  // Adjust the buffer size as per your requirements
     //sprintf(buffer, "%.6f", model.elapsedTime);
     //printf("Double: %s\n", buffer);

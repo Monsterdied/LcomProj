@@ -75,9 +75,8 @@ int (proj_main_loop)(){
                     
     while(state!=EXIT){
         switch (state){
-            case MENU:
-                                  
-                model=Menu(&state);
+            case MENU:       
+                model=Menu(&state,model);
                 break;
             case SELECTNAMES:
                 printf("game\n");

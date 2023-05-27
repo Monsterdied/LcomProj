@@ -2,9 +2,8 @@
     
 
 Mouse mouse;
-struct MenuModel model;
 extern time_display time_info;
-int number_of_player=0;
+int number_of_player;
 message msg;
 int ipc_status;
 int r;
@@ -83,6 +82,7 @@ int (get_started_select_names)(){
 
 
 struct ArenaModel (SelectNames)(enum GameState* state,struct ArenaModel* model){
+    number_of_player=0;
     if(get_started_select_names()!= OK){
         printf("Error in get_started_select_names");
         

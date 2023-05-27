@@ -32,7 +32,8 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 menu_continue_button_not_selected,
                 number_0,number_1,number_2,number_3,number_4,number_5,number_6,number_7,number_8,number_9,double_point,
                 font,
-                coin1,coin2,coin3,coin4,coin5;
+                coin1,coin2,coin3,coin4,coin5
+                ,sun,moon;
 int multiplier = 22; 
 int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
@@ -150,14 +151,16 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(double_points_xpm,XPM_8_8_8,&double_point);
 
     xpm_load(font_xmp,XPM_8_8_8,&font);
-
+//coins
 
     xpm_load(coin1_xpm,XPM_8_8_8,&coin1);
     xpm_load(coin2_xpm,XPM_8_8_8,&coin2);
     xpm_load(coin3_xpm,XPM_8_8_8,&coin3);
     xpm_load(coin4_xpm,XPM_8_8_8,&coin4);
     xpm_load(coin5_xpm,XPM_8_8_8,&coin5);
-    
+    //weather
+    xpm_load(sun_xpm,XPM_8_8_8,&sun);
+    xpm_load(moon_xpm,XPM_8_8_8,&moon);
     return 0;
 }
                 
@@ -340,8 +343,8 @@ void (draw_menu)(struct MenuModel model,Mouse mouse,time_display time_info){
     }else if(model.selectedOption==1){
         drawXpm8_8_8(menu_start_button_not_selected,150,400);
         drawXpm8_8_8(menu_exit_button_selected,150,500);
-
     }
+
     draw_TimeNumbers(time_info);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 
@@ -353,7 +356,12 @@ void draw_Button(struct Button button){
     else
         drawXpm8_8_8(button.button_unselected,button.x,button.y);
 }
-void (draw_game)(struct ArenaModel model,Mouse mouse){
+void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
+    if(time_info.hours>8 && time_info.hours<20){
+        drawXpm8_8_8(sun,700,90);
+    }else{
+        drawXpm8_8_8(moon,550,100);
+    }
     draw_coins(model);
     draw_Button(model.returnButton);
     //draw_background(model);

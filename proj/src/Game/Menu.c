@@ -102,7 +102,7 @@ int get_started_on_menu(){
 }
 
 
-struct ArenaModel (Menu)(enum GameState* state){
+struct ArenaModel (Menu)(enum GameState* state,struct ArenaModel arena_model){
     model=get_default_Menu();
     if(get_started_on_menu()){
         struct ArenaModel arenamodel=loadArena(arena);
@@ -147,7 +147,7 @@ struct ArenaModel (Menu)(enum GameState* state){
                         if(timer_rtc_interrupts_counter%60==0){
                             timer_rtc_interrupts_counter=1;
                             update_time_display(&time_info);
-                            draw_TimeNumbers(time_info);
+
                         }
                     
                     }

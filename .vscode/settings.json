@@ -14,6 +14,9 @@
         "xlocbuf": "c",
         "system_error": "c",
         "rtc.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "charconv": "c",
+        "format": "c",
+        "xutility": "c"
     }
 }

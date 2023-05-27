@@ -101,6 +101,8 @@
 #include "models/coin/coin3.xpm"
 #include "models/coin/coin4.xpm"
 #include "models/coin/coin5.xpm"
+#include "models/weather/sun.xpm"
+#include "models/weather/moon.xpm"
 
 
 
@@ -117,7 +119,7 @@
 
 
 int (load_xpms)(struct ArenaModel* model);
-void (draw_game)(struct ArenaModel model,Mouse mouse);
+void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info);
 char** (getemptyArena());
 void (drawPlayers)(struct ArenaModel model);
 void (drawBombs)( struct ArenaModel model);
