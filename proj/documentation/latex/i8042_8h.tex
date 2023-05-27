@@ -1,0 +1,96 @@
+\hypertarget{i8042_8h}{}\doxysection{devices/i8042.h File Reference}
+\label{i8042_8h}\index{devices/i8042.h@{devices/i8042.h}}
+
+
+Constants and definitions for programming the i8042 keyboard controller and mouse.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries IRQ\+\_\+\+KEYBOARD}~1
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt request line. \end{DoxyCompactList}\item 
+\#define {\bfseries BREAK\+\_\+\+ESC}~0x81
+\begin{DoxyCompactList}\small\item\em Break code for the Esc key. \end{DoxyCompactList}\item 
+\#define {\bfseries MAKE\+\_\+\+CODE}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Make code flag. \end{DoxyCompactList}\item 
+\#define {\bfseries TWO\+\_\+\+BYTES}~0x\+E0
+\begin{DoxyCompactList}\small\item\em Two-\/byte code prefix. \end{DoxyCompactList}\item 
+\#define {\bfseries ENABLE\+\_\+\+INT}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Enable interrupt flag. \end{DoxyCompactList}\item 
+\#define {\bfseries AUX}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Auxiliary device flag. \end{DoxyCompactList}\item 
+\#define {\bfseries TIMEOUT\+\_\+\+ERROR}~BIT(6)
+\begin{DoxyCompactList}\small\item\em Timeout error flag. \end{DoxyCompactList}\item 
+\#define {\bfseries PARITY\+\_\+\+ERROR}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Parity error flag. \end{DoxyCompactList}\item 
+\#define {\bfseries FULL\+\_\+\+OUT\+\_\+\+BUFFER}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Full output buffer flag. \end{DoxyCompactList}\item 
+\#define {\bfseries FULL\+\_\+\+IN\+\_\+\+BUFFER}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Full input buffer flag. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+STATUS\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Keyboard controller status register port. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+IN\+\_\+\+CMD}~0x64
+\begin{DoxyCompactList}\small\item\em Keyboard controller input command port. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+OUT\+\_\+\+CMD}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller output command port. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+OUT\+\_\+\+BUFFER}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller output buffer port. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+READ\+\_\+\+CMD}~0x20
+\begin{DoxyCompactList}\small\item\em Keyboard controller read command. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+WRITE\+\_\+\+CMD}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller write command. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+INT}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Keyboard controller interrupt enable flag. \end{DoxyCompactList}\item 
+\#define {\bfseries WAIT\+\_\+\+KBC}~20000
+\begin{DoxyCompactList}\small\item\em Wait time for keyboard controller. \end{DoxyCompactList}\item 
+\#define {\bfseries MAX\+\_\+\+ATTEMPS}~10
+\begin{DoxyCompactList}\small\item\em Maximum number of attempts for keyboard controller communication. \end{DoxyCompactList}\item 
+\#define {\bfseries OUT\+\_\+\+BUF}~0x60
+\begin{DoxyCompactList}\small\item\em Output buffer port. \end{DoxyCompactList}\item 
+\#define {\bfseries STATUS\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Status register port. \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+ARGS}~0x60
+\begin{DoxyCompactList}\small\item\em Same as output buffer, but used for sending command arguments. \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+CMD\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Same as status register, but used for issuing commands. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+READ\+\_\+\+CMD}~0x20
+\begin{DoxyCompactList}\small\item\em Keyboard controller read command. \end{DoxyCompactList}\item 
+\#define {\bfseries KBC\+\_\+\+WRITE\+\_\+\+CMD}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller write command. \end{DoxyCompactList}\item 
+\#define {\bfseries WRITE\+\_\+\+BYTE\+\_\+\+TO\+\_\+\+MOUSE}~0x\+D4
+\begin{DoxyCompactList}\small\item\em Command to write a byte to the mouse. \end{DoxyCompactList}\item 
+\#define {\bfseries DISABLE\+\_\+\+DATA\+\_\+\+REPORTING\+\_\+\+CMD}~0x\+F5
+\begin{DoxyCompactList}\small\item\em Command to disable data reporting from the mouse. \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+OK}~0x\+FA
+\begin{DoxyCompactList}\small\item\em Everything is OK. \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+NOCK}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Communication error. \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+COMMUNICATION\+\_\+\+ERR}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Second consecutive communication error. \end{DoxyCompactList}\item 
+\#define {\bfseries FIRST\+\_\+\+MOUSE\+\_\+\+BIT}~BIT(3)
+\begin{DoxyCompactList}\small\item\em First bit of the mouse packet. \end{DoxyCompactList}\item 
+\#define {\bfseries X\+\_\+\+OVERFLOW}~BIT(6)
+\begin{DoxyCompactList}\small\item\em X coordinate overflow flag. \end{DoxyCompactList}\item 
+\#define {\bfseries Y\+\_\+\+OVERFLOW}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Y coordinate overflow flag. \end{DoxyCompactList}\item 
+\#define {\bfseries RMOUSE\+\_\+\+BUTTON}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Right mouse button flag. \end{DoxyCompactList}\item 
+\#define {\bfseries LMOUSE\+\_\+\+BUTTON}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Left mouse button flag. \end{DoxyCompactList}\item 
+\#define {\bfseries MMOUSE\+\_\+\+BUTTON}~BIT(2)
+\begin{DoxyCompactList}\small\item\em Middle mouse button flag. \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+MSB\+\_\+X}~BIT(4)
+\begin{DoxyCompactList}\small\item\em MSB bit of the X delta (indicates if the delta is negative or not) \end{DoxyCompactList}\item 
+\#define {\bfseries MOUSE\+\_\+\+MSB\+\_\+Y}~BIT(5)
+\begin{DoxyCompactList}\small\item\em MSB bit of the Y delta (indicates if the delta is negative or not) \end{DoxyCompactList}\item 
+\#define {\bfseries X\+\_\+\+SIGNAL\+\_\+\+OF\+\_\+\+DELTA\+\_\+\+MOUSE}~BIT(4)
+\begin{DoxyCompactList}\small\item\em Signal bit of the X delta (indicates if the delta is positive or negative) \end{DoxyCompactList}\item 
+\#define {\bfseries Y\+\_\+\+SIGNAL\+\_\+\+OF\+\_\+\+DELTA\+\_\+\+MOUSE}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Signal bit of the Y delta (indicates if the delta is positive or negative) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants and definitions for programming the i8042 keyboard controller and mouse. 
+

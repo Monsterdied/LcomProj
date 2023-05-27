@@ -1,0 +1,50 @@
+\hypertarget{_select_names_8h}{}\doxysection{Game/\+Select\+Names.h File Reference}
+\label{_select_names_8h}\index{Game/SelectNames.h@{Game/SelectNames.h}}
+
+
+Select Names functions This file contains functions related to selecting player names.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw/draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}load.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game\+Controllers/kbc\+\_\+controller.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}{Select\+Names}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$model)
+\begin{DoxyCompactList}\small\item\em Select Names function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Select Names functions This file contains functions related to selecting player names. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}\label{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}} 
+\index{SelectNames.h@{SelectNames.h}!SelectNames@{SelectNames}}
+\index{SelectNames@{SelectNames}!SelectNames.h@{SelectNames.h}}
+\doxysubsubsection{\texorpdfstring{SelectNames()}{SelectNames()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() Select\+Names (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Select Names function. 
+
+Allows players to select their names and updates the game state and model accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the game state \\
+\hline
+{\em model} & Pointer to the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} after the name selection 
+\end{DoxyReturn}

@@ -12,6 +12,7 @@
         "mouse.h": "c",
         "iosfwd": "c",
         "xlocbuf": "c",
-        "system_error": "c"
+        "system_error": "c",
+        "kbc_controller.h": "c"
     }
 }

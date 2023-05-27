@@ -1,0 +1,47 @@
+\hypertarget{_menu_8h}{}\doxysection{Game/\+Menu.h File Reference}
+\label{_menu_8h}\index{Game/Menu.h@{Game/Menu.h}}
+
+
+Menu functions This file contains functions related to the game menu.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw/draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}load.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_menu_8h_a73dd7ba132512af63114601623be4d58}{Menu}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Menu function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Menu functions This file contains functions related to the game menu. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_menu_8h_a73dd7ba132512af63114601623be4d58}\label{_menu_8h_a73dd7ba132512af63114601623be4d58}} 
+\index{Menu.h@{Menu.h}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu.h@{Menu.h}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() Menu (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Menu function. 
+
+Displays the game menu and handles user input to update the game state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the game state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} after the menu selection 
+\end{DoxyReturn}

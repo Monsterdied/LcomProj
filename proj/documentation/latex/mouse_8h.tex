@@ -1,0 +1,179 @@
+\hypertarget{mouse_8h}{}\doxysection{devices/mouse.h File Reference}
+\label{mouse_8h}\index{devices/mouse.h@{devices/mouse.h}}
+
+
+\mbox{\hyperlink{struct_mouse}{Mouse}} functions.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mouse}{Mouse}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mouse}{Mouse}} structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{mouse_8h_a28f29654b136479a6257553925e28bb0}{mouse\+\_\+\+Subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribe to mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665}{mouse\+\_\+\+Unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe from mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a2937ed99ce6553b5c7d0ba42a04ed41a}{error\+\_\+checking\+\_\+mouse}} (uint8\+\_\+t status\+\_\+mouse)
+\begin{DoxyCompactList}\small\item\em Check for mouse errors. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{mouse_8h_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mouse}{Mouse}} interrupt handler. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}{mouse\+\_\+disable\+\_\+data\+\_\+reporting}} ()
+\begin{DoxyCompactList}\small\item\em Disable mouse data reporting. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}{mouse\+\_\+get\+\_\+status}} (uint8\+\_\+t $\ast$st)
+\begin{DoxyCompactList}\small\item\em Get mouse status. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}{mouse\+\_\+read\+\_\+buffer}} (uint8\+\_\+t port, uint8\+\_\+t $\ast$output)
+\begin{DoxyCompactList}\small\item\em Read data from mouse buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13}{mouse\+\_\+ih\+\_\+new}} (\mbox{\hyperlink{struct_mouse}{Mouse}} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em New mouse interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_mouse}{Mouse}} functions. 
+
+This file contains functions related to the mouse. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8h_a2937ed99ce6553b5c7d0ba42a04ed41a}\label{mouse_8h_a2937ed99ce6553b5c7d0ba42a04ed41a}} 
+\index{mouse.h@{mouse.h}!error\_checking\_mouse@{error\_checking\_mouse}}
+\index{error\_checking\_mouse@{error\_checking\_mouse}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{error\_checking\_mouse()}{error\_checking\_mouse()}}
+{\footnotesize\ttfamily int() error\+\_\+checking\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{status\+\_\+mouse }\end{DoxyParamCaption})}
+
+
+
+Check for mouse errors. 
+
+Checks the status byte for errors occurred during communication with the mouse.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+\_\+mouse} & The status byte to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if no errors occurred, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}\label{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}} 
+\index{mouse.h@{mouse.h}!mouse\_disable\_data\_reporting@{mouse\_disable\_data\_reporting}}
+\index{mouse\_disable\_data\_reporting@{mouse\_disable\_data\_reporting}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_disable\_data\_reporting()}{mouse\_disable\_data\_reporting()}}
+{\footnotesize\ttfamily int() mouse\+\_\+disable\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable mouse data reporting. 
+
+Disables the mouse data reporting.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}\label{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}} 
+\index{mouse.h@{mouse.h}!mouse\_get\_status@{mouse\_get\_status}}
+\index{mouse\_get\_status@{mouse\_get\_status}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_get\_status()}{mouse\_get\_status()}}
+{\footnotesize\ttfamily int() mouse\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Get mouse status. 
+
+Reads the status byte from the mouse controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & Pointer to the memory location where the read status byte will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a210374b50462acdedab00df64d5cea3c}\label{mouse_8h_a210374b50462acdedab00df64d5cea3c}} 
+\index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_mouse}{Mouse}} interrupt handler. 
+
+Interrupt handler for the mouse interrupts. \mbox{\Hypertarget{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13}\label{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13}} 
+\index{mouse.h@{mouse.h}!mouse\_ih\_new@{mouse\_ih\_new}}
+\index{mouse\_ih\_new@{mouse\_ih\_new}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih\_new()}{mouse\_ih\_new()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih\+\_\+new (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mouse}{Mouse}} $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+New mouse interrupt handler. 
+
+New interrupt handler for the mouse interrupts that updates the mouse structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & Pointer to the mouse structure to be updated \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}\label{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}} 
+\index{mouse.h@{mouse.h}!mouse\_read\_buffer@{mouse\_read\_buffer}}
+\index{mouse\_read\_buffer@{mouse\_read\_buffer}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_read\_buffer()}{mouse\_read\_buffer()}}
+{\footnotesize\ttfamily int() mouse\+\_\+read\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port,  }\item[{uint8\+\_\+t $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Read data from mouse buffer. 
+
+Reads data from the mouse\textquotesingle{}s buffer using the specified port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to read the data from \\
+\hline
+{\em output} & Pointer to the memory location where the read data will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a28f29654b136479a6257553925e28bb0}\label{mouse_8h_a28f29654b136479a6257553925e28bb0}} 
+\index{mouse.h@{mouse.h}!mouse\_Subscribe@{mouse\_Subscribe}}
+\index{mouse\_Subscribe@{mouse\_Subscribe}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_Subscribe()}{mouse\_Subscribe()}}
+{\footnotesize\ttfamily int() mouse\+\_\+\+Subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribe to mouse interrupts. 
+
+Subscribes to mouse interrupts using the specified bit number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to the memory location where the bit number will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665}\label{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665}} 
+\index{mouse.h@{mouse.h}!mouse\_Unsubscribe@{mouse\_Unsubscribe}}
+\index{mouse\_Unsubscribe@{mouse\_Unsubscribe}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_Unsubscribe()}{mouse\_Unsubscribe()}}
+{\footnotesize\ttfamily int() mouse\+\_\+\+Unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe from mouse interrupts. 
+
+Unsubscribes from mouse interrupts.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}

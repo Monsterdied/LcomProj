@@ -1,0 +1,76 @@
+\hypertarget{i8042_8h_source}{}\doxysection{i8042.\+h}
+\label{i8042_8h_source}\index{devices/i8042.h@{devices/i8042.h}}
+\mbox{\hyperlink{i8042_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define IRQ\_KEYBOARD    1        }}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define BREAK\_ESC       0x81     }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define MAKE\_CODE       BIT(7)   }}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define TWO\_BYTES       0xE0     }}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define ENABLE\_INT      BIT(0)   }}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define AUX             BIT(5)   }}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define TIMEOUT\_ERROR   BIT(6)   }}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define PARITY\_ERROR    BIT(7)   }}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define FULL\_OUT\_BUFFER BIT(0)   }}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define FULL\_IN\_BUFFER  BIT(1)   }}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define KBC\_STATUS\_REG  0x64     }}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define KBC\_IN\_CMD      0x64     }}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define KBC\_OUT\_CMD     0x60     }}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define KBC\_OUT\_BUFFER  0x60     }}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define KBC\_READ\_CMD    0x20     }}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define KBC\_WRITE\_CMD   0x60     }}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define KBC\_INT         BIT(0)   }}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define WAIT\_KBC        20000    }}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define MAX\_ATTEMPS     10       }}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{comment}{// IO PORTS}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define OUT\_BUF       0x60       }}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define STATUS\_REG    0x64       }}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define MOUSE\_ARGS    0x60       }}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#define MOUSE\_CMD\_REG 0x64       }}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{comment}{// MOUSE/KBC COMMANDS}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define KBC\_READ\_CMD 0x20        }}
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define KBC\_WRITE\_CMD 0x60       }}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define WRITE\_BYTE\_TO\_MOUSE 0xD4 }}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{comment}{// MOUSE COMMANDS}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define DISABLE\_DATA\_REPORTING\_CMD 0xF5 }}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{comment}{// MOUSE COMMUNICATION BYTES}}
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#define MOUSE\_OK 0xFA                }}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define MOUSE\_NOCK 0xFE              }}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define MOUSE\_COMMUNICATION\_ERR 0xFE }}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{comment}{// MOUSE STUFF}}
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#define FIRST\_MOUSE\_BIT BIT(3) }}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{comment}{// MOUSE ERROR CHECKING}}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#define X\_OVERFLOW      BIT(6) }}
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#define Y\_OVERFLOW      BIT(7) }}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{comment}{// MOUSE BUTTONS}}
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#define RMOUSE\_BUTTON   BIT(1) }}
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#define LMOUSE\_BUTTON   BIT(0) }}
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#define MMOUSE\_BUTTON   BIT(2) }}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{comment}{// MSB DELTAS (negative or not)}}
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#define MOUSE\_MSB\_X BIT(4) }}
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#define MOUSE\_MSB\_Y BIT(5) }}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{comment}{// DELTAS POSITIVE OR NEGATIVE}}
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#define X\_SIGNAL\_OF\_DELTA\_MOUSE BIT(4) }}
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#define Y\_SIGNAL\_OF\_DELTA\_MOUSE BIT(5) }}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_LCOM\_I8042\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

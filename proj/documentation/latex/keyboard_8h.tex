@@ -1,0 +1,242 @@
+\hypertarget{keyboard_8h}{}\doxysection{devices/keyboard.h File Reference}
+\label{keyboard_8h}\index{devices/keyboard.h@{devices/keyboard.h}}
+
+
+Keyboard Controller (KBC) functions.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}\label{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+A}~0x1e
+\item 
+\mbox{\Hypertarget{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}\label{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}} 
+\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+A}~0x9e
+\item 
+\mbox{\Hypertarget{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}\label{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+S}~0x1f
+\item 
+\mbox{\Hypertarget{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}\label{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}} 
+\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+S}~0x9f
+\item 
+\mbox{\Hypertarget{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}\label{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+W}~0x11
+\item 
+\mbox{\Hypertarget{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}\label{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}} 
+\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+W}~0x91
+\item 
+\mbox{\Hypertarget{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}\label{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+D}~0x20
+\item 
+\mbox{\Hypertarget{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}\label{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}} 
+\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+D}~0xa0
+\item 
+\mbox{\Hypertarget{keyboard_8h_ace41b9e40bbed18a916324732432aafd}\label{keyboard_8h_ace41b9e40bbed18a916324732432aafd}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+SPACE}~0x39
+\item 
+\mbox{\Hypertarget{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}\label{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}} 
+\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+SPACE}~0xb9
+\item 
+\mbox{\Hypertarget{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}\label{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ENTER}~0x1c
+\item 
+\mbox{\Hypertarget{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}\label{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}} 
+\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+ENTER}~0x9c
+\item 
+\mbox{\Hypertarget{keyboard_8h_a372368b2af20d08f168831e2de675d6d}\label{keyboard_8h_a372368b2af20d08f168831e2de675d6d}} 
+\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ESC}~0x01
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}{kbc\+\_\+\+Subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribe to KBC interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5}{kbc\+\_\+\+Unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe from KBC interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e}{kbc\+\_\+error\+\_\+checking}} (uint8\+\_\+t status)
+\begin{DoxyCompactList}\small\item\em Check for KBC errors. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af}{writing\+\_\+command\+\_\+kbc}} (int port, uint8\+\_\+t cmdb)
+\begin{DoxyCompactList}\small\item\em Write command to KBC. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4}{reading\+\_\+from\+\_\+kbc}} (uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Read data from KBC. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a}{kbd\+\_\+reenable\+\_\+ints}} ()
+\begin{DoxyCompactList}\small\item\em Re-\/enable keyboard interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a75a9af0019672513c8fab993408dc10c}{keyboard\+\_\+read\+\_\+out\+\_\+buffer}} (uint8\+\_\+t $\ast$output)
+\begin{DoxyCompactList}\small\item\em Read from keyboard output buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_af6904562aeefa215fb32d02114bf071d}{keyboard\+\_\+get\+\_\+status}} (uint8\+\_\+t $\ast$st)
+\begin{DoxyCompactList}\small\item\em Get keyboard status. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{keyboard_8h_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Keyboard Controller (KBC) functions. 
+
+This file contains functions related to the Keyboard Controller (KBC). 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e}\label{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e}} 
+\index{keyboard.h@{keyboard.h}!kbc\_error\_checking@{kbc\_error\_checking}}
+\index{kbc\_error\_checking@{kbc\_error\_checking}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_error\_checking()}{kbc\_error\_checking()}}
+{\footnotesize\ttfamily int() kbc\+\_\+error\+\_\+checking (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{status }\end{DoxyParamCaption})}
+
+
+
+Check for KBC errors. 
+
+Checks the status byte for errors occurred during communication with the KBC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status byte to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 if no errors occurred, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_aea970a154161a35f6894898a092ed70a}\label{keyboard_8h_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.h@{keyboard.h}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Keyboard interrupt handler. 
+
+Interrupt handler for the keyboard interrupts. \mbox{\Hypertarget{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}\label{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}} 
+\index{keyboard.h@{keyboard.h}!kbc\_Subscribe@{kbc\_Subscribe}}
+\index{kbc\_Subscribe@{kbc\_Subscribe}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_Subscribe()}{kbc\_Subscribe()}}
+{\footnotesize\ttfamily int() kbc\+\_\+\+Subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribe to KBC interrupts. 
+
+Subscribes to KBC interrupts using the specified bit number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to the memory location where the bit number will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5}\label{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5}} 
+\index{keyboard.h@{keyboard.h}!kbc\_Unsubscribe@{kbc\_Unsubscribe}}
+\index{kbc\_Unsubscribe@{kbc\_Unsubscribe}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_Unsubscribe()}{kbc\_Unsubscribe()}}
+{\footnotesize\ttfamily int() kbc\+\_\+\+Unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe from KBC interrupts. 
+
+Unsubscribes from KBC interrupts.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a}\label{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a}} 
+\index{keyboard.h@{keyboard.h}!kbd\_reenable\_ints@{kbd\_reenable\_ints}}
+\index{kbd\_reenable\_ints@{kbd\_reenable\_ints}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbd\_reenable\_ints()}{kbd\_reenable\_ints()}}
+{\footnotesize\ttfamily int() kbd\+\_\+reenable\+\_\+ints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Re-\/enable keyboard interrupts. 
+
+Re-\/enables the keyboard interrupts.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_af6904562aeefa215fb32d02114bf071d}\label{keyboard_8h_af6904562aeefa215fb32d02114bf071d}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_get\_status@{keyboard\_get\_status}}
+\index{keyboard\_get\_status@{keyboard\_get\_status}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_get\_status()}{keyboard\_get\_status()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Get keyboard status. 
+
+Reads the status byte from the keyboard controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & Pointer to the memory location where the read status byte will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a75a9af0019672513c8fab993408dc10c}\label{keyboard_8h_a75a9af0019672513c8fab993408dc10c}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_read\_out\_buffer@{keyboard\_read\_out\_buffer}}
+\index{keyboard\_read\_out\_buffer@{keyboard\_read\_out\_buffer}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_read\_out\_buffer()}{keyboard\_read\_out\_buffer()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+read\+\_\+out\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Read from keyboard output buffer. 
+
+Reads the contents of the keyboard output buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & Pointer to the memory location where the read data will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4}\label{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4}} 
+\index{keyboard.h@{keyboard.h}!reading\_from\_kbc@{reading\_from\_kbc}}
+\index{reading\_from\_kbc@{reading\_from\_kbc}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{reading\_from\_kbc()}{reading\_from\_kbc()}}
+{\footnotesize\ttfamily int() reading\+\_\+from\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Read data from KBC. 
+
+Reads data from the KBC\textquotesingle{}s output buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the memory location where the read data will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af}\label{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af}} 
+\index{keyboard.h@{keyboard.h}!writing\_command\_kbc@{writing\_command\_kbc}}
+\index{writing\_command\_kbc@{writing\_command\_kbc}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{writing\_command\_kbc()}{writing\_command\_kbc()}}
+{\footnotesize\ttfamily int() writing\+\_\+command\+\_\+kbc (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t}]{cmdb }\end{DoxyParamCaption})}
+
+
+
+Write command to KBC. 
+
+Writes a command to the specified port of the KBC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to write the command to \\
+\hline
+{\em cmdb} & The command byte to be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}

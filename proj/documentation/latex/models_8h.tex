@@ -1,0 +1,204 @@
+\hypertarget{models_8h}{}\doxysection{models/models.h File Reference}
+\label{models_8h}\index{models/models.h@{models/models.h}}
+
+
+Contains the data structures used in the Bomberman game.  
+
+
+{\ttfamily \#include \char`\"{}devices/video\+\_\+gr.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_position}{Position}}
+\begin{DoxyCompactList}\small\item\em Represents a position in the game arena. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_explosion}{Explosion}}
+\begin{DoxyCompactList}\small\item\em Represents an explosion in the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_bomb}{Bomb}}
+\begin{DoxyCompactList}\small\item\em Represents a bomb in the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_button}{Button}}
+\begin{DoxyCompactList}\small\item\em Represents a button in the game\textquotesingle{}s menu. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\begin{DoxyCompactList}\small\item\em Represents a player in the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_wall}{Wall}}
+\begin{DoxyCompactList}\small\item\em Represents a wall in the game arena. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_brick}{Brick}}
+\begin{DoxyCompactList}\small\item\em Represents a brick in the game arena. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_power_up}{Power\+Up}}
+\begin{DoxyCompactList}\small\item\em Represents a power-\/up in the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}
+\begin{DoxyCompactList}\small\item\em Represents the game arena model. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_menu_model}{Menu\+Model}}
+\begin{DoxyCompactList}\small\item\em Represents the menu model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \{ \newline
+\mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}{SELECTNAMES}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}{GAMEOVER}}
+, \newline
+\mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a6d1730675333f946c03d53040cd30bc4}{PLAYER1\+WON}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a1a014e6e80b0b124d9b3ea16f74537ea}{PLAYER2\+WON}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible game states. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \{ \newline
+\mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}{UP}}
+, \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da}{DOWN}}
+, \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065}{LEFT}}
+, \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38}{RIGHT}}
+, \newline
+\mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa4728d93a3b688986265db6f0a4cbda1f}{STAY}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible movement directions. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}} \{ \newline
+\mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a75f48da03fe681c0448458bc46f45b13}{UPFLAME}}
+, \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a3314b05e1ad4e0229d640473fdc346e0}{DOWNFLAME}}
+, \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87ab67b2cb3d20ea18cb525d97dbbd9a200}{LEFTFLAME}}
+, \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a74e637be1bf416b4dcdd4a133fb3feaa}{RIGHTFLAME}}
+, \newline
+\mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87afa96511699b6291b6c0a572f30ee1f9c}{CENTERFLAME}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible flame directions for an explosion. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}{Power\+Up\+Type}} \{ \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da095285ba8fb2e1f9cfb29c80546f06e4}{BOMB}}
+, \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da36ccd76c516f51bf87c02b44305284ca}{RANGE}}
+, \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da1fb3554200c1173d24e97e9d32283ead}{SPEED}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates the possible types of power-\/ups. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the data structures used in the Bomberman game. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}\label{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}} 
+\index{models.h@{models.h}!Direction@{Direction}}
+\index{Direction@{Direction}!models.h@{models.h}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}
+
+
+
+Enumerates the possible movement directions. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!models.h@{models.h}}\index{models.h@{models.h}!UP@{UP}}}\mbox{\Hypertarget{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}\label{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}} 
+UP&Up direction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN@{DOWN}!models.h@{models.h}}\index{models.h@{models.h}!DOWN@{DOWN}}}\mbox{\Hypertarget{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da}\label{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da}} 
+DOWN&Down direction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!models.h@{models.h}}\index{models.h@{models.h}!LEFT@{LEFT}}}\mbox{\Hypertarget{models_8h_a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065}\label{models_8h_a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065}} 
+LEFT&Left direction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!models.h@{models.h}}\index{models.h@{models.h}!RIGHT@{RIGHT}}}\mbox{\Hypertarget{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38}\label{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38}} 
+RIGHT&Right direction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STAY@{STAY}!models.h@{models.h}}\index{models.h@{models.h}!STAY@{STAY}}}\mbox{\Hypertarget{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa4728d93a3b688986265db6f0a4cbda1f}\label{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa4728d93a3b688986265db6f0a4cbda1f}} 
+STAY&No movement. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}\label{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}} 
+\index{models.h@{models.h}!FlameDirection@{FlameDirection}}
+\index{FlameDirection@{FlameDirection}!models.h@{models.h}}
+\doxysubsubsection{\texorpdfstring{FlameDirection}{FlameDirection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}}}
+
+
+
+Enumerates the possible flame directions for an explosion. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UPFLAME@{UPFLAME}!models.h@{models.h}}\index{models.h@{models.h}!UPFLAME@{UPFLAME}}}\mbox{\Hypertarget{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a75f48da03fe681c0448458bc46f45b13}\label{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a75f48da03fe681c0448458bc46f45b13}} 
+UPFLAME&Flame going up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWNFLAME@{DOWNFLAME}!models.h@{models.h}}\index{models.h@{models.h}!DOWNFLAME@{DOWNFLAME}}}\mbox{\Hypertarget{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a3314b05e1ad4e0229d640473fdc346e0}\label{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a3314b05e1ad4e0229d640473fdc346e0}} 
+DOWNFLAME&Flame going down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFTFLAME@{LEFTFLAME}!models.h@{models.h}}\index{models.h@{models.h}!LEFTFLAME@{LEFTFLAME}}}\mbox{\Hypertarget{models_8h_a38ebeb110a7300e39b5e7af072f4ee87ab67b2cb3d20ea18cb525d97dbbd9a200}\label{models_8h_a38ebeb110a7300e39b5e7af072f4ee87ab67b2cb3d20ea18cb525d97dbbd9a200}} 
+LEFTFLAME&Flame going left. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHTFLAME@{RIGHTFLAME}!models.h@{models.h}}\index{models.h@{models.h}!RIGHTFLAME@{RIGHTFLAME}}}\mbox{\Hypertarget{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a74e637be1bf416b4dcdd4a133fb3feaa}\label{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a74e637be1bf416b4dcdd4a133fb3feaa}} 
+RIGHTFLAME&Flame going right. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENTERFLAME@{CENTERFLAME}!models.h@{models.h}}\index{models.h@{models.h}!CENTERFLAME@{CENTERFLAME}}}\mbox{\Hypertarget{models_8h_a38ebeb110a7300e39b5e7af072f4ee87afa96511699b6291b6c0a572f30ee1f9c}\label{models_8h_a38ebeb110a7300e39b5e7af072f4ee87afa96511699b6291b6c0a572f30ee1f9c}} 
+CENTERFLAME&Flame at the center. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}} 
+\index{models.h@{models.h}!GameState@{GameState}}
+\index{GameState@{GameState}!models.h@{models.h}}
+\doxysubsubsection{\texorpdfstring{GameState}{GameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}
+
+
+
+Enumerates the possible game states. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTNAMES@{SELECTNAMES}!models.h@{models.h}}\index{models.h@{models.h}!SELECTNAMES@{SELECTNAMES}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}} 
+SELECTNAMES&State for selecting player names. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU@{MENU}!models.h@{models.h}}\index{models.h@{models.h}!MENU@{MENU}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}} 
+MENU&Main menu state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!models.h@{models.h}}\index{models.h@{models.h}!GAME@{GAME}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}} 
+GAME&Gameplay state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEOVER@{GAMEOVER}!models.h@{models.h}}\index{models.h@{models.h}!GAMEOVER@{GAMEOVER}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}} 
+GAMEOVER&Game over state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT@{EXIT}!models.h@{models.h}}\index{models.h@{models.h}!EXIT@{EXIT}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}} 
+EXIT&Exit state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER1WON@{PLAYER1WON}!models.h@{models.h}}\index{models.h@{models.h}!PLAYER1WON@{PLAYER1WON}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a6d1730675333f946c03d53040cd30bc4}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a6d1730675333f946c03d53040cd30bc4}} 
+PLAYER1\+WON&State indicating player 1 has won. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER2WON@{PLAYER2WON}!models.h@{models.h}}\index{models.h@{models.h}!PLAYER2WON@{PLAYER2WON}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a1a014e6e80b0b124d9b3ea16f74537ea}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a1a014e6e80b0b124d9b3ea16f74537ea}} 
+PLAYER2\+WON&State indicating player 2 has won. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}\label{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}} 
+\index{models.h@{models.h}!PowerUpType@{PowerUpType}}
+\index{PowerUpType@{PowerUpType}!models.h@{models.h}}
+\doxysubsubsection{\texorpdfstring{PowerUpType}{PowerUpType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}{Power\+Up\+Type}}}
+
+
+
+Enumerates the possible types of power-\/ups. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOMB@{BOMB}!models.h@{models.h}}\index{models.h@{models.h}!BOMB@{BOMB}}}\mbox{\Hypertarget{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da095285ba8fb2e1f9cfb29c80546f06e4}\label{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da095285ba8fb2e1f9cfb29c80546f06e4}} 
+BOMB&\mbox{\hyperlink{struct_bomb}{Bomb}} power-\/up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RANGE@{RANGE}!models.h@{models.h}}\index{models.h@{models.h}!RANGE@{RANGE}}}\mbox{\Hypertarget{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da36ccd76c516f51bf87c02b44305284ca}\label{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da36ccd76c516f51bf87c02b44305284ca}} 
+RANGE&Range power-\/up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPEED@{SPEED}!models.h@{models.h}}\index{models.h@{models.h}!SPEED@{SPEED}}}\mbox{\Hypertarget{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da1fb3554200c1173d24e97e9d32283ead}\label{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da1fb3554200c1173d24e97e9d32283ead}} 
+SPEED&Speed power-\/up. \\
+\hline
+
+\end{DoxyEnumFields}

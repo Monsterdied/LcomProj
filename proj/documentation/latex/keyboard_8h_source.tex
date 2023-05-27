@@ -1,0 +1,41 @@
+\hypertarget{keyboard_8h_source}{}\doxysection{keyboard.\+h}
+\label{keyboard_8h_source}\index{devices/keyboard.h@{devices/keyboard.h}}
+\mbox{\hyperlink{keyboard_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{i8042_8h}{i8042.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_A 0x1e}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define KBC\_BREAK\_CODE\_A 0x9e}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_S 0x1f}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define KBC\_BREAK\_CODE\_S 0x9f}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_W 0x11}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define KBC\_BREAK\_CODE\_W 0x91}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_D 0x20}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define KBC\_BREAK\_CODE\_D 0xa0}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_SPACE 0x39}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define KBC\_BREAK\_CODE\_SPACE 0xb9}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_ENTER 0x1c}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define KBC\_BREAK\_CODE\_ENTER 0x9c}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define KBC\_MAKE\_CODE\_ESC 0x01}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{34 int (\mbox{\hyperlink{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}{kbc\_Subscribe}})(uint8\_t *bit\_no);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{43 int (\mbox{\hyperlink{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5}{kbc\_Unsubscribe}})();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{53 int (\mbox{\hyperlink{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e}{kbc\_error\_checking}})(uint8\_t status);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{64 int (\mbox{\hyperlink{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af}{writing\_command\_kbc}})(\textcolor{keywordtype}{int} port, uint8\_t cmdb);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{74 int (\mbox{\hyperlink{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4}{reading\_from\_kbc}})(uint8\_t *data);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{83 int (\mbox{\hyperlink{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a}{kbd\_reenable\_ints}})();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{93 int (\mbox{\hyperlink{keyboard_8h_a75a9af0019672513c8fab993408dc10c}{keyboard\_read\_out\_buffer}})(uint8\_t *output);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{103 int (\mbox{\hyperlink{keyboard_8h_af6904562aeefa215fb32d02114bf071d}{keyboard\_get\_status}})(uint8\_t *st);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{110 void (\mbox{\hyperlink{keyboard_8h_aea970a154161a35f6894898a092ed70a}{kbc\_ih}})();}
+
+\end{DoxyCode}

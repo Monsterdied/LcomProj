@@ -1,0 +1,85 @@
+\hypertarget{struct_player}{}\doxysection{Player Struct Reference}
+\label{struct_player}\index{Player@{Player}}
+
+
+Represents a player in the game.  
+
+
+
+
+{\ttfamily \#include $<$models.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_player_a38db771080a5bca533de0f0236ff11ec}\label{struct_player_a38db771080a5bca533de0f0236ff11ec}} 
+char {\bfseries name} \mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a51ddb8c567f39d56695a119feb09a994}\label{struct_player_a51ddb8c567f39d56695a119feb09a994}} 
+int {\bfseries name\+Size}
+\begin{DoxyCompactList}\small\item\em Size of the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a1849a6bd8808290f3b62fa122245d987}\label{struct_player_a1849a6bd8808290f3b62fa122245d987}} 
+enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} {\bfseries direction}
+\begin{DoxyCompactList}\small\item\em Current movement direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a933567351995a2f641e26be377c07fdc}\label{struct_player_a933567351995a2f641e26be377c07fdc}} 
+struct \mbox{\hyperlink{struct_position}{Position}} {\bfseries position}
+\begin{DoxyCompactList}\small\item\em Current position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_ac96084c9da1fca4bd0bc0813f381acf6}\label{struct_player_ac96084c9da1fca4bd0bc0813f381acf6}} 
+xpm\+\_\+image\+\_\+t {\bfseries Left} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Images for the left movement animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a7f7fc401257e9db8c1c7ff9b18b164b5}\label{struct_player_a7f7fc401257e9db8c1c7ff9b18b164b5}} 
+xpm\+\_\+image\+\_\+t {\bfseries Right} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Images for the right movement animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a98a04c7db95a0f6d6cef01adfbd20a9e}\label{struct_player_a98a04c7db95a0f6d6cef01adfbd20a9e}} 
+xpm\+\_\+image\+\_\+t {\bfseries Up} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Images for the up movement animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_ae4ba66af694f947fd14500906fdcb1fd}\label{struct_player_ae4ba66af694f947fd14500906fdcb1fd}} 
+xpm\+\_\+image\+\_\+t {\bfseries Down} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Images for the down movement animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a5d5aa9a8f25d33232631cfd9da9d06f6}\label{struct_player_a5d5aa9a8f25d33232631cfd9da9d06f6}} 
+int {\bfseries number\+Of\+Images}
+\begin{DoxyCompactList}\small\item\em Number of animation images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a3c9ca3b9f5fd8f3237819d51c3876aee}\label{struct_player_a3c9ca3b9f5fd8f3237819d51c3876aee}} 
+int {\bfseries current\+Xpm}
+\begin{DoxyCompactList}\small\item\em Current animation image index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a0edc097ad2d6df8c7a7aefce120e8314}\label{struct_player_a0edc097ad2d6df8c7a7aefce120e8314}} 
+double {\bfseries time\+Until\+Next\+Xpm}
+\begin{DoxyCompactList}\small\item\em Time until the next animation image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a74e56bcfe770a79b906b09ddde3e315b}\label{struct_player_a74e56bcfe770a79b906b09ddde3e315b}} 
+double {\bfseries coldown\+Between\+Xpms}
+\begin{DoxyCompactList}\small\item\em Cooldown between animation images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_ac1d68ef9a5dd304c5015e07af7f2bb19}\label{struct_player_ac1d68ef9a5dd304c5015e07af7f2bb19}} 
+int {\bfseries lives}
+\begin{DoxyCompactList}\small\item\em Number of remaining lives. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a942c83a0c13f3bb998e8802bb5921362}\label{struct_player_a942c83a0c13f3bb998e8802bb5921362}} 
+int {\bfseries bombs}
+\begin{DoxyCompactList}\small\item\em Number of bombs the player has. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_aac3b4727c79906d0a99db72634b37fc8}\label{struct_player_aac3b4727c79906d0a99db72634b37fc8}} 
+int {\bfseries bombcooldown}
+\begin{DoxyCompactList}\small\item\em Cooldown between placing bombs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a037e8e370380046bec287bdc96942091}\label{struct_player_a037e8e370380046bec287bdc96942091}} 
+int {\bfseries range}
+\begin{DoxyCompactList}\small\item\em Range of the player\textquotesingle{}s bombs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a218b4f7c6cc2681a99c23a3b089d68b1}\label{struct_player_a218b4f7c6cc2681a99c23a3b089d68b1}} 
+int {\bfseries speed}
+\begin{DoxyCompactList}\small\item\em Movement speed of the player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a6cb2dc7d663ebfbcf47dee3ae9337b13}\label{struct_player_a6cb2dc7d663ebfbcf47dee3ae9337b13}} 
+double {\bfseries timeuntilnextmovement}
+\begin{DoxyCompactList}\small\item\em Time until the next movement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a93194d6a879aee48480899fc76a775fc}\label{struct_player_a93194d6a879aee48480899fc76a775fc}} 
+double {\bfseries movementcooldown}
+\begin{DoxyCompactList}\small\item\em Cooldown between movements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_aef160b7437d94056f1dc59646cd5b87d}\label{struct_player_aef160b7437d94056f1dc59646cd5b87d}} 
+int {\bfseries score}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s score. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_player_a7441ef0865bcb3db9b8064dd7375c1ea}\label{struct_player_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+int {\bfseries id}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a player in the game. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}
