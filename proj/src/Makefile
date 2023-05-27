@@ -4,6 +4,7 @@ PROG=proj
 .PATH: ${.CURDIR}
 .PATH: ${.CURDIR}/devices
 .PATH: ${.CURDIR}/Game/gameControllers
+
 .PATH: ${.CURDIR}/draw
 .PATH: ${.CURDIR}/Game
 

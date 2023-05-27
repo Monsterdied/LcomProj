@@ -12,6 +12,8 @@
         "mouse.h": "c",
         "iosfwd": "c",
         "xlocbuf": "c",
-        "system_error": "c"
+        "system_error": "c",
+        "rtc.h": "c",
+        "stdint.h": "c"
     }
 }

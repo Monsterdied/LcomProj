@@ -13,3 +13,4 @@ int (B)(uint32_t color);
 int (vg_update)();
 int (draw_pixel)(uint16_t x , uint16_t y , uint32_t color);
 int (vg_draw_Character)(char c,xpm_image_t img,int x , int y,uint32_t colorChosen);
+int (vg_draw_rectangle_background)(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint32_t color);

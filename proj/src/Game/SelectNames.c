@@ -33,6 +33,7 @@ void (kbc_api_select_names)(struct ArenaModel* model,enum GameState* state){
     if(scan_code[0] == KBC_MAKE_CODE_ENTER && model->players[number_of_player].nameSize > 0){
         number_of_player +=1;
         if(number_of_player== 2){
+            printf("number of player %d\n",number_of_player);
             *state=GAME;
             return;
         }

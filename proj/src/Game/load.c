@@ -5,6 +5,8 @@
 extern int fr_rate;
 struct ArenaModel  loadArena(char pString[15][30]){
     struct ArenaModel model;
+    
+    model.nCoins=0;
 
     model.returnButton.x = 450;
     model.returnButton.y = 450;
@@ -22,12 +24,19 @@ struct ArenaModel  loadArena(char pString[15][30]){
 
     for (int i=0;i<30;i++) {
         for (int j=0;j<15;j++) {
+            if(pString[j][i]=='C'){
+                model.coins[model.nCoins].position.x=i;
+                model.coins[model.nCoins].position.y=j;
+                model.coins[model.nCoins].currentXpm=0;
+                model.coins[model.nCoins].timeUntilNextXpm=0.3;
+                model.nCoins++;
+            }
             if(pString[j][i]=='H'){
                 model.walls[model.nWalls].position.x=i;
                 model.walls[model.nWalls].position.y=j;
                 model.nWalls++;
             }
-            if(pString[j][i]=='h'){
+            if(pString[j][i]=='h' || pString[j][i]=='C'){
                 model.bricks[model.nBricks].position.x=i;
                 model.bricks[model.nBricks].position.y=j;
                 model.nBricks++;
@@ -44,6 +53,7 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.bombs[model.nBombs].timeUntilExplosion=2;
                 model.bombs[model.nBombs].timeUntilNextXpm=0.3;
                 model.bombs[model.nBombs].range=3;
+                model.bombs[model.nBombs].owner=0;
                 model.nBombs++;
             }
             if(pString[j][i]=='B'){
@@ -87,6 +97,13 @@ struct ArenaModel  loadArena(char pString[15][30]){
             }
         }
     }
-
+    printf("nCoins: %d\n",model.nCoins);
+    printf("nWalls: %d\n",model.nWalls);
+    printf("nBombs: %d\n",model.nBombs);
+    printf("nBricks: %d\n",model.nBricks);
+    printf("nPowerUps: %d\n",model.nPowerUps);
+    printf("nExplosions: %d\n",model.nExplosions);
+    printf("nlives: %d\n",model.players[1].lives);
     return model;
 }
+

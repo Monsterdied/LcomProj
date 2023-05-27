@@ -60,7 +60,7 @@ int (proj_main_loop)(){
                      "H____________________________H",
                      "H_____h_______HHHHH______h___H",
                      "H______________h_____________H",
-                     "H_______________h____________H",
+                     "H______C________h____________H",
                      "H______O_________h___________H",
                      "H___HHHH__________h_b________H",
                      "H__________________h_________H",
@@ -72,13 +72,15 @@ int (proj_main_loop)(){
 
     load_xpms(&model);
     state=MENU;
+                    
     while(state!=EXIT){
         switch (state){
             case MENU:
-                                                    
+                                  
                 model=Menu(&state);
                 break;
             case SELECTNAMES:
+                printf("game\n");
                 SelectNames(&state,&model);
                 break;
             case GAME:

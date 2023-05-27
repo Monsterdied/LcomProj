@@ -94,6 +94,14 @@
 
 #include "models/font/font.xpm"
 
+//coinss
+
+#include "models/coin/coin1.xpm"
+#include "models/coin/coin2.xpm"
+#include "models/coin/coin3.xpm"
+#include "models/coin/coin4.xpm"
+#include "models/coin/coin5.xpm"
+
 
 
 

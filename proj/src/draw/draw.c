@@ -31,7 +31,8 @@ xpm_image_t     bomberman_idle_down_white,bomberman_down_wallking_1_white ,bombe
                 menu_continue_button_selected,
                 menu_continue_button_not_selected,
                 number_0,number_1,number_2,number_3,number_4,number_5,number_6,number_7,number_8,number_9,double_point,
-                font;
+                font,
+                coin1,coin2,coin3,coin4,coin5;
 int multiplier = 22; 
 int (load_xpms)(struct ArenaModel* model){
     //white Bomberman
@@ -149,6 +150,13 @@ int (load_xpms)(struct ArenaModel* model){
     xpm_load(double_points_xpm,XPM_8_8_8,&double_point);
 
     xpm_load(font_xmp,XPM_8_8_8,&font);
+
+
+    xpm_load(coin1_xpm,XPM_8_8_8,&coin1);
+    xpm_load(coin2_xpm,XPM_8_8_8,&coin2);
+    xpm_load(coin3_xpm,XPM_8_8_8,&coin3);
+    xpm_load(coin4_xpm,XPM_8_8_8,&coin4);
+    xpm_load(coin5_xpm,XPM_8_8_8,&coin5);
     
     return 0;
 }
@@ -224,6 +232,8 @@ void (draw_string)(char* text, int x, int y,int size,uint32_t color){
         vg_draw_Character(text[i],font,x,y,color);
     }
 }
+
+
 void (drawPlayers)(struct ArenaModel model){
     int positionx_white =model.players[0].position.x * multiplier;
     int positiony_white =model.players[0].position.y*multiplier;
@@ -248,18 +258,23 @@ void (drawPlayers)(struct ArenaModel model){
         drawXpm8_8_8(model.players[1].Down[model.players[1].currentXpm],positionx_black,positiony_black);
     }            
 }
+
+void (draw_coins)(struct ArenaModel model){
+    for(int i=0;i<model.nCoins;i++){
+        if(model.coins[i].currentXpm==0)
+        drawXpm8_8_8(coin1,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==1)
+        drawXpm8_8_8(coin2,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==2)
+        drawXpm8_8_8(coin3,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==3)
+        drawXpm8_8_8(coin4,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==4)
+        drawXpm8_8_8(coin5,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+    }
+}
 void (draw_background)(struct ArenaModel model){
     vg_draw_rectangle(0,0,30*multiplier,15*multiplier,0x7CFC00);
-}
-char (**getemptyArena()) {
-    char** arena = (char**) malloc(15 * sizeof(char*));
-    for (int i = 0; i < 15; i++) {
-        arena[i] = (char*) malloc(30 * sizeof(char));
-        for (int j = 0; j < 30; j++) {
-            arena[i][j] = '_';
-        }
-    }
-    return arena;
 }
 
 void (numbersDisplay)(int number, int x, int y ){
@@ -339,6 +354,7 @@ void draw_Button(struct Button button){
         drawXpm8_8_8(button.button_unselected,button.x,button.y);
 }
 void (draw_game)(struct ArenaModel model,Mouse mouse){
+    draw_coins(model);
     draw_Button(model.returnButton);
     //draw_background(model);
     drawWalls(model);

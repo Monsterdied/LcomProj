@@ -10,10 +10,10 @@
                      "H____________________________H",
                      "H_____h_______HHHHH______h___H",
                      "H______________h_____________H",
-                     "H_______________h____________H",
-                     "H______O_________h___________H",
+                     "H______C________h____________H",
+                     "H______h_________h___________H",
                      "H___HHHH__________h_b________H",
-                     "H__________________h_________H",
+                     "H____________C_____h_________H",
                      "H___________________h________H",
                      "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
     };
@@ -180,10 +180,10 @@ struct ArenaModel (Menu)(enum GameState* state){
     }  
     mouse_Unsubscribe();
     kbc_Unsubscribe();
-    printf("timer_hook_id = %d\n",bit_no_timer);
     timer_unsubscribe_int();
     vg_exit();
     struct ArenaModel arenamodel=loadArena(arena);
     load_xpms(&arenamodel);
+
     return arenamodel;
 }
