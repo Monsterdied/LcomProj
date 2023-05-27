@@ -1,5 +1,5 @@
 /* XPM */
-static char * 420_4201833_coins_clipart_sprite_coin_sprite_sheet_png_transparent_xpm[] = {
+static xpm_row_t const coin1_xpm[] = {
 "22 22 181 2",
 "  	c None",
 ". 	c #828074",

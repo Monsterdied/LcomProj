@@ -1,5 +1,5 @@
 /* XPM */
-static char * coin4_xpm[] = {
+static xpm_row_t const coin4_xpm[] = {
 "22 22 42 1",
 " 	c None",
 ".	c #F6F6F6",

@@ -39,6 +39,13 @@ struct Position {
     int x;
     int y;
 };
+
+struct Coin {
+    struct Position position;
+    int currentXpm;
+    double timeUntilNextXpm;
+};
+
 struct Explosion {
     struct Position position;
     enum FlameDirection direction;
@@ -88,6 +95,7 @@ struct PowerUp {
     enum PowerUpType type;
 };
 struct ArenaModel {
+    struct Coin coins[450];
     struct Player players[2];
     struct Bomb bombs[6];
     struct Wall walls[450];
@@ -100,7 +108,7 @@ struct ArenaModel {
     int nPowerUps;
     int nBombs;
     int nExplosions;
-
+    int nCoins;
 };
 
 struct MenuModel {

@@ -4,30 +4,33 @@ extern int scan_code[2];
 
 bool (PlayerCanWalkTo)(struct Position position,int PlayerNumber, struct ArenaModel* ArenaModel){
     for(int i = 0; i < ArenaModel->nBricks; i++){
-        /*if(ArenaModel->bricks[i].position.x == -1 || ArenaModel->bricks[i].position.y == -1){
-            continue;
-        }*/
+
         if(position.x  == ArenaModel->bricks[i].position.x && position.y == ArenaModel->bricks[i].position.y){
             return false;
         }
     }
     for(int i = 0; i < ArenaModel->nWalls; i++){
 
-        /*if(ArenaModel->walls[i].position.x == -1 || ArenaModel->walls[i].position.y == -1){
-            continue;
-        }*/
         if(position.x  == ArenaModel->walls[i].position.x && position.y == ArenaModel->walls[i].position.y){
             return false;
         }
     }
     for(int i = 0; i < ArenaModel->nBombs; i++){
-        /*if(ArenaModel->bombs[i].position.x == -1 || ArenaModel->bombs[i].position.y == -1){
-            continue;
-        }*/
+
         if(position.x == ArenaModel->bombs[i].position.x && position.y == ArenaModel->bombs[i].position.y){
             return false;
         }
     }
+
+        for(int i = 0; i < ArenaModel->nExplosions; i++){
+
+        if(position.x == ArenaModel->explosions[i].position.x && position.y == ArenaModel->explosions[i].position.y){
+            printf("Player %d has died\n",PlayerNumber);
+            ArenaModel->players[PlayerNumber].lives --;
+            return true;
+        }
+    }
+
     if(PlayerNumber == 0){
         if(position.x  == ArenaModel->players[1].position.x && position.y == ArenaModel->players[1].position.y){
             return false;
@@ -200,8 +203,29 @@ void (PlayersSpriteControllers)(struct ArenaModel* arenaModel){
     PlayerSpriteController(1,arenaModel);
     
 }
+void (CoinController)(struct ArenaModel* ArenaModel){
+    for(int i = 0; i < ArenaModel->nCoins; i++){
+        ArenaModel->coins[i].timeUntilNextXpm -= ArenaModel->elapsedTime;
+        if(ArenaModel->coins[i].timeUntilNextXpm <= 0){
+            ArenaModel->coins[i].timeUntilNextXpm = 0.1;
+            ArenaModel->coins[i].currentXpm++;
+            if(ArenaModel->coins[i].currentXpm > 4){
+                ArenaModel->coins[i].currentXpm = 0;
+            }
+        }
+        if(ArenaModel->coins[i].position.x == ArenaModel->players[0].position.x && ArenaModel->coins[i].position.y == ArenaModel->players[0].position.y){
+            ArenaModel->players[0].score++;
+            ArenaModel->coins[i] = ArenaModel->coins[ArenaModel->nCoins-1];
+            ArenaModel->nCoins--;
+        }else if(ArenaModel->coins[i].position.x == ArenaModel->players[1].position.x && ArenaModel->coins[i].position.y == ArenaModel->players[1].position.y){
+            ArenaModel->players[1].score++;
+            ArenaModel->coins[i] = ArenaModel->coins[ArenaModel->nCoins-1];
+            ArenaModel->nCoins--;
+        }
+    }
+}
+
 int (burn)(int x,int y,struct ArenaModel* arenaModel,enum FlameDirection direction){
-    printf(" burn x:%d y:%d\n",x,y);
     for(int i = 0; i < arenaModel->nBricks; i++){
         if(arenaModel->bricks[i].position.x == x && arenaModel->bricks[i].position.y == y){
             arenaModel->bricks[i] = arenaModel->bricks[arenaModel->nBricks-1];
