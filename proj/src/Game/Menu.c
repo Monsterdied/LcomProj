@@ -180,12 +180,10 @@ struct ArenaModel (Menu)(enum GameState* state){
     }  
     mouse_Unsubscribe();
     kbc_Unsubscribe();
-    printf("alive \n");
     timer_unsubscribe_int();
     vg_exit();
     struct ArenaModel arenamodel=loadArena(arena);
-    printf("alive \n");
     load_xpms(&arenamodel);
-    printf("alive \n");
+
     return arenamodel;
 }

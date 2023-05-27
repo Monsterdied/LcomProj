@@ -1,6 +1,6 @@
 /* XPM */
 static xpm_row_t const coin2_xpm[] = {
-"22 22 140 2",
+"22 22 134 2",
 "  	c None",
 ". 	c #625C3A",
 "+ 	c #5E572C",
@@ -135,12 +135,6 @@ static xpm_row_t const coin2_xpm[] = {
 "a.	c #322A01",
 "b.	c #312900",
 "c.	c #82807C",
-"d.	c #F8F8F8",
-"e.	c #F7F7F7",
-"f.	c #F6F6F6",
-"g.	c #C7C7C7",
-"h.	c #C6C6C6",
-"i.	c #DBDBDB",
 "                . + + + + @ #               ",
 "              $ % & & & & * = -             ",
 "          ; > , ' ) ) ) ) ! ~ { ]           ",
@@ -162,4 +156,4 @@ static xpm_row_t const coin2_xpm[] = {
 "          _.:.<.[.}.|.|.|.1.2.3.;           ",
 "            4.5.6.7.y y y y 8.9.            ",
 "                0.a.b.b.b.b.c.              ",
-"      d.e.e.e.f.g.h.h.g.g.g.i.      d.e.e.e."};
+"                                            "};

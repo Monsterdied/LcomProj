@@ -255,19 +255,19 @@ void (drawPlayers)(struct ArenaModel model){
         drawXpm8_8_8(model.players[1].Down[model.players[1].currentXpm],positionx_black,positiony_black);
     }            
 }
-bool is_Brick(struct ArenaModel model, int x, int y){
-    for(int i=0;i<model.nBricks;i++){
-        if(model.bricks[i].position.x==x && model.bricks[i].position.y==y){
-            return true;
-        }
-    }
-    return false;
-}
 
 void (draw_coins)(struct ArenaModel model){
     for(int i=0;i<model.nCoins;i++){
-
+        if(model.coins[i].currentXpm==0)
         drawXpm8_8_8(coin1,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==1)
+        drawXpm8_8_8(coin2,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==2)
+        drawXpm8_8_8(coin3,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==3)
+        drawXpm8_8_8(coin4,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
+        else if(model.coins[i].currentXpm==4)
+        drawXpm8_8_8(coin5,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
     }
 }
 void (draw_background)(struct ArenaModel model){

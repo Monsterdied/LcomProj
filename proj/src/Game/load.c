@@ -22,6 +22,8 @@ struct ArenaModel  loadArena(char pString[15][30]){
             if(pString[j][i]=='C'){
                 model.coins[model.nCoins].position.x=i;
                 model.coins[model.nCoins].position.y=j;
+                model.coins[model.nCoins].currentXpm=0;
+                model.coins[model.nCoins].timeUntilNextXpm=0.3;
                 model.nCoins++;
             }
             if(pString[j][i]=='H'){
@@ -29,7 +31,7 @@ struct ArenaModel  loadArena(char pString[15][30]){
                 model.walls[model.nWalls].position.y=j;
                 model.nWalls++;
             }
-            if(pString[j][i]=='h'){
+            if(pString[j][i]=='h' || pString[j][i]=='C'){
                 model.bricks[model.nBricks].position.x=i;
                 model.bricks[model.nBricks].position.y=j;
                 model.nBricks++;

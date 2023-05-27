@@ -207,7 +207,7 @@ void (CoinController)(struct ArenaModel* ArenaModel){
     for(int i = 0; i < ArenaModel->nCoins; i++){
         ArenaModel->coins[i].timeUntilNextXpm -= ArenaModel->elapsedTime;
         if(ArenaModel->coins[i].timeUntilNextXpm <= 0){
-            ArenaModel->coins[i].timeUntilNextXpm = 0.1;
+            ArenaModel->coins[i].timeUntilNextXpm = 0.3;
             ArenaModel->coins[i].currentXpm++;
             if(ArenaModel->coins[i].currentXpm > 4){
                 ArenaModel->coins[i].currentXpm = 0;
