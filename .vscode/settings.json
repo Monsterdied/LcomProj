@@ -17,6 +17,7 @@
         "stdint.h": "c",
         "charconv": "c",
         "format": "c",
-        "xutility": "c"
+        "xutility": "c",
+        "draw.h": "c"
     }
 }
