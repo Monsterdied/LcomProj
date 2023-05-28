@@ -279,9 +279,6 @@ void (draw_coins)(struct ArenaModel model){
         drawXpm8_8_8(coin5,model.coins[i].position.x * multiplier,model.coins[i].position.y*multiplier);
     }
 }
-void (draw_background)(struct ArenaModel model){
-    
-}
 
 void (numbersDisplay)(int number, int x, int y ){
     if(number==0){
@@ -386,15 +383,15 @@ void (draw_leader_board)(struct ArenaModel model){
         
     }
 }
-void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
+void (draw_game)(struct ArenaModel model, Mouse mouse,time_display time_info){
     draw_leader_board(model);
     //draw_background(model);
-    if(time_info.hours<8 && time_info.hours>20){
-        drawXpm8_8_8(grass,0,0);
-        drawXpm8_8_8(sun,20,30);
-    }else{
+    if (time_info.hours < 8 || time_info.hours > 20) {
         drawXpm8_8_8(grassnight,0,0);
         drawXpm8_8_8(moon,20,30);
+    } else {
+        drawXpm8_8_8(grass,0,0);
+        drawXpm8_8_8(sun,20,30);
     }
 
     draw_coins(model);
