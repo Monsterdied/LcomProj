@@ -6,13 +6,14 @@
 
 #ifndef BOMBERMAN_MODELS_H
 #define BOMBERMAN_MODELS_H
+
 #include "devices/rtc.h"
 #include "devices/video_gr.h"
 
 /**
  * @brief Enumerates the possible game states.
  */
-enum GameState{
+enum GameState {
     TIE,            ///< State indicating a tie
     SELECTNAMES,    ///< State for selecting player names
     MENU,           ///< Main menu state
@@ -37,7 +38,7 @@ enum Direction {
 /**
  * @brief Enumerates the possible flame directions for an explosion.
  */
-enum FlameDirection{
+enum FlameDirection {
     UPFLAME,        ///< Flame going up
     DOWNFLAME,      ///< Flame going down
     LEFTFLAME,      ///< Flame going left
@@ -61,13 +62,14 @@ struct Position {
     int x;          ///< X-coordinate of the position
     int y;          ///< Y-coordinate of the position
 };
+
 /**
  * @brief Represents a coin in the game.
  */
 struct Coin {
-    struct Position position; /**< The position of the coin. */
-    int currentXpm; /**< The current value of the coin in points. */
-    double timeUntilNextXpm; /**< The time remaining until the coin's value increases. */
+    struct Position position;       /**< The position of the coin. */
+    int currentXpm;                 /**< The current value of the coin in points. */
+    double timeUntilNextXpm;        /**< The time remaining until the coin's value increases. */
 };
 
 /**
@@ -96,7 +98,7 @@ struct Bomb {
 /**
  * @brief Represents a button in the game's menu.
  */
-struct Button{
+struct Button {
     int x;                          ///< X-coordinate of the button
     int y;                          ///< Y-coordinate of the button
     int width;                      ///< Width of the button
@@ -154,47 +156,46 @@ struct PowerUp {
     struct Position position;       ///< Position of the power-up
     enum PowerUpType type;          ///< Type of the power-up
 };
+
 /**
- * @brief Represents a socre in the leaderboard.
+ * @brief Represents a score in the leaderboard.
  */
-struct LeaderBoardScore{
-    char name[10];/**< the name of the player */
-    int score;/**< the score */
+struct LeaderBoardScore {
+    char name[10];                  /**< The name of the player */
+    int score;                      /**< The score */
 };
+
 /**
  * @brief Represents the model of an arena in a game.
  */
 struct ArenaModel {
-    struct Coin coins[450]; /**< Array of coins in the arena. */
-    struct Player players[2]; /**< Array of players in the arena. */
-    struct Bomb bombs[6]; /**< Array of bombs in the arena. */
-    struct Wall walls[450]; /**< Array of walls in the arena. */
-    struct Brick bricks[450]; /**< Array of bricks in the arena. */
-    struct Explosion explosions[450]; /**< Array of explosions in the arena. */
-    struct PowerUp powerUps[10]; /**< Array of power-ups in the arena. */
-    struct Button returnButton; /**< Button used to return to the main menu. */
-    struct LeaderBoardScore scores[3]; /**< Array of leaderboard scores. */
-    double elapsedTime; /**< Elapsed time in the arena. */
-    int nScores; /**< Number of leaderboard scores. */
-    int nWalls; /**< Number of walls in the arena. */
-    int nBricks; /**< Number of bricks in the arena. */
-    int nPowerUps; /**< Number of power-ups in the arena. */
-    int nBombs; /**< Number of bombs in the arena. */
-    int nExplosions; /**< Number of explosions in the arena. */
-    int nCoins; /**< Number of coins in the arena. */
+    struct Coin coins[450];              /**< Array of coins in the arena. */
+    struct Player players[2];            /**< Array of players in the arena. */
+    struct Bomb bombs[6];                /**< Array of bombs in the arena. */
+    struct Wall walls[450];              /**< Array of walls in the arena. */
+    struct Brick bricks[450];            /**< Array of bricks in the arena. */
+    struct Explosion explosions[450];    /**< Array of explosions in the arena. */
+    struct PowerUp powerUps[10];         /**< Array of power-ups in the arena. */
+    struct Button returnButton;          /**< Button used to return to the main menu. */
+    struct LeaderBoardScore scores[3];    /**< Array of leaderboard scores. */
+    double elapsedTime;                  /**< Elapsed time in the arena. */
+    int nScores;                         /**< Number of leaderboard scores. */
+    int nWalls;                          /**< Number of walls in the arena. */
+    int nBricks;                         /**< Number of bricks in the arena. */
+    int nPowerUps;                       /**< Number of power-ups in the arena. */
+    int nBombs;                          /**< Number of bombs in the arena. */
+    int nExplosions;                     /**< Number of explosions in the arena. */
+    int nCoins;                          /**< Number of coins in the arena. */
 };
-
-
-
 
 /**
  * @brief Represents the menu model.
  */
 struct MenuModel {
-    int selectedOption;             ///< Index of the selected menu option
-    int selectedLevel;              ///< Index of the selected game level
-    int nlevels;                    ///< Number of available game levels
-    int noptions;                   ///< Number of available menu options
+    int selectedOption;     ///< Index of the selected menu option
+    int selectedLevel;      ///< Index of the selected game level
+    int nlevels;            ///< Number of available game levels
+    int noptions;           ///< Number of available menu options
 };
 
 #endif // BOMBERMAN_MODELS_H
