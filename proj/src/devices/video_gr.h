@@ -20,7 +20,7 @@
  * @param mode The mode to set for the video RAM
  * @return Return 0 upon success, non-zero otherwise
  */
-int (map_vram)(uint16_t mode);
+int map_vram(uint16_t mode);
 
 /**
  * @brief Draw XPM image
@@ -32,7 +32,7 @@ int (map_vram)(uint16_t mode);
  * @param y The y-coordinate of the image's top-left corner
  * @return Return 0 upon success, non-zero otherwise
  */
-int (drawXpm)(xpm_map_t xpm, int x, int y);
+int drawXpm(xpm_map_t xpm, int x, int y);
 
 /**
  * @brief Draw 8-bit 8-8-8 XPM image
@@ -44,7 +44,7 @@ int (drawXpm)(xpm_map_t xpm, int x, int y);
  * @param y The y-coordinate of the image's top-left corner
  * @return Return 0 upon success, non-zero otherwise
  */
-int (drawXpm8_8_8)(xpm_image_t img, int x, int y);
+int drawXpm8_8_8(xpm_image_t img, int x, int y);
 
 /**
  * @brief Initialize video graphics
@@ -54,7 +54,7 @@ int (drawXpm8_8_8)(xpm_image_t img, int x, int y);
  * @param mode The mode to set for video graphics
  * @return Return 0 upon success, non-zero otherwise
  */
-int (vg_init_new)(uint16_t mode);
+int vg_init_new(uint16_t mode);
 
 /**
  * @brief Get red component from color
@@ -64,7 +64,7 @@ int (vg_init_new)(uint16_t mode);
  * @param color The color value
  * @return The red component value
  */
-int (R)(uint32_t color);
+int R(uint32_t color);
 
 /**
  * @brief Get green component from color
@@ -74,7 +74,7 @@ int (R)(uint32_t color);
  * @param color The color value
  * @return The green component value
  */
-int (G)(uint32_t color);
+int G(uint32_t color);
 
 /**
  * @brief Get blue component from color
@@ -84,7 +84,7 @@ int (G)(uint32_t color);
  * @param color The color value
  * @return The blue component value
  */
-int (B)(uint32_t color);
+int B(uint32_t color);
 
 /**
  * @brief Update video graphics
@@ -93,7 +93,7 @@ int (B)(uint32_t color);
  *
  * @return Return 0 upon success, non-zero otherwise
  */
-int (vg_update)();
+int vg_update();
 
 /**
  * @brief Draw pixel
@@ -105,7 +105,7 @@ int (vg_update)();
  * @param color The color of the pixel
  * @return Return 0 upon success, non-zero otherwise
  */
-int (draw_pixel)(uint16_t x, uint16_t y, uint32_t color);
+int draw_pixel(uint16_t x, uint16_t y, uint32_t color);
 
 /**
  * @brief Draw character using XPM image
@@ -119,4 +119,4 @@ int (draw_pixel)(uint16_t x, uint16_t y, uint32_t color);
  * @param colorChosen The color to be used for the character
  * @return Return 0 upon success, non-zero otherwise
  */
-int (vg_draw_Character)(char c, xpm_image_t img, int x, int y, uint32_t colorChosen);
+int vg_draw_Character(char c, xpm_image_t img, int x, int y, uint32_t colorChosen);

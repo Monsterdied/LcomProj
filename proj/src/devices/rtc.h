@@ -57,7 +57,6 @@ typedef struct {
 /** Structure to store the current time information used in the Game */
 time_display time_info;
 
-
 /**
  * @brief Subscribe to RTC interrupts
  *

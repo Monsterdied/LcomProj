@@ -1,9 +1,10 @@
 /**
+ * @file
+ * @brief Menu functions
+ *
+ * This file contains functions related to the game menu.
+ */
 
-@file
-@brief Menu functions
-This file contains functions related to the game menu.
-*/
 #ifndef MENU_H
 #define MENU_H
 
@@ -16,14 +17,14 @@ This file contains functions related to the game menu.
 #include "devices/rtc.h"
 
 /**
-* @brief Menu function
-*
-* Displays the game menu and handles user input to update the game state.
-*
-* @param state Pointer to the game state
-* @param arena_model The ArenaModel to be updated
-* @return The updated ArenaModel after the menu selection
-*/
+ * @brief Menu function
+ *
+ * Displays the game menu and handles user input to update the game state.
+ *
+ * @param state Pointer to the game state
+ * @param arena_model The ArenaModel to be updated
+ * @return The updated ArenaModel after the menu selection
+ */
+struct ArenaModel(Menu)(enum GameState *state, struct ArenaModel arena_model);
 
-struct ArenaModel (Menu)(enum GameState* state,struct ArenaModel arena_model);
 #endif // MENU_H

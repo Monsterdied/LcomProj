@@ -184,11 +184,7 @@ void (drawBricks)(struct ArenaModel model){
         drawXpm8_8_8(brick,model.bricks[i].position.x * multiplier,model.bricks[i].position.y*multiplier);
     }
 }
-void (drawPowerUps)(char** arena, struct ArenaModel model){
-    for(int i=0;i<model.nPowerUps;i++){
-        arena[model.powerUps[i].position.y][model.powerUps[i].position.x]=  'P';
-    }
-}
+
 void (drawBombs)(struct ArenaModel model){
     for(int i=0;i<model.nBombs;i++){
         if(model.bombs[i].currentXpm==0)
@@ -409,9 +405,6 @@ void (draw_game)(struct ArenaModel model,Mouse mouse,time_display time_info){
     drawBricks(model);
     drawBombs(model);
     drawFlames(model);
-    /*
-    drawPowerUps(arena, model);
-    */
     drawPlayers(model);
     drawXpm8_8_8(mouse_icon,mouse.x,mouse.y);
 }

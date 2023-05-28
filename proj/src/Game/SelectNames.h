@@ -1,9 +1,10 @@
 /**
+ * @file
+ * @brief Select Names functions
+ *
+ * This file contains functions related to selecting player names.
+ */
 
-@file
-@brief Select Names functions
-This file contains functions related to selecting player names.
-*/
 #ifndef SELECTNAMES_H
 #define SELECTNAMES_H
 
@@ -17,14 +18,15 @@ This file contains functions related to selecting player names.
 #include "gameControllers/kbc_controller.h"
 
 /**
-* @brief Select Names function
-*
-* Allows players to select their names and updates the game state and model accordingly.
-*
-* @param state Pointer to the game state
-* @param model Pointer to the ArenaModel containing the game information
-*
-* @return The updated ArenaModel after the name selection
-*/
+ * @brief Select Names function
+ *
+ * Allows players to select their names and updates the game state and model accordingly.
+ *
+ * @param state Pointer to the game state
+ * @param model Pointer to the ArenaModel containing the game information
+ *
+ * @return The updated ArenaModel after the name selection
+ */
 struct ArenaModel (SelectNames)(enum GameState* state, struct ArenaModel* model);
+
 #endif // SELECTNAMES_H

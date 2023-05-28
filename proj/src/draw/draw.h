@@ -175,16 +175,6 @@ void (drawPlayers)(struct ArenaModel model);
 void (drawBombs)(struct ArenaModel model);
 
 /**
- * @brief Draw the power-ups on the screen
- *
- * Draws the power-ups on the screen based on the provided arena and ArenaModel.
- *
- * @param arena The arena as a 2D character array
- * @param model The ArenaModel containing the power-up information
- */
-void (drawPowerUps)(char** arena, struct ArenaModel model);
-
-/**
  * @brief Draw the bricks on the screen
  *
  * Draws the bricks on the screen based on the provided ArenaModel.
