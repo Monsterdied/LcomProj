@@ -1,0 +1,574 @@
+[33mcommit b8a097ff0d1f6eb8a79d9eb63d8837e22ca2f909[m[33m ([m[1;36mHEAD -> [m[1;32menter_name[m[33m, [m[1;31morigin/enter_name[m[33m)[m
+Merge: fcc64d8 66a69ab
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Sun May 28 17:06:11 2023 +0100
+
+    fixed mapp overlapping the moon
+
+[33mcommit fcc64d8309b03aca2bd1ecccdacde9fc4b7f906e[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Sun May 28 16:55:21 2023 +0100
+
+     resfreshed menu
+
+[33mcommit 5facf5fa2cc3c8d189aed3c5f9a37d3a85c19bb6[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Sun May 28 16:42:20 2023 +0100
+
+     resfreshed menu logo
+
+[33mcommit 4e0ea46f40168275562b2c24ec987b53e02da205[m
+Merge: 529b612 a9c655c
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 23:28:51 2023 +0100
+
+     merged
+
+[33mcommit 529b6127a93f205e67bacb0e83d980b3cb4b3954[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 23:15:47 2023 +0100
+
+     added final states
+
+[33mcommit a9c655c1ac311b41d5b6055f5a48ef964a1a60b0[m
+Author: TomasCamara <70268354+TomasCamara@users.noreply.github.com>
+Date:   Sat May 27 23:04:47 2023 +0100
+
+    ranking implementation
+
+[33mcommit 00785f8cb3fb591d82b165b36e5a9dd96585b6b6[m
+Author: TomasCamara <70268354+TomasCamara@users.noreply.github.com>
+Date:   Sat May 27 21:47:34 2023 +0100
+
+    okidoki
+
+[33mcommit 9ea19ece0b49588c66a91937616e7e9cf1b831ae[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 21:30:00 2023 +0100
+
+    post state game fixed
+
+[33mcommit 72e4a4192a56bd97dd68a35873260ea1ad43c334[m
+Merge: 170a4f5 e47cdf3
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 20:07:52 2023 +0100
+
+    Merge branch 'enter_name' of https://git.fe.up.pt/lcom/2223/t04/g2 into enter_name
+
+[33mcommit 170a4f578840cee07075cda9bf63ac4fcc6d1656[m
+Merge: df42eb2 be93964
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 20:07:18 2023 +0100
+
+    logs introduced stating the game status
+
+[33mcommit e47cdf3845501d9450b65f87833d6c90da2420c4[m
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Sat May 27 17:32:00 2023 +0100
+
+    Added background
+
+[33mcommit df42eb25a4478dfd563c805dbe1fbb8cff135b94[m
+Merge: 723f48a 34d0900
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 16:03:25 2023 +0100
+
+    better game interface coins counter and solved bug related to more than 2 players
+
+[33mcommit be939645df250bed69cec532e3e419215b6a3e1d[m
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Sat May 27 15:59:22 2023 +0100
+
+    implemented weather
+
+[33mcommit 39a0b0d868eff652bea6f8ae4f027d597abd3749[m
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Sat May 27 15:56:26 2023 +0100
+
+    added sun and moon
+
+[33mcommit 34d090025db904e46502b547e497d7db5c5f07b6[m
+Merge: 543542d 95b5397
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Sat May 27 14:23:10 2023 +0100
+
+    fixed some bugs that where already fixed
+
+[33mcommit 723f48ad10860c64cb321f829f775bc470b77979[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 14:21:09 2023 +0100
+
+    merging
+
+[33mcommit ac79e497854f5f30b52837f9d4314160af2ec433[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 14:18:54 2023 +0100
+
+    merging
+
+[33mcommit 543542d5932542e7d61745d27b0d39bff14fd82b[m
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Sat May 27 14:12:37 2023 +0100
+
+    working on leader board
+
+[33mcommit 95b5397f478e13e730c53d5fbf2d910713c05ee6[m
+Merge: 8d5cdd3 794a911
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 04:18:33 2023 +0100
+
+    merged ghost button ...........
+
+[33mcommit 8d5cdd35a5aa51faad0a8df8838b2e859bf0129e[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 03:39:29 2023 +0100
+
+     coins added now you can pick them
+
+[33mcommit b92c0c971ed625fe79c8cd29b5144c615849640e[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat May 27 03:14:20 2023 +0100
+
+    coins added
+
+[33mcommit 794a911ab5b7e62f3d64390972b727fbb774cd84[m[33m ([m[1;31morigin/Diogo_Sarmento[m[33m, [m[1;32mDiogo_Sarmento[m[33m)[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Sat May 27 00:48:54 2023 +0100
+
+    deleted makefiles
+
+[33mcommit 6da8ca8e340639bc1522d767060eaf26ce720594[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Sat May 27 00:48:27 2023 +0100
+
+    i think now it works
+
+[33mcommit 57f50b140724f61e85143c72e12c9acf697f5aba[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Sat May 27 00:16:07 2023 +0100
+
+    merged
+
+[33mcommit 7ff6a2b3f6beea58cea3844a87f34a71e8124136[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Sat May 27 00:00:37 2023 +0100
+
+    added add name
+
+[33mcommit 12cfe9125c2e7c190772debb012ed0028c4a8c73[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Fri May 26 23:54:33 2023 +0100
+
+    fixed bomb issues
+
+[33mcommit 90e396b94c08e295fc81af557b77e143c585d2bc[m
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Fri May 26 16:26:23 2023 +0100
+
+    worked on stuf
+
+[33mcommit 49d7bfab394d2ef058195e9cdbb6eb2639c388f0[m
+Author: TomasCamara <70268354+TomasCamara@users.noreply.github.com>
+Date:   Fri May 26 12:41:41 2023 +0100
+
+    first commit
+
+[33mcommit e1a27b66646bddb00251112927810791dac3bd00[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Thu May 25 11:14:51 2023 +0100
+
+    Merged
+
+[33mcommit 1cb598787111229657de02983f8bcd59bc007fd3[m[33m ([m[1;32mMerging[m[33m)[m
+Merge: 24509eb 4cb32a9
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Thu May 25 11:12:37 2023 +0100
+
+    implemented rtc and merged
+
+[33mcommit 24509ebf1824e6611c979db1728f7d2e3bdf83f3[m
+Merge: a48b347 d9807d3
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Thu May 25 10:58:35 2023 +0100
+
+    now can write
+
+[33mcommit a48b3479d8c254679f6119c88f57c8a92365404a[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Thu May 25 10:39:37 2023 +0100
+
+    merged
+
+[33mcommit 9cf75511c8f4ccd41a23769d1b507714e1260795[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Thu May 25 10:17:22 2023 +0100
+
+    fixed timer
+
+[33mcommit a8f92f4ed439e1c632c9d91bb19c826700d98831[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Thu May 25 00:47:57 2023 +0100
+
+    interrupts of timer idk why
+
+[33mcommit 16a0639bcf73363c823ceff47761d5fa0001715e[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Thu May 25 00:37:27 2023 +0100
+
+    interrupts of timer kinda fixed
+
+[33mcommit fa71b95b6096903d876280ff9c53e5e44652abb1[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 24 23:33:13 2023 +0100
+
+    fixed a weird detail on flames
+
+[33mcommit 1889716f4976cbb141d8c2a4de999a597e97bb74[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 24 23:27:34 2023 +0100
+
+    more clean
+
+[33mcommit d9807d30ebd28c6bec8b8f8756d378ceb6155249[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Wed May 24 19:22:35 2023 +0100
+
+    implemented draw Text
+
+[33mcommit 4cb32a91557d89378ef8470d6fe9fe3686028ec2[m[33m ([m[1;31morigin/MergedMore[m[33m)[m
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 24 16:05:58 2023 +0100
+
+    Timer now displays in the main menu
+
+[33mcommit 2baa47b9f06b65cbaa0311e978e12f2e2b06075b[m
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 24 13:52:08 2023 +0100
+
+    Time displays now
+
+[33mcommit f2006cd72fc4646f3a5b36b241083965a9106cc1[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 24 12:21:32 2023 +0100
+
+    added some cool features
+
+[33mcommit c1d8c35b18679320cb6a33505de87d4f8504b2b2[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 24 12:18:52 2023 +0100
+
+    fixed bugs ;)
+
+[33mcommit b64ee929ab85844e398ef430463cb41e775f71f4[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 24 11:29:05 2023 +0100
+
+    added the player can die
+
+[33mcommit 7dc73d9d3193fb05491d0da34b14d067ae354387[m
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 24 11:09:49 2023 +0100
+
+    Merge Rodrigo with diogo
+
+[33mcommit 4c8174a2d945c804963a0bca8d156b62b34990a9[m
+Merge: e267d65 9089624
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 24 10:54:27 2023 +0100
+
+    merge
+
+[33mcommit 908962446e9bf3db7b5b51eb933fb688947eca7f[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 24 10:49:08 2023 +0100
+
+    added explosions
+
+[33mcommit e267d6517f4692a1b3bf5b5392c65bfbb3ec3a2d[m
+Merge: c922497 f4b0658
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 24 10:42:23 2023 +0100
+
+    Merge
+
+[33mcommit f4b065859d16200d743f4470bba0153be3e4e146[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Tue May 23 23:59:14 2023 +0100
+
+    fixed the overflow of walls
+
+[33mcommit b5785e4cfb8d0b88ae40d7917a297d3f8ddbd5dd[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Tue May 23 15:43:25 2023 +0100
+
+    now with two players also bricks
+
+[33mcommit d01eae1c80eadca77c0bd2a379947e618b6cd46c[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 22 14:44:12 2023 +0100
+
+    teacks
+
+[33mcommit 070b1acd03c2671ac89fec4265ba9f4f009761ba[m
+Merge: 156ce38 cbdcd87
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 22 14:41:37 2023 +0100
+
+    merged
+
+[33mcommit cbdcd876e04c3f8db33361f956f4fa12ab981604[m[33m ([m[1;31morigin/Merged[m[33m, [m[1;32mMerged[m[33m)[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 22 14:39:00 2023 +0100
+
+    doesnt speed up with mouse
+
+[33mcommit 156ce3802ceaa01f09e2d38a8a0e13eb9d5ce83b[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 22 14:20:06 2023 +0100
+
+    ok
+
+[33mcommit d4a9bcbb0d85fea9a4d592eae93c7d0e8070bc7e[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 22 10:02:35 2023 +0100
+
+    fixed naming xpms
+
+[33mcommit e0f558a634067889264bd29fd426230d12d78ad2[m
+Merge: 7b15c86 03694c9
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 22 09:53:56 2023 +0100
+
+    added xpms
+
+[33mcommit ea77e090f74fd9c9c9acf45dc1e327774357bf5c[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Mon May 22 01:48:48 2023 +0100
+
+    sprites now works
+
+[33mcommit 7b15c8642f3bd00f2c1ad0706ee419fd6eaa733d[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sun May 21 23:23:02 2023 +0100
+
+    meging
+
+[33mcommit 708065fececf26ca6fa2c9f6179f40f0be53b2bc[m
+Merge: 937b262 a3717ab
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sun May 21 22:17:57 2023 +0100
+
+    Merge branch 'tomas_implement_player_controller' of https://git.fe.up.pt/lcom/2223/t04/g2 into Diogo_Sarmento
+
+[33mcommit 03694c963482a062cc8598322d3e85ef3d2d41f2[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Fri May 19 15:31:48 2023 +0100
+
+    something is done
+
+[33mcommit 8ce30f154e5dfc2be0df85f96cddacc90d3c27f9[m
+Merge: d23b49c 937b262
+Author: tomas <tomasarmento@gmail.com>
+Date:   Fri May 19 14:14:39 2023 +0100
+
+    game now works kinda
+
+[33mcommit d23b49cfc6a3d15db7f8d89aece3e5c7d6fd17f3[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Fri May 19 12:20:42 2023 +0100
+
+    implemented player controller
+
+[33mcommit 937b262ae10a3f90459a37605acfc399980f4b85[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 19:45:24 2023 +0100
+
+    now mouse works
+
+[33mcommit a8874d15e6ef3c833735ec97678314e9973b5cc4[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 18:50:09 2023 +0100
+
+    added menu
+
+[33mcommit 24f5ea4d674ea7a282adf8729594f5ff7f88075c[m
+Author: tomas <tomasarmento@gmail.com>
+Date:   Wed May 17 16:29:32 2023 +0100
+
+    changes
+
+[33mcommit a3717ab4e11d755565d8ac043d405512884f5f13[m[33m ([m[1;31morigin/tomas_implement_player_controller[m[33m)[m
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Wed May 17 16:08:18 2023 +0100
+
+    ok
+
+[33mcommit f8d529a502f816ca2c8439f16fc8ea7db4f72b30[m
+Merge: 2d61dab 53c8a6c
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 11:35:06 2023 +0100
+
+    merging
+
+[33mcommit 2d61dabfc958232916b80f98e56f3c759c7746b3[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 11:33:46 2023 +0100
+
+    merging
+
+[33mcommit 53c8a6ca21ddcff5f47d6179be4bb260358c5450[m
+Author: Tomás Sarmento <tomasarmento@gmail.com>
+Date:   Wed May 17 11:27:45 2023 +0100
+
+    fixed memmory leak problem
+
+[33mcommit c922497b0cacffa974ac29996c3b51af1be7da34[m
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 17 11:16:23 2023 +0100
+
+    save
+
+[33mcommit ddc9975a8d6db87ec11c949f5e6d9b38c5e55d0c[m
+Merge: d2fdaa3 6f27005
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 17 10:55:08 2023 +0100
+
+    Merge branch 'Diogo_Sarmento' of https://git.fe.up.pt/lcom/2223/t04/g2 into Diogo_Sarmento
+
+[33mcommit 6f27005fa5f6afa4f4886592a7243cd90befd2bf[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 10:53:07 2023 +0100
+
+    fixing issues
+
+[33mcommit d2fdaa3885391228512c8b3cf793de4d34d1c8a6[m
+Author: Rodrigo Povoa <up202108890@up.pt>
+Date:   Wed May 17 10:46:45 2023 +0100
+
+    ?
+
+[33mcommit 406c39457c8f99db9c3b5561a1d17a44be82fc37[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 10:30:44 2023 +0100
+
+    something donne at least no errors might fail to load the xpms
+
+[33mcommit 8306f53c3e11d2ae737e14ad83b15d7fdc2613ed[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 10:22:26 2023 +0100
+
+    added flames
+
+[33mcommit 555794c1a2b2f66490d41a7a927640c8f5269887[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed May 17 10:20:54 2023 +0100
+
+    saving stuff
+
+[33mcommit 28b564ce0ba7b49f47ad0b701b8a873e059332f7[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 15 16:34:38 2023 +0100
+
+    works
+
+[33mcommit 3afae847974d10e8e98491840185e22c45825213[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Mon May 15 15:29:50 2023 +0100
+
+    added xpm
+
+[33mcommit 3b94def898e67a75ea4abdc1c4334fb61116dfb5[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed Apr 26 19:12:28 2023 +0100
+
+    checka tomas
+
+[33mcommit 90bd237d875c541a47798d2dcb964efe5a7f1eac[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Wed Apr 26 11:08:02 2023 +0100
+
+    small project
+
+[33mcommit a7b13fedbc245b8da9453a16cf5c4a588e074882[m
+Author: justauser <diogosarmento4@gmail.com>
+Date:   Sat Apr 22 16:39:52 2023 +0100
+
+    first commit ;)
+
+[33mcommit 66a69ab2cf6e892a3727303650b96aba72a58e1b[m
+Author: Diogo Miranda de Figueiredo Sarmento <up202109663@fe.up.pt>
+Date:   Wed Mar 1 20:37:48 2023 +0000
+
+    Update README.md
+
+[33mcommit 5bbd410f3a1e8f10977b70a47e410d0bccb3f16e[m
+Author: Diogo Miranda de Figueiredo Sarmento <up202109663@fe.up.pt>
+Date:   Wed Mar 1 20:37:37 2023 +0000
+
+    Update README.md
+
+[33mcommit 38995ac20d308b2f92fdc6774e8c58b12b0b8a01[m
+Author: Diogo Miranda de Figueiredo Sarmento <up202109663@fe.up.pt>
+Date:   Wed Mar 1 20:37:10 2023 +0000
+
+    Update README.md
+
+[33mcommit 55067d7eeb47f551cc9d1391b7559ff7e5bc12f8[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Tue Feb 28 23:08:00 2023 +0000
+
+    Update README.md
+
+[33mcommit b2ddc54a747218c3f36389fc4a62124f5becffbb[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Tue Feb 28 23:07:41 2023 +0000
+
+    Update README.md
+
+[33mcommit 06f064a08d75a8a0be069a75d3a57ace3ab78b7d[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Wed Feb 22 10:53:09 2023 +0000
+
+    second
+
+[33mcommit 7912b6f7acc579ec733dffb731c3bb67ad6765d8[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Wed Feb 22 08:22:39 2023 +0000
+
+    Upload New File
+
+[33mcommit 0cdf61c1fcda8d869f71f02bdc895e5a91a1a25f[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Wed Feb 22 08:22:28 2023 +0000
+
+    Upload New File
+
+[33mcommit e5fb1990425b5995d263551afd017c5f96a35252[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Wed Feb 22 08:22:16 2023 +0000
+
+    Upload New File
+
+[33mcommit 2a3d034335c6c5832dcc73c5cfebe9476c921082[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Wed Feb 22 08:21:59 2023 +0000
+
+    Upload New File
+
+[33mcommit fb358e5bfce34f9efb8b88c1568c5b2ad41f4cf7[m
+Author: Rodrigo AndrA(c) Carvalho PA3voa <up202108890@fe.up.pt>
+Date:   Wed Feb 22 08:21:36 2023 +0000
+
+    Upload New File
+
+[33mcommit 278f0f03a45126ec9acb986dbab8806fced36565[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Thu Feb 16 14:09:51 2023 +0000
+
+    donne
+
+[33mcommit 4370a4cfaf513eea3661839a792f10cc5a1a91f3[m
+Author: JustaName <diogosarmento4@gmail.com>
+Date:   Wed Feb 15 12:02:37 2023 +0000
+
+    hello minix donne

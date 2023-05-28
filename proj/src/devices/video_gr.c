@@ -181,6 +181,8 @@ int (vg_draw_Character)(char c, xpm_image_t img, int x, int y, uint32_t colorCho
     int width = 32;
     int char_position = 0;
     unsigned char* index = img.bytes;
+    if(c <'!' || c>'^')
+        return 0;
     if (c == ' ') {
         return 0;
     } else {

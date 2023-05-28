@@ -102,6 +102,10 @@ int (get_started_on_menu)() {
 }
 
 struct ArenaModel (Menu)(enum GameState* state, struct ArenaModel arena_model) {
+    struct ArenaModel arenamodel = loadArena(arena);
+    load_xpms(&arenamodel);
+    arenamodel.nScores = arena_model.nScores;
+
     model = get_default_Menu();
 
     if (get_started_on_menu()) {
@@ -177,9 +181,7 @@ struct ArenaModel (Menu)(enum GameState* state, struct ArenaModel arena_model) {
     timer_unsubscribe_int();
     vg_exit();
 
-    struct ArenaModel arenamodel = loadArena(arena);
-    load_xpms(&arenamodel);
-    arenamodel.nScores = arena_model.nScores;
+
 
     for (int loop = 0; loop < arena_model.nScores; loop++) {
         arenamodel.scores[loop] = arena_model.scores[loop];
