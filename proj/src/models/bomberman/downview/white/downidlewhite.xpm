@@ -1,5 +1,5 @@
 /* XPM */
-static char * downidlewhite_xpm[] = {
+static xpm_row_t const upidlewhite_xpm[] = {
 "22 22 6 1",
 " 	c None",
 ".	c #000000",

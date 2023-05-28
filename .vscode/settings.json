@@ -1,18 +1,24 @@
 {
     "files.associations": {
-        "lab3.h": "c",
-        "lcf.h": "c",
-        "vector": "c",
-        "xstring": "c",
-        "xutility": "c",
-        "iterator": "c",
-        "string": "c",
-        "chrono": "c",
-        "xlocale": "c",
-        "__locale": "c",
-        "algorithm": "c",
+        "*.xpm": "c",
+        "malloc.h": "c",
+        "keyboard.h": "c",
+        "i8042.h": "c",
+        "game.h": "c",
+        "menu.h": "c",
+        "video_gr.h": "c",
+        "controller.h": "c",
+        "models.h": "c",
+        "mouse.h": "c",
+        "iosfwd": "c",
+        "xlocbuf": "c",
+        "system_error": "c",
+        "rtc.h": "c",
+        "stdint.h": "c",
+        "charconv": "c",
         "format": "c",
-        "xiosbase": "c",
-        "ios": "c"
+        "xutility": "c",
+        "draw.h": "c",
+        "message.h": "c"
     }
 }

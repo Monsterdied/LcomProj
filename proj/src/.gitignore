@@ -1,0 +1,12 @@
+Controller.o
+draw.o
+Game.o
+keyboard.o
+load.o
+Menu.o
+Mouse.o
+proj
+rtc.o
+timer.o
+video_gr.o
+
