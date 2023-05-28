@@ -1,0 +1,7 @@
+<map id="update_time_display" name="update_time_display">
+<area shape="rect" id="node1" title="Update time display structure." alt="" coords="5,56,146,83"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a82b0d3fa95ac6b4b61dc2d73b629ead1" title="Convert value to binary representation." alt="" coords="196,5,301,32"/>
+<area shape="rect" id="node3" href="$rtc_8c.html#a347151e9a7dee834be346f08915e9c1d" title="Check if RTC is updating." alt="" coords="194,56,303,83"/>
+<area shape="rect" id="node4" href="$rtc_8c.html#a24757f1fff16bd76fa6d5eb926455831" title="Read data from RTC register." alt="" coords="351,81,430,108"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="478,81,569,108"/>
+</map>

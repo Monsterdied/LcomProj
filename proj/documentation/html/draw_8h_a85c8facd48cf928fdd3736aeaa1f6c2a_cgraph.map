@@ -1,0 +1,7 @@
+<map id="draw_select_names" name="draw_select_names">
+<area shape="rect" id="node1" title="Draw the select names." alt="" coords="5,31,142,57"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="190,5,277,32"/>
+<area shape="rect" id="node5" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="336,56,444,83"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="325,5,455,32"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="503,31,586,57"/>
+</map>

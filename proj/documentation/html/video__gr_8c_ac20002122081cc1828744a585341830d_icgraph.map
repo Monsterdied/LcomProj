@@ -1,0 +1,13 @@
+<map id="vg_draw_Character" name="vg_draw_Character">
+<area shape="rect" id="node1" title="Draw character using XPM image." alt="" coords="812,107,942,133"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="677,107,764,133"/>
+<area shape="rect" id="node3" href="$draw_8c.html#acfa174ac4a88e944facf39da6888c0db" title="Draws the game over report on the screen." alt="" coords="284,56,444,83"/>
+<area shape="rect" id="node6" href="$draw_8c.html#a220b56a6f8aa7c6b61f11367fec6f62b" title=" " alt="" coords="496,107,625,133"/>
+<area shape="rect" id="node8" href="$draw_8c.html#a4bd80903d8139b9daedef6a7770a4998" title="Draws the game over display." alt="" coords="506,157,615,184"/>
+<area shape="rect" id="node10" href="$draw_8c.html#a68ac815675704205525d468115556f79" title="Draws the players&#39; information on the screen." alt="" coords="302,5,426,32"/>
+<area shape="rect" id="node11" href="$draw_8c.html#a58767c2f71faacd6e862d266ca18d227" title="Draw the select names." alt="" coords="492,208,629,235"/>
+<area shape="rect" id="node4" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="171,81,227,108"/>
+<area shape="rect" id="node5" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,107,114,133"/>
+<area shape="rect" id="node7" href="$draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="321,107,408,133"/>
+<area shape="rect" id="node9" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,132,236,159"/>
+</map>

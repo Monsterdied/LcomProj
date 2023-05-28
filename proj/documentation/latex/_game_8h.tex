@@ -1,8 +1,8 @@
-\hypertarget{_game_8h}{}\doxysection{Game/\+Game.h File Reference}
-\label{_game_8h}\index{Game/Game.h@{Game/Game.h}}
+\hypertarget{_game_8h}{}\doxysection{proj/src/\+Game/\+Game.h File Reference}
+\label{_game_8h}\index{proj/src/Game/Game.h@{proj/src/Game/Game.h}}
 
 
-Game functions This file contains the main game function.  
+Game functions.  
 
 
 {\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
@@ -12,30 +12,45 @@ Game functions This file contains the main game function.
 {\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}game\+Controllers/\+Controller.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
+Include dependency graph for Game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{_game_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_game_8h_a7eb6b060f0a3f2d8e53f18396b0b929b}{Game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\mbox{\hyperlink{structtime__display}{time\+\_\+display}}() \mbox{\hyperlink{_game_8h_a03ce96f2a43aa2d157713f2d5f24dee5}{Game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em Game function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Game functions This file contains the main game function. 
+Game functions. 
 
-
+This file contains the main game function. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_game_8h_a7eb6b060f0a3f2d8e53f18396b0b929b}\label{_game_8h_a7eb6b060f0a3f2d8e53f18396b0b929b}} 
+\mbox{\Hypertarget{_game_8h_a03ce96f2a43aa2d157713f2d5f24dee5}\label{_game_8h_a03ce96f2a43aa2d157713f2d5f24dee5}} 
 \index{Game.h@{Game.h}!Game@{Game}}
 \index{Game@{Game}!Game.h@{Game.h}}
 \doxysubsubsection{\texorpdfstring{Game()}{Game()}}
-{\footnotesize\ttfamily void Game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtime__display}{time\+\_\+display}}() Game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
 
 
 
 Game function. 
 
-The main game function that handles the game logic and updates the game state.
+The main game function that handles the game logic and updates the game state returns the time it ends.
 
 
 \begin{DoxyParams}{Parameters}
@@ -44,3 +59,22 @@ The main game function that handles the game logic and updates the game state.
 {\em state} & Pointer to the game state \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time the game ends 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_8h_a03ce96f2a43aa2d157713f2d5f24dee5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{_game_8h_a03ce96f2a43aa2d157713f2d5f24dee5_icgraph}
+\end{center}
+\end{figure}

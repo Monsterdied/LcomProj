@@ -1,0 +1,6 @@
+<map id="proj/src/devices/mouse.c" name="proj/src/devices/mouse.c">
+<area shape="rect" id="node1" title=" " alt="" coords="32,5,197,32"/>
+<area shape="rect" id="node2" href="$mouse_8h.html" title="Mouse functions." alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="76,155,153,181"/>
+<area shape="rect" id="node4" href="$i8042_8h.html" title="Constants and definitions for programming the i8042 keyboard controller and mouse." alt="" coords="152,80,215,107"/>
+</map>

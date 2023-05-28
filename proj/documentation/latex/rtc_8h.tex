@@ -1,5 +1,5 @@
-\hypertarget{rtc_8h}{}\doxysection{devices/rtc.h File Reference}
-\label{rtc_8h}\index{devices/rtc.h@{devices/rtc.h}}
+\hypertarget{rtc_8h}{}\doxysection{proj/src/devices/rtc.h File Reference}
+\label{rtc_8h}\index{proj/src/devices/rtc.h@{proj/src/devices/rtc.h}}
 
 
 Real-\/\+Time Clock (RTC) functions.  
@@ -7,7 +7,22 @@ Real-\/\+Time Clock (RTC) functions.
 
 {\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
-\doxysubsection*{Data Structures}
+Include dependency graph for rtc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structtime__display}{time\+\_\+display}}
@@ -15,63 +30,45 @@ struct \mbox{\hyperlink{structtime__display}{time\+\_\+display}}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}\label{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}} 
-\#define {\bfseries IRQ\+\_\+\+RTC}~8
+\#define \mbox{\hyperlink{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}{IRQ\+\_\+\+RTC}}~8
 \item 
 \#define \mbox{\hyperlink{rtc_8h_ac7ccdd8e98d8f7fdad8dfe99c467d5d8}{REGISTER\+\_\+\+INPUT}}~0x70
 \item 
 \#define \mbox{\hyperlink{rtc_8h_a5e3f3a35c56673c2a54d9f4eadb759a9}{REGISTER\+\_\+\+OUTPUT}}~0x71
 \item 
-\mbox{\Hypertarget{rtc_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}\label{rtc_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}} 
-\#define {\bfseries SECONDS}~0
+\#define \mbox{\hyperlink{rtc_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}{SECONDS}}~0
 \item 
-\mbox{\Hypertarget{rtc_8h_a59d336dbc295731898ece988d0ebbb8e}\label{rtc_8h_a59d336dbc295731898ece988d0ebbb8e}} 
-\#define {\bfseries SECONDS\+\_\+\+ALARM}~1
+\#define \mbox{\hyperlink{rtc_8h_a59d336dbc295731898ece988d0ebbb8e}{SECONDS\+\_\+\+ALARM}}~1
 \item 
-\mbox{\Hypertarget{rtc_8h_a84be9dcfa5a172ee83121620d15c8e29}\label{rtc_8h_a84be9dcfa5a172ee83121620d15c8e29}} 
-\#define {\bfseries MINUTES}~2
+\#define \mbox{\hyperlink{rtc_8h_a84be9dcfa5a172ee83121620d15c8e29}{MINUTES}}~2
 \item 
-\mbox{\Hypertarget{rtc_8h_adc030279159b8e16a47d21e393547689}\label{rtc_8h_adc030279159b8e16a47d21e393547689}} 
-\#define {\bfseries MINUTES\+\_\+\+ALARM}~3
+\#define \mbox{\hyperlink{rtc_8h_adc030279159b8e16a47d21e393547689}{MINUTES\+\_\+\+ALARM}}~3
 \item 
-\mbox{\Hypertarget{rtc_8h_a212d0f839f6f7ca43ccde311f93d5892}\label{rtc_8h_a212d0f839f6f7ca43ccde311f93d5892}} 
-\#define {\bfseries HOURS}~4
+\#define \mbox{\hyperlink{rtc_8h_a212d0f839f6f7ca43ccde311f93d5892}{HOURS}}~4
 \item 
-\mbox{\Hypertarget{rtc_8h_adc7e10d9ad06a95f30c5272967989e04}\label{rtc_8h_adc7e10d9ad06a95f30c5272967989e04}} 
-\#define {\bfseries HOURS\+\_\+\+ALARM}~5
+\#define \mbox{\hyperlink{rtc_8h_adc7e10d9ad06a95f30c5272967989e04}{HOURS\+\_\+\+ALARM}}~5
 \item 
-\mbox{\Hypertarget{rtc_8h_adc9f6e77f710440b588e7cc49d0ddf48}\label{rtc_8h_adc9f6e77f710440b588e7cc49d0ddf48}} 
-\#define {\bfseries DAY\+\_\+\+OF\+\_\+\+WEEK}~6
+\#define \mbox{\hyperlink{rtc_8h_adc9f6e77f710440b588e7cc49d0ddf48}{DAY\+\_\+\+OF\+\_\+\+WEEK}}~6
 \item 
-\mbox{\Hypertarget{rtc_8h_a509a01c55cbe47386fe24602b7c7fda1}\label{rtc_8h_a509a01c55cbe47386fe24602b7c7fda1}} 
-\#define {\bfseries DAY}~7
+\#define \mbox{\hyperlink{rtc_8h_a509a01c55cbe47386fe24602b7c7fda1}{DAY}}~7
 \item 
-\mbox{\Hypertarget{rtc_8h_a3729d06495d9713592f79f3122c9e677}\label{rtc_8h_a3729d06495d9713592f79f3122c9e677}} 
-\#define {\bfseries MONTH}~8
+\#define \mbox{\hyperlink{rtc_8h_a3729d06495d9713592f79f3122c9e677}{MONTH}}~8
 \item 
-\mbox{\Hypertarget{rtc_8h_a5871356500f559add06ea81d60331b1b}\label{rtc_8h_a5871356500f559add06ea81d60331b1b}} 
-\#define {\bfseries YEAR}~9
+\#define \mbox{\hyperlink{rtc_8h_a5871356500f559add06ea81d60331b1b}{YEAR}}~9
 \item 
-\mbox{\Hypertarget{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}\label{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}} 
-\#define {\bfseries REGISTER\+\_\+A}~10
+\#define \mbox{\hyperlink{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}{REGISTER\+\_\+A}}~10
 \item 
-\mbox{\Hypertarget{rtc_8h_ae07bc1582ec2a0d53dd74350b5a19c5e}\label{rtc_8h_ae07bc1582ec2a0d53dd74350b5a19c5e}} 
-\#define {\bfseries UPDATING}~BIT(7)
+\#define \mbox{\hyperlink{rtc_8h_ae07bc1582ec2a0d53dd74350b5a19c5e}{UPDATING}}~BIT(7)
 \item 
-\mbox{\Hypertarget{rtc_8h_a9935cde70013bbc215f658cfc078b988}\label{rtc_8h_a9935cde70013bbc215f658cfc078b988}} 
-\#define {\bfseries REGISTER\+\_\+B}~11
+\#define \mbox{\hyperlink{rtc_8h_a9935cde70013bbc215f658cfc078b988}{REGISTER\+\_\+B}}~11
 \item 
-\mbox{\Hypertarget{rtc_8h_acc166508d5cfbf4100f8622ce97f4985}\label{rtc_8h_acc166508d5cfbf4100f8622ce97f4985}} 
-\#define {\bfseries BINARY}~BIT(2)
+\#define \mbox{\hyperlink{rtc_8h_acc166508d5cfbf4100f8622ce97f4985}{BINARY}}~BIT(2)
 \item 
-\mbox{\Hypertarget{rtc_8h_ab18c91242d19946dd55600bde76de3ee}\label{rtc_8h_ab18c91242d19946dd55600bde76de3ee}} 
-\#define {\bfseries FORMAT\+\_\+\+TIME}~BIT(1)
+\#define \mbox{\hyperlink{rtc_8h_ab18c91242d19946dd55600bde76de3ee}{FORMAT\+\_\+\+TIME}}~BIT(1)
 \item 
-\mbox{\Hypertarget{rtc_8h_a0b257ecb5a063988dce0560e2b30d7af}\label{rtc_8h_a0b257ecb5a063988dce0560e2b30d7af}} 
-\#define {\bfseries REGISTER\+\_\+C}~12
+\#define \mbox{\hyperlink{rtc_8h_a0b257ecb5a063988dce0560e2b30d7af}{REGISTER\+\_\+C}}~12
 \item 
-\mbox{\Hypertarget{rtc_8h_a66e6e2bb7cf51adaec2b7a7eaab35fd2}\label{rtc_8h_a66e6e2bb7cf51adaec2b7a7eaab35fd2}} 
-\#define {\bfseries REGISTER\+\_\+D}~13
+\#define \mbox{\hyperlink{rtc_8h_a66e6e2bb7cf51adaec2b7a7eaab35fd2}{REGISTER\+\_\+D}}~13
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -107,6 +104,90 @@ Real-\/\+Time Clock (RTC) functions.
 This file contains functions related to the Real-\/\+Time Clock (RTC). 
 
 \doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{rtc_8h_acc166508d5cfbf4100f8622ce97f4985}\label{rtc_8h_acc166508d5cfbf4100f8622ce97f4985}} 
+\index{rtc.h@{rtc.h}!BINARY@{BINARY}}
+\index{BINARY@{BINARY}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{BINARY}{BINARY}}
+{\footnotesize\ttfamily \#define BINARY~BIT(2)}
+
+\mbox{\Hypertarget{rtc_8h_a509a01c55cbe47386fe24602b7c7fda1}\label{rtc_8h_a509a01c55cbe47386fe24602b7c7fda1}} 
+\index{rtc.h@{rtc.h}!DAY@{DAY}}
+\index{DAY@{DAY}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{DAY}{DAY}}
+{\footnotesize\ttfamily \#define DAY~7}
+
+\mbox{\Hypertarget{rtc_8h_adc9f6e77f710440b588e7cc49d0ddf48}\label{rtc_8h_adc9f6e77f710440b588e7cc49d0ddf48}} 
+\index{rtc.h@{rtc.h}!DAY\_OF\_WEEK@{DAY\_OF\_WEEK}}
+\index{DAY\_OF\_WEEK@{DAY\_OF\_WEEK}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{DAY\_OF\_WEEK}{DAY\_OF\_WEEK}}
+{\footnotesize\ttfamily \#define DAY\+\_\+\+OF\+\_\+\+WEEK~6}
+
+\mbox{\Hypertarget{rtc_8h_ab18c91242d19946dd55600bde76de3ee}\label{rtc_8h_ab18c91242d19946dd55600bde76de3ee}} 
+\index{rtc.h@{rtc.h}!FORMAT\_TIME@{FORMAT\_TIME}}
+\index{FORMAT\_TIME@{FORMAT\_TIME}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{FORMAT\_TIME}{FORMAT\_TIME}}
+{\footnotesize\ttfamily \#define FORMAT\+\_\+\+TIME~BIT(1)}
+
+\mbox{\Hypertarget{rtc_8h_a212d0f839f6f7ca43ccde311f93d5892}\label{rtc_8h_a212d0f839f6f7ca43ccde311f93d5892}} 
+\index{rtc.h@{rtc.h}!HOURS@{HOURS}}
+\index{HOURS@{HOURS}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{HOURS}{HOURS}}
+{\footnotesize\ttfamily \#define HOURS~4}
+
+\mbox{\Hypertarget{rtc_8h_adc7e10d9ad06a95f30c5272967989e04}\label{rtc_8h_adc7e10d9ad06a95f30c5272967989e04}} 
+\index{rtc.h@{rtc.h}!HOURS\_ALARM@{HOURS\_ALARM}}
+\index{HOURS\_ALARM@{HOURS\_ALARM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{HOURS\_ALARM}{HOURS\_ALARM}}
+{\footnotesize\ttfamily \#define HOURS\+\_\+\+ALARM~5}
+
+\mbox{\Hypertarget{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}\label{rtc_8h_a910ac5f2c1b4016e433f9832358a1816}} 
+\index{rtc.h@{rtc.h}!IRQ\_RTC@{IRQ\_RTC}}
+\index{IRQ\_RTC@{IRQ\_RTC}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{IRQ\_RTC}{IRQ\_RTC}}
+{\footnotesize\ttfamily \#define IRQ\+\_\+\+RTC~8}
+
+\mbox{\Hypertarget{rtc_8h_a84be9dcfa5a172ee83121620d15c8e29}\label{rtc_8h_a84be9dcfa5a172ee83121620d15c8e29}} 
+\index{rtc.h@{rtc.h}!MINUTES@{MINUTES}}
+\index{MINUTES@{MINUTES}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{MINUTES}{MINUTES}}
+{\footnotesize\ttfamily \#define MINUTES~2}
+
+\mbox{\Hypertarget{rtc_8h_adc030279159b8e16a47d21e393547689}\label{rtc_8h_adc030279159b8e16a47d21e393547689}} 
+\index{rtc.h@{rtc.h}!MINUTES\_ALARM@{MINUTES\_ALARM}}
+\index{MINUTES\_ALARM@{MINUTES\_ALARM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{MINUTES\_ALARM}{MINUTES\_ALARM}}
+{\footnotesize\ttfamily \#define MINUTES\+\_\+\+ALARM~3}
+
+\mbox{\Hypertarget{rtc_8h_a3729d06495d9713592f79f3122c9e677}\label{rtc_8h_a3729d06495d9713592f79f3122c9e677}} 
+\index{rtc.h@{rtc.h}!MONTH@{MONTH}}
+\index{MONTH@{MONTH}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{MONTH}{MONTH}}
+{\footnotesize\ttfamily \#define MONTH~8}
+
+\mbox{\Hypertarget{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}\label{rtc_8h_a5bca0b9b7966f6562b2e0d31f0406604}} 
+\index{rtc.h@{rtc.h}!REGISTER\_A@{REGISTER\_A}}
+\index{REGISTER\_A@{REGISTER\_A}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_A}{REGISTER\_A}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+A~10}
+
+\mbox{\Hypertarget{rtc_8h_a9935cde70013bbc215f658cfc078b988}\label{rtc_8h_a9935cde70013bbc215f658cfc078b988}} 
+\index{rtc.h@{rtc.h}!REGISTER\_B@{REGISTER\_B}}
+\index{REGISTER\_B@{REGISTER\_B}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_B}{REGISTER\_B}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+B~11}
+
+\mbox{\Hypertarget{rtc_8h_a0b257ecb5a063988dce0560e2b30d7af}\label{rtc_8h_a0b257ecb5a063988dce0560e2b30d7af}} 
+\index{rtc.h@{rtc.h}!REGISTER\_C@{REGISTER\_C}}
+\index{REGISTER\_C@{REGISTER\_C}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_C}{REGISTER\_C}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+C~12}
+
+\mbox{\Hypertarget{rtc_8h_a66e6e2bb7cf51adaec2b7a7eaab35fd2}\label{rtc_8h_a66e6e2bb7cf51adaec2b7a7eaab35fd2}} 
+\index{rtc.h@{rtc.h}!REGISTER\_D@{REGISTER\_D}}
+\index{REGISTER\_D@{REGISTER\_D}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_D}{REGISTER\_D}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+D~13}
+
 \mbox{\Hypertarget{rtc_8h_ac7ccdd8e98d8f7fdad8dfe99c467d5d8}\label{rtc_8h_ac7ccdd8e98d8f7fdad8dfe99c467d5d8}} 
 \index{rtc.h@{rtc.h}!REGISTER\_INPUT@{REGISTER\_INPUT}}
 \index{REGISTER\_INPUT@{REGISTER\_INPUT}!rtc.h@{rtc.h}}
@@ -119,7 +200,31 @@ Address of the RTC register to be accessed \mbox{\Hypertarget{rtc_8h_a5e3f3a35c5
 \doxysubsubsection{\texorpdfstring{REGISTER\_OUTPUT}{REGISTER\_OUTPUT}}
 {\footnotesize\ttfamily \#define REGISTER\+\_\+\+OUTPUT~0x71}
 
-Transfer data to/from the RTC\textquotesingle{}s register accessed 
+Transfer data to/from the RTC\textquotesingle{}s register accessed \mbox{\Hypertarget{rtc_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}\label{rtc_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}} 
+\index{rtc.h@{rtc.h}!SECONDS@{SECONDS}}
+\index{SECONDS@{SECONDS}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{SECONDS}{SECONDS}}
+{\footnotesize\ttfamily \#define SECONDS~0}
+
+\mbox{\Hypertarget{rtc_8h_a59d336dbc295731898ece988d0ebbb8e}\label{rtc_8h_a59d336dbc295731898ece988d0ebbb8e}} 
+\index{rtc.h@{rtc.h}!SECONDS\_ALARM@{SECONDS\_ALARM}}
+\index{SECONDS\_ALARM@{SECONDS\_ALARM}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{SECONDS\_ALARM}{SECONDS\_ALARM}}
+{\footnotesize\ttfamily \#define SECONDS\+\_\+\+ALARM~1}
+
+\mbox{\Hypertarget{rtc_8h_ae07bc1582ec2a0d53dd74350b5a19c5e}\label{rtc_8h_ae07bc1582ec2a0d53dd74350b5a19c5e}} 
+\index{rtc.h@{rtc.h}!UPDATING@{UPDATING}}
+\index{UPDATING@{UPDATING}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{UPDATING}{UPDATING}}
+{\footnotesize\ttfamily \#define UPDATING~BIT(7)}
+
+\mbox{\Hypertarget{rtc_8h_a5871356500f559add06ea81d60331b1b}\label{rtc_8h_a5871356500f559add06ea81d60331b1b}} 
+\index{rtc.h@{rtc.h}!YEAR@{YEAR}}
+\index{YEAR@{YEAR}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{YEAR}{YEAR}}
+{\footnotesize\ttfamily \#define YEAR~9}
+
+
 
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{rtc_8h_af9ea4fcdf909aec90a979a93d38d2e24}\label{rtc_8h_af9ea4fcdf909aec90a979a93d38d2e24}} 
@@ -139,6 +244,14 @@ Converts the given value to its binary representation.
 {\em value} & Pointer to the value to be converted \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_af9ea4fcdf909aec90a979a93d38d2e24_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{rtc_8h_a6151197f2fe64aa0744f43ff7fafabd0}\label{rtc_8h_a6151197f2fe64aa0744f43ff7fafabd0}} 
 \index{rtc.h@{rtc.h}!getHours@{getHours}}
 \index{getHours@{getHours}!rtc.h@{rtc.h}}
@@ -159,6 +272,14 @@ Retrieves the hours value from the time display structure.
 \begin{DoxyReturn}{Returns}
 The hours value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a6151197f2fe64aa0744f43ff7fafabd0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{rtc_8h_abfce9f52f9a4091c45e1b2692498e168}\label{rtc_8h_abfce9f52f9a4091c45e1b2692498e168}} 
 \index{rtc.h@{rtc.h}!getMinutes@{getMinutes}}
 \index{getMinutes@{getMinutes}!rtc.h@{rtc.h}}
@@ -179,6 +300,14 @@ Retrieves the minutes value from the time display structure.
 \begin{DoxyReturn}{Returns}
 The minutes value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_abfce9f52f9a4091c45e1b2692498e168_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{rtc_8h_ab9df0fbb3ac360a60cf6e23328680266}\label{rtc_8h_ab9df0fbb3ac360a60cf6e23328680266}} 
 \index{rtc.h@{rtc.h}!getSeconds@{getSeconds}}
 \index{getSeconds@{getSeconds}!rtc.h@{rtc.h}}
@@ -199,6 +328,14 @@ Retrieves the seconds value from the time display structure.
 \begin{DoxyReturn}{Returns}
 The seconds value 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ab9df0fbb3ac360a60cf6e23328680266_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{rtc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b}\label{rtc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b}} 
 \index{rtc.h@{rtc.h}!is\_updating\_rtc@{is\_updating\_rtc}}
 \index{is\_updating\_rtc@{is\_updating\_rtc}!rtc.h@{rtc.h}}
@@ -214,6 +351,22 @@ Checks if the RTC is currently updating.
 \begin{DoxyReturn}{Returns}
 Return 0 if RTC is not updating, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{rtc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9}\label{rtc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9}} 
 \index{rtc.h@{rtc.h}!rtc\_output@{rtc\_output}}
 \index{rtc\_output@{rtc\_output}!rtc.h@{rtc.h}}
@@ -236,6 +389,22 @@ Reads data from the RTC\textquotesingle{}s register using the specified command.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{rtc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{rtc_8h_ae9e35eefd0f2a04a0960e01efb47e70d}\label{rtc_8h_ae9e35eefd0f2a04a0960e01efb47e70d}} 
 \index{rtc.h@{rtc.h}!rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}}
 \index{rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}!rtc.h@{rtc.h}}
@@ -291,6 +460,22 @@ Updates the time display structure with the current time values from the RTC.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ae39ca4b507aac4082ab64189c7375e02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_ae39ca4b507aac4082ab64189c7375e02_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Variable Documentation}

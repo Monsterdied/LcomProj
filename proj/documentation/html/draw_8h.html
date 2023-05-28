@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: draw/draw.h File Reference</title>
+<title>Bomberman: proj/src/draw/draw.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('draw_8h.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,6 +69,11 @@ $(document).ready(function(){initNavTree('draw_8h.html',''); initResizable(); })
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c166a637ad9f8f09f1307a666349b968.html">proj</a></li><li class="navelem"><a class="el" href="dir_f3942b4d25ca219b12d62aa4c150da0d.html">src</a></li><li class="navelem"><a class="el" href="dir_46d376bdebada22ddf1f1c31e4c60b94.html">draw</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -164,45 +148,79 @@ $(document).ready(function(){initNavTree('draw_8h.html',''); initResizable(); })
 <code>#include &quot;models/numbers/9.xpm&quot;</code><br />
 <code>#include &quot;models/numbers/double_points.xpm&quot;</code><br />
 <code>#include &quot;models/font/font.xpm&quot;</code><br />
+<code>#include &quot;models/coin/coin1.xpm&quot;</code><br />
+<code>#include &quot;models/coin/coin2.xpm&quot;</code><br />
+<code>#include &quot;models/coin/coin3.xpm&quot;</code><br />
+<code>#include &quot;models/coin/coin4.xpm&quot;</code><br />
+<code>#include &quot;models/coin/coin5.xpm&quot;</code><br />
+<code>#include &quot;models/weather/sun.xpm&quot;</code><br />
+<code>#include &quot;models/weather/moon.xpm&quot;</code><br />
+<code>#include &quot;models/background/grass.xpm&quot;</code><br />
+<code>#include &quot;models/background/grassnight.xpm&quot;</code><br />
+<code>#include &quot;models/background/message_background.xpm&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h__dep__incl.png" border="0" usemap="#aproj_2src_2draw_2draw_8hdep" alt=""/></div>
+<map name="aproj_2src_2draw_2draw_8hdep" id="aproj_2src_2draw_2draw_8hdep">
+<area shape="rect" title="Drawing functions." alt="" coords="500,5,637,32"/>
+<area shape="rect" href="_game_8h.html" title="Game functions." alt="" coords="15,80,168,107"/>
+<area shape="rect" href="_menu_8h.html" title="Menu functions." alt="" coords="192,80,343,107"/>
+<area shape="rect" href="_select_names_8h.html" title="Select Names functions." alt="" coords="367,80,563,107"/>
+<area shape="rect" href="message_8c.html" title=" " alt="" coords="710,155,881,181"/>
+<area shape="rect" href="message_8h.html" title=" " alt="" coords="587,80,758,107"/>
+<area shape="rect" href="draw_8c.html" title=" " alt="" coords="833,80,971,107"/>
+<area shape="rect" href="_game_8c.html" title=" " alt="" coords="5,155,159,181"/>
+<area shape="rect" href="main_8c.html" title=" " alt="" coords="358,155,465,181"/>
+<area shape="rect" href="_menu_8c.html" title=" " alt="" coords="183,155,333,181"/>
+<area shape="rect" href="_select_names_8c.html" title=" " alt="" coords="489,155,686,181"/>
+</map>
+</div>
 </div>
 <p><a href="draw_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5879bf4f041654dfe02e6912770b74e1"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">load_xpms</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *model)</td></tr>
+<tr class="memitem:a5879bf4f041654dfe02e6912770b74e1"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">load_xpms</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *<a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
 <tr class="memdesc:a5879bf4f041654dfe02e6912770b74e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load XPM images.  <a href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">More...</a><br /></td></tr>
 <tr class="separator:a5879bf4f041654dfe02e6912770b74e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81d3c5fc23030efc09b40adf6c36ea89"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a81d3c5fc23030efc09b40adf6c36ea89">draw_game</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model, <a class="el" href="struct_mouse.html">Mouse</a> mouse)</td></tr>
-<tr class="memdesc:a81d3c5fc23030efc09b40adf6c36ea89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the game.  <a href="draw_8h.html#a81d3c5fc23030efc09b40adf6c36ea89">More...</a><br /></td></tr>
-<tr class="separator:a81d3c5fc23030efc09b40adf6c36ea89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1fc85395bc4b7fb4eacefe84609837"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#aeb1fc85395bc4b7fb4eacefe84609837">draw_game</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, <a class="el" href="struct_mouse.html">Mouse</a> <a class="el" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>, <a class="el" href="structtime__display.html">time_display</a> <a class="el" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>)</td></tr>
+<tr class="memdesc:aeb1fc85395bc4b7fb4eacefe84609837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the game.  <a href="draw_8h.html#aeb1fc85395bc4b7fb4eacefe84609837">More...</a><br /></td></tr>
+<tr class="separator:aeb1fc85395bc4b7fb4eacefe84609837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae23186dd72a3da5be056911ec2446752"><td class="memItemLeft" align="right" valign="top">char **()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">getemptyArena</a> ()</td></tr>
 <tr class="memdesc:ae23186dd72a3da5be056911ec2446752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an empty arena.  <a href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">More...</a><br /></td></tr>
 <tr class="separator:ae23186dd72a3da5be056911ec2446752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03d92d2b4bd54a502562b869ad1b6b52"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">drawPlayers</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model)</td></tr>
+<tr class="memitem:a03d92d2b4bd54a502562b869ad1b6b52"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">drawPlayers</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
 <tr class="memdesc:a03d92d2b4bd54a502562b869ad1b6b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the players on the screen.  <a href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">More...</a><br /></td></tr>
 <tr class="separator:a03d92d2b4bd54a502562b869ad1b6b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8393013ab037235f46c85781f702b66"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#aa8393013ab037235f46c85781f702b66">drawBombs</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model)</td></tr>
+<tr class="memitem:aa8393013ab037235f46c85781f702b66"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#aa8393013ab037235f46c85781f702b66">drawBombs</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
 <tr class="memdesc:aa8393013ab037235f46c85781f702b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the bombs on the screen.  <a href="draw_8h.html#aa8393013ab037235f46c85781f702b66">More...</a><br /></td></tr>
 <tr class="separator:aa8393013ab037235f46c85781f702b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58fdfa08fcdcb18641e8ea9327d6884b"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a58fdfa08fcdcb18641e8ea9327d6884b">drawPowerUps</a> (char **arena, struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model)</td></tr>
-<tr class="memdesc:a58fdfa08fcdcb18641e8ea9327d6884b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the power-ups on the screen.  <a href="draw_8h.html#a58fdfa08fcdcb18641e8ea9327d6884b">More...</a><br /></td></tr>
-<tr class="separator:a58fdfa08fcdcb18641e8ea9327d6884b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5865b4ef99decdaa500966aed13e78"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">drawBricks</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model)</td></tr>
+<tr class="memitem:a5a5865b4ef99decdaa500966aed13e78"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">drawBricks</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
 <tr class="memdesc:a5a5865b4ef99decdaa500966aed13e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the bricks on the screen.  <a href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">More...</a><br /></td></tr>
 <tr class="separator:a5a5865b4ef99decdaa500966aed13e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5411dccade6329de024fa2782476d69"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#aa5411dccade6329de024fa2782476d69">drawWalls</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model)</td></tr>
+<tr class="memitem:aa5411dccade6329de024fa2782476d69"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#aa5411dccade6329de024fa2782476d69">drawWalls</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
 <tr class="memdesc:aa5411dccade6329de024fa2782476d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the walls on the screen.  <a href="draw_8h.html#aa5411dccade6329de024fa2782476d69">More...</a><br /></td></tr>
 <tr class="separator:aa5411dccade6329de024fa2782476d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee5f4de5222a6bec9ccded4d7464c3c"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">draw_menu</a> (struct <a class="el" href="struct_menu_model.html">MenuModel</a> model, <a class="el" href="struct_mouse.html">Mouse</a> mouse, <a class="el" href="structtime__display.html">time_display</a> <a class="el" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>)</td></tr>
+<tr class="memitem:a4ee5f4de5222a6bec9ccded4d7464c3c"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">draw_menu</a> (struct <a class="el" href="struct_menu_model.html">MenuModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, <a class="el" href="struct_mouse.html">Mouse</a> <a class="el" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>, <a class="el" href="structtime__display.html">time_display</a> <a class="el" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>)</td></tr>
 <tr class="memdesc:a4ee5f4de5222a6bec9ccded4d7464c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the menu.  <a href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">More...</a><br /></td></tr>
 <tr class="separator:a4ee5f4de5222a6bec9ccded4d7464c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eca413a86c3effd38130e380a177693"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a5eca413a86c3effd38130e380a177693">draw_TimeNumbers</a> (<a class="el" href="structtime__display.html">time_display</a> <a class="el" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>)</td></tr>
 <tr class="memdesc:a5eca413a86c3effd38130e380a177693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the time numbers.  <a href="draw_8h.html#a5eca413a86c3effd38130e380a177693">More...</a><br /></td></tr>
 <tr class="separator:a5eca413a86c3effd38130e380a177693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ac815675704205525d468115556f79"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a68ac815675704205525d468115556f79">draw_players_info</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
+<tr class="memdesc:a68ac815675704205525d468115556f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the players' information on the screen.  <a href="draw_8h.html#a68ac815675704205525d468115556f79">More...</a><br /></td></tr>
+<tr class="separator:a68ac815675704205525d468115556f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa174ac4a88e944facf39da6888c0db"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#acfa174ac4a88e944facf39da6888c0db">draw_Game_over_report</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, enum <a class="el" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> state)</td></tr>
+<tr class="memdesc:acfa174ac4a88e944facf39da6888c0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the game over report on the screen.  <a href="draw_8h.html#acfa174ac4a88e944facf39da6888c0db">More...</a><br /></td></tr>
+<tr class="separator:acfa174ac4a88e944facf39da6888c0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd80903d8139b9daedef6a7770a4998"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a4bd80903d8139b9daedef6a7770a4998">draw_message</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, enum <a class="el" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> state, <a class="el" href="struct_mouse.html">Mouse</a> <a class="el" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>, bool <a class="el" href="message_8c.html#a219cb815fdea729196b50fa65de3de0f">is_selected</a>)</td></tr>
+<tr class="memdesc:a4bd80903d8139b9daedef6a7770a4998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the game over display.  <a href="draw_8h.html#a4bd80903d8139b9daedef6a7770a4998">More...</a><br /></td></tr>
+<tr class="separator:a4bd80903d8139b9daedef6a7770a4998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3153ce4cdb58b63a8b41728c23db67"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a1a3153ce4cdb58b63a8b41728c23db67">draw_string</a> (char *text, int x, int y, int size, uint32_t color)</td></tr>
 <tr class="memdesc:a1a3153ce4cdb58b63a8b41728c23db67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a string.  <a href="draw_8h.html#a1a3153ce4cdb58b63a8b41728c23db67">More...</a><br /></td></tr>
 <tr class="separator:a1a3153ce4cdb58b63a8b41728c23db67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c8facd48cf928fdd3736aeaa1f6c2a"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">draw_select_names</a> (int player_number, struct <a class="el" href="struct_arena_model.html">ArenaModel</a> model, <a class="el" href="struct_mouse.html">Mouse</a> mouse)</td></tr>
+<tr class="memitem:a85c8facd48cf928fdd3736aeaa1f6c2a"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">draw_select_names</a> (int player_number, struct <a class="el" href="struct_arena_model.html">ArenaModel</a> <a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, <a class="el" href="struct_mouse.html">Mouse</a> <a class="el" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>)</td></tr>
 <tr class="memdesc:a85c8facd48cf928fdd3736aeaa1f6c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the select names.  <a href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">More...</a><br /></td></tr>
 <tr class="separator:a85c8facd48cf928fdd3736aeaa1f6c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -210,8 +228,8 @@ Functions</h2></td></tr>
 <div class="textblock"><p >Drawing functions. </p>
 <p >This file contains functions related to drawing various elements on the screen. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a81d3c5fc23030efc09b40adf6c36ea89" name="a81d3c5fc23030efc09b40adf6c36ea89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81d3c5fc23030efc09b40adf6c36ea89">&#9670;&#160;</a></span>draw_game()</h2>
+<a id="aeb1fc85395bc4b7fb4eacefe84609837" name="aeb1fc85395bc4b7fb4eacefe84609837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1fc85395bc4b7fb4eacefe84609837">&#9670;&#160;</a></span>draw_game()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +244,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_mouse.html">Mouse</a>&#160;</td>
-          <td class="paramname"><em>mouse</em>&#160;</td>
+          <td class="paramname"><em>mouse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtime__display.html">time_display</a>&#160;</td>
+          <td class="paramname"><em>time_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -237,14 +261,104 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draw the game. </p>
-<p >Draws the game elements on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> and mouse information.</p>
+<p >Draws the game elements on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> and mouse information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
     <tr><td class="paramname">mouse</td><td>The <a class="el" href="struct_mouse.html" title="Mouse structure.">Mouse</a> information </td></tr>
+    <tr><td class="paramname">time_info</td><td>The Time Information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_aeb1fc85395bc4b7fb4eacefe84609837_cgraph.png" border="0" usemap="#adraw_8h_aeb1fc85395bc4b7fb4eacefe84609837_cgraph" alt=""/></div>
+<map name="adraw_8h_aeb1fc85395bc4b7fb4eacefe84609837_cgraph" id="adraw_8h_aeb1fc85395bc4b7fb4eacefe84609837_cgraph">
+<area shape="rect" title="Draw the game." alt="" coords="5,208,93,235"/>
+<area shape="rect" href="draw_8c.html#a7848b65c5d7a99630ec643e72376d361" title=" " alt="" coords="159,5,252,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="318,208,426,235"/>
+<area shape="rect" href="draw_8c.html#ad843e332ab31ddc559f39ea19415d660" title=" " alt="" coords="162,107,249,133"/>
+<area shape="rect" href="draw_8c.html#a220b56a6f8aa7c6b61f11367fec6f62b" title=" " alt="" coords="141,411,270,437"/>
+<area shape="rect" href="draw_8c.html#aa8393013ab037235f46c85781f702b66" title="Draw the bombs on the screen." alt="" coords="161,157,250,184"/>
+<area shape="rect" href="draw_8c.html#a5a5865b4ef99decdaa500966aed13e78" title="Draw the bricks on the screen." alt="" coords="163,208,248,235"/>
+<area shape="rect" href="draw_8c.html#a51fdeda3e951a3690c9d9d7664b98ae9" title=" " alt="" coords="160,259,251,285"/>
+<area shape="rect" href="draw_8c.html#a03d92d2b4bd54a502562b869ad1b6b52" title="Draw the players on the screen." alt="" coords="159,309,252,336"/>
+<area shape="rect" href="draw_8c.html#aa5411dccade6329de024fa2782476d69" title="Draw the walls on the screen." alt="" coords="165,360,246,387"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="653,289,735,316"/>
+<area shape="rect" href="draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="329,391,416,417"/>
+<area shape="rect" href="video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="474,315,605,341"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_aeb1fc85395bc4b7fb4eacefe84609837_icgraph.png" border="0" usemap="#adraw_8h_aeb1fc85395bc4b7fb4eacefe84609837_icgraph" alt=""/></div>
+<map name="adraw_8h_aeb1fc85395bc4b7fb4eacefe84609837_icgraph" id="adraw_8h_aeb1fc85395bc4b7fb4eacefe84609837_icgraph">
+<area shape="rect" title="Draw the game." alt="" coords="266,5,353,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acfa174ac4a88e944facf39da6888c0db" name="acfa174ac4a88e944facf39da6888c0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa174ac4a88e944facf39da6888c0db">&#9670;&#160;</a></span>draw_Game_over_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() draw_Game_over_report </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_arena_model.html">ArenaModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a>&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws the game over report on the screen. </p>
+<p >This function is responsible for drawing the game over report based on the winner and loser.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The arena model containing the game information. </td></tr>
+    <tr><td class="paramname">state</td><td>The current game state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_acfa174ac4a88e944facf39da6888c0db_cgraph.png" border="0" usemap="#adraw_8h_acfa174ac4a88e944facf39da6888c0db_cgraph" alt=""/></div>
+<map name="adraw_8h_acfa174ac4a88e944facf39da6888c0db_cgraph" id="adraw_8h_acfa174ac4a88e944facf39da6888c0db_cgraph">
+<area shape="rect" title="Draws the game over report on the screen." alt="" coords="5,5,166,32"/>
+<area shape="rect" href="draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="214,5,301,32"/>
+<area shape="rect" href="video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="349,5,479,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="527,5,610,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_acfa174ac4a88e944facf39da6888c0db_icgraph.png" border="0" usemap="#adraw_8h_acfa174ac4a88e944facf39da6888c0db_icgraph" alt=""/></div>
+<map name="adraw_8h_acfa174ac4a88e944facf39da6888c0db_icgraph" id="adraw_8h_acfa174ac4a88e944facf39da6888c0db_icgraph">
+<area shape="rect" title="Draws the game over report on the screen." alt="" coords="266,5,426,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -290,6 +404,143 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c_cgraph.png" border="0" usemap="#adraw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c_cgraph" alt=""/></div>
+<map name="adraw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c_cgraph" id="adraw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c_cgraph">
+<area shape="rect" title="Draw the menu." alt="" coords="5,186,93,213"/>
+<area shape="rect" href="draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="141,110,276,137"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="486,186,595,213"/>
+<area shape="rect" href="rtc_8c.html#a284fb83821d7f6f974c99f4c25152b65" title="Get hours value from time display structure." alt="" coords="345,34,418,61"/>
+<area shape="rect" href="rtc_8c.html#afcc22f9c8affbed51f56dfe0b5ddb199" title="Get minutes value from time display structure." alt="" coords="339,85,424,111"/>
+<area shape="rect" href="rtc_8c.html#a863bdc0ddf239289a6fb353802149ec0" title="Get seconds value from time display structure." alt="" coords="336,135,426,162"/>
+<area shape="rect" href="draw_8c.html#adeae2987e007ec4b34efae8e7765f9c0" title=" " alt="" coords="324,186,438,213"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="643,186,725,213"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4bd80903d8139b9daedef6a7770a4998" name="a4bd80903d8139b9daedef6a7770a4998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd80903d8139b9daedef6a7770a4998">&#9670;&#160;</a></span>draw_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() draw_message </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_arena_model.html">ArenaModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mouse.html">Mouse</a>&#160;</td>
+          <td class="paramname"><em>mouse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_selected</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws the game over display. </p>
+<p >This function is responsible for drawing the game over display on the screen based based on the winner and loser.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The arena model containing the game information. </td></tr>
+    <tr><td class="paramname">state</td><td>The current game state. </td></tr>
+    <tr><td class="paramname">mouse</td><td>The mouse object containing the mouse information. </td></tr>
+    <tr><td class="paramname">is_selected</td><td>Indicates whether the message is selected or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a4bd80903d8139b9daedef6a7770a4998_cgraph.png" border="0" usemap="#adraw_8h_a4bd80903d8139b9daedef6a7770a4998_cgraph" alt=""/></div>
+<map name="adraw_8h_a4bd80903d8139b9daedef6a7770a4998_cgraph" id="adraw_8h_a4bd80903d8139b9daedef6a7770a4998_cgraph">
+<area shape="rect" title="Draws the game over display." alt="" coords="5,31,114,57"/>
+<area shape="rect" href="draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="162,5,249,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="308,56,416,83"/>
+<area shape="rect" href="video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="297,5,427,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="475,31,558,57"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a4bd80903d8139b9daedef6a7770a4998_icgraph.png" border="0" usemap="#adraw_8h_a4bd80903d8139b9daedef6a7770a4998_icgraph" alt=""/></div>
+<map name="adraw_8h_a4bd80903d8139b9daedef6a7770a4998_icgraph" id="adraw_8h_a4bd80903d8139b9daedef6a7770a4998_icgraph">
+<area shape="rect" title="Draws the game over display." alt="" coords="284,5,392,32"/>
+<area shape="rect" href="message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,5,236,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a68ac815675704205525d468115556f79" name="a68ac815675704205525d468115556f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ac815675704205525d468115556f79">&#9670;&#160;</a></span>draw_players_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() draw_players_info </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_arena_model.html">ArenaModel</a>&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws the players' information on the screen. </p>
+<p >This function is responsible for drawing the players' information in the game, like coins and name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The arena model containing the information about the players. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a68ac815675704205525d468115556f79_cgraph.png" border="0" usemap="#adraw_8h_a68ac815675704205525d468115556f79_cgraph" alt=""/></div>
+<map name="adraw_8h_a68ac815675704205525d468115556f79_cgraph" id="adraw_8h_a68ac815675704205525d468115556f79_cgraph">
+<area shape="rect" title="Draws the players&#39; information on the screen." alt="" coords="5,5,130,32"/>
+<area shape="rect" href="draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="178,5,265,32"/>
+<area shape="rect" href="video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="313,5,443,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="491,5,574,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a68ac815675704205525d468115556f79_icgraph.png" border="0" usemap="#adraw_8h_a68ac815675704205525d468115556f79_icgraph" alt=""/></div>
+<map name="adraw_8h_a68ac815675704205525d468115556f79_icgraph" id="adraw_8h_a68ac815675704205525d468115556f79_icgraph">
+<area shape="rect" title="Draws the players&#39; information on the screen." alt="" coords="266,5,390,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -326,15 +577,27 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draw the select names. </p>
-<p >Draws the select names on the screen based on the player number, <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>, and mouse information.</p>
+<p >Draws the select names on the screen based on the player number, <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>, and mouse information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">player_number</td><td>The player number </td></tr>
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the select names information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the select names information </td></tr>
     <tr><td class="paramname">mouse</td><td>The <a class="el" href="struct_mouse.html" title="Mouse structure.">Mouse</a> information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a_cgraph.png" border="0" usemap="#adraw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a_cgraph" alt=""/></div>
+<map name="adraw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a_cgraph" id="adraw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a_cgraph">
+<area shape="rect" title="Draw the select names." alt="" coords="5,31,142,57"/>
+<area shape="rect" href="draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="190,5,277,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="336,56,444,83"/>
+<area shape="rect" href="video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="325,5,455,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="503,31,586,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -394,6 +657,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a1a3153ce4cdb58b63a8b41728c23db67_cgraph.png" border="0" usemap="#adraw_8h_a1a3153ce4cdb58b63a8b41728c23db67_cgraph" alt=""/></div>
+<map name="adraw_8h_a1a3153ce4cdb58b63a8b41728c23db67_cgraph" id="adraw_8h_a1a3153ce4cdb58b63a8b41728c23db67_cgraph">
+<area shape="rect" title="Draw a string." alt="" coords="5,5,93,32"/>
+<area shape="rect" href="video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="141,5,271,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="319,5,401,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a1a3153ce4cdb58b63a8b41728c23db67_icgraph.png" border="0" usemap="#adraw_8h_a1a3153ce4cdb58b63a8b41728c23db67_icgraph" alt=""/></div>
+<map name="adraw_8h_a1a3153ce4cdb58b63a8b41728c23db67_icgraph" id="adraw_8h_a1a3153ce4cdb58b63a8b41728c23db67_icgraph">
+<area shape="rect" title="Draw a string." alt="" coords="677,107,764,133"/>
+<area shape="rect" href="draw_8c.html#acfa174ac4a88e944facf39da6888c0db" title="Draws the game over report on the screen." alt="" coords="284,56,444,83"/>
+<area shape="rect" href="draw_8c.html#a220b56a6f8aa7c6b61f11367fec6f62b" title=" " alt="" coords="496,107,625,133"/>
+<area shape="rect" href="draw_8c.html#a4bd80903d8139b9daedef6a7770a4998" title="Draws the game over display." alt="" coords="506,157,615,184"/>
+<area shape="rect" href="draw_8c.html#a68ac815675704205525d468115556f79" title="Draws the players&#39; information on the screen." alt="" coords="302,5,426,32"/>
+<area shape="rect" href="draw_8c.html#a58767c2f71faacd6e862d266ca18d227" title="Draw the select names." alt="" coords="492,208,629,235"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="171,81,227,108"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,107,114,133"/>
+<area shape="rect" href="draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="321,107,408,133"/>
+<area shape="rect" href="message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,132,236,159"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -421,6 +711,29 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a5eca413a86c3effd38130e380a177693_cgraph.png" border="0" usemap="#adraw_8h_a5eca413a86c3effd38130e380a177693_cgraph" alt=""/></div>
+<map name="adraw_8h_a5eca413a86c3effd38130e380a177693_cgraph" id="adraw_8h_a5eca413a86c3effd38130e380a177693_cgraph">
+<area shape="rect" title="Draw the time numbers." alt="" coords="5,80,141,106"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="351,80,459,106"/>
+<area shape="rect" href="rtc_8c.html#a284fb83821d7f6f974c99f4c25152b65" title="Get hours value from time display structure." alt="" coords="209,29,283,56"/>
+<area shape="rect" href="rtc_8c.html#afcc22f9c8affbed51f56dfe0b5ddb199" title="Get minutes value from time display structure." alt="" coords="203,80,289,106"/>
+<area shape="rect" href="rtc_8c.html#a863bdc0ddf239289a6fb353802149ec0" title="Get seconds value from time display structure." alt="" coords="201,130,291,157"/>
+<area shape="rect" href="draw_8c.html#adeae2987e007ec4b34efae8e7765f9c0" title=" " alt="" coords="189,181,303,208"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="507,80,590,106"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a5eca413a86c3effd38130e380a177693_icgraph.png" border="0" usemap="#adraw_8h_a5eca413a86c3effd38130e380a177693_icgraph" alt=""/></div>
+<map name="adraw_8h_a5eca413a86c3effd38130e380a177693_icgraph" id="adraw_8h_a5eca413a86c3effd38130e380a177693_icgraph">
+<area shape="rect" title="Draw the time numbers." alt="" coords="141,5,276,32"/>
+<area shape="rect" href="draw_8c.html#a4ee5f4de5222a6bec9ccded4d7464c3c" title="Draw the menu." alt="" coords="5,5,93,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -441,13 +754,34 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draw the bombs on the screen. </p>
-<p >Draws the bombs on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Draws the bombs on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the bomb information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the bomb information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_aa8393013ab037235f46c85781f702b66_cgraph.png" border="0" usemap="#adraw_8h_aa8393013ab037235f46c85781f702b66_cgraph" alt=""/></div>
+<map name="adraw_8h_aa8393013ab037235f46c85781f702b66_cgraph" id="adraw_8h_aa8393013ab037235f46c85781f702b66_cgraph">
+<area shape="rect" title="Draw the bombs on the screen." alt="" coords="5,5,95,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="143,5,251,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="299,5,381,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_aa8393013ab037235f46c85781f702b66_icgraph.png" border="0" usemap="#adraw_8h_aa8393013ab037235f46c85781f702b66_icgraph" alt=""/></div>
+<map name="adraw_8h_aa8393013ab037235f46c85781f702b66_icgraph" id="adraw_8h_aa8393013ab037235f46c85781f702b66_icgraph">
+<area shape="rect" title="Draw the bombs on the screen." alt="" coords="401,5,491,32"/>
+<area shape="rect" href="draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="266,5,353,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -468,13 +802,34 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draw the bricks on the screen. </p>
-<p >Draws the bricks on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Draws the bricks on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the brick information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the brick information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a5a5865b4ef99decdaa500966aed13e78_cgraph.png" border="0" usemap="#adraw_8h_a5a5865b4ef99decdaa500966aed13e78_cgraph" alt=""/></div>
+<map name="adraw_8h_a5a5865b4ef99decdaa500966aed13e78_cgraph" id="adraw_8h_a5a5865b4ef99decdaa500966aed13e78_cgraph">
+<area shape="rect" title="Draw the bricks on the screen." alt="" coords="5,5,91,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="139,5,247,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="295,5,377,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a5a5865b4ef99decdaa500966aed13e78_icgraph.png" border="0" usemap="#adraw_8h_a5a5865b4ef99decdaa500966aed13e78_icgraph" alt=""/></div>
+<map name="adraw_8h_a5a5865b4ef99decdaa500966aed13e78_icgraph" id="adraw_8h_a5a5865b4ef99decdaa500966aed13e78_icgraph">
+<area shape="rect" title="Draw the bricks on the screen." alt="" coords="401,5,487,32"/>
+<area shape="rect" href="draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="266,5,353,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -495,51 +850,34 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draw the players on the screen. </p>
-<p >Draws the player characters on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Draws the player characters on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the player information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the player information </td></tr>
   </table>
   </dd>
 </dl>
-
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a03d92d2b4bd54a502562b869ad1b6b52_cgraph.png" border="0" usemap="#adraw_8h_a03d92d2b4bd54a502562b869ad1b6b52_cgraph" alt=""/></div>
+<map name="adraw_8h_a03d92d2b4bd54a502562b869ad1b6b52_cgraph" id="adraw_8h_a03d92d2b4bd54a502562b869ad1b6b52_cgraph">
+<area shape="rect" title="Draw the players on the screen." alt="" coords="5,5,98,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="146,5,254,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="302,5,384,32"/>
+</map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a03d92d2b4bd54a502562b869ad1b6b52_icgraph.png" border="0" usemap="#adraw_8h_a03d92d2b4bd54a502562b869ad1b6b52_icgraph" alt=""/></div>
+<map name="adraw_8h_a03d92d2b4bd54a502562b869ad1b6b52_icgraph" id="adraw_8h_a03d92d2b4bd54a502562b869ad1b6b52_icgraph">
+<area shape="rect" title="Draw the players on the screen." alt="" coords="401,5,494,32"/>
+<area shape="rect" href="draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="266,5,353,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
 </div>
-<a id="a58fdfa08fcdcb18641e8ea9327d6884b" name="a58fdfa08fcdcb18641e8ea9327d6884b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58fdfa08fcdcb18641e8ea9327d6884b">&#9670;&#160;</a></span>drawPowerUps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void() drawPowerUps </td>
-          <td>(</td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>arena</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="struct_arena_model.html">ArenaModel</a>&#160;</td>
-          <td class="paramname"><em>model</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Draw the power-ups on the screen. </p>
-<p >Draws the power-ups on the screen based on the provided arena and <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arena</td><td>The arena as a 2D character array </td></tr>
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the power-up information </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -560,13 +898,34 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draw the walls on the screen. </p>
-<p >Draws the walls on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Draws the walls on the screen based on the provided <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the wall information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the wall information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_aa5411dccade6329de024fa2782476d69_cgraph.png" border="0" usemap="#adraw_8h_aa5411dccade6329de024fa2782476d69_cgraph" alt=""/></div>
+<map name="adraw_8h_aa5411dccade6329de024fa2782476d69_cgraph" id="adraw_8h_aa5411dccade6329de024fa2782476d69_cgraph">
+<area shape="rect" title="Draw the walls on the screen." alt="" coords="5,5,87,32"/>
+<area shape="rect" href="video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="135,5,243,32"/>
+<area shape="rect" href="video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="291,5,373,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_aa5411dccade6329de024fa2782476d69_icgraph.png" border="0" usemap="#adraw_8h_aa5411dccade6329de024fa2782476d69_icgraph" alt=""/></div>
+<map name="adraw_8h_aa5411dccade6329de024fa2782476d69_icgraph" id="adraw_8h_aa5411dccade6329de024fa2782476d69_icgraph">
+<area shape="rect" title="Draw the walls on the screen." alt="" coords="401,5,483,32"/>
+<area shape="rect" href="draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="266,5,353,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -611,22 +970,27 @@ Functions</h2></td></tr>
 <p >Loads the XPM images required for the game from the specified model.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the XPM images </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the XPM images </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return 0 upon success, non-zero otherwise </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="draw_8h_a5879bf4f041654dfe02e6912770b74e1_icgraph.png" border="0" usemap="#adraw_8h_a5879bf4f041654dfe02e6912770b74e1_icgraph" alt=""/></div>
+<map name="adraw_8h_a5879bf4f041654dfe02e6912770b74e1_icgraph" id="adraw_8h_a5879bf4f041654dfe02e6912770b74e1_icgraph">
+<area shape="rect" title="Load XPM images." alt="" coords="162,5,246,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_cb5a0ac72d77ba033af5f566c8c820c6.html">draw</a></li><li class="navelem"><a class="el" href="draw_8h.html">draw.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

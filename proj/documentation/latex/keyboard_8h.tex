@@ -1,5 +1,5 @@
-\hypertarget{keyboard_8h}{}\doxysection{devices/keyboard.h File Reference}
-\label{keyboard_8h}\index{devices/keyboard.h@{devices/keyboard.h}}
+\hypertarget{keyboard_8h}{}\doxysection{proj/src/devices/keyboard.h File Reference}
+\label{keyboard_8h}\index{proj/src/devices/keyboard.h@{proj/src/devices/keyboard.h}}
 
 
 Keyboard Controller (KBC) functions.  
@@ -7,47 +7,49 @@ Keyboard Controller (KBC) functions.
 
 {\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}\label{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+A}~0x1e
+\#define \mbox{\hyperlink{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+A}}~0x1e
 \item 
-\mbox{\Hypertarget{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}\label{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}} 
-\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+A}~0x9e
+\#define \mbox{\hyperlink{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}{KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+A}}~0x9e
 \item 
-\mbox{\Hypertarget{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}\label{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+S}~0x1f
+\#define \mbox{\hyperlink{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+S}}~0x1f
 \item 
-\mbox{\Hypertarget{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}\label{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}} 
-\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+S}~0x9f
+\#define \mbox{\hyperlink{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}{KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+S}}~0x9f
 \item 
-\mbox{\Hypertarget{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}\label{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+W}~0x11
+\#define \mbox{\hyperlink{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+W}}~0x11
 \item 
-\mbox{\Hypertarget{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}\label{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}} 
-\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+W}~0x91
+\#define \mbox{\hyperlink{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}{KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+W}}~0x91
 \item 
-\mbox{\Hypertarget{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}\label{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+D}~0x20
+\#define \mbox{\hyperlink{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+D}}~0x20
 \item 
-\mbox{\Hypertarget{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}\label{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}} 
-\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+D}~0xa0
+\#define \mbox{\hyperlink{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}{KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+D}}~0xa0
 \item 
-\mbox{\Hypertarget{keyboard_8h_ace41b9e40bbed18a916324732432aafd}\label{keyboard_8h_ace41b9e40bbed18a916324732432aafd}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+SPACE}~0x39
+\#define \mbox{\hyperlink{keyboard_8h_ace41b9e40bbed18a916324732432aafd}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+SPACE}}~0x39
 \item 
-\mbox{\Hypertarget{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}\label{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}} 
-\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+SPACE}~0xb9
+\#define \mbox{\hyperlink{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}{KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+SPACE}}~0xb9
 \item 
-\mbox{\Hypertarget{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}\label{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ENTER}~0x1c
+\#define \mbox{\hyperlink{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ENTER}}~0x1c
 \item 
-\mbox{\Hypertarget{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}\label{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}} 
-\#define {\bfseries KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+ENTER}~0x9c
+\#define \mbox{\hyperlink{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}{KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+ENTER}}~0x9c
 \item 
-\mbox{\Hypertarget{keyboard_8h_a372368b2af20d08f168831e2de675d6d}\label{keyboard_8h_a372368b2af20d08f168831e2de675d6d}} 
-\#define {\bfseries KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ESC}~0x01
+\#define \mbox{\hyperlink{keyboard_8h_a372368b2af20d08f168831e2de675d6d}{KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ESC}}~0x01
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -77,6 +79,87 @@ Keyboard Controller (KBC) functions.
 
 This file contains functions related to the Keyboard Controller (KBC). 
 
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}\label{keyboard_8h_a9eb650e6adb62780ed42a8b1b9e3a235}} 
+\index{keyboard.h@{keyboard.h}!KBC\_BREAK\_CODE\_A@{KBC\_BREAK\_CODE\_A}}
+\index{KBC\_BREAK\_CODE\_A@{KBC\_BREAK\_CODE\_A}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_BREAK\_CODE\_A}{KBC\_BREAK\_CODE\_A}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+A~0x9e}
+
+\mbox{\Hypertarget{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}\label{keyboard_8h_a68bbb52fe98813b685f7b8e4c256e60a}} 
+\index{keyboard.h@{keyboard.h}!KBC\_BREAK\_CODE\_D@{KBC\_BREAK\_CODE\_D}}
+\index{KBC\_BREAK\_CODE\_D@{KBC\_BREAK\_CODE\_D}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_BREAK\_CODE\_D}{KBC\_BREAK\_CODE\_D}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+D~0xa0}
+
+\mbox{\Hypertarget{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}\label{keyboard_8h_a695f2eab8257ad89dc5bb4a6570fd4ea}} 
+\index{keyboard.h@{keyboard.h}!KBC\_BREAK\_CODE\_ENTER@{KBC\_BREAK\_CODE\_ENTER}}
+\index{KBC\_BREAK\_CODE\_ENTER@{KBC\_BREAK\_CODE\_ENTER}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_BREAK\_CODE\_ENTER}{KBC\_BREAK\_CODE\_ENTER}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+ENTER~0x9c}
+
+\mbox{\Hypertarget{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}\label{keyboard_8h_acfeb62f868560ddd7d23a9119a540957}} 
+\index{keyboard.h@{keyboard.h}!KBC\_BREAK\_CODE\_S@{KBC\_BREAK\_CODE\_S}}
+\index{KBC\_BREAK\_CODE\_S@{KBC\_BREAK\_CODE\_S}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_BREAK\_CODE\_S}{KBC\_BREAK\_CODE\_S}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+S~0x9f}
+
+\mbox{\Hypertarget{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}\label{keyboard_8h_a1c63ad0494fd075f17212bb596d2d07f}} 
+\index{keyboard.h@{keyboard.h}!KBC\_BREAK\_CODE\_SPACE@{KBC\_BREAK\_CODE\_SPACE}}
+\index{KBC\_BREAK\_CODE\_SPACE@{KBC\_BREAK\_CODE\_SPACE}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_BREAK\_CODE\_SPACE}{KBC\_BREAK\_CODE\_SPACE}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+\+SPACE~0xb9}
+
+\mbox{\Hypertarget{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}\label{keyboard_8h_afef0e2d87182ed1c0a61b5a24a4efb48}} 
+\index{keyboard.h@{keyboard.h}!KBC\_BREAK\_CODE\_W@{KBC\_BREAK\_CODE\_W}}
+\index{KBC\_BREAK\_CODE\_W@{KBC\_BREAK\_CODE\_W}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_BREAK\_CODE\_W}{KBC\_BREAK\_CODE\_W}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+BREAK\+\_\+\+CODE\+\_\+W~0x91}
+
+\mbox{\Hypertarget{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}\label{keyboard_8h_a6ea2ee3cdaf3d8019ddbb0b0be901a56}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_A@{KBC\_MAKE\_CODE\_A}}
+\index{KBC\_MAKE\_CODE\_A@{KBC\_MAKE\_CODE\_A}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_A}{KBC\_MAKE\_CODE\_A}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+A~0x1e}
+
+\mbox{\Hypertarget{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}\label{keyboard_8h_a74be8f8ee4f65ec72ab987beb361359e}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_D@{KBC\_MAKE\_CODE\_D}}
+\index{KBC\_MAKE\_CODE\_D@{KBC\_MAKE\_CODE\_D}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_D}{KBC\_MAKE\_CODE\_D}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+D~0x20}
+
+\mbox{\Hypertarget{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}\label{keyboard_8h_ad748a7d21b21ce619e1c5cfdb5830a7a}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_ENTER@{KBC\_MAKE\_CODE\_ENTER}}
+\index{KBC\_MAKE\_CODE\_ENTER@{KBC\_MAKE\_CODE\_ENTER}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_ENTER}{KBC\_MAKE\_CODE\_ENTER}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ENTER~0x1c}
+
+\mbox{\Hypertarget{keyboard_8h_a372368b2af20d08f168831e2de675d6d}\label{keyboard_8h_a372368b2af20d08f168831e2de675d6d}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_ESC@{KBC\_MAKE\_CODE\_ESC}}
+\index{KBC\_MAKE\_CODE\_ESC@{KBC\_MAKE\_CODE\_ESC}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_ESC}{KBC\_MAKE\_CODE\_ESC}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+ESC~0x01}
+
+\mbox{\Hypertarget{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}\label{keyboard_8h_a8ee431f6e551efcdc187c9805e8ad760}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_S@{KBC\_MAKE\_CODE\_S}}
+\index{KBC\_MAKE\_CODE\_S@{KBC\_MAKE\_CODE\_S}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_S}{KBC\_MAKE\_CODE\_S}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+S~0x1f}
+
+\mbox{\Hypertarget{keyboard_8h_ace41b9e40bbed18a916324732432aafd}\label{keyboard_8h_ace41b9e40bbed18a916324732432aafd}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_SPACE@{KBC\_MAKE\_CODE\_SPACE}}
+\index{KBC\_MAKE\_CODE\_SPACE@{KBC\_MAKE\_CODE\_SPACE}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_SPACE}{KBC\_MAKE\_CODE\_SPACE}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+\+SPACE~0x39}
+
+\mbox{\Hypertarget{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}\label{keyboard_8h_a7162307b1bfc2871fa4a96bf92cc4158}} 
+\index{keyboard.h@{keyboard.h}!KBC\_MAKE\_CODE\_W@{KBC\_MAKE\_CODE\_W}}
+\index{KBC\_MAKE\_CODE\_W@{KBC\_MAKE\_CODE\_W}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_MAKE\_CODE\_W}{KBC\_MAKE\_CODE\_W}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+MAKE\+\_\+\+CODE\+\_\+W~0x11}
+
+
+
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e}\label{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e}} 
 \index{keyboard.h@{keyboard.h}!kbc\_error\_checking@{kbc\_error\_checking}}
@@ -98,6 +181,14 @@ Checks the status byte for errors occurred during communication with the KBC.
 \begin{DoxyReturn}{Returns}
 Return 0 if no errors occurred, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_a137fcaaed4da85fda74f92b061dab31e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_aea970a154161a35f6894898a092ed70a}\label{keyboard_8h_aea970a154161a35f6894898a092ed70a}} 
 \index{keyboard.h@{keyboard.h}!kbc\_ih@{kbc\_ih}}
 \index{kbc\_ih@{kbc\_ih}!keyboard.h@{keyboard.h}}
@@ -108,7 +199,23 @@ Return 0 if no errors occurred, non-\/zero otherwise
 
 Keyboard interrupt handler. 
 
-Interrupt handler for the keyboard interrupts. \mbox{\Hypertarget{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}\label{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}} 
+Interrupt handler for the keyboard interrupts. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{keyboard_8h_aea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{keyboard_8h_aea970a154161a35f6894898a092ed70a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}\label{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1}} 
 \index{keyboard.h@{keyboard.h}!kbc\_Subscribe@{kbc\_Subscribe}}
 \index{kbc\_Subscribe@{kbc\_Subscribe}!keyboard.h@{keyboard.h}}
 \doxysubsubsection{\texorpdfstring{kbc\_Subscribe()}{kbc\_Subscribe()}}
@@ -128,6 +235,14 @@ Subscribes to KBC interrupts using the specified bit number.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_abe98dcf7dce0f7461a6d6d6bab04ebe1_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5}\label{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5}} 
 \index{keyboard.h@{keyboard.h}!kbc\_Unsubscribe@{kbc\_Unsubscribe}}
 \index{kbc\_Unsubscribe@{kbc\_Unsubscribe}!keyboard.h@{keyboard.h}}
@@ -143,6 +258,14 @@ Unsubscribes from KBC interrupts.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_a33488d2a4c02e0ea6f971ff3fdd06fe5_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a}\label{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a}} 
 \index{keyboard.h@{keyboard.h}!kbd\_reenable\_ints@{kbd\_reenable\_ints}}
 \index{kbd\_reenable\_ints@{kbd\_reenable\_ints}!keyboard.h@{keyboard.h}}
@@ -158,6 +281,14 @@ Re-\/enables the keyboard interrupts.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_a1d5d98ebfbf6caf659fd5e6c4dd13e1a_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_af6904562aeefa215fb32d02114bf071d}\label{keyboard_8h_af6904562aeefa215fb32d02114bf071d}} 
 \index{keyboard.h@{keyboard.h}!keyboard\_get\_status@{keyboard\_get\_status}}
 \index{keyboard\_get\_status@{keyboard\_get\_status}!keyboard.h@{keyboard.h}}
@@ -178,6 +309,22 @@ Reads the status byte from the keyboard controller.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{keyboard_8h_af6904562aeefa215fb32d02114bf071d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_af6904562aeefa215fb32d02114bf071d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_a75a9af0019672513c8fab993408dc10c}\label{keyboard_8h_a75a9af0019672513c8fab993408dc10c}} 
 \index{keyboard.h@{keyboard.h}!keyboard\_read\_out\_buffer@{keyboard\_read\_out\_buffer}}
 \index{keyboard\_read\_out\_buffer@{keyboard\_read\_out\_buffer}!keyboard.h@{keyboard.h}}
@@ -198,6 +345,22 @@ Reads the contents of the keyboard output buffer.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{keyboard_8h_a75a9af0019672513c8fab993408dc10c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_a75a9af0019672513c8fab993408dc10c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4}\label{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4}} 
 \index{keyboard.h@{keyboard.h}!reading\_from\_kbc@{reading\_from\_kbc}}
 \index{reading\_from\_kbc@{reading\_from\_kbc}!keyboard.h@{keyboard.h}}
@@ -218,6 +381,22 @@ Reads data from the KBC\textquotesingle{}s output buffer.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{keyboard_8h_abde2397d58ac116a7d90a83d4c4c57f4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af}\label{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af}} 
 \index{keyboard.h@{keyboard.h}!writing\_command\_kbc@{writing\_command\_kbc}}
 \index{writing\_command\_kbc@{writing\_command\_kbc}!keyboard.h@{keyboard.h}}
@@ -240,3 +419,19 @@ Writes a command to the specified port of the KBC.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{keyboard_8h_abfb159024aca9bc6b4c3cf5a0214d5af_icgraph}
+\end{center}
+\end{figure}

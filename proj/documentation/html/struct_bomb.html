@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_bomb.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,9 +69,11 @@ $(document).ready(function(){initNavTree('struct_bomb.html',''); initResizable()
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_bomb-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Bomb Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,47 +82,143 @@ $(document).ready(function(){initNavTree('struct_bomb.html',''); initResizable()
  <a href="struct_bomb.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="models_8h_source.html">models.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Bomb:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_bomb__coll__graph.png" border="0" usemap="#a_bomb_coll__map" alt="Collaboration graph"/></div>
+<map name="a_bomb_coll__map" id="a_bomb_coll__map">
+<area shape="rect" title="Represents a bomb in the game." alt="" coords="12,96,67,123"/>
+<area shape="rect" href="struct_position.html" title="Represents a position in the game arena." alt="" coords="5,5,74,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a933567351995a2f641e26be377c07fdc"><td class="memItemLeft" align="right" valign="top"><a id="a933567351995a2f641e26be377c07fdc" name="a933567351995a2f641e26be377c07fdc"></a>
-struct <a class="el" href="struct_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b></td></tr>
-<tr class="memdesc:a933567351995a2f641e26be377c07fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_position.html" title="Represents a position in the game arena.">Position</a> of the bomb. <br /></td></tr>
-<tr class="separator:a933567351995a2f641e26be377c07fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a958f520b9341fc68415a7116928882c4"><td class="memItemLeft" align="right" valign="top"><a id="a958f520b9341fc68415a7116928882c4" name="a958f520b9341fc68415a7116928882c4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>timeUntilExplosion</b></td></tr>
-<tr class="memdesc:a958f520b9341fc68415a7116928882c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the bomb explodes. <br /></td></tr>
-<tr class="separator:a958f520b9341fc68415a7116928882c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edc097ad2d6df8c7a7aefce120e8314"><td class="memItemLeft" align="right" valign="top"><a id="a0edc097ad2d6df8c7a7aefce120e8314" name="a0edc097ad2d6df8c7a7aefce120e8314"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>timeUntilNextXpm</b></td></tr>
-<tr class="memdesc:a0edc097ad2d6df8c7a7aefce120e8314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the next bomb sprite. <br /></td></tr>
-<tr class="separator:a0edc097ad2d6df8c7a7aefce120e8314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9ca3b9f5fd8f3237819d51c3876aee"><td class="memItemLeft" align="right" valign="top"><a id="a3c9ca3b9f5fd8f3237819d51c3876aee" name="a3c9ca3b9f5fd8f3237819d51c3876aee"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>currentXpm</b></td></tr>
-<tr class="memdesc:a3c9ca3b9f5fd8f3237819d51c3876aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current bomb sprite index. <br /></td></tr>
-<tr class="separator:a3c9ca3b9f5fd8f3237819d51c3876aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a037e8e370380046bec287bdc96942091"><td class="memItemLeft" align="right" valign="top"><a id="a037e8e370380046bec287bdc96942091" name="a037e8e370380046bec287bdc96942091"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>range</b></td></tr>
-<tr class="memdesc:a037e8e370380046bec287bdc96942091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range of the bomb explosion. <br /></td></tr>
-<tr class="separator:a037e8e370380046bec287bdc96942091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa695a8c4a65e8e7c5b752e3e846a44a9"><td class="memItemLeft" align="right" valign="top"><a id="aa695a8c4a65e8e7c5b752e3e846a44a9" name="aa695a8c4a65e8e7c5b752e3e846a44a9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>owner</b></td></tr>
-<tr class="memdesc:aa695a8c4a65e8e7c5b752e3e846a44a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the player who placed the bomb. <br /></td></tr>
-<tr class="separator:aa695a8c4a65e8e7c5b752e3e846a44a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a63522e03c5fa80f4c973ac99e8a7fd38"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bomb.html#a63522e03c5fa80f4c973ac99e8a7fd38">position</a></td></tr>
+<tr class="memdesc:a63522e03c5fa80f4c973ac99e8a7fd38"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_position.html" title="Represents a position in the game arena.">Position</a> of the bomb.  <a href="struct_bomb.html#a63522e03c5fa80f4c973ac99e8a7fd38">More...</a><br /></td></tr>
+<tr class="separator:a63522e03c5fa80f4c973ac99e8a7fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935358e8eb804f295b7037a31c6fe299"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bomb.html#a935358e8eb804f295b7037a31c6fe299">timeUntilExplosion</a></td></tr>
+<tr class="memdesc:a935358e8eb804f295b7037a31c6fe299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the bomb explodes.  <a href="struct_bomb.html#a935358e8eb804f295b7037a31c6fe299">More...</a><br /></td></tr>
+<tr class="separator:a935358e8eb804f295b7037a31c6fe299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff7a9554a5c1a7eeb27daa7d0f9b85"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bomb.html#a7eff7a9554a5c1a7eeb27daa7d0f9b85">timeUntilNextXpm</a></td></tr>
+<tr class="memdesc:a7eff7a9554a5c1a7eeb27daa7d0f9b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the next bomb sprite.  <a href="struct_bomb.html#a7eff7a9554a5c1a7eeb27daa7d0f9b85">More...</a><br /></td></tr>
+<tr class="separator:a7eff7a9554a5c1a7eeb27daa7d0f9b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d6533485a03aefb35f2ef18c3e37b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bomb.html#a24d6533485a03aefb35f2ef18c3e37b2">currentXpm</a></td></tr>
+<tr class="memdesc:a24d6533485a03aefb35f2ef18c3e37b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current bomb sprite index.  <a href="struct_bomb.html#a24d6533485a03aefb35f2ef18c3e37b2">More...</a><br /></td></tr>
+<tr class="separator:a24d6533485a03aefb35f2ef18c3e37b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ad3ba56316287fe3b8b0d9b2ac24c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bomb.html#ad4ad3ba56316287fe3b8b0d9b2ac24c8">range</a></td></tr>
+<tr class="memdesc:ad4ad3ba56316287fe3b8b0d9b2ac24c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range of the bomb explosion.  <a href="struct_bomb.html#ad4ad3ba56316287fe3b8b0d9b2ac24c8">More...</a><br /></td></tr>
+<tr class="separator:ad4ad3ba56316287fe3b8b0d9b2ac24c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa750b17addae4fddb122477e9b65638c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bomb.html#aa750b17addae4fddb122477e9b65638c">owner</a></td></tr>
+<tr class="memdesc:aa750b17addae4fddb122477e9b65638c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the player who placed the bomb.  <a href="struct_bomb.html#aa750b17addae4fddb122477e9b65638c">More...</a><br /></td></tr>
+<tr class="separator:aa750b17addae4fddb122477e9b65638c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a bomb in the game. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>models/<a class="el" href="models_8h_source.html">models.h</a></li>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a24d6533485a03aefb35f2ef18c3e37b2" name="a24d6533485a03aefb35f2ef18c3e37b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d6533485a03aefb35f2ef18c3e37b2">&#9670;&#160;</a></span>currentXpm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bomb::currentXpm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current bomb sprite index. </p>
+
+</div>
+</div>
+<a id="aa750b17addae4fddb122477e9b65638c" name="aa750b17addae4fddb122477e9b65638c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa750b17addae4fddb122477e9b65638c">&#9670;&#160;</a></span>owner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bomb::owner</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID of the player who placed the bomb. </p>
+
+</div>
+</div>
+<a id="a63522e03c5fa80f4c973ac99e8a7fd38" name="a63522e03c5fa80f4c973ac99e8a7fd38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63522e03c5fa80f4c973ac99e8a7fd38">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_position.html">Position</a> Bomb::position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_position.html" title="Represents a position in the game arena.">Position</a> of the bomb. </p>
+
+</div>
+</div>
+<a id="ad4ad3ba56316287fe3b8b0d9b2ac24c8" name="ad4ad3ba56316287fe3b8b0d9b2ac24c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ad3ba56316287fe3b8b0d9b2ac24c8">&#9670;&#160;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bomb::range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Range of the bomb explosion. </p>
+
+</div>
+</div>
+<a id="a935358e8eb804f295b7037a31c6fe299" name="a935358e8eb804f295b7037a31c6fe299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935358e8eb804f295b7037a31c6fe299">&#9670;&#160;</a></span>timeUntilExplosion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Bomb::timeUntilExplosion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time until the bomb explodes. </p>
+
+</div>
+</div>
+<a id="a7eff7a9554a5c1a7eeb27daa7d0f9b85" name="a7eff7a9554a5c1a7eeb27daa7d0f9b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff7a9554a5c1a7eeb27daa7d0f9b85">&#9670;&#160;</a></span>timeUntilNextXpm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Bomb::timeUntilNextXpm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time until the next bomb sprite. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>proj/src/models/<a class="el" href="models_8h_source.html">models.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="struct_bomb.html">Bomb</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

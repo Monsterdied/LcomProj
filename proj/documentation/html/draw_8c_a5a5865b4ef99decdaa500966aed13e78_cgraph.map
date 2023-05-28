@@ -1,0 +1,5 @@
+<map id="drawBricks" name="drawBricks">
+<area shape="rect" id="node1" title="Draw the bricks on the screen." alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node2" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="139,5,247,32"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="295,5,377,32"/>
+</map>

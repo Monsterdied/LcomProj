@@ -1,16 +1,34 @@
-\hypertarget{models_8h}{}\doxysection{models/models.h File Reference}
-\label{models_8h}\index{models/models.h@{models/models.h}}
+\hypertarget{models_8h}{}\doxysection{proj/src/models/models.h File Reference}
+\label{models_8h}\index{proj/src/models/models.h@{proj/src/models/models.h}}
 
 
 Contains the data structures used in the Bomberman game.  
 
 
+{\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}devices/video\+\_\+gr.\+h\char`\"{}}\newline
-\doxysubsection*{Data Structures}
+Include dependency graph for models.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{models_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{models_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_position}{Position}}
 \begin{DoxyCompactList}\small\item\em Represents a position in the game arena. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_coin}{Coin}}
+\begin{DoxyCompactList}\small\item\em Represents a coin in the game. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_explosion}{Explosion}}
 \begin{DoxyCompactList}\small\item\em Represents an explosion in the game. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_bomb}{Bomb}}
@@ -25,20 +43,23 @@ struct \mbox{\hyperlink{struct_brick}{Brick}}
 \begin{DoxyCompactList}\small\item\em Represents a brick in the game arena. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_power_up}{Power\+Up}}
 \begin{DoxyCompactList}\small\item\em Represents a power-\/up in the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_leader_board_score}{Leader\+Board\+Score}}
+\begin{DoxyCompactList}\small\item\em Represents a score in the leaderboard. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}
-\begin{DoxyCompactList}\small\item\em Represents the game arena model. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Represents the model of an arena in a game. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_menu_model}{Menu\+Model}}
 \begin{DoxyCompactList}\small\item\em Represents the menu model. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
 enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \{ \newline
-\mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}{SELECTNAMES}}
+\mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a50b3b7506fcc5435fc762f98a09a6eac}{TIE}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}{SELECTNAMES}}
 , \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}
 , \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}}
-, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}{GAMEOVER}}
 , \newline
-\mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}}
+\mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}{GAMEOVER}}
+, \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}}
 , \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a6d1730675333f946c03d53040cd30bc4}{PLAYER1\+WON}}
 , \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a1a014e6e80b0b124d9b3ea16f74537ea}{PLAYER2\+WON}}
  \}
@@ -149,6 +170,10 @@ CENTERFLAME&Flame at the center. \\
 Enumerates the possible game states. 
 
 \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIE@{TIE}!models.h@{models.h}}\index{models.h@{models.h}!TIE@{TIE}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a50b3b7506fcc5435fc762f98a09a6eac}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a50b3b7506fcc5435fc762f98a09a6eac}} 
+TIE&State indicating a tie. \\
+\hline
+
 \raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTNAMES@{SELECTNAMES}!models.h@{models.h}}\index{models.h@{models.h}!SELECTNAMES@{SELECTNAMES}}}\mbox{\Hypertarget{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}\label{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}} 
 SELECTNAMES&State for selecting player names. \\
 \hline

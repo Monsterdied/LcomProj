@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: draw/draw.h Source File</title>
+<title>Bomberman: proj/src/draw/draw.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('draw_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,6 +69,11 @@ $(document).ready(function(){initNavTree('draw_8h_source.html',''); initResizabl
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c166a637ad9f8f09f1307a666349b968.html">proj</a></li><li class="navelem"><a class="el" href="dir_f3942b4d25ca219b12d62aa4c150da0d.html">src</a></li><li class="navelem"><a class="el" href="dir_46d376bdebada22ddf1f1c31e4c60b94.html">draw</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">draw.h</div></div>
 </div><!--header-->
@@ -190,60 +174,92 @@ $(document).ready(function(){initNavTree('draw_8h_source.html',''); initResizabl
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#include &quot;models/font/font.xpm&quot;</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>int (<a class="code hl_function" href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">load_xpms</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a>* model);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//coinss</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#include &quot;models/coin/coin1.xpm&quot;</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#include &quot;models/coin/coin2.xpm&quot;</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#include &quot;models/coin/coin3.xpm&quot;</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#include &quot;models/coin/coin4.xpm&quot;</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#include &quot;models/coin/coin5.xpm&quot;</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#include &quot;models/weather/sun.xpm&quot;</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#include &quot;models/weather/moon.xpm&quot;</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>void (<a class="code hl_function" href="draw_8h.html#a81d3c5fc23030efc09b40adf6c36ea89">draw_game</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model, <a class="code hl_struct" href="struct_mouse.html">Mouse</a> mouse);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">//background</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#include &quot;models/background/grass.xpm&quot;</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#include &quot;models/background/grassnight.xpm&quot;</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#include &quot;models/background/message_background.xpm&quot;</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keywordtype">char</span>** (<a class="code hl_function" href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">getemptyArena</a>)();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>void (<a class="code hl_function" href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">drawPlayers</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>void (<a class="code hl_function" href="draw_8h.html#aa8393013ab037235f46c85781f702b66">drawBombs</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>void (<a class="code hl_function" href="draw_8h.html#a58fdfa08fcdcb18641e8ea9327d6884b">drawPowerUps</a>)(<span class="keywordtype">char</span>** arena, <span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>int (<a class="code hl_function" href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">load_xpms</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a>* <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>void (<a class="code hl_function" href="draw_8h.html#aeb1fc85395bc4b7fb4eacefe84609837">draw_game</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>,<a class="code hl_struct" href="struct_mouse.html">Mouse</a> <a class="code hl_variable" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>,<a class="code hl_struct" href="structtime__display.html">time_display</a> <a class="code hl_variable" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">  157</a></span><span class="keywordtype">char</span>** (<a class="code hl_function" href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">getemptyArena</a>)();</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>void (<a class="code hl_function" href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">drawBricks</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>void (<a class="code hl_function" href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">drawPlayers</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>);</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>void (<a class="code hl_function" href="draw_8h.html#aa5411dccade6329de024fa2782476d69">drawWalls</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>void (<a class="code hl_function" href="draw_8h.html#aa8393013ab037235f46c85781f702b66">drawBombs</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>);</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>void (<a class="code hl_function" href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">draw_menu</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_menu_model.html">MenuModel</a> model, <a class="code hl_struct" href="struct_mouse.html">Mouse</a> mouse, <a class="code hl_struct" href="structtime__display.html">time_display</a> <a class="code hl_variable" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>);</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>void (<a class="code hl_function" href="draw_8h.html#a5eca413a86c3effd38130e380a177693">draw_TimeNumbers</a>)(<a class="code hl_struct" href="structtime__display.html">time_display</a> <a class="code hl_variable" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>void (<a class="code hl_function" href="draw_8h.html#a1a3153ce4cdb58b63a8b41728c23db67">draw_string</a>)(<span class="keywordtype">char</span>* text, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> size, uint32_t color);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>void (<a class="code hl_function" href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">draw_select_names</a>)(<span class="keywordtype">int</span> player_number, <span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> model, <a class="code hl_struct" href="struct_mouse.html">Mouse</a> mouse);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">#endif </span><span class="comment">// UNTITLED10_DRAW_H</span></div>
-<div class="ttc" id="adraw_8h_html_a03d92d2b4bd54a502562b869ad1b6b52"><div class="ttname"><a href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">drawPlayers</a></div><div class="ttdeci">void() drawPlayers(struct ArenaModel model)</div><div class="ttdoc">Draw the players on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:227</div></div>
-<div class="ttc" id="adraw_8h_html_a1a3153ce4cdb58b63a8b41728c23db67"><div class="ttname"><a href="draw_8h.html#a1a3153ce4cdb58b63a8b41728c23db67">draw_string</a></div><div class="ttdeci">void() draw_string(char *text, int x, int y, int size, uint32_t color)</div><div class="ttdoc">Draw a string.</div><div class="ttdef"><b>Definition:</b> draw.c:221</div></div>
-<div class="ttc" id="adraw_8h_html_a4ee5f4de5222a6bec9ccded4d7464c3c"><div class="ttname"><a href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">draw_menu</a></div><div class="ttdeci">void() draw_menu(struct MenuModel model, Mouse mouse, time_display time_info)</div><div class="ttdoc">Draw the menu.</div><div class="ttdef"><b>Definition:</b> draw.c:319</div></div>
-<div class="ttc" id="adraw_8h_html_a5879bf4f041654dfe02e6912770b74e1"><div class="ttname"><a href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">load_xpms</a></div><div class="ttdeci">int() load_xpms(struct ArenaModel *model)</div><div class="ttdoc">Load XPM images.</div><div class="ttdef"><b>Definition:</b> draw.c:36</div></div>
-<div class="ttc" id="adraw_8h_html_a58fdfa08fcdcb18641e8ea9327d6884b"><div class="ttname"><a href="draw_8h.html#a58fdfa08fcdcb18641e8ea9327d6884b">drawPowerUps</a></div><div class="ttdeci">void() drawPowerUps(char **arena, struct ArenaModel model)</div><div class="ttdoc">Draw the power-ups on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:169</div></div>
-<div class="ttc" id="adraw_8h_html_a5a5865b4ef99decdaa500966aed13e78"><div class="ttname"><a href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">drawBricks</a></div><div class="ttdeci">void() drawBricks(struct ArenaModel model)</div><div class="ttdoc">Draw the bricks on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:163</div></div>
-<div class="ttc" id="adraw_8h_html_a5eca413a86c3effd38130e380a177693"><div class="ttname"><a href="draw_8h.html#a5eca413a86c3effd38130e380a177693">draw_TimeNumbers</a></div><div class="ttdeci">void() draw_TimeNumbers(time_display time_info)</div><div class="ttdoc">Draw the time numbers.</div><div class="ttdef"><b>Definition:</b> draw.c:297</div></div>
-<div class="ttc" id="adraw_8h_html_a81d3c5fc23030efc09b40adf6c36ea89"><div class="ttname"><a href="draw_8h.html#a81d3c5fc23030efc09b40adf6c36ea89">draw_game</a></div><div class="ttdeci">void() draw_game(struct ArenaModel model, Mouse mouse)</div><div class="ttdoc">Draw the game.</div><div class="ttdef"><b>Definition:</b> draw.c:341</div></div>
-<div class="ttc" id="adraw_8h_html_a85c8facd48cf928fdd3736aeaa1f6c2a"><div class="ttname"><a href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">draw_select_names</a></div><div class="ttdeci">void() draw_select_names(int player_number, struct ArenaModel model, Mouse mouse)</div><div class="ttdoc">Draw the select names.</div><div class="ttdef"><b>Definition:</b> draw.c:310</div></div>
-<div class="ttc" id="adraw_8h_html_aa5411dccade6329de024fa2782476d69"><div class="ttname"><a href="draw_8h.html#aa5411dccade6329de024fa2782476d69">drawWalls</a></div><div class="ttdeci">void() drawWalls(struct ArenaModel model)</div><div class="ttdoc">Draw the walls on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:157</div></div>
-<div class="ttc" id="adraw_8h_html_aa8393013ab037235f46c85781f702b66"><div class="ttname"><a href="draw_8h.html#aa8393013ab037235f46c85781f702b66">drawBombs</a></div><div class="ttdeci">void() drawBombs(struct ArenaModel model)</div><div class="ttdoc">Draw the bombs on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:174</div></div>
-<div class="ttc" id="adraw_8h_html_ae23186dd72a3da5be056911ec2446752"><div class="ttname"><a href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">getemptyArena</a></div><div class="ttdeci">char **() getemptyArena()</div><div class="ttdoc">Get an empty arena.</div><div class="ttdef"><b>Definition:</b> draw.c:254</div></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>void (<a class="code hl_function" href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">drawBricks</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>void (<a class="code hl_function" href="draw_8h.html#aa5411dccade6329de024fa2782476d69">drawWalls</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>void (<a class="code hl_function" href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">draw_menu</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_menu_model.html">MenuModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, <a class="code hl_struct" href="struct_mouse.html">Mouse</a> <a class="code hl_variable" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>, <a class="code hl_struct" href="structtime__display.html">time_display</a> <a class="code hl_variable" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>void (<a class="code hl_function" href="draw_8h.html#a5eca413a86c3effd38130e380a177693">draw_TimeNumbers</a>)(<a class="code hl_struct" href="structtime__display.html">time_display</a> <a class="code hl_variable" href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a>);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>void (<a class="code hl_function" href="draw_8h.html#a68ac815675704205525d468115556f79">draw_players_info</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>void (<a class="code hl_function" href="draw_8h.html#acfa174ac4a88e944facf39da6888c0db">draw_Game_over_report</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, enum <a class="code hl_enumeration" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> state);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>void (<a class="code hl_function" href="draw_8h.html#a4bd80903d8139b9daedef6a7770a4998">draw_message</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, enum <a class="code hl_enumeration" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> state,<a class="code hl_struct" href="struct_mouse.html">Mouse</a> <a class="code hl_variable" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>,bool <a class="code hl_variable" href="message_8c.html#a219cb815fdea729196b50fa65de3de0f">is_selected</a>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>void (<a class="code hl_function" href="draw_8h.html#a1a3153ce4cdb58b63a8b41728c23db67">draw_string</a>)(<span class="keywordtype">char</span>* text, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> size, uint32_t color);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>void (<a class="code hl_function" href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">draw_select_names</a>)(<span class="keywordtype">int</span> player_number, <span class="keyword">struct </span><a class="code hl_struct" href="struct_arena_model.html">ArenaModel</a> <a class="code hl_variable" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>, <a class="code hl_struct" href="struct_mouse.html">Mouse</a> <a class="code hl_variable" href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a>);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">#endif </span><span class="comment">//UNTITLED10_DRAW_H</span></div>
+<div class="ttc" id="a_game_8c_html_a07faa847230d0abd8c3db00e3f8cae7a"><div class="ttname"><a href="_game_8c.html#a07faa847230d0abd8c3db00e3f8cae7a">mouse</a></div><div class="ttdeci">Mouse mouse</div><div class="ttdef"><b>Definition:</b> Menu.c:22</div></div>
+<div class="ttc" id="a_menu_8c_html_a7768a4216cb12ddff21aca6cb168f4d6"><div class="ttname"><a href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a></div><div class="ttdeci">struct MenuModel model</div><div class="ttdef"><b>Definition:</b> Menu.c:23</div></div>
+<div class="ttc" id="adraw_8h_html_a03d92d2b4bd54a502562b869ad1b6b52"><div class="ttname"><a href="draw_8h.html#a03d92d2b4bd54a502562b869ad1b6b52">drawPlayers</a></div><div class="ttdeci">void() drawPlayers(struct ArenaModel model)</div><div class="ttdoc">Draw the players on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:243</div></div>
+<div class="ttc" id="adraw_8h_html_a1a3153ce4cdb58b63a8b41728c23db67"><div class="ttname"><a href="draw_8h.html#a1a3153ce4cdb58b63a8b41728c23db67">draw_string</a></div><div class="ttdeci">void() draw_string(char *text, int x, int y, int size, uint32_t color)</div><div class="ttdoc">Draw a string.</div><div class="ttdef"><b>Definition:</b> draw.c:235</div></div>
+<div class="ttc" id="adraw_8h_html_a4bd80903d8139b9daedef6a7770a4998"><div class="ttname"><a href="draw_8h.html#a4bd80903d8139b9daedef6a7770a4998">draw_message</a></div><div class="ttdeci">void() draw_message(struct ArenaModel model, enum GameState state, Mouse mouse, bool is_selected)</div><div class="ttdoc">Draws the game over display.</div><div class="ttdef"><b>Definition:</b> draw.c:442</div></div>
+<div class="ttc" id="adraw_8h_html_a4ee5f4de5222a6bec9ccded4d7464c3c"><div class="ttname"><a href="draw_8h.html#a4ee5f4de5222a6bec9ccded4d7464c3c">draw_menu</a></div><div class="ttdeci">void() draw_menu(struct MenuModel model, Mouse mouse, time_display time_info)</div><div class="ttdoc">Draw the menu.</div><div class="ttdef"><b>Definition:</b> draw.c:354</div></div>
+<div class="ttc" id="adraw_8h_html_a5879bf4f041654dfe02e6912770b74e1"><div class="ttname"><a href="draw_8h.html#a5879bf4f041654dfe02e6912770b74e1">load_xpms</a></div><div class="ttdeci">int() load_xpms(struct ArenaModel *model)</div><div class="ttdoc">Load XPM images.</div><div class="ttdef"><b>Definition:</b> draw.c:40</div></div>
+<div class="ttc" id="adraw_8h_html_a5a5865b4ef99decdaa500966aed13e78"><div class="ttname"><a href="draw_8h.html#a5a5865b4ef99decdaa500966aed13e78">drawBricks</a></div><div class="ttdeci">void() drawBricks(struct ArenaModel model)</div><div class="ttdoc">Draw the bricks on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:181</div></div>
+<div class="ttc" id="adraw_8h_html_a5eca413a86c3effd38130e380a177693"><div class="ttname"><a href="draw_8h.html#a5eca413a86c3effd38130e380a177693">draw_TimeNumbers</a></div><div class="ttdeci">void() draw_TimeNumbers(time_display time_info)</div><div class="ttdoc">Draw the time numbers.</div><div class="ttdef"><b>Definition:</b> draw.c:318</div></div>
+<div class="ttc" id="adraw_8h_html_a68ac815675704205525d468115556f79"><div class="ttname"><a href="draw_8h.html#a68ac815675704205525d468115556f79">draw_players_info</a></div><div class="ttdeci">void() draw_players_info(struct ArenaModel model)</div><div class="ttdoc">Draws the players' information on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:412</div></div>
+<div class="ttc" id="adraw_8h_html_a85c8facd48cf928fdd3736aeaa1f6c2a"><div class="ttname"><a href="draw_8h.html#a85c8facd48cf928fdd3736aeaa1f6c2a">draw_select_names</a></div><div class="ttdeci">void() draw_select_names(int player_number, struct ArenaModel model, Mouse mouse)</div><div class="ttdoc">Draw the select names.</div><div class="ttdef"><b>Definition:</b> draw.c:344</div></div>
+<div class="ttc" id="adraw_8h_html_aa5411dccade6329de024fa2782476d69"><div class="ttname"><a href="draw_8h.html#aa5411dccade6329de024fa2782476d69">drawWalls</a></div><div class="ttdeci">void() drawWalls(struct ArenaModel model)</div><div class="ttdoc">Draw the walls on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:175</div></div>
+<div class="ttc" id="adraw_8h_html_aa8393013ab037235f46c85781f702b66"><div class="ttname"><a href="draw_8h.html#aa8393013ab037235f46c85781f702b66">drawBombs</a></div><div class="ttdeci">void() drawBombs(struct ArenaModel model)</div><div class="ttdoc">Draw the bombs on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:188</div></div>
+<div class="ttc" id="adraw_8h_html_acfa174ac4a88e944facf39da6888c0db"><div class="ttname"><a href="draw_8h.html#acfa174ac4a88e944facf39da6888c0db">draw_Game_over_report</a></div><div class="ttdeci">void() draw_Game_over_report(struct ArenaModel model, enum GameState state)</div><div class="ttdoc">Draws the game over report on the screen.</div><div class="ttdef"><b>Definition:</b> draw.c:428</div></div>
+<div class="ttc" id="adraw_8h_html_ae23186dd72a3da5be056911ec2446752"><div class="ttname"><a href="draw_8h.html#ae23186dd72a3da5be056911ec2446752">getemptyArena</a></div><div class="ttdeci">char **() getemptyArena()</div><div class="ttdoc">Get an empty arena.</div></div>
+<div class="ttc" id="adraw_8h_html_aeb1fc85395bc4b7fb4eacefe84609837"><div class="ttname"><a href="draw_8h.html#aeb1fc85395bc4b7fb4eacefe84609837">draw_game</a></div><div class="ttdeci">void() draw_game(struct ArenaModel model, Mouse mouse, time_display time_info)</div><div class="ttdoc">Draw the game.</div><div class="ttdef"><b>Definition:</b> draw.c:389</div></div>
+<div class="ttc" id="amessage_8c_html_a219cb815fdea729196b50fa65de3de0f"><div class="ttname"><a href="message_8c.html#a219cb815fdea729196b50fa65de3de0f">is_selected</a></div><div class="ttdeci">bool is_selected</div><div class="ttdef"><b>Definition:</b> message.c:30</div></div>
 <div class="ttc" id="amodels_8h_html"><div class="ttname"><a href="models_8h.html">models.h</a></div><div class="ttdoc">Contains the data structures used in the Bomberman game.</div></div>
+<div class="ttc" id="amodels_8h_html_a7899b65f1ea0f655e4bbf8d2a5714285"><div class="ttname"><a href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a></div><div class="ttdeci">GameState</div><div class="ttdoc">Enumerates the possible game states.</div><div class="ttdef"><b>Definition:</b> models.h:16</div></div>
 <div class="ttc" id="amouse_8h_html"><div class="ttname"><a href="mouse_8h.html">mouse.h</a></div><div class="ttdoc">Mouse functions.</div></div>
 <div class="ttc" id="artc_8h_html"><div class="ttname"><a href="rtc_8h.html">rtc.h</a></div><div class="ttdoc">Real-Time Clock (RTC) functions.</div></div>
 <div class="ttc" id="artc_8h_html_aa3f6a6defa5127eb02d3295072f600e8"><div class="ttname"><a href="rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8">time_info</a></div><div class="ttdeci">time_display time_info</div><div class="ttdef"><b>Definition:</b> rtc.h:58</div></div>
-<div class="ttc" id="astruct_arena_model_html"><div class="ttname"><a href="struct_arena_model.html">ArenaModel</a></div><div class="ttdoc">Represents the game arena model.</div><div class="ttdef"><b>Definition:</b> models.h:152</div></div>
-<div class="ttc" id="astruct_menu_model_html"><div class="ttname"><a href="struct_menu_model.html">MenuModel</a></div><div class="ttdoc">Represents the menu model.</div><div class="ttdef"><b>Definition:</b> models.h:171</div></div>
+<div class="ttc" id="astruct_arena_model_html"><div class="ttname"><a href="struct_arena_model.html">ArenaModel</a></div><div class="ttdoc">Represents the model of an arena in a game.</div><div class="ttdef"><b>Definition:</b> models.h:171</div></div>
+<div class="ttc" id="astruct_menu_model_html"><div class="ttname"><a href="struct_menu_model.html">MenuModel</a></div><div class="ttdoc">Represents the menu model.</div><div class="ttdef"><b>Definition:</b> models.h:194</div></div>
 <div class="ttc" id="astruct_mouse_html"><div class="ttname"><a href="struct_mouse.html">Mouse</a></div><div class="ttdoc">Mouse structure.</div><div class="ttdef"><b>Definition:</b> mouse.h:16</div></div>
 <div class="ttc" id="astructtime__display_html"><div class="ttname"><a href="structtime__display.html">time_display</a></div><div class="ttdef"><b>Definition:</b> rtc.h:47</div></div>
 <div class="ttc" id="avideo__gr_8h_html"><div class="ttname"><a href="video__gr_8h.html">video_gr.h</a></div><div class="ttdoc">Video Graphics functions.</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_cb5a0ac72d77ba033af5f566c8c820c6.html">draw</a></li><li class="navelem"><a class="el" href="draw_8h.html">draw.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

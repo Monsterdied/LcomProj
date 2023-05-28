@@ -9,32 +9,98 @@ Represents a bomb in the game.
 
 {\ttfamily \#include $<$models.\+h$>$}
 
-\doxysubsection*{Data Fields}
+
+
+Collaboration diagram for Bomb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{struct_bomb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct_bomb_a933567351995a2f641e26be377c07fdc}\label{struct_bomb_a933567351995a2f641e26be377c07fdc}} 
-struct \mbox{\hyperlink{struct_position}{Position}} {\bfseries position}
+struct \mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_bomb_a63522e03c5fa80f4c973ac99e8a7fd38}{position}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_position}{Position}} of the bomb. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_bomb_a958f520b9341fc68415a7116928882c4}\label{struct_bomb_a958f520b9341fc68415a7116928882c4}} 
-double {\bfseries time\+Until\+Explosion}
+double \mbox{\hyperlink{struct_bomb_a935358e8eb804f295b7037a31c6fe299}{time\+Until\+Explosion}}
 \begin{DoxyCompactList}\small\item\em Time until the bomb explodes. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_bomb_a0edc097ad2d6df8c7a7aefce120e8314}\label{struct_bomb_a0edc097ad2d6df8c7a7aefce120e8314}} 
-double {\bfseries time\+Until\+Next\+Xpm}
+double \mbox{\hyperlink{struct_bomb_a7eff7a9554a5c1a7eeb27daa7d0f9b85}{time\+Until\+Next\+Xpm}}
 \begin{DoxyCompactList}\small\item\em Time until the next bomb sprite. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_bomb_a3c9ca3b9f5fd8f3237819d51c3876aee}\label{struct_bomb_a3c9ca3b9f5fd8f3237819d51c3876aee}} 
-int {\bfseries current\+Xpm}
+int \mbox{\hyperlink{struct_bomb_a24d6533485a03aefb35f2ef18c3e37b2}{current\+Xpm}}
 \begin{DoxyCompactList}\small\item\em Current bomb sprite index. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_bomb_a037e8e370380046bec287bdc96942091}\label{struct_bomb_a037e8e370380046bec287bdc96942091}} 
-int {\bfseries range}
+int \mbox{\hyperlink{struct_bomb_ad4ad3ba56316287fe3b8b0d9b2ac24c8}{range}}
 \begin{DoxyCompactList}\small\item\em Range of the bomb explosion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_bomb_aa695a8c4a65e8e7c5b752e3e846a44a9}\label{struct_bomb_aa695a8c4a65e8e7c5b752e3e846a44a9}} 
-int {\bfseries owner}
+int \mbox{\hyperlink{struct_bomb_aa750b17addae4fddb122477e9b65638c}{owner}}
 \begin{DoxyCompactList}\small\item\em ID of the player who placed the bomb. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents a bomb in the game. 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_bomb_a24d6533485a03aefb35f2ef18c3e37b2}\label{struct_bomb_a24d6533485a03aefb35f2ef18c3e37b2}} 
+\index{Bomb@{Bomb}!currentXpm@{currentXpm}}
+\index{currentXpm@{currentXpm}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{currentXpm}{currentXpm}}
+{\footnotesize\ttfamily int Bomb\+::current\+Xpm}
+
+
+
+Current bomb sprite index. 
+
+\mbox{\Hypertarget{struct_bomb_aa750b17addae4fddb122477e9b65638c}\label{struct_bomb_aa750b17addae4fddb122477e9b65638c}} 
+\index{Bomb@{Bomb}!owner@{owner}}
+\index{owner@{owner}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{owner}{owner}}
+{\footnotesize\ttfamily int Bomb\+::owner}
+
+
+
+ID of the player who placed the bomb. 
+
+\mbox{\Hypertarget{struct_bomb_a63522e03c5fa80f4c973ac99e8a7fd38}\label{struct_bomb_a63522e03c5fa80f4c973ac99e8a7fd38}} 
+\index{Bomb@{Bomb}!position@{position}}
+\index{position@{position}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_position}{Position}} Bomb\+::position}
+
+
+
+\mbox{\hyperlink{struct_position}{Position}} of the bomb. 
+
+\mbox{\Hypertarget{struct_bomb_ad4ad3ba56316287fe3b8b0d9b2ac24c8}\label{struct_bomb_ad4ad3ba56316287fe3b8b0d9b2ac24c8}} 
+\index{Bomb@{Bomb}!range@{range}}
+\index{range@{range}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily int Bomb\+::range}
+
+
+
+Range of the bomb explosion. 
+
+\mbox{\Hypertarget{struct_bomb_a935358e8eb804f295b7037a31c6fe299}\label{struct_bomb_a935358e8eb804f295b7037a31c6fe299}} 
+\index{Bomb@{Bomb}!timeUntilExplosion@{timeUntilExplosion}}
+\index{timeUntilExplosion@{timeUntilExplosion}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{timeUntilExplosion}{timeUntilExplosion}}
+{\footnotesize\ttfamily double Bomb\+::time\+Until\+Explosion}
+
+
+
+Time until the bomb explodes. 
+
+\mbox{\Hypertarget{struct_bomb_a7eff7a9554a5c1a7eeb27daa7d0f9b85}\label{struct_bomb_a7eff7a9554a5c1a7eeb27daa7d0f9b85}} 
+\index{Bomb@{Bomb}!timeUntilNextXpm@{timeUntilNextXpm}}
+\index{timeUntilNextXpm@{timeUntilNextXpm}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{timeUntilNextXpm}{timeUntilNextXpm}}
+{\footnotesize\ttfamily double Bomb\+::time\+Until\+Next\+Xpm}
+
+
+
+Time until the next bomb sprite. 
+
+
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}
+proj/src/models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}

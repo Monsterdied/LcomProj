@@ -1,0 +1,6 @@
+<map id="draw_leader_board" name="draw_leader_board">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="183,5,270,32"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="318,5,448,32"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="496,5,579,32"/>
+</map>

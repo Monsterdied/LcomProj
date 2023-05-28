@@ -1,11 +1,28 @@
-\hypertarget{_controller_8h}{}\doxysection{Game/game\+Controllers/\+Controller.h File Reference}
-\label{_controller_8h}\index{Game/gameControllers/Controller.h@{Game/gameControllers/Controller.h}}
+\hypertarget{_controller_8h}{}\doxysection{proj/src/\+Game/game\+Controllers/\+Controller.h File Reference}
+\label{_controller_8h}\index{proj/src/Game/gameControllers/Controller.h@{proj/src/Game/gameControllers/Controller.h}}
 
 
 Controller functions.  
 
 
 {\ttfamily \#include \char`\"{}devices/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
+Include dependency graph for Controller.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,12 +40,16 @@ bool() \mbox{\hyperlink{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf}{Player
 \begin{DoxyCompactList}\small\item\em Check if player can walk down. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{_controller_8h_a90798832baf6ec80bd0efbf375259f88}{Player\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}} controllers. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{_controller_8h_a39073380f9ee7c6a222761b4603a479a}{Players\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$model)
+void() \mbox{\hyperlink{_controller_8h_a39073380f9ee7c6a222761b4603a479a}{Players\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Players sprite controllers. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{_controller_8h_a41a97cc1726fef82901651228dae14ae}{Bombs\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
 \begin{DoxyCompactList}\small\item\em Bombs sprite controllers. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}{Explosions\+Controller}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
 \begin{DoxyCompactList}\small\item\em Explosions controller. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8h_a740d8a0dbf4c167398145b289caf4971}{Coin\+Controller}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_coin}{Coin}} controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_controller_8h_a02a101562eaf2bcf293e6e5d613b464d}{add\+Player\+To\+Leaderboard1}} (struct \mbox{\hyperlink{struct_player}{Player}} player, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arenamodel, \mbox{\hyperlink{structtime__display}{time\+\_\+display}} time)
+\begin{DoxyCompactList}\small\item\em Adds a player to the leaderboard. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{_controller_8h_a182e89a492060d6b194963e938a9c74b}{Players\+Are\+Alive}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em Check if players are alive. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -39,6 +60,35 @@ Controller functions.
 This file contains functions related to controlling player actions and game elements. 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_controller_8h_a02a101562eaf2bcf293e6e5d613b464d}\label{_controller_8h_a02a101562eaf2bcf293e6e5d613b464d}} 
+\index{Controller.h@{Controller.h}!addPlayerToLeaderboard1@{addPlayerToLeaderboard1}}
+\index{addPlayerToLeaderboard1@{addPlayerToLeaderboard1}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{addPlayerToLeaderboard1()}{addPlayerToLeaderboard1()}}
+{\footnotesize\ttfamily void add\+Player\+To\+Leaderboard1 (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_player}{Player}}}]{player,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arenamodel,  }\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time }\end{DoxyParamCaption})}
+
+
+
+Adds a player to the leaderboard. 
+
+This function adds a player to the leaderboard in the specified arena model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player to be added to the leaderboard. \\
+\hline
+{\em arenamodel} & A pointer to the arena model where the player will be added. \\
+\hline
+{\em time} & The time display indicating the current time. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_controller_8h_a02a101562eaf2bcf293e6e5d613b464d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a41a97cc1726fef82901651228dae14ae}\label{_controller_8h_a41a97cc1726fef82901651228dae14ae}} 
 \index{Controller.h@{Controller.h}!BombsSpriteControllers@{BombsSpriteControllers}}
 \index{BombsSpriteControllers@{BombsSpriteControllers}!Controller.h@{Controller.h}}
@@ -56,6 +106,47 @@ Controls the actions of the bombs\textquotesingle{} sprites in the \mbox{\hyperl
 {\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a41a97cc1726fef82901651228dae14ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a41a97cc1726fef82901651228dae14ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8h_a740d8a0dbf4c167398145b289caf4971}\label{_controller_8h_a740d8a0dbf4c167398145b289caf4971}} 
+\index{Controller.h@{Controller.h}!CoinController@{CoinController}}
+\index{CoinController@{CoinController}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{CoinController()}{CoinController()}}
+{\footnotesize\ttfamily void() Coin\+Controller (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_coin}{Coin}} controller. 
+
+it check if it should be missng or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a740d8a0dbf4c167398145b289caf4971_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}\label{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}} 
 \index{Controller.h@{Controller.h}!ExplosionsController@{ExplosionsController}}
 \index{ExplosionsController@{ExplosionsController}!Controller.h@{Controller.h}}
@@ -73,6 +164,14 @@ Controls the actions of the explosions in the \mbox{\hyperlink{struct_arena_mode
 {\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf}\label{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf}} 
 \index{Controller.h@{Controller.h}!PlayerCanWalkDown@{PlayerCanWalkDown}}
 \index{PlayerCanWalkDown@{PlayerCanWalkDown}!Controller.h@{Controller.h}}
@@ -95,6 +194,22 @@ Checks if the player with the specified player number can walk down in the \mbox
 \begin{DoxyReturn}{Returns}
 True if the player can walk down, false otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0}\label{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0}} 
 \index{Controller.h@{Controller.h}!PlayerCanWalkLeft@{PlayerCanWalkLeft}}
 \index{PlayerCanWalkLeft@{PlayerCanWalkLeft}!Controller.h@{Controller.h}}
@@ -117,6 +232,22 @@ Checks if the player with the specified player number can walk to the left in th
 \begin{DoxyReturn}{Returns}
 True if the player can walk left, false otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e}\label{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e}} 
 \index{Controller.h@{Controller.h}!PlayerCanWalkRight@{PlayerCanWalkRight}}
 \index{PlayerCanWalkRight@{PlayerCanWalkRight}!Controller.h@{Controller.h}}
@@ -139,6 +270,22 @@ Checks if the player with the specified player number can walk to the right in t
 \begin{DoxyReturn}{Returns}
 True if the player can walk right, false otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a457f5f242e06deb82b8743bf081a2c41}\label{_controller_8h_a457f5f242e06deb82b8743bf081a2c41}} 
 \index{Controller.h@{Controller.h}!PlayerCanWalkTo@{PlayerCanWalkTo}}
 \index{PlayerCanWalkTo@{PlayerCanWalkTo}!Controller.h@{Controller.h}}
@@ -163,6 +310,14 @@ Checks if the player with the specified player number can walk to the given posi
 \begin{DoxyReturn}{Returns}
 True if the player can walk to the position, false otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a457f5f242e06deb82b8743bf081a2c41_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a76ec3aed984bf4fde38d1223281ba0c8}\label{_controller_8h_a76ec3aed984bf4fde38d1223281ba0c8}} 
 \index{Controller.h@{Controller.h}!PlayerCanWalkTop@{PlayerCanWalkTop}}
 \index{PlayerCanWalkTop@{PlayerCanWalkTop}!Controller.h@{Controller.h}}
@@ -221,6 +376,22 @@ Controls the actions of all players in the \mbox{\hyperlink{struct_arena_model}{
 {\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{_controller_8h_a90798832baf6ec80bd0efbf375259f88_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a90798832baf6ec80bd0efbf375259f88_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a182e89a492060d6b194963e938a9c74b}\label{_controller_8h_a182e89a492060d6b194963e938a9c74b}} 
 \index{Controller.h@{Controller.h}!PlayersAreAlive@{PlayersAreAlive}}
 \index{PlayersAreAlive@{PlayersAreAlive}!Controller.h@{Controller.h}}
@@ -243,6 +414,14 @@ Checks if any players are alive in the \mbox{\hyperlink{struct_arena_model}{Aren
 \begin{DoxyReturn}{Returns}
 The number of players alive 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a182e89a492060d6b194963e938a9c74b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_controller_8h_a39073380f9ee7c6a222761b4603a479a}\label{_controller_8h_a39073380f9ee7c6a222761b4603a479a}} 
 \index{Controller.h@{Controller.h}!PlayersSpriteControllers@{PlayersSpriteControllers}}
 \index{PlayersSpriteControllers@{PlayersSpriteControllers}!Controller.h@{Controller.h}}
@@ -260,3 +439,19 @@ Controls the actions of the players\textquotesingle{} sprites in the \mbox{\hype
 {\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a39073380f9ee7c6a222761b4603a479a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8h_a39073380f9ee7c6a222761b4603a479a_icgraph}
+\end{center}
+\end{figure}

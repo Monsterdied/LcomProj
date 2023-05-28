@@ -1,0 +1,8 @@
+<map id="movePlayer" name="movePlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,94,108"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#ab8f8c101ecadca33babbbd6d746a18bf" title="Check if player can walk down." alt="" coords="142,5,285,32"/>
+<area shape="rect" id="node4" href="$_controller_8c.html#ac78b28e02851e1b17f6ca5c48d6504a0" title="Check if player can walk left." alt="" coords="147,56,280,83"/>
+<area shape="rect" id="node5" href="$_controller_8c.html#a00e4f82c3c29a274edfdc1b00a9d0d6e" title="Check if player can walk right." alt="" coords="143,107,284,133"/>
+<area shape="rect" id="node6" href="$_controller_8c.html#a7be1c0c5752c429751eb183172207dad" title=" " alt="" coords="150,157,277,184"/>
+<area shape="rect" id="node3" href="$_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="333,81,458,108"/>
+</map>

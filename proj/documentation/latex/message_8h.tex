@@ -1,0 +1,69 @@
+\hypertarget{message_8h}{}\doxysection{proj/src/\+Game/message.h File Reference}
+\label{message_8h}\index{proj/src/Game/message.h@{proj/src/Game/message.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw/draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
+Include dependency graph for message.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{message_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{message_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{message_8h_a55b0c4a84af09b26bb4b8d3249d13358}{Message}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
+\begin{DoxyCompactList}\small\item\em Display End Game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{message_8h_a55b0c4a84af09b26bb4b8d3249d13358}\label{message_8h_a55b0c4a84af09b26bb4b8d3249d13358}} 
+\index{message.h@{message.h}!Message@{Message}}
+\index{Message@{Message}!message.h@{message.h}}
+\doxysubsubsection{\texorpdfstring{Message()}{Message()}}
+{\footnotesize\ttfamily void() Message (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Display End Game. 
+
+Show the winner of the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the game state \\
+\hline
+{\em model} & Pointer to the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} after the name selection 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{message_8h_a55b0c4a84af09b26bb4b8d3249d13358_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{message_8h_a55b0c4a84af09b26bb4b8d3249d13358_icgraph}
+\end{center}
+\end{figure}

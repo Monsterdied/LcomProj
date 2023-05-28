@@ -1,0 +1,6 @@
+<map id="kbc_Bomb" name="kbc_Bomb">
+<area shape="rect" id="node1" title=" " alt="" coords="434,5,518,32"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#a0364c78b9f8367ee86e75a109a914143" title="Player controllers." alt="" coords="266,5,386,32"/>
+<area shape="rect" id="node3" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>

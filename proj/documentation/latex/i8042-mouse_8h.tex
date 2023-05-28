@@ -1,0 +1,80 @@
+\hypertarget{i8042-mouse_8h}{}\doxysection{proj/src/devices/i8042-\/mouse.h File Reference}
+\label{i8042-mouse_8h}\index{proj/src/devices/i8042-\/mouse.h@{proj/src/devices/i8042-\/mouse.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for i8042-\/mouse.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{i8042-mouse_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gacfb42dde389e8ca36ab267002fbf5c6a}{OUT\+\_\+\+BUF}}~0x60
+\begin{DoxyCompactList}\small\item\em Output buffer port. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga1f7e79cfe81dc06414550fa52418941e}{STATUS\+\_\+\+REG}}~0x64
+\begin{DoxyCompactList}\small\item\em Status register port. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga6eca647466b6a624fa76401794bca51b}{MOUSE\+\_\+\+ARGS}}~0x60
+\begin{DoxyCompactList}\small\item\em Same as output buffer, but used for sending command arguments. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}{MOUSE\+\_\+\+CMD\+\_\+\+REG}}~0x64
+\begin{DoxyCompactList}\small\item\em Same as status register, but used for issuing commands. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gaf6996d12e71a534569c41a25de7d6d52}{PARITY}}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Bit mask to check for parity error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga799517031a8334a42807b119bb456c53}{TIME\+\_\+\+OUT}}~BIT(6)
+\begin{DoxyCompactList}\small\item\em Bit mask to check for timeout error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga1b41fd2be63532d4ab910f8b256c3811}{AUX}}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Bit mask, 1 if mouse data, 0 if keyboard data. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga3c48b10907056351582baf9f6478598e}{IBF}}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Bit mask to check if input buffer is full. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga45967c9e25447ba853cf6fb4ac545fe6}{OBF}}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Bit mask to check if output buffer is full. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gae06932f67e4c43252a517ba344489854}{DIS2}}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Bit set to 1 for disabling mouse in command byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gade622db4793c58ba79745531fa0405e9}{DIS1}}~BIT(4)
+\begin{DoxyCompactList}\small\item\em Bit set to 1 for disabling keyboard in command byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gab254a5a335276357f63779cda0b8e44f}{INT2}}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Bit set to 1 to enable OBF interrupts from mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gae4728496f2ab826d5fc6a63da6cb600b}{INT1}}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Bit set to 1 to enable OBF interrupts from keyboard. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga73d6572224ad0ac84a8587615cef947c}{FIRST\+\_\+\+BYTE}}~BIT(3)
+\begin{DoxyCompactList}\small\item\em Bit mask to check if receiving a packet\textquotesingle{}s first byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga3789391a769864fd2d3f40d035fd8a74}{MOUSE\+\_\+\+OK}}~0x\+FA
+\begin{DoxyCompactList}\small\item\em Signal that a mouse command had no issues. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gaef4a299dedf83b6dc4765baab230affd}{MOUSE\+\_\+\+NACK}}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Signal an invalid byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gad4e2cc7a577d6b165b91caf3f524d235}{MOUSE\+\_\+\+ERR}}~0x\+FC
+\begin{DoxyCompactList}\small\item\em Signal a second consecutive invalid byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gacbd895d3e6c768486ece37c636a5e3a6}{READ\+\_\+\+CMDB}}~0x20
+\begin{DoxyCompactList}\small\item\em Read command byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga4179941d8813e43dfcb87de50918d25c}{WRITE\+\_\+\+CMDB}}~0x60
+\begin{DoxyCompactList}\small\item\em Write command byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gabdb36f983386fcd2d64689075473e5af}{MOUSE\+\_\+\+DIS}}~0x\+A7
+\begin{DoxyCompactList}\small\item\em Disable mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga761ad999b024b7f9cdf01e0d29687450}{MOUSE\+\_\+\+ENBL}}~0x\+A8
+\begin{DoxyCompactList}\small\item\em Enable mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga441344e0c68ecefa9ce5722b0cfe2d06}{CHK\+\_\+\+MOUSE}}~0x\+A9
+\begin{DoxyCompactList}\small\item\em Check mouse interface. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga2c54468bfff38c219d0b4cf67052bbb7}{WRITE\+\_\+\+AUX}}~0x\+D4
+\begin{DoxyCompactList}\small\item\em Write byte to mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga6b902000c4f0a66e57f0eb78d7611105}{MOUSE\+\_\+\+RESET}}~0x\+FF
+\begin{DoxyCompactList}\small\item\em Reset the mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga1a33902ed453e53395da2d845da0c5b6}{MOUSE\+\_\+\+RESEND}}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Resend byte (used for communication errors) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga5e3fbbf2c5ffd802cc4db7d5273fbcd9}{MOUSE\+\_\+\+DEFAULT}}~0x\+F6
+\begin{DoxyCompactList}\small\item\em Set default mouse settings. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga1c84607e844d7b3736a1a3491c18e872}{DIS\+\_\+\+DATA\+\_\+\+REP}}~0x\+F5
+\begin{DoxyCompactList}\small\item\em Disable mouse data reporting. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gafee82d91b1076ce0512eb9637c7cea8b}{ENBL\+\_\+\+DATA\+\_\+\+REP}}~0x\+F4
+\begin{DoxyCompactList}\small\item\em Enable mouse data reporting. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gaf4ab507a62ea651c5cd5c6e243e63fd1}{SET\+\_\+\+SAMPLE}}~0x\+F3
+\begin{DoxyCompactList}\small\item\em Set sample rate. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gaba54f039c67867bcdc9e18024147c71a}{SET\+\_\+\+REMOTE}}~0x\+F0
+\begin{DoxyCompactList}\small\item\em Set mouse to remote mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga8d406d5aff787991429e62cfd9bac721}{READ\+\_\+\+DATA}}~0x\+EB
+\begin{DoxyCompactList}\small\item\em Request a packet from the mouse (remote mode only) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_ga08006958f5bcad29209b983904b878ee}{SET\+\_\+\+STREAM}}~0x\+EA
+\begin{DoxyCompactList}\small\item\em Set mouse to stream mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042mouse_gade541e6b7616d7f884f0cb0f25133f2d}{MOUSE\+\_\+\+CFG}}~0x\+E9
+\begin{DoxyCompactList}\small\item\em Get mouse configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}

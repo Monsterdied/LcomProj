@@ -1,0 +1,13 @@
+<map id="proj/src/Game/gameControllers/Controller.c" name="proj/src/Game/gameControllers/Controller.c">
+<area shape="rect" id="node1" title=" " alt="" coords="111,5,312,48"/>
+<area shape="rect" id="node2" href="$models_8h.html" title="Contains the data structures used in the Bomberman game." alt="" coords="76,171,197,197"/>
+<area shape="rect" id="node8" href="$_controller_8h.html" title="Controller functions." alt="" coords="226,96,314,123"/>
+<area shape="rect" id="node3" href="$rtc_8h.html" title="Real&#45;Time Clock (RTC) functions." alt="" coords="156,245,250,272"/>
+<area shape="rect" id="node6" href="$video__gr_8h.html" title="Video Graphics functions." alt="" coords="5,245,132,272"/>
+<area shape="rect" id="node4" title=" " alt="" coords="249,320,326,347"/>
+<area shape="rect" id="node5" title=" " alt="" coords="155,320,219,347"/>
+<area shape="rect" id="node7" title=" " alt="" coords="12,320,125,347"/>
+<area shape="rect" id="node9" href="$keyboard_8h.html" title="Keyboard Controller (KBC) functions." alt="" coords="221,171,353,197"/>
+<area shape="rect" id="node11" href="$mouse_8h.html" title="Mouse functions." alt="" coords="377,171,496,197"/>
+<area shape="rect" id="node10" href="$i8042_8h.html" title="Constants and definitions for programming the i8042 keyboard controller and mouse." alt="" coords="325,245,388,272"/>
+</map>

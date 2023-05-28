@@ -3,106 +3,405 @@
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{group__i8042mouse_gacfb42dde389e8ca36ab267002fbf5c6a}\label{group__i8042mouse_gacfb42dde389e8ca36ab267002fbf5c6a}} 
-\#define {\bfseries OUT\+\_\+\+BUF}~0x60
+\#define \mbox{\hyperlink{group__i8042mouse_gacfb42dde389e8ca36ab267002fbf5c6a}{OUT\+\_\+\+BUF}}~0x60
 \begin{DoxyCompactList}\small\item\em Output buffer port. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga1f7e79cfe81dc06414550fa52418941e}\label{group__i8042mouse_ga1f7e79cfe81dc06414550fa52418941e}} 
-\#define {\bfseries STATUS\+\_\+\+REG}~0x64
+\#define \mbox{\hyperlink{group__i8042mouse_ga1f7e79cfe81dc06414550fa52418941e}{STATUS\+\_\+\+REG}}~0x64
 \begin{DoxyCompactList}\small\item\em Status register port. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga6eca647466b6a624fa76401794bca51b}\label{group__i8042mouse_ga6eca647466b6a624fa76401794bca51b}} 
-\#define {\bfseries MOUSE\+\_\+\+ARGS}~0x60
+\#define \mbox{\hyperlink{group__i8042mouse_ga6eca647466b6a624fa76401794bca51b}{MOUSE\+\_\+\+ARGS}}~0x60
 \begin{DoxyCompactList}\small\item\em Same as output buffer, but used for sending command arguments. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}\label{group__i8042mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}} 
-\#define {\bfseries MOUSE\+\_\+\+CMD\+\_\+\+REG}~0x64
+\#define \mbox{\hyperlink{group__i8042mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}{MOUSE\+\_\+\+CMD\+\_\+\+REG}}~0x64
 \begin{DoxyCompactList}\small\item\em Same as status register, but used for issuing commands. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gaf6996d12e71a534569c41a25de7d6d52}\label{group__i8042mouse_gaf6996d12e71a534569c41a25de7d6d52}} 
-\#define {\bfseries PARITY}~BIT(7)
+\#define \mbox{\hyperlink{group__i8042mouse_gaf6996d12e71a534569c41a25de7d6d52}{PARITY}}~BIT(7)
 \begin{DoxyCompactList}\small\item\em Bit mask to check for parity error. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga799517031a8334a42807b119bb456c53}\label{group__i8042mouse_ga799517031a8334a42807b119bb456c53}} 
-\#define {\bfseries TIME\+\_\+\+OUT}~BIT(6)
+\#define \mbox{\hyperlink{group__i8042mouse_ga799517031a8334a42807b119bb456c53}{TIME\+\_\+\+OUT}}~BIT(6)
 \begin{DoxyCompactList}\small\item\em Bit mask to check for timeout error. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga1b41fd2be63532d4ab910f8b256c3811}\label{group__i8042mouse_ga1b41fd2be63532d4ab910f8b256c3811}} 
-\#define {\bfseries AUX}~BIT(5)
+\#define \mbox{\hyperlink{group__i8042mouse_ga1b41fd2be63532d4ab910f8b256c3811}{AUX}}~BIT(5)
 \begin{DoxyCompactList}\small\item\em Bit mask, 1 if mouse data, 0 if keyboard data. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga3c48b10907056351582baf9f6478598e}\label{group__i8042mouse_ga3c48b10907056351582baf9f6478598e}} 
-\#define {\bfseries IBF}~BIT(1)
+\#define \mbox{\hyperlink{group__i8042mouse_ga3c48b10907056351582baf9f6478598e}{IBF}}~BIT(1)
 \begin{DoxyCompactList}\small\item\em Bit mask to check if input buffer is full. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga45967c9e25447ba853cf6fb4ac545fe6}\label{group__i8042mouse_ga45967c9e25447ba853cf6fb4ac545fe6}} 
-\#define {\bfseries OBF}~BIT(0)
+\#define \mbox{\hyperlink{group__i8042mouse_ga45967c9e25447ba853cf6fb4ac545fe6}{OBF}}~BIT(0)
 \begin{DoxyCompactList}\small\item\em Bit mask to check if output buffer is full. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gae06932f67e4c43252a517ba344489854}\label{group__i8042mouse_gae06932f67e4c43252a517ba344489854}} 
-\#define {\bfseries DIS2}~BIT(5)
+\#define \mbox{\hyperlink{group__i8042mouse_gae06932f67e4c43252a517ba344489854}{DIS2}}~BIT(5)
 \begin{DoxyCompactList}\small\item\em Bit set to 1 for disabling mouse in command byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gade622db4793c58ba79745531fa0405e9}\label{group__i8042mouse_gade622db4793c58ba79745531fa0405e9}} 
-\#define {\bfseries DIS1}~BIT(4)
+\#define \mbox{\hyperlink{group__i8042mouse_gade622db4793c58ba79745531fa0405e9}{DIS1}}~BIT(4)
 \begin{DoxyCompactList}\small\item\em Bit set to 1 for disabling keyboard in command byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gab254a5a335276357f63779cda0b8e44f}\label{group__i8042mouse_gab254a5a335276357f63779cda0b8e44f}} 
-\#define {\bfseries INT2}~BIT(1)
+\#define \mbox{\hyperlink{group__i8042mouse_gab254a5a335276357f63779cda0b8e44f}{INT2}}~BIT(1)
 \begin{DoxyCompactList}\small\item\em Bit set to 1 to enable OBF interrupts from mouse. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gae4728496f2ab826d5fc6a63da6cb600b}\label{group__i8042mouse_gae4728496f2ab826d5fc6a63da6cb600b}} 
-\#define {\bfseries INT1}~BIT(0)
+\#define \mbox{\hyperlink{group__i8042mouse_gae4728496f2ab826d5fc6a63da6cb600b}{INT1}}~BIT(0)
 \begin{DoxyCompactList}\small\item\em Bit set to 1 to enable OBF interrupts from keyboard. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga73d6572224ad0ac84a8587615cef947c}\label{group__i8042mouse_ga73d6572224ad0ac84a8587615cef947c}} 
-\#define {\bfseries FIRST\+\_\+\+BYTE}~BIT(3)
+\#define \mbox{\hyperlink{group__i8042mouse_ga73d6572224ad0ac84a8587615cef947c}{FIRST\+\_\+\+BYTE}}~BIT(3)
 \begin{DoxyCompactList}\small\item\em Bit mask to check if receiving a packet\textquotesingle{}s first byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga3789391a769864fd2d3f40d035fd8a74}\label{group__i8042mouse_ga3789391a769864fd2d3f40d035fd8a74}} 
-\#define {\bfseries MOUSE\+\_\+\+OK}~0x\+FA
+\#define \mbox{\hyperlink{group__i8042mouse_ga3789391a769864fd2d3f40d035fd8a74}{MOUSE\+\_\+\+OK}}~0x\+FA
 \begin{DoxyCompactList}\small\item\em Signal that a mouse command had no issues. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gaef4a299dedf83b6dc4765baab230affd}\label{group__i8042mouse_gaef4a299dedf83b6dc4765baab230affd}} 
-\#define {\bfseries MOUSE\+\_\+\+NACK}~0x\+FE
+\#define \mbox{\hyperlink{group__i8042mouse_gaef4a299dedf83b6dc4765baab230affd}{MOUSE\+\_\+\+NACK}}~0x\+FE
 \begin{DoxyCompactList}\small\item\em Signal an invalid byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gad4e2cc7a577d6b165b91caf3f524d235}\label{group__i8042mouse_gad4e2cc7a577d6b165b91caf3f524d235}} 
-\#define {\bfseries MOUSE\+\_\+\+ERR}~0x\+FC
+\#define \mbox{\hyperlink{group__i8042mouse_gad4e2cc7a577d6b165b91caf3f524d235}{MOUSE\+\_\+\+ERR}}~0x\+FC
 \begin{DoxyCompactList}\small\item\em Signal a second consecutive invalid byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gacbd895d3e6c768486ece37c636a5e3a6}\label{group__i8042mouse_gacbd895d3e6c768486ece37c636a5e3a6}} 
-\#define {\bfseries READ\+\_\+\+CMDB}~0x20
+\#define \mbox{\hyperlink{group__i8042mouse_gacbd895d3e6c768486ece37c636a5e3a6}{READ\+\_\+\+CMDB}}~0x20
 \begin{DoxyCompactList}\small\item\em Read command byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga4179941d8813e43dfcb87de50918d25c}\label{group__i8042mouse_ga4179941d8813e43dfcb87de50918d25c}} 
-\#define {\bfseries WRITE\+\_\+\+CMDB}~0x60
+\#define \mbox{\hyperlink{group__i8042mouse_ga4179941d8813e43dfcb87de50918d25c}{WRITE\+\_\+\+CMDB}}~0x60
 \begin{DoxyCompactList}\small\item\em Write command byte. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gabdb36f983386fcd2d64689075473e5af}\label{group__i8042mouse_gabdb36f983386fcd2d64689075473e5af}} 
-\#define {\bfseries MOUSE\+\_\+\+DIS}~0x\+A7
+\#define \mbox{\hyperlink{group__i8042mouse_gabdb36f983386fcd2d64689075473e5af}{MOUSE\+\_\+\+DIS}}~0x\+A7
 \begin{DoxyCompactList}\small\item\em Disable mouse. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga761ad999b024b7f9cdf01e0d29687450}\label{group__i8042mouse_ga761ad999b024b7f9cdf01e0d29687450}} 
-\#define {\bfseries MOUSE\+\_\+\+ENBL}~0x\+A8
+\#define \mbox{\hyperlink{group__i8042mouse_ga761ad999b024b7f9cdf01e0d29687450}{MOUSE\+\_\+\+ENBL}}~0x\+A8
 \begin{DoxyCompactList}\small\item\em Enable mouse. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga441344e0c68ecefa9ce5722b0cfe2d06}\label{group__i8042mouse_ga441344e0c68ecefa9ce5722b0cfe2d06}} 
-\#define {\bfseries CHK\+\_\+\+MOUSE}~0x\+A9
+\#define \mbox{\hyperlink{group__i8042mouse_ga441344e0c68ecefa9ce5722b0cfe2d06}{CHK\+\_\+\+MOUSE}}~0x\+A9
 \begin{DoxyCompactList}\small\item\em Check mouse interface. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga2c54468bfff38c219d0b4cf67052bbb7}\label{group__i8042mouse_ga2c54468bfff38c219d0b4cf67052bbb7}} 
-\#define {\bfseries WRITE\+\_\+\+AUX}~0x\+D4
+\#define \mbox{\hyperlink{group__i8042mouse_ga2c54468bfff38c219d0b4cf67052bbb7}{WRITE\+\_\+\+AUX}}~0x\+D4
 \begin{DoxyCompactList}\small\item\em Write byte to mouse. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga6b902000c4f0a66e57f0eb78d7611105}\label{group__i8042mouse_ga6b902000c4f0a66e57f0eb78d7611105}} 
-\#define {\bfseries MOUSE\+\_\+\+RESET}~0x\+FF
+\#define \mbox{\hyperlink{group__i8042mouse_ga6b902000c4f0a66e57f0eb78d7611105}{MOUSE\+\_\+\+RESET}}~0x\+FF
 \begin{DoxyCompactList}\small\item\em Reset the mouse. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga1a33902ed453e53395da2d845da0c5b6}\label{group__i8042mouse_ga1a33902ed453e53395da2d845da0c5b6}} 
-\#define {\bfseries MOUSE\+\_\+\+RESEND}~0x\+FE
+\#define \mbox{\hyperlink{group__i8042mouse_ga1a33902ed453e53395da2d845da0c5b6}{MOUSE\+\_\+\+RESEND}}~0x\+FE
 \begin{DoxyCompactList}\small\item\em Resend byte (used for communication errors) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga5e3fbbf2c5ffd802cc4db7d5273fbcd9}\label{group__i8042mouse_ga5e3fbbf2c5ffd802cc4db7d5273fbcd9}} 
-\#define {\bfseries MOUSE\+\_\+\+DEFAULT}~0x\+F6
+\#define \mbox{\hyperlink{group__i8042mouse_ga5e3fbbf2c5ffd802cc4db7d5273fbcd9}{MOUSE\+\_\+\+DEFAULT}}~0x\+F6
 \begin{DoxyCompactList}\small\item\em Set default mouse settings. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga1c84607e844d7b3736a1a3491c18e872}\label{group__i8042mouse_ga1c84607e844d7b3736a1a3491c18e872}} 
-\#define {\bfseries DIS\+\_\+\+DATA\+\_\+\+REP}~0x\+F5
+\#define \mbox{\hyperlink{group__i8042mouse_ga1c84607e844d7b3736a1a3491c18e872}{DIS\+\_\+\+DATA\+\_\+\+REP}}~0x\+F5
 \begin{DoxyCompactList}\small\item\em Disable mouse data reporting. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gafee82d91b1076ce0512eb9637c7cea8b}\label{group__i8042mouse_gafee82d91b1076ce0512eb9637c7cea8b}} 
-\#define {\bfseries ENBL\+\_\+\+DATA\+\_\+\+REP}~0x\+F4
+\#define \mbox{\hyperlink{group__i8042mouse_gafee82d91b1076ce0512eb9637c7cea8b}{ENBL\+\_\+\+DATA\+\_\+\+REP}}~0x\+F4
 \begin{DoxyCompactList}\small\item\em Enable mouse data reporting. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gaf4ab507a62ea651c5cd5c6e243e63fd1}\label{group__i8042mouse_gaf4ab507a62ea651c5cd5c6e243e63fd1}} 
-\#define {\bfseries SET\+\_\+\+SAMPLE}~0x\+F3
+\#define \mbox{\hyperlink{group__i8042mouse_gaf4ab507a62ea651c5cd5c6e243e63fd1}{SET\+\_\+\+SAMPLE}}~0x\+F3
 \begin{DoxyCompactList}\small\item\em Set sample rate. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gaba54f039c67867bcdc9e18024147c71a}\label{group__i8042mouse_gaba54f039c67867bcdc9e18024147c71a}} 
-\#define {\bfseries SET\+\_\+\+REMOTE}~0x\+F0
+\#define \mbox{\hyperlink{group__i8042mouse_gaba54f039c67867bcdc9e18024147c71a}{SET\+\_\+\+REMOTE}}~0x\+F0
 \begin{DoxyCompactList}\small\item\em Set mouse to remote mode. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga8d406d5aff787991429e62cfd9bac721}\label{group__i8042mouse_ga8d406d5aff787991429e62cfd9bac721}} 
-\#define {\bfseries READ\+\_\+\+DATA}~0x\+EB
+\#define \mbox{\hyperlink{group__i8042mouse_ga8d406d5aff787991429e62cfd9bac721}{READ\+\_\+\+DATA}}~0x\+EB
 \begin{DoxyCompactList}\small\item\em Request a packet from the mouse (remote mode only) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_ga08006958f5bcad29209b983904b878ee}\label{group__i8042mouse_ga08006958f5bcad29209b983904b878ee}} 
-\#define {\bfseries SET\+\_\+\+STREAM}~0x\+EA
+\#define \mbox{\hyperlink{group__i8042mouse_ga08006958f5bcad29209b983904b878ee}{SET\+\_\+\+STREAM}}~0x\+EA
 \begin{DoxyCompactList}\small\item\em Set mouse to stream mode. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{group__i8042mouse_gade541e6b7616d7f884f0cb0f25133f2d}\label{group__i8042mouse_gade541e6b7616d7f884f0cb0f25133f2d}} 
-\#define {\bfseries MOUSE\+\_\+\+CFG}~0x\+E9
+\#define \mbox{\hyperlink{group__i8042mouse_gade541e6b7616d7f884f0cb0f25133f2d}{MOUSE\+\_\+\+CFG}}~0x\+E9
 \begin{DoxyCompactList}\small\item\em Get mouse configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Constants for programming the i8042 mouse. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__i8042mouse_ga1b41fd2be63532d4ab910f8b256c3811}\label{group__i8042mouse_ga1b41fd2be63532d4ab910f8b256c3811}} 
+\index{i8042mouse@{i8042mouse}!AUX@{AUX}}
+\index{AUX@{AUX}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{AUX}{AUX}}
+{\footnotesize\ttfamily \#define AUX~BIT(5)}
+
+
+
+Bit mask, 1 if mouse data, 0 if keyboard data. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga441344e0c68ecefa9ce5722b0cfe2d06}\label{group__i8042mouse_ga441344e0c68ecefa9ce5722b0cfe2d06}} 
+\index{i8042mouse@{i8042mouse}!CHK\_MOUSE@{CHK\_MOUSE}}
+\index{CHK\_MOUSE@{CHK\_MOUSE}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{CHK\_MOUSE}{CHK\_MOUSE}}
+{\footnotesize\ttfamily \#define CHK\+\_\+\+MOUSE~0x\+A9}
+
+
+
+Check mouse interface. 
+
+\mbox{\Hypertarget{group__i8042mouse_gade622db4793c58ba79745531fa0405e9}\label{group__i8042mouse_gade622db4793c58ba79745531fa0405e9}} 
+\index{i8042mouse@{i8042mouse}!DIS1@{DIS1}}
+\index{DIS1@{DIS1}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{DIS1}{DIS1}}
+{\footnotesize\ttfamily \#define DIS1~BIT(4)}
+
+
+
+Bit set to 1 for disabling keyboard in command byte. 
+
+\mbox{\Hypertarget{group__i8042mouse_gae06932f67e4c43252a517ba344489854}\label{group__i8042mouse_gae06932f67e4c43252a517ba344489854}} 
+\index{i8042mouse@{i8042mouse}!DIS2@{DIS2}}
+\index{DIS2@{DIS2}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{DIS2}{DIS2}}
+{\footnotesize\ttfamily \#define DIS2~BIT(5)}
+
+
+
+Bit set to 1 for disabling mouse in command byte. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga1c84607e844d7b3736a1a3491c18e872}\label{group__i8042mouse_ga1c84607e844d7b3736a1a3491c18e872}} 
+\index{i8042mouse@{i8042mouse}!DIS\_DATA\_REP@{DIS\_DATA\_REP}}
+\index{DIS\_DATA\_REP@{DIS\_DATA\_REP}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{DIS\_DATA\_REP}{DIS\_DATA\_REP}}
+{\footnotesize\ttfamily \#define DIS\+\_\+\+DATA\+\_\+\+REP~0x\+F5}
+
+
+
+Disable mouse data reporting. 
+
+\mbox{\Hypertarget{group__i8042mouse_gafee82d91b1076ce0512eb9637c7cea8b}\label{group__i8042mouse_gafee82d91b1076ce0512eb9637c7cea8b}} 
+\index{i8042mouse@{i8042mouse}!ENBL\_DATA\_REP@{ENBL\_DATA\_REP}}
+\index{ENBL\_DATA\_REP@{ENBL\_DATA\_REP}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{ENBL\_DATA\_REP}{ENBL\_DATA\_REP}}
+{\footnotesize\ttfamily \#define ENBL\+\_\+\+DATA\+\_\+\+REP~0x\+F4}
+
+
+
+Enable mouse data reporting. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga73d6572224ad0ac84a8587615cef947c}\label{group__i8042mouse_ga73d6572224ad0ac84a8587615cef947c}} 
+\index{i8042mouse@{i8042mouse}!FIRST\_BYTE@{FIRST\_BYTE}}
+\index{FIRST\_BYTE@{FIRST\_BYTE}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{FIRST\_BYTE}{FIRST\_BYTE}}
+{\footnotesize\ttfamily \#define FIRST\+\_\+\+BYTE~BIT(3)}
+
+
+
+Bit mask to check if receiving a packet\textquotesingle{}s first byte. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga3c48b10907056351582baf9f6478598e}\label{group__i8042mouse_ga3c48b10907056351582baf9f6478598e}} 
+\index{i8042mouse@{i8042mouse}!IBF@{IBF}}
+\index{IBF@{IBF}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{IBF}{IBF}}
+{\footnotesize\ttfamily \#define IBF~BIT(1)}
+
+
+
+Bit mask to check if input buffer is full. 
+
+\mbox{\Hypertarget{group__i8042mouse_gae4728496f2ab826d5fc6a63da6cb600b}\label{group__i8042mouse_gae4728496f2ab826d5fc6a63da6cb600b}} 
+\index{i8042mouse@{i8042mouse}!INT1@{INT1}}
+\index{INT1@{INT1}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{INT1}{INT1}}
+{\footnotesize\ttfamily \#define INT1~BIT(0)}
+
+
+
+Bit set to 1 to enable OBF interrupts from keyboard. 
+
+\mbox{\Hypertarget{group__i8042mouse_gab254a5a335276357f63779cda0b8e44f}\label{group__i8042mouse_gab254a5a335276357f63779cda0b8e44f}} 
+\index{i8042mouse@{i8042mouse}!INT2@{INT2}}
+\index{INT2@{INT2}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{INT2}{INT2}}
+{\footnotesize\ttfamily \#define INT2~BIT(1)}
+
+
+
+Bit set to 1 to enable OBF interrupts from mouse. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga6eca647466b6a624fa76401794bca51b}\label{group__i8042mouse_ga6eca647466b6a624fa76401794bca51b}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_ARGS@{MOUSE\_ARGS}}
+\index{MOUSE\_ARGS@{MOUSE\_ARGS}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ARGS}{MOUSE\_ARGS}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ARGS~0x60}
+
+
+
+Same as output buffer, but used for sending command arguments. 
+
+\mbox{\Hypertarget{group__i8042mouse_gade541e6b7616d7f884f0cb0f25133f2d}\label{group__i8042mouse_gade541e6b7616d7f884f0cb0f25133f2d}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_CFG@{MOUSE\_CFG}}
+\index{MOUSE\_CFG@{MOUSE\_CFG}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_CFG}{MOUSE\_CFG}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+CFG~0x\+E9}
+
+
+
+Get mouse configuration. 
+
+\mbox{\Hypertarget{group__i8042mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}\label{group__i8042mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_CMD\_REG@{MOUSE\_CMD\_REG}}
+\index{MOUSE\_CMD\_REG@{MOUSE\_CMD\_REG}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_CMD\_REG}{MOUSE\_CMD\_REG}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+CMD\+\_\+\+REG~0x64}
+
+
+
+Same as status register, but used for issuing commands. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga5e3fbbf2c5ffd802cc4db7d5273fbcd9}\label{group__i8042mouse_ga5e3fbbf2c5ffd802cc4db7d5273fbcd9}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_DEFAULT@{MOUSE\_DEFAULT}}
+\index{MOUSE\_DEFAULT@{MOUSE\_DEFAULT}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_DEFAULT}{MOUSE\_DEFAULT}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+DEFAULT~0x\+F6}
+
+
+
+Set default mouse settings. 
+
+\mbox{\Hypertarget{group__i8042mouse_gabdb36f983386fcd2d64689075473e5af}\label{group__i8042mouse_gabdb36f983386fcd2d64689075473e5af}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_DIS@{MOUSE\_DIS}}
+\index{MOUSE\_DIS@{MOUSE\_DIS}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_DIS}{MOUSE\_DIS}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+DIS~0x\+A7}
+
+
+
+Disable mouse. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga761ad999b024b7f9cdf01e0d29687450}\label{group__i8042mouse_ga761ad999b024b7f9cdf01e0d29687450}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_ENBL@{MOUSE\_ENBL}}
+\index{MOUSE\_ENBL@{MOUSE\_ENBL}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ENBL}{MOUSE\_ENBL}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ENBL~0x\+A8}
+
+
+
+Enable mouse. 
+
+\mbox{\Hypertarget{group__i8042mouse_gad4e2cc7a577d6b165b91caf3f524d235}\label{group__i8042mouse_gad4e2cc7a577d6b165b91caf3f524d235}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_ERR@{MOUSE\_ERR}}
+\index{MOUSE\_ERR@{MOUSE\_ERR}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ERR}{MOUSE\_ERR}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ERR~0x\+FC}
+
+
+
+Signal a second consecutive invalid byte. 
+
+\mbox{\Hypertarget{group__i8042mouse_gaef4a299dedf83b6dc4765baab230affd}\label{group__i8042mouse_gaef4a299dedf83b6dc4765baab230affd}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_NACK@{MOUSE\_NACK}}
+\index{MOUSE\_NACK@{MOUSE\_NACK}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_NACK}{MOUSE\_NACK}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+NACK~0x\+FE}
+
+
+
+Signal an invalid byte. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga3789391a769864fd2d3f40d035fd8a74}\label{group__i8042mouse_ga3789391a769864fd2d3f40d035fd8a74}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_OK@{MOUSE\_OK}}
+\index{MOUSE\_OK@{MOUSE\_OK}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_OK}{MOUSE\_OK}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+OK~0x\+FA}
+
+
+
+Signal that a mouse command had no issues. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga1a33902ed453e53395da2d845da0c5b6}\label{group__i8042mouse_ga1a33902ed453e53395da2d845da0c5b6}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_RESEND@{MOUSE\_RESEND}}
+\index{MOUSE\_RESEND@{MOUSE\_RESEND}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RESEND}{MOUSE\_RESEND}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+RESEND~0x\+FE}
+
+
+
+Resend byte (used for communication errors) 
+
+\mbox{\Hypertarget{group__i8042mouse_ga6b902000c4f0a66e57f0eb78d7611105}\label{group__i8042mouse_ga6b902000c4f0a66e57f0eb78d7611105}} 
+\index{i8042mouse@{i8042mouse}!MOUSE\_RESET@{MOUSE\_RESET}}
+\index{MOUSE\_RESET@{MOUSE\_RESET}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_RESET}{MOUSE\_RESET}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+RESET~0x\+FF}
+
+
+
+Reset the mouse. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga45967c9e25447ba853cf6fb4ac545fe6}\label{group__i8042mouse_ga45967c9e25447ba853cf6fb4ac545fe6}} 
+\index{i8042mouse@{i8042mouse}!OBF@{OBF}}
+\index{OBF@{OBF}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{OBF}{OBF}}
+{\footnotesize\ttfamily \#define OBF~BIT(0)}
+
+
+
+Bit mask to check if output buffer is full. 
+
+\mbox{\Hypertarget{group__i8042mouse_gacfb42dde389e8ca36ab267002fbf5c6a}\label{group__i8042mouse_gacfb42dde389e8ca36ab267002fbf5c6a}} 
+\index{i8042mouse@{i8042mouse}!OUT\_BUF@{OUT\_BUF}}
+\index{OUT\_BUF@{OUT\_BUF}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{OUT\_BUF}{OUT\_BUF}}
+{\footnotesize\ttfamily \#define OUT\+\_\+\+BUF~0x60}
+
+
+
+Output buffer port. 
+
+\mbox{\Hypertarget{group__i8042mouse_gaf6996d12e71a534569c41a25de7d6d52}\label{group__i8042mouse_gaf6996d12e71a534569c41a25de7d6d52}} 
+\index{i8042mouse@{i8042mouse}!PARITY@{PARITY}}
+\index{PARITY@{PARITY}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{PARITY}{PARITY}}
+{\footnotesize\ttfamily \#define PARITY~BIT(7)}
+
+
+
+Bit mask to check for parity error. 
+
+\mbox{\Hypertarget{group__i8042mouse_gacbd895d3e6c768486ece37c636a5e3a6}\label{group__i8042mouse_gacbd895d3e6c768486ece37c636a5e3a6}} 
+\index{i8042mouse@{i8042mouse}!READ\_CMDB@{READ\_CMDB}}
+\index{READ\_CMDB@{READ\_CMDB}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{READ\_CMDB}{READ\_CMDB}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+CMDB~0x20}
+
+
+
+Read command byte. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga8d406d5aff787991429e62cfd9bac721}\label{group__i8042mouse_ga8d406d5aff787991429e62cfd9bac721}} 
+\index{i8042mouse@{i8042mouse}!READ\_DATA@{READ\_DATA}}
+\index{READ\_DATA@{READ\_DATA}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{READ\_DATA}{READ\_DATA}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+DATA~0x\+EB}
+
+
+
+Request a packet from the mouse (remote mode only) 
+
+\mbox{\Hypertarget{group__i8042mouse_gaba54f039c67867bcdc9e18024147c71a}\label{group__i8042mouse_gaba54f039c67867bcdc9e18024147c71a}} 
+\index{i8042mouse@{i8042mouse}!SET\_REMOTE@{SET\_REMOTE}}
+\index{SET\_REMOTE@{SET\_REMOTE}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{SET\_REMOTE}{SET\_REMOTE}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+REMOTE~0x\+F0}
+
+
+
+Set mouse to remote mode. 
+
+\mbox{\Hypertarget{group__i8042mouse_gaf4ab507a62ea651c5cd5c6e243e63fd1}\label{group__i8042mouse_gaf4ab507a62ea651c5cd5c6e243e63fd1}} 
+\index{i8042mouse@{i8042mouse}!SET\_SAMPLE@{SET\_SAMPLE}}
+\index{SET\_SAMPLE@{SET\_SAMPLE}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{SET\_SAMPLE}{SET\_SAMPLE}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+SAMPLE~0x\+F3}
+
+
+
+Set sample rate. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga08006958f5bcad29209b983904b878ee}\label{group__i8042mouse_ga08006958f5bcad29209b983904b878ee}} 
+\index{i8042mouse@{i8042mouse}!SET\_STREAM@{SET\_STREAM}}
+\index{SET\_STREAM@{SET\_STREAM}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{SET\_STREAM}{SET\_STREAM}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+STREAM~0x\+EA}
+
+
+
+Set mouse to stream mode. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga1f7e79cfe81dc06414550fa52418941e}\label{group__i8042mouse_ga1f7e79cfe81dc06414550fa52418941e}} 
+\index{i8042mouse@{i8042mouse}!STATUS\_REG@{STATUS\_REG}}
+\index{STATUS\_REG@{STATUS\_REG}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{STATUS\_REG}{STATUS\_REG}}
+{\footnotesize\ttfamily \#define STATUS\+\_\+\+REG~0x64}
+
+
+
+Status register port. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga799517031a8334a42807b119bb456c53}\label{group__i8042mouse_ga799517031a8334a42807b119bb456c53}} 
+\index{i8042mouse@{i8042mouse}!TIME\_OUT@{TIME\_OUT}}
+\index{TIME\_OUT@{TIME\_OUT}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{TIME\_OUT}{TIME\_OUT}}
+{\footnotesize\ttfamily \#define TIME\+\_\+\+OUT~BIT(6)}
+
+
+
+Bit mask to check for timeout error. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga2c54468bfff38c219d0b4cf67052bbb7}\label{group__i8042mouse_ga2c54468bfff38c219d0b4cf67052bbb7}} 
+\index{i8042mouse@{i8042mouse}!WRITE\_AUX@{WRITE\_AUX}}
+\index{WRITE\_AUX@{WRITE\_AUX}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{WRITE\_AUX}{WRITE\_AUX}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+AUX~0x\+D4}
+
+
+
+Write byte to mouse. 
+
+\mbox{\Hypertarget{group__i8042mouse_ga4179941d8813e43dfcb87de50918d25c}\label{group__i8042mouse_ga4179941d8813e43dfcb87de50918d25c}} 
+\index{i8042mouse@{i8042mouse}!WRITE\_CMDB@{WRITE\_CMDB}}
+\index{WRITE\_CMDB@{WRITE\_CMDB}!i8042mouse@{i8042mouse}}
+\doxysubsubsection{\texorpdfstring{WRITE\_CMDB}{WRITE\_CMDB}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+CMDB~0x60}
+
+
+
+Write command byte. 
+

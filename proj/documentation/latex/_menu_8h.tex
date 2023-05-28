@@ -1,8 +1,8 @@
-\hypertarget{_menu_8h}{}\doxysection{Game/\+Menu.h File Reference}
-\label{_menu_8h}\index{Game/Menu.h@{Game/Menu.h}}
+\hypertarget{_menu_8h}{}\doxysection{proj/src/\+Game/\+Menu.h File Reference}
+\label{_menu_8h}\index{proj/src/Game/Menu.h@{proj/src/Game/Menu.h}}
 
 
-Menu functions This file contains functions related to the game menu.  
+Menu functions.  
 
 
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
@@ -12,24 +12,39 @@ Menu functions This file contains functions related to the game menu.
 {\ttfamily \#include \char`\"{}devices/keyboard.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
+Include dependency graph for Menu.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{_menu_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_menu_8h_a73dd7ba132512af63114601623be4d58}{Menu}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_menu_8h_a5e7fe29bd8568e8ad6760680b1440016}{Menu}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} arena\+\_\+model)
 \begin{DoxyCompactList}\small\item\em Menu function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Menu functions This file contains functions related to the game menu. 
+Menu functions. 
 
-
+This file contains functions related to the game menu. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_menu_8h_a73dd7ba132512af63114601623be4d58}\label{_menu_8h_a73dd7ba132512af63114601623be4d58}} 
+\mbox{\Hypertarget{_menu_8h_a5e7fe29bd8568e8ad6760680b1440016}\label{_menu_8h_a5e7fe29bd8568e8ad6760680b1440016}} 
 \index{Menu.h@{Menu.h}!Menu@{Menu}}
 \index{Menu@{Menu}!Menu.h@{Menu.h}}
 \doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() Menu (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() Menu (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{arena\+\_\+model }\end{DoxyParamCaption})}
 
 
 
@@ -41,7 +56,17 @@ Displays the game menu and handles user input to update the game state.
 \begin{DoxyParams}{Parameters}
 {\em state} & Pointer to the game state \\
 \hline
+{\em arena\+\_\+model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} to be updated \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The updated \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} after the menu selection 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{_menu_8h_a5e7fe29bd8568e8ad6760680b1440016_icgraph}
+\end{center}
+\end{figure}

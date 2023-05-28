@@ -1,0 +1,215 @@
+\hypertarget{_game_8c}{}\doxysection{proj/src/\+Game/\+Game.c File Reference}
+\label{_game_8c}\index{proj/src/Game/Game.c@{proj/src/Game/Game.c}}
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+Include dependency graph for Game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{_game_8c_a070dcf42782f9c2bc20a0d7d7124b63c}{mouse\+\_\+api\+\_\+game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\item 
+int() \mbox{\hyperlink{_game_8c_a8e0affe829ccce82fdc42ce62263585a}{handle\+Interrupts}} ()
+\item 
+\mbox{\hyperlink{structtime__display}{time\+\_\+display}}() \mbox{\hyperlink{_game_8c_a03ce96f2a43aa2d157713f2d5f24dee5}{Game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Game function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}
+\item 
+int \mbox{\hyperlink{_game_8c_a38b3017ff237979dfb1f8bac080e8b74}{fr\+\_\+rate}}
+\item 
+int \mbox{\hyperlink{_game_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}{scan\+\_\+code}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{_game_8c_acb559820d9ca11295b4500f179ef6392}{i}}
+\item 
+\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{_game_8c_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}}
+\item 
+double \mbox{\hyperlink{_game_8c_a8f2c632f5bbedd1bc06dc1bac65172e2}{aftergamecountdown}}
+\item 
+int \mbox{\hyperlink{_game_8c_ae6e26470f3afdf4bbb95ebb84c368185}{timer\+\_\+interrupts\+\_\+per\+\_\+frame}}
+\item 
+int \mbox{\hyperlink{_game_8c_a24682c41570377d716c646acf09465b8}{timer\+\_\+interrupts\+\_\+counter}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_game_8c_a8be64d00347cadbd31bf44162c2954eb}{irq\+\_\+set\+\_\+timer}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_game_8c_a41b5c771279d6802024ebab0e1e40151}{irq\+\_\+set\+\_\+mouse}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_game_8c_ada5b7c513875f40035cda38d3776a54d}{irq\+\_\+set\+\_\+kbc}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_game_8c_a3553354293e11c5cd620f549a9b0125d}{bit\+\_\+no\+\_\+mouse}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_game_8c_a9f0c20afa1a12fa39244d9359810222b}{bit\+\_\+no\+\_\+kbc}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_game_8c_a4594ebb7bd04d177d6cd263c79326508}{bit\+\_\+no\+\_\+timer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_game_8c_a03ce96f2a43aa2d157713f2d5f24dee5}\label{_game_8c_a03ce96f2a43aa2d157713f2d5f24dee5}} 
+\index{Game.c@{Game.c}!Game@{Game}}
+\index{Game@{Game}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtime__display}{time\+\_\+display}}() Game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Game function. 
+
+The main game function that handles the game logic and updates the game state returns the time it ends.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The initial \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \\
+\hline
+{\em state} & Pointer to the game state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time the game ends 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_8c_a03ce96f2a43aa2d157713f2d5f24dee5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{_game_8c_a03ce96f2a43aa2d157713f2d5f24dee5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_game_8c_a8e0affe829ccce82fdc42ce62263585a}\label{_game_8c_a8e0affe829ccce82fdc42ce62263585a}} 
+\index{Game.c@{Game.c}!handleInterrupts@{handleInterrupts}}
+\index{handleInterrupts@{handleInterrupts}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{handleInterrupts()}{handleInterrupts()}}
+{\footnotesize\ttfamily int() handle\+Interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_game_8c_a8e0affe829ccce82fdc42ce62263585a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_8c_a8e0affe829ccce82fdc42ce62263585a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_game_8c_a070dcf42782f9c2bc20a0d7d7124b63c}\label{_game_8c_a070dcf42782f9c2bc20a0d7d7124b63c}} 
+\index{Game.c@{Game.c}!mouse\_api\_game@{mouse\_api\_game}}
+\index{mouse\_api\_game@{mouse\_api\_game}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_api\_game()}{mouse\_api\_game()}}
+{\footnotesize\ttfamily void() mouse\+\_\+api\+\_\+game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_8c_a070dcf42782f9c2bc20a0d7d7124b63c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_game_8c_a8f2c632f5bbedd1bc06dc1bac65172e2}\label{_game_8c_a8f2c632f5bbedd1bc06dc1bac65172e2}} 
+\index{Game.c@{Game.c}!aftergamecountdown@{aftergamecountdown}}
+\index{aftergamecountdown@{aftergamecountdown}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{aftergamecountdown}{aftergamecountdown}}
+{\footnotesize\ttfamily double aftergamecountdown}
+
+\mbox{\Hypertarget{_game_8c_a9f0c20afa1a12fa39244d9359810222b}\label{_game_8c_a9f0c20afa1a12fa39244d9359810222b}} 
+\index{Game.c@{Game.c}!bit\_no\_kbc@{bit\_no\_kbc}}
+\index{bit\_no\_kbc@{bit\_no\_kbc}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{bit\_no\_kbc}{bit\_no\_kbc}}
+{\footnotesize\ttfamily uint8\+\_\+t bit\+\_\+no\+\_\+kbc}
+
+\mbox{\Hypertarget{_game_8c_a3553354293e11c5cd620f549a9b0125d}\label{_game_8c_a3553354293e11c5cd620f549a9b0125d}} 
+\index{Game.c@{Game.c}!bit\_no\_mouse@{bit\_no\_mouse}}
+\index{bit\_no\_mouse@{bit\_no\_mouse}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{bit\_no\_mouse}{bit\_no\_mouse}}
+{\footnotesize\ttfamily uint8\+\_\+t bit\+\_\+no\+\_\+mouse}
+
+\mbox{\Hypertarget{_game_8c_a4594ebb7bd04d177d6cd263c79326508}\label{_game_8c_a4594ebb7bd04d177d6cd263c79326508}} 
+\index{Game.c@{Game.c}!bit\_no\_timer@{bit\_no\_timer}}
+\index{bit\_no\_timer@{bit\_no\_timer}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{bit\_no\_timer}{bit\_no\_timer}}
+{\footnotesize\ttfamily uint8\+\_\+t bit\+\_\+no\+\_\+timer}
+
+\mbox{\Hypertarget{_game_8c_a38b3017ff237979dfb1f8bac080e8b74}\label{_game_8c_a38b3017ff237979dfb1f8bac080e8b74}} 
+\index{Game.c@{Game.c}!fr\_rate@{fr\_rate}}
+\index{fr\_rate@{fr\_rate}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{fr\_rate}{fr\_rate}}
+{\footnotesize\ttfamily int fr\+\_\+rate\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_game_8c_acb559820d9ca11295b4500f179ef6392}\label{_game_8c_acb559820d9ca11295b4500f179ef6392}} 
+\index{Game.c@{Game.c}!i@{i}}
+\index{i@{i}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int i\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_game_8c_ada5b7c513875f40035cda38d3776a54d}\label{_game_8c_ada5b7c513875f40035cda38d3776a54d}} 
+\index{Game.c@{Game.c}!irq\_set\_kbc@{irq\_set\_kbc}}
+\index{irq\_set\_kbc@{irq\_set\_kbc}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_kbc}{irq\_set\_kbc}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+set\+\_\+kbc}
+
+\mbox{\Hypertarget{_game_8c_a41b5c771279d6802024ebab0e1e40151}\label{_game_8c_a41b5c771279d6802024ebab0e1e40151}} 
+\index{Game.c@{Game.c}!irq\_set\_mouse@{irq\_set\_mouse}}
+\index{irq\_set\_mouse@{irq\_set\_mouse}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_mouse}{irq\_set\_mouse}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+set\+\_\+mouse}
+
+\mbox{\Hypertarget{_game_8c_a8be64d00347cadbd31bf44162c2954eb}\label{_game_8c_a8be64d00347cadbd31bf44162c2954eb}} 
+\index{Game.c@{Game.c}!irq\_set\_timer@{irq\_set\_timer}}
+\index{irq\_set\_timer@{irq\_set\_timer}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_timer}{irq\_set\_timer}}
+{\footnotesize\ttfamily uint8\+\_\+t irq\+\_\+set\+\_\+timer}
+
+\mbox{\Hypertarget{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}\label{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}} 
+\index{Game.c@{Game.c}!mouse@{mouse}}
+\index{mouse@{mouse}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mouse}{Mouse}} mouse\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_game_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}\label{_game_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}} 
+\index{Game.c@{Game.c}!scan\_code@{scan\_code}}
+\index{scan\_code@{scan\_code}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{scan\_code}{scan\_code}}
+{\footnotesize\ttfamily int scan\+\_\+code\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_game_8c_aa3f6a6defa5127eb02d3295072f600e8}\label{_game_8c_aa3f6a6defa5127eb02d3295072f600e8}} 
+\index{Game.c@{Game.c}!time\_info@{time\_info}}
+\index{time\_info@{time\_info}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{time\_info}{time\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtime__display}{time\+\_\+display}} time\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+Structure to store the current time information used in the Game \mbox{\Hypertarget{_game_8c_a24682c41570377d716c646acf09465b8}\label{_game_8c_a24682c41570377d716c646acf09465b8}} 
+\index{Game.c@{Game.c}!timer\_interrupts\_counter@{timer\_interrupts\_counter}}
+\index{timer\_interrupts\_counter@{timer\_interrupts\_counter}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{timer\_interrupts\_counter}{timer\_interrupts\_counter}}
+{\footnotesize\ttfamily int timer\+\_\+interrupts\+\_\+counter}
+
+\mbox{\Hypertarget{_game_8c_ae6e26470f3afdf4bbb95ebb84c368185}\label{_game_8c_ae6e26470f3afdf4bbb95ebb84c368185}} 
+\index{Game.c@{Game.c}!timer\_interrupts\_per\_frame@{timer\_interrupts\_per\_frame}}
+\index{timer\_interrupts\_per\_frame@{timer\_interrupts\_per\_frame}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{timer\_interrupts\_per\_frame}{timer\_interrupts\_per\_frame}}
+{\footnotesize\ttfamily int timer\+\_\+interrupts\+\_\+per\+\_\+frame}
+

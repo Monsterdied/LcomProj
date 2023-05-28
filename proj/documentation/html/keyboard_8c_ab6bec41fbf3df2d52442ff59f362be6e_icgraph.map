@@ -1,0 +1,6 @@
+<map id="keyboard_get_status" name="keyboard_get_status">
+<area shape="rect" id="node1" title="Get keyboard status." alt="" coords="378,31,520,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ab20c4c141e47cfc8bc30a8b921650a67" title="Read data from KBC." alt="" coords="193,5,317,32"/>
+<area shape="rect" id="node4" href="$keyboard_8c.html#a6de0303cece942c2a2652022b242f3e1" title="Write command to KBC." alt="" coords="180,56,330,83"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a41293b768f3999597be3a98ced7238fd" title="Re&#45;enable keyboard interrupts." alt="" coords="5,31,132,57"/>
+</map>

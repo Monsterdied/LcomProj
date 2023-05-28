@@ -1,0 +1,5 @@
+<map id="keyboard_read_out_buffer" name="keyboard_read_out_buffer">
+<area shape="rect" id="node1" title="Read from keyboard output buffer." alt="" coords="351,5,520,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ab20c4c141e47cfc8bc30a8b921650a67" title="Read data from KBC." alt="" coords="180,5,303,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a41293b768f3999597be3a98ced7238fd" title="Re&#45;enable keyboard interrupts." alt="" coords="5,5,132,32"/>
+</map>

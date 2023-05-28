@@ -1,0 +1,6 @@
+<map id="draw_players_info" name="draw_players_info">
+<area shape="rect" id="node1" title="Draws the players&#39; information on the screen." alt="" coords="5,5,130,32"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="178,5,265,32"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="313,5,443,32"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="491,5,574,32"/>
+</map>

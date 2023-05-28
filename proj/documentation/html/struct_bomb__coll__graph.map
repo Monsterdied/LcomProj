@@ -1,0 +1,4 @@
+<map id="Bomb" name="Bomb">
+<area shape="rect" id="node1" title="Represents a bomb in the game." alt="" coords="12,96,67,123"/>
+<area shape="rect" id="node2" href="$struct_position.html" title="Represents a position in the game arena." alt="" coords="5,5,74,32"/>
+</map>

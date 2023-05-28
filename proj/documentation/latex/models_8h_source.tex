@@ -1,137 +1,154 @@
 \hypertarget{models_8h_source}{}\doxysection{models.\+h}
-\label{models_8h_source}\index{models/models.h@{models/models.h}}
+\label{models_8h_source}\index{proj/src/models/models.h@{proj/src/models/models.h}}
 \mbox{\hyperlink{models_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 }
 \DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef BOMBERMAN\_MODELS\_H}}
 \DoxyCodeLine{8 \textcolor{preprocessor}{\#define BOMBERMAN\_MODELS\_H}}
 \DoxyCodeLine{9 }
-\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{video__gr_8h}{devices/video\_gr.h}}"{}}}
-\DoxyCodeLine{11 }
-\DoxyCodeLine{15 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}}\{}
-\DoxyCodeLine{16     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}{SELECTNAMES}},    }
-\DoxyCodeLine{17     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}{MENU}},           }
-\DoxyCodeLine{18     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}},           }
-\DoxyCodeLine{19     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}{GAMEOVER}},       }
-\DoxyCodeLine{20     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}},           }
-\DoxyCodeLine{21     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a6d1730675333f946c03d53040cd30bc4}{PLAYER1WON}},     }
-\DoxyCodeLine{22     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a1a014e6e80b0b124d9b3ea16f74537ea}{PLAYER2WON}}      }
-\DoxyCodeLine{23 \};}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{28 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \{}
-\DoxyCodeLine{29     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}{UP}},             }
-\DoxyCodeLine{30     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da}{DOWN}},           }
-\DoxyCodeLine{31     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065}{LEFT}},           }
-\DoxyCodeLine{32     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38}{RIGHT}},          }
-\DoxyCodeLine{33     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa4728d93a3b688986265db6f0a4cbda1f}{STAY}}            }
-\DoxyCodeLine{34 \};}
-\DoxyCodeLine{35 }
-\DoxyCodeLine{39 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{FlameDirection}}\{}
-\DoxyCodeLine{40     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a75f48da03fe681c0448458bc46f45b13}{UPFLAME}},        }
-\DoxyCodeLine{41     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a3314b05e1ad4e0229d640473fdc346e0}{DOWNFLAME}},      }
-\DoxyCodeLine{42     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87ab67b2cb3d20ea18cb525d97dbbd9a200}{LEFTFLAME}},      }
-\DoxyCodeLine{43     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a74e637be1bf416b4dcdd4a133fb3feaa}{RIGHTFLAME}},     }
-\DoxyCodeLine{44     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87afa96511699b6291b6c0a572f30ee1f9c}{CENTERFLAME}}     }
-\DoxyCodeLine{45 \};}
-\DoxyCodeLine{46 }
-\DoxyCodeLine{50 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}{PowerUpType}} \{}
-\DoxyCodeLine{51     \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da095285ba8fb2e1f9cfb29c80546f06e4}{BOMB}},           }
-\DoxyCodeLine{52     \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da36ccd76c516f51bf87c02b44305284ca}{RANGE}},          }
-\DoxyCodeLine{53     \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da1fb3554200c1173d24e97e9d32283ead}{SPEED}}           }
-\DoxyCodeLine{54 \};}
-\DoxyCodeLine{55 }
-\DoxyCodeLine{59 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \{}
-\DoxyCodeLine{60     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_position_a6150e0515f7202e2fb518f7206ed97dc}{x}};          }
-\DoxyCodeLine{61     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_position_a0a2f84ed7838f07779ae24c5a9086d33}{y}};          }
-\DoxyCodeLine{62 \};}
-\DoxyCodeLine{63 }
-\DoxyCodeLine{67 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_explosion}{Explosion}} \{}
-\DoxyCodeLine{68     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_explosion_a933567351995a2f641e26be377c07fdc}{position}};       }
-\DoxyCodeLine{69     \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{FlameDirection}} \mbox{\hyperlink{struct_explosion_a4fb652f4b9708d0ffb507018b71c80ca}{direction}};  }
-\DoxyCodeLine{70     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_explosion_a0edc097ad2d6df8c7a7aefce120e8314}{timeUntilNextXpm}};        }
-\DoxyCodeLine{71     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_explosion_a6d2b8b924baed5016dfe45527de7eefc}{timeUntilFade}};           }
-\DoxyCodeLine{72     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_explosion_a3c9ca3b9f5fd8f3237819d51c3876aee}{currentXpm}};                 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{rtc_8h}{devices/rtc.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{video__gr_8h}{devices/video\_gr.h}}"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{16 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}} \{}
+\DoxyCodeLine{17     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a50b3b7506fcc5435fc762f98a09a6eac}{TIE}},            }
+\DoxyCodeLine{18     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285adc222801e5f885a8c117af60436571a7}{SELECTNAMES}},    }
+\DoxyCodeLine{19     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a4c40e60bc71a32b924ce1f08d57f9721}{MENU}},           }
+\DoxyCodeLine{20     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285ad50cf309d7568040619ed26ee6835a84}{GAME}},           }
+\DoxyCodeLine{21     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a42495cc178524da331d4681864c72b72}{GAMEOVER}},       }
+\DoxyCodeLine{22     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a7a10b5d68d31711288e1fe0fa17dbf4f}{EXIT}},           }
+\DoxyCodeLine{23     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a6d1730675333f946c03d53040cd30bc4}{PLAYER1WON}},     }
+\DoxyCodeLine{24     \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285a1a014e6e80b0b124d9b3ea16f74537ea}{PLAYER2WON}}      }
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \{}
+\DoxyCodeLine{31     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}{UP}},             }
+\DoxyCodeLine{32     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa9b0b4a95b99523966e0e34ffdadac9da}{DOWN}},           }
+\DoxyCodeLine{33     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaadb45120aafd37a973140edee24708065}{LEFT}},           }
+\DoxyCodeLine{34     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38}{RIGHT}},          }
+\DoxyCodeLine{35     \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aaa4728d93a3b688986265db6f0a4cbda1f}{STAY}}            }
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{FlameDirection}} \{}
+\DoxyCodeLine{42     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a75f48da03fe681c0448458bc46f45b13}{UPFLAME}},        }
+\DoxyCodeLine{43     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a3314b05e1ad4e0229d640473fdc346e0}{DOWNFLAME}},      }
+\DoxyCodeLine{44     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87ab67b2cb3d20ea18cb525d97dbbd9a200}{LEFTFLAME}},      }
+\DoxyCodeLine{45     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87a74e637be1bf416b4dcdd4a133fb3feaa}{RIGHTFLAME}},     }
+\DoxyCodeLine{46     \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87afa96511699b6291b6c0a572f30ee1f9c}{CENTERFLAME}}     }
+\DoxyCodeLine{47 \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{52 \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}{PowerUpType}} \{}
+\DoxyCodeLine{53     \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da095285ba8fb2e1f9cfb29c80546f06e4}{BOMB}},           }
+\DoxyCodeLine{54     \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da36ccd76c516f51bf87c02b44305284ca}{RANGE}},          }
+\DoxyCodeLine{55     \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7da1fb3554200c1173d24e97e9d32283ead}{SPEED}}           }
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \{}
+\DoxyCodeLine{62     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_position_aeda152ffeee17ae5be9c02327b2408d8}{x}};          }
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_position_a3c08e9213d4726b21caba3073192c4a3}{y}};          }
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{69 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_coin}{Coin}} \{}
+\DoxyCodeLine{70     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_coin_a76a98ac22449ff006920ea8e4b036ca3}{position}};       }
+\DoxyCodeLine{71     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_coin_a291b3f0b48fb2cc74ca7ca1d548f61e0}{currentXpm}};                 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_coin_ae645f6cb6ac8f68885899dd46e7e6895}{timeUntilNextXpm}};        }
 \DoxyCodeLine{73 \};}
 \DoxyCodeLine{74 }
-\DoxyCodeLine{78 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_bomb}{Bomb}} \{}
-\DoxyCodeLine{79     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_bomb_a933567351995a2f641e26be377c07fdc}{position}};       }
-\DoxyCodeLine{80     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_bomb_a958f520b9341fc68415a7116928882c4}{timeUntilExplosion}};      }
-\DoxyCodeLine{81     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_bomb_a0edc097ad2d6df8c7a7aefce120e8314}{timeUntilNextXpm}};        }
-\DoxyCodeLine{82     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_bomb_a3c9ca3b9f5fd8f3237819d51c3876aee}{currentXpm}};                 }
-\DoxyCodeLine{83     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_bomb_a037e8e370380046bec287bdc96942091}{range}};                      }
-\DoxyCodeLine{84     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_bomb_aa695a8c4a65e8e7c5b752e3e846a44a9}{owner}};                      }
-\DoxyCodeLine{85 \};}
-\DoxyCodeLine{86 }
-\DoxyCodeLine{90 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_button}{Button}}\{}
-\DoxyCodeLine{91     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_a6150e0515f7202e2fb518f7206ed97dc}{x}};                          }
-\DoxyCodeLine{92     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_a0a2f84ed7838f07779ae24c5a9086d33}{y}};                          }
-\DoxyCodeLine{93     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_a2474a5474cbff19523a51eb1de01cda4}{width}};                      }
-\DoxyCodeLine{94     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_ad12fc34ce789bce6c8a05d8a17138534}{height}};                     }
-\DoxyCodeLine{95     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_button_a9ee682957ef18956fbe33afe9b6222fa}{selected}};                  }
-\DoxyCodeLine{96     xpm\_image\_t \mbox{\hyperlink{struct_button_a224779aea913957674d1c4d5edd17517}{button\_selected}};    }
-\DoxyCodeLine{97     xpm\_image\_t \mbox{\hyperlink{struct_button_a95df27063954e9a2c9cb8318a2b75be6}{button\_unselected}};  }
-\DoxyCodeLine{98 \};}
-\DoxyCodeLine{99 }
-\DoxyCodeLine{103 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_player}{Player}} \{}
-\DoxyCodeLine{104     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_player_a38db771080a5bca533de0f0236ff11ec}{name}}[10];                  }
-\DoxyCodeLine{105     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a51ddb8c567f39d56695a119feb09a994}{nameSize}};                   }
-\DoxyCodeLine{106     \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{struct_player_a1849a6bd8808290f3b62fa122245d987}{direction}};       }
-\DoxyCodeLine{107     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_player_a933567351995a2f641e26be377c07fdc}{position}};       }
-\DoxyCodeLine{108     xpm\_image\_t \mbox{\hyperlink{struct_player_ac96084c9da1fca4bd0bc0813f381acf6}{Left}}[3];            }
-\DoxyCodeLine{109     xpm\_image\_t \mbox{\hyperlink{struct_player_a7f7fc401257e9db8c1c7ff9b18b164b5}{Right}}[3];           }
-\DoxyCodeLine{110     xpm\_image\_t \mbox{\hyperlink{struct_player_a98a04c7db95a0f6d6cef01adfbd20a9e}{Up}}[3];              }
-\DoxyCodeLine{111     xpm\_image\_t \mbox{\hyperlink{struct_player_ae4ba66af694f947fd14500906fdcb1fd}{Down}}[3];            }
-\DoxyCodeLine{112     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a5d5aa9a8f25d33232631cfd9da9d06f6}{numberOfImages}};             }
-\DoxyCodeLine{113     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a3c9ca3b9f5fd8f3237819d51c3876aee}{currentXpm}};                 }
-\DoxyCodeLine{114     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_a0edc097ad2d6df8c7a7aefce120e8314}{timeUntilNextXpm}};        }
-\DoxyCodeLine{115     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_a74e56bcfe770a79b906b09ddde3e315b}{coldownBetweenXpms}};      }
-\DoxyCodeLine{116     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_ac1d68ef9a5dd304c5015e07af7f2bb19}{lives}};                      }
-\DoxyCodeLine{117     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a942c83a0c13f3bb998e8802bb5921362}{bombs}};                      }
-\DoxyCodeLine{118     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_aac3b4727c79906d0a99db72634b37fc8}{bombcooldown}};               }
-\DoxyCodeLine{119     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a037e8e370380046bec287bdc96942091}{range}};                      }
-\DoxyCodeLine{120     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a218b4f7c6cc2681a99c23a3b089d68b1}{speed}};                      }
-\DoxyCodeLine{121     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_a6cb2dc7d663ebfbcf47dee3ae9337b13}{timeuntilnextmovement}};   }
-\DoxyCodeLine{122     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_a93194d6a879aee48480899fc76a775fc}{movementcooldown}};        }
-\DoxyCodeLine{123     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_aef160b7437d94056f1dc59646cd5b87d}{score}};                      }
-\DoxyCodeLine{124     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};                         }
-\DoxyCodeLine{125 \};}
-\DoxyCodeLine{126 }
-\DoxyCodeLine{130 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_wall}{Wall}} \{}
-\DoxyCodeLine{131     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_wall_a933567351995a2f641e26be377c07fdc}{position}};       }
-\DoxyCodeLine{132 \};}
-\DoxyCodeLine{133 }
-\DoxyCodeLine{137 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_brick}{Brick}} \{}
-\DoxyCodeLine{138     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_brick_a933567351995a2f641e26be377c07fdc}{position}};       }
-\DoxyCodeLine{139 \};}
-\DoxyCodeLine{140 }
-\DoxyCodeLine{144 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_power_up}{PowerUp}} \{}
-\DoxyCodeLine{145     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_power_up_a933567351995a2f641e26be377c07fdc}{position}};       }
-\DoxyCodeLine{146     \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}{PowerUpType}} \mbox{\hyperlink{struct_power_up_a2d88c09a529d10066b285a4e6a0fe636}{type}};          }
-\DoxyCodeLine{147 \};}
-\DoxyCodeLine{148 }
-\DoxyCodeLine{152 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \{}
-\DoxyCodeLine{153     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_arena_model_af36076da5ef050e03e1a1d6201ab58df}{players}}[2];       }
-\DoxyCodeLine{154     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_bomb}{Bomb}} \mbox{\hyperlink{struct_arena_model_a535a90793dcbe9e21be1d60347cdf43d}{bombs}}[6];           }
-\DoxyCodeLine{155     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_wall}{Wall}} \mbox{\hyperlink{struct_arena_model_ae2850b3196ac8a61abfcb0e83a26ead8}{walls}}[450];         }
-\DoxyCodeLine{156     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_brick}{Brick}} \mbox{\hyperlink{struct_arena_model_ab607c1fc36f157e9b948401ecdea6b44}{bricks}}[450];       }
-\DoxyCodeLine{157     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{struct_arena_model_a9723a270ab1ce9568085bd147de68b5a}{explosions}}[450];   }
-\DoxyCodeLine{158     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_power_up}{PowerUp}} \mbox{\hyperlink{struct_arena_model_a89cc1123e84a29ed015c339acda34ae8}{powerUps}}[10];     }
-\DoxyCodeLine{159     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_button}{Button}} \mbox{\hyperlink{struct_arena_model_a3a8e0eaf735de369ad23e4175756f265}{returnButton}};      }
-\DoxyCodeLine{160     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_arena_model_a57f63506d2191a58a41afec3c3060221}{elapsedTime}};             }
-\DoxyCodeLine{161     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_afe9324c5c6c540512b5136e04d142581}{nWalls}};                     }
-\DoxyCodeLine{162     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_ab4cfedb99e6a5ac007af6e0f8edc37a9}{nBricks}};                    }
-\DoxyCodeLine{163     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_aaba9383551ae5b871c8241b14c05b016}{nPowerUps}};                  }
-\DoxyCodeLine{164     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_a47d84bc84f8465d3d80e6fe64a772c2a}{nBombs}};                     }
-\DoxyCodeLine{165     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_a5cdf93ed6773fc8f3e6c84e438c3f502}{nExplosions}};                }
+\DoxyCodeLine{78 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_explosion}{Explosion}} \{}
+\DoxyCodeLine{79     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_explosion_a88bea313fb075c1e74fccf889fff2b13}{position}};       }
+\DoxyCodeLine{80     \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{FlameDirection}} \mbox{\hyperlink{struct_explosion_ae2717d513394a4b5d1ca0e33185ba2d1}{direction}};  }
+\DoxyCodeLine{81     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_explosion_a51ba76473fb6075e09cf96732d92de29}{timeUntilNextXpm}};        }
+\DoxyCodeLine{82     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_explosion_ac6817c55be3a7346ae51eb88a738b293}{timeUntilFade}};           }
+\DoxyCodeLine{83     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_explosion_aba62e0cb56cb4f37c5f20733de15eb58}{currentXpm}};                 }
+\DoxyCodeLine{84 \};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{89 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_bomb}{Bomb}} \{}
+\DoxyCodeLine{90     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_bomb_a63522e03c5fa80f4c973ac99e8a7fd38}{position}};       }
+\DoxyCodeLine{91     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_bomb_a935358e8eb804f295b7037a31c6fe299}{timeUntilExplosion}};      }
+\DoxyCodeLine{92     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_bomb_a7eff7a9554a5c1a7eeb27daa7d0f9b85}{timeUntilNextXpm}};        }
+\DoxyCodeLine{93     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_bomb_a24d6533485a03aefb35f2ef18c3e37b2}{currentXpm}};                 }
+\DoxyCodeLine{94     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_bomb_ad4ad3ba56316287fe3b8b0d9b2ac24c8}{range}};                      }
+\DoxyCodeLine{95     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_bomb_aa750b17addae4fddb122477e9b65638c}{owner}};                      }
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{101 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_button}{Button}} \{}
+\DoxyCodeLine{102     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_a2ec3bc40025b64b44319e7464164d61f}{x}};                          }
+\DoxyCodeLine{103     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_afff35ce0c47f662c3b096e5b644648a5}{y}};                          }
+\DoxyCodeLine{104     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_a94051f6f79d4436d8a268a81b828863a}{width}};                      }
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_button_a1c43732d529541e53c6b83607bdc5673}{height}};                     }
+\DoxyCodeLine{106     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_button_a7e9bac3e0c56cff44c2ca289d6f4beb0}{selected}};                  }
+\DoxyCodeLine{107     xpm\_image\_t \mbox{\hyperlink{struct_button_a63ba1dd7b61dbb7c6b9f56ac83666788}{button\_selected}};    }
+\DoxyCodeLine{108     xpm\_image\_t \mbox{\hyperlink{struct_button_af2c31a95b79176177b6f708731d60265}{button\_unselected}};  }
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{114 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_player}{Player}} \{}
+\DoxyCodeLine{115     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_player_a6b13d6fbb767798ca8b56c4f64509c48}{name}}[10];                  }
+\DoxyCodeLine{116     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a71bef1ee19e8137979d2aa5c81f2e716}{nameSize}};                   }
+\DoxyCodeLine{117     \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{struct_player_af527ac145c19a5d1d7182af902b9b1d8}{direction}};       }
+\DoxyCodeLine{118     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_player_a62ff2115cce4b79b572c861abc0f3329}{position}};       }
+\DoxyCodeLine{119     xpm\_image\_t \mbox{\hyperlink{struct_player_aa4f088a61028112f449a6067e5a5b31b}{Left}}[3];            }
+\DoxyCodeLine{120     xpm\_image\_t \mbox{\hyperlink{struct_player_a9681f652a64c8102a8c373b0da8bfdd9}{Right}}[3];           }
+\DoxyCodeLine{121     xpm\_image\_t \mbox{\hyperlink{struct_player_ab7de8de58f86759a82b39ca8882fffed}{Up}}[3];              }
+\DoxyCodeLine{122     xpm\_image\_t \mbox{\hyperlink{struct_player_aabf403ba80712fc6a0c02f27e5626334}{Down}}[3];            }
+\DoxyCodeLine{123     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_aec5e0dc270bca604b1c0afdb8e2aaf85}{numberOfImages}};             }
+\DoxyCodeLine{124     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a586cb340db8c1569e57dbdb16f961f66}{currentXpm}};                 }
+\DoxyCodeLine{125     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_aae59a1f97ee7faa3f1e82f0cb7c9b324}{timeUntilNextXpm}};        }
+\DoxyCodeLine{126     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_ab279136607022ccfdb378b8b02712a57}{coldownBetweenXpms}};      }
+\DoxyCodeLine{127     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_ab3300fa23175647f3ff50311dd2a7e04}{lives}};                      }
+\DoxyCodeLine{128     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a948d5a3b282419b995dcc32f66bf6b54}{bombs}};                      }
+\DoxyCodeLine{129     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a09ae19670aa38aa9bd945a04d8503e4f}{bombcooldown}};               }
+\DoxyCodeLine{130     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a35ffee111d6a1d9fd25229b02264fc56}{range}};                      }
+\DoxyCodeLine{131     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a0349855298626faed9f05f86965ff689}{speed}};                      }
+\DoxyCodeLine{132     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_a835a2b171adab742e02dc12ca773832a}{timeuntilnextmovement}};   }
+\DoxyCodeLine{133     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_player_a5af8582c277b93262ae0765470926cd2}{movementcooldown}};        }
+\DoxyCodeLine{134     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_ace6abae8d66534ad0a1fd6458f786a6e}{score}};                      }
+\DoxyCodeLine{135     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_a05e05f3a23de78da7ec032ec2bcf8c6c}{id}};                         }
+\DoxyCodeLine{136 \};}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{141 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_wall}{Wall}} \{}
+\DoxyCodeLine{142     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_wall_ac3851cec58fecdb4b8701122c8fee35f}{position}};       }
+\DoxyCodeLine{143 \};}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{148 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_brick}{Brick}} \{}
+\DoxyCodeLine{149     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_brick_a9cf7b8face244967da57af57790a24f0}{position}};       }
+\DoxyCodeLine{150 \};}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{155 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_power_up}{PowerUp}} \{}
+\DoxyCodeLine{156     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_power_up_a966482c7de1d11e7f10ed06a15fb8687}{position}};       }
+\DoxyCodeLine{157     \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_af9ebd8dbeeabe9e4ae7deff6a184fa7d}{PowerUpType}} \mbox{\hyperlink{struct_power_up_acb19d836bb378060a49c9d3639da7454}{type}};          }
+\DoxyCodeLine{158 \};}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{163 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_leader_board_score}{LeaderBoardScore}} \{}
+\DoxyCodeLine{164     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_leader_board_score_a3ec94d239a6f818e864698b595890e4f}{name}}[10];                  }
+\DoxyCodeLine{165     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_leader_board_score_ad702ee46985d3206946bbbcc1adcfd30}{score}};                      }
 \DoxyCodeLine{166 \};}
 \DoxyCodeLine{167 }
-\DoxyCodeLine{171 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_menu_model}{MenuModel}} \{}
-\DoxyCodeLine{172     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_a4d4b64d77e8e94c0269a555600d585b1}{selectedOption}};             }
-\DoxyCodeLine{173     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_a1f00c2a725ac3734ae073bcb304f7e34}{selectedLevel}};              }
-\DoxyCodeLine{174     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_a020dd33db02b12236fe2587e22878fdc}{nlevels}};                    }
-\DoxyCodeLine{175     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_a10dc0aff94c5a212b076cefa1b240956}{noptions}};                   }
-\DoxyCodeLine{176 \};}
-\DoxyCodeLine{177 }
-\DoxyCodeLine{178 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// BOMBERMAN\_MODELS\_H}}
+\DoxyCodeLine{171 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \{}
+\DoxyCodeLine{172     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_coin}{Coin}} \mbox{\hyperlink{struct_arena_model_ae56bc7627ac4fcb3bfe765dfbf133864}{coins}}[450];              }
+\DoxyCodeLine{173     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_arena_model_aaab853f6840bd85178a5f119ef38d8f1}{players}}[2];            }
+\DoxyCodeLine{174     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_bomb}{Bomb}} \mbox{\hyperlink{struct_arena_model_ab0ae15339acf94cff76af8ca902ce288}{bombs}}[6];                }
+\DoxyCodeLine{175     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_wall}{Wall}} \mbox{\hyperlink{struct_arena_model_ab8e28b9e586ea2e1463dd35847f12cf7}{walls}}[450];              }
+\DoxyCodeLine{176     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_brick}{Brick}} \mbox{\hyperlink{struct_arena_model_a1f71c5cb873c886b64604c36a20dc2bb}{bricks}}[450];            }
+\DoxyCodeLine{177     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{struct_arena_model_a08afae9749c197f5aeba8541984d58f9}{explosions}}[450];    }
+\DoxyCodeLine{178     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_power_up}{PowerUp}} \mbox{\hyperlink{struct_arena_model_a328d35abe68e0dc95907116b3d6f34bb}{powerUps}}[10];         }
+\DoxyCodeLine{179     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_button}{Button}} \mbox{\hyperlink{struct_arena_model_aa40363bef8d27242da776f66b0175237}{returnButton}};          }
+\DoxyCodeLine{180     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_leader_board_score}{LeaderBoardScore}} \mbox{\hyperlink{struct_arena_model_af611b9600403664f894e77eb9c5035da}{scores}}[3];    }
+\DoxyCodeLine{181     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_arena_model_a9ac7402ea7b88ce80848d550fad36446}{elapsedTime}};                  }
+\DoxyCodeLine{182     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_acc40e74490c5727bd10c28528b4762a2}{nScores}};                         }
+\DoxyCodeLine{183     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_a7a4c96c1fb10f5dc67d9a50a3ffb18cd}{nWalls}};                          }
+\DoxyCodeLine{184     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_a090e026da18899da9b62d27d844f1684}{nBricks}};                         }
+\DoxyCodeLine{185     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_a403330d807d7b67206081e86135ce033}{nPowerUps}};                       }
+\DoxyCodeLine{186     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_ad75bd7eac82cddff5684dc24b112deda}{nBombs}};                          }
+\DoxyCodeLine{187     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_a7a3a5026412ed5e40d41abea4e4e8ada}{nExplosions}};                     }
+\DoxyCodeLine{188     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_arena_model_ae9d53bd8cab66d2c36305125f0245b07}{nCoins}};                          }
+\DoxyCodeLine{189 \};}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{194 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_menu_model}{MenuModel}} \{}
+\DoxyCodeLine{195     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_af4680ba8d4705270f2911bd3203d3d36}{selectedOption}};     }
+\DoxyCodeLine{196     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_a853c960b501047c729d28d3a02375254}{selectedLevel}};      }
+\DoxyCodeLine{197     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_afe08e69ee4c6c1cf73110a39045b203e}{nlevels}};            }
+\DoxyCodeLine{198     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_menu_model_a4217981dbca24710322caf32c81485c3}{noptions}};           }
+\DoxyCodeLine{199 \};}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// BOMBERMAN\_MODELS\_H}}
 
 \end{DoxyCode}

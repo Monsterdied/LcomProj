@@ -1,0 +1,6 @@
+<map id="is_updating_rtc" name="is_updating_rtc">
+<area shape="rect" id="node1" title="Check if RTC is updating." alt="" coords="472,31,582,57"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="284,31,424,57"/>
+<area shape="rect" id="node3" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,5,236,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,31,114,57"/>
+</map>

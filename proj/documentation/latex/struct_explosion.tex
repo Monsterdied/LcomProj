@@ -9,29 +9,86 @@ Represents an explosion in the game.
 
 {\ttfamily \#include $<$models.\+h$>$}
 
-\doxysubsection*{Data Fields}
+
+
+Collaboration diagram for Explosion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{struct_explosion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct_explosion_a933567351995a2f641e26be377c07fdc}\label{struct_explosion_a933567351995a2f641e26be377c07fdc}} 
-struct \mbox{\hyperlink{struct_position}{Position}} {\bfseries position}
+struct \mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_explosion_a88bea313fb075c1e74fccf889fff2b13}{position}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_position}{Position}} of the explosion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_explosion_a4fb652f4b9708d0ffb507018b71c80ca}\label{struct_explosion_a4fb652f4b9708d0ffb507018b71c80ca}} 
-enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}} {\bfseries direction}
+enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}} \mbox{\hyperlink{struct_explosion_ae2717d513394a4b5d1ca0e33185ba2d1}{direction}}
 \begin{DoxyCompactList}\small\item\em Direction of the flame. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_explosion_a0edc097ad2d6df8c7a7aefce120e8314}\label{struct_explosion_a0edc097ad2d6df8c7a7aefce120e8314}} 
-double {\bfseries time\+Until\+Next\+Xpm}
+double \mbox{\hyperlink{struct_explosion_a51ba76473fb6075e09cf96732d92de29}{time\+Until\+Next\+Xpm}}
 \begin{DoxyCompactList}\small\item\em Time until the next explosion sprite. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_explosion_a6d2b8b924baed5016dfe45527de7eefc}\label{struct_explosion_a6d2b8b924baed5016dfe45527de7eefc}} 
-double {\bfseries time\+Until\+Fade}
+double \mbox{\hyperlink{struct_explosion_ac6817c55be3a7346ae51eb88a738b293}{time\+Until\+Fade}}
 \begin{DoxyCompactList}\small\item\em Time until the explosion fades. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_explosion_a3c9ca3b9f5fd8f3237819d51c3876aee}\label{struct_explosion_a3c9ca3b9f5fd8f3237819d51c3876aee}} 
-int {\bfseries current\+Xpm}
+int \mbox{\hyperlink{struct_explosion_aba62e0cb56cb4f37c5f20733de15eb58}{current\+Xpm}}
 \begin{DoxyCompactList}\small\item\em Current explosion sprite index. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents an explosion in the game. 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_explosion_aba62e0cb56cb4f37c5f20733de15eb58}\label{struct_explosion_aba62e0cb56cb4f37c5f20733de15eb58}} 
+\index{Explosion@{Explosion}!currentXpm@{currentXpm}}
+\index{currentXpm@{currentXpm}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{currentXpm}{currentXpm}}
+{\footnotesize\ttfamily int Explosion\+::current\+Xpm}
+
+
+
+Current explosion sprite index. 
+
+\mbox{\Hypertarget{struct_explosion_ae2717d513394a4b5d1ca0e33185ba2d1}\label{struct_explosion_ae2717d513394a4b5d1ca0e33185ba2d1}} 
+\index{Explosion@{Explosion}!direction@{direction}}
+\index{direction@{direction}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}} Explosion\+::direction}
+
+
+
+Direction of the flame. 
+
+\mbox{\Hypertarget{struct_explosion_a88bea313fb075c1e74fccf889fff2b13}\label{struct_explosion_a88bea313fb075c1e74fccf889fff2b13}} 
+\index{Explosion@{Explosion}!position@{position}}
+\index{position@{position}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_position}{Position}} Explosion\+::position}
+
+
+
+\mbox{\hyperlink{struct_position}{Position}} of the explosion. 
+
+\mbox{\Hypertarget{struct_explosion_ac6817c55be3a7346ae51eb88a738b293}\label{struct_explosion_ac6817c55be3a7346ae51eb88a738b293}} 
+\index{Explosion@{Explosion}!timeUntilFade@{timeUntilFade}}
+\index{timeUntilFade@{timeUntilFade}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{timeUntilFade}{timeUntilFade}}
+{\footnotesize\ttfamily double Explosion\+::time\+Until\+Fade}
+
+
+
+Time until the explosion fades. 
+
+\mbox{\Hypertarget{struct_explosion_a51ba76473fb6075e09cf96732d92de29}\label{struct_explosion_a51ba76473fb6075e09cf96732d92de29}} 
+\index{Explosion@{Explosion}!timeUntilNextXpm@{timeUntilNextXpm}}
+\index{timeUntilNextXpm@{timeUntilNextXpm}!Explosion@{Explosion}}
+\doxysubsubsection{\texorpdfstring{timeUntilNextXpm}{timeUntilNextXpm}}
+{\footnotesize\ttfamily double Explosion\+::time\+Until\+Next\+Xpm}
+
+
+
+Time until the next explosion sprite. 
+
+
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}
+proj/src/models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}

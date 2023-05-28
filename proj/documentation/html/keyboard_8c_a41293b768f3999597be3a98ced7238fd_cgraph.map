@@ -1,0 +1,8 @@
+<map id="kbd_reenable_ints" name="kbd_reenable_ints">
+<area shape="rect" id="node1" title="Re&#45;enable keyboard interrupts." alt="" coords="5,31,132,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ab20c4c141e47cfc8bc30a8b921650a67" title="Read data from KBC." alt="" coords="193,56,317,83"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html#a6de0303cece942c2a2652022b242f3e1" title="Write command to KBC." alt="" coords="180,5,330,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#ab6bec41fbf3df2d52442ff59f362be6e" title="Get keyboard status." alt="" coords="392,5,534,32"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#af3304ab500463d5b5fa6c64c8297c1cd" title="Read from keyboard output buffer." alt="" coords="378,56,547,83"/>
+<area shape="rect" id="node4" href="$keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="595,31,686,57"/>
+</map>

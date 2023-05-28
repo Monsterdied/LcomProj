@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['b_0',['B',['../video__gr_8h.html#adc1ead69a7f043672155333c27a4d666',1,'video_gr.c']]],
-  ['bombsspritecontrollers_1',['BombsSpriteControllers',['../_controller_8h.html#a41a97cc1726fef82901651228dae14ae',1,'Controller.c']]]
+  ['addplayertoleaderboard1_0',['addPlayerToLeaderboard1',['../_controller_8c.html#acee24d031f07f3913f6cc724c707119c',1,'addPlayerToLeaderboard1(struct Player player, struct ArenaModel *arenamodel, time_display time):&#160;Controller.c'],['../_controller_8h.html#a02a101562eaf2bcf293e6e5d613b464d',1,'addPlayerToLeaderboard1(struct Player player, struct ArenaModel *arenamodel, time_display time):&#160;Controller.c']]]
 ];

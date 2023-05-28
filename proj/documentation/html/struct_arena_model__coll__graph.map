@@ -1,0 +1,13 @@
+<map id="ArenaModel" name="ArenaModel">
+<area shape="rect" id="node1" title="Represents the model of an arena in a game." alt="" coords="293,187,384,213"/>
+<area shape="rect" id="node2" href="$struct_coin.html" title="Represents a coin in the game." alt="" coords="5,96,53,123"/>
+<area shape="rect" id="node3" href="$struct_position.html" title="Represents a position in the game arena." alt="" coords="234,5,302,32"/>
+<area shape="rect" id="node4" href="$struct_player.html" title="Represents a player in the game." alt="" coords="79,96,137,123"/>
+<area shape="rect" id="node5" href="$struct_bomb.html" title="Represents a bomb in the game." alt="" coords="161,96,217,123"/>
+<area shape="rect" id="node6" href="$struct_wall.html" title="Represents a wall in the game arena." alt="" coords="241,96,289,123"/>
+<area shape="rect" id="node7" href="$struct_brick.html" title="Represents a brick in the game arena." alt="" coords="313,96,364,123"/>
+<area shape="rect" id="node8" href="$struct_explosion.html" title="Represents an explosion in the game." alt="" coords="389,96,467,123"/>
+<area shape="rect" id="node9" href="$struct_power_up.html" title="Represents a power&#45;up in the game." alt="" coords="491,96,564,123"/>
+<area shape="rect" id="node10" href="$struct_button.html" title="Represents a button in the game&#39;s menu." alt="" coords="589,96,648,123"/>
+<area shape="rect" id="node11" href="$struct_leader_board_score.html" title="Represents a score in the leaderboard." alt="" coords="672,96,800,123"/>
+</map>

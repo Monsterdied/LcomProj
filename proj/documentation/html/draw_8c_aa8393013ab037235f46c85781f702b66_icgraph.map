@@ -1,0 +1,6 @@
+<map id="drawBombs" name="drawBombs">
+<area shape="rect" id="node1" title="Draw the bombs on the screen." alt="" coords="401,5,491,32"/>
+<area shape="rect" id="node2" href="$draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="266,5,353,32"/>
+<area shape="rect" id="node3" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>

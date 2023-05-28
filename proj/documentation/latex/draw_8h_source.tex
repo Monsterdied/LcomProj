@@ -1,5 +1,5 @@
 \hypertarget{draw_8h_source}{}\doxysection{draw.\+h}
-\label{draw_8h_source}\index{draw/draw.h@{draw/draw.h}}
+\label{draw_8h_source}\index{proj/src/draw/draw.h@{proj/src/draw/draw.h}}
 \mbox{\hyperlink{draw_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 }
@@ -98,30 +98,60 @@
 \DoxyCodeLine{99 }
 \DoxyCodeLine{100 \textcolor{preprocessor}{\#include "{}models/font/font.xpm"{}}}
 \DoxyCodeLine{101 }
-\DoxyCodeLine{110 int (\mbox{\hyperlink{draw_8h_a5879bf4f041654dfe02e6912770b74e1}{load\_xpms}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* model);}
+\DoxyCodeLine{102 \textcolor{comment}{//coinss}}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#include "{}models/coin/coin1.xpm"{}}}
+\DoxyCodeLine{105 \textcolor{preprocessor}{\#include "{}models/coin/coin2.xpm"{}}}
+\DoxyCodeLine{106 \textcolor{preprocessor}{\#include "{}models/coin/coin3.xpm"{}}}
+\DoxyCodeLine{107 \textcolor{preprocessor}{\#include "{}models/coin/coin4.xpm"{}}}
+\DoxyCodeLine{108 \textcolor{preprocessor}{\#include "{}models/coin/coin5.xpm"{}}}
+\DoxyCodeLine{109 \textcolor{preprocessor}{\#include "{}models/weather/sun.xpm"{}}}
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#include "{}models/weather/moon.xpm"{}}}
 \DoxyCodeLine{111 }
-\DoxyCodeLine{120 void (\mbox{\hyperlink{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}{draw\_game}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse);}
+\DoxyCodeLine{112 \textcolor{comment}{//background}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{preprocessor}{\#include "{}models/background/grass.xpm"{}}}
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#include "{}models/background/grassnight.xpm"{}}}
+\DoxyCodeLine{116 \textcolor{preprocessor}{\#include "{}models/background/message\_background.xpm"{}}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120 }
 \DoxyCodeLine{121 }
-\DoxyCodeLine{129 \textcolor{keywordtype}{char}** (\mbox{\hyperlink{draw_8h_ae23186dd72a3da5be056911ec2446752}{getemptyArena}})();}
-\DoxyCodeLine{130 }
-\DoxyCodeLine{138 void (\mbox{\hyperlink{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}{drawPlayers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
-\DoxyCodeLine{139 }
-\DoxyCodeLine{147 void (\mbox{\hyperlink{draw_8h_aa8393013ab037235f46c85781f702b66}{drawBombs}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
-\DoxyCodeLine{148 }
-\DoxyCodeLine{157 void (\mbox{\hyperlink{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}{drawPowerUps}})(\textcolor{keywordtype}{char}** arena, \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128 }
+\DoxyCodeLine{137 int (\mbox{\hyperlink{draw_8h_a5879bf4f041654dfe02e6912770b74e1}{load\_xpms}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{148 void (\mbox{\hyperlink{draw_8h_aeb1fc85395bc4b7fb4eacefe84609837}{draw\_game}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}},\mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}},\mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{157 \textcolor{keywordtype}{char}** (\mbox{\hyperlink{draw_8h_ae23186dd72a3da5be056911ec2446752}{getemptyArena}})();}
 \DoxyCodeLine{158 }
-\DoxyCodeLine{166 void (\mbox{\hyperlink{draw_8h_a5a5865b4ef99decdaa500966aed13e78}{drawBricks}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{166 void (\mbox{\hyperlink{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}{drawPlayers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
 \DoxyCodeLine{167 }
-\DoxyCodeLine{175 void (\mbox{\hyperlink{draw_8h_aa5411dccade6329de024fa2782476d69}{drawWalls}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{175 void (\mbox{\hyperlink{draw_8h_aa8393013ab037235f46c85781f702b66}{drawBombs}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
 \DoxyCodeLine{176 }
-\DoxyCodeLine{186 void (\mbox{\hyperlink{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}{draw\_menu}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_menu_model}{MenuModel}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse, \mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
-\DoxyCodeLine{187 }
-\DoxyCodeLine{195 void (\mbox{\hyperlink{draw_8h_a5eca413a86c3effd38130e380a177693}{draw\_TimeNumbers}})(\mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
-\DoxyCodeLine{196 }
-\DoxyCodeLine{208 void (\mbox{\hyperlink{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}{draw\_string}})(\textcolor{keywordtype}{char}* text, \textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} size, uint32\_t color);}
-\DoxyCodeLine{209 }
-\DoxyCodeLine{219 void (\mbox{\hyperlink{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}{draw\_select\_names}})(\textcolor{keywordtype}{int} player\_number, \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse);}
-\DoxyCodeLine{220 }
-\DoxyCodeLine{221 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// UNTITLED10\_DRAW\_H}}
+\DoxyCodeLine{184 void (\mbox{\hyperlink{draw_8h_a5a5865b4ef99decdaa500966aed13e78}{drawBricks}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{193 void (\mbox{\hyperlink{draw_8h_aa5411dccade6329de024fa2782476d69}{drawWalls}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{204 void (\mbox{\hyperlink{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}{draw\_menu}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_menu_model}{MenuModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}, \mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{213 void (\mbox{\hyperlink{draw_8h_a5eca413a86c3effd38130e380a177693}{draw\_TimeNumbers}})(\mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
+\DoxyCodeLine{221 void (\mbox{\hyperlink{draw_8h_a68ac815675704205525d468115556f79}{draw\_players\_info}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
+\DoxyCodeLine{230 void (\mbox{\hyperlink{draw_8h_acfa174ac4a88e944facf39da6888c0db}{draw\_Game\_over\_report}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}} state);}
+\DoxyCodeLine{241 void (\mbox{\hyperlink{draw_8h_a4bd80903d8139b9daedef6a7770a4998}{draw\_message}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}} state,\mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}},bool \mbox{\hyperlink{message_8c_a219cb815fdea729196b50fa65de3de0f}{is\_selected}});}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244 }
+\DoxyCodeLine{256 void (\mbox{\hyperlink{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}{draw\_string}})(\textcolor{keywordtype}{char}* text, \textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} size, uint32\_t color);}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{267 void (\mbox{\hyperlink{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}{draw\_select\_names}})(\textcolor{keywordtype}{int} player\_number, \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}});}
+\DoxyCodeLine{268 }
+\DoxyCodeLine{269 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED10\_DRAW\_H}}
 
 \end{DoxyCode}

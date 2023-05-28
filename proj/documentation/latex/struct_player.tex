@@ -9,77 +9,278 @@ Represents a player in the game.
 
 {\ttfamily \#include $<$models.\+h$>$}
 
-\doxysubsection*{Data Fields}
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{struct_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct_player_a38db771080a5bca533de0f0236ff11ec}\label{struct_player_a38db771080a5bca533de0f0236ff11ec}} 
-char {\bfseries name} \mbox{[}10\mbox{]}
+char \mbox{\hyperlink{struct_player_a6b13d6fbb767798ca8b56c4f64509c48}{name}} \mbox{[}10\mbox{]}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a51ddb8c567f39d56695a119feb09a994}\label{struct_player_a51ddb8c567f39d56695a119feb09a994}} 
-int {\bfseries name\+Size}
+int \mbox{\hyperlink{struct_player_a71bef1ee19e8137979d2aa5c81f2e716}{name\+Size}}
 \begin{DoxyCompactList}\small\item\em Size of the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a1849a6bd8808290f3b62fa122245d987}\label{struct_player_a1849a6bd8808290f3b62fa122245d987}} 
-enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} {\bfseries direction}
+enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{struct_player_af527ac145c19a5d1d7182af902b9b1d8}{direction}}
 \begin{DoxyCompactList}\small\item\em Current movement direction. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a933567351995a2f641e26be377c07fdc}\label{struct_player_a933567351995a2f641e26be377c07fdc}} 
-struct \mbox{\hyperlink{struct_position}{Position}} {\bfseries position}
+struct \mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{struct_player_a62ff2115cce4b79b572c861abc0f3329}{position}}
 \begin{DoxyCompactList}\small\item\em Current position. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_ac96084c9da1fca4bd0bc0813f381acf6}\label{struct_player_ac96084c9da1fca4bd0bc0813f381acf6}} 
-xpm\+\_\+image\+\_\+t {\bfseries Left} \mbox{[}3\mbox{]}
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{struct_player_aa4f088a61028112f449a6067e5a5b31b}{Left}} \mbox{[}3\mbox{]}
 \begin{DoxyCompactList}\small\item\em Images for the left movement animation. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a7f7fc401257e9db8c1c7ff9b18b164b5}\label{struct_player_a7f7fc401257e9db8c1c7ff9b18b164b5}} 
-xpm\+\_\+image\+\_\+t {\bfseries Right} \mbox{[}3\mbox{]}
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{struct_player_a9681f652a64c8102a8c373b0da8bfdd9}{Right}} \mbox{[}3\mbox{]}
 \begin{DoxyCompactList}\small\item\em Images for the right movement animation. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a98a04c7db95a0f6d6cef01adfbd20a9e}\label{struct_player_a98a04c7db95a0f6d6cef01adfbd20a9e}} 
-xpm\+\_\+image\+\_\+t {\bfseries Up} \mbox{[}3\mbox{]}
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{struct_player_ab7de8de58f86759a82b39ca8882fffed}{Up}} \mbox{[}3\mbox{]}
 \begin{DoxyCompactList}\small\item\em Images for the up movement animation. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_ae4ba66af694f947fd14500906fdcb1fd}\label{struct_player_ae4ba66af694f947fd14500906fdcb1fd}} 
-xpm\+\_\+image\+\_\+t {\bfseries Down} \mbox{[}3\mbox{]}
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{struct_player_aabf403ba80712fc6a0c02f27e5626334}{Down}} \mbox{[}3\mbox{]}
 \begin{DoxyCompactList}\small\item\em Images for the down movement animation. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a5d5aa9a8f25d33232631cfd9da9d06f6}\label{struct_player_a5d5aa9a8f25d33232631cfd9da9d06f6}} 
-int {\bfseries number\+Of\+Images}
+int \mbox{\hyperlink{struct_player_aec5e0dc270bca604b1c0afdb8e2aaf85}{number\+Of\+Images}}
 \begin{DoxyCompactList}\small\item\em Number of animation images. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a3c9ca3b9f5fd8f3237819d51c3876aee}\label{struct_player_a3c9ca3b9f5fd8f3237819d51c3876aee}} 
-int {\bfseries current\+Xpm}
+int \mbox{\hyperlink{struct_player_a586cb340db8c1569e57dbdb16f961f66}{current\+Xpm}}
 \begin{DoxyCompactList}\small\item\em Current animation image index. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a0edc097ad2d6df8c7a7aefce120e8314}\label{struct_player_a0edc097ad2d6df8c7a7aefce120e8314}} 
-double {\bfseries time\+Until\+Next\+Xpm}
+double \mbox{\hyperlink{struct_player_aae59a1f97ee7faa3f1e82f0cb7c9b324}{time\+Until\+Next\+Xpm}}
 \begin{DoxyCompactList}\small\item\em Time until the next animation image. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a74e56bcfe770a79b906b09ddde3e315b}\label{struct_player_a74e56bcfe770a79b906b09ddde3e315b}} 
-double {\bfseries coldown\+Between\+Xpms}
+double \mbox{\hyperlink{struct_player_ab279136607022ccfdb378b8b02712a57}{coldown\+Between\+Xpms}}
 \begin{DoxyCompactList}\small\item\em Cooldown between animation images. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_ac1d68ef9a5dd304c5015e07af7f2bb19}\label{struct_player_ac1d68ef9a5dd304c5015e07af7f2bb19}} 
-int {\bfseries lives}
+int \mbox{\hyperlink{struct_player_ab3300fa23175647f3ff50311dd2a7e04}{lives}}
 \begin{DoxyCompactList}\small\item\em Number of remaining lives. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a942c83a0c13f3bb998e8802bb5921362}\label{struct_player_a942c83a0c13f3bb998e8802bb5921362}} 
-int {\bfseries bombs}
+int \mbox{\hyperlink{struct_player_a948d5a3b282419b995dcc32f66bf6b54}{bombs}}
 \begin{DoxyCompactList}\small\item\em Number of bombs the player has. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_aac3b4727c79906d0a99db72634b37fc8}\label{struct_player_aac3b4727c79906d0a99db72634b37fc8}} 
-int {\bfseries bombcooldown}
+int \mbox{\hyperlink{struct_player_a09ae19670aa38aa9bd945a04d8503e4f}{bombcooldown}}
 \begin{DoxyCompactList}\small\item\em Cooldown between placing bombs. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a037e8e370380046bec287bdc96942091}\label{struct_player_a037e8e370380046bec287bdc96942091}} 
-int {\bfseries range}
+int \mbox{\hyperlink{struct_player_a35ffee111d6a1d9fd25229b02264fc56}{range}}
 \begin{DoxyCompactList}\small\item\em Range of the player\textquotesingle{}s bombs. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a218b4f7c6cc2681a99c23a3b089d68b1}\label{struct_player_a218b4f7c6cc2681a99c23a3b089d68b1}} 
-int {\bfseries speed}
+int \mbox{\hyperlink{struct_player_a0349855298626faed9f05f86965ff689}{speed}}
 \begin{DoxyCompactList}\small\item\em Movement speed of the player. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a6cb2dc7d663ebfbcf47dee3ae9337b13}\label{struct_player_a6cb2dc7d663ebfbcf47dee3ae9337b13}} 
-double {\bfseries timeuntilnextmovement}
+double \mbox{\hyperlink{struct_player_a835a2b171adab742e02dc12ca773832a}{timeuntilnextmovement}}
 \begin{DoxyCompactList}\small\item\em Time until the next movement. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a93194d6a879aee48480899fc76a775fc}\label{struct_player_a93194d6a879aee48480899fc76a775fc}} 
-double {\bfseries movementcooldown}
+double \mbox{\hyperlink{struct_player_a5af8582c277b93262ae0765470926cd2}{movementcooldown}}
 \begin{DoxyCompactList}\small\item\em Cooldown between movements. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_aef160b7437d94056f1dc59646cd5b87d}\label{struct_player_aef160b7437d94056f1dc59646cd5b87d}} 
-int {\bfseries score}
+int \mbox{\hyperlink{struct_player_ace6abae8d66534ad0a1fd6458f786a6e}{score}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s score. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_player_a7441ef0865bcb3db9b8064dd7375c1ea}\label{struct_player_a7441ef0865bcb3db9b8064dd7375c1ea}} 
-int {\bfseries id}
+int \mbox{\hyperlink{struct_player_a05e05f3a23de78da7ec032ec2bcf8c6c}{id}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents a player in the game. 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_player_a09ae19670aa38aa9bd945a04d8503e4f}\label{struct_player_a09ae19670aa38aa9bd945a04d8503e4f}} 
+\index{Player@{Player}!bombcooldown@{bombcooldown}}
+\index{bombcooldown@{bombcooldown}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{bombcooldown}{bombcooldown}}
+{\footnotesize\ttfamily int Player\+::bombcooldown}
+
+
+
+Cooldown between placing bombs. 
+
+\mbox{\Hypertarget{struct_player_a948d5a3b282419b995dcc32f66bf6b54}\label{struct_player_a948d5a3b282419b995dcc32f66bf6b54}} 
+\index{Player@{Player}!bombs@{bombs}}
+\index{bombs@{bombs}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{bombs}{bombs}}
+{\footnotesize\ttfamily int Player\+::bombs}
+
+
+
+Number of bombs the player has. 
+
+\mbox{\Hypertarget{struct_player_ab279136607022ccfdb378b8b02712a57}\label{struct_player_ab279136607022ccfdb378b8b02712a57}} 
+\index{Player@{Player}!coldownBetweenXpms@{coldownBetweenXpms}}
+\index{coldownBetweenXpms@{coldownBetweenXpms}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{coldownBetweenXpms}{coldownBetweenXpms}}
+{\footnotesize\ttfamily double Player\+::coldown\+Between\+Xpms}
+
+
+
+Cooldown between animation images. 
+
+\mbox{\Hypertarget{struct_player_a586cb340db8c1569e57dbdb16f961f66}\label{struct_player_a586cb340db8c1569e57dbdb16f961f66}} 
+\index{Player@{Player}!currentXpm@{currentXpm}}
+\index{currentXpm@{currentXpm}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{currentXpm}{currentXpm}}
+{\footnotesize\ttfamily int Player\+::current\+Xpm}
+
+
+
+Current animation image index. 
+
+\mbox{\Hypertarget{struct_player_af527ac145c19a5d1d7182af902b9b1d8}\label{struct_player_af527ac145c19a5d1d7182af902b9b1d8}} 
+\index{Player@{Player}!direction@{direction}}
+\index{direction@{direction}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Player\+::direction}
+
+
+
+Current movement direction. 
+
+\mbox{\Hypertarget{struct_player_aabf403ba80712fc6a0c02f27e5626334}\label{struct_player_aabf403ba80712fc6a0c02f27e5626334}} 
+\index{Player@{Player}!Down@{Down}}
+\index{Down@{Down}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Down}{Down}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Player\+::\+Down\mbox{[}3\mbox{]}}
+
+
+
+Images for the down movement animation. 
+
+\mbox{\Hypertarget{struct_player_a05e05f3a23de78da7ec032ec2bcf8c6c}\label{struct_player_a05e05f3a23de78da7ec032ec2bcf8c6c}} 
+\index{Player@{Player}!id@{id}}
+\index{id@{id}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Player\+::id}
+
+
+
+\mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s ID. 
+
+\mbox{\Hypertarget{struct_player_aa4f088a61028112f449a6067e5a5b31b}\label{struct_player_aa4f088a61028112f449a6067e5a5b31b}} 
+\index{Player@{Player}!Left@{Left}}
+\index{Left@{Left}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Player\+::\+Left\mbox{[}3\mbox{]}}
+
+
+
+Images for the left movement animation. 
+
+\mbox{\Hypertarget{struct_player_ab3300fa23175647f3ff50311dd2a7e04}\label{struct_player_ab3300fa23175647f3ff50311dd2a7e04}} 
+\index{Player@{Player}!lives@{lives}}
+\index{lives@{lives}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily int Player\+::lives}
+
+
+
+Number of remaining lives. 
+
+\mbox{\Hypertarget{struct_player_a5af8582c277b93262ae0765470926cd2}\label{struct_player_a5af8582c277b93262ae0765470926cd2}} 
+\index{Player@{Player}!movementcooldown@{movementcooldown}}
+\index{movementcooldown@{movementcooldown}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{movementcooldown}{movementcooldown}}
+{\footnotesize\ttfamily double Player\+::movementcooldown}
+
+
+
+Cooldown between movements. 
+
+\mbox{\Hypertarget{struct_player_a6b13d6fbb767798ca8b56c4f64509c48}\label{struct_player_a6b13d6fbb767798ca8b56c4f64509c48}} 
+\index{Player@{Player}!name@{name}}
+\index{name@{name}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char Player\+::name\mbox{[}10\mbox{]}}
+
+
+
+\mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s name. 
+
+\mbox{\Hypertarget{struct_player_a71bef1ee19e8137979d2aa5c81f2e716}\label{struct_player_a71bef1ee19e8137979d2aa5c81f2e716}} 
+\index{Player@{Player}!nameSize@{nameSize}}
+\index{nameSize@{nameSize}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{nameSize}{nameSize}}
+{\footnotesize\ttfamily int Player\+::name\+Size}
+
+
+
+Size of the player\textquotesingle{}s name. 
+
+\mbox{\Hypertarget{struct_player_aec5e0dc270bca604b1c0afdb8e2aaf85}\label{struct_player_aec5e0dc270bca604b1c0afdb8e2aaf85}} 
+\index{Player@{Player}!numberOfImages@{numberOfImages}}
+\index{numberOfImages@{numberOfImages}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{numberOfImages}{numberOfImages}}
+{\footnotesize\ttfamily int Player\+::number\+Of\+Images}
+
+
+
+Number of animation images. 
+
+\mbox{\Hypertarget{struct_player_a62ff2115cce4b79b572c861abc0f3329}\label{struct_player_a62ff2115cce4b79b572c861abc0f3329}} 
+\index{Player@{Player}!position@{position}}
+\index{position@{position}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_position}{Position}} Player\+::position}
+
+
+
+Current position. 
+
+\mbox{\Hypertarget{struct_player_a35ffee111d6a1d9fd25229b02264fc56}\label{struct_player_a35ffee111d6a1d9fd25229b02264fc56}} 
+\index{Player@{Player}!range@{range}}
+\index{range@{range}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily int Player\+::range}
+
+
+
+Range of the player\textquotesingle{}s bombs. 
+
+\mbox{\Hypertarget{struct_player_a9681f652a64c8102a8c373b0da8bfdd9}\label{struct_player_a9681f652a64c8102a8c373b0da8bfdd9}} 
+\index{Player@{Player}!Right@{Right}}
+\index{Right@{Right}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Player\+::\+Right\mbox{[}3\mbox{]}}
+
+
+
+Images for the right movement animation. 
+
+\mbox{\Hypertarget{struct_player_ace6abae8d66534ad0a1fd6458f786a6e}\label{struct_player_ace6abae8d66534ad0a1fd6458f786a6e}} 
+\index{Player@{Player}!score@{score}}
+\index{score@{score}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Player\+::score}
+
+
+
+\mbox{\hyperlink{struct_player}{Player}}\textquotesingle{}s score. 
+
+\mbox{\Hypertarget{struct_player_a0349855298626faed9f05f86965ff689}\label{struct_player_a0349855298626faed9f05f86965ff689}} 
+\index{Player@{Player}!speed@{speed}}
+\index{speed@{speed}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily int Player\+::speed}
+
+
+
+Movement speed of the player. 
+
+\mbox{\Hypertarget{struct_player_a835a2b171adab742e02dc12ca773832a}\label{struct_player_a835a2b171adab742e02dc12ca773832a}} 
+\index{Player@{Player}!timeuntilnextmovement@{timeuntilnextmovement}}
+\index{timeuntilnextmovement@{timeuntilnextmovement}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{timeuntilnextmovement}{timeuntilnextmovement}}
+{\footnotesize\ttfamily double Player\+::timeuntilnextmovement}
+
+
+
+Time until the next movement. 
+
+\mbox{\Hypertarget{struct_player_aae59a1f97ee7faa3f1e82f0cb7c9b324}\label{struct_player_aae59a1f97ee7faa3f1e82f0cb7c9b324}} 
+\index{Player@{Player}!timeUntilNextXpm@{timeUntilNextXpm}}
+\index{timeUntilNextXpm@{timeUntilNextXpm}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{timeUntilNextXpm}{timeUntilNextXpm}}
+{\footnotesize\ttfamily double Player\+::time\+Until\+Next\+Xpm}
+
+
+
+Time until the next animation image. 
+
+\mbox{\Hypertarget{struct_player_ab7de8de58f86759a82b39ca8882fffed}\label{struct_player_ab7de8de58f86759a82b39ca8882fffed}} 
+\index{Player@{Player}!Up@{Up}}
+\index{Up@{Up}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Up}{Up}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Player\+::\+Up\mbox{[}3\mbox{]}}
+
+
+
+Images for the up movement animation. 
+
+
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}
+proj/src/models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}

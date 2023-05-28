@@ -1,0 +1,6 @@
+<map id="getHours" name="getHours">
+<area shape="rect" id="node1" title="Get hours value from time display structure." alt="" coords="382,31,455,57"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="170,5,305,32"/>
+<area shape="rect" id="node4" href="$draw_8c.html#a10a063ab18d99e46aa4cbb1e398d9227" title=" " alt="" coords="141,56,334,83"/>
+<area shape="rect" id="node3" href="$draw_8c.html#a4ee5f4de5222a6bec9ccded4d7464c3c" title="Draw the menu." alt="" coords="5,5,93,32"/>
+</map>

@@ -1,0 +1,83 @@
+\hypertarget{main_8c}{}\doxysection{proj/src/main.c File Reference}
+\label{main_8c}\index{proj/src/main.c@{proj/src/main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Game/load.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game/game\+Controllers/\+Controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game/\+Game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game/\+Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game/message.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game/\+Select\+Names.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int() \mbox{\hyperlink{main_8c_a33bde23e0d2bbde847401c5ac6fb62e0}{proj\+\_\+main\+\_\+loop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{main_8c_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}}
+\item 
+int \mbox{\hyperlink{main_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}{scan\+\_\+code}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{main_8c_acb559820d9ca11295b4500f179ef6392}{i}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8c_a33bde23e0d2bbde847401c5ac6fb62e0}\label{main_8c_a33bde23e0d2bbde847401c5ac6fb62e0}} 
+\index{main.c@{main.c}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a33bde23e0d2bbde847401c5ac6fb62e0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_acb559820d9ca11295b4500f179ef6392}\label{main_8c_acb559820d9ca11295b4500f179ef6392}} 
+\index{main.c@{main.c}!i@{i}}
+\index{i@{i}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int i = 0}
+
+\mbox{\Hypertarget{main_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}\label{main_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}} 
+\index{main.c@{main.c}!scan\_code@{scan\_code}}
+\index{scan\_code@{scan\_code}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{scan\_code}{scan\_code}}
+{\footnotesize\ttfamily int scan\+\_\+code\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_aa3f6a6defa5127eb02d3295072f600e8}\label{main_8c_aa3f6a6defa5127eb02d3295072f600e8}} 
+\index{main.c@{main.c}!time\_info@{time\_info}}
+\index{time\_info@{time\_info}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{time\_info}{time\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtime__display}{time\+\_\+display}} time\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+Structure to store the current time information used in the Game 

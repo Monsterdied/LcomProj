@@ -1,0 +1,7 @@
+<map id="mouse_ih_new" name="mouse_ih_new">
+<area shape="rect" id="node1" title="New mouse interrupt handler." alt="" coords="5,56,113,83"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a6c96b97b6d60426a8fc089131ca0c1db" title="Get mouse status." alt="" coords="339,5,467,32"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a50796bc7dd16af8dbf9dc017679c3cf7" title="Read data from mouse buffer." alt="" coords="161,56,291,83"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#ae8de3b11f61e6108d9d8a86a064b56e2" title=" " alt="" coords="173,107,279,133"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a12fcac504aae73920e4a56f35a6b71bc" title=" " alt="" coords="515,31,641,57"/>
+</map>

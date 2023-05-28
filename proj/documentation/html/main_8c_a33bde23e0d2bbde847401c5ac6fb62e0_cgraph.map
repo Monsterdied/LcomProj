@@ -1,0 +1,52 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,816,114,843"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#acee24d031f07f3913f6cc724c707119c" title="Adds a player to the leaderboard." alt="" coords="162,537,333,564"/>
+<area shape="rect" id="node3" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="219,588,276,615"/>
+<area shape="rect" id="node39" href="$draw_8c.html#a5879bf4f041654dfe02e6912770b74e1" title="Load XPM images." alt="" coords="205,740,290,767"/>
+<area shape="rect" id="node40" href="$load_8c.html#ab80cdd57edfd3a5d18279ee8b3f2fb3d" title="Load ArenaModel." alt="" coords="208,791,287,817"/>
+<area shape="rect" id="node41" href="$_menu_8c.html#a5e7fe29bd8568e8ad6760680b1440016" title="Menu function." alt="" coords="221,841,274,868"/>
+<area shape="rect" id="node42" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="210,892,285,919"/>
+<area shape="rect" id="node46" href="$rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="395,1145,535,1172"/>
+<area shape="rect" id="node50" href="$_select_names_8c.html#a3fa66fb8fb75d038a1ef1a64859601ef" title="Select Names function." alt="" coords="198,993,297,1020"/>
+<area shape="rect" id="node4" href="$_controller_8c.html#a864a7493efe7b44a568570c8e7bd07c7" title="Bombs sprite controllers." alt="" coords="386,335,544,361"/>
+<area shape="rect" id="node6" href="$_controller_8c.html#a740d8a0dbf4c167398145b289caf4971" title="Coin controller." alt="" coords="414,132,516,159"/>
+<area shape="rect" id="node7" href="$draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="421,183,508,209"/>
+<area shape="rect" id="node18" href="$draw_8c.html#acfa174ac4a88e944facf39da6888c0db" title="Draws the game over report on the screen." alt="" coords="596,563,757,589"/>
+<area shape="rect" id="node19" href="$draw_8c.html#a68ac815675704205525d468115556f79" title="Draws the players&#39; information on the screen." alt="" coords="403,233,527,260"/>
+<area shape="rect" id="node20" href="$_controller_8c.html#a6381c5aeb49e8e3cf6b4487dee31bb36" title="Explosions controller." alt="" coords="395,284,535,311"/>
+<area shape="rect" id="node21" href="$_game_8c.html#a8e0affe829ccce82fdc42ce62263585a" title=" " alt="" coords="408,639,521,665"/>
+<area shape="rect" id="node27" href="$keyboard_8c.html#ab9e6ed7960d60aa4834f2038247d4536" title="Keyboard interrupt handler." alt="" coords="435,993,494,1020"/>
+<area shape="rect" id="node30" href="$keyboard_8c.html#a87d2894ac39226ebf66cb013f4cf580d" title="Unsubscribe from KBC interrupts." alt="" coords="404,689,525,716"/>
+<area shape="rect" id="node31" href="$_game_8c.html#a070dcf42782f9c2bc20a0d7d7124b63c" title=" " alt="" coords="403,385,526,412"/>
+<area shape="rect" id="node32" href="$mouse_8c.html#af5ab1f26fb0d446e2eb99a5da1dacc13" title="New mouse interrupt handler." alt="" coords="411,740,518,767"/>
+<area shape="rect" id="node33" href="$mouse_8c.html#a021b68075751bdd9d7bdfdfaf8210665" title="Unsubscribe from mouse interrupts." alt="" coords="395,791,534,817"/>
+<area shape="rect" id="node34" href="$_controller_8c.html#a0364c78b9f8367ee86e75a109a914143" title="Player controllers." alt="" coords="405,436,525,463"/>
+<area shape="rect" id="node35" href="$_controller_8c.html#a182e89a492060d6b194963e938a9c74b" title="Check if players are alive." alt="" coords="409,487,521,513"/>
+<area shape="rect" id="node36" href="$_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="384,537,545,564"/>
+<area shape="rect" id="node37" href="$timer_8c.html#afabd21de449be154dd65d5fdb2d8045d" title=" " alt="" coords="391,841,539,868"/>
+<area shape="rect" id="node38" href="$video__gr_8c.html#ab8df8dda113075aa93a80847746f49a4" title="Update video graphics." alt="" coords="425,892,504,919"/>
+<area shape="rect" id="node5" href="$_controller_8c.html#a905066e6f882994105f60077554da31a" title=" " alt="" coords="620,512,733,539"/>
+<area shape="rect" id="node8" href="$draw_8c.html#a7848b65c5d7a99630ec643e72376d361" title=" " alt="" coords="630,157,723,184"/>
+<area shape="rect" id="node9" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="805,208,913,235"/>
+<area shape="rect" id="node10" href="$draw_8c.html#ad843e332ab31ddc559f39ea19415d660" title=" " alt="" coords="633,259,720,285"/>
+<area shape="rect" id="node11" href="$draw_8c.html#a220b56a6f8aa7c6b61f11367fec6f62b" title=" " alt="" coords="612,411,741,437"/>
+<area shape="rect" id="node13" href="$draw_8c.html#aa8393013ab037235f46c85781f702b66" title="Draw the bombs on the screen." alt="" coords="632,309,721,336"/>
+<area shape="rect" id="node14" href="$draw_8c.html#a5a5865b4ef99decdaa500966aed13e78" title="Draw the bricks on the screen." alt="" coords="634,360,719,387"/>
+<area shape="rect" id="node15" href="$draw_8c.html#a51fdeda3e951a3690c9d9d7664b98ae9" title=" " alt="" coords="631,5,722,32"/>
+<area shape="rect" id="node16" href="$draw_8c.html#a03d92d2b4bd54a502562b869ad1b6b52" title="Draw the players on the screen." alt="" coords="630,56,723,83"/>
+<area shape="rect" id="node17" href="$draw_8c.html#aa5411dccade6329de024fa2782476d69" title="Draw the walls on the screen." alt="" coords="636,107,717,133"/>
+<area shape="rect" id="node12" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="815,512,903,539"/>
+<area shape="rect" id="node22" href="$keyboard_8c.html#ad0923c2624f5daf2656da29e7f8f47a5" title="Subscribe to KBC interrupts." alt="" coords="623,639,730,665"/>
+<area shape="rect" id="node23" href="$video__gr_8c.html#a78d147fc7fb3c4f1a4b9dcf8c585b032" title="Map video RAM." alt="" coords="636,692,717,719"/>
+<area shape="rect" id="node24" href="$mouse_8c.html#a28f29654b136479a6257553925e28bb0" title="Subscribe to mouse interrupts." alt="" coords="614,744,739,771"/>
+<area shape="rect" id="node25" href="$timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b" title=" " alt="" coords="609,796,744,823"/>
+<area shape="rect" id="node26" href="$video__gr_8c.html#a26945ee5130af06e8ed214af6afb0621" title="Initialize video graphics." alt="" coords="633,852,720,879"/>
+<area shape="rect" id="node28" href="$keyboard_8c.html#abb0cf131521deedea76ecf9720c6fd16" title="Check for KBC errors." alt="" coords="609,904,744,931"/>
+<area shape="rect" id="node29" href="$keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="961,1044,1051,1071"/>
+<area shape="rect" id="node43" href="$draw_8c.html#a4bd80903d8139b9daedef6a7770a4998" title="Draws the game over display." alt="" coords="622,955,731,981"/>
+<area shape="rect" id="node44" href="$message_8c.html#af17bcf76db0bf44593b3be30dc5f61a1" title=" " alt="" coords="381,943,548,969"/>
+<area shape="rect" id="node45" href="$message_8c.html#a9500f34080033e9ef6bca75b2adf763f" title=" " alt="" coords="393,1095,537,1121"/>
+<area shape="rect" id="node47" href="$rtc_8c.html#a82b0d3fa95ac6b4b61dc2d73b629ead1" title="Convert value to binary representation." alt="" coords="624,1183,729,1209"/>
+<area shape="rect" id="node48" href="$rtc_8c.html#a347151e9a7dee834be346f08915e9c1d" title="Check if RTC is updating." alt="" coords="622,1132,731,1159"/>
+<area shape="rect" id="node49" href="$rtc_8c.html#a24757f1fff16bd76fa6d5eb926455831" title="Read data from RTC register." alt="" coords="819,1081,899,1108"/>
+</map>

@@ -1,0 +1,231 @@
+\hypertarget{_select_names_8c}{}\doxysection{proj/src/\+Game/\+Select\+Names.c File Reference}
+\label{_select_names_8c}\index{proj/src/Game/SelectNames.c@{proj/src/Game/SelectNames.c}}
+{\ttfamily \#include \char`\"{}Select\+Names.\+h\char`\"{}}\newline
+Include dependency graph for Select\+Names.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_select_names_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{_select_names_8c_a3ccec74c0fd43d8307cadb8ce32cdc00}{kbc\+\_\+api\+\_\+select\+\_\+names}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\item 
+int() \mbox{\hyperlink{_select_names_8c_aec8d94dbd9cb2b3fb902cb142926cd4c}{get\+\_\+started\+\_\+select\+\_\+names}} ()
+\item 
+struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_select_names_8c_a3fa66fb8fb75d038a1ef1a64859601ef}{Select\+Names}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
+\begin{DoxyCompactList}\small\item\em Select Names function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_select_names_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}
+\item 
+\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{_select_names_8c_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_acf3359c8a3ea632369ac49458bdd35b4}{number\+\_\+of\+\_\+player}}
+\item 
+message \mbox{\hyperlink{_select_names_8c_a9a27098ef2c3f4770fd8d4102a089c35}{msg}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_ab9f863ebaa3805a6e366e055cd35626a}{ipc\+\_\+status}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_acab531abaa74a7e664e3986f2522b33a}{r}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_ae6e26470f3afdf4bbb95ebb84c368185}{timer\+\_\+interrupts\+\_\+per\+\_\+frame}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_ac7f958c16dda89b5f58e92a69c293241}{timer\+\_\+rtc\+\_\+interrupts\+\_\+counter}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_a24682c41570377d716c646acf09465b8}{timer\+\_\+interrupts\+\_\+counter}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_select_names_8c_a8be64d00347cadbd31bf44162c2954eb}{irq\+\_\+set\+\_\+timer}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_select_names_8c_a41b5c771279d6802024ebab0e1e40151}{irq\+\_\+set\+\_\+mouse}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_select_names_8c_ada5b7c513875f40035cda38d3776a54d}{irq\+\_\+set\+\_\+kbc}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_select_names_8c_a3553354293e11c5cd620f549a9b0125d}{bit\+\_\+no\+\_\+mouse}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_select_names_8c_a9f0c20afa1a12fa39244d9359810222b}{bit\+\_\+no\+\_\+kbc}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_select_names_8c_a4594ebb7bd04d177d6cd263c79326508}{bit\+\_\+no\+\_\+timer}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_a38b3017ff237979dfb1f8bac080e8b74}{fr\+\_\+rate}}
+\item 
+int \mbox{\hyperlink{_select_names_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}{scan\+\_\+code}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{_select_names_8c_acb559820d9ca11295b4500f179ef6392}{i}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_select_names_8c_aec8d94dbd9cb2b3fb902cb142926cd4c}\label{_select_names_8c_aec8d94dbd9cb2b3fb902cb142926cd4c}} 
+\index{SelectNames.c@{SelectNames.c}!get\_started\_select\_names@{get\_started\_select\_names}}
+\index{get\_started\_select\_names@{get\_started\_select\_names}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{get\_started\_select\_names()}{get\_started\_select\_names()}}
+{\footnotesize\ttfamily int() get\+\_\+started\+\_\+select\+\_\+names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{_select_names_8c_aec8d94dbd9cb2b3fb902cb142926cd4c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_select_names_8c_a3ccec74c0fd43d8307cadb8ce32cdc00}\label{_select_names_8c_a3ccec74c0fd43d8307cadb8ce32cdc00}} 
+\index{SelectNames.c@{SelectNames.c}!kbc\_api\_select\_names@{kbc\_api\_select\_names}}
+\index{kbc\_api\_select\_names@{kbc\_api\_select\_names}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_api\_select\_names()}{kbc\_api\_select\_names()}}
+{\footnotesize\ttfamily void() kbc\+\_\+api\+\_\+select\+\_\+names (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{_select_names_8c_a3ccec74c0fd43d8307cadb8ce32cdc00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_select_names_8c_a3fa66fb8fb75d038a1ef1a64859601ef}\label{_select_names_8c_a3fa66fb8fb75d038a1ef1a64859601ef}} 
+\index{SelectNames.c@{SelectNames.c}!SelectNames@{SelectNames}}
+\index{SelectNames@{SelectNames}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{SelectNames()}{SelectNames()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() Select\+Names (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Select Names function. 
+
+Allows players to select their names and updates the game state and model accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the game state \\
+\hline
+{\em model} & Pointer to the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} after the name selection 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_select_names_8c_a3fa66fb8fb75d038a1ef1a64859601ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_select_names_8c_a9f0c20afa1a12fa39244d9359810222b}\label{_select_names_8c_a9f0c20afa1a12fa39244d9359810222b}} 
+\index{SelectNames.c@{SelectNames.c}!bit\_no\_kbc@{bit\_no\_kbc}}
+\index{bit\_no\_kbc@{bit\_no\_kbc}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{bit\_no\_kbc}{bit\_no\_kbc}}
+{\footnotesize\ttfamily uint8\+\_\+t bit\+\_\+no\+\_\+kbc}
+
+\mbox{\Hypertarget{_select_names_8c_a3553354293e11c5cd620f549a9b0125d}\label{_select_names_8c_a3553354293e11c5cd620f549a9b0125d}} 
+\index{SelectNames.c@{SelectNames.c}!bit\_no\_mouse@{bit\_no\_mouse}}
+\index{bit\_no\_mouse@{bit\_no\_mouse}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{bit\_no\_mouse}{bit\_no\_mouse}}
+{\footnotesize\ttfamily uint8\+\_\+t bit\+\_\+no\+\_\+mouse}
+
+\mbox{\Hypertarget{_select_names_8c_a4594ebb7bd04d177d6cd263c79326508}\label{_select_names_8c_a4594ebb7bd04d177d6cd263c79326508}} 
+\index{SelectNames.c@{SelectNames.c}!bit\_no\_timer@{bit\_no\_timer}}
+\index{bit\_no\_timer@{bit\_no\_timer}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{bit\_no\_timer}{bit\_no\_timer}}
+{\footnotesize\ttfamily uint8\+\_\+t bit\+\_\+no\+\_\+timer}
+
+\mbox{\Hypertarget{_select_names_8c_a38b3017ff237979dfb1f8bac080e8b74}\label{_select_names_8c_a38b3017ff237979dfb1f8bac080e8b74}} 
+\index{SelectNames.c@{SelectNames.c}!fr\_rate@{fr\_rate}}
+\index{fr\_rate@{fr\_rate}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{fr\_rate}{fr\_rate}}
+{\footnotesize\ttfamily int fr\+\_\+rate\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_select_names_8c_acb559820d9ca11295b4500f179ef6392}\label{_select_names_8c_acb559820d9ca11295b4500f179ef6392}} 
+\index{SelectNames.c@{SelectNames.c}!i@{i}}
+\index{i@{i}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int i}
+
+\mbox{\Hypertarget{_select_names_8c_ab9f863ebaa3805a6e366e055cd35626a}\label{_select_names_8c_ab9f863ebaa3805a6e366e055cd35626a}} 
+\index{SelectNames.c@{SelectNames.c}!ipc\_status@{ipc\_status}}
+\index{ipc\_status@{ipc\_status}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{ipc\_status}{ipc\_status}}
+{\footnotesize\ttfamily int ipc\+\_\+status}
+
+\mbox{\Hypertarget{_select_names_8c_ada5b7c513875f40035cda38d3776a54d}\label{_select_names_8c_ada5b7c513875f40035cda38d3776a54d}} 
+\index{SelectNames.c@{SelectNames.c}!irq\_set\_kbc@{irq\_set\_kbc}}
+\index{irq\_set\_kbc@{irq\_set\_kbc}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_kbc}{irq\_set\_kbc}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+set\+\_\+kbc}
+
+\mbox{\Hypertarget{_select_names_8c_a41b5c771279d6802024ebab0e1e40151}\label{_select_names_8c_a41b5c771279d6802024ebab0e1e40151}} 
+\index{SelectNames.c@{SelectNames.c}!irq\_set\_mouse@{irq\_set\_mouse}}
+\index{irq\_set\_mouse@{irq\_set\_mouse}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_mouse}{irq\_set\_mouse}}
+{\footnotesize\ttfamily uint32\+\_\+t irq\+\_\+set\+\_\+mouse}
+
+\mbox{\Hypertarget{_select_names_8c_a8be64d00347cadbd31bf44162c2954eb}\label{_select_names_8c_a8be64d00347cadbd31bf44162c2954eb}} 
+\index{SelectNames.c@{SelectNames.c}!irq\_set\_timer@{irq\_set\_timer}}
+\index{irq\_set\_timer@{irq\_set\_timer}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_timer}{irq\_set\_timer}}
+{\footnotesize\ttfamily uint8\+\_\+t irq\+\_\+set\+\_\+timer}
+
+\mbox{\Hypertarget{_select_names_8c_a07faa847230d0abd8c3db00e3f8cae7a}\label{_select_names_8c_a07faa847230d0abd8c3db00e3f8cae7a}} 
+\index{SelectNames.c@{SelectNames.c}!mouse@{mouse}}
+\index{mouse@{mouse}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mouse}{Mouse}} mouse}
+
+\mbox{\Hypertarget{_select_names_8c_a9a27098ef2c3f4770fd8d4102a089c35}\label{_select_names_8c_a9a27098ef2c3f4770fd8d4102a089c35}} 
+\index{SelectNames.c@{SelectNames.c}!msg@{msg}}
+\index{msg@{msg}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily message msg}
+
+\mbox{\Hypertarget{_select_names_8c_acf3359c8a3ea632369ac49458bdd35b4}\label{_select_names_8c_acf3359c8a3ea632369ac49458bdd35b4}} 
+\index{SelectNames.c@{SelectNames.c}!number\_of\_player@{number\_of\_player}}
+\index{number\_of\_player@{number\_of\_player}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{number\_of\_player}{number\_of\_player}}
+{\footnotesize\ttfamily int number\+\_\+of\+\_\+player}
+
+\mbox{\Hypertarget{_select_names_8c_acab531abaa74a7e664e3986f2522b33a}\label{_select_names_8c_acab531abaa74a7e664e3986f2522b33a}} 
+\index{SelectNames.c@{SelectNames.c}!r@{r}}
+\index{r@{r}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily int r}
+
+\mbox{\Hypertarget{_select_names_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}\label{_select_names_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}} 
+\index{SelectNames.c@{SelectNames.c}!scan\_code@{scan\_code}}
+\index{scan\_code@{scan\_code}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{scan\_code}{scan\_code}}
+{\footnotesize\ttfamily int scan\+\_\+code\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_select_names_8c_aa3f6a6defa5127eb02d3295072f600e8}\label{_select_names_8c_aa3f6a6defa5127eb02d3295072f600e8}} 
+\index{SelectNames.c@{SelectNames.c}!time\_info@{time\_info}}
+\index{time\_info@{time\_info}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{time\_info}{time\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtime__display}{time\+\_\+display}} time\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+Structure to store the current time information used in the Game \mbox{\Hypertarget{_select_names_8c_a24682c41570377d716c646acf09465b8}\label{_select_names_8c_a24682c41570377d716c646acf09465b8}} 
+\index{SelectNames.c@{SelectNames.c}!timer\_interrupts\_counter@{timer\_interrupts\_counter}}
+\index{timer\_interrupts\_counter@{timer\_interrupts\_counter}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{timer\_interrupts\_counter}{timer\_interrupts\_counter}}
+{\footnotesize\ttfamily int timer\+\_\+interrupts\+\_\+counter}
+
+\mbox{\Hypertarget{_select_names_8c_ae6e26470f3afdf4bbb95ebb84c368185}\label{_select_names_8c_ae6e26470f3afdf4bbb95ebb84c368185}} 
+\index{SelectNames.c@{SelectNames.c}!timer\_interrupts\_per\_frame@{timer\_interrupts\_per\_frame}}
+\index{timer\_interrupts\_per\_frame@{timer\_interrupts\_per\_frame}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{timer\_interrupts\_per\_frame}{timer\_interrupts\_per\_frame}}
+{\footnotesize\ttfamily int timer\+\_\+interrupts\+\_\+per\+\_\+frame}
+
+\mbox{\Hypertarget{_select_names_8c_ac7f958c16dda89b5f58e92a69c293241}\label{_select_names_8c_ac7f958c16dda89b5f58e92a69c293241}} 
+\index{SelectNames.c@{SelectNames.c}!timer\_rtc\_interrupts\_counter@{timer\_rtc\_interrupts\_counter}}
+\index{timer\_rtc\_interrupts\_counter@{timer\_rtc\_interrupts\_counter}!SelectNames.c@{SelectNames.c}}
+\doxysubsubsection{\texorpdfstring{timer\_rtc\_interrupts\_counter}{timer\_rtc\_interrupts\_counter}}
+{\footnotesize\ttfamily int timer\+\_\+rtc\+\_\+interrupts\+\_\+counter}
+

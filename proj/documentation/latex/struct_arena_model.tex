@@ -2,60 +2,169 @@
 \label{struct_arena_model}\index{ArenaModel@{ArenaModel}}
 
 
-Represents the game arena model.  
+Represents the model of an arena in a game.  
 
 
 
 
 {\ttfamily \#include $<$models.\+h$>$}
 
-\doxysubsection*{Data Fields}
+
+
+Collaboration diagram for Arena\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_arena_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct_arena_model_af36076da5ef050e03e1a1d6201ab58df}\label{struct_arena_model_af36076da5ef050e03e1a1d6201ab58df}} 
-struct \mbox{\hyperlink{struct_player}{Player}} {\bfseries players} \mbox{[}2\mbox{]}
-\begin{DoxyCompactList}\small\item\em Array of players. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a535a90793dcbe9e21be1d60347cdf43d}\label{struct_arena_model_a535a90793dcbe9e21be1d60347cdf43d}} 
-struct \mbox{\hyperlink{struct_bomb}{Bomb}} {\bfseries bombs} \mbox{[}6\mbox{]}
-\begin{DoxyCompactList}\small\item\em Array of bombs. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_ae2850b3196ac8a61abfcb0e83a26ead8}\label{struct_arena_model_ae2850b3196ac8a61abfcb0e83a26ead8}} 
-struct \mbox{\hyperlink{struct_wall}{Wall}} {\bfseries walls} \mbox{[}450\mbox{]}
-\begin{DoxyCompactList}\small\item\em Array of walls. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_ab607c1fc36f157e9b948401ecdea6b44}\label{struct_arena_model_ab607c1fc36f157e9b948401ecdea6b44}} 
-struct \mbox{\hyperlink{struct_brick}{Brick}} {\bfseries bricks} \mbox{[}450\mbox{]}
-\begin{DoxyCompactList}\small\item\em Array of bricks. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a9723a270ab1ce9568085bd147de68b5a}\label{struct_arena_model_a9723a270ab1ce9568085bd147de68b5a}} 
-struct \mbox{\hyperlink{struct_explosion}{Explosion}} {\bfseries explosions} \mbox{[}450\mbox{]}
-\begin{DoxyCompactList}\small\item\em Array of explosions. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a89cc1123e84a29ed015c339acda34ae8}\label{struct_arena_model_a89cc1123e84a29ed015c339acda34ae8}} 
-struct \mbox{\hyperlink{struct_power_up}{Power\+Up}} {\bfseries power\+Ups} \mbox{[}10\mbox{]}
-\begin{DoxyCompactList}\small\item\em Array of power-\/ups. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a3a8e0eaf735de369ad23e4175756f265}\label{struct_arena_model_a3a8e0eaf735de369ad23e4175756f265}} 
-struct \mbox{\hyperlink{struct_button}{Button}} {\bfseries return\+Button}
-\begin{DoxyCompactList}\small\item\em Return button in the game. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a57f63506d2191a58a41afec3c3060221}\label{struct_arena_model_a57f63506d2191a58a41afec3c3060221}} 
-double {\bfseries elapsed\+Time}
-\begin{DoxyCompactList}\small\item\em Elapsed time in the game. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_afe9324c5c6c540512b5136e04d142581}\label{struct_arena_model_afe9324c5c6c540512b5136e04d142581}} 
-int {\bfseries n\+Walls}
-\begin{DoxyCompactList}\small\item\em Number of walls in the arena. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_ab4cfedb99e6a5ac007af6e0f8edc37a9}\label{struct_arena_model_ab4cfedb99e6a5ac007af6e0f8edc37a9}} 
-int {\bfseries n\+Bricks}
-\begin{DoxyCompactList}\small\item\em Number of bricks in the arena. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_aaba9383551ae5b871c8241b14c05b016}\label{struct_arena_model_aaba9383551ae5b871c8241b14c05b016}} 
-int {\bfseries n\+Power\+Ups}
-\begin{DoxyCompactList}\small\item\em Number of power-\/ups in the arena. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a47d84bc84f8465d3d80e6fe64a772c2a}\label{struct_arena_model_a47d84bc84f8465d3d80e6fe64a772c2a}} 
-int {\bfseries n\+Bombs}
-\begin{DoxyCompactList}\small\item\em Number of bombs in the arena. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{struct_arena_model_a5cdf93ed6773fc8f3e6c84e438c3f502}\label{struct_arena_model_a5cdf93ed6773fc8f3e6c84e438c3f502}} 
-int {\bfseries n\+Explosions}
-\begin{DoxyCompactList}\small\item\em Number of explosions in the arena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+struct \mbox{\hyperlink{struct_coin}{Coin}} \mbox{\hyperlink{struct_arena_model_ae56bc7627ac4fcb3bfe765dfbf133864}{coins}} \mbox{[}450\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}} \mbox{\hyperlink{struct_arena_model_aaab853f6840bd85178a5f119ef38d8f1}{players}} \mbox{[}2\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_bomb}{Bomb}} \mbox{\hyperlink{struct_arena_model_ab0ae15339acf94cff76af8ca902ce288}{bombs}} \mbox{[}6\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_wall}{Wall}} \mbox{\hyperlink{struct_arena_model_ab8e28b9e586ea2e1463dd35847f12cf7}{walls}} \mbox{[}450\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_brick}{Brick}} \mbox{\hyperlink{struct_arena_model_a1f71c5cb873c886b64604c36a20dc2bb}{bricks}} \mbox{[}450\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_explosion}{Explosion}} \mbox{\hyperlink{struct_arena_model_a08afae9749c197f5aeba8541984d58f9}{explosions}} \mbox{[}450\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_power_up}{Power\+Up}} \mbox{\hyperlink{struct_arena_model_a328d35abe68e0dc95907116b3d6f34bb}{power\+Ups}} \mbox{[}10\mbox{]}
+\item 
+struct \mbox{\hyperlink{struct_button}{Button}} \mbox{\hyperlink{struct_arena_model_aa40363bef8d27242da776f66b0175237}{return\+Button}}
+\item 
+struct \mbox{\hyperlink{struct_leader_board_score}{Leader\+Board\+Score}} \mbox{\hyperlink{struct_arena_model_af611b9600403664f894e77eb9c5035da}{scores}} \mbox{[}3\mbox{]}
+\item 
+double \mbox{\hyperlink{struct_arena_model_a9ac7402ea7b88ce80848d550fad36446}{elapsed\+Time}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_acc40e74490c5727bd10c28528b4762a2}{n\+Scores}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_a7a4c96c1fb10f5dc67d9a50a3ffb18cd}{n\+Walls}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_a090e026da18899da9b62d27d844f1684}{n\+Bricks}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_a403330d807d7b67206081e86135ce033}{n\+Power\+Ups}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_ad75bd7eac82cddff5684dc24b112deda}{n\+Bombs}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_a7a3a5026412ed5e40d41abea4e4e8ada}{n\+Explosions}}
+\item 
+int \mbox{\hyperlink{struct_arena_model_ae9d53bd8cab66d2c36305125f0245b07}{n\+Coins}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Represents the game arena model. 
+Represents the model of an arena in a game. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_arena_model_ab0ae15339acf94cff76af8ca902ce288}\label{struct_arena_model_ab0ae15339acf94cff76af8ca902ce288}} 
+\index{ArenaModel@{ArenaModel}!bombs@{bombs}}
+\index{bombs@{bombs}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{bombs}{bombs}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_bomb}{Bomb}} Arena\+Model\+::bombs\mbox{[}6\mbox{]}}
+
+Array of bombs in the arena. \mbox{\Hypertarget{struct_arena_model_a1f71c5cb873c886b64604c36a20dc2bb}\label{struct_arena_model_a1f71c5cb873c886b64604c36a20dc2bb}} 
+\index{ArenaModel@{ArenaModel}!bricks@{bricks}}
+\index{bricks@{bricks}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{bricks}{bricks}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_brick}{Brick}} Arena\+Model\+::bricks\mbox{[}450\mbox{]}}
+
+Array of bricks in the arena. \mbox{\Hypertarget{struct_arena_model_ae56bc7627ac4fcb3bfe765dfbf133864}\label{struct_arena_model_ae56bc7627ac4fcb3bfe765dfbf133864}} 
+\index{ArenaModel@{ArenaModel}!coins@{coins}}
+\index{coins@{coins}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{coins}{coins}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_coin}{Coin}} Arena\+Model\+::coins\mbox{[}450\mbox{]}}
+
+Array of coins in the arena. \mbox{\Hypertarget{struct_arena_model_a9ac7402ea7b88ce80848d550fad36446}\label{struct_arena_model_a9ac7402ea7b88ce80848d550fad36446}} 
+\index{ArenaModel@{ArenaModel}!elapsedTime@{elapsedTime}}
+\index{elapsedTime@{elapsedTime}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{elapsedTime}{elapsedTime}}
+{\footnotesize\ttfamily double Arena\+Model\+::elapsed\+Time}
+
+Elapsed time in the arena. \mbox{\Hypertarget{struct_arena_model_a08afae9749c197f5aeba8541984d58f9}\label{struct_arena_model_a08afae9749c197f5aeba8541984d58f9}} 
+\index{ArenaModel@{ArenaModel}!explosions@{explosions}}
+\index{explosions@{explosions}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{explosions}{explosions}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_explosion}{Explosion}} Arena\+Model\+::explosions\mbox{[}450\mbox{]}}
+
+Array of explosions in the arena. \mbox{\Hypertarget{struct_arena_model_ad75bd7eac82cddff5684dc24b112deda}\label{struct_arena_model_ad75bd7eac82cddff5684dc24b112deda}} 
+\index{ArenaModel@{ArenaModel}!nBombs@{nBombs}}
+\index{nBombs@{nBombs}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nBombs}{nBombs}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Bombs}
+
+Number of bombs in the arena. \mbox{\Hypertarget{struct_arena_model_a090e026da18899da9b62d27d844f1684}\label{struct_arena_model_a090e026da18899da9b62d27d844f1684}} 
+\index{ArenaModel@{ArenaModel}!nBricks@{nBricks}}
+\index{nBricks@{nBricks}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nBricks}{nBricks}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Bricks}
+
+Number of bricks in the arena. \mbox{\Hypertarget{struct_arena_model_ae9d53bd8cab66d2c36305125f0245b07}\label{struct_arena_model_ae9d53bd8cab66d2c36305125f0245b07}} 
+\index{ArenaModel@{ArenaModel}!nCoins@{nCoins}}
+\index{nCoins@{nCoins}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nCoins}{nCoins}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Coins}
+
+Number of coins in the arena. \mbox{\Hypertarget{struct_arena_model_a7a3a5026412ed5e40d41abea4e4e8ada}\label{struct_arena_model_a7a3a5026412ed5e40d41abea4e4e8ada}} 
+\index{ArenaModel@{ArenaModel}!nExplosions@{nExplosions}}
+\index{nExplosions@{nExplosions}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nExplosions}{nExplosions}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Explosions}
+
+Number of explosions in the arena. \mbox{\Hypertarget{struct_arena_model_a403330d807d7b67206081e86135ce033}\label{struct_arena_model_a403330d807d7b67206081e86135ce033}} 
+\index{ArenaModel@{ArenaModel}!nPowerUps@{nPowerUps}}
+\index{nPowerUps@{nPowerUps}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nPowerUps}{nPowerUps}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Power\+Ups}
+
+Number of power-\/ups in the arena. \mbox{\Hypertarget{struct_arena_model_acc40e74490c5727bd10c28528b4762a2}\label{struct_arena_model_acc40e74490c5727bd10c28528b4762a2}} 
+\index{ArenaModel@{ArenaModel}!nScores@{nScores}}
+\index{nScores@{nScores}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nScores}{nScores}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Scores}
+
+Number of leaderboard scores. \mbox{\Hypertarget{struct_arena_model_a7a4c96c1fb10f5dc67d9a50a3ffb18cd}\label{struct_arena_model_a7a4c96c1fb10f5dc67d9a50a3ffb18cd}} 
+\index{ArenaModel@{ArenaModel}!nWalls@{nWalls}}
+\index{nWalls@{nWalls}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{nWalls}{nWalls}}
+{\footnotesize\ttfamily int Arena\+Model\+::n\+Walls}
+
+Number of walls in the arena. \mbox{\Hypertarget{struct_arena_model_aaab853f6840bd85178a5f119ef38d8f1}\label{struct_arena_model_aaab853f6840bd85178a5f119ef38d8f1}} 
+\index{ArenaModel@{ArenaModel}!players@{players}}
+\index{players@{players}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_player}{Player}} Arena\+Model\+::players\mbox{[}2\mbox{]}}
+
+Array of players in the arena. \mbox{\Hypertarget{struct_arena_model_a328d35abe68e0dc95907116b3d6f34bb}\label{struct_arena_model_a328d35abe68e0dc95907116b3d6f34bb}} 
+\index{ArenaModel@{ArenaModel}!powerUps@{powerUps}}
+\index{powerUps@{powerUps}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{powerUps}{powerUps}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_power_up}{Power\+Up}} Arena\+Model\+::power\+Ups\mbox{[}10\mbox{]}}
+
+Array of power-\/ups in the arena. \mbox{\Hypertarget{struct_arena_model_aa40363bef8d27242da776f66b0175237}\label{struct_arena_model_aa40363bef8d27242da776f66b0175237}} 
+\index{ArenaModel@{ArenaModel}!returnButton@{returnButton}}
+\index{returnButton@{returnButton}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{returnButton}{returnButton}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_button}{Button}} Arena\+Model\+::return\+Button}
+
+\mbox{\hyperlink{struct_button}{Button}} used to return to the main menu. \mbox{\Hypertarget{struct_arena_model_af611b9600403664f894e77eb9c5035da}\label{struct_arena_model_af611b9600403664f894e77eb9c5035da}} 
+\index{ArenaModel@{ArenaModel}!scores@{scores}}
+\index{scores@{scores}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{scores}{scores}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_leader_board_score}{Leader\+Board\+Score}} Arena\+Model\+::scores\mbox{[}3\mbox{]}}
+
+Array of leaderboard scores. \mbox{\Hypertarget{struct_arena_model_ab8e28b9e586ea2e1463dd35847f12cf7}\label{struct_arena_model_ab8e28b9e586ea2e1463dd35847f12cf7}} 
+\index{ArenaModel@{ArenaModel}!walls@{walls}}
+\index{walls@{walls}!ArenaModel@{ArenaModel}}
+\doxysubsubsection{\texorpdfstring{walls}{walls}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_wall}{Wall}} Arena\+Model\+::walls\mbox{[}450\mbox{]}}
+
+Array of walls in the arena. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}
+proj/src/models/\mbox{\hyperlink{models_8h}{models.\+h}}\end{DoxyCompactItemize}

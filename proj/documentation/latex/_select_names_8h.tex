@@ -1,8 +1,8 @@
-\hypertarget{_select_names_8h}{}\doxysection{Game/\+Select\+Names.h File Reference}
-\label{_select_names_8h}\index{Game/SelectNames.h@{Game/SelectNames.h}}
+\hypertarget{_select_names_8h}{}\doxysection{proj/src/\+Game/\+Select\+Names.h File Reference}
+\label{_select_names_8h}\index{proj/src/Game/SelectNames.h@{proj/src/Game/SelectNames.h}}
 
 
-Select Names functions This file contains functions related to selecting player names.  
+Select Names functions.  
 
 
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
@@ -13,17 +13,33 @@ Select Names functions This file contains functions related to selecting player 
 {\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}game\+Controllers/kbc\+\_\+controller.\+h\char`\"{}}\newline
+Include dependency graph for Select\+Names.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_select_names_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_select_names_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}{Select\+Names}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$model)
+struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}() \mbox{\hyperlink{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}{Select\+Names}} (enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Select Names function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Select Names functions This file contains functions related to selecting player names. 
+Select Names functions. 
 
-
+This file contains functions related to selecting player names. 
 
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}\label{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef}} 
@@ -48,3 +64,11 @@ Allows players to select their names and updates the game state and model accord
 \begin{DoxyReturn}{Returns}
 The updated \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} after the name selection 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_select_names_8h_a3fa66fb8fb75d038a1ef1a64859601ef_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,9 @@
+<map id="draw_TimeNumbers_with_x_y" name="draw_TimeNumbers_with_x_y">
+<area shape="rect" id="node1" title=" " alt="" coords="5,79,199,106"/>
+<area shape="rect" id="node2" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="409,79,517,106"/>
+<area shape="rect" id="node4" href="$rtc_8c.html#a284fb83821d7f6f974c99f4c25152b65" title="Get hours value from time display structure." alt="" coords="267,28,341,55"/>
+<area shape="rect" id="node5" href="$rtc_8c.html#afcc22f9c8affbed51f56dfe0b5ddb199" title="Get minutes value from time display structure." alt="" coords="261,79,347,106"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#a863bdc0ddf239289a6fb353802149ec0" title="Get seconds value from time display structure." alt="" coords="259,130,349,156"/>
+<area shape="rect" id="node7" href="$draw_8c.html#adeae2987e007ec4b34efae8e7765f9c0" title=" " alt="" coords="247,180,361,207"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="565,79,648,106"/>
+</map>

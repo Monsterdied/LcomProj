@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_player.html#a38db771080a5bca533de0f0236ff11ec',1,'Player']]],
-  ['namesize_1',['nameSize',['../struct_player.html#a51ddb8c567f39d56695a119feb09a994',1,'Player']]],
-  ['nbombs_2',['nBombs',['../struct_arena_model.html#a47d84bc84f8465d3d80e6fe64a772c2a',1,'ArenaModel']]],
-  ['nbricks_3',['nBricks',['../struct_arena_model.html#ab4cfedb99e6a5ac007af6e0f8edc37a9',1,'ArenaModel']]],
-  ['nexplosions_4',['nExplosions',['../struct_arena_model.html#a5cdf93ed6773fc8f3e6c84e438c3f502',1,'ArenaModel']]],
-  ['nlevels_5',['nlevels',['../struct_menu_model.html#a020dd33db02b12236fe2587e22878fdc',1,'MenuModel']]],
-  ['noptions_6',['noptions',['../struct_menu_model.html#a10dc0aff94c5a212b076cefa1b240956',1,'MenuModel']]],
-  ['npowerups_7',['nPowerUps',['../struct_arena_model.html#aaba9383551ae5b871c8241b14c05b016',1,'ArenaModel']]],
-  ['numberofimages_8',['numberOfImages',['../struct_player.html#a5d5aa9a8f25d33232631cfd9da9d06f6',1,'Player']]],
-  ['nwalls_9',['nWalls',['../struct_arena_model.html#afe9324c5c6c540512b5136e04d142581',1,'ArenaModel']]]
+  ['i_0',['i',['../keyboard_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;Menu.c'],['../_game_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;Menu.c'],['../_menu_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;Menu.c'],['../message_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;message.c'],['../_select_names_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;SelectNames.c'],['../main_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;main.c']]],
+  ['id_1',['id',['../struct_player.html#a05e05f3a23de78da7ec032ec2bcf8c6c',1,'Player']]],
+  ['ipc_5fstatus_2',['ipc_status',['../_menu_8c.html#ab9f863ebaa3805a6e366e055cd35626a',1,'ipc_status():&#160;Menu.c'],['../message_8c.html#ab9f863ebaa3805a6e366e055cd35626a',1,'ipc_status():&#160;message.c'],['../_select_names_8c.html#ab9f863ebaa3805a6e366e055cd35626a',1,'ipc_status():&#160;SelectNames.c']]],
+  ['irq_5fset_5fkbc_3',['irq_set_kbc',['../_game_8c.html#ada5b7c513875f40035cda38d3776a54d',1,'irq_set_kbc():&#160;Game.c'],['../_menu_8c.html#ada5b7c513875f40035cda38d3776a54d',1,'irq_set_kbc():&#160;Menu.c'],['../message_8c.html#ada5b7c513875f40035cda38d3776a54d',1,'irq_set_kbc():&#160;message.c'],['../_select_names_8c.html#ada5b7c513875f40035cda38d3776a54d',1,'irq_set_kbc():&#160;SelectNames.c']]],
+  ['irq_5fset_5fmouse_4',['irq_set_mouse',['../_game_8c.html#a41b5c771279d6802024ebab0e1e40151',1,'irq_set_mouse():&#160;Game.c'],['../_menu_8c.html#a41b5c771279d6802024ebab0e1e40151',1,'irq_set_mouse():&#160;Menu.c'],['../message_8c.html#a41b5c771279d6802024ebab0e1e40151',1,'irq_set_mouse():&#160;message.c'],['../_select_names_8c.html#a41b5c771279d6802024ebab0e1e40151',1,'irq_set_mouse():&#160;SelectNames.c']]],
+  ['irq_5fset_5ftimer_5',['irq_set_timer',['../_game_8c.html#a8be64d00347cadbd31bf44162c2954eb',1,'irq_set_timer():&#160;Game.c'],['../_menu_8c.html#a8be64d00347cadbd31bf44162c2954eb',1,'irq_set_timer():&#160;Menu.c'],['../message_8c.html#a8be64d00347cadbd31bf44162c2954eb',1,'irq_set_timer():&#160;message.c'],['../_select_names_8c.html#a8be64d00347cadbd31bf44162c2954eb',1,'irq_set_timer():&#160;SelectNames.c']]],
+  ['is_5fselected_6',['is_selected',['../message_8c.html#a219cb815fdea729196b50fa65de3de0f',1,'message.c']]]
 ];

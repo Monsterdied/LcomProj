@@ -1,5 +1,5 @@
-\hypertarget{draw_8h}{}\doxysection{draw/draw.h File Reference}
-\label{draw_8h}\index{draw/draw.h@{draw/draw.h}}
+\hypertarget{draw_8h}{}\doxysection{proj/src/draw/draw.h File Reference}
+\label{draw_8h}\index{proj/src/draw/draw.h@{proj/src/draw/draw.h}}
 
 
 Drawing functions.  
@@ -70,32 +70,54 @@ Drawing functions.
 {\ttfamily \#include \char`\"{}models/numbers/9.\+xpm\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}models/numbers/double\+\_\+points.\+xpm\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}models/font/font.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/coin/coin1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/coin/coin2.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/coin/coin3.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/coin/coin4.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/coin/coin5.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/weather/sun.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/weather/moon.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/background/grass.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/background/grassnight.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/background/message\+\_\+background.\+xpm\char`\"{}}\newline
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int() \mbox{\hyperlink{draw_8h_a5879bf4f041654dfe02e6912770b74e1}{load\+\_\+xpms}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$model)
+int() \mbox{\hyperlink{draw_8h_a5879bf4f041654dfe02e6912770b74e1}{load\+\_\+xpms}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Load XPM images. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}{draw\+\_\+game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse)
+void() \mbox{\hyperlink{draw_8h_aeb1fc85395bc4b7fb4eacefe84609837}{draw\+\_\+game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}, \mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
 \begin{DoxyCompactList}\small\item\em Draw the game. \end{DoxyCompactList}\item 
 char $\ast$$\ast$() \mbox{\hyperlink{draw_8h_ae23186dd72a3da5be056911ec2446752}{getempty\+Arena}} ()
 \begin{DoxyCompactList}\small\item\em Get an empty arena. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}{draw\+Players}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+void() \mbox{\hyperlink{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}{draw\+Players}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Draw the players on the screen. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_aa8393013ab037235f46c85781f702b66}{draw\+Bombs}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+void() \mbox{\hyperlink{draw_8h_aa8393013ab037235f46c85781f702b66}{draw\+Bombs}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Draw the bombs on the screen. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}{draw\+Power\+Ups}} (char $\ast$$\ast$arena, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
-\begin{DoxyCompactList}\small\item\em Draw the power-\/ups on the screen. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_a5a5865b4ef99decdaa500966aed13e78}{draw\+Bricks}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+void() \mbox{\hyperlink{draw_8h_a5a5865b4ef99decdaa500966aed13e78}{draw\+Bricks}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Draw the bricks on the screen. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_aa5411dccade6329de024fa2782476d69}{draw\+Walls}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+void() \mbox{\hyperlink{draw_8h_aa5411dccade6329de024fa2782476d69}{draw\+Walls}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
 \begin{DoxyCompactList}\small\item\em Draw the walls on the screen. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}{draw\+\_\+menu}} (struct \mbox{\hyperlink{struct_menu_model}{Menu\+Model}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse, \mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+void() \mbox{\hyperlink{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}{draw\+\_\+menu}} (struct \mbox{\hyperlink{struct_menu_model}{Menu\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}, \mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
 \begin{DoxyCompactList}\small\item\em Draw the menu. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{draw_8h_a5eca413a86c3effd38130e380a177693}{draw\+\_\+\+Time\+Numbers}} (\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
 \begin{DoxyCompactList}\small\item\em Draw the time numbers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a68ac815675704205525d468115556f79}{draw\+\_\+players\+\_\+info}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}})
+\begin{DoxyCompactList}\small\item\em Draws the players\textquotesingle{} information on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_acfa174ac4a88e944facf39da6888c0db}{draw\+\_\+\+Game\+\_\+over\+\_\+report}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} state)
+\begin{DoxyCompactList}\small\item\em Draws the game over report on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a4bd80903d8139b9daedef6a7770a4998}{draw\+\_\+message}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} state, \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}, bool \mbox{\hyperlink{message_8c_a219cb815fdea729196b50fa65de3de0f}{is\+\_\+selected}})
+\begin{DoxyCompactList}\small\item\em Draws the game over display. \end{DoxyCompactList}\item 
 void() \mbox{\hyperlink{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}{draw\+\_\+string}} (char $\ast$text, int x, int y, int size, uint32\+\_\+t color)
 \begin{DoxyCompactList}\small\item\em Draw a string. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}{draw\+\_\+select\+\_\+names}} (int player\+\_\+number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse)
+void() \mbox{\hyperlink{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}{draw\+\_\+select\+\_\+names}} (int player\+\_\+number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}}, \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}})
 \begin{DoxyCompactList}\small\item\em Draw the select names. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -105,11 +127,11 @@ Drawing functions.
 This file contains functions related to drawing various elements on the screen. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}\label{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}} 
+\mbox{\Hypertarget{draw_8h_aeb1fc85395bc4b7fb4eacefe84609837}\label{draw_8h_aeb1fc85395bc4b7fb4eacefe84609837}} 
 \index{draw.h@{draw.h}!draw\_game@{draw\_game}}
 \index{draw\_game@{draw\_game}!draw.h@{draw.h}}
 \doxysubsubsection{\texorpdfstring{draw\_game()}{draw\_game()}}
-{\footnotesize\ttfamily void() draw\+\_\+game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_mouse}{Mouse}}}]{mouse }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void() draw\+\_\+game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_mouse}{Mouse}}}]{mouse,  }\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time\+\_\+info }\end{DoxyParamCaption})}
 
 
 
@@ -123,7 +145,60 @@ Draws the game elements on the screen based on the provided \mbox{\hyperlink{str
 \hline
 {\em mouse} & The \mbox{\hyperlink{struct_mouse}{Mouse}} information \\
 \hline
+{\em time\+\_\+info} & The Time Information \\
+\hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_aeb1fc85395bc4b7fb4eacefe84609837_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{draw_8h_aeb1fc85395bc4b7fb4eacefe84609837_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_acfa174ac4a88e944facf39da6888c0db}\label{draw_8h_acfa174ac4a88e944facf39da6888c0db}} 
+\index{draw.h@{draw.h}!draw\_Game\_over\_report@{draw\_Game\_over\_report}}
+\index{draw\_Game\_over\_report@{draw\_Game\_over\_report}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_Game\_over\_report()}{draw\_Game\_over\_report()}}
+{\footnotesize\ttfamily void() draw\+\_\+\+Game\+\_\+over\+\_\+report (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Draws the game over report on the screen. 
+
+This function is responsible for drawing the game over report based on the winner and loser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The arena model containing the game information. \\
+\hline
+{\em state} & The current game state. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_acfa174ac4a88e944facf39da6888c0db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_acfa174ac4a88e944facf39da6888c0db_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}\label{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}} 
 \index{draw.h@{draw.h}!draw\_menu@{draw\_menu}}
 \index{draw\_menu@{draw\_menu}!draw.h@{draw.h}}
@@ -145,6 +220,86 @@ Draws the menu elements on the screen based on the provided \mbox{\hyperlink{str
 {\em time\+\_\+info} & The time display information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_a4bd80903d8139b9daedef6a7770a4998}\label{draw_8h_a4bd80903d8139b9daedef6a7770a4998}} 
+\index{draw.h@{draw.h}!draw\_message@{draw\_message}}
+\index{draw\_message@{draw\_message}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_message()}{draw\_message()}}
+{\footnotesize\ttfamily void() draw\+\_\+message (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}]{state,  }\item[{\mbox{\hyperlink{struct_mouse}{Mouse}}}]{mouse,  }\item[{bool}]{is\+\_\+selected }\end{DoxyParamCaption})}
+
+
+
+Draws the game over display. 
+
+This function is responsible for drawing the game over display on the screen based based on the winner and loser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The arena model containing the game information. \\
+\hline
+{\em state} & The current game state. \\
+\hline
+{\em mouse} & The mouse object containing the mouse information. \\
+\hline
+{\em is\+\_\+selected} & Indicates whether the message is selected or not. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a4bd80903d8139b9daedef6a7770a4998_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a4bd80903d8139b9daedef6a7770a4998_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_a68ac815675704205525d468115556f79}\label{draw_8h_a68ac815675704205525d468115556f79}} 
+\index{draw.h@{draw.h}!draw\_players\_info@{draw\_players\_info}}
+\index{draw\_players\_info@{draw\_players\_info}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_players\_info()}{draw\_players\_info()}}
+{\footnotesize\ttfamily void() draw\+\_\+players\+\_\+info (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Draws the players\textquotesingle{} information on the screen. 
+
+This function is responsible for drawing the players\textquotesingle{} information in the game, like coins and name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The arena model containing the information about the players. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a68ac815675704205525d468115556f79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a68ac815675704205525d468115556f79_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}\label{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}} 
 \index{draw.h@{draw.h}!draw\_select\_names@{draw\_select\_names}}
 \index{draw\_select\_names@{draw\_select\_names}!draw.h@{draw.h}}
@@ -166,6 +321,14 @@ Draws the select names on the screen based on the player number, \mbox{\hyperlin
 {\em mouse} & The \mbox{\hyperlink{struct_mouse}{Mouse}} information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}\label{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}} 
 \index{draw.h@{draw.h}!draw\_string@{draw\_string}}
 \index{draw\_string@{draw\_string}!draw.h@{draw.h}}
@@ -191,6 +354,22 @@ Draws a string on the screen at the specified coordinates with the specified siz
 {\em color} & The color of the string \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_a5eca413a86c3effd38130e380a177693}\label{draw_8h_a5eca413a86c3effd38130e380a177693}} 
 \index{draw.h@{draw.h}!draw\_TimeNumbers@{draw\_TimeNumbers}}
 \index{draw\_TimeNumbers@{draw\_TimeNumbers}!draw.h@{draw.h}}
@@ -208,6 +387,22 @@ Draws the time numbers on the screen based on the provided time display informat
 {\em time\+\_\+info} & The time display information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a5eca413a86c3effd38130e380a177693_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{draw_8h_a5eca413a86c3effd38130e380a177693_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_aa8393013ab037235f46c85781f702b66}\label{draw_8h_aa8393013ab037235f46c85781f702b66}} 
 \index{draw.h@{draw.h}!drawBombs@{drawBombs}}
 \index{drawBombs@{drawBombs}!draw.h@{draw.h}}
@@ -225,6 +420,22 @@ Draws the bombs on the screen based on the provided \mbox{\hyperlink{struct_aren
 {\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the bomb information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_aa8393013ab037235f46c85781f702b66_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_aa8393013ab037235f46c85781f702b66_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_a5a5865b4ef99decdaa500966aed13e78}\label{draw_8h_a5a5865b4ef99decdaa500966aed13e78}} 
 \index{draw.h@{draw.h}!drawBricks@{drawBricks}}
 \index{drawBricks@{drawBricks}!draw.h@{draw.h}}
@@ -242,6 +453,22 @@ Draws the bricks on the screen based on the provided \mbox{\hyperlink{struct_are
 {\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the brick information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a5a5865b4ef99decdaa500966aed13e78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a5a5865b4ef99decdaa500966aed13e78_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}\label{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}} 
 \index{draw.h@{draw.h}!drawPlayers@{drawPlayers}}
 \index{drawPlayers@{drawPlayers}!draw.h@{draw.h}}
@@ -259,25 +486,22 @@ Draws the player characters on the screen based on the provided \mbox{\hyperlink
 {\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the player information \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}\label{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}} 
-\index{draw.h@{draw.h}!drawPowerUps@{drawPowerUps}}
-\index{drawPowerUps@{drawPowerUps}!draw.h@{draw.h}}
-\doxysubsubsection{\texorpdfstring{drawPowerUps()}{drawPowerUps()}}
-{\footnotesize\ttfamily void() draw\+Power\+Ups (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{arena,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
-
-
-
-Draw the power-\/ups on the screen. 
-
-Draws the power-\/ups on the screen based on the provided arena and \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
-
-
-\begin{DoxyParams}{Parameters}
-{\em arena} & The arena as a 2D character array \\
-\hline
-{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the power-\/up information \\
-\hline
-\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_aa5411dccade6329de024fa2782476d69}\label{draw_8h_aa5411dccade6329de024fa2782476d69}} 
 \index{draw.h@{draw.h}!drawWalls@{drawWalls}}
 \index{drawWalls@{drawWalls}!draw.h@{draw.h}}
@@ -295,6 +519,22 @@ Draws the walls on the screen based on the provided \mbox{\hyperlink{struct_aren
 {\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the wall information \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_aa5411dccade6329de024fa2782476d69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_aa5411dccade6329de024fa2782476d69_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{draw_8h_ae23186dd72a3da5be056911ec2446752}\label{draw_8h_ae23186dd72a3da5be056911ec2446752}} 
 \index{draw.h@{draw.h}!getemptyArena@{getemptyArena}}
 \index{getemptyArena@{getemptyArena}!draw.h@{draw.h}}
@@ -330,3 +570,11 @@ Loads the XPM images required for the game from the specified model.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{draw_8h_a5879bf4f041654dfe02e6912770b74e1_icgraph}
+\end{center}
+\end{figure}

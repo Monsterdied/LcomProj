@@ -1,0 +1,298 @@
+\hypertarget{rtc_8c}{}\doxysection{proj/src/devices/rtc.c File Reference}
+\label{rtc_8c}\index{proj/src/devices/rtc.c@{proj/src/devices/rtc.c}}
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{rtc_8c_a587c23fa12407f335515c28922795fae}{rtc\+\_\+subscribe\+\_\+interrupts}} (uint8\+\_\+t $\ast$bit\+\_\+rtc)
+\begin{DoxyCompactList}\small\item\em Subscribe to RTC interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a968730bb1e3721688bef10dd6d47a93f}{rtc\+\_\+unsubcribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe from RTC interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a24757f1fff16bd76fa6d5eb926455831}{rtc\+\_\+output}} (uint8\+\_\+t cmd, uint8\+\_\+t $\ast$output)
+\begin{DoxyCompactList}\small\item\em Read data from RTC register. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a347151e9a7dee834be346f08915e9c1d}{is\+\_\+updating\+\_\+rtc}} ()
+\begin{DoxyCompactList}\small\item\em Check if RTC is updating. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8c_a82b0d3fa95ac6b4b61dc2d73b629ead1}{convert\+\_\+binary}} (uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Convert value to binary representation. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_ac6c2e8777460c9ea2f72c94213e998ef}{update\+\_\+time\+\_\+display}} (\mbox{\hyperlink{structtime__display}{time\+\_\+display}} $\ast$\mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+\begin{DoxyCompactList}\small\item\em Update time display structure. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a284fb83821d7f6f974c99f4c25152b65}{get\+Hours}} (\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+\begin{DoxyCompactList}\small\item\em Get hours value from time display structure. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_afcc22f9c8affbed51f56dfe0b5ddb199}{get\+Minutes}} (\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+\begin{DoxyCompactList}\small\item\em Get minutes value from time display structure. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a863bdc0ddf239289a6fb353802149ec0}{get\+Seconds}} (\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+\begin{DoxyCompactList}\small\item\em Get seconds value from time display structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{rtc_8c_a9fc22e6d8203dddf397ca66d65055d1d}{hook\+\_\+id\+\_\+rtc}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_a82b0d3fa95ac6b4b61dc2d73b629ead1}\label{rtc_8c_a82b0d3fa95ac6b4b61dc2d73b629ead1}} 
+\index{rtc.c@{rtc.c}!convert\_binary@{convert\_binary}}
+\index{convert\_binary@{convert\_binary}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{convert\_binary()}{convert\_binary()}}
+{\footnotesize\ttfamily void() convert\+\_\+binary (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Convert value to binary representation. 
+
+Converts the given value to its binary representation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Pointer to the value to be converted \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a82b0d3fa95ac6b4b61dc2d73b629ead1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a284fb83821d7f6f974c99f4c25152b65}\label{rtc_8c_a284fb83821d7f6f974c99f4c25152b65}} 
+\index{rtc.c@{rtc.c}!getHours@{getHours}}
+\index{getHours@{getHours}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{getHours()}{getHours()}}
+{\footnotesize\ttfamily int() get\+Hours (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Get hours value from time display structure. 
+
+Retrieves the hours value from the time display structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+info} & The time display structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The hours value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a284fb83821d7f6f974c99f4c25152b65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_afcc22f9c8affbed51f56dfe0b5ddb199}\label{rtc_8c_afcc22f9c8affbed51f56dfe0b5ddb199}} 
+\index{rtc.c@{rtc.c}!getMinutes@{getMinutes}}
+\index{getMinutes@{getMinutes}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{getMinutes()}{getMinutes()}}
+{\footnotesize\ttfamily int() get\+Minutes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Get minutes value from time display structure. 
+
+Retrieves the minutes value from the time display structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+info} & The time display structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minutes value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_afcc22f9c8affbed51f56dfe0b5ddb199_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a863bdc0ddf239289a6fb353802149ec0}\label{rtc_8c_a863bdc0ddf239289a6fb353802149ec0}} 
+\index{rtc.c@{rtc.c}!getSeconds@{getSeconds}}
+\index{getSeconds@{getSeconds}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{getSeconds()}{getSeconds()}}
+{\footnotesize\ttfamily int() get\+Seconds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Get seconds value from time display structure. 
+
+Retrieves the seconds value from the time display structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+info} & The time display structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The seconds value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a863bdc0ddf239289a6fb353802149ec0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a347151e9a7dee834be346f08915e9c1d}\label{rtc_8c_a347151e9a7dee834be346f08915e9c1d}} 
+\index{rtc.c@{rtc.c}!is\_updating\_rtc@{is\_updating\_rtc}}
+\index{is\_updating\_rtc@{is\_updating\_rtc}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{is\_updating\_rtc()}{is\_updating\_rtc()}}
+{\footnotesize\ttfamily int() is\+\_\+updating\+\_\+rtc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if RTC is updating. 
+
+Checks if the RTC is currently updating.
+
+\begin{DoxyReturn}{Returns}
+Return 0 if RTC is not updating, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a347151e9a7dee834be346f08915e9c1d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a347151e9a7dee834be346f08915e9c1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a24757f1fff16bd76fa6d5eb926455831}\label{rtc_8c_a24757f1fff16bd76fa6d5eb926455831}} 
+\index{rtc.c@{rtc.c}!rtc\_output@{rtc\_output}}
+\index{rtc\_output@{rtc\_output}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_output()}{rtc\_output()}}
+{\footnotesize\ttfamily int() rtc\+\_\+output (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd,  }\item[{uint8\+\_\+t $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Read data from RTC register. 
+
+Reads data from the RTC\textquotesingle{}s register using the specified command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command to be sent to the RTC register \\
+\hline
+{\em output} & Pointer to the memory location where the read data will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{rtc_8c_a24757f1fff16bd76fa6d5eb926455831_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a24757f1fff16bd76fa6d5eb926455831_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a587c23fa12407f335515c28922795fae}\label{rtc_8c_a587c23fa12407f335515c28922795fae}} 
+\index{rtc.c@{rtc.c}!rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}}
+\index{rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_interrupts()}{rtc\_subscribe\_interrupts()}}
+{\footnotesize\ttfamily int() rtc\+\_\+subscribe\+\_\+interrupts (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+rtc }\end{DoxyParamCaption})}
+
+
+
+Subscribe to RTC interrupts. 
+
+Subscribes to RTC interrupts using the specified bit number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+rtc} & Pointer to the memory location where the bit number will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_a968730bb1e3721688bef10dd6d47a93f}\label{rtc_8c_a968730bb1e3721688bef10dd6d47a93f}} 
+\index{rtc.c@{rtc.c}!rtc\_unsubcribe\_interrupts@{rtc\_unsubcribe\_interrupts}}
+\index{rtc\_unsubcribe\_interrupts@{rtc\_unsubcribe\_interrupts}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubcribe\_interrupts()}{rtc\_unsubcribe\_interrupts()}}
+{\footnotesize\ttfamily int() rtc\+\_\+unsubcribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe from RTC interrupts. 
+
+Unsubscribes from RTC interrupts.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_ac6c2e8777460c9ea2f72c94213e998ef}\label{rtc_8c_ac6c2e8777460c9ea2f72c94213e998ef}} 
+\index{rtc.c@{rtc.c}!update\_time\_display@{update\_time\_display}}
+\index{update\_time\_display@{update\_time\_display}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{update\_time\_display()}{update\_time\_display()}}
+{\footnotesize\ttfamily int() update\+\_\+time\+\_\+display (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}} $\ast$}]{time\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Update time display structure. 
+
+Updates the time display structure with the current time values from the RTC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+info} & Pointer to the time display structure to be updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ac6c2e8777460c9ea2f72c94213e998ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ac6c2e8777460c9ea2f72c94213e998ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_a9fc22e6d8203dddf397ca66d65055d1d}\label{rtc_8c_a9fc22e6d8203dddf397ca66d65055d1d}} 
+\index{rtc.c@{rtc.c}!hook\_id\_rtc@{hook\_id\_rtc}}
+\index{hook\_id\_rtc@{hook\_id\_rtc}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id\_rtc}{hook\_id\_rtc}}
+{\footnotesize\ttfamily int hook\+\_\+id\+\_\+rtc = 5}
+

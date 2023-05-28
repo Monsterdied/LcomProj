@@ -1,0 +1,29 @@
+<map id="draw_pixel" name="draw_pixel">
+<area shape="rect" id="node1" title="Draw pixel." alt="" coords="1076,652,1159,679"/>
+<area shape="rect" id="node2" href="$video__gr_8c.html#adbc1fe3cbe866e3cbc31762ac27f972c" title="Draw XPM image." alt="" coords="927,576,1000,603"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="732,348,841,375"/>
+<area shape="rect" id="node21" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="898,678,1028,704"/>
+<area shape="rect" id="node26" href="$video__gr_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6" title=" " alt="" coords="913,728,1014,755"/>
+<area shape="rect" id="node4" href="$draw_8c.html#a7848b65c5d7a99630ec643e72376d361" title=" " alt="" coords="560,399,653,426"/>
+<area shape="rect" id="node5" href="$draw_8c.html#aeb1fc85395bc4b7fb4eacefe84609837" title="Draw the game." alt="" coords="350,424,437,451"/>
+<area shape="rect" id="node8" href="$draw_8c.html#ad843e332ab31ddc559f39ea19415d660" title=" " alt="" coords="563,450,650,476"/>
+<area shape="rect" id="node9" href="$draw_8c.html#a4ee5f4de5222a6bec9ccded4d7464c3c" title="Draw the menu." alt="" coords="162,95,249,122"/>
+<area shape="rect" id="node10" href="$draw_8c.html#a4bd80903d8139b9daedef6a7770a4998" title="Draws the game over display." alt="" coords="552,652,661,679"/>
+<area shape="rect" id="node12" href="$draw_8c.html#a58767c2f71faacd6e862d266ca18d227" title="Draw the select names." alt="" coords="538,602,675,628"/>
+<area shape="rect" id="node13" href="$draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="326,44,461,71"/>
+<area shape="rect" id="node14" href="$draw_8c.html#a10a063ab18d99e46aa4cbb1e398d9227" title=" " alt="" coords="297,95,490,122"/>
+<area shape="rect" id="node15" href="$draw_8c.html#aa8393013ab037235f46c85781f702b66" title="Draw the bombs on the screen." alt="" coords="562,500,651,527"/>
+<area shape="rect" id="node16" href="$draw_8c.html#a5a5865b4ef99decdaa500966aed13e78" title="Draw the bricks on the screen." alt="" coords="564,551,649,578"/>
+<area shape="rect" id="node17" href="$draw_8c.html#a51fdeda3e951a3690c9d9d7664b98ae9" title=" " alt="" coords="561,196,652,223"/>
+<area shape="rect" id="node18" href="$draw_8c.html#a03d92d2b4bd54a502562b869ad1b6b52" title="Draw the players on the screen." alt="" coords="560,247,653,274"/>
+<area shape="rect" id="node19" href="$draw_8c.html#aa5411dccade6329de024fa2782476d69" title="Draw the walls on the screen." alt="" coords="566,298,647,324"/>
+<area shape="rect" id="node20" href="$draw_8c.html#adeae2987e007ec4b34efae8e7765f9c0" title=" " alt="" coords="549,44,664,71"/>
+<area shape="rect" id="node6" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="177,736,234,763"/>
+<area shape="rect" id="node7" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,711,114,738"/>
+<area shape="rect" id="node11" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="168,679,243,706"/>
+<area shape="rect" id="node22" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="743,678,830,704"/>
+<area shape="rect" id="node23" href="$draw_8c.html#acfa174ac4a88e944facf39da6888c0db" title="Draws the game over report on the screen." alt="" coords="314,802,474,828"/>
+<area shape="rect" id="node24" href="$draw_8c.html#a220b56a6f8aa7c6b61f11367fec6f62b" title=" " alt="" coords="542,703,671,730"/>
+<area shape="rect" id="node25" href="$draw_8c.html#a68ac815675704205525d468115556f79" title="Draws the players&#39; information on the screen." alt="" coords="332,748,456,775"/>
+<area shape="rect" id="node27" href="$video__gr_8c.html#a99d2da2559e11200c6b40c469e9977ec" title=" " alt="" coords="723,728,850,755"/>
+</map>

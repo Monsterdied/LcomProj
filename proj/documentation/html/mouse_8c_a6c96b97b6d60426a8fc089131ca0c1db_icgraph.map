@@ -1,0 +1,10 @@
+<map id="mouse_get_status" name="mouse_get_status">
+<area shape="rect" id="node1" title="Get mouse status." alt="" coords="651,60,779,87"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#af5ab1f26fb0d446e2eb99a5da1dacc13" title="New mouse interrupt handler." alt="" coords="301,31,408,57"/>
+<area shape="rect" id="node6" href="$mouse_8c.html#a50796bc7dd16af8dbf9dc017679c3cf7" title="Read data from mouse buffer." alt="" coords="472,60,603,87"/>
+<area shape="rect" id="node7" href="$mouse_8c.html#ac3329f3ba2dd01e2dcfe6e238b88c8c5" title=" " alt="" coords="474,111,601,137"/>
+<area shape="rect" id="node3" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="171,5,227,32"/>
+<area shape="rect" id="node5" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,56,236,83"/>
+<area shape="rect" id="node4" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,31,114,57"/>
+<area shape="rect" id="node8" href="$mouse_8c.html#a7e311379d4d64f88873ef8ade5c82a25" title="Disable mouse data reporting." alt="" coords="284,103,424,145"/>
+</map>

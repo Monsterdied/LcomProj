@@ -1,0 +1,10 @@
+<map id="kbc_Subscribe" name="kbc_Subscribe">
+<area shape="rect" id="node1" title="Subscribe to KBC interrupts." alt="" coords="499,85,607,112"/>
+<area shape="rect" id="node2" href="$_menu_8c.html#a51dd76a9ee237204576286779c716beb" title=" " alt="" coords="295,5,441,32"/>
+<area shape="rect" id="node3" href="$message_8c.html#af17bcf76db0bf44593b3be30dc5f61a1" title=" " alt="" coords="284,56,451,83"/>
+<area shape="rect" id="node6" href="$_select_names_8c.html#aec8d94dbd9cb2b3fb902cb142926cd4c" title=" " alt="" coords="304,107,432,149"/>
+<area shape="rect" id="node7" href="$_game_8c.html#a8e0affe829ccce82fdc42ce62263585a" title=" " alt="" coords="311,173,424,200"/>
+<area shape="rect" id="node4" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,73,236,100"/>
+<area shape="rect" id="node5" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,115,114,141"/>
+<area shape="rect" id="node8" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="171,140,227,167"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="draw_menu" name="draw_menu">
+<area shape="rect" id="node1" title="Draw the menu." alt="" coords="5,186,93,213"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="141,110,276,137"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="486,186,595,213"/>
+<area shape="rect" id="node5" href="$rtc_8c.html#a284fb83821d7f6f974c99f4c25152b65" title="Get hours value from time display structure." alt="" coords="345,34,418,61"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#afcc22f9c8affbed51f56dfe0b5ddb199" title="Get minutes value from time display structure." alt="" coords="339,85,424,111"/>
+<area shape="rect" id="node7" href="$rtc_8c.html#a863bdc0ddf239289a6fb353802149ec0" title="Get seconds value from time display structure." alt="" coords="336,135,426,162"/>
+<area shape="rect" id="node8" href="$draw_8c.html#adeae2987e007ec4b34efae8e7765f9c0" title=" " alt="" coords="324,186,438,213"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="643,186,725,213"/>
+</map>

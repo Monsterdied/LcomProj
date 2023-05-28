@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_button.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,9 +69,11 @@ $(document).ready(function(){initNavTree('struct_button.html',''); initResizable
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_button-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Button Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -103,49 +84,151 @@ $(document).ready(function(){initNavTree('struct_button.html',''); initResizable
 <p><code>#include &lt;<a class="el" href="models_8h_source.html">models.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a6150e0515f7202e2fb518f7206ed97dc"><td class="memItemLeft" align="right" valign="top"><a id="a6150e0515f7202e2fb518f7206ed97dc" name="a6150e0515f7202e2fb518f7206ed97dc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
-<tr class="memdesc:a6150e0515f7202e2fb518f7206ed97dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">X-coordinate of the button. <br /></td></tr>
-<tr class="separator:a6150e0515f7202e2fb518f7206ed97dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2f84ed7838f07779ae24c5a9086d33"><td class="memItemLeft" align="right" valign="top"><a id="a0a2f84ed7838f07779ae24c5a9086d33" name="a0a2f84ed7838f07779ae24c5a9086d33"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
-<tr class="memdesc:a0a2f84ed7838f07779ae24c5a9086d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y-coordinate of the button. <br /></td></tr>
-<tr class="separator:a0a2f84ed7838f07779ae24c5a9086d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2474a5474cbff19523a51eb1de01cda4"><td class="memItemLeft" align="right" valign="top"><a id="a2474a5474cbff19523a51eb1de01cda4" name="a2474a5474cbff19523a51eb1de01cda4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
-<tr class="memdesc:a2474a5474cbff19523a51eb1de01cda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the button. <br /></td></tr>
-<tr class="separator:a2474a5474cbff19523a51eb1de01cda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12fc34ce789bce6c8a05d8a17138534"><td class="memItemLeft" align="right" valign="top"><a id="ad12fc34ce789bce6c8a05d8a17138534" name="ad12fc34ce789bce6c8a05d8a17138534"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
-<tr class="memdesc:ad12fc34ce789bce6c8a05d8a17138534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the button. <br /></td></tr>
-<tr class="separator:ad12fc34ce789bce6c8a05d8a17138534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee682957ef18956fbe33afe9b6222fa"><td class="memItemLeft" align="right" valign="top"><a id="a9ee682957ef18956fbe33afe9b6222fa" name="a9ee682957ef18956fbe33afe9b6222fa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>selected</b></td></tr>
-<tr class="memdesc:a9ee682957ef18956fbe33afe9b6222fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the button is selected. <br /></td></tr>
-<tr class="separator:a9ee682957ef18956fbe33afe9b6222fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224779aea913957674d1c4d5edd17517"><td class="memItemLeft" align="right" valign="top"><a id="a224779aea913957674d1c4d5edd17517" name="a224779aea913957674d1c4d5edd17517"></a>
-xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><b>button_selected</b></td></tr>
-<tr class="memdesc:a224779aea913957674d1c4d5edd17517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image for the selected button. <br /></td></tr>
-<tr class="separator:a224779aea913957674d1c4d5edd17517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95df27063954e9a2c9cb8318a2b75be6"><td class="memItemLeft" align="right" valign="top"><a id="a95df27063954e9a2c9cb8318a2b75be6" name="a95df27063954e9a2c9cb8318a2b75be6"></a>
-xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><b>button_unselected</b></td></tr>
-<tr class="memdesc:a95df27063954e9a2c9cb8318a2b75be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image for the unselected button. <br /></td></tr>
-<tr class="separator:a95df27063954e9a2c9cb8318a2b75be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2ec3bc40025b64b44319e7464164d61f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#a2ec3bc40025b64b44319e7464164d61f">x</a></td></tr>
+<tr class="memdesc:a2ec3bc40025b64b44319e7464164d61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">X-coordinate of the button.  <a href="struct_button.html#a2ec3bc40025b64b44319e7464164d61f">More...</a><br /></td></tr>
+<tr class="separator:a2ec3bc40025b64b44319e7464164d61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff35ce0c47f662c3b096e5b644648a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#afff35ce0c47f662c3b096e5b644648a5">y</a></td></tr>
+<tr class="memdesc:afff35ce0c47f662c3b096e5b644648a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y-coordinate of the button.  <a href="struct_button.html#afff35ce0c47f662c3b096e5b644648a5">More...</a><br /></td></tr>
+<tr class="separator:afff35ce0c47f662c3b096e5b644648a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94051f6f79d4436d8a268a81b828863a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#a94051f6f79d4436d8a268a81b828863a">width</a></td></tr>
+<tr class="memdesc:a94051f6f79d4436d8a268a81b828863a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the button.  <a href="struct_button.html#a94051f6f79d4436d8a268a81b828863a">More...</a><br /></td></tr>
+<tr class="separator:a94051f6f79d4436d8a268a81b828863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c43732d529541e53c6b83607bdc5673"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#a1c43732d529541e53c6b83607bdc5673">height</a></td></tr>
+<tr class="memdesc:a1c43732d529541e53c6b83607bdc5673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the button.  <a href="struct_button.html#a1c43732d529541e53c6b83607bdc5673">More...</a><br /></td></tr>
+<tr class="separator:a1c43732d529541e53c6b83607bdc5673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9bac3e0c56cff44c2ca289d6f4beb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#a7e9bac3e0c56cff44c2ca289d6f4beb0">selected</a></td></tr>
+<tr class="memdesc:a7e9bac3e0c56cff44c2ca289d6f4beb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the button is selected.  <a href="struct_button.html#a7e9bac3e0c56cff44c2ca289d6f4beb0">More...</a><br /></td></tr>
+<tr class="separator:a7e9bac3e0c56cff44c2ca289d6f4beb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ba1dd7b61dbb7c6b9f56ac83666788"><td class="memItemLeft" align="right" valign="top">xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#a63ba1dd7b61dbb7c6b9f56ac83666788">button_selected</a></td></tr>
+<tr class="memdesc:a63ba1dd7b61dbb7c6b9f56ac83666788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image for the selected button.  <a href="struct_button.html#a63ba1dd7b61dbb7c6b9f56ac83666788">More...</a><br /></td></tr>
+<tr class="separator:a63ba1dd7b61dbb7c6b9f56ac83666788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c31a95b79176177b6f708731d60265"><td class="memItemLeft" align="right" valign="top">xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button.html#af2c31a95b79176177b6f708731d60265">button_unselected</a></td></tr>
+<tr class="memdesc:af2c31a95b79176177b6f708731d60265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image for the unselected button.  <a href="struct_button.html#af2c31a95b79176177b6f708731d60265">More...</a><br /></td></tr>
+<tr class="separator:af2c31a95b79176177b6f708731d60265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a button in the game's menu. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>models/<a class="el" href="models_8h_source.html">models.h</a></li>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a63ba1dd7b61dbb7c6b9f56ac83666788" name="a63ba1dd7b61dbb7c6b9f56ac83666788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ba1dd7b61dbb7c6b9f56ac83666788">&#9670;&#160;</a></span>button_selected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xpm_image_t Button::button_selected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Image for the selected button. </p>
+
+</div>
+</div>
+<a id="af2c31a95b79176177b6f708731d60265" name="af2c31a95b79176177b6f708731d60265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c31a95b79176177b6f708731d60265">&#9670;&#160;</a></span>button_unselected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xpm_image_t Button::button_unselected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Image for the unselected button. </p>
+
+</div>
+</div>
+<a id="a1c43732d529541e53c6b83607bdc5673" name="a1c43732d529541e53c6b83607bdc5673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c43732d529541e53c6b83607bdc5673">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Button::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Height of the button. </p>
+
+</div>
+</div>
+<a id="a7e9bac3e0c56cff44c2ca289d6f4beb0" name="a7e9bac3e0c56cff44c2ca289d6f4beb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9bac3e0c56cff44c2ca289d6f4beb0">&#9670;&#160;</a></span>selected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Button::selected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates if the button is selected. </p>
+
+</div>
+</div>
+<a id="a94051f6f79d4436d8a268a81b828863a" name="a94051f6f79d4436d8a268a81b828863a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94051f6f79d4436d8a268a81b828863a">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Button::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Width of the button. </p>
+
+</div>
+</div>
+<a id="a2ec3bc40025b64b44319e7464164d61f" name="a2ec3bc40025b64b44319e7464164d61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec3bc40025b64b44319e7464164d61f">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Button::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>X-coordinate of the button. </p>
+
+</div>
+</div>
+<a id="afff35ce0c47f662c3b096e5b644648a5" name="afff35ce0c47f662c3b096e5b644648a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff35ce0c47f662c3b096e5b644648a5">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Button::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Y-coordinate of the button. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>proj/src/models/<a class="el" href="models_8h_source.html">models.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="struct_button.html">Button</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

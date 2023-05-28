@@ -1,12 +1,27 @@
-\hypertarget{mouse_8h}{}\doxysection{devices/mouse.h File Reference}
-\label{mouse_8h}\index{devices/mouse.h@{devices/mouse.h}}
+\hypertarget{mouse_8h}{}\doxysection{proj/src/devices/mouse.h File Reference}
+\label{mouse_8h}\index{proj/src/devices/mouse.h@{proj/src/devices/mouse.h}}
 
 
 \mbox{\hyperlink{struct_mouse}{Mouse}} functions.  
 
 
 {\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
-\doxysubsection*{Data Structures}
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_mouse}{Mouse}}
@@ -28,7 +43,7 @@ int() \mbox{\hyperlink{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}{mouse\+\_\+ge
 \begin{DoxyCompactList}\small\item\em Get mouse status. \end{DoxyCompactList}\item 
 int() \mbox{\hyperlink{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}{mouse\+\_\+read\+\_\+buffer}} (uint8\+\_\+t port, uint8\+\_\+t $\ast$output)
 \begin{DoxyCompactList}\small\item\em Read data from mouse buffer. \end{DoxyCompactList}\item 
-void() \mbox{\hyperlink{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13}{mouse\+\_\+ih\+\_\+new}} (\mbox{\hyperlink{struct_mouse}{Mouse}} $\ast$mouse)
+void() \mbox{\hyperlink{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13}{mouse\+\_\+ih\+\_\+new}} (\mbox{\hyperlink{struct_mouse}{Mouse}} $\ast$\mbox{\hyperlink{_game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}})
 \begin{DoxyCompactList}\small\item\em New mouse interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -73,6 +88,14 @@ Disables the mouse data reporting.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}\label{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}} 
 \index{mouse.h@{mouse.h}!mouse\_get\_status@{mouse\_get\_status}}
 \index{mouse\_get\_status@{mouse\_get\_status}!mouse.h@{mouse.h}}
@@ -93,6 +116,22 @@ Reads the status byte from the mouse controller.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{mouse_8h_a210374b50462acdedab00df64d5cea3c}\label{mouse_8h_a210374b50462acdedab00df64d5cea3c}} 
 \index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
 \index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
@@ -120,6 +159,22 @@ New interrupt handler for the mouse interrupts that updates the mouse structure.
 {\em mouse} & Pointer to the mouse structure to be updated \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}\label{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}} 
 \index{mouse.h@{mouse.h}!mouse\_read\_buffer@{mouse\_read\_buffer}}
 \index{mouse\_read\_buffer@{mouse\_read\_buffer}!mouse.h@{mouse.h}}
@@ -142,6 +197,22 @@ Reads data from the mouse\textquotesingle{}s buffer using the specified port.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{mouse_8h_a28f29654b136479a6257553925e28bb0}\label{mouse_8h_a28f29654b136479a6257553925e28bb0}} 
 \index{mouse.h@{mouse.h}!mouse\_Subscribe@{mouse\_Subscribe}}
 \index{mouse\_Subscribe@{mouse\_Subscribe}!mouse.h@{mouse.h}}
@@ -162,6 +233,14 @@ Subscribes to mouse interrupts using the specified bit number.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a28f29654b136479a6257553925e28bb0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665}\label{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665}} 
 \index{mouse.h@{mouse.h}!mouse\_Unsubscribe@{mouse\_Unsubscribe}}
 \index{mouse\_Unsubscribe@{mouse\_Unsubscribe}!mouse.h@{mouse.h}}
@@ -177,3 +256,11 @@ Unsubscribes from mouse interrupts.
 \begin{DoxyReturn}{Returns}
 Return 0 upon success, non-\/zero otherwise 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665_icgraph}
+\end{center}
+\end{figure}

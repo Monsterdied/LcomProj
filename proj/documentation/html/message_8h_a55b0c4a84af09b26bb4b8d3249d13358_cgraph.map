@@ -1,0 +1,32 @@
+<map id="Message" name="Message">
+<area shape="rect" id="node1" title="Display End Game." alt="" coords="5,487,80,513"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a4bd80903d8139b9daedef6a7770a4998" title="Draws the game over display." alt="" coords="157,56,266,83"/>
+<area shape="rect" id="node7" href="$message_8c.html#af17bcf76db0bf44593b3be30dc5f61a1" title=" " alt="" coords="128,233,295,260"/>
+<area shape="rect" id="node13" href="$keyboard_8c.html#ab9e6ed7960d60aa4834f2038247d4536" title="Keyboard interrupt handler." alt="" coords="182,360,241,387"/>
+<area shape="rect" id="node16" href="$keyboard_8c.html#a87d2894ac39226ebf66cb013f4cf580d" title="Unsubscribe from KBC interrupts." alt="" coords="151,411,272,437"/>
+<area shape="rect" id="node17" href="$message_8c.html#a9500f34080033e9ef6bca75b2adf763f" title=" " alt="" coords="139,461,284,488"/>
+<area shape="rect" id="node18" href="$mouse_8c.html#af5ab1f26fb0d446e2eb99a5da1dacc13" title="New mouse interrupt handler." alt="" coords="158,664,265,691"/>
+<area shape="rect" id="node23" href="$mouse_8c.html#a021b68075751bdd9d7bdfdfaf8210665" title="Unsubscribe from mouse interrupts." alt="" coords="142,563,281,589"/>
+<area shape="rect" id="node24" href="$timer_8c.html#afabd21de449be154dd65d5fdb2d8045d" title=" " alt="" coords="137,613,286,640"/>
+<area shape="rect" id="node25" href="$rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="141,512,282,539"/>
+<area shape="rect" id="node29" href="$video__gr_8c.html#ab8df8dda113075aa93a80847746f49a4" title="Update video graphics." alt="" coords="172,740,251,767"/>
+<area shape="rect" id="node3" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="367,5,454,32"/>
+<area shape="rect" id="node6" href="$video__gr_8c.html#a9ddb1709aa723396e611ad1336a3341b" title="Draw 8&#45;bit 8&#45;8&#45;8 XPM image." alt="" coords="536,56,645,83"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="525,5,656,32"/>
+<area shape="rect" id="node5" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="725,31,808,57"/>
+<area shape="rect" id="node8" href="$keyboard_8c.html#ad0923c2624f5daf2656da29e7f8f47a5" title="Subscribe to KBC interrupts." alt="" coords="357,157,464,184"/>
+<area shape="rect" id="node9" href="$video__gr_8c.html#a78d147fc7fb3c4f1a4b9dcf8c585b032" title="Map video RAM." alt="" coords="370,208,450,235"/>
+<area shape="rect" id="node10" href="$mouse_8c.html#a28f29654b136479a6257553925e28bb0" title="Subscribe to mouse interrupts." alt="" coords="348,259,473,285"/>
+<area shape="rect" id="node11" href="$timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b" title=" " alt="" coords="343,309,477,336"/>
+<area shape="rect" id="node12" href="$video__gr_8c.html#a26945ee5130af06e8ed214af6afb0621" title="Initialize video graphics." alt="" coords="367,107,454,133"/>
+<area shape="rect" id="node14" href="$keyboard_8c.html#abb0cf131521deedea76ecf9720c6fd16" title="Check for KBC errors." alt="" coords="343,360,477,387"/>
+<area shape="rect" id="node15" href="$keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="721,436,812,463"/>
+<area shape="rect" id="node19" href="$mouse_8c.html#a6c96b97b6d60426a8fc089131ca0c1db" title="Get mouse status." alt="" coords="526,664,655,691"/>
+<area shape="rect" id="node21" href="$mouse_8c.html#a50796bc7dd16af8dbf9dc017679c3cf7" title="Read data from mouse buffer." alt="" coords="345,715,475,741"/>
+<area shape="rect" id="node22" href="$mouse_8c.html#ae8de3b11f61e6108d9d8a86a064b56e2" title=" " alt="" coords="357,613,463,640"/>
+<area shape="rect" id="node20" href="$mouse_8c.html#a12fcac504aae73920e4a56f35a6b71bc" title=" " alt="" coords="704,689,829,716"/>
+<area shape="rect" id="node26" href="$rtc_8c.html#a82b0d3fa95ac6b4b61dc2d73b629ead1" title="Convert value to binary representation." alt="" coords="358,563,462,589"/>
+<area shape="rect" id="node27" href="$rtc_8c.html#a347151e9a7dee834be346f08915e9c1d" title="Check if RTC is updating." alt="" coords="356,512,465,539"/>
+<area shape="rect" id="node28" href="$rtc_8c.html#a24757f1fff16bd76fa6d5eb926455831" title="Read data from RTC register." alt="" coords="551,461,630,488"/>
+<area shape="rect" id="node30" href="$video__gr_8c.html#ada541323c22309b4503e345dcade1c55" title=" " alt="" coords="365,765,456,792"/>
+</map>

@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: Game/gameControllers/Controller.h File Reference</title>
+<title>Bomberman: proj/src/Game/gameControllers/Controller.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('_controller_8h.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,6 +69,11 @@ $(document).ready(function(){initNavTree('_controller_8h.html',''); initResizabl
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c166a637ad9f8f09f1307a666349b968.html">proj</a></li><li class="navelem"><a class="el" href="dir_f3942b4d25ca219b12d62aa4c150da0d.html">src</a></li><li class="navelem"><a class="el" href="dir_31dbef8dd67059b385ee5df408ff1840.html">Game</a></li><li class="navelem"><a class="el" href="dir_3382e039a7e3eb2a26285abf6c2b8832.html">gameControllers</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -100,6 +84,37 @@ $(document).ready(function(){initNavTree('_controller_8h.html',''); initResizabl
 <p>Controller functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="keyboard_8h_source.html">devices/keyboard.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="models_8h_source.html">models/models.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mouse_8h_source.html">devices/mouse.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for Controller.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h__incl.png" border="0" usemap="#aproj_2src_2_game_2game_controllers_2_controller_8h" alt=""/></div>
+<map name="aproj_2src_2_game_2game_controllers_2_controller_8h" id="aproj_2src_2_game_2game_controllers_2_controller_8h">
+<area shape="rect" title="Controller functions." alt="" coords="120,5,322,48"/>
+<area shape="rect" href="keyboard_8h.html" title="Keyboard Controller (KBC) functions." alt="" coords="5,96,138,123"/>
+<area shape="rect" href="models_8h.html" title="Contains the data structures used in the Bomberman game." alt="" coords="305,96,425,123"/>
+<area shape="rect" href="mouse_8h.html" title="Mouse functions." alt="" coords="162,96,280,123"/>
+<area shape="rect" title=" " alt="" coords="172,245,249,272"/>
+<area shape="rect" href="i8042_8h.html" title="Constants and definitions for programming the i8042 keyboard controller and mouse." alt="" coords="109,171,173,197"/>
+<area shape="rect" href="rtc_8h.html" title="Real&#45;Time Clock (RTC) functions." alt="" coords="247,171,341,197"/>
+<area shape="rect" href="video__gr_8h.html" title="Video Graphics functions." alt="" coords="366,171,492,197"/>
+<area shape="rect" title=" " alt="" coords="278,245,342,272"/>
+<area shape="rect" title=" " alt="" coords="372,245,486,272"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h__dep__incl.png" border="0" usemap="#aproj_2src_2_game_2game_controllers_2_controller_8hdep" alt=""/></div>
+<map name="aproj_2src_2_game_2game_controllers_2_controller_8hdep" id="aproj_2src_2_game_2game_controllers_2_controller_8hdep">
+<area shape="rect" title="Controller functions." alt="" coords="136,5,337,48"/>
+<area shape="rect" href="_game_8h.html" title="Game functions." alt="" coords="45,104,199,131"/>
+<area shape="rect" href="main_8c.html" title=" " alt="" coords="183,187,290,213"/>
+<area shape="rect" href="_controller_8c.html" title=" " alt="" coords="275,96,476,139"/>
+<area shape="rect" href="_game_8c.html" title=" " alt="" coords="5,187,159,213"/>
+</map>
+</div>
 </div>
 <p><a href="_controller_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -126,7 +141,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a90798832baf6ec80bd0efbf375259f88"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a90798832baf6ec80bd0efbf375259f88">PlayerControllers</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *<a class="el" href="struct_arena_model.html">ArenaModel</a>)</td></tr>
 <tr class="memdesc:a90798832baf6ec80bd0efbf375259f88"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a> controllers.  <a href="_controller_8h.html#a90798832baf6ec80bd0efbf375259f88">More...</a><br /></td></tr>
 <tr class="separator:a90798832baf6ec80bd0efbf375259f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39073380f9ee7c6a222761b4603a479a"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a39073380f9ee7c6a222761b4603a479a">PlayersSpriteControllers</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *model)</td></tr>
+<tr class="memitem:a39073380f9ee7c6a222761b4603a479a"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a39073380f9ee7c6a222761b4603a479a">PlayersSpriteControllers</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *<a class="el" href="_menu_8c.html#a7768a4216cb12ddff21aca6cb168f4d6">model</a>)</td></tr>
 <tr class="memdesc:a39073380f9ee7c6a222761b4603a479a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Players sprite controllers.  <a href="_controller_8h.html#a39073380f9ee7c6a222761b4603a479a">More...</a><br /></td></tr>
 <tr class="separator:a39073380f9ee7c6a222761b4603a479a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a97cc1726fef82901651228dae14ae"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a41a97cc1726fef82901651228dae14ae">BombsSpriteControllers</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *<a class="el" href="struct_arena_model.html">ArenaModel</a>)</td></tr>
@@ -135,6 +150,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6381c5aeb49e8e3cf6b4487dee31bb36"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a6381c5aeb49e8e3cf6b4487dee31bb36">ExplosionsController</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *arenaModel)</td></tr>
 <tr class="memdesc:a6381c5aeb49e8e3cf6b4487dee31bb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explosions controller.  <a href="_controller_8h.html#a6381c5aeb49e8e3cf6b4487dee31bb36">More...</a><br /></td></tr>
 <tr class="separator:a6381c5aeb49e8e3cf6b4487dee31bb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740d8a0dbf4c167398145b289caf4971"><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a740d8a0dbf4c167398145b289caf4971">CoinController</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *<a class="el" href="struct_arena_model.html">ArenaModel</a>)</td></tr>
+<tr class="memdesc:a740d8a0dbf4c167398145b289caf4971"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_coin.html" title="Represents a coin in the game.">Coin</a> controller.  <a href="_controller_8h.html#a740d8a0dbf4c167398145b289caf4971">More...</a><br /></td></tr>
+<tr class="separator:a740d8a0dbf4c167398145b289caf4971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a101562eaf2bcf293e6e5d613b464d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a02a101562eaf2bcf293e6e5d613b464d">addPlayerToLeaderboard1</a> (struct <a class="el" href="struct_player.html">Player</a> player, struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *arenamodel, <a class="el" href="structtime__display.html">time_display</a> time)</td></tr>
+<tr class="memdesc:a02a101562eaf2bcf293e6e5d613b464d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a player to the leaderboard.  <a href="_controller_8h.html#a02a101562eaf2bcf293e6e5d613b464d">More...</a><br /></td></tr>
+<tr class="separator:a02a101562eaf2bcf293e6e5d613b464d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182e89a492060d6b194963e938a9c74b"><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8h.html#a182e89a492060d6b194963e938a9c74b">PlayersAreAlive</a> (struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *arenaModel, enum <a class="el" href="models_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> *state)</td></tr>
 <tr class="memdesc:a182e89a492060d6b194963e938a9c74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if players are alive.  <a href="_controller_8h.html#a182e89a492060d6b194963e938a9c74b">More...</a><br /></td></tr>
 <tr class="separator:a182e89a492060d6b194963e938a9c74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +164,60 @@ Functions</h2></td></tr>
 <div class="textblock"><p >Controller functions. </p>
 <p >This file contains functions related to controlling player actions and game elements. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a02a101562eaf2bcf293e6e5d613b464d" name="a02a101562eaf2bcf293e6e5d613b464d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a101562eaf2bcf293e6e5d613b464d">&#9670;&#160;</a></span>addPlayerToLeaderboard1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addPlayerToLeaderboard1 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *&#160;</td>
+          <td class="paramname"><em>arenamodel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtime__display.html">time_display</a>&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a player to the leaderboard. </p>
+<p >This function adds a player to the leaderboard in the specified arena model.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>The player to be added to the leaderboard. </td></tr>
+    <tr><td class="paramname">arenamodel</td><td>A pointer to the arena model where the player will be added. </td></tr>
+    <tr><td class="paramname">time</td><td>The time display indicating the current time. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a02a101562eaf2bcf293e6e5d613b464d_icgraph.png" border="0" usemap="#a_controller_8h_a02a101562eaf2bcf293e6e5d613b464d_icgraph" alt=""/></div>
+<map name="a_controller_8h_a02a101562eaf2bcf293e6e5d613b464d_icgraph" id="a_controller_8h_a02a101562eaf2bcf293e6e5d613b464d_icgraph">
+<area shape="rect" title="Adds a player to the leaderboard." alt="" coords="162,5,333,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a41a97cc1726fef82901651228dae14ae" name="a41a97cc1726fef82901651228dae14ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41a97cc1726fef82901651228dae14ae">&#9670;&#160;</a></span>BombsSpriteControllers()</h2>
 
@@ -160,13 +235,70 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bombs sprite controllers. </p>
-<p >Controls the actions of the bombs' sprites in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Controls the actions of the bombs' sprites in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a41a97cc1726fef82901651228dae14ae_cgraph.png" border="0" usemap="#a_controller_8h_a41a97cc1726fef82901651228dae14ae_cgraph" alt=""/></div>
+<map name="a_controller_8h_a41a97cc1726fef82901651228dae14ae_cgraph" id="a_controller_8h_a41a97cc1726fef82901651228dae14ae_cgraph">
+<area shape="rect" title="Bombs sprite controllers." alt="" coords="5,5,164,32"/>
+<area shape="rect" href="_controller_8c.html#a905066e6f882994105f60077554da31a" title=" " alt="" coords="212,5,324,32"/>
+<area shape="rect" href="_controller_8c.html#ae988a2b5c416886cabb7f275ca1b37ce" title=" " alt="" coords="372,5,418,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a41a97cc1726fef82901651228dae14ae_icgraph.png" border="0" usemap="#a_controller_8h_a41a97cc1726fef82901651228dae14ae_icgraph" alt=""/></div>
+<map name="a_controller_8h_a41a97cc1726fef82901651228dae14ae_icgraph" id="a_controller_8h_a41a97cc1726fef82901651228dae14ae_icgraph">
+<area shape="rect" title="Bombs sprite controllers." alt="" coords="266,5,424,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a740d8a0dbf4c167398145b289caf4971" name="a740d8a0dbf4c167398145b289caf4971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740d8a0dbf4c167398145b289caf4971">&#9670;&#160;</a></span>CoinController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void() CoinController </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_arena_model.html">ArenaModel</a> *&#160;</td>
+          <td class="paramname"><em>ArenaModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_coin.html" title="Represents a coin in the game.">Coin</a> controller. </p>
+<p >it check if it should be missng or not.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arenaModel</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a740d8a0dbf4c167398145b289caf4971_icgraph.png" border="0" usemap="#a_controller_8h_a740d8a0dbf4c167398145b289caf4971_icgraph" alt=""/></div>
+<map name="a_controller_8h_a740d8a0dbf4c167398145b289caf4971_icgraph" id="a_controller_8h_a740d8a0dbf4c167398145b289caf4971_icgraph">
+<area shape="rect" title="Coin controller." alt="" coords="266,5,368,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -187,13 +319,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Explosions controller. </p>
-<p >Controls the actions of the explosions in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Controls the actions of the explosions in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arenaModel</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname">arenaModel</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36_icgraph.png" border="0" usemap="#a_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36_icgraph" alt=""/></div>
+<map name="a_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36_icgraph" id="a_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36_icgraph">
+<area shape="rect" title="Explosions controller." alt="" coords="266,5,406,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -224,15 +366,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if player can walk down. </p>
-<p >Checks if the player with the specified player number can walk down in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Checks if the player with the specified player number can walk down in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PlayerNumber</td><td>The player number </td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the player can walk down, false otherwise </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_cgraph.png" border="0" usemap="#a_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_cgraph" alt=""/></div>
+<map name="a_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_cgraph" id="a_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_cgraph">
+<area shape="rect" title="Check if player can walk down." alt="" coords="5,5,149,32"/>
+<area shape="rect" href="_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="197,5,322,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_icgraph.png" border="0" usemap="#a_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_icgraph" alt=""/></div>
+<map name="a_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_icgraph" id="a_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf_icgraph">
+<area shape="rect" title="Check if player can walk down." alt="" coords="807,5,950,32"/>
+<area shape="rect" href="_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="671,5,759,32"/>
+<area shape="rect" href="_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="475,5,623,32"/>
+<area shape="rect" href="_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="266,5,427,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -263,15 +427,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if player can walk left. </p>
-<p >Checks if the player with the specified player number can walk to the left in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Checks if the player with the specified player number can walk to the left in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PlayerNumber</td><td>The player number </td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the player can walk left, false otherwise </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_cgraph.png" border="0" usemap="#a_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_cgraph" alt=""/></div>
+<map name="a_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_cgraph" id="a_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_cgraph">
+<area shape="rect" title="Check if player can walk left." alt="" coords="5,5,138,32"/>
+<area shape="rect" href="_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="186,5,311,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_icgraph.png" border="0" usemap="#a_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_icgraph" alt=""/></div>
+<map name="a_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_icgraph" id="a_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0_icgraph">
+<area shape="rect" title="Check if player can walk left." alt="" coords="807,5,939,32"/>
+<area shape="rect" href="_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="671,5,759,32"/>
+<area shape="rect" href="_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="475,5,623,32"/>
+<area shape="rect" href="_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="266,5,427,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -302,15 +488,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if player can walk right. </p>
-<p >Checks if the player with the specified player number can walk to the right in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Checks if the player with the specified player number can walk to the right in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PlayerNumber</td><td>The player number </td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the player can walk right, false otherwise </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_cgraph.png" border="0" usemap="#a_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_cgraph" alt=""/></div>
+<map name="a_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_cgraph" id="a_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_cgraph">
+<area shape="rect" title="Check if player can walk right." alt="" coords="5,5,147,32"/>
+<area shape="rect" href="_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="195,5,320,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_icgraph.png" border="0" usemap="#a_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_icgraph" alt=""/></div>
+<map name="a_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_icgraph" id="a_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e_icgraph">
+<area shape="rect" title="Check if player can walk right." alt="" coords="807,5,948,32"/>
+<area shape="rect" href="_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="671,5,759,32"/>
+<area shape="rect" href="_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="475,5,623,32"/>
+<area shape="rect" href="_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="266,5,427,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -347,16 +555,33 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if player can walk to a position. </p>
-<p >Checks if the player with the specified player number can walk to the given position in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Checks if the player with the specified player number can walk to the given position in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">position</td><td>The position to check </td></tr>
     <tr><td class="paramname">PlayerNumber</td><td>The player number </td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the player can walk to the position, false otherwise </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a457f5f242e06deb82b8743bf081a2c41_icgraph.png" border="0" usemap="#a_controller_8h_a457f5f242e06deb82b8743bf081a2c41_icgraph" alt=""/></div>
+<map name="a_controller_8h_a457f5f242e06deb82b8743bf081a2c41_icgraph" id="a_controller_8h_a457f5f242e06deb82b8743bf081a2c41_icgraph">
+<area shape="rect" title="Check if player can walk to a position." alt="" coords="998,81,1124,108"/>
+<area shape="rect" href="_controller_8c.html#ab8f8c101ecadca33babbbd6d746a18bf" title="Check if player can walk down." alt="" coords="807,5,950,32"/>
+<area shape="rect" href="_controller_8c.html#ac78b28e02851e1b17f6ca5c48d6504a0" title="Check if player can walk left." alt="" coords="813,56,945,83"/>
+<area shape="rect" href="_controller_8c.html#a00e4f82c3c29a274edfdc1b00a9d0d6e" title="Check if player can walk right." alt="" coords="808,107,949,133"/>
+<area shape="rect" href="_controller_8c.html#a7be1c0c5752c429751eb183172207dad" title=" " alt="" coords="815,157,942,184"/>
+<area shape="rect" href="_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="671,81,759,108"/>
+<area shape="rect" href="_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="475,81,623,108"/>
+<area shape="rect" href="_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="266,81,427,108"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,81,218,108"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,81,114,108"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -387,11 +612,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if player can walk to the top. </p>
-<p >Checks if the player with the specified player number can walk to the top in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Checks if the player with the specified player number can walk to the top in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PlayerNumber</td><td>The player number </td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
@@ -426,11 +651,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a> controller. </p>
-<p >Controls the actions of the player with the specified player number in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Controls the actions of the player with the specified player number in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PlayerNumber</td><td>The player number </td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
@@ -454,13 +679,34 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a> controllers. </p>
-<p >Controls the actions of all players in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Controls the actions of all players in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a></td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a90798832baf6ec80bd0efbf375259f88_cgraph.png" border="0" usemap="#a_controller_8h_a90798832baf6ec80bd0efbf375259f88_cgraph" alt=""/></div>
+<map name="a_controller_8h_a90798832baf6ec80bd0efbf375259f88_cgraph" id="a_controller_8h_a90798832baf6ec80bd0efbf375259f88_cgraph">
+<area shape="rect" title="Player controllers." alt="" coords="5,56,126,83"/>
+<area shape="rect" href="_controller_8c.html#a5a9f6fd871c2ea5b4944e5af6c435ce4" title=" " alt="" coords="179,5,262,32"/>
+<area shape="rect" href="_controller_8c.html#a759ec8e591bcda989f1e53548a77d12b" title=" " alt="" coords="174,56,267,83"/>
+<area shape="rect" href="_controller_8c.html#a777b3637bd1763559ae515f6f64287a0" title=" " alt="" coords="174,107,267,133"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a90798832baf6ec80bd0efbf375259f88_icgraph.png" border="0" usemap="#a_controller_8h_a90798832baf6ec80bd0efbf375259f88_icgraph" alt=""/></div>
+<map name="a_controller_8h_a90798832baf6ec80bd0efbf375259f88_icgraph" id="a_controller_8h_a90798832baf6ec80bd0efbf375259f88_icgraph">
+<area shape="rect" title="Player controllers." alt="" coords="266,5,386,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -491,15 +737,25 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if players are alive. </p>
-<p >Checks if any players are alive in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> and updates the game state accordingly.</p>
+<p >Checks if any players are alive in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> and updates the game state accordingly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arenaModel</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname">arenaModel</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
     <tr><td class="paramname">state</td><td>Pointer to the game state </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of players alive </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a182e89a492060d6b194963e938a9c74b_icgraph.png" border="0" usemap="#a_controller_8h_a182e89a492060d6b194963e938a9c74b_icgraph" alt=""/></div>
+<map name="a_controller_8h_a182e89a492060d6b194963e938a9c74b_icgraph" id="a_controller_8h_a182e89a492060d6b194963e938a9c74b_icgraph">
+<area shape="rect" title="Check if players are alive." alt="" coords="266,5,378,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -520,24 +776,46 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Players sprite controllers. </p>
-<p >Controls the actions of the players' sprites in the <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a>.</p>
+<p >Controls the actions of the players' sprites in the <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the game arena model.">ArenaModel</a> containing the game information </td></tr>
+    <tr><td class="paramname">model</td><td>The <a class="el" href="struct_arena_model.html" title="Represents the model of an arena in a game.">ArenaModel</a> containing the game information </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a39073380f9ee7c6a222761b4603a479a_cgraph.png" border="0" usemap="#a_controller_8h_a39073380f9ee7c6a222761b4603a479a_cgraph" alt=""/></div>
+<map name="a_controller_8h_a39073380f9ee7c6a222761b4603a479a_cgraph" id="a_controller_8h_a39073380f9ee7c6a222761b4603a479a_cgraph">
+<area shape="rect" title="Players sprite controllers." alt="" coords="5,107,167,133"/>
+<area shape="rect" href="_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="215,107,362,133"/>
+<area shape="rect" href="_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="410,81,498,108"/>
+<area shape="rect" href="_controller_8c.html#a2743757364d6aa3f7edf5f41dfede512" title=" " alt="" coords="412,132,497,159"/>
+<area shape="rect" href="_controller_8c.html#ab8f8c101ecadca33babbbd6d746a18bf" title="Check if player can walk down." alt="" coords="546,5,690,32"/>
+<area shape="rect" href="_controller_8c.html#ac78b28e02851e1b17f6ca5c48d6504a0" title="Check if player can walk left." alt="" coords="552,56,684,83"/>
+<area shape="rect" href="_controller_8c.html#a00e4f82c3c29a274edfdc1b00a9d0d6e" title="Check if player can walk right." alt="" coords="547,107,689,133"/>
+<area shape="rect" href="_controller_8c.html#a7be1c0c5752c429751eb183172207dad" title=" " alt="" coords="554,157,682,184"/>
+<area shape="rect" href="_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="738,81,863,108"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_controller_8h_a39073380f9ee7c6a222761b4603a479a_icgraph.png" border="0" usemap="#a_controller_8h_a39073380f9ee7c6a222761b4603a479a_icgraph" alt=""/></div>
+<map name="a_controller_8h_a39073380f9ee7c6a222761b4603a479a_icgraph" id="a_controller_8h_a39073380f9ee7c6a222761b4603a479a_icgraph">
+<area shape="rect" title="Players sprite controllers." alt="" coords="266,5,427,32"/>
+<area shape="rect" href="_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>
+</div>
 
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_c33286056d2acf479cd8641ef845fec1.html">Game</a></li><li class="navelem"><a class="el" href="dir_3c2eaddea532ba5ce424e59ba9842366.html">gameControllers</a></li><li class="navelem"><a class="el" href="_controller_8h.html">Controller.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

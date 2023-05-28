@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_player.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,9 +69,11 @@ $(document).ready(function(){initNavTree('struct_player.html',''); initResizable
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_player-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Player Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,107 +82,428 @@ $(document).ready(function(){initNavTree('struct_player.html',''); initResizable
  <a href="struct_player.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="models_8h_source.html">models.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Player:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_player__coll__graph.png" border="0" usemap="#a_player_coll__map" alt="Collaboration graph"/></div>
+<map name="a_player_coll__map" id="a_player_coll__map">
+<area shape="rect" title="Represents a player in the game." alt="" coords="10,96,69,123"/>
+<area shape="rect" href="struct_position.html" title="Represents a position in the game arena." alt="" coords="5,5,74,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a38db771080a5bca533de0f0236ff11ec"><td class="memItemLeft" align="right" valign="top"><a id="a38db771080a5bca533de0f0236ff11ec" name="a38db771080a5bca533de0f0236ff11ec"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> [10]</td></tr>
-<tr class="memdesc:a38db771080a5bca533de0f0236ff11ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s name. <br /></td></tr>
-<tr class="separator:a38db771080a5bca533de0f0236ff11ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51ddb8c567f39d56695a119feb09a994"><td class="memItemLeft" align="right" valign="top"><a id="a51ddb8c567f39d56695a119feb09a994" name="a51ddb8c567f39d56695a119feb09a994"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nameSize</b></td></tr>
-<tr class="memdesc:a51ddb8c567f39d56695a119feb09a994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the player's name. <br /></td></tr>
-<tr class="separator:a51ddb8c567f39d56695a119feb09a994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1849a6bd8808290f3b62fa122245d987"><td class="memItemLeft" align="right" valign="top"><a id="a1849a6bd8808290f3b62fa122245d987" name="a1849a6bd8808290f3b62fa122245d987"></a>
-enum <a class="el" href="models_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>direction</b></td></tr>
-<tr class="memdesc:a1849a6bd8808290f3b62fa122245d987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current movement direction. <br /></td></tr>
-<tr class="separator:a1849a6bd8808290f3b62fa122245d987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933567351995a2f641e26be377c07fdc"><td class="memItemLeft" align="right" valign="top"><a id="a933567351995a2f641e26be377c07fdc" name="a933567351995a2f641e26be377c07fdc"></a>
-struct <a class="el" href="struct_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b></td></tr>
-<tr class="memdesc:a933567351995a2f641e26be377c07fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current position. <br /></td></tr>
-<tr class="separator:a933567351995a2f641e26be377c07fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96084c9da1fca4bd0bc0813f381acf6"><td class="memItemLeft" align="right" valign="top"><a id="ac96084c9da1fca4bd0bc0813f381acf6" name="ac96084c9da1fca4bd0bc0813f381acf6"></a>
-xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><b>Left</b> [3]</td></tr>
-<tr class="memdesc:ac96084c9da1fca4bd0bc0813f381acf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the left movement animation. <br /></td></tr>
-<tr class="separator:ac96084c9da1fca4bd0bc0813f381acf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f7fc401257e9db8c1c7ff9b18b164b5"><td class="memItemLeft" align="right" valign="top"><a id="a7f7fc401257e9db8c1c7ff9b18b164b5" name="a7f7fc401257e9db8c1c7ff9b18b164b5"></a>
-xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><b>Right</b> [3]</td></tr>
-<tr class="memdesc:a7f7fc401257e9db8c1c7ff9b18b164b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the right movement animation. <br /></td></tr>
-<tr class="separator:a7f7fc401257e9db8c1c7ff9b18b164b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98a04c7db95a0f6d6cef01adfbd20a9e"><td class="memItemLeft" align="right" valign="top"><a id="a98a04c7db95a0f6d6cef01adfbd20a9e" name="a98a04c7db95a0f6d6cef01adfbd20a9e"></a>
-xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><b>Up</b> [3]</td></tr>
-<tr class="memdesc:a98a04c7db95a0f6d6cef01adfbd20a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the up movement animation. <br /></td></tr>
-<tr class="separator:a98a04c7db95a0f6d6cef01adfbd20a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ba66af694f947fd14500906fdcb1fd"><td class="memItemLeft" align="right" valign="top"><a id="ae4ba66af694f947fd14500906fdcb1fd" name="ae4ba66af694f947fd14500906fdcb1fd"></a>
-xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><b>Down</b> [3]</td></tr>
-<tr class="memdesc:ae4ba66af694f947fd14500906fdcb1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the down movement animation. <br /></td></tr>
-<tr class="separator:ae4ba66af694f947fd14500906fdcb1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5aa9a8f25d33232631cfd9da9d06f6"><td class="memItemLeft" align="right" valign="top"><a id="a5d5aa9a8f25d33232631cfd9da9d06f6" name="a5d5aa9a8f25d33232631cfd9da9d06f6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfImages</b></td></tr>
-<tr class="memdesc:a5d5aa9a8f25d33232631cfd9da9d06f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of animation images. <br /></td></tr>
-<tr class="separator:a5d5aa9a8f25d33232631cfd9da9d06f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9ca3b9f5fd8f3237819d51c3876aee"><td class="memItemLeft" align="right" valign="top"><a id="a3c9ca3b9f5fd8f3237819d51c3876aee" name="a3c9ca3b9f5fd8f3237819d51c3876aee"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>currentXpm</b></td></tr>
-<tr class="memdesc:a3c9ca3b9f5fd8f3237819d51c3876aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current animation image index. <br /></td></tr>
-<tr class="separator:a3c9ca3b9f5fd8f3237819d51c3876aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edc097ad2d6df8c7a7aefce120e8314"><td class="memItemLeft" align="right" valign="top"><a id="a0edc097ad2d6df8c7a7aefce120e8314" name="a0edc097ad2d6df8c7a7aefce120e8314"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>timeUntilNextXpm</b></td></tr>
-<tr class="memdesc:a0edc097ad2d6df8c7a7aefce120e8314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the next animation image. <br /></td></tr>
-<tr class="separator:a0edc097ad2d6df8c7a7aefce120e8314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e56bcfe770a79b906b09ddde3e315b"><td class="memItemLeft" align="right" valign="top"><a id="a74e56bcfe770a79b906b09ddde3e315b" name="a74e56bcfe770a79b906b09ddde3e315b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>coldownBetweenXpms</b></td></tr>
-<tr class="memdesc:a74e56bcfe770a79b906b09ddde3e315b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooldown between animation images. <br /></td></tr>
-<tr class="separator:a74e56bcfe770a79b906b09ddde3e315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1d68ef9a5dd304c5015e07af7f2bb19"><td class="memItemLeft" align="right" valign="top"><a id="ac1d68ef9a5dd304c5015e07af7f2bb19" name="ac1d68ef9a5dd304c5015e07af7f2bb19"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>lives</b></td></tr>
-<tr class="memdesc:ac1d68ef9a5dd304c5015e07af7f2bb19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of remaining lives. <br /></td></tr>
-<tr class="separator:ac1d68ef9a5dd304c5015e07af7f2bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a942c83a0c13f3bb998e8802bb5921362"><td class="memItemLeft" align="right" valign="top"><a id="a942c83a0c13f3bb998e8802bb5921362" name="a942c83a0c13f3bb998e8802bb5921362"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>bombs</b></td></tr>
-<tr class="memdesc:a942c83a0c13f3bb998e8802bb5921362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bombs the player has. <br /></td></tr>
-<tr class="separator:a942c83a0c13f3bb998e8802bb5921362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac3b4727c79906d0a99db72634b37fc8"><td class="memItemLeft" align="right" valign="top"><a id="aac3b4727c79906d0a99db72634b37fc8" name="aac3b4727c79906d0a99db72634b37fc8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>bombcooldown</b></td></tr>
-<tr class="memdesc:aac3b4727c79906d0a99db72634b37fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooldown between placing bombs. <br /></td></tr>
-<tr class="separator:aac3b4727c79906d0a99db72634b37fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a037e8e370380046bec287bdc96942091"><td class="memItemLeft" align="right" valign="top"><a id="a037e8e370380046bec287bdc96942091" name="a037e8e370380046bec287bdc96942091"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>range</b></td></tr>
-<tr class="memdesc:a037e8e370380046bec287bdc96942091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range of the player's bombs. <br /></td></tr>
-<tr class="separator:a037e8e370380046bec287bdc96942091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a218b4f7c6cc2681a99c23a3b089d68b1"><td class="memItemLeft" align="right" valign="top"><a id="a218b4f7c6cc2681a99c23a3b089d68b1" name="a218b4f7c6cc2681a99c23a3b089d68b1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b></td></tr>
-<tr class="memdesc:a218b4f7c6cc2681a99c23a3b089d68b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Movement speed of the player. <br /></td></tr>
-<tr class="separator:a218b4f7c6cc2681a99c23a3b089d68b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb2dc7d663ebfbcf47dee3ae9337b13"><td class="memItemLeft" align="right" valign="top"><a id="a6cb2dc7d663ebfbcf47dee3ae9337b13" name="a6cb2dc7d663ebfbcf47dee3ae9337b13"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>timeuntilnextmovement</b></td></tr>
-<tr class="memdesc:a6cb2dc7d663ebfbcf47dee3ae9337b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the next movement. <br /></td></tr>
-<tr class="separator:a6cb2dc7d663ebfbcf47dee3ae9337b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93194d6a879aee48480899fc76a775fc"><td class="memItemLeft" align="right" valign="top"><a id="a93194d6a879aee48480899fc76a775fc" name="a93194d6a879aee48480899fc76a775fc"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>movementcooldown</b></td></tr>
-<tr class="memdesc:a93194d6a879aee48480899fc76a775fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooldown between movements. <br /></td></tr>
-<tr class="separator:a93194d6a879aee48480899fc76a775fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef160b7437d94056f1dc59646cd5b87d"><td class="memItemLeft" align="right" valign="top"><a id="aef160b7437d94056f1dc59646cd5b87d" name="aef160b7437d94056f1dc59646cd5b87d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>score</b></td></tr>
-<tr class="memdesc:aef160b7437d94056f1dc59646cd5b87d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s score. <br /></td></tr>
-<tr class="separator:aef160b7437d94056f1dc59646cd5b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="memItemLeft" align="right" valign="top"><a id="a7441ef0865bcb3db9b8064dd7375c1ea" name="a7441ef0865bcb3db9b8064dd7375c1ea"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
-<tr class="memdesc:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s ID. <br /></td></tr>
-<tr class="separator:a7441ef0865bcb3db9b8064dd7375c1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6b13d6fbb767798ca8b56c4f64509c48"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a6b13d6fbb767798ca8b56c4f64509c48">name</a> [10]</td></tr>
+<tr class="memdesc:a6b13d6fbb767798ca8b56c4f64509c48"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s name.  <a href="struct_player.html#a6b13d6fbb767798ca8b56c4f64509c48">More...</a><br /></td></tr>
+<tr class="separator:a6b13d6fbb767798ca8b56c4f64509c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bef1ee19e8137979d2aa5c81f2e716"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a71bef1ee19e8137979d2aa5c81f2e716">nameSize</a></td></tr>
+<tr class="memdesc:a71bef1ee19e8137979d2aa5c81f2e716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the player's name.  <a href="struct_player.html#a71bef1ee19e8137979d2aa5c81f2e716">More...</a><br /></td></tr>
+<tr class="separator:a71bef1ee19e8137979d2aa5c81f2e716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af527ac145c19a5d1d7182af902b9b1d8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="models_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#af527ac145c19a5d1d7182af902b9b1d8">direction</a></td></tr>
+<tr class="memdesc:af527ac145c19a5d1d7182af902b9b1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current movement direction.  <a href="struct_player.html#af527ac145c19a5d1d7182af902b9b1d8">More...</a><br /></td></tr>
+<tr class="separator:af527ac145c19a5d1d7182af902b9b1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ff2115cce4b79b572c861abc0f3329"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a62ff2115cce4b79b572c861abc0f3329">position</a></td></tr>
+<tr class="memdesc:a62ff2115cce4b79b572c861abc0f3329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current position.  <a href="struct_player.html#a62ff2115cce4b79b572c861abc0f3329">More...</a><br /></td></tr>
+<tr class="separator:a62ff2115cce4b79b572c861abc0f3329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f088a61028112f449a6067e5a5b31b"><td class="memItemLeft" align="right" valign="top">xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#aa4f088a61028112f449a6067e5a5b31b">Left</a> [3]</td></tr>
+<tr class="memdesc:aa4f088a61028112f449a6067e5a5b31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the left movement animation.  <a href="struct_player.html#aa4f088a61028112f449a6067e5a5b31b">More...</a><br /></td></tr>
+<tr class="separator:aa4f088a61028112f449a6067e5a5b31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9681f652a64c8102a8c373b0da8bfdd9"><td class="memItemLeft" align="right" valign="top">xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a9681f652a64c8102a8c373b0da8bfdd9">Right</a> [3]</td></tr>
+<tr class="memdesc:a9681f652a64c8102a8c373b0da8bfdd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the right movement animation.  <a href="struct_player.html#a9681f652a64c8102a8c373b0da8bfdd9">More...</a><br /></td></tr>
+<tr class="separator:a9681f652a64c8102a8c373b0da8bfdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7de8de58f86759a82b39ca8882fffed"><td class="memItemLeft" align="right" valign="top">xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#ab7de8de58f86759a82b39ca8882fffed">Up</a> [3]</td></tr>
+<tr class="memdesc:ab7de8de58f86759a82b39ca8882fffed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the up movement animation.  <a href="struct_player.html#ab7de8de58f86759a82b39ca8882fffed">More...</a><br /></td></tr>
+<tr class="separator:ab7de8de58f86759a82b39ca8882fffed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf403ba80712fc6a0c02f27e5626334"><td class="memItemLeft" align="right" valign="top">xpm_image_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#aabf403ba80712fc6a0c02f27e5626334">Down</a> [3]</td></tr>
+<tr class="memdesc:aabf403ba80712fc6a0c02f27e5626334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Images for the down movement animation.  <a href="struct_player.html#aabf403ba80712fc6a0c02f27e5626334">More...</a><br /></td></tr>
+<tr class="separator:aabf403ba80712fc6a0c02f27e5626334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5e0dc270bca604b1c0afdb8e2aaf85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#aec5e0dc270bca604b1c0afdb8e2aaf85">numberOfImages</a></td></tr>
+<tr class="memdesc:aec5e0dc270bca604b1c0afdb8e2aaf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of animation images.  <a href="struct_player.html#aec5e0dc270bca604b1c0afdb8e2aaf85">More...</a><br /></td></tr>
+<tr class="separator:aec5e0dc270bca604b1c0afdb8e2aaf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586cb340db8c1569e57dbdb16f961f66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a586cb340db8c1569e57dbdb16f961f66">currentXpm</a></td></tr>
+<tr class="memdesc:a586cb340db8c1569e57dbdb16f961f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current animation image index.  <a href="struct_player.html#a586cb340db8c1569e57dbdb16f961f66">More...</a><br /></td></tr>
+<tr class="separator:a586cb340db8c1569e57dbdb16f961f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae59a1f97ee7faa3f1e82f0cb7c9b324"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#aae59a1f97ee7faa3f1e82f0cb7c9b324">timeUntilNextXpm</a></td></tr>
+<tr class="memdesc:aae59a1f97ee7faa3f1e82f0cb7c9b324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the next animation image.  <a href="struct_player.html#aae59a1f97ee7faa3f1e82f0cb7c9b324">More...</a><br /></td></tr>
+<tr class="separator:aae59a1f97ee7faa3f1e82f0cb7c9b324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab279136607022ccfdb378b8b02712a57"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#ab279136607022ccfdb378b8b02712a57">coldownBetweenXpms</a></td></tr>
+<tr class="memdesc:ab279136607022ccfdb378b8b02712a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooldown between animation images.  <a href="struct_player.html#ab279136607022ccfdb378b8b02712a57">More...</a><br /></td></tr>
+<tr class="separator:ab279136607022ccfdb378b8b02712a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3300fa23175647f3ff50311dd2a7e04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#ab3300fa23175647f3ff50311dd2a7e04">lives</a></td></tr>
+<tr class="memdesc:ab3300fa23175647f3ff50311dd2a7e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of remaining lives.  <a href="struct_player.html#ab3300fa23175647f3ff50311dd2a7e04">More...</a><br /></td></tr>
+<tr class="separator:ab3300fa23175647f3ff50311dd2a7e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948d5a3b282419b995dcc32f66bf6b54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a948d5a3b282419b995dcc32f66bf6b54">bombs</a></td></tr>
+<tr class="memdesc:a948d5a3b282419b995dcc32f66bf6b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bombs the player has.  <a href="struct_player.html#a948d5a3b282419b995dcc32f66bf6b54">More...</a><br /></td></tr>
+<tr class="separator:a948d5a3b282419b995dcc32f66bf6b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ae19670aa38aa9bd945a04d8503e4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a09ae19670aa38aa9bd945a04d8503e4f">bombcooldown</a></td></tr>
+<tr class="memdesc:a09ae19670aa38aa9bd945a04d8503e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooldown between placing bombs.  <a href="struct_player.html#a09ae19670aa38aa9bd945a04d8503e4f">More...</a><br /></td></tr>
+<tr class="separator:a09ae19670aa38aa9bd945a04d8503e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ffee111d6a1d9fd25229b02264fc56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a35ffee111d6a1d9fd25229b02264fc56">range</a></td></tr>
+<tr class="memdesc:a35ffee111d6a1d9fd25229b02264fc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Range of the player's bombs.  <a href="struct_player.html#a35ffee111d6a1d9fd25229b02264fc56">More...</a><br /></td></tr>
+<tr class="separator:a35ffee111d6a1d9fd25229b02264fc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0349855298626faed9f05f86965ff689"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a0349855298626faed9f05f86965ff689">speed</a></td></tr>
+<tr class="memdesc:a0349855298626faed9f05f86965ff689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Movement speed of the player.  <a href="struct_player.html#a0349855298626faed9f05f86965ff689">More...</a><br /></td></tr>
+<tr class="separator:a0349855298626faed9f05f86965ff689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835a2b171adab742e02dc12ca773832a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a835a2b171adab742e02dc12ca773832a">timeuntilnextmovement</a></td></tr>
+<tr class="memdesc:a835a2b171adab742e02dc12ca773832a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time until the next movement.  <a href="struct_player.html#a835a2b171adab742e02dc12ca773832a">More...</a><br /></td></tr>
+<tr class="separator:a835a2b171adab742e02dc12ca773832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af8582c277b93262ae0765470926cd2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a5af8582c277b93262ae0765470926cd2">movementcooldown</a></td></tr>
+<tr class="memdesc:a5af8582c277b93262ae0765470926cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooldown between movements.  <a href="struct_player.html#a5af8582c277b93262ae0765470926cd2">More...</a><br /></td></tr>
+<tr class="separator:a5af8582c277b93262ae0765470926cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6abae8d66534ad0a1fd6458f786a6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a></td></tr>
+<tr class="memdesc:ace6abae8d66534ad0a1fd6458f786a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s score.  <a href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">More...</a><br /></td></tr>
+<tr class="separator:ace6abae8d66534ad0a1fd6458f786a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e05f3a23de78da7ec032ec2bcf8c6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player.html#a05e05f3a23de78da7ec032ec2bcf8c6c">id</a></td></tr>
+<tr class="memdesc:a05e05f3a23de78da7ec032ec2bcf8c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s ID.  <a href="struct_player.html#a05e05f3a23de78da7ec032ec2bcf8c6c">More...</a><br /></td></tr>
+<tr class="separator:a05e05f3a23de78da7ec032ec2bcf8c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a player in the game. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>models/<a class="el" href="models_8h_source.html">models.h</a></li>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a09ae19670aa38aa9bd945a04d8503e4f" name="a09ae19670aa38aa9bd945a04d8503e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ae19670aa38aa9bd945a04d8503e4f">&#9670;&#160;</a></span>bombcooldown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::bombcooldown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cooldown between placing bombs. </p>
+
+</div>
+</div>
+<a id="a948d5a3b282419b995dcc32f66bf6b54" name="a948d5a3b282419b995dcc32f66bf6b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948d5a3b282419b995dcc32f66bf6b54">&#9670;&#160;</a></span>bombs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::bombs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of bombs the player has. </p>
+
+</div>
+</div>
+<a id="ab279136607022ccfdb378b8b02712a57" name="ab279136607022ccfdb378b8b02712a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab279136607022ccfdb378b8b02712a57">&#9670;&#160;</a></span>coldownBetweenXpms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::coldownBetweenXpms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cooldown between animation images. </p>
+
+</div>
+</div>
+<a id="a586cb340db8c1569e57dbdb16f961f66" name="a586cb340db8c1569e57dbdb16f961f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586cb340db8c1569e57dbdb16f961f66">&#9670;&#160;</a></span>currentXpm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::currentXpm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current animation image index. </p>
+
+</div>
+</div>
+<a id="af527ac145c19a5d1d7182af902b9b1d8" name="af527ac145c19a5d1d7182af902b9b1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af527ac145c19a5d1d7182af902b9b1d8">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="models_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> Player::direction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current movement direction. </p>
+
+</div>
+</div>
+<a id="aabf403ba80712fc6a0c02f27e5626334" name="aabf403ba80712fc6a0c02f27e5626334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf403ba80712fc6a0c02f27e5626334">&#9670;&#160;</a></span>Down</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xpm_image_t Player::Down[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Images for the down movement animation. </p>
+
+</div>
+</div>
+<a id="a05e05f3a23de78da7ec032ec2bcf8c6c" name="a05e05f3a23de78da7ec032ec2bcf8c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e05f3a23de78da7ec032ec2bcf8c6c">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s ID. </p>
+
+</div>
+</div>
+<a id="aa4f088a61028112f449a6067e5a5b31b" name="aa4f088a61028112f449a6067e5a5b31b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f088a61028112f449a6067e5a5b31b">&#9670;&#160;</a></span>Left</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xpm_image_t Player::Left[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Images for the left movement animation. </p>
+
+</div>
+</div>
+<a id="ab3300fa23175647f3ff50311dd2a7e04" name="ab3300fa23175647f3ff50311dd2a7e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3300fa23175647f3ff50311dd2a7e04">&#9670;&#160;</a></span>lives</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::lives</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of remaining lives. </p>
+
+</div>
+</div>
+<a id="a5af8582c277b93262ae0765470926cd2" name="a5af8582c277b93262ae0765470926cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af8582c277b93262ae0765470926cd2">&#9670;&#160;</a></span>movementcooldown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::movementcooldown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cooldown between movements. </p>
+
+</div>
+</div>
+<a id="a6b13d6fbb767798ca8b56c4f64509c48" name="a6b13d6fbb767798ca8b56c4f64509c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b13d6fbb767798ca8b56c4f64509c48">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Player::name[10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s name. </p>
+
+</div>
+</div>
+<a id="a71bef1ee19e8137979d2aa5c81f2e716" name="a71bef1ee19e8137979d2aa5c81f2e716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71bef1ee19e8137979d2aa5c81f2e716">&#9670;&#160;</a></span>nameSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::nameSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of the player's name. </p>
+
+</div>
+</div>
+<a id="aec5e0dc270bca604b1c0afdb8e2aaf85" name="aec5e0dc270bca604b1c0afdb8e2aaf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5e0dc270bca604b1c0afdb8e2aaf85">&#9670;&#160;</a></span>numberOfImages</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::numberOfImages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of animation images. </p>
+
+</div>
+</div>
+<a id="a62ff2115cce4b79b572c861abc0f3329" name="a62ff2115cce4b79b572c861abc0f3329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ff2115cce4b79b572c861abc0f3329">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_position.html">Position</a> Player::position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current position. </p>
+
+</div>
+</div>
+<a id="a35ffee111d6a1d9fd25229b02264fc56" name="a35ffee111d6a1d9fd25229b02264fc56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ffee111d6a1d9fd25229b02264fc56">&#9670;&#160;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Range of the player's bombs. </p>
+
+</div>
+</div>
+<a id="a9681f652a64c8102a8c373b0da8bfdd9" name="a9681f652a64c8102a8c373b0da8bfdd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9681f652a64c8102a8c373b0da8bfdd9">&#9670;&#160;</a></span>Right</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xpm_image_t Player::Right[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Images for the right movement animation. </p>
+
+</div>
+</div>
+<a id="ace6abae8d66534ad0a1fd6458f786a6e" name="ace6abae8d66534ad0a1fd6458f786a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6abae8d66534ad0a1fd6458f786a6e">&#9670;&#160;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::score</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_player.html" title="Represents a player in the game.">Player</a>'s score. </p>
+
+</div>
+</div>
+<a id="a0349855298626faed9f05f86965ff689" name="a0349855298626faed9f05f86965ff689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0349855298626faed9f05f86965ff689">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::speed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Movement speed of the player. </p>
+
+</div>
+</div>
+<a id="a835a2b171adab742e02dc12ca773832a" name="a835a2b171adab742e02dc12ca773832a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835a2b171adab742e02dc12ca773832a">&#9670;&#160;</a></span>timeuntilnextmovement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::timeuntilnextmovement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time until the next movement. </p>
+
+</div>
+</div>
+<a id="aae59a1f97ee7faa3f1e82f0cb7c9b324" name="aae59a1f97ee7faa3f1e82f0cb7c9b324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae59a1f97ee7faa3f1e82f0cb7c9b324">&#9670;&#160;</a></span>timeUntilNextXpm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Player::timeUntilNextXpm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time until the next animation image. </p>
+
+</div>
+</div>
+<a id="ab7de8de58f86759a82b39ca8882fffed" name="ab7de8de58f86759a82b39ca8882fffed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7de8de58f86759a82b39ca8882fffed">&#9670;&#160;</a></span>Up</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xpm_image_t Player::Up[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Images for the up movement animation. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>proj/src/models/<a class="el" href="models_8h_source.html">models.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="struct_player.html">Player</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

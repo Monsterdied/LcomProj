@@ -1,0 +1,17 @@
+<map id="util_sys_inb" name="util_sys_inb">
+<area shape="rect" id="node1" title=" " alt="" coords="888,95,978,122"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ab9e6ed7960d60aa4834f2038247d4536" title="Keyboard interrupt handler." alt="" coords="325,45,384,71"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html#ab6bec41fbf3df2d52442ff59f362be6e" title="Get keyboard status." alt="" coords="684,95,827,122"/>
+<area shape="rect" id="node10" href="$keyboard_8c.html#af3304ab500463d5b5fa6c64c8297c1cd" title="Read from keyboard output buffer." alt="" coords="671,45,840,71"/>
+<area shape="rect" id="node11" href="$rtc_8c.html#a24757f1fff16bd76fa6d5eb926455831" title="Read data from RTC register." alt="" coords="716,146,795,173"/>
+<area shape="rect" id="node14" href="$timer_8c.html#a703c60b40c8c49607d6ecb6fef82d27a" title=" " alt="" coords="702,222,809,249"/>
+<area shape="rect" id="node3" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="171,45,227,71"/>
+<area shape="rect" id="node5" href="$message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,95,236,122"/>
+<area shape="rect" id="node4" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,95,114,122"/>
+<area shape="rect" id="node7" href="$keyboard_8c.html#ab20c4c141e47cfc8bc30a8b921650a67" title="Read data from KBC." alt="" coords="486,45,609,71"/>
+<area shape="rect" id="node9" href="$keyboard_8c.html#a6de0303cece942c2a2652022b242f3e1" title="Write command to KBC." alt="" coords="472,95,623,122"/>
+<area shape="rect" id="node8" href="$keyboard_8c.html#a41293b768f3999597be3a98ced7238fd" title="Re&#45;enable keyboard interrupts." alt="" coords="291,95,417,122"/>
+<area shape="rect" id="node12" href="$rtc_8c.html#a347151e9a7dee834be346f08915e9c1d" title="Check if RTC is updating." alt="" coords="493,146,602,173"/>
+<area shape="rect" id="node13" href="$rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="284,146,424,173"/>
+<area shape="rect" id="node15" href="$timer_8c.html#af2c04fa8e97ffa748fd3f612886a92a7" title=" " alt="" coords="478,247,617,274"/>
+</map>

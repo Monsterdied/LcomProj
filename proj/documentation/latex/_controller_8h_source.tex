@@ -1,5 +1,5 @@
 \hypertarget{_controller_8h_source}{}\doxysection{Controller.\+h}
-\label{_controller_8h_source}\index{Game/gameControllers/Controller.h@{Game/gameControllers/Controller.h}}
+\label{_controller_8h_source}\index{proj/src/Game/gameControllers/Controller.h@{proj/src/Game/gameControllers/Controller.h}}
 \mbox{\hyperlink{_controller_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1 }
@@ -9,8 +9,8 @@
 \DoxyCodeLine{11 \textcolor{preprocessor}{\#pragma once}}
 \DoxyCodeLine{12 }
 \DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{keyboard_8h}{devices/keyboard.h}}"{}}}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{models_8h}{models/models.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mouse_8h}{devices/mouse.h}}"{}}}
 \DoxyCodeLine{24 void (\mbox{\hyperlink{_controller_8h_a643a57712369ffac1e62a4513e609c0c}{PlayerController}})(\textcolor{keywordtype}{int} PlayerNumber, \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{struct_arena_model}{ArenaModel}});}
 \DoxyCodeLine{25 }
 \DoxyCodeLine{36 bool (\mbox{\hyperlink{_controller_8h_a457f5f242e06deb82b8743bf081a2c41}{PlayerCanWalkTo}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_position}{Position}} position, int PlayerNumber, struct \mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{struct_arena_model}{ArenaModel}});}
@@ -25,14 +25,17 @@
 \DoxyCodeLine{81 }
 \DoxyCodeLine{89 void (\mbox{\hyperlink{_controller_8h_a90798832baf6ec80bd0efbf375259f88}{PlayerControllers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{struct_arena_model}{ArenaModel}});}
 \DoxyCodeLine{90 }
-\DoxyCodeLine{98 void (\mbox{\hyperlink{_controller_8h_a39073380f9ee7c6a222761b4603a479a}{PlayersSpriteControllers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* model);}
+\DoxyCodeLine{98 void (\mbox{\hyperlink{_controller_8h_a39073380f9ee7c6a222761b4603a479a}{PlayersSpriteControllers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{_menu_8c_a7768a4216cb12ddff21aca6cb168f4d6}{model}});}
 \DoxyCodeLine{99 }
 \DoxyCodeLine{107 void (\mbox{\hyperlink{_controller_8h_a41a97cc1726fef82901651228dae14ae}{BombsSpriteControllers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{struct_arena_model}{ArenaModel}});}
 \DoxyCodeLine{108 }
 \DoxyCodeLine{116 void (\mbox{\hyperlink{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}{ExplosionsController}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* arenaModel);}
-\DoxyCodeLine{117 }
-\DoxyCodeLine{127 int (\mbox{\hyperlink{_controller_8h_a182e89a492060d6b194963e938a9c74b}{PlayersAreAlive}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* arenaModel, \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}}* state);}
-\DoxyCodeLine{128 }
-\DoxyCodeLine{129 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED10\_CONTROLLER\_H}}
+\DoxyCodeLine{124 void (\mbox{\hyperlink{_controller_8h_a740d8a0dbf4c167398145b289caf4971}{CoinController}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* \mbox{\hyperlink{struct_arena_model}{ArenaModel}});}
+\DoxyCodeLine{134 \textcolor{keywordtype}{void} \mbox{\hyperlink{_controller_8h_a02a101562eaf2bcf293e6e5d613b464d}{addPlayerToLeaderboard1}}(\textcolor{keyword}{struct} \mbox{\hyperlink{struct_player}{Player}} player, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_arena_model}{ArenaModel}}* arenamodel, \mbox{\hyperlink{structtime__display}{time\_display}} time);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136 }
+\DoxyCodeLine{146 int (\mbox{\hyperlink{_controller_8h_a182e89a492060d6b194963e938a9c74b}{PlayersAreAlive}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* arenaModel, \textcolor{keyword}{enum} \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{GameState}}* state);}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED10\_CONTROLLER\_H}}
 
 \end{DoxyCode}

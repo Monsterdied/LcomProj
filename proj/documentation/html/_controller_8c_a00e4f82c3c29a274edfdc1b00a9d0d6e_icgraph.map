@@ -1,0 +1,8 @@
+<map id="PlayerCanWalkRight" name="PlayerCanWalkRight">
+<area shape="rect" id="node1" title="Check if player can walk right." alt="" coords="807,5,948,32"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="671,5,759,32"/>
+<area shape="rect" id="node3" href="$_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="475,5,623,32"/>
+<area shape="rect" id="node4" href="$_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="266,5,427,32"/>
+<area shape="rect" id="node5" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,5,218,32"/>
+<area shape="rect" id="node6" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,5,114,32"/>
+</map>

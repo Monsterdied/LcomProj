@@ -1,0 +1,5 @@
+<map id="proj/src/devices/keyboard.h" name="proj/src/devices/keyboard.h">
+<area shape="rect" id="node1" title="Keyboard Controller (KBC) functions." alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="56,155,134,181"/>
+<area shape="rect" id="node3" href="$i8042_8h.html" title="Constants and definitions for programming the i8042 keyboard controller and mouse." alt="" coords="98,80,161,107"/>
+</map>

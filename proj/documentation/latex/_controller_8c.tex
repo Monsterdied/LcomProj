@@ -1,0 +1,584 @@
+\hypertarget{_controller_8c}{}\doxysection{proj/src/\+Game/game\+Controllers/\+Controller.c File Reference}
+\label{_controller_8c}\index{proj/src/Game/gameControllers/Controller.c@{proj/src/Game/gameControllers/Controller.c}}
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Controller.\+h\char`\"{}}\newline
+Include dependency graph for Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool() \mbox{\hyperlink{_controller_8c_a457f5f242e06deb82b8743bf081a2c41}{Player\+Can\+Walk\+To}} (struct \mbox{\hyperlink{struct_position}{Position}} position, int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk to a position. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8c_ac78b28e02851e1b17f6ca5c48d6504a0}{Player\+Can\+Walk\+Left}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk left. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8c_a00e4f82c3c29a274edfdc1b00a9d0d6e}{Player\+Can\+Walk\+Right}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk right. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8c_ab8f8c101ecadca33babbbd6d746a18bf}{Player\+Can\+Walk\+Down}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk down. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8c_a7be1c0c5752c429751eb183172207dad}{Player\+Can\+Walk\+Up}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\item 
+void() \mbox{\hyperlink{_controller_8c_a759ec8e591bcda989f1e53548a77d12b}{kbc\+\_\+\+Player1}} (enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} $\ast$action)
+\item 
+void() \mbox{\hyperlink{_controller_8c_a777b3637bd1763559ae515f6f64287a0}{kbc\+\_\+\+Player2}} (enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} $\ast$action)
+\item 
+void() \mbox{\hyperlink{_controller_8c_a2743757364d6aa3f7edf5f41dfede512}{update\+Xmp}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\item 
+void() \mbox{\hyperlink{_controller_8c_af6520d9858ce6559e30789d58adf176d}{move\+Player}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\item 
+void() \mbox{\hyperlink{_controller_8c_a5a9f6fd871c2ea5b4944e5af6c435ce4}{kbc\+\_\+\+Bomb}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\item 
+void() \mbox{\hyperlink{_controller_8c_a0364c78b9f8367ee86e75a109a914143}{Player\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}} controllers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8c_aee093a843da5ca1fdeaf87d9389fd19a}{Player\+Sprite\+Controller}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\item 
+void() \mbox{\hyperlink{_controller_8c_a356aebfb375924ba975a46fe95616610}{Players\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
+\begin{DoxyCompactList}\small\item\em Players sprite controllers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8c_a740d8a0dbf4c167398145b289caf4971}{Coin\+Controller}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_coin}{Coin}} controller. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{_controller_8c_ae988a2b5c416886cabb7f275ca1b37ce}{burn}} (int x, int y, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model, enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}} direction)
+\item 
+void() \mbox{\hyperlink{_controller_8c_a905066e6f882994105f60077554da31a}{Bomb\+Explosion}} (int intbomb, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
+\item 
+void() \mbox{\hyperlink{_controller_8c_a864a7493efe7b44a568570c8e7bd07c7}{Bombs\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
+\begin{DoxyCompactList}\small\item\em Bombs sprite controllers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8c_a6381c5aeb49e8e3cf6b4487dee31bb36}{Explosions\+Controller}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
+\begin{DoxyCompactList}\small\item\em Explosions controller. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{_controller_8c_a182e89a492060d6b194963e938a9c74b}{Players\+Are\+Alive}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Check if players are alive. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8c_acee24d031f07f3913f6cc724c707119c}{add\+Player\+To\+Leaderboard1}} (struct \mbox{\hyperlink{struct_player}{Player}} player, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arenamodel, \mbox{\hyperlink{structtime__display}{time\+\_\+display}} time)
+\begin{DoxyCompactList}\small\item\em Adds a player to the leaderboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_controller_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}{scan\+\_\+code}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_controller_8c_acee24d031f07f3913f6cc724c707119c}\label{_controller_8c_acee24d031f07f3913f6cc724c707119c}} 
+\index{Controller.c@{Controller.c}!addPlayerToLeaderboard1@{addPlayerToLeaderboard1}}
+\index{addPlayerToLeaderboard1@{addPlayerToLeaderboard1}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{addPlayerToLeaderboard1()}{addPlayerToLeaderboard1()}}
+{\footnotesize\ttfamily void() add\+Player\+To\+Leaderboard1 (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_player}{Player}}}]{player,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arenamodel,  }\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time }\end{DoxyParamCaption})}
+
+
+
+Adds a player to the leaderboard. 
+
+This function adds a player to the leaderboard in the specified arena model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player to be added to the leaderboard. \\
+\hline
+{\em arenamodel} & A pointer to the arena model where the player will be added. \\
+\hline
+{\em time} & The time display indicating the current time. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_controller_8c_acee24d031f07f3913f6cc724c707119c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a905066e6f882994105f60077554da31a}\label{_controller_8c_a905066e6f882994105f60077554da31a}} 
+\index{Controller.c@{Controller.c}!BombExplosion@{BombExplosion}}
+\index{BombExplosion@{BombExplosion}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{BombExplosion()}{BombExplosion()}}
+{\footnotesize\ttfamily void() Bomb\+Explosion (\begin{DoxyParamCaption}\item[{int}]{intbomb,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arena\+Model }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{_controller_8c_a905066e6f882994105f60077554da31a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a905066e6f882994105f60077554da31a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a864a7493efe7b44a568570c8e7bd07c7}\label{_controller_8c_a864a7493efe7b44a568570c8e7bd07c7}} 
+\index{Controller.c@{Controller.c}!BombsSpriteControllers@{BombsSpriteControllers}}
+\index{BombsSpriteControllers@{BombsSpriteControllers}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{BombsSpriteControllers()}{BombsSpriteControllers()}}
+{\footnotesize\ttfamily void() Bombs\+Sprite\+Controllers (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Bombs sprite controllers. 
+
+Controls the actions of the bombs\textquotesingle{} sprites in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a864a7493efe7b44a568570c8e7bd07c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a864a7493efe7b44a568570c8e7bd07c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_ae988a2b5c416886cabb7f275ca1b37ce}\label{_controller_8c_ae988a2b5c416886cabb7f275ca1b37ce}} 
+\index{Controller.c@{Controller.c}!burn@{burn}}
+\index{burn@{burn}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{burn()}{burn()}}
+{\footnotesize\ttfamily int() burn (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arena\+Model,  }\item[{enum \mbox{\hyperlink{models_8h_a38ebeb110a7300e39b5e7af072f4ee87}{Flame\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_ae988a2b5c416886cabb7f275ca1b37ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a740d8a0dbf4c167398145b289caf4971}\label{_controller_8c_a740d8a0dbf4c167398145b289caf4971}} 
+\index{Controller.c@{Controller.c}!CoinController@{CoinController}}
+\index{CoinController@{CoinController}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{CoinController()}{CoinController()}}
+{\footnotesize\ttfamily void() Coin\+Controller (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_coin}{Coin}} controller. 
+
+it check if it should be missng or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a740d8a0dbf4c167398145b289caf4971_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a6381c5aeb49e8e3cf6b4487dee31bb36}\label{_controller_8c_a6381c5aeb49e8e3cf6b4487dee31bb36}} 
+\index{Controller.c@{Controller.c}!ExplosionsController@{ExplosionsController}}
+\index{ExplosionsController@{ExplosionsController}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{ExplosionsController()}{ExplosionsController()}}
+{\footnotesize\ttfamily void() Explosions\+Controller (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Explosions controller. 
+
+Controls the actions of the explosions in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a6381c5aeb49e8e3cf6b4487dee31bb36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a5a9f6fd871c2ea5b4944e5af6c435ce4}\label{_controller_8c_a5a9f6fd871c2ea5b4944e5af6c435ce4}} 
+\index{Controller.c@{Controller.c}!kbc\_Bomb@{kbc\_Bomb}}
+\index{kbc\_Bomb@{kbc\_Bomb}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_Bomb()}{kbc\_Bomb()}}
+{\footnotesize\ttfamily void() kbc\+\_\+\+Bomb (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a5a9f6fd871c2ea5b4944e5af6c435ce4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a759ec8e591bcda989f1e53548a77d12b}\label{_controller_8c_a759ec8e591bcda989f1e53548a77d12b}} 
+\index{Controller.c@{Controller.c}!kbc\_Player1@{kbc\_Player1}}
+\index{kbc\_Player1@{kbc\_Player1}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_Player1()}{kbc\_Player1()}}
+{\footnotesize\ttfamily void() kbc\+\_\+\+Player1 (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} $\ast$}]{action }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a759ec8e591bcda989f1e53548a77d12b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a777b3637bd1763559ae515f6f64287a0}\label{_controller_8c_a777b3637bd1763559ae515f6f64287a0}} 
+\index{Controller.c@{Controller.c}!kbc\_Player2@{kbc\_Player2}}
+\index{kbc\_Player2@{kbc\_Player2}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_Player2()}{kbc\_Player2()}}
+{\footnotesize\ttfamily void() kbc\+\_\+\+Player2 (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{models_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} $\ast$}]{action }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a777b3637bd1763559ae515f6f64287a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_af6520d9858ce6559e30789d58adf176d}\label{_controller_8c_af6520d9858ce6559e30789d58adf176d}} 
+\index{Controller.c@{Controller.c}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{movePlayer()}{movePlayer()}}
+{\footnotesize\ttfamily void() move\+Player (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_af6520d9858ce6559e30789d58adf176d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_af6520d9858ce6559e30789d58adf176d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_ab8f8c101ecadca33babbbd6d746a18bf}\label{_controller_8c_ab8f8c101ecadca33babbbd6d746a18bf}} 
+\index{Controller.c@{Controller.c}!PlayerCanWalkDown@{PlayerCanWalkDown}}
+\index{PlayerCanWalkDown@{PlayerCanWalkDown}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkDown()}{PlayerCanWalkDown()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Down (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk down. 
+
+Checks if the player with the specified player number can walk down in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk down, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{_controller_8c_ab8f8c101ecadca33babbbd6d746a18bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_ab8f8c101ecadca33babbbd6d746a18bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_ac78b28e02851e1b17f6ca5c48d6504a0}\label{_controller_8c_ac78b28e02851e1b17f6ca5c48d6504a0}} 
+\index{Controller.c@{Controller.c}!PlayerCanWalkLeft@{PlayerCanWalkLeft}}
+\index{PlayerCanWalkLeft@{PlayerCanWalkLeft}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkLeft()}{PlayerCanWalkLeft()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Left (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk left. 
+
+Checks if the player with the specified player number can walk to the left in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk left, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{_controller_8c_ac78b28e02851e1b17f6ca5c48d6504a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_ac78b28e02851e1b17f6ca5c48d6504a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a00e4f82c3c29a274edfdc1b00a9d0d6e}\label{_controller_8c_a00e4f82c3c29a274edfdc1b00a9d0d6e}} 
+\index{Controller.c@{Controller.c}!PlayerCanWalkRight@{PlayerCanWalkRight}}
+\index{PlayerCanWalkRight@{PlayerCanWalkRight}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkRight()}{PlayerCanWalkRight()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Right (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk right. 
+
+Checks if the player with the specified player number can walk to the right in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk right, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_controller_8c_a00e4f82c3c29a274edfdc1b00a9d0d6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a00e4f82c3c29a274edfdc1b00a9d0d6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a457f5f242e06deb82b8743bf081a2c41}\label{_controller_8c_a457f5f242e06deb82b8743bf081a2c41}} 
+\index{Controller.c@{Controller.c}!PlayerCanWalkTo@{PlayerCanWalkTo}}
+\index{PlayerCanWalkTo@{PlayerCanWalkTo}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkTo()}{PlayerCanWalkTo()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+To (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_position}{Position}}}]{position,  }\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk to a position. 
+
+Checks if the player with the specified player number can walk to the given position in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to check \\
+\hline
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk to the position, false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a457f5f242e06deb82b8743bf081a2c41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a7be1c0c5752c429751eb183172207dad}\label{_controller_8c_a7be1c0c5752c429751eb183172207dad}} 
+\index{Controller.c@{Controller.c}!PlayerCanWalkUp@{PlayerCanWalkUp}}
+\index{PlayerCanWalkUp@{PlayerCanWalkUp}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkUp()}{PlayerCanWalkUp()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Up (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{_controller_8c_a7be1c0c5752c429751eb183172207dad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a7be1c0c5752c429751eb183172207dad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a0364c78b9f8367ee86e75a109a914143}\label{_controller_8c_a0364c78b9f8367ee86e75a109a914143}} 
+\index{Controller.c@{Controller.c}!PlayerControllers@{PlayerControllers}}
+\index{PlayerControllers@{PlayerControllers}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerControllers()}{PlayerControllers()}}
+{\footnotesize\ttfamily void() Player\+Controllers (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_player}{Player}} controllers. 
+
+Controls the actions of all players in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{_controller_8c_a0364c78b9f8367ee86e75a109a914143_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a0364c78b9f8367ee86e75a109a914143_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a182e89a492060d6b194963e938a9c74b}\label{_controller_8c_a182e89a492060d6b194963e938a9c74b}} 
+\index{Controller.c@{Controller.c}!PlayersAreAlive@{PlayersAreAlive}}
+\index{PlayersAreAlive@{PlayersAreAlive}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayersAreAlive()}{PlayersAreAlive()}}
+{\footnotesize\ttfamily int() Players\+Are\+Alive (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arena\+Model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Check if players are alive. 
+
+Checks if any players are alive in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} and updates the game state accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+{\em state} & Pointer to the game state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of players alive 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a182e89a492060d6b194963e938a9c74b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_aee093a843da5ca1fdeaf87d9389fd19a}\label{_controller_8c_aee093a843da5ca1fdeaf87d9389fd19a}} 
+\index{Controller.c@{Controller.c}!PlayerSpriteController@{PlayerSpriteController}}
+\index{PlayerSpriteController@{PlayerSpriteController}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayerSpriteController()}{PlayerSpriteController()}}
+{\footnotesize\ttfamily void() Player\+Sprite\+Controller (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_aee093a843da5ca1fdeaf87d9389fd19a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_aee093a843da5ca1fdeaf87d9389fd19a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a356aebfb375924ba975a46fe95616610}\label{_controller_8c_a356aebfb375924ba975a46fe95616610}} 
+\index{Controller.c@{Controller.c}!PlayersSpriteControllers@{PlayersSpriteControllers}}
+\index{PlayersSpriteControllers@{PlayersSpriteControllers}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{PlayersSpriteControllers()}{PlayersSpriteControllers()}}
+{\footnotesize\ttfamily void() Players\+Sprite\+Controllers (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Players sprite controllers. 
+
+Controls the actions of the players\textquotesingle{} sprites in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a356aebfb375924ba975a46fe95616610_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a356aebfb375924ba975a46fe95616610_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_controller_8c_a2743757364d6aa3f7edf5f41dfede512}\label{_controller_8c_a2743757364d6aa3f7edf5f41dfede512}} 
+\index{Controller.c@{Controller.c}!updateXmp@{updateXmp}}
+\index{updateXmp@{updateXmp}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{updateXmp()}{updateXmp()}}
+{\footnotesize\ttfamily void() update\+Xmp (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_controller_8c_a2743757364d6aa3f7edf5f41dfede512_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_controller_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}\label{_controller_8c_a6b69cf805ecb926bbc8d1b7aa78e5a64}} 
+\index{Controller.c@{Controller.c}!scan\_code@{scan\_code}}
+\index{scan\_code@{scan\_code}!Controller.c@{Controller.c}}
+\doxysubsubsection{\texorpdfstring{scan\_code}{scan\_code}}
+{\footnotesize\ttfamily int scan\+\_\+code\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+

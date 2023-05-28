@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writing_5fcommand_5fkbc_0',['writing_command_kbc',['../keyboard_8h.html#abfb159024aca9bc6b4c3cf5a0214d5af',1,'keyboard.c']]]
+  ['selectnames_0',['SelectNames',['../_select_names_8c.html#a3fa66fb8fb75d038a1ef1a64859601ef',1,'SelectNames(enum GameState *state, struct ArenaModel *model):&#160;SelectNames.c'],['../_select_names_8h.html#a3fa66fb8fb75d038a1ef1a64859601ef',1,'SelectNames(enum GameState *state, struct ArenaModel *model):&#160;SelectNames.c']]]
 ];

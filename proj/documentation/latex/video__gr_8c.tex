@@ -1,0 +1,442 @@
+\hypertarget{video__gr_8c}{}\doxysection{proj/src/devices/video\+\_\+gr.c File Reference}
+\label{video__gr_8c}\index{proj/src/devices/video\_gr.c@{proj/src/devices/video\_gr.c}}
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+Include dependency graph for video\+\_\+gr.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{video__gr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{video__gr_8c_a26945ee5130af06e8ed214af6afb0621}{vg\+\_\+init\+\_\+new}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initialize video graphics. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032}{map\+\_\+vram}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Map video RAM. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_ada541323c22309b4503e345dcade1c55}{vg\+\_\+get\+Buffer}} (reg86\+\_\+t $\ast$reg)
+\item 
+int() \mbox{\hyperlink{video__gr_8c_ab8df8dda113075aa93a80847746f49a4}{vg\+\_\+update}} ()
+\begin{DoxyCompactList}\small\item\em Update video graphics. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_adce26205fd54bb49716d59c897b083db}{R}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Get red component from color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_ae9aced8d6fc0aa09860f796265d4f99c}{G}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Get green component from color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_adc1ead69a7f043672155333c27a4d666}{B}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Get blue component from color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_aa75d96618132cccec2c977ae043d31fe}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw pixel. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\item 
+int() \mbox{\hyperlink{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\item 
+int() \mbox{\hyperlink{video__gr_8c_adbc1fe3cbe866e3cbc31762ac27f972c}{draw\+Xpm}} (xpm\+\_\+map\+\_\+t xpm, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw XPM image. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_a9ddb1709aa723396e611ad1336a3341b}{draw\+Xpm8\+\_\+8\+\_\+8}} (xpm\+\_\+image\+\_\+t img, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw 8-\/bit 8-\/8-\/8 XPM image. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8c_ac20002122081cc1828744a585341830d}{vg\+\_\+draw\+\_\+\+Character}} (char c, xpm\+\_\+image\+\_\+t img, int x, int y, uint32\+\_\+t color\+Chosen)
+\begin{DoxyCompactList}\small\item\em Draw character using XPM image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \mbox{\hyperlink{video__gr_8c_a7d388509d2e1a994e8a741746cb58c88}{membuffer}}
+\item 
+static void $\ast$ \mbox{\hyperlink{video__gr_8c_a36b8a51930dc5c74bb0f71ff3c2e5869}{secondbuffer}}
+\item 
+static void $\ast$ \mbox{\hyperlink{video__gr_8c_afb7c7d159cb36bb910f1603a7eacedbf}{thirdbuffer}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{video__gr_8c_a60abb65c036fbb7b4f24eb8d4cb8d3fb}{Vram\+Size}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{video__gr_8c_a273db53582b308a7fd6d6448e10f018f}{bytes\+\_\+per\+\_\+pixel}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{video__gr_8c_adb1f08b438cf612e163fe7d66cde86d0}{vmi}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{video__gr_8c_adc1ead69a7f043672155333c27a4d666}\label{video__gr_8c_adc1ead69a7f043672155333c27a4d666}} 
+\index{video\_gr.c@{video\_gr.c}!B@{B}}
+\index{B@{B}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{B()}{B()}}
+{\footnotesize\ttfamily int() B (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Get blue component from color. 
+
+Retrieves the blue component from the given color value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The blue component value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8c_aa75d96618132cccec2c977ae043d31fe}\label{video__gr_8c_aa75d96618132cccec2c977ae043d31fe}} 
+\index{video\_gr.c@{video\_gr.c}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily int() draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw pixel. 
+
+Draws a pixel of the specified color at the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the pixel \\
+\hline
+{\em y} & The y-\/coordinate of the pixel \\
+\hline
+{\em color} & The color of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_aa75d96618132cccec2c977ae043d31fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_adbc1fe3cbe866e3cbc31762ac27f972c}\label{video__gr_8c_adbc1fe3cbe866e3cbc31762ac27f972c}} 
+\index{video\_gr.c@{video\_gr.c}!drawXpm@{drawXpm}}
+\index{drawXpm@{drawXpm}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{drawXpm()}{drawXpm()}}
+{\footnotesize\ttfamily int() draw\+Xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw XPM image. 
+
+Draws an XPM image on the screen at the specified coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & The XPM image to be drawn \\
+\hline
+{\em x} & The x-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{video__gr_8c_adbc1fe3cbe866e3cbc31762ac27f972c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_a9ddb1709aa723396e611ad1336a3341b}\label{video__gr_8c_a9ddb1709aa723396e611ad1336a3341b}} 
+\index{video\_gr.c@{video\_gr.c}!drawXpm8\_8\_8@{drawXpm8\_8\_8}}
+\index{drawXpm8\_8\_8@{drawXpm8\_8\_8}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{drawXpm8\_8\_8()}{drawXpm8\_8\_8()}}
+{\footnotesize\ttfamily int() draw\+Xpm8\+\_\+8\+\_\+8 (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw 8-\/bit 8-\/8-\/8 XPM image. 
+
+Draws an 8-\/bit 8-\/8-\/8 XPM image on the screen at the specified coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The XPM image to be drawn \\
+\hline
+{\em x} & The x-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{video__gr_8c_a9ddb1709aa723396e611ad1336a3341b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_a9ddb1709aa723396e611ad1336a3341b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_ae9aced8d6fc0aa09860f796265d4f99c}\label{video__gr_8c_ae9aced8d6fc0aa09860f796265d4f99c}} 
+\index{video\_gr.c@{video\_gr.c}!G@{G}}
+\index{G@{G}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily int() G (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Get green component from color. 
+
+Retrieves the green component from the given color value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The green component value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032}\label{video__gr_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032}} 
+\index{video\_gr.c@{video\_gr.c}!map\_vram@{map\_vram}}
+\index{map\_vram@{map\_vram}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{map\_vram()}{map\_vram()}}
+{\footnotesize\ttfamily int() map\+\_\+vram (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Map video RAM. 
+
+Maps the video RAM to the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set for the video RAM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_adce26205fd54bb49716d59c897b083db}\label{video__gr_8c_adce26205fd54bb49716d59c897b083db}} 
+\index{video\_gr.c@{video\_gr.c}!R@{R}}
+\index{R@{R}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{R()}{R()}}
+{\footnotesize\ttfamily int() R (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Get red component from color. 
+
+Retrieves the red component from the given color value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The red component value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8c_ac20002122081cc1828744a585341830d}\label{video__gr_8c_ac20002122081cc1828744a585341830d}} 
+\index{video\_gr.c@{video\_gr.c}!vg\_draw\_Character@{vg\_draw\_Character}}
+\index{vg\_draw\_Character@{vg\_draw\_Character}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_Character()}{vg\_draw\_Character()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+\+Character (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint32\+\_\+t}]{color\+Chosen }\end{DoxyParamCaption})}
+
+
+
+Draw character using XPM image. 
+
+Draws a character using the specified XPM image at the given coordinates with the chosen color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The character to be drawn \\
+\hline
+{\em img} & The XPM image to be used for the character \\
+\hline
+{\em x} & The x-\/coordinate of the character\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the character\textquotesingle{}s top-\/left corner \\
+\hline
+{\em color\+Chosen} & The color to be used for the character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{video__gr_8c_ac20002122081cc1828744a585341830d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_ac20002122081cc1828744a585341830d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6}\label{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{video\_gr.c@{video\_gr.c}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{video__gr_8c_a5e5b25bd525250f61f40b9e9f212d5e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec}\label{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{video\_gr.c@{video\_gr.c}!vg\_draw\_rectangle@{vg\_draw\_rectangle}}
+\index{vg\_draw\_rectangle@{vg\_draw\_rectangle}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_ada541323c22309b4503e345dcade1c55}\label{video__gr_8c_ada541323c22309b4503e345dcade1c55}} 
+\index{video\_gr.c@{video\_gr.c}!vg\_getBuffer@{vg\_getBuffer}}
+\index{vg\_getBuffer@{vg\_getBuffer}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vg\_getBuffer()}{vg\_getBuffer()}}
+{\footnotesize\ttfamily int() vg\+\_\+get\+Buffer (\begin{DoxyParamCaption}\item[{reg86\+\_\+t $\ast$}]{reg }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_ada541323c22309b4503e345dcade1c55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_a26945ee5130af06e8ed214af6afb0621}\label{video__gr_8c_a26945ee5130af06e8ed214af6afb0621}} 
+\index{video\_gr.c@{video\_gr.c}!vg\_init\_new@{vg\_init\_new}}
+\index{vg\_init\_new@{vg\_init\_new}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vg\_init\_new()}{vg\_init\_new()}}
+{\footnotesize\ttfamily int() vg\+\_\+init\+\_\+new (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initialize video graphics. 
+
+Initializes video graphics with the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set for video graphics \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8c_a26945ee5130af06e8ed214af6afb0621_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__gr_8c_ab8df8dda113075aa93a80847746f49a4}\label{video__gr_8c_ab8df8dda113075aa93a80847746f49a4}} 
+\index{video\_gr.c@{video\_gr.c}!vg\_update@{vg\_update}}
+\index{vg\_update@{vg\_update}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vg\_update()}{vg\_update()}}
+{\footnotesize\ttfamily int() vg\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update video graphics. 
+
+Updates the video graphics buffer to display the changes made.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{video__gr_8c_ab8df8dda113075aa93a80847746f49a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{video__gr_8c_ab8df8dda113075aa93a80847746f49a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{video__gr_8c_a273db53582b308a7fd6d6448e10f018f}\label{video__gr_8c_a273db53582b308a7fd6d6448e10f018f}} 
+\index{video\_gr.c@{video\_gr.c}!bytes\_per\_pixel@{bytes\_per\_pixel}}
+\index{bytes\_per\_pixel@{bytes\_per\_pixel}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{bytes\_per\_pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily uint16\+\_\+t bytes\+\_\+per\+\_\+pixel}
+
+\mbox{\Hypertarget{video__gr_8c_a7d388509d2e1a994e8a741746cb58c88}\label{video__gr_8c_a7d388509d2e1a994e8a741746cb58c88}} 
+\index{video\_gr.c@{video\_gr.c}!membuffer@{membuffer}}
+\index{membuffer@{membuffer}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{membuffer}{membuffer}}
+{\footnotesize\ttfamily void$\ast$ membuffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_a36b8a51930dc5c74bb0f71ff3c2e5869}\label{video__gr_8c_a36b8a51930dc5c74bb0f71ff3c2e5869}} 
+\index{video\_gr.c@{video\_gr.c}!secondbuffer@{secondbuffer}}
+\index{secondbuffer@{secondbuffer}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{secondbuffer}{secondbuffer}}
+{\footnotesize\ttfamily void$\ast$ secondbuffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_afb7c7d159cb36bb910f1603a7eacedbf}\label{video__gr_8c_afb7c7d159cb36bb910f1603a7eacedbf}} 
+\index{video\_gr.c@{video\_gr.c}!thirdbuffer@{thirdbuffer}}
+\index{thirdbuffer@{thirdbuffer}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{thirdbuffer}{thirdbuffer}}
+{\footnotesize\ttfamily void$\ast$ thirdbuffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__gr_8c_adb1f08b438cf612e163fe7d66cde86d0}\label{video__gr_8c_adb1f08b438cf612e163fe7d66cde86d0}} 
+\index{video\_gr.c@{video\_gr.c}!vmi@{vmi}}
+\index{vmi@{vmi}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{vmi}{vmi}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vmi}
+
+\mbox{\Hypertarget{video__gr_8c_a60abb65c036fbb7b4f24eb8d4cb8d3fb}\label{video__gr_8c_a60abb65c036fbb7b4f24eb8d4cb8d3fb}} 
+\index{video\_gr.c@{video\_gr.c}!VramSize@{VramSize}}
+\index{VramSize@{VramSize}!video\_gr.c@{video\_gr.c}}
+\doxysubsubsection{\texorpdfstring{VramSize}{VramSize}}
+{\footnotesize\ttfamily uint32\+\_\+t Vram\+Size}
+

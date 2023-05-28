@@ -1,0 +1,12 @@
+<map id="PlayerCanWalkTo" name="PlayerCanWalkTo">
+<area shape="rect" id="node1" title="Check if player can walk to a position." alt="" coords="998,81,1124,108"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#ab8f8c101ecadca33babbbd6d746a18bf" title="Check if player can walk down." alt="" coords="807,5,950,32"/>
+<area shape="rect" id="node8" href="$_controller_8c.html#ac78b28e02851e1b17f6ca5c48d6504a0" title="Check if player can walk left." alt="" coords="813,56,945,83"/>
+<area shape="rect" id="node9" href="$_controller_8c.html#a00e4f82c3c29a274edfdc1b00a9d0d6e" title="Check if player can walk right." alt="" coords="808,107,949,133"/>
+<area shape="rect" id="node10" href="$_controller_8c.html#a7be1c0c5752c429751eb183172207dad" title=" " alt="" coords="815,157,942,184"/>
+<area shape="rect" id="node3" href="$_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="671,81,759,108"/>
+<area shape="rect" id="node4" href="$_controller_8c.html#aee093a843da5ca1fdeaf87d9389fd19a" title=" " alt="" coords="475,81,623,108"/>
+<area shape="rect" id="node5" href="$_controller_8c.html#a356aebfb375924ba975a46fe95616610" title="Players sprite controllers." alt="" coords="266,81,427,108"/>
+<area shape="rect" id="node6" href="$_game_8c.html#a03ce96f2a43aa2d157713f2d5f24dee5" title="Game function." alt="" coords="162,81,218,108"/>
+<area shape="rect" id="node7" href="$main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,81,114,108"/>
+</map>

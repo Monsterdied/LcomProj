@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['register_5finput_0',['REGISTER_INPUT',['../rtc_8h.html#ac7ccdd8e98d8f7fdad8dfe99c467d5d8',1,'rtc.h']]],
-  ['register_5foutput_1',['REGISTER_OUTPUT',['../rtc_8h.html#a5e3f3a35c56673c2a54d9f4eadb759a9',1,'rtc.h']]]
+  ['chroma_5fkey_5fgreen_5f888_0',['CHROMA_KEY_GREEN_888',['../video__gr_8h.html#af9f848740c62aebaa9691121703ef6fa',1,'video_gr.h']]]
 ];

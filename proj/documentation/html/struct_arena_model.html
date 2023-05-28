@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_arena_model.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,86 +69,340 @@ $(document).ready(function(){initNavTree('struct_arena_model.html',''); initResi
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_arena_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ArenaModel Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the game arena model.  
+<p>Represents the model of an arena in a game.  
  <a href="struct_arena_model.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="models_8h_source.html">models.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for ArenaModel:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_arena_model__coll__graph.png" border="0" usemap="#a_arena_model_coll__map" alt="Collaboration graph"/></div>
+<map name="a_arena_model_coll__map" id="a_arena_model_coll__map">
+<area shape="rect" title="Represents the model of an arena in a game." alt="" coords="293,187,384,213"/>
+<area shape="rect" href="struct_coin.html" title="Represents a coin in the game." alt="" coords="5,96,53,123"/>
+<area shape="rect" href="struct_position.html" title="Represents a position in the game arena." alt="" coords="234,5,302,32"/>
+<area shape="rect" href="struct_player.html" title="Represents a player in the game." alt="" coords="79,96,137,123"/>
+<area shape="rect" href="struct_bomb.html" title="Represents a bomb in the game." alt="" coords="161,96,217,123"/>
+<area shape="rect" href="struct_wall.html" title="Represents a wall in the game arena." alt="" coords="241,96,289,123"/>
+<area shape="rect" href="struct_brick.html" title="Represents a brick in the game arena." alt="" coords="313,96,364,123"/>
+<area shape="rect" href="struct_explosion.html" title="Represents an explosion in the game." alt="" coords="389,96,467,123"/>
+<area shape="rect" href="struct_power_up.html" title="Represents a power&#45;up in the game." alt="" coords="491,96,564,123"/>
+<area shape="rect" href="struct_button.html" title="Represents a button in the game&#39;s menu." alt="" coords="589,96,648,123"/>
+<area shape="rect" href="struct_leader_board_score.html" title="Represents a score in the leaderboard." alt="" coords="672,96,800,123"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:af36076da5ef050e03e1a1d6201ab58df"><td class="memItemLeft" align="right" valign="top"><a id="af36076da5ef050e03e1a1d6201ab58df" name="af36076da5ef050e03e1a1d6201ab58df"></a>
-struct <a class="el" href="struct_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>players</b> [2]</td></tr>
-<tr class="memdesc:af36076da5ef050e03e1a1d6201ab58df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of players. <br /></td></tr>
-<tr class="separator:af36076da5ef050e03e1a1d6201ab58df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a535a90793dcbe9e21be1d60347cdf43d"><td class="memItemLeft" align="right" valign="top"><a id="a535a90793dcbe9e21be1d60347cdf43d" name="a535a90793dcbe9e21be1d60347cdf43d"></a>
-struct <a class="el" href="struct_bomb.html">Bomb</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bombs</b> [6]</td></tr>
-<tr class="memdesc:a535a90793dcbe9e21be1d60347cdf43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of bombs. <br /></td></tr>
-<tr class="separator:a535a90793dcbe9e21be1d60347cdf43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2850b3196ac8a61abfcb0e83a26ead8"><td class="memItemLeft" align="right" valign="top"><a id="ae2850b3196ac8a61abfcb0e83a26ead8" name="ae2850b3196ac8a61abfcb0e83a26ead8"></a>
-struct <a class="el" href="struct_wall.html">Wall</a>&#160;</td><td class="memItemRight" valign="bottom"><b>walls</b> [450]</td></tr>
-<tr class="memdesc:ae2850b3196ac8a61abfcb0e83a26ead8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of walls. <br /></td></tr>
-<tr class="separator:ae2850b3196ac8a61abfcb0e83a26ead8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab607c1fc36f157e9b948401ecdea6b44"><td class="memItemLeft" align="right" valign="top"><a id="ab607c1fc36f157e9b948401ecdea6b44" name="ab607c1fc36f157e9b948401ecdea6b44"></a>
-struct <a class="el" href="struct_brick.html">Brick</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bricks</b> [450]</td></tr>
-<tr class="memdesc:ab607c1fc36f157e9b948401ecdea6b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of bricks. <br /></td></tr>
-<tr class="separator:ab607c1fc36f157e9b948401ecdea6b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9723a270ab1ce9568085bd147de68b5a"><td class="memItemLeft" align="right" valign="top"><a id="a9723a270ab1ce9568085bd147de68b5a" name="a9723a270ab1ce9568085bd147de68b5a"></a>
-struct <a class="el" href="struct_explosion.html">Explosion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>explosions</b> [450]</td></tr>
-<tr class="memdesc:a9723a270ab1ce9568085bd147de68b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of explosions. <br /></td></tr>
-<tr class="separator:a9723a270ab1ce9568085bd147de68b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89cc1123e84a29ed015c339acda34ae8"><td class="memItemLeft" align="right" valign="top"><a id="a89cc1123e84a29ed015c339acda34ae8" name="a89cc1123e84a29ed015c339acda34ae8"></a>
-struct <a class="el" href="struct_power_up.html">PowerUp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>powerUps</b> [10]</td></tr>
-<tr class="memdesc:a89cc1123e84a29ed015c339acda34ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of power-ups. <br /></td></tr>
-<tr class="separator:a89cc1123e84a29ed015c339acda34ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a8e0eaf735de369ad23e4175756f265"><td class="memItemLeft" align="right" valign="top"><a id="a3a8e0eaf735de369ad23e4175756f265" name="a3a8e0eaf735de369ad23e4175756f265"></a>
-struct <a class="el" href="struct_button.html">Button</a>&#160;</td><td class="memItemRight" valign="bottom"><b>returnButton</b></td></tr>
-<tr class="memdesc:a3a8e0eaf735de369ad23e4175756f265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return button in the game. <br /></td></tr>
-<tr class="separator:a3a8e0eaf735de369ad23e4175756f265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57f63506d2191a58a41afec3c3060221"><td class="memItemLeft" align="right" valign="top"><a id="a57f63506d2191a58a41afec3c3060221" name="a57f63506d2191a58a41afec3c3060221"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>elapsedTime</b></td></tr>
-<tr class="memdesc:a57f63506d2191a58a41afec3c3060221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elapsed time in the game. <br /></td></tr>
-<tr class="separator:a57f63506d2191a58a41afec3c3060221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9324c5c6c540512b5136e04d142581"><td class="memItemLeft" align="right" valign="top"><a id="afe9324c5c6c540512b5136e04d142581" name="afe9324c5c6c540512b5136e04d142581"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nWalls</b></td></tr>
-<tr class="memdesc:afe9324c5c6c540512b5136e04d142581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of walls in the arena. <br /></td></tr>
-<tr class="separator:afe9324c5c6c540512b5136e04d142581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4cfedb99e6a5ac007af6e0f8edc37a9"><td class="memItemLeft" align="right" valign="top"><a id="ab4cfedb99e6a5ac007af6e0f8edc37a9" name="ab4cfedb99e6a5ac007af6e0f8edc37a9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nBricks</b></td></tr>
-<tr class="memdesc:ab4cfedb99e6a5ac007af6e0f8edc37a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bricks in the arena. <br /></td></tr>
-<tr class="separator:ab4cfedb99e6a5ac007af6e0f8edc37a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba9383551ae5b871c8241b14c05b016"><td class="memItemLeft" align="right" valign="top"><a id="aaba9383551ae5b871c8241b14c05b016" name="aaba9383551ae5b871c8241b14c05b016"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nPowerUps</b></td></tr>
-<tr class="memdesc:aaba9383551ae5b871c8241b14c05b016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of power-ups in the arena. <br /></td></tr>
-<tr class="separator:aaba9383551ae5b871c8241b14c05b016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d84bc84f8465d3d80e6fe64a772c2a"><td class="memItemLeft" align="right" valign="top"><a id="a47d84bc84f8465d3d80e6fe64a772c2a" name="a47d84bc84f8465d3d80e6fe64a772c2a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nBombs</b></td></tr>
-<tr class="memdesc:a47d84bc84f8465d3d80e6fe64a772c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bombs in the arena. <br /></td></tr>
-<tr class="separator:a47d84bc84f8465d3d80e6fe64a772c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cdf93ed6773fc8f3e6c84e438c3f502"><td class="memItemLeft" align="right" valign="top"><a id="a5cdf93ed6773fc8f3e6c84e438c3f502" name="a5cdf93ed6773fc8f3e6c84e438c3f502"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nExplosions</b></td></tr>
-<tr class="memdesc:a5cdf93ed6773fc8f3e6c84e438c3f502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of explosions in the arena. <br /></td></tr>
-<tr class="separator:a5cdf93ed6773fc8f3e6c84e438c3f502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae56bc7627ac4fcb3bfe765dfbf133864"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_coin.html">Coin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#ae56bc7627ac4fcb3bfe765dfbf133864">coins</a> [450]</td></tr>
+<tr class="separator:ae56bc7627ac4fcb3bfe765dfbf133864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab853f6840bd85178a5f119ef38d8f1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#aaab853f6840bd85178a5f119ef38d8f1">players</a> [2]</td></tr>
+<tr class="separator:aaab853f6840bd85178a5f119ef38d8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ae15339acf94cff76af8ca902ce288"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_bomb.html">Bomb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#ab0ae15339acf94cff76af8ca902ce288">bombs</a> [6]</td></tr>
+<tr class="separator:ab0ae15339acf94cff76af8ca902ce288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e28b9e586ea2e1463dd35847f12cf7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_wall.html">Wall</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#ab8e28b9e586ea2e1463dd35847f12cf7">walls</a> [450]</td></tr>
+<tr class="separator:ab8e28b9e586ea2e1463dd35847f12cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f71c5cb873c886b64604c36a20dc2bb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_brick.html">Brick</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a1f71c5cb873c886b64604c36a20dc2bb">bricks</a> [450]</td></tr>
+<tr class="separator:a1f71c5cb873c886b64604c36a20dc2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08afae9749c197f5aeba8541984d58f9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_explosion.html">Explosion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a08afae9749c197f5aeba8541984d58f9">explosions</a> [450]</td></tr>
+<tr class="separator:a08afae9749c197f5aeba8541984d58f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328d35abe68e0dc95907116b3d6f34bb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_power_up.html">PowerUp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a328d35abe68e0dc95907116b3d6f34bb">powerUps</a> [10]</td></tr>
+<tr class="separator:a328d35abe68e0dc95907116b3d6f34bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40363bef8d27242da776f66b0175237"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_button.html">Button</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#aa40363bef8d27242da776f66b0175237">returnButton</a></td></tr>
+<tr class="separator:aa40363bef8d27242da776f66b0175237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af611b9600403664f894e77eb9c5035da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_leader_board_score.html">LeaderBoardScore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#af611b9600403664f894e77eb9c5035da">scores</a> [3]</td></tr>
+<tr class="separator:af611b9600403664f894e77eb9c5035da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac7402ea7b88ce80848d550fad36446"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a9ac7402ea7b88ce80848d550fad36446">elapsedTime</a></td></tr>
+<tr class="separator:a9ac7402ea7b88ce80848d550fad36446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc40e74490c5727bd10c28528b4762a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#acc40e74490c5727bd10c28528b4762a2">nScores</a></td></tr>
+<tr class="separator:acc40e74490c5727bd10c28528b4762a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4c96c1fb10f5dc67d9a50a3ffb18cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a7a4c96c1fb10f5dc67d9a50a3ffb18cd">nWalls</a></td></tr>
+<tr class="separator:a7a4c96c1fb10f5dc67d9a50a3ffb18cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090e026da18899da9b62d27d844f1684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a090e026da18899da9b62d27d844f1684">nBricks</a></td></tr>
+<tr class="separator:a090e026da18899da9b62d27d844f1684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403330d807d7b67206081e86135ce033"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a403330d807d7b67206081e86135ce033">nPowerUps</a></td></tr>
+<tr class="separator:a403330d807d7b67206081e86135ce033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75bd7eac82cddff5684dc24b112deda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#ad75bd7eac82cddff5684dc24b112deda">nBombs</a></td></tr>
+<tr class="separator:ad75bd7eac82cddff5684dc24b112deda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3a5026412ed5e40d41abea4e4e8ada"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#a7a3a5026412ed5e40d41abea4e4e8ada">nExplosions</a></td></tr>
+<tr class="separator:a7a3a5026412ed5e40d41abea4e4e8ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d53bd8cab66d2c36305125f0245b07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_arena_model.html#ae9d53bd8cab66d2c36305125f0245b07">nCoins</a></td></tr>
+<tr class="separator:ae9d53bd8cab66d2c36305125f0245b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Represents the game arena model. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>models/<a class="el" href="models_8h_source.html">models.h</a></li>
+<div class="textblock"><p >Represents the model of an arena in a game. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab0ae15339acf94cff76af8ca902ce288" name="ab0ae15339acf94cff76af8ca902ce288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ae15339acf94cff76af8ca902ce288">&#9670;&#160;</a></span>bombs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_bomb.html">Bomb</a> ArenaModel::bombs[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of bombs in the arena. </p>
+
+</div>
+</div>
+<a id="a1f71c5cb873c886b64604c36a20dc2bb" name="a1f71c5cb873c886b64604c36a20dc2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f71c5cb873c886b64604c36a20dc2bb">&#9670;&#160;</a></span>bricks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_brick.html">Brick</a> ArenaModel::bricks[450]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of bricks in the arena. </p>
+
+</div>
+</div>
+<a id="ae56bc7627ac4fcb3bfe765dfbf133864" name="ae56bc7627ac4fcb3bfe765dfbf133864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56bc7627ac4fcb3bfe765dfbf133864">&#9670;&#160;</a></span>coins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_coin.html">Coin</a> ArenaModel::coins[450]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of coins in the arena. </p>
+
+</div>
+</div>
+<a id="a9ac7402ea7b88ce80848d550fad36446" name="a9ac7402ea7b88ce80848d550fad36446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac7402ea7b88ce80848d550fad36446">&#9670;&#160;</a></span>elapsedTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ArenaModel::elapsedTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Elapsed time in the arena. </p>
+
+</div>
+</div>
+<a id="a08afae9749c197f5aeba8541984d58f9" name="a08afae9749c197f5aeba8541984d58f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08afae9749c197f5aeba8541984d58f9">&#9670;&#160;</a></span>explosions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_explosion.html">Explosion</a> ArenaModel::explosions[450]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of explosions in the arena. </p>
+
+</div>
+</div>
+<a id="ad75bd7eac82cddff5684dc24b112deda" name="ad75bd7eac82cddff5684dc24b112deda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75bd7eac82cddff5684dc24b112deda">&#9670;&#160;</a></span>nBombs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nBombs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of bombs in the arena. </p>
+
+</div>
+</div>
+<a id="a090e026da18899da9b62d27d844f1684" name="a090e026da18899da9b62d27d844f1684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090e026da18899da9b62d27d844f1684">&#9670;&#160;</a></span>nBricks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nBricks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of bricks in the arena. </p>
+
+</div>
+</div>
+<a id="ae9d53bd8cab66d2c36305125f0245b07" name="ae9d53bd8cab66d2c36305125f0245b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d53bd8cab66d2c36305125f0245b07">&#9670;&#160;</a></span>nCoins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nCoins</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of coins in the arena. </p>
+
+</div>
+</div>
+<a id="a7a3a5026412ed5e40d41abea4e4e8ada" name="a7a3a5026412ed5e40d41abea4e4e8ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3a5026412ed5e40d41abea4e4e8ada">&#9670;&#160;</a></span>nExplosions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nExplosions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of explosions in the arena. </p>
+
+</div>
+</div>
+<a id="a403330d807d7b67206081e86135ce033" name="a403330d807d7b67206081e86135ce033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403330d807d7b67206081e86135ce033">&#9670;&#160;</a></span>nPowerUps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nPowerUps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of power-ups in the arena. </p>
+
+</div>
+</div>
+<a id="acc40e74490c5727bd10c28528b4762a2" name="acc40e74490c5727bd10c28528b4762a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc40e74490c5727bd10c28528b4762a2">&#9670;&#160;</a></span>nScores</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nScores</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of leaderboard scores. </p>
+
+</div>
+</div>
+<a id="a7a4c96c1fb10f5dc67d9a50a3ffb18cd" name="a7a4c96c1fb10f5dc67d9a50a3ffb18cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4c96c1fb10f5dc67d9a50a3ffb18cd">&#9670;&#160;</a></span>nWalls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ArenaModel::nWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Number of walls in the arena. </p>
+
+</div>
+</div>
+<a id="aaab853f6840bd85178a5f119ef38d8f1" name="aaab853f6840bd85178a5f119ef38d8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab853f6840bd85178a5f119ef38d8f1">&#9670;&#160;</a></span>players</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_player.html">Player</a> ArenaModel::players[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of players in the arena. </p>
+
+</div>
+</div>
+<a id="a328d35abe68e0dc95907116b3d6f34bb" name="a328d35abe68e0dc95907116b3d6f34bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328d35abe68e0dc95907116b3d6f34bb">&#9670;&#160;</a></span>powerUps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_power_up.html">PowerUp</a> ArenaModel::powerUps[10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of power-ups in the arena. </p>
+
+</div>
+</div>
+<a id="aa40363bef8d27242da776f66b0175237" name="aa40363bef8d27242da776f66b0175237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40363bef8d27242da776f66b0175237">&#9670;&#160;</a></span>returnButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_button.html">Button</a> ArenaModel::returnButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p ><a class="el" href="struct_button.html" title="Represents a button in the game&#39;s menu.">Button</a> used to return to the main menu. </p>
+
+</div>
+</div>
+<a id="af611b9600403664f894e77eb9c5035da" name="af611b9600403664f894e77eb9c5035da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af611b9600403664f894e77eb9c5035da">&#9670;&#160;</a></span>scores</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_leader_board_score.html">LeaderBoardScore</a> ArenaModel::scores[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of leaderboard scores. </p>
+
+</div>
+</div>
+<a id="ab8e28b9e586ea2e1463dd35847f12cf7" name="ab8e28b9e586ea2e1463dd35847f12cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e28b9e586ea2e1463dd35847f12cf7">&#9670;&#160;</a></span>walls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_wall.html">Wall</a> ArenaModel::walls[450]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Array of walls in the arena. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>proj/src/models/<a class="el" href="models_8h_source.html">models.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="struct_arena_model.html">ArenaModel</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

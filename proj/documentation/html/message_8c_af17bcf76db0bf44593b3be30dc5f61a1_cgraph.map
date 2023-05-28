@@ -1,0 +1,8 @@
+<map id="get_started_on_message" name="get_started_on_message">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,173,133"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ad0923c2624f5daf2656da29e7f8f47a5" title="Subscribe to KBC interrupts." alt="" coords="234,5,342,32"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#a78d147fc7fb3c4f1a4b9dcf8c585b032" title="Map video RAM." alt="" coords="248,56,328,83"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a28f29654b136479a6257553925e28bb0" title="Subscribe to mouse interrupts." alt="" coords="225,107,351,133"/>
+<area shape="rect" id="node5" href="$timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b" title=" " alt="" coords="221,157,355,184"/>
+<area shape="rect" id="node6" href="$video__gr_8c.html#a26945ee5130af06e8ed214af6afb0621" title="Initialize video graphics." alt="" coords="244,208,332,235"/>
+</map>

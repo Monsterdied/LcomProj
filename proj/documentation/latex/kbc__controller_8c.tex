@@ -1,0 +1,49 @@
+\hypertarget{kbc__controller_8c}{}\doxysection{proj/src/\+Game/game\+Controllers/kbc\+\_\+controller.c File Reference}
+\label{kbc__controller_8c}\index{proj/src/Game/gameControllers/kbc\_controller.c@{proj/src/Game/gameControllers/kbc\_controller.c}}
+{\ttfamily \#include \char`\"{}kbc\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for kbc\+\_\+controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{kbc__controller_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{kbc__controller_8c_a82faf20e743d9667920aa6f5ef107d2b}{get\+Char}} (int scan\+Code\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Read scancode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kbc__controller_8c_a82faf20e743d9667920aa6f5ef107d2b}\label{kbc__controller_8c_a82faf20e743d9667920aa6f5ef107d2b}} 
+\index{kbc\_controller.c@{kbc\_controller.c}!getChar@{getChar}}
+\index{getChar@{getChar}!kbc\_controller.c@{kbc\_controller.c}}
+\doxysubsubsection{\texorpdfstring{getChar()}{getChar()}}
+{\footnotesize\ttfamily char get\+Char (\begin{DoxyParamCaption}\item[{int}]{scan\+Code\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Read scancode. 
+
+it reads the scancode and return a char with the key pressed if it is a normal letter not number nor special char
+
+
+\begin{DoxyParams}{Parameters}
+{\em scan\+Code} & The scancode from the keyboard. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A char with the key pressed if it is a normal letter not number nor special char 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{kbc__controller_8c_a82faf20e743d9667920aa6f5ef107d2b_icgraph}
+\end{center}
+\end{figure}

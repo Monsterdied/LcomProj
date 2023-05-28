@@ -5,14 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: devices/rtc.h File Reference</title>
+<title>Bomberman: proj/src/devices/rtc.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="528079.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="bomberman.jpg"/></td>
   <td id="projectalign">
    <div id="projectname">Bomberman<span id="projectnumber">&#160;Final</span>
    </div>
-   <div id="projectbrief">Game where you blow your friends and foes!</div>
+   <div id="projectbrief">Where you can blow your enemies and foes</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +48,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('rtc_8h.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -90,9 +69,14 @@ $(document).ready(function(){initNavTree('rtc_8h.html',''); initResizable(); });
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c166a637ad9f8f09f1307a666349b968.html">proj</a></li><li class="navelem"><a class="el" href="dir_f3942b4d25ca219b12d62aa4c150da0d.html">src</a></li><li class="navelem"><a class="el" href="dir_76cf7be3f67eda82376a6c862cf2acca.html">devices</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -104,73 +88,89 @@ $(document).ready(function(){initNavTree('rtc_8h.html',''); initResizable(); });
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;lcom/lcf.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for rtc.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h__incl.png" border="0" usemap="#aproj_2src_2devices_2rtc_8h" alt=""/></div>
+<map name="aproj_2src_2devices_2rtc_8h" id="aproj_2src_2devices_2rtc_8h">
+<area shape="rect" title="Real&#45;Time Clock (RTC) functions." alt="" coords="20,5,161,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,83,107"/>
+<area shape="rect" title=" " alt="" coords="107,80,171,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h__dep__incl.png" border="0" usemap="#aproj_2src_2devices_2rtc_8hdep" alt=""/></div>
+<map name="aproj_2src_2devices_2rtc_8hdep" id="aproj_2src_2devices_2rtc_8hdep">
+<area shape="rect" title="Real&#45;Time Clock (RTC) functions." alt="" coords="622,5,763,32"/>
+<area shape="rect" href="_game_8h.html" title="Game functions." alt="" coords="1181,253,1334,280"/>
+<area shape="rect" href="main_8c.html" title=" " alt="" coords="617,336,725,363"/>
+<area shape="rect" href="_menu_8h.html" title="Menu functions." alt="" coords="51,253,201,280"/>
+<area shape="rect" href="_select_names_8h.html" title="Select Names functions." alt="" coords="225,253,421,280"/>
+<area shape="rect" href="message_8c.html" title=" " alt="" coords="868,336,1039,363"/>
+<area shape="rect" href="rtc_8c.html" title=" " alt="" coords="1460,80,1602,107"/>
+<area shape="rect" href="draw_8h.html" title="Drawing functions." alt="" coords="496,163,633,189"/>
+<area shape="rect" href="models_8h.html" title="Contains the data structures used in the Bomberman game." alt="" coords="659,80,827,107"/>
+<area shape="rect" href="_game_8c.html" title=" " alt="" coords="1181,336,1334,363"/>
+<area shape="rect" href="_menu_8c.html" title=" " alt="" coords="51,336,201,363"/>
+<area shape="rect" href="_select_names_8c.html" title=" " alt="" coords="225,336,421,363"/>
+<area shape="rect" href="message_8h.html" title=" " alt="" coords="708,253,879,280"/>
+<area shape="rect" href="draw_8c.html" title=" " alt="" coords="445,253,582,280"/>
+<area shape="rect" href="_controller_8c.html" title=" " alt="" coords="904,245,1105,288"/>
+<area shape="rect" href="_controller_8h.html" title="Controller functions." alt="" coords="832,155,1033,197"/>
+<area shape="rect" href="load_8c.html" title=" " alt="" coords="1057,163,1200,189"/>
+</map>
+</div>
 </div>
 <p><a href="rtc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
+Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtime__display.html">time_display</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a910ac5f2c1b4016e433f9832358a1816"><td class="memItemLeft" align="right" valign="top"><a id="a910ac5f2c1b4016e433f9832358a1816" name="a910ac5f2c1b4016e433f9832358a1816"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IRQ_RTC</b>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:a910ac5f2c1b4016e433f9832358a1816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a910ac5f2c1b4016e433f9832358a1816">IRQ_RTC</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a910ac5f2c1b4016e433f9832358a1816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ccdd8e98d8f7fdad8dfe99c467d5d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#ac7ccdd8e98d8f7fdad8dfe99c467d5d8">REGISTER_INPUT</a>&#160;&#160;&#160;0x70</td></tr>
 <tr class="separator:ac7ccdd8e98d8f7fdad8dfe99c467d5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3f3a35c56673c2a54d9f4eadb759a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a5e3f3a35c56673c2a54d9f4eadb759a9">REGISTER_OUTPUT</a>&#160;&#160;&#160;0x71</td></tr>
 <tr class="separator:a5e3f3a35c56673c2a54d9f4eadb759a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fcf4f2eeef6769d588168d4ac2ab0e"><td class="memItemLeft" align="right" valign="top"><a id="a48fcf4f2eeef6769d588168d4ac2ab0e" name="a48fcf4f2eeef6769d588168d4ac2ab0e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SECONDS</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a48fcf4f2eeef6769d588168d4ac2ab0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e">SECONDS</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a48fcf4f2eeef6769d588168d4ac2ab0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59d336dbc295731898ece988d0ebbb8e"><td class="memItemLeft" align="right" valign="top"><a id="a59d336dbc295731898ece988d0ebbb8e" name="a59d336dbc295731898ece988d0ebbb8e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SECONDS_ALARM</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a59d336dbc295731898ece988d0ebbb8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a59d336dbc295731898ece988d0ebbb8e">SECONDS_ALARM</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a59d336dbc295731898ece988d0ebbb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84be9dcfa5a172ee83121620d15c8e29"><td class="memItemLeft" align="right" valign="top"><a id="a84be9dcfa5a172ee83121620d15c8e29" name="a84be9dcfa5a172ee83121620d15c8e29"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MINUTES</b>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a84be9dcfa5a172ee83121620d15c8e29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a84be9dcfa5a172ee83121620d15c8e29">MINUTES</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a84be9dcfa5a172ee83121620d15c8e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc030279159b8e16a47d21e393547689"><td class="memItemLeft" align="right" valign="top"><a id="adc030279159b8e16a47d21e393547689" name="adc030279159b8e16a47d21e393547689"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MINUTES_ALARM</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:adc030279159b8e16a47d21e393547689"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#adc030279159b8e16a47d21e393547689">MINUTES_ALARM</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:adc030279159b8e16a47d21e393547689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212d0f839f6f7ca43ccde311f93d5892"><td class="memItemLeft" align="right" valign="top"><a id="a212d0f839f6f7ca43ccde311f93d5892" name="a212d0f839f6f7ca43ccde311f93d5892"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HOURS</b>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:a212d0f839f6f7ca43ccde311f93d5892"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a212d0f839f6f7ca43ccde311f93d5892">HOURS</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a212d0f839f6f7ca43ccde311f93d5892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc7e10d9ad06a95f30c5272967989e04"><td class="memItemLeft" align="right" valign="top"><a id="adc7e10d9ad06a95f30c5272967989e04" name="adc7e10d9ad06a95f30c5272967989e04"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>HOURS_ALARM</b>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:adc7e10d9ad06a95f30c5272967989e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#adc7e10d9ad06a95f30c5272967989e04">HOURS_ALARM</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:adc7e10d9ad06a95f30c5272967989e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc9f6e77f710440b588e7cc49d0ddf48"><td class="memItemLeft" align="right" valign="top"><a id="adc9f6e77f710440b588e7cc49d0ddf48" name="adc9f6e77f710440b588e7cc49d0ddf48"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DAY_OF_WEEK</b>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:adc9f6e77f710440b588e7cc49d0ddf48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#adc9f6e77f710440b588e7cc49d0ddf48">DAY_OF_WEEK</a>&#160;&#160;&#160;6</td></tr>
 <tr class="separator:adc9f6e77f710440b588e7cc49d0ddf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a509a01c55cbe47386fe24602b7c7fda1"><td class="memItemLeft" align="right" valign="top"><a id="a509a01c55cbe47386fe24602b7c7fda1" name="a509a01c55cbe47386fe24602b7c7fda1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DAY</b>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:a509a01c55cbe47386fe24602b7c7fda1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a509a01c55cbe47386fe24602b7c7fda1">DAY</a>&#160;&#160;&#160;7</td></tr>
 <tr class="separator:a509a01c55cbe47386fe24602b7c7fda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3729d06495d9713592f79f3122c9e677"><td class="memItemLeft" align="right" valign="top"><a id="a3729d06495d9713592f79f3122c9e677" name="a3729d06495d9713592f79f3122c9e677"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MONTH</b>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:a3729d06495d9713592f79f3122c9e677"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a3729d06495d9713592f79f3122c9e677">MONTH</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a3729d06495d9713592f79f3122c9e677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5871356500f559add06ea81d60331b1b"><td class="memItemLeft" align="right" valign="top"><a id="a5871356500f559add06ea81d60331b1b" name="a5871356500f559add06ea81d60331b1b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>YEAR</b>&#160;&#160;&#160;9</td></tr>
+<tr class="memitem:a5871356500f559add06ea81d60331b1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a5871356500f559add06ea81d60331b1b">YEAR</a>&#160;&#160;&#160;9</td></tr>
 <tr class="separator:a5871356500f559add06ea81d60331b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bca0b9b7966f6562b2e0d31f0406604"><td class="memItemLeft" align="right" valign="top"><a id="a5bca0b9b7966f6562b2e0d31f0406604" name="a5bca0b9b7966f6562b2e0d31f0406604"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_A</b>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:a5bca0b9b7966f6562b2e0d31f0406604"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a5bca0b9b7966f6562b2e0d31f0406604">REGISTER_A</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a5bca0b9b7966f6562b2e0d31f0406604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07bc1582ec2a0d53dd74350b5a19c5e"><td class="memItemLeft" align="right" valign="top"><a id="ae07bc1582ec2a0d53dd74350b5a19c5e" name="ae07bc1582ec2a0d53dd74350b5a19c5e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>UPDATING</b>&#160;&#160;&#160;BIT(7)</td></tr>
+<tr class="memitem:ae07bc1582ec2a0d53dd74350b5a19c5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#ae07bc1582ec2a0d53dd74350b5a19c5e">UPDATING</a>&#160;&#160;&#160;BIT(7)</td></tr>
 <tr class="separator:ae07bc1582ec2a0d53dd74350b5a19c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9935cde70013bbc215f658cfc078b988"><td class="memItemLeft" align="right" valign="top"><a id="a9935cde70013bbc215f658cfc078b988" name="a9935cde70013bbc215f658cfc078b988"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_B</b>&#160;&#160;&#160;11</td></tr>
+<tr class="memitem:a9935cde70013bbc215f658cfc078b988"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a9935cde70013bbc215f658cfc078b988">REGISTER_B</a>&#160;&#160;&#160;11</td></tr>
 <tr class="separator:a9935cde70013bbc215f658cfc078b988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc166508d5cfbf4100f8622ce97f4985"><td class="memItemLeft" align="right" valign="top"><a id="acc166508d5cfbf4100f8622ce97f4985" name="acc166508d5cfbf4100f8622ce97f4985"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BINARY</b>&#160;&#160;&#160;BIT(2)</td></tr>
+<tr class="memitem:acc166508d5cfbf4100f8622ce97f4985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#acc166508d5cfbf4100f8622ce97f4985">BINARY</a>&#160;&#160;&#160;BIT(2)</td></tr>
 <tr class="separator:acc166508d5cfbf4100f8622ce97f4985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18c91242d19946dd55600bde76de3ee"><td class="memItemLeft" align="right" valign="top"><a id="ab18c91242d19946dd55600bde76de3ee" name="ab18c91242d19946dd55600bde76de3ee"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FORMAT_TIME</b>&#160;&#160;&#160;BIT(1)</td></tr>
+<tr class="memitem:ab18c91242d19946dd55600bde76de3ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#ab18c91242d19946dd55600bde76de3ee">FORMAT_TIME</a>&#160;&#160;&#160;BIT(1)</td></tr>
 <tr class="separator:ab18c91242d19946dd55600bde76de3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b257ecb5a063988dce0560e2b30d7af"><td class="memItemLeft" align="right" valign="top"><a id="a0b257ecb5a063988dce0560e2b30d7af" name="a0b257ecb5a063988dce0560e2b30d7af"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_C</b>&#160;&#160;&#160;12</td></tr>
+<tr class="memitem:a0b257ecb5a063988dce0560e2b30d7af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a0b257ecb5a063988dce0560e2b30d7af">REGISTER_C</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:a0b257ecb5a063988dce0560e2b30d7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66e6e2bb7cf51adaec2b7a7eaab35fd2"><td class="memItemLeft" align="right" valign="top"><a id="a66e6e2bb7cf51adaec2b7a7eaab35fd2" name="a66e6e2bb7cf51adaec2b7a7eaab35fd2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>REGISTER_D</b>&#160;&#160;&#160;13</td></tr>
+<tr class="memitem:a66e6e2bb7cf51adaec2b7a7eaab35fd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtc_8h.html#a66e6e2bb7cf51adaec2b7a7eaab35fd2">REGISTER_D</a>&#160;&#160;&#160;13</td></tr>
 <tr class="separator:a66e6e2bb7cf51adaec2b7a7eaab35fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -212,6 +212,202 @@ Variables</h2></td></tr>
 <div class="textblock"><p >Real-Time Clock (RTC) functions. </p>
 <p >This file contains functions related to the Real-Time Clock (RTC). </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acc166508d5cfbf4100f8622ce97f4985" name="acc166508d5cfbf4100f8622ce97f4985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc166508d5cfbf4100f8622ce97f4985">&#9670;&#160;</a></span>BINARY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BINARY&#160;&#160;&#160;BIT(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a509a01c55cbe47386fe24602b7c7fda1" name="a509a01c55cbe47386fe24602b7c7fda1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509a01c55cbe47386fe24602b7c7fda1">&#9670;&#160;</a></span>DAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DAY&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc9f6e77f710440b588e7cc49d0ddf48" name="adc9f6e77f710440b588e7cc49d0ddf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9f6e77f710440b588e7cc49d0ddf48">&#9670;&#160;</a></span>DAY_OF_WEEK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DAY_OF_WEEK&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18c91242d19946dd55600bde76de3ee" name="ab18c91242d19946dd55600bde76de3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18c91242d19946dd55600bde76de3ee">&#9670;&#160;</a></span>FORMAT_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FORMAT_TIME&#160;&#160;&#160;BIT(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a212d0f839f6f7ca43ccde311f93d5892" name="a212d0f839f6f7ca43ccde311f93d5892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212d0f839f6f7ca43ccde311f93d5892">&#9670;&#160;</a></span>HOURS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HOURS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc7e10d9ad06a95f30c5272967989e04" name="adc7e10d9ad06a95f30c5272967989e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7e10d9ad06a95f30c5272967989e04">&#9670;&#160;</a></span>HOURS_ALARM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HOURS_ALARM&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a910ac5f2c1b4016e433f9832358a1816" name="a910ac5f2c1b4016e433f9832358a1816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910ac5f2c1b4016e433f9832358a1816">&#9670;&#160;</a></span>IRQ_RTC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRQ_RTC&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84be9dcfa5a172ee83121620d15c8e29" name="a84be9dcfa5a172ee83121620d15c8e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84be9dcfa5a172ee83121620d15c8e29">&#9670;&#160;</a></span>MINUTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINUTES&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc030279159b8e16a47d21e393547689" name="adc030279159b8e16a47d21e393547689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc030279159b8e16a47d21e393547689">&#9670;&#160;</a></span>MINUTES_ALARM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINUTES_ALARM&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3729d06495d9713592f79f3122c9e677" name="a3729d06495d9713592f79f3122c9e677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3729d06495d9713592f79f3122c9e677">&#9670;&#160;</a></span>MONTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MONTH&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bca0b9b7966f6562b2e0d31f0406604" name="a5bca0b9b7966f6562b2e0d31f0406604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bca0b9b7966f6562b2e0d31f0406604">&#9670;&#160;</a></span>REGISTER_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTER_A&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9935cde70013bbc215f658cfc078b988" name="a9935cde70013bbc215f658cfc078b988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9935cde70013bbc215f658cfc078b988">&#9670;&#160;</a></span>REGISTER_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTER_B&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b257ecb5a063988dce0560e2b30d7af" name="a0b257ecb5a063988dce0560e2b30d7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b257ecb5a063988dce0560e2b30d7af">&#9670;&#160;</a></span>REGISTER_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTER_C&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66e6e2bb7cf51adaec2b7a7eaab35fd2" name="a66e6e2bb7cf51adaec2b7a7eaab35fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e6e2bb7cf51adaec2b7a7eaab35fd2">&#9670;&#160;</a></span>REGISTER_D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTER_D&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac7ccdd8e98d8f7fdad8dfe99c467d5d8" name="ac7ccdd8e98d8f7fdad8dfe99c467d5d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7ccdd8e98d8f7fdad8dfe99c467d5d8">&#9670;&#160;</a></span>REGISTER_INPUT</h2>
 
@@ -242,6 +438,62 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a48fcf4f2eeef6769d588168d4ac2ab0e" name="a48fcf4f2eeef6769d588168d4ac2ab0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48fcf4f2eeef6769d588168d4ac2ab0e">&#9670;&#160;</a></span>SECONDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SECONDS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59d336dbc295731898ece988d0ebbb8e" name="a59d336dbc295731898ece988d0ebbb8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d336dbc295731898ece988d0ebbb8e">&#9670;&#160;</a></span>SECONDS_ALARM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SECONDS_ALARM&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae07bc1582ec2a0d53dd74350b5a19c5e" name="ae07bc1582ec2a0d53dd74350b5a19c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07bc1582ec2a0d53dd74350b5a19c5e">&#9670;&#160;</a></span>UPDATING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UPDATING&#160;&#160;&#160;BIT(7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5871356500f559add06ea81d60331b1b" name="a5871356500f559add06ea81d60331b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5871356500f559add06ea81d60331b1b">&#9670;&#160;</a></span>YEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define YEAR&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af9ea4fcdf909aec90a979a93d38d2e24" name="af9ea4fcdf909aec90a979a93d38d2e24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9ea4fcdf909aec90a979a93d38d2e24">&#9670;&#160;</a></span>convert_binary()</h2>
@@ -267,6 +519,17 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_af9ea4fcdf909aec90a979a93d38d2e24_icgraph.png" border="0" usemap="#artc_8h_af9ea4fcdf909aec90a979a93d38d2e24_icgraph" alt=""/></div>
+<map name="artc_8h_af9ea4fcdf909aec90a979a93d38d2e24_icgraph" id="artc_8h_af9ea4fcdf909aec90a979a93d38d2e24_icgraph">
+<area shape="rect" title="Convert value to binary representation." alt="" coords="472,31,577,57"/>
+<area shape="rect" href="rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="284,31,424,57"/>
+<area shape="rect" href="message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,5,236,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,31,114,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -295,6 +558,17 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The hours value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_a6151197f2fe64aa0744f43ff7fafabd0_icgraph.png" border="0" usemap="#artc_8h_a6151197f2fe64aa0744f43ff7fafabd0_icgraph" alt=""/></div>
+<map name="artc_8h_a6151197f2fe64aa0744f43ff7fafabd0_icgraph" id="artc_8h_a6151197f2fe64aa0744f43ff7fafabd0_icgraph">
+<area shape="rect" title="Get hours value from time display structure." alt="" coords="382,31,455,57"/>
+<area shape="rect" href="draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="170,5,305,32"/>
+<area shape="rect" href="draw_8c.html#a10a063ab18d99e46aa4cbb1e398d9227" title=" " alt="" coords="141,56,334,83"/>
+<area shape="rect" href="draw_8c.html#a4ee5f4de5222a6bec9ccded4d7464c3c" title="Draw the menu." alt="" coords="5,5,93,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -323,6 +597,17 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The minutes value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_abfce9f52f9a4091c45e1b2692498e168_icgraph.png" border="0" usemap="#artc_8h_abfce9f52f9a4091c45e1b2692498e168_icgraph" alt=""/></div>
+<map name="artc_8h_abfce9f52f9a4091c45e1b2692498e168_icgraph" id="artc_8h_abfce9f52f9a4091c45e1b2692498e168_icgraph">
+<area shape="rect" title="Get minutes value from time display structure." alt="" coords="382,31,467,57"/>
+<area shape="rect" href="draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="170,5,305,32"/>
+<area shape="rect" href="draw_8c.html#a10a063ab18d99e46aa4cbb1e398d9227" title=" " alt="" coords="141,56,334,83"/>
+<area shape="rect" href="draw_8c.html#a4ee5f4de5222a6bec9ccded4d7464c3c" title="Draw the menu." alt="" coords="5,5,93,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -351,6 +636,17 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The seconds value </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ab9df0fbb3ac360a60cf6e23328680266_icgraph.png" border="0" usemap="#artc_8h_ab9df0fbb3ac360a60cf6e23328680266_icgraph" alt=""/></div>
+<map name="artc_8h_ab9df0fbb3ac360a60cf6e23328680266_icgraph" id="artc_8h_ab9df0fbb3ac360a60cf6e23328680266_icgraph">
+<area shape="rect" title="Get seconds value from time display structure." alt="" coords="382,31,472,57"/>
+<area shape="rect" href="draw_8c.html#a5eca413a86c3effd38130e380a177693" title="Draw the time numbers." alt="" coords="170,5,305,32"/>
+<area shape="rect" href="draw_8c.html#a10a063ab18d99e46aa4cbb1e398d9227" title=" " alt="" coords="141,56,334,83"/>
+<area shape="rect" href="draw_8c.html#a4ee5f4de5222a6bec9ccded4d7464c3c" title="Draw the menu." alt="" coords="5,5,93,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -372,6 +668,27 @@ Variables</h2></td></tr>
 <p>Check if RTC is updating. </p>
 <p >Checks if the RTC is currently updating.</p>
 <dl class="section return"><dt>Returns</dt><dd>Return 0 if RTC is not updating, non-zero otherwise </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_cgraph.png" border="0" usemap="#artc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_cgraph" alt=""/></div>
+<map name="artc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_cgraph" id="artc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_cgraph">
+<area shape="rect" title="Check if RTC is updating." alt="" coords="5,5,115,32"/>
+<area shape="rect" href="rtc_8c.html#a24757f1fff16bd76fa6d5eb926455831" title="Read data from RTC register." alt="" coords="163,5,242,32"/>
+<area shape="rect" href="keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="290,5,380,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_icgraph.png" border="0" usemap="#artc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_icgraph" alt=""/></div>
+<map name="artc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_icgraph" id="artc_8h_ae3e6ef6cb5629cbbb53f0bc7f3b8324b_icgraph">
+<area shape="rect" title="Check if RTC is updating." alt="" coords="472,31,582,57"/>
+<area shape="rect" href="rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="284,31,424,57"/>
+<area shape="rect" href="message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,5,236,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,31,114,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -411,6 +728,27 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return 0 upon success, non-zero otherwise </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_cgraph.png" border="0" usemap="#artc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_cgraph" alt=""/></div>
+<map name="artc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_cgraph" id="artc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_cgraph">
+<area shape="rect" title="Read data from RTC register." alt="" coords="5,5,85,32"/>
+<area shape="rect" href="keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="133,5,223,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_icgraph.png" border="0" usemap="#artc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_icgraph" alt=""/></div>
+<map name="artc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_icgraph" id="artc_8h_ab5e8b0b6eaf7646af8d8e9a328912fa9_icgraph">
+<area shape="rect" title="Read data from RTC register." alt="" coords="630,31,709,57"/>
+<area shape="rect" href="rtc_8c.html#a347151e9a7dee834be346f08915e9c1d" title="Check if RTC is updating." alt="" coords="472,5,582,32"/>
+<area shape="rect" href="rtc_8c.html#ac6c2e8777460c9ea2f72c94213e998ef" title="Update time display structure." alt="" coords="284,31,424,57"/>
+<area shape="rect" href="message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,5,236,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,31,114,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -488,6 +826,28 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return 0 upon success, non-zero otherwise </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ae39ca4b507aac4082ab64189c7375e02_cgraph.png" border="0" usemap="#artc_8h_ae39ca4b507aac4082ab64189c7375e02_cgraph" alt=""/></div>
+<map name="artc_8h_ae39ca4b507aac4082ab64189c7375e02_cgraph" id="artc_8h_ae39ca4b507aac4082ab64189c7375e02_cgraph">
+<area shape="rect" title="Update time display structure." alt="" coords="5,56,146,83"/>
+<area shape="rect" href="rtc_8c.html#a82b0d3fa95ac6b4b61dc2d73b629ead1" title="Convert value to binary representation." alt="" coords="196,5,301,32"/>
+<area shape="rect" href="rtc_8c.html#a347151e9a7dee834be346f08915e9c1d" title="Check if RTC is updating." alt="" coords="194,56,303,83"/>
+<area shape="rect" href="rtc_8c.html#a24757f1fff16bd76fa6d5eb926455831" title="Read data from RTC register." alt="" coords="351,81,430,108"/>
+<area shape="rect" href="keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="478,81,569,108"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h_ae39ca4b507aac4082ab64189c7375e02_icgraph.png" border="0" usemap="#artc_8h_ae39ca4b507aac4082ab64189c7375e02_icgraph" alt=""/></div>
+<map name="artc_8h_ae39ca4b507aac4082ab64189c7375e02_icgraph" id="artc_8h_ae39ca4b507aac4082ab64189c7375e02_icgraph">
+<area shape="rect" title="Update time display structure." alt="" coords="284,31,424,57"/>
+<area shape="rect" href="message_8c.html#a55b0c4a84af09b26bb4b8d3249d13358" title="Display End Game." alt="" coords="162,5,236,32"/>
+<area shape="rect" href="main_8c.html#a33bde23e0d2bbde847401c5ac6fb62e0" title=" " alt="" coords="5,31,114,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -508,13 +868,9 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_07b86ffc266b39efa5bbdc0e9fdb330a.html">devices</a></li><li class="navelem"><a class="el" href="rtc_8h.html">rtc.h</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
 </body>
 </html>

@@ -1,0 +1,10 @@
+<map id="PlayerSpriteController" name="PlayerSpriteController">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,153,133"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#af6520d9858ce6559e30789d58adf176d" title=" " alt="" coords="201,81,289,108"/>
+<area shape="rect" id="node8" href="$_controller_8c.html#a2743757364d6aa3f7edf5f41dfede512" title=" " alt="" coords="202,132,288,159"/>
+<area shape="rect" id="node3" href="$_controller_8c.html#ab8f8c101ecadca33babbbd6d746a18bf" title="Check if player can walk down." alt="" coords="337,5,480,32"/>
+<area shape="rect" id="node5" href="$_controller_8c.html#ac78b28e02851e1b17f6ca5c48d6504a0" title="Check if player can walk left." alt="" coords="343,56,475,83"/>
+<area shape="rect" id="node6" href="$_controller_8c.html#a00e4f82c3c29a274edfdc1b00a9d0d6e" title="Check if player can walk right." alt="" coords="338,107,479,133"/>
+<area shape="rect" id="node7" href="$_controller_8c.html#a7be1c0c5752c429751eb183172207dad" title=" " alt="" coords="345,157,472,184"/>
+<area shape="rect" id="node4" href="$_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="528,81,654,108"/>
+</map>

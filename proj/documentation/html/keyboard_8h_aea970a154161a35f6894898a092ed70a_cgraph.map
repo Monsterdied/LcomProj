@@ -1,0 +1,5 @@
+<map id="kbc_ih" name="kbc_ih">
+<area shape="rect" id="node1" title="Keyboard interrupt handler." alt="" coords="5,31,65,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#abb0cf131521deedea76ecf9720c6fd16" title="Check for KBC errors." alt="" coords="113,5,247,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="135,56,225,83"/>
+</map>

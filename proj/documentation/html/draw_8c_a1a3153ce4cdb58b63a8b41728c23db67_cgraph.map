@@ -1,0 +1,5 @@
+<map id="draw_string" name="draw_string">
+<area shape="rect" id="node1" title="Draw a string." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="141,5,271,32"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="319,5,401,32"/>
+</map>

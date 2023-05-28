@@ -1,5 +1,15 @@
 var searchData=
 [
-  ['y_0',['y',['../struct_mouse.html#a0a2f84ed7838f07779ae24c5a9086d33',1,'Mouse::y()'],['../struct_position.html#a0a2f84ed7838f07779ae24c5a9086d33',1,'Position::y()'],['../struct_button.html#a0a2f84ed7838f07779ae24c5a9086d33',1,'Button::y()']]],
-  ['yspeed_1',['yspeed',['../struct_mouse.html#a8e19090b4aa5dd9bb43efe8b74488f6d',1,'Mouse']]]
+  ['thirdbuffer_0',['thirdbuffer',['../video__gr_8c.html#afb7c7d159cb36bb910f1603a7eacedbf',1,'video_gr.c']]],
+  ['time_5fglobal_1',['time_global',['../timer_8c.html#a76995b9fb24e3b83ce7a5e97ae3419c0',1,'timer.c']]],
+  ['time_5finfo_2',['time_info',['../rtc_8h.html#aa3f6a6defa5127eb02d3295072f600e8',1,'time_info():&#160;rtc.h'],['../_game_8c.html#aa3f6a6defa5127eb02d3295072f600e8',1,'time_info():&#160;rtc.h'],['../_menu_8c.html#aa3f6a6defa5127eb02d3295072f600e8',1,'time_info():&#160;rtc.h'],['../message_8c.html#aa3f6a6defa5127eb02d3295072f600e8',1,'time_info():&#160;rtc.h'],['../_select_names_8c.html#aa3f6a6defa5127eb02d3295072f600e8',1,'time_info():&#160;rtc.h'],['../main_8c.html#aa3f6a6defa5127eb02d3295072f600e8',1,'time_info():&#160;main.c']]],
+  ['timer_5fhook_5fid_3',['timer_hook_id',['../timer_8c.html#a96e6321e488d93a8134897510c435eb7',1,'timer.c']]],
+  ['timer_5finterrupts_5fcounter_4',['timer_interrupts_counter',['../_game_8c.html#a24682c41570377d716c646acf09465b8',1,'timer_interrupts_counter():&#160;Game.c'],['../_menu_8c.html#a24682c41570377d716c646acf09465b8',1,'timer_interrupts_counter():&#160;Menu.c'],['../message_8c.html#a24682c41570377d716c646acf09465b8',1,'timer_interrupts_counter():&#160;message.c'],['../_select_names_8c.html#a24682c41570377d716c646acf09465b8',1,'timer_interrupts_counter():&#160;SelectNames.c']]],
+  ['timer_5finterrupts_5fper_5fframe_5',['timer_interrupts_per_frame',['../_game_8c.html#ae6e26470f3afdf4bbb95ebb84c368185',1,'timer_interrupts_per_frame():&#160;Game.c'],['../_menu_8c.html#ae6e26470f3afdf4bbb95ebb84c368185',1,'timer_interrupts_per_frame():&#160;Menu.c'],['../message_8c.html#ae6e26470f3afdf4bbb95ebb84c368185',1,'timer_interrupts_per_frame():&#160;message.c'],['../_select_names_8c.html#ae6e26470f3afdf4bbb95ebb84c368185',1,'timer_interrupts_per_frame():&#160;SelectNames.c']]],
+  ['timer_5frtc_5finterrupts_5fcounter_6',['timer_rtc_interrupts_counter',['../_menu_8c.html#ac7f958c16dda89b5f58e92a69c293241',1,'timer_rtc_interrupts_counter():&#160;Menu.c'],['../message_8c.html#ac7f958c16dda89b5f58e92a69c293241',1,'timer_rtc_interrupts_counter():&#160;message.c'],['../_select_names_8c.html#ac7f958c16dda89b5f58e92a69c293241',1,'timer_rtc_interrupts_counter():&#160;SelectNames.c']]],
+  ['timeuntilexplosion_7',['timeUntilExplosion',['../struct_bomb.html#a935358e8eb804f295b7037a31c6fe299',1,'Bomb']]],
+  ['timeuntilfade_8',['timeUntilFade',['../struct_explosion.html#ac6817c55be3a7346ae51eb88a738b293',1,'Explosion']]],
+  ['timeuntilnextmovement_9',['timeuntilnextmovement',['../struct_player.html#a835a2b171adab742e02dc12ca773832a',1,'Player']]],
+  ['timeuntilnextxpm_10',['timeUntilNextXpm',['../struct_coin.html#ae645f6cb6ac8f68885899dd46e7e6895',1,'Coin::timeUntilNextXpm()'],['../struct_explosion.html#a51ba76473fb6075e09cf96732d92de29',1,'Explosion::timeUntilNextXpm()'],['../struct_bomb.html#a7eff7a9554a5c1a7eeb27daa7d0f9b85',1,'Bomb::timeUntilNextXpm()'],['../struct_player.html#aae59a1f97ee7faa3f1e82f0cb7c9b324',1,'Player::timeUntilNextXpm()']]],
+  ['type_11',['type',['../struct_power_up.html#acb19d836bb378060a49c9d3639da7454',1,'PowerUp']]]
 ];

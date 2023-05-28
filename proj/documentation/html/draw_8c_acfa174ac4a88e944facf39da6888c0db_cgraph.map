@@ -1,0 +1,6 @@
+<map id="draw_Game_over_report" name="draw_Game_over_report">
+<area shape="rect" id="node1" title="Draws the game over report on the screen." alt="" coords="5,5,166,32"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a1a3153ce4cdb58b63a8b41728c23db67" title="Draw a string." alt="" coords="214,5,301,32"/>
+<area shape="rect" id="node3" href="$video__gr_8c.html#ac20002122081cc1828744a585341830d" title="Draw character using XPM image." alt="" coords="349,5,479,32"/>
+<area shape="rect" id="node4" href="$video__gr_8c.html#aa75d96618132cccec2c977ae043d31fe" title="Draw pixel." alt="" coords="527,5,610,32"/>
+</map>

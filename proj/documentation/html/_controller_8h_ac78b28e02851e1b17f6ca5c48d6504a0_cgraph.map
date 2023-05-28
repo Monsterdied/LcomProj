@@ -1,0 +1,4 @@
+<map id="PlayerCanWalkLeft" name="PlayerCanWalkLeft">
+<area shape="rect" id="node1" title="Check if player can walk left." alt="" coords="5,5,138,32"/>
+<area shape="rect" id="node2" href="$_controller_8c.html#a457f5f242e06deb82b8743bf081a2c41" title="Check if player can walk to a position." alt="" coords="186,5,311,32"/>
+</map>

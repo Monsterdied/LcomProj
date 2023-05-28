@@ -1,0 +1,5 @@
+<map id="writing_command_kbc" name="writing_command_kbc">
+<area shape="rect" id="node1" title="Write command to KBC." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ab6bec41fbf3df2d52442ff59f362be6e" title="Get keyboard status." alt="" coords="204,5,346,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="394,5,484,32"/>
+</map>
