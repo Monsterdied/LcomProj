@@ -325,19 +325,6 @@ void (draw_TimeNumbers)(time_display time_info){
     numbersDisplay(seconds/10,130,10);
     numbersDisplay(seconds%10,150,10);
 }
-void (draw_TimeNumbers_with_x_y)(time_display time_info,int x , int y){
-    uint8_t hours = getHours(time_info);
-    uint8_t minutes = getMinutes(time_info);
-    uint8_t seconds = getSeconds(time_info);
-    numbersDisplay(hours/10,x,y);
-    numbersDisplay(hours%10,x+20,y);
-    drawXpm8_8_8(double_point,x+40,y);
-    numbersDisplay(minutes/10,x + 60,y);
-    numbersDisplay(minutes%10,x +80,y);
-    drawXpm8_8_8(double_point,x + 100,y);
-    numbersDisplay(seconds/10,x + 120,y);
-    numbersDisplay(seconds%10,x + 140,y);
-}
 void draw_select_names(int player_number,struct ArenaModel model,Mouse mouse){
     char string[] = "PLAYER NUMBER 0";
     char string_num = player_number + '1';
