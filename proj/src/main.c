@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "Game/load.h"
-
+#include "Game/gameControllers/Controller.h"
 #include "models/models.h"
 #include "Game/Game.h"
 #include "Game/Menu.h"
@@ -95,12 +95,12 @@ int (proj_main_loop)(){
             case EXIT:
                 break;
             case PLAYER1WON:
-                addPlayerToLeaderbord(model.players[0],&model,time_info);
+                addPlayerToLeaderboard1(model.players[0],&model,time_info);
                 Message(&state,model);
                 state=MENU;
                 break;
             case PLAYER2WON:
-                addPlayerToLeaderbord(model.players[1],&model,time_info);
+                addPlayerToLeaderboard1(model.players[1],&model,time_info);
                 Message(&state,model);
                 state=MENU;
                 break;

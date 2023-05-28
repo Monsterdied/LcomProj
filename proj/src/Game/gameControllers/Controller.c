@@ -354,7 +354,7 @@ int (PlayersAreAlive)(struct ArenaModel* arenaModel,enum GameState* state){
     return 1;
 }
 
-void (addPlayerToLeaderbord)(struct Player player,struct ArenaModel *arenamodel,time_display time){
+void (addPlayerToLeaderboard1)(struct Player player,struct ArenaModel *arenamodel,time_display time){
     int numberLeaderBord = arenamodel->nScores;
     struct LeaderBoardScore score;
     strcpy(score.name, player.name);

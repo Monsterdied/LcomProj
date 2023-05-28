@@ -1,0 +1,270 @@
+\hypertarget{video__gr_8h}{}\doxysection{devices/video\+\_\+gr.h File Reference}
+\label{video__gr_8h}\index{devices/video\_gr.h@{devices/video\_gr.h}}
+
+
+Video Graphics functions.  
+
+
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{video__gr_8h_af9f848740c62aebaa9691121703ef6fa}{CHROMA\+\_\+\+KEY\+\_\+\+GREEN\+\_\+888}}~0x00b140
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{video__gr_8h_a78d147fc7fb3c4f1a4b9dcf8c585b032}{map\+\_\+vram}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Map video RAM. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_adbc1fe3cbe866e3cbc31762ac27f972c}{draw\+Xpm}} (xpm\+\_\+map\+\_\+t xpm, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw XPM image. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_a9ddb1709aa723396e611ad1336a3341b}{draw\+Xpm8\+\_\+8\+\_\+8}} (xpm\+\_\+image\+\_\+t img, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw 8-\/bit 8-\/8-\/8 XPM image. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_a26945ee5130af06e8ed214af6afb0621}{vg\+\_\+init\+\_\+new}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initialize video graphics. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_adce26205fd54bb49716d59c897b083db}{R}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Get red component from color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_ae9aced8d6fc0aa09860f796265d4f99c}{G}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Get green component from color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_adc1ead69a7f043672155333c27a4d666}{B}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Get blue component from color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_ab8df8dda113075aa93a80847746f49a4}{vg\+\_\+update}} ()
+\begin{DoxyCompactList}\small\item\em Update video graphics. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_aa75d96618132cccec2c977ae043d31fe}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw pixel. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{video__gr_8h_ac20002122081cc1828744a585341830d}{vg\+\_\+draw\+\_\+\+Character}} (char c, xpm\+\_\+image\+\_\+t img, int x, int y, uint32\+\_\+t color\+Chosen)
+\begin{DoxyCompactList}\small\item\em Draw character using XPM image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Video Graphics functions. 
+
+This file contains functions related to video graphics. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{video__gr_8h_af9f848740c62aebaa9691121703ef6fa}\label{video__gr_8h_af9f848740c62aebaa9691121703ef6fa}} 
+\index{video\_gr.h@{video\_gr.h}!CHROMA\_KEY\_GREEN\_888@{CHROMA\_KEY\_GREEN\_888}}
+\index{CHROMA\_KEY\_GREEN\_888@{CHROMA\_KEY\_GREEN\_888}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{CHROMA\_KEY\_GREEN\_888}{CHROMA\_KEY\_GREEN\_888}}
+{\footnotesize\ttfamily \#define CHROMA\+\_\+\+KEY\+\_\+\+GREEN\+\_\+888~0x00b140}
+
+Chroma key green color in 888 format 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{video__gr_8h_adc1ead69a7f043672155333c27a4d666}\label{video__gr_8h_adc1ead69a7f043672155333c27a4d666}} 
+\index{video\_gr.h@{video\_gr.h}!B@{B}}
+\index{B@{B}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{B()}{B()}}
+{\footnotesize\ttfamily int() B (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Get blue component from color. 
+
+Retrieves the blue component from the given color value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The blue component value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_aa75d96618132cccec2c977ae043d31fe}\label{video__gr_8h_aa75d96618132cccec2c977ae043d31fe}} 
+\index{video\_gr.h@{video\_gr.h}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily int() draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw pixel. 
+
+Draws a pixel of the specified color at the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the pixel \\
+\hline
+{\em y} & The y-\/coordinate of the pixel \\
+\hline
+{\em color} & The color of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_adbc1fe3cbe866e3cbc31762ac27f972c}\label{video__gr_8h_adbc1fe3cbe866e3cbc31762ac27f972c}} 
+\index{video\_gr.h@{video\_gr.h}!drawXpm@{drawXpm}}
+\index{drawXpm@{drawXpm}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{drawXpm()}{drawXpm()}}
+{\footnotesize\ttfamily int() draw\+Xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw XPM image. 
+
+Draws an XPM image on the screen at the specified coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & The XPM image to be drawn \\
+\hline
+{\em x} & The x-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_a9ddb1709aa723396e611ad1336a3341b}\label{video__gr_8h_a9ddb1709aa723396e611ad1336a3341b}} 
+\index{video\_gr.h@{video\_gr.h}!drawXpm8\_8\_8@{drawXpm8\_8\_8}}
+\index{drawXpm8\_8\_8@{drawXpm8\_8\_8}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{drawXpm8\_8\_8()}{drawXpm8\_8\_8()}}
+{\footnotesize\ttfamily int() draw\+Xpm8\+\_\+8\+\_\+8 (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw 8-\/bit 8-\/8-\/8 XPM image. 
+
+Draws an 8-\/bit 8-\/8-\/8 XPM image on the screen at the specified coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The XPM image to be drawn \\
+\hline
+{\em x} & The x-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the image\textquotesingle{}s top-\/left corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_ae9aced8d6fc0aa09860f796265d4f99c}\label{video__gr_8h_ae9aced8d6fc0aa09860f796265d4f99c}} 
+\index{video\_gr.h@{video\_gr.h}!G@{G}}
+\index{G@{G}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily int() G (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Get green component from color. 
+
+Retrieves the green component from the given color value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The green component value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_a78d147fc7fb3c4f1a4b9dcf8c585b032}\label{video__gr_8h_a78d147fc7fb3c4f1a4b9dcf8c585b032}} 
+\index{video\_gr.h@{video\_gr.h}!map\_vram@{map\_vram}}
+\index{map\_vram@{map\_vram}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{map\_vram()}{map\_vram()}}
+{\footnotesize\ttfamily int() map\+\_\+vram (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Map video RAM. 
+
+Maps the video RAM to the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set for the video RAM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_adce26205fd54bb49716d59c897b083db}\label{video__gr_8h_adce26205fd54bb49716d59c897b083db}} 
+\index{video\_gr.h@{video\_gr.h}!R@{R}}
+\index{R@{R}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{R()}{R()}}
+{\footnotesize\ttfamily int() R (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Get red component from color. 
+
+Retrieves the red component from the given color value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The red component value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_ac20002122081cc1828744a585341830d}\label{video__gr_8h_ac20002122081cc1828744a585341830d}} 
+\index{video\_gr.h@{video\_gr.h}!vg\_draw\_Character@{vg\_draw\_Character}}
+\index{vg\_draw\_Character@{vg\_draw\_Character}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_Character()}{vg\_draw\_Character()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+\+Character (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{uint32\+\_\+t}]{color\+Chosen }\end{DoxyParamCaption})}
+
+
+
+Draw character using XPM image. 
+
+Draws a character using the specified XPM image at the given coordinates with the chosen color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The character to be drawn \\
+\hline
+{\em img} & The XPM image to be used for the character \\
+\hline
+{\em x} & The x-\/coordinate of the character\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the character\textquotesingle{}s top-\/left corner \\
+\hline
+{\em color\+Chosen} & The color to be used for the character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_a26945ee5130af06e8ed214af6afb0621}\label{video__gr_8h_a26945ee5130af06e8ed214af6afb0621}} 
+\index{video\_gr.h@{video\_gr.h}!vg\_init\_new@{vg\_init\_new}}
+\index{vg\_init\_new@{vg\_init\_new}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{vg\_init\_new()}{vg\_init\_new()}}
+{\footnotesize\ttfamily int() vg\+\_\+init\+\_\+new (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initialize video graphics. 
+
+Initializes video graphics with the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set for video graphics \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{video__gr_8h_ab8df8dda113075aa93a80847746f49a4}\label{video__gr_8h_ab8df8dda113075aa93a80847746f49a4}} 
+\index{video\_gr.h@{video\_gr.h}!vg\_update@{vg\_update}}
+\index{vg\_update@{vg\_update}!video\_gr.h@{video\_gr.h}}
+\doxysubsubsection{\texorpdfstring{vg\_update()}{vg\_update()}}
+{\footnotesize\ttfamily int() vg\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update video graphics. 
+
+Updates the video graphics buffer to display the changes made.
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}

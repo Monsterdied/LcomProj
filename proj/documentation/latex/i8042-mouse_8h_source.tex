@@ -1,0 +1,57 @@
+\hypertarget{i8042-mouse_8h_source}{}\doxysection{i8042-\/mouse.h}
+\label{i8042-mouse_8h_source}\index{devices/i8042-\/mouse.h@{devices/i8042-\/mouse.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{12 \textcolor{comment}{/* I/O Ports */}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define OUT\_BUF       0x60     }}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define STATUS\_REG    0x64     }}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define MOUSE\_ARGS    0x60     }}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define MOUSE\_CMD\_REG 0x64     }}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{/* Bit masks */}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define PARITY        BIT(7)   }}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define TIME\_OUT      BIT(6)   }}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define AUX           BIT(5)   }}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define IBF           BIT(1)   }}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define OBF           BIT(0)   }}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define DIS2          BIT(5)   }}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define DIS1          BIT(4)   }}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define INT2          BIT(1)   }}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define INT1          BIT(0)   }}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define FIRST\_BYTE    BIT(3)   }}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{comment}{/* Constants */}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define MOUSE\_OK      0xFA     }}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define MOUSE\_NACK    0xFE     }}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define MOUSE\_ERR     0xFC     }}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{comment}{/* KBC Commands */}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define READ\_CMDB     0x20     }}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define WRITE\_CMDB    0x60     }}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define MOUSE\_DIS     0xA7     }}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#define MOUSE\_ENBL    0xA8     }}
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define CHK\_MOUSE     0xA9     }}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define WRITE\_AUX     0xD4     }}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{comment}{/* Mouse Commands */}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#define MOUSE\_RESET   0xFF     }}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define MOUSE\_RESEND  0xFE     }}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define MOUSE\_DEFAULT 0xF6     }}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define DIS\_DATA\_REP  0xF5     }}
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define ENBL\_DATA\_REP 0xF4     }}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define SET\_SAMPLE    0xF3     }}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define SET\_REMOTE    0xF0     }}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define READ\_DATA     0xEB     }}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define SET\_STREAM    0xEA     }}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define MOUSE\_CFG     0xE9     }}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_LCOM\_I8042\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

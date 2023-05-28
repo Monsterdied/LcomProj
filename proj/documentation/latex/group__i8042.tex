@@ -1,0 +1,129 @@
+\hypertarget{group__i8042}{}\doxysection{i8042}
+\label{group__i8042}\index{i8042@{i8042}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__i8042_ga8092843c014fad609c1b01a4604a44a3}\label{group__i8042_ga8092843c014fad609c1b01a4604a44a3}} 
+\#define {\bfseries IRQ\+\_\+\+KEYBOARD}~1
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt request line. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga82218ef5fdf988f42e5056a0da2f9fb5}\label{group__i8042_ga82218ef5fdf988f42e5056a0da2f9fb5}} 
+\#define {\bfseries BREAK\+\_\+\+ESC}~0x81
+\begin{DoxyCompactList}\small\item\em Break code for the Esc key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga5573533027e427e3a11b4daa75621598}\label{group__i8042_ga5573533027e427e3a11b4daa75621598}} 
+\#define {\bfseries MAKE\+\_\+\+CODE}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Make code flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gab427e6926fcc47eb1c02c1f78162b6f6}\label{group__i8042_gab427e6926fcc47eb1c02c1f78162b6f6}} 
+\#define {\bfseries TWO\+\_\+\+BYTES}~0x\+E0
+\begin{DoxyCompactList}\small\item\em Two-\/byte code prefix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga34326f1c6bfccd8b9084c5ae2b4918a1}\label{group__i8042_ga34326f1c6bfccd8b9084c5ae2b4918a1}} 
+\#define {\bfseries ENABLE\+\_\+\+INT}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Enable interrupt flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga1b41fd2be63532d4ab910f8b256c3811}\label{group__i8042_ga1b41fd2be63532d4ab910f8b256c3811}} 
+\#define {\bfseries AUX}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Auxiliary device flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gaefc48d416c882f06edaf6d01779d4d74}\label{group__i8042_gaefc48d416c882f06edaf6d01779d4d74}} 
+\#define {\bfseries TIMEOUT\+\_\+\+ERROR}~BIT(6)
+\begin{DoxyCompactList}\small\item\em Timeout error flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga81d2ca6759f3f3bf04556b7558aea6bc}\label{group__i8042_ga81d2ca6759f3f3bf04556b7558aea6bc}} 
+\#define {\bfseries PARITY\+\_\+\+ERROR}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Parity error flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga10313c9dfee4ce9cb293f84b50d14889}\label{group__i8042_ga10313c9dfee4ce9cb293f84b50d14889}} 
+\#define {\bfseries FULL\+\_\+\+OUT\+\_\+\+BUFFER}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Full output buffer flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga7eb083dcc1b2aecf91bd8c9108e17b37}\label{group__i8042_ga7eb083dcc1b2aecf91bd8c9108e17b37}} 
+\#define {\bfseries FULL\+\_\+\+IN\+\_\+\+BUFFER}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Full input buffer flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga0b4e336aad52f96e65dd212f76675d8d}\label{group__i8042_ga0b4e336aad52f96e65dd212f76675d8d}} 
+\#define {\bfseries KBC\+\_\+\+STATUS\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Keyboard controller status register port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga445f67cfdfb7046efc77f7df5d9835e2}\label{group__i8042_ga445f67cfdfb7046efc77f7df5d9835e2}} 
+\#define {\bfseries KBC\+\_\+\+IN\+\_\+\+CMD}~0x64
+\begin{DoxyCompactList}\small\item\em Keyboard controller input command port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gade9c0b4f31cee479afed8b824fff02a0}\label{group__i8042_gade9c0b4f31cee479afed8b824fff02a0}} 
+\#define {\bfseries KBC\+\_\+\+OUT\+\_\+\+CMD}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller output command port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga17592db70df8b9ec9f6aece30aa095ec}\label{group__i8042_ga17592db70df8b9ec9f6aece30aa095ec}} 
+\#define {\bfseries KBC\+\_\+\+OUT\+\_\+\+BUFFER}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller output buffer port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga595a5cad2d3c793963da50865b2c1b47}\label{group__i8042_ga595a5cad2d3c793963da50865b2c1b47}} 
+\#define {\bfseries KBC\+\_\+\+READ\+\_\+\+CMD}~0x20
+\begin{DoxyCompactList}\small\item\em Keyboard controller read command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga595a5cad2d3c793963da50865b2c1b47}\label{group__i8042_ga595a5cad2d3c793963da50865b2c1b47}} 
+\#define {\bfseries KBC\+\_\+\+READ\+\_\+\+CMD}~0x20
+\begin{DoxyCompactList}\small\item\em Keyboard controller read command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gaaa62a6987753a109d2f7a609ce8b7334}\label{group__i8042_gaaa62a6987753a109d2f7a609ce8b7334}} 
+\#define {\bfseries KBC\+\_\+\+WRITE\+\_\+\+CMD}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller write command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gaaa62a6987753a109d2f7a609ce8b7334}\label{group__i8042_gaaa62a6987753a109d2f7a609ce8b7334}} 
+\#define {\bfseries KBC\+\_\+\+WRITE\+\_\+\+CMD}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard controller write command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga43a8c52761b7ae2c8d67562519b734af}\label{group__i8042_ga43a8c52761b7ae2c8d67562519b734af}} 
+\#define {\bfseries KBC\+\_\+\+INT}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Keyboard controller interrupt enable flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gaa554763d6a066605edecacdea834da9b}\label{group__i8042_gaa554763d6a066605edecacdea834da9b}} 
+\#define {\bfseries WAIT\+\_\+\+KBC}~20000
+\begin{DoxyCompactList}\small\item\em Wait time for keyboard controller. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga8ca6d466a780b24900c3e94a5798230f}\label{group__i8042_ga8ca6d466a780b24900c3e94a5798230f}} 
+\#define {\bfseries MAX\+\_\+\+ATTEMPS}~10
+\begin{DoxyCompactList}\small\item\em Maximum number of attempts for keyboard controller communication. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gacfb42dde389e8ca36ab267002fbf5c6a}\label{group__i8042_gacfb42dde389e8ca36ab267002fbf5c6a}} 
+\#define {\bfseries OUT\+\_\+\+BUF}~0x60
+\begin{DoxyCompactList}\small\item\em Output buffer port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga1f7e79cfe81dc06414550fa52418941e}\label{group__i8042_ga1f7e79cfe81dc06414550fa52418941e}} 
+\#define {\bfseries STATUS\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Status register port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga6eca647466b6a624fa76401794bca51b}\label{group__i8042_ga6eca647466b6a624fa76401794bca51b}} 
+\#define {\bfseries MOUSE\+\_\+\+ARGS}~0x60
+\begin{DoxyCompactList}\small\item\em Same as output buffer, but used for sending command arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gac3a4f1537e2dfbd6fff763a1c6cf7da2}\label{group__i8042_gac3a4f1537e2dfbd6fff763a1c6cf7da2}} 
+\#define {\bfseries MOUSE\+\_\+\+CMD\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Same as status register, but used for issuing commands. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga0fcdbd39ed7dcf62fede44082d09cb7a}\label{group__i8042_ga0fcdbd39ed7dcf62fede44082d09cb7a}} 
+\#define {\bfseries WRITE\+\_\+\+BYTE\+\_\+\+TO\+\_\+\+MOUSE}~0x\+D4
+\begin{DoxyCompactList}\small\item\em Command to write a byte to the mouse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gaabce64c830ae4f1e517fa71b12833574}\label{group__i8042_gaabce64c830ae4f1e517fa71b12833574}} 
+\#define {\bfseries DISABLE\+\_\+\+DATA\+\_\+\+REPORTING\+\_\+\+CMD}~0x\+F5
+\begin{DoxyCompactList}\small\item\em Command to disable data reporting from the mouse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga3789391a769864fd2d3f40d035fd8a74}\label{group__i8042_ga3789391a769864fd2d3f40d035fd8a74}} 
+\#define {\bfseries MOUSE\+\_\+\+OK}~0x\+FA
+\begin{DoxyCompactList}\small\item\em Everything is OK. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga1ea7d2934de1ab1dc5e94c467b10acc4}\label{group__i8042_ga1ea7d2934de1ab1dc5e94c467b10acc4}} 
+\#define {\bfseries MOUSE\+\_\+\+NOCK}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Communication error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga92a26146cf2e0b6e094c498b6a601469}\label{group__i8042_ga92a26146cf2e0b6e094c498b6a601469}} 
+\#define {\bfseries MOUSE\+\_\+\+COMMUNICATION\+\_\+\+ERR}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Second consecutive communication error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga6f2d81ab4113e846dea6f1362c19ca54}\label{group__i8042_ga6f2d81ab4113e846dea6f1362c19ca54}} 
+\#define {\bfseries FIRST\+\_\+\+MOUSE\+\_\+\+BIT}~BIT(3)
+\begin{DoxyCompactList}\small\item\em First bit of the mouse packet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga82dc3ac9577dabd19733ada75d2822d0}\label{group__i8042_ga82dc3ac9577dabd19733ada75d2822d0}} 
+\#define {\bfseries X\+\_\+\+OVERFLOW}~BIT(6)
+\begin{DoxyCompactList}\small\item\em X coordinate overflow flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gacd54c5569c84fd2d1710cccd190e138a}\label{group__i8042_gacd54c5569c84fd2d1710cccd190e138a}} 
+\#define {\bfseries Y\+\_\+\+OVERFLOW}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Y coordinate overflow flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gac0b6be98f8350453669f65b9ea428d6d}\label{group__i8042_gac0b6be98f8350453669f65b9ea428d6d}} 
+\#define {\bfseries RMOUSE\+\_\+\+BUTTON}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Right mouse button flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga33b3ca92ce44cde233d0a6e405002ba7}\label{group__i8042_ga33b3ca92ce44cde233d0a6e405002ba7}} 
+\#define {\bfseries LMOUSE\+\_\+\+BUTTON}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Left mouse button flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga4e87944c5147fbbe5076f4b510fd4225}\label{group__i8042_ga4e87944c5147fbbe5076f4b510fd4225}} 
+\#define {\bfseries MMOUSE\+\_\+\+BUTTON}~BIT(2)
+\begin{DoxyCompactList}\small\item\em Middle mouse button flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gac99e680ce90aa57ce5e9f65e8a94c29b}\label{group__i8042_gac99e680ce90aa57ce5e9f65e8a94c29b}} 
+\#define {\bfseries MOUSE\+\_\+\+MSB\+\_\+X}~BIT(4)
+\begin{DoxyCompactList}\small\item\em MSB bit of the X delta (indicates if the delta is negative or not) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_ga4b8b867e30f622fce9a1a9471e635905}\label{group__i8042_ga4b8b867e30f622fce9a1a9471e635905}} 
+\#define {\bfseries MOUSE\+\_\+\+MSB\+\_\+Y}~BIT(5)
+\begin{DoxyCompactList}\small\item\em MSB bit of the Y delta (indicates if the delta is negative or not) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gaf76adb2e85b403d68a481b16514142c1}\label{group__i8042_gaf76adb2e85b403d68a481b16514142c1}} 
+\#define {\bfseries X\+\_\+\+SIGNAL\+\_\+\+OF\+\_\+\+DELTA\+\_\+\+MOUSE}~BIT(4)
+\begin{DoxyCompactList}\small\item\em Signal bit of the X delta (indicates if the delta is positive or negative) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__i8042_gab6c71561088e82ea3da625364b68244d}\label{group__i8042_gab6c71561088e82ea3da625364b68244d}} 
+\#define {\bfseries Y\+\_\+\+SIGNAL\+\_\+\+OF\+\_\+\+DELTA\+\_\+\+MOUSE}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Signal bit of the Y delta (indicates if the delta is positive or negative) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants for programming the i8254 Timer. 

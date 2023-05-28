@@ -1,0 +1,127 @@
+\hypertarget{draw_8h_source}{}\doxysection{draw.\+h}
+\label{draw_8h_source}\index{draw/draw.h@{draw/draw.h}}
+\mbox{\hyperlink{draw_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef UNTITLED10\_DRAW\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define UNTITLED10\_DRAW\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <malloc.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{models_8h}{models/models.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{video__gr_8h}{devices/video\_gr.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mouse_8h}{devices/mouse.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{rtc_8h}{devices/rtc.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{comment}{//Bombs Bricks Walls MouseCursor Xpms}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}models/bomb/bomb1.xpm"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}models/bomb/bomb2.xpm"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}models/bomb/bomb3.xpm"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}models/brick/brick.xpm"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}models/wall/wall.xpm"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}models/mouse/LOL\_MOUSE.xpm"{}}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{//Black Bomberman xpm (with actions)}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}models/bomberman/downview/black/downidleblack.xpm"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}models/bomberman/downview/black/downwalk1black.xpm"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}models/bomberman/downview/black/downwalk2black.xpm"{}}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include "{}models/bomberman/upview/black/upidleblack.xpm"{}}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}models/bomberman/upview/black/upwalk1black.xpm"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}models/bomberman/upview/black/upwalk2black.xpm"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include "{}models/bomberman/leftview/black/leftidleblack.xpm"{}}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#include "{}models/bomberman/leftview/black/walkleft1black.xpm"{}}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#include "{}models/bomberman/leftview/black//walkleft2black.xpm"{}}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#include "{}models/bomberman/rightview/black/rightidleblack.xpm"{}}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#include "{}models/bomberman/rightview/black/walkright1black.xpm"{}}}
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#include "{}models/bomberman/rightview/black/walkright2black.xpm"{}}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{comment}{//White Bomberman xpm (with actions)}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#include "{}models/bomberman/downview/white/downidlewhite.xpm"{}}}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#include "{}models/bomberman/downview/white/downwalk1white.xpm"{}}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#include "{}models/bomberman/downview/white/downwalk2white.xpm"{}}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#include "{}models/bomberman/upview/white/upidlewhite.xpm"{}}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#include "{}models/bomberman/upview/white/upwalk1white.xpm"{}}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#include "{}models/bomberman/upview/white/upwalk2white.xpm"{}}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#include "{}models/bomberman/leftview/white/leftidlewhite.xpm"{}}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#include "{}models/bomberman/leftview/white/walkleft1white.xpm"{}}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#include "{}models/bomberman/leftview/white//walkleft2white.xpm"{}}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#include "{}models/bomberman/rightview/white/rightidlewhite.xpm"{}}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#include "{}models/bomberman/rightview/white/walkright1white.xpm"{}}}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#include "{}models/bomberman/rightview/white/walkright2white.xpm"{}}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{comment}{//Explosions xpm }}
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#include "{}models/explosions/explosion1.xpm"{}}}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#include "{}models/explosions/explosion2.xpm"{}}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#include "{}models/explosions/explosion1bot.xpm"{}}}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#include "{}models/explosions/explosion2bot.xpm"{}}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#include "{}models/explosions/explosion1left.xpm"{}}}
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#include "{}models/explosions/explosion2left.xpm"{}}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#include "{}models/explosions/explosion1right.xpm"{}}}
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#include "{}models/explosions/explosion2right.xpm"{}}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#include "{}models/explosions/explosion1top.xpm"{}}}
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#include "{}models/explosions/explosion2top.xpm"{}}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{comment}{//Menu xpm}}
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#include "{}models/menu/menuIcon.xpm"{}}}
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#include "{}models/menu/not\_selected\_continue.xpm"{}}}
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#include "{}models/menu/not\_selected\_exit.xpm"{}}}
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#include "{}models/menu/not\_selected\_start.xpm"{}}}
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#include "{}models/menu/selected\_continue.xpm"{}}}
+\DoxyCodeLine{84 \textcolor{preprocessor}{\#include "{}models/menu/selected\_exit.xpm"{}}}
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#include "{}models/menu/selected\_start.xpm"{}}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{comment}{//Numbers xpm}}
+\DoxyCodeLine{88 \textcolor{preprocessor}{\#include "{}models/numbers/0.xpm"{}}}
+\DoxyCodeLine{89 \textcolor{preprocessor}{\#include "{}models/numbers/1.xpm"{}}}
+\DoxyCodeLine{90 \textcolor{preprocessor}{\#include "{}models/numbers/2.xpm"{}}}
+\DoxyCodeLine{91 \textcolor{preprocessor}{\#include "{}models/numbers/3.xpm"{}}}
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#include "{}models/numbers/4.xpm"{}}}
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#include "{}models/numbers/5.xpm"{}}}
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#include "{}models/numbers/6.xpm"{}}}
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#include "{}models/numbers/7.xpm"{}}}
+\DoxyCodeLine{96 \textcolor{preprocessor}{\#include "{}models/numbers/8.xpm"{}}}
+\DoxyCodeLine{97 \textcolor{preprocessor}{\#include "{}models/numbers/9.xpm"{}}}
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#include "{}models/numbers/double\_points.xpm"{}}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#include "{}models/font/font.xpm"{}}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{110 int (\mbox{\hyperlink{draw_8h_a5879bf4f041654dfe02e6912770b74e1}{load\_xpms}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}}* model);}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{120 void (\mbox{\hyperlink{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}{draw\_game}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{129 \textcolor{keywordtype}{char}** (\mbox{\hyperlink{draw_8h_ae23186dd72a3da5be056911ec2446752}{getemptyArena}})();}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{138 void (\mbox{\hyperlink{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}{drawPlayers}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{147 void (\mbox{\hyperlink{draw_8h_aa8393013ab037235f46c85781f702b66}{drawBombs}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{157 void (\mbox{\hyperlink{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}{drawPowerUps}})(\textcolor{keywordtype}{char}** arena, \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{166 void (\mbox{\hyperlink{draw_8h_a5a5865b4ef99decdaa500966aed13e78}{drawBricks}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{175 void (\mbox{\hyperlink{draw_8h_aa5411dccade6329de024fa2782476d69}{drawWalls}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model);}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{186 void (\mbox{\hyperlink{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}{draw\_menu}})(\textcolor{keyword}{struct }\mbox{\hyperlink{struct_menu_model}{MenuModel}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse, \mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{195 void (\mbox{\hyperlink{draw_8h_a5eca413a86c3effd38130e380a177693}{draw\_TimeNumbers}})(\mbox{\hyperlink{structtime__display}{time\_display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\_info}});}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{208 void (\mbox{\hyperlink{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}{draw\_string}})(\textcolor{keywordtype}{char}* text, \textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} size, uint32\_t color);}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{219 void (\mbox{\hyperlink{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}{draw\_select\_names}})(\textcolor{keywordtype}{int} player\_number, \textcolor{keyword}{struct }\mbox{\hyperlink{struct_arena_model}{ArenaModel}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse);}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// UNTITLED10\_DRAW\_H}}
+
+\end{DoxyCode}

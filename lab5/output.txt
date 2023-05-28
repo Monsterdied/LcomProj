@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 game
 after dec  1
 after dec  2
@@ -59,3 +60,13 @@ after dec  10
 after dec  10
 after dec  10
 after dec  10
+=======
+get default menu
+timer_hook_id = 0
+timer_hook_id = 0
+start interrupts
+ bit_timer 0
+did interrupts
+stop
+exit
+>>>>>>> 32e88ca9c3b56f6bce209138c6e1fbc870ba64f3

@@ -1,0 +1,262 @@
+\hypertarget{_controller_8h}{}\doxysection{Game/game\+Controllers/\+Controller.h File Reference}
+\label{_controller_8h}\index{Game/gameControllers/Controller.h@{Game/gameControllers/Controller.h}}
+
+
+Controller functions.  
+
+
+{\ttfamily \#include \char`\"{}devices/keyboard.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{_controller_8h_a643a57712369ffac1e62a4513e609c0c}{Player\+Controller}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}} controller. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8h_a457f5f242e06deb82b8743bf081a2c41}{Player\+Can\+Walk\+To}} (struct \mbox{\hyperlink{struct_position}{Position}} position, int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk to a position. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0}{Player\+Can\+Walk\+Left}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk left. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e}{Player\+Can\+Walk\+Right}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk right. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8h_a76ec3aed984bf4fde38d1223281ba0c8}{Player\+Can\+Walk\+Top}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk to the top. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf}{Player\+Can\+Walk\+Down}} (int Player\+Number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Check if player can walk down. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8h_a90798832baf6ec80bd0efbf375259f88}{Player\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_player}{Player}} controllers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8h_a39073380f9ee7c6a222761b4603a479a}{Players\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$model)
+\begin{DoxyCompactList}\small\item\em Players sprite controllers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8h_a41a97cc1726fef82901651228dae14ae}{Bombs\+Sprite\+Controllers}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$\mbox{\hyperlink{struct_arena_model}{Arena\+Model}})
+\begin{DoxyCompactList}\small\item\em Bombs sprite controllers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}{Explosions\+Controller}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model)
+\begin{DoxyCompactList}\small\item\em Explosions controller. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{_controller_8h_a182e89a492060d6b194963e938a9c74b}{Players\+Are\+Alive}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$arena\+Model, enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Check if players are alive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controller functions. 
+
+This file contains functions related to controlling player actions and game elements. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_controller_8h_a41a97cc1726fef82901651228dae14ae}\label{_controller_8h_a41a97cc1726fef82901651228dae14ae}} 
+\index{Controller.h@{Controller.h}!BombsSpriteControllers@{BombsSpriteControllers}}
+\index{BombsSpriteControllers@{BombsSpriteControllers}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{BombsSpriteControllers()}{BombsSpriteControllers()}}
+{\footnotesize\ttfamily void() Bombs\+Sprite\+Controllers (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Bombs sprite controllers. 
+
+Controls the actions of the bombs\textquotesingle{} sprites in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}\label{_controller_8h_a6381c5aeb49e8e3cf6b4487dee31bb36}} 
+\index{Controller.h@{Controller.h}!ExplosionsController@{ExplosionsController}}
+\index{ExplosionsController@{ExplosionsController}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{ExplosionsController()}{ExplosionsController()}}
+{\footnotesize\ttfamily void() Explosions\+Controller (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Explosions controller. 
+
+Controls the actions of the explosions in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf}\label{_controller_8h_ab8f8c101ecadca33babbbd6d746a18bf}} 
+\index{Controller.h@{Controller.h}!PlayerCanWalkDown@{PlayerCanWalkDown}}
+\index{PlayerCanWalkDown@{PlayerCanWalkDown}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkDown()}{PlayerCanWalkDown()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Down (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk down. 
+
+Checks if the player with the specified player number can walk down in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk down, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0}\label{_controller_8h_ac78b28e02851e1b17f6ca5c48d6504a0}} 
+\index{Controller.h@{Controller.h}!PlayerCanWalkLeft@{PlayerCanWalkLeft}}
+\index{PlayerCanWalkLeft@{PlayerCanWalkLeft}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkLeft()}{PlayerCanWalkLeft()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Left (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk left. 
+
+Checks if the player with the specified player number can walk to the left in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk left, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e}\label{_controller_8h_a00e4f82c3c29a274edfdc1b00a9d0d6e}} 
+\index{Controller.h@{Controller.h}!PlayerCanWalkRight@{PlayerCanWalkRight}}
+\index{PlayerCanWalkRight@{PlayerCanWalkRight}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkRight()}{PlayerCanWalkRight()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Right (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk right. 
+
+Checks if the player with the specified player number can walk to the right in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk right, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_controller_8h_a457f5f242e06deb82b8743bf081a2c41}\label{_controller_8h_a457f5f242e06deb82b8743bf081a2c41}} 
+\index{Controller.h@{Controller.h}!PlayerCanWalkTo@{PlayerCanWalkTo}}
+\index{PlayerCanWalkTo@{PlayerCanWalkTo}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkTo()}{PlayerCanWalkTo()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+To (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_position}{Position}}}]{position,  }\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk to a position. 
+
+Checks if the player with the specified player number can walk to the given position in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to check \\
+\hline
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk to the position, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_controller_8h_a76ec3aed984bf4fde38d1223281ba0c8}\label{_controller_8h_a76ec3aed984bf4fde38d1223281ba0c8}} 
+\index{Controller.h@{Controller.h}!PlayerCanWalkTop@{PlayerCanWalkTop}}
+\index{PlayerCanWalkTop@{PlayerCanWalkTop}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerCanWalkTop()}{PlayerCanWalkTop()}}
+{\footnotesize\ttfamily bool() Player\+Can\+Walk\+Top (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+Check if player can walk to the top. 
+
+Checks if the player with the specified player number can walk to the top in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can walk to the top, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_controller_8h_a643a57712369ffac1e62a4513e609c0c}\label{_controller_8h_a643a57712369ffac1e62a4513e609c0c}} 
+\index{Controller.h@{Controller.h}!PlayerController@{PlayerController}}
+\index{PlayerController@{PlayerController}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerController()}{PlayerController()}}
+{\footnotesize\ttfamily void() Player\+Controller (\begin{DoxyParamCaption}\item[{int}]{Player\+Number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_player}{Player}} controller. 
+
+Controls the actions of the player with the specified player number in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Number} & The player number \\
+\hline
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_controller_8h_a90798832baf6ec80bd0efbf375259f88}\label{_controller_8h_a90798832baf6ec80bd0efbf375259f88}} 
+\index{Controller.h@{Controller.h}!PlayerControllers@{PlayerControllers}}
+\index{PlayerControllers@{PlayerControllers}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayerControllers()}{PlayerControllers()}}
+{\footnotesize\ttfamily void() Player\+Controllers (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{Arena\+Model }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_player}{Player}} controllers. 
+
+Controls the actions of all players in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_controller_8h_a182e89a492060d6b194963e938a9c74b}\label{_controller_8h_a182e89a492060d6b194963e938a9c74b}} 
+\index{Controller.h@{Controller.h}!PlayersAreAlive@{PlayersAreAlive}}
+\index{PlayersAreAlive@{PlayersAreAlive}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayersAreAlive()}{PlayersAreAlive()}}
+{\footnotesize\ttfamily int() Players\+Are\+Alive (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{arena\+Model,  }\item[{enum \mbox{\hyperlink{models_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Check if players are alive. 
+
+Checks if any players are alive in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} and updates the game state accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena\+Model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+{\em state} & Pointer to the game state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of players alive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_controller_8h_a39073380f9ee7c6a222761b4603a479a}\label{_controller_8h_a39073380f9ee7c6a222761b4603a479a}} 
+\index{Controller.h@{Controller.h}!PlayersSpriteControllers@{PlayersSpriteControllers}}
+\index{PlayersSpriteControllers@{PlayersSpriteControllers}!Controller.h@{Controller.h}}
+\doxysubsubsection{\texorpdfstring{PlayersSpriteControllers()}{PlayersSpriteControllers()}}
+{\footnotesize\ttfamily void() Players\+Sprite\+Controllers (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Players sprite controllers. 
+
+Controls the actions of the players\textquotesingle{} sprites in the \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,32 @@
+\hypertarget{mouse_8h_source}{}\doxysection{mouse.\+h}
+\label{mouse_8h_source}\index{devices/mouse.h@{devices/mouse.h}}
+\mbox{\hyperlink{mouse_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{10  }
+\DoxyCodeLine{16 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{17   \textcolor{keywordtype}{bool} left\_click;}
+\DoxyCodeLine{18   \textcolor{keywordtype}{int} x,\mbox{\hyperlink{struct_mouse_a0a2f84ed7838f07779ae24c5a9086d33}{y}};             }
+\DoxyCodeLine{19   \textcolor{keywordtype}{int} width, \mbox{\hyperlink{struct_mouse_ad12fc34ce789bce6c8a05d8a17138534}{height}};   }
+\DoxyCodeLine{20   \textcolor{keywordtype}{int} xspeed, \mbox{\hyperlink{struct_mouse_a8e19090b4aa5dd9bb43efe8b74488f6d}{yspeed}};  }
+\DoxyCodeLine{21 \} \mbox{\hyperlink{struct_mouse}{Mouse}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{31 int (\mbox{\hyperlink{mouse_8h_a28f29654b136479a6257553925e28bb0}{mouse\_Subscribe}})(uint8\_t *bit\_no);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{40 int (\mbox{\hyperlink{mouse_8h_a021b68075751bdd9d7bdfdfaf8210665}{mouse\_Unsubscribe}})();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{50 int (\mbox{\hyperlink{mouse_8h_a2937ed99ce6553b5c7d0ba42a04ed41a}{error\_checking\_mouse}})(uint8\_t status\_mouse);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{57 void (\mbox{\hyperlink{mouse_8h_a210374b50462acdedab00df64d5cea3c}{mouse\_ih}})();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{66 int (\mbox{\hyperlink{mouse_8h_a7e311379d4d64f88873ef8ade5c82a25}{mouse\_disable\_data\_reporting}})();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{76 int (\mbox{\hyperlink{mouse_8h_a6c96b97b6d60426a8fc089131ca0c1db}{mouse\_get\_status}})(uint8\_t *st);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{87 int (\mbox{\hyperlink{mouse_8h_a50796bc7dd16af8dbf9dc017679c3cf7}{mouse\_read\_buffer}})(uint8\_t port, uint8\_t *output);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{96 void (\mbox{\hyperlink{mouse_8h_af5ab1f26fb0d446e2eb99a5da1dacc13}{mouse\_ih\_new}})(\mbox{\hyperlink{struct_mouse}{Mouse}} *mouse);}
+
+\end{DoxyCode}

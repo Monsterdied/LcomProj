@@ -1,0 +1,332 @@
+\hypertarget{draw_8h}{}\doxysection{draw/draw.h File Reference}
+\label{draw_8h}\index{draw/draw.h@{draw/draw.h}}
+
+
+Drawing functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}models/models.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}devices/rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomb/bomb1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomb/bomb2.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomb/bomb3.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/brick/brick.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/wall/wall.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/mouse/\+LOL\+\_\+\+MOUSE.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/downview/black/downidleblack.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/downview/black/downwalk1black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/downview/black/downwalk2black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/upview/black/upidleblack.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/upview/black/upwalk1black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/upview/black/upwalk2black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/leftview/black/leftidleblack.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/leftview/black/walkleft1black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/leftview/black//walkleft2black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/rightview/black/rightidleblack.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/rightview/black/walkright1black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/rightview/black/walkright2black.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/downview/white/downidlewhite.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/downview/white/downwalk1white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/downview/white/downwalk2white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/upview/white/upidlewhite.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/upview/white/upwalk1white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/upview/white/upwalk2white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/leftview/white/leftidlewhite.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/leftview/white/walkleft1white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/leftview/white//walkleft2white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/rightview/white/rightidlewhite.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/rightview/white/walkright1white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/bomberman/rightview/white/walkright2white.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion2.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion1bot.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion2bot.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion1left.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion2left.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion1right.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion2right.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion1top.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/explosions/explosion2top.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/menu\+Icon.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/not\+\_\+selected\+\_\+continue.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/not\+\_\+selected\+\_\+exit.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/not\+\_\+selected\+\_\+start.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/selected\+\_\+continue.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/selected\+\_\+exit.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/menu/selected\+\_\+start.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/0.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/2.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/3.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/4.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/5.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/6.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/7.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/8.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/9.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/numbers/double\+\_\+points.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}models/font/font.\+xpm\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{draw_8h_a5879bf4f041654dfe02e6912770b74e1}{load\+\_\+xpms}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$model)
+\begin{DoxyCompactList}\small\item\em Load XPM images. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}{draw\+\_\+game}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse)
+\begin{DoxyCompactList}\small\item\em Draw the game. \end{DoxyCompactList}\item 
+char $\ast$$\ast$() \mbox{\hyperlink{draw_8h_ae23186dd72a3da5be056911ec2446752}{getempty\+Arena}} ()
+\begin{DoxyCompactList}\small\item\em Get an empty arena. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}{draw\+Players}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Draw the players on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_aa8393013ab037235f46c85781f702b66}{draw\+Bombs}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Draw the bombs on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}{draw\+Power\+Ups}} (char $\ast$$\ast$arena, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Draw the power-\/ups on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a5a5865b4ef99decdaa500966aed13e78}{draw\+Bricks}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Draw the bricks on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_aa5411dccade6329de024fa2782476d69}{draw\+Walls}} (struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Draw the walls on the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}{draw\+\_\+menu}} (struct \mbox{\hyperlink{struct_menu_model}{Menu\+Model}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse, \mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+\begin{DoxyCompactList}\small\item\em Draw the menu. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a5eca413a86c3effd38130e380a177693}{draw\+\_\+\+Time\+Numbers}} (\mbox{\hyperlink{structtime__display}{time\+\_\+display}} \mbox{\hyperlink{rtc_8h_aa3f6a6defa5127eb02d3295072f600e8}{time\+\_\+info}})
+\begin{DoxyCompactList}\small\item\em Draw the time numbers. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}{draw\+\_\+string}} (char $\ast$text, int x, int y, int size, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw a string. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}{draw\+\_\+select\+\_\+names}} (int player\+\_\+number, struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} model, \mbox{\hyperlink{struct_mouse}{Mouse}} mouse)
+\begin{DoxyCompactList}\small\item\em Draw the select names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Drawing functions. 
+
+This file contains functions related to drawing various elements on the screen. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}\label{draw_8h_a81d3c5fc23030efc09b40adf6c36ea89}} 
+\index{draw.h@{draw.h}!draw\_game@{draw\_game}}
+\index{draw\_game@{draw\_game}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_game()}{draw\_game()}}
+{\footnotesize\ttfamily void() draw\+\_\+game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_mouse}{Mouse}}}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Draw the game. 
+
+Draws the game elements on the screen based on the provided \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} and mouse information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the game information \\
+\hline
+{\em mouse} & The \mbox{\hyperlink{struct_mouse}{Mouse}} information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}\label{draw_8h_a4ee5f4de5222a6bec9ccded4d7464c3c}} 
+\index{draw.h@{draw.h}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily void() draw\+\_\+menu (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_menu_model}{Menu\+Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_mouse}{Mouse}}}]{mouse,  }\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Draw the menu. 
+
+Draws the menu elements on the screen based on the provided \mbox{\hyperlink{struct_menu_model}{Menu\+Model}}, mouse information, and time display.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_menu_model}{Menu\+Model}} containing the menu information \\
+\hline
+{\em mouse} & The \mbox{\hyperlink{struct_mouse}{Mouse}} information \\
+\hline
+{\em time\+\_\+info} & The time display information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}\label{draw_8h_a85c8facd48cf928fdd3736aeaa1f6c2a}} 
+\index{draw.h@{draw.h}!draw\_select\_names@{draw\_select\_names}}
+\index{draw\_select\_names@{draw\_select\_names}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_select\_names()}{draw\_select\_names()}}
+{\footnotesize\ttfamily void() draw\+\_\+select\+\_\+names (\begin{DoxyParamCaption}\item[{int}]{player\+\_\+number,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model,  }\item[{\mbox{\hyperlink{struct_mouse}{Mouse}}}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Draw the select names. 
+
+Draws the select names on the screen based on the player number, \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}, and mouse information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+number} & The player number \\
+\hline
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the select names information \\
+\hline
+{\em mouse} & The \mbox{\hyperlink{struct_mouse}{Mouse}} information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}\label{draw_8h_a1a3153ce4cdb58b63a8b41728c23db67}} 
+\index{draw.h@{draw.h}!draw\_string@{draw\_string}}
+\index{draw\_string@{draw\_string}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_string()}{draw\_string()}}
+{\footnotesize\ttfamily void() draw\+\_\+string (\begin{DoxyParamCaption}\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{size,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw a string. 
+
+Draws a string on the screen at the specified coordinates with the specified size and color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The string to be drawn \\
+\hline
+{\em x} & The x-\/coordinate of the string\textquotesingle{}s top-\/left corner \\
+\hline
+{\em y} & The y-\/coordinate of the string\textquotesingle{}s top-\/left corner \\
+\hline
+{\em size} & The size of the string \\
+\hline
+{\em color} & The color of the string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a5eca413a86c3effd38130e380a177693}\label{draw_8h_a5eca413a86c3effd38130e380a177693}} 
+\index{draw.h@{draw.h}!draw\_TimeNumbers@{draw\_TimeNumbers}}
+\index{draw\_TimeNumbers@{draw\_TimeNumbers}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_TimeNumbers()}{draw\_TimeNumbers()}}
+{\footnotesize\ttfamily void() draw\+\_\+\+Time\+Numbers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtime__display}{time\+\_\+display}}}]{time\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Draw the time numbers. 
+
+Draws the time numbers on the screen based on the provided time display information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+info} & The time display information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_aa8393013ab037235f46c85781f702b66}\label{draw_8h_aa8393013ab037235f46c85781f702b66}} 
+\index{draw.h@{draw.h}!drawBombs@{drawBombs}}
+\index{drawBombs@{drawBombs}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{drawBombs()}{drawBombs()}}
+{\footnotesize\ttfamily void() draw\+Bombs (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Draw the bombs on the screen. 
+
+Draws the bombs on the screen based on the provided \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the bomb information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a5a5865b4ef99decdaa500966aed13e78}\label{draw_8h_a5a5865b4ef99decdaa500966aed13e78}} 
+\index{draw.h@{draw.h}!drawBricks@{drawBricks}}
+\index{drawBricks@{drawBricks}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{drawBricks()}{drawBricks()}}
+{\footnotesize\ttfamily void() draw\+Bricks (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Draw the bricks on the screen. 
+
+Draws the bricks on the screen based on the provided \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the brick information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}\label{draw_8h_a03d92d2b4bd54a502562b869ad1b6b52}} 
+\index{draw.h@{draw.h}!drawPlayers@{drawPlayers}}
+\index{drawPlayers@{drawPlayers}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{drawPlayers()}{drawPlayers()}}
+{\footnotesize\ttfamily void() draw\+Players (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Draw the players on the screen. 
+
+Draws the player characters on the screen based on the provided \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the player information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}\label{draw_8h_a58fdfa08fcdcb18641e8ea9327d6884b}} 
+\index{draw.h@{draw.h}!drawPowerUps@{drawPowerUps}}
+\index{drawPowerUps@{drawPowerUps}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{drawPowerUps()}{drawPowerUps()}}
+{\footnotesize\ttfamily void() draw\+Power\+Ups (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{arena,  }\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Draw the power-\/ups on the screen. 
+
+Draws the power-\/ups on the screen based on the provided arena and \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arena} & The arena as a 2D character array \\
+\hline
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the power-\/up information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_aa5411dccade6329de024fa2782476d69}\label{draw_8h_aa5411dccade6329de024fa2782476d69}} 
+\index{draw.h@{draw.h}!drawWalls@{drawWalls}}
+\index{drawWalls@{drawWalls}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{drawWalls()}{drawWalls()}}
+{\footnotesize\ttfamily void() draw\+Walls (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Draw the walls on the screen. 
+
+Draws the walls on the screen based on the provided \mbox{\hyperlink{struct_arena_model}{Arena\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the wall information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draw_8h_ae23186dd72a3da5be056911ec2446752}\label{draw_8h_ae23186dd72a3da5be056911ec2446752}} 
+\index{draw.h@{draw.h}!getemptyArena@{getemptyArena}}
+\index{getemptyArena@{getemptyArena}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{getemptyArena()}{getemptyArena()}}
+{\footnotesize\ttfamily char $\ast$$\ast$() getempty\+Arena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get an empty arena. 
+
+Creates and returns an empty arena as a 2D character array.
+
+\begin{DoxyReturn}{Returns}
+The empty arena as a 2D character array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{draw_8h_a5879bf4f041654dfe02e6912770b74e1}\label{draw_8h_a5879bf4f041654dfe02e6912770b74e1}} 
+\index{draw.h@{draw.h}!load\_xpms@{load\_xpms}}
+\index{load\_xpms@{load\_xpms}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{load\_xpms()}{load\_xpms()}}
+{\footnotesize\ttfamily int() load\+\_\+xpms (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Load XPM images. 
+
+Loads the XPM images required for the game from the specified model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The \mbox{\hyperlink{struct_arena_model}{Arena\+Model}} containing the XPM images \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise 
+\end{DoxyReturn}

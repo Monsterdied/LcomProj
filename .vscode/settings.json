@@ -13,6 +13,7 @@
         "iosfwd": "c",
         "xlocbuf": "c",
         "system_error": "c",
+<<<<<<< HEAD
         "rtc.h": "c",
         "stdint.h": "c",
         "charconv": "c",
@@ -20,5 +21,8 @@
         "xutility": "c",
         "draw.h": "c",
         "message.h": "c"
+=======
+        "kbc_controller.h": "c"
+>>>>>>> 32e88ca9c3b56f6bce209138c6e1fbc870ba64f3
     }
 }
