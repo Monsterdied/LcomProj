@@ -431,7 +431,7 @@ void (draw_message)(struct ArenaModel model, enum GameState state,Mouse mouse,bo
         drawXpm8_8_8(menu_continue_button_not_selected,150,400);
     }
     if(state==TIE){
-        draw_string("TIE", 150, 450,3,0xFFDF00);
+        draw_string("TIE",  250, 250,3,0xFFDF00);
     }else if(state==PLAYER1WON ){
 
             draw_string( model.players[0].name , 250, 250,model.players[0].nameSize,0xFFDF00);
